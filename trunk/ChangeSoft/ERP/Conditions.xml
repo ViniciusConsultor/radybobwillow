@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Condition>
+    <Name>Language</Name>
+    <Data>
+      <Language>zh-CN</Language>
+      <List>
+        <Item value="zh-CN">中文[zh-CN]</Item>
+        <Item value="en-US">英文[en-US]</Item>
+      </List>
+    </Data>
+    <Data>
+      <Language>en-US</Language>
+      <List>
+        <Item value="zh-CN">Chinese[zh-CN]</Item>
+        <Item value="en-US">English[en-US]</Item>
+      </List>
+    </Data>
+  </Condition>
+</Settings>
