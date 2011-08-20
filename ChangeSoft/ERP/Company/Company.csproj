@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{E709D4C4-5237-4D22-A21A-39A28C066DE1}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -109,6 +109,7 @@
     <Compile Include="Action\Action_FrmCompany.cs" />
     <Compile Include="Action\IAction_FrmCompany.cs" />
     <Compile Include="FrmCompany.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCompany.Designer.cs">
       <DependentUpon>FrmCompany.cs</DependentUpon>
