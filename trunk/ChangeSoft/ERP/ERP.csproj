@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2C0AB9FA-D44C-4064-A351-27329A400ECE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -134,6 +134,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuWindow.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuWindow.Designer.cs">
       <DependentUpon>MenuWindow.cs</DependentUpon>
@@ -185,6 +186,7 @@
     <None Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="dll\policy.2.0.Npgsql.config" />
     <None Include="img\Thumbs.db" />
     <None Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -220,6 +222,37 @@
     <Content Include="ActiveRecordConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="dll\Castle.ActiveRecord.dll" />
+    <Content Include="dll\Castle.ActiveRecord.pdb" />
+    <Content Include="dll\Castle.ActiveRecord.Web.dll" />
+    <Content Include="dll\Castle.ActiveRecord.Web.pdb" />
+    <Content Include="dll\Castle.ActiveRecord.Web.xml" />
+    <Content Include="dll\Castle.ActiveRecord.xml" />
+    <Content Include="dll\Castle.Components.Validator.dll" />
+    <Content Include="dll\Castle.Components.Validator.xml" />
+    <Content Include="dll\Castle.Core.dll" />
+    <Content Include="dll\Castle.Core.xml" />
+    <Content Include="dll\Castle.Windsor.dll" />
+    <Content Include="dll\Castle.Windsor.pdb" />
+    <Content Include="dll\Castle.Windsor.xml" />
+    <Content Include="dll\Guifreaks.Common.dll" />
+    <Content Include="dll\Guifreaks.Common.pdb" />
+    <Content Include="dll\Guifreaks.NavigationBar.dll" />
+    <Content Include="dll\Guifreaks.NavigationBar.pdb" />
+    <Content Include="dll\Guifreaks.NavigationBar.XmlSerializers.dll" />
+    <Content Include="dll\Iesi.Collections.dll" />
+    <Content Include="dll\log4net.dll" />
+    <Content Include="dll\log4net.xml" />
+    <Content Include="dll\Mono.Security.dll" />
+    <Content Include="dll\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="dll\NHibernate.dll" />
+    <Content Include="dll\NHibernate.Search.dll" />
+    <Content Include="dll\Npgsql.dll" />
+    <Content Include="dll\Npgsql.pdb" />
+    <Content Include="dll\Npgsql.XML" />
+    <Content Include="dll\policy.2.0.Npgsql.dll" />
+    <Content Include="dll\WeifenLuo.WinFormsUI.Docking.dll" />
+    <Content Include="dll\zh-CN\Npgsql.resources.dll" />
     <Content Include="imgSmall\bookmark.png" />
     <Content Include="imgSmall\colorize.png" />
     <Content Include="imgSmall\history.png" />
