@@ -2,7 +2,7 @@
 
 namespace Com.ChangeSoft.Common
 {
-    public interface IBaseDao
+    public interface IService
     {
     }
 }
