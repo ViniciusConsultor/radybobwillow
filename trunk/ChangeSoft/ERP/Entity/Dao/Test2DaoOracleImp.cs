@@ -9,7 +9,7 @@ using Castle.ActiveRecord.Queries;
 
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
-    public class TestDaoOracleImp : ActiveRecordBase, Com.ChangeSoft.ERP.Entity.Dao.ITestDao,Com.ChangeSoft.Common.IBaseDao
+    public class Test2DaoOracleImp : ActiveRecordBase,Com.ChangeSoft.Common.IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.ITest2Dao
     {
 
         public int Count()
@@ -51,10 +51,10 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
 
         }
 
-        public Test[] GetAll(int uid)
+        public Test2[] GetAll(int uid)
         {
-            SimpleQuery<Test> q = new SimpleQuery<Test>(typeof(Test), @"
-                                from Test where Userid= ?", uid);
+            SimpleQuery<Test2> q = new SimpleQuery<Test2>(typeof(Test2), @"
+                                from Test2 where Id.Userid=1");
             return q.Execute();
 
         }

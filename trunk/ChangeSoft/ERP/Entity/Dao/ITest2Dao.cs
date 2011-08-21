@@ -1,11 +1,9 @@
 ﻿using System;
-using Castle.ActiveRecord;
 namespace Com.ChangeSoft.ERP.Entity.Dao
-
 {
-    public interface ITestDao
+    public interface ITest2Dao
     {
         int Count();
-        Test[] GetAll(int uid);
+        Com.ChangeSoft.ERP.Entity.Test2[] GetAll(int uid);
     }
 }

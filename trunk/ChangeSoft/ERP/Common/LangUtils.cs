@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Threading;
 
 namespace Com.ChangeSoft.Common
 {
@@ -18,7 +19,11 @@ namespace Com.ChangeSoft.Common
 
             result = (IList)ConditionUtils.Conditions[ConditionUtils.COND_LANGUAGE];
             return result;
-        }  
-            
+        }
+
+        public static String GetCurrentLanguage()
+        {
+            return Thread.CurrentThread.CurrentUICulture.Name;
+        }
     }
 }
