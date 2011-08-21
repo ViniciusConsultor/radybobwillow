@@ -121,5 +121,7 @@ namespace Com.ChangeSoft.ERP.Entity
         }
 		
 		#endregion
+
+
 	}
 }

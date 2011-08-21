@@ -5,6 +5,9 @@ using System.Text;
 using log4net;
 using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.Entity.Dao;
+using System.Collections;
+using Com.ChangeSoft.ERP.Entity;
+using System.Threading;
 
 
 namespace Com.ChangeSoft.ERP.Company.Action
@@ -17,12 +20,15 @@ namespace Com.ChangeSoft.ERP.Company.Action
         {
             //Com.ChangeSoft.ERP.Entity.Dao.TestDao td = new Com.ChangeSoft.ERP.Entity.Dao.TestDao();
             //通过Windsor的组件容器，获取Dao的实例
-            ITestDao td = ComponentLocator.Instance().Resolve<ITestDao>();
-            //调用Dao的方法
-            int re = td.Count();
-            
+            IMFunctioncatalogDao td = ComponentLocator.Instance().Resolve<IMFunctioncatalogDao>();
+            ////调用Dao的方法
+            //IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
+
+            //Test td = new Test();
+            IList<MFunctioncatalog> re = td.GetFunctionCatalogList(Thread.CurrentThread.CurrentUICulture.Name);
+
             log.Debug("result=" + re);
-            return re;
+            return re.Count;
 
         }
     }
