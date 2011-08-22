@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using log4net;
 using Com.ChangeSoft.ERP.Company.Action;
 using Com.ChangeSoft.Common;
+using Com.ChangeSoft.ERP.Company.CheckMethod;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace Com.ChangeSoft.ERP.Company
 {
@@ -15,16 +17,30 @@ namespace Com.ChangeSoft.ERP.Company
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmCompany));
 
+
         public FrmCompany()
         {
             log.Info("FrmCompany init start");
+            
             InitializeComponent();
             log.Info("FrmCompany init end");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            Noogen.Validation.ValidationRule vr = new Noogen.Validation.ValidationRule();
+            vr.CustomValidationMethod +=
+             new Noogen.Validation.CustomValidationEventHandler(Check_Company.vr_CustomValidationMethod);
+            this.validationProvider1.SetValidationRule(this.dateTimePicker1, vr);
+            msgwindow.Show();
 
+
+            if(!this.validationProvider1.Validate()){
+                this.validationProvider1.ValidationMessages(
+                      true);
+                return;
+            }
             log.Debug("OK click");
             try
             {
@@ -49,5 +65,6 @@ namespace Com.ChangeSoft.ERP.Company
         {
             throw new NotImplementedException();
         }
+
     }
 }

@@ -15,7 +15,7 @@ using Guifreaks.NavigationBar;
 
 namespace Com.ChangeSoft.ERP
 {
-    public partial class MenuWindow : BaseForm
+    public partial class MenuWindow : DockContent
 
     {
         private DockPanel dockpanel;
@@ -181,7 +181,7 @@ namespace Com.ChangeSoft.ERP
 
 
 
-        public override void Language_Change()
+        public void Language_Change()
         {
   
             
