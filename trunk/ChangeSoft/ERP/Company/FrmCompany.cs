@@ -33,14 +33,15 @@ namespace Com.ChangeSoft.ERP.Company
             vr.CustomValidationMethod +=
              new Noogen.Validation.CustomValidationEventHandler(Check_Company.vr_CustomValidationMethod);
             this.validationProvider1.SetValidationRule(this.dateTimePicker1, vr);
-            msgwindow.Show();
 
 
             if(!this.validationProvider1.Validate()){
-                this.validationProvider1.ValidationMessages(
+                string re = this.validationProvider1.ValidationMessages(
                       true);
+                msgwindow.Show();
                 return;
             }
+
             log.Debug("OK click");
             try
             {
