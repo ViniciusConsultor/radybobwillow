@@ -117,231 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="naviBand3.ClientArea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="naviBand3.ClientArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="naviBand3.ClientArea.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.ClientArea.Name" xml:space="preserve">
-    <value>naviBand3.ClientArea</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.ClientArea.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBandClientArea, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.ClientArea.Parent" xml:space="preserve">
-    <value>naviBand3</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.ClientArea.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="naviBand3.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="naviBand3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 27</value>
-  </data>
-  <data name="naviBand3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="naviBand3.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="naviBand3.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="naviBand3.Text" xml:space="preserve">
-    <value>数据维护</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.Name" xml:space="preserve">
-    <value>naviBand3</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBand, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.Parent" xml:space="preserve">
-    <value>naviBar1</value>
-  </data>
-  <data name="&gt;&gt;naviBand3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="naviBand2.ClientArea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="naviBand2.ClientArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="naviBand2.ClientArea.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.ClientArea.Name" xml:space="preserve">
-    <value>naviBand2.ClientArea</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.ClientArea.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBandClientArea, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.ClientArea.Parent" xml:space="preserve">
-    <value>naviBand2</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.ClientArea.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="naviBand2.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="naviBand2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 27</value>
-  </data>
-  <data name="naviBand2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="naviBand2.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="naviBand2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="naviBand2.Text" xml:space="preserve">
-    <value>库存管理</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.Name" xml:space="preserve">
-    <value>naviBand2</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBand, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.Parent" xml:space="preserve">
-    <value>naviBar1</value>
-  </data>
-  <data name="&gt;&gt;naviBand2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="treeView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="treeView1.ImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -350,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABw
-        FAAAAk1TRnQBSQFMAgEBBgEAAUgBAAFIAQABFgEAARYBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FAAAAk1TRnQBSQFMAgEBBgEAAVABAAFQAQABFgEAARYBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABWAMAASwDAAEBAQABCAUAASABDxgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -440,194 +215,34 @@
         Af4BAAEPAQAJ/wEAAT8BAAs=
 </value>
   </data>
-  <data name="treeView1.Indent" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAH6IqC54K5MAYEAAAAB+iKgueCuTAAAAAAAAYFAAAAAAAAAAAJBQAAAAAA
-        AAAL
-</value>
-  </data>
-  <data name="treeView1.Nodes1" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAH6IqC54K5MQYEAAAAB+iKgueCuTEAAQAAAAYFAAAAAAEAAAAJBQAAAAAA
-        AAAL
-</value>
-  </data>
-  <data name="treeView1.Nodes2" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAH6IqC54K5MgYEAAAAB+iKgueCuTIAAgAAAAYFAAAAAAIAAAAJBQAAAAAA
-        AAAL
-</value>
-  </data>
-  <data name="treeView1.Nodes3" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAH6IqC54K5MwYEAAAAB+iKgueCuTMAAwAAAAYFAAAAAAMAAAAJBQAAAAAA
-        AAAL
-</value>
-  </data>
-  <data name="treeView1.SelectedImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;treeView1.Name" xml:space="preserve">
-    <value>treeView1</value>
-  </data>
-  <data name="&gt;&gt;treeView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
-    <value>naviBand1.ClientArea</value>
-  </data>
-  <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="naviBand1.ClientArea.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="naviBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="naviBand1.ClientArea.Location" type="System.Drawing.Point, System.Drawing">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="naviBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="naviBand1.ClientArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="naviBand1.ClientArea.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.ClientArea.Name" xml:space="preserve">
-    <value>naviBand1.ClientArea</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.ClientArea.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBandClientArea, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.ClientArea.Parent" xml:space="preserve">
-    <value>naviBand1</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.ClientArea.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="naviBand1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAQ3SURBVEhLtZV/SNRnHMef7513/jhPr/vhnZ7H6XWn
-        eDhPMyNmWlQwxnCwlYmlk8HILBlCY6uMYM36R20YDXGMFRgzW0Ep1MWIBUtPbY05deZIz6XpTdPTLLHr
-        zvc+z92t1brVXwovfHg+z/Pi8+P5cgwAWwlWRMoTZbszMvyU2Wys2GZLLTWbPz9gNv9Ua7G4ak2mqWqD
-        4dbbev2Xb1qtOUWZmQWVJtPZGqNxqN5snjluNjsrkpPbM1WqcoVMpjIqlUwXHc0ERn9c+hFJS1JSPjie
-        nu68XVWFudZWeK9dg7etDQv19ejftAkNarW7Ra/33Csrw5PmZnivXoXnyhXcb2rCD9u3oywx0ZGkVK7X
-        yGQBcbnVykpNpj0tW7YsP7XbgcnJABMTAaamgMFB4PBh4MyZwJ7L9W+cr0dG8FddHT5bvXpSExmZx73s
-        Q4vljUabbcZ36RIwMAB0dgIdHcDNm4H/nO5uoK8P6O0FHI4X411dgdj4OKZrarBNq+0RCUIcq9TrG5z7
-        9gE3bgCXLwNUfkh47Pk4tQLXr8N37hwWDh6Eq7QU3qIitKWkQCeTVbFag6HPe+QI0NICnD79eng7zp+H
-        r7ERj3fsgEujwQhj6CcmiDGDAVlKZStrMhhmsX8/cOoUcOJEaGiA/hg/c/IknlJ2D7VaTJHoPjFK3CGc
-        YWF4YDQif9UqO/sqIWHURyXg6FGguvplDh0CeEXUv+W9e7GUmoqHJJkl/hE7af07cS88HC6zGetjYuzs
-        E632onvNGqCiAqisBOjyM3jv6fktl5djKTcXjyIjMU8CNzFNTHIZcZf4jVigtvRYLEiKiGhma2Wy93+k
-        9LFhA3yFhcCuXUBJCUDlLu/ciSV6w26VCjN0kfMgmCmXjvHyg/11RkXBm56OAzrdokQQKlisWBxRHBv7
-        /V2aJihzz8aNWMzLw7zNBldcnP8y7yMXcfiAxok/iWFigK/lcngzMnAhORkGiaSdXrHR/5VECYKuWC63
-        /0xl+LKyMBoT4y/tD4JPnGfFRRy+5ns8xl/CVHw8PNnZOEtVp0kkHaTL938gEkLsXzFFvlT6dXtSEjzr
-        1mFMrUYvXRwkhoIiLuNrnmW/SIR5SsRNZ49pNB6dIFwkx9qAKigOF/xfN89ckikSffpNfPyjRRrWtMmE
-        2yT5legL8gsX0xCfUJbDxB6ZbDaasQa6bnom/a9YLRIxOsQSGHvvmEIxMU3yOWpNj1gMBwk7iTs0SC8N
-        1GG14h2xmLrDPubVviANJVYHs6eT2bul0q6hnBw8phdzi/o+TG1a2roVrfzrYqyb7m8jpC9J/08caAxj
-        sYzFvysI33WmpcFXUIC5zZtRp1D4Ehm7QOGckMJQPeat4BlzMR+oiqB1RC5jX3wbF+euioqaiWGsnraN
-        r5S+KmMu1jxXp5yxt8IYK6Qt9Wul/MBK/JBy599Bx4rgcptsvgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="naviBand1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 27</value>
-  </data>
-  <data name="naviBand1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 195</value>
-  </data>
-  <data name="naviBand1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAQ3SURBVEhLtZV/SNRnHMef7513/jhPr/vhnZ7H6XWn
-        eDhPMyNmWlQwxnCwlYmlk8HILBlCY6uMYM36R20YDXGMFRgzW0Ep1MWIBUtPbY05deZIz6XpTdPTLLHr
-        zvc+z92t1brVXwovfHg+z/Pi8+P5cgwAWwlWRMoTZbszMvyU2Wys2GZLLTWbPz9gNv9Ua7G4ak2mqWqD
-        4dbbev2Xb1qtOUWZmQWVJtPZGqNxqN5snjluNjsrkpPbM1WqcoVMpjIqlUwXHc0ERn9c+hFJS1JSPjie
-        nu68XVWFudZWeK9dg7etDQv19ejftAkNarW7Ra/33Csrw5PmZnivXoXnyhXcb2rCD9u3oywx0ZGkVK7X
-        yGQBcbnVykpNpj0tW7YsP7XbgcnJABMTAaamgMFB4PBh4MyZwJ7L9W+cr0dG8FddHT5bvXpSExmZx73s
-        Q4vljUabbcZ36RIwMAB0dgIdHcDNm4H/nO5uoK8P6O0FHI4X411dgdj4OKZrarBNq+0RCUIcq9TrG5z7
-        9gE3bgCXLwNUfkh47Pk4tQLXr8N37hwWDh6Eq7QU3qIitKWkQCeTVbFag6HPe+QI0NICnD79eng7zp+H
-        r7ERj3fsgEujwQhj6CcmiDGDAVlKZStrMhhmsX8/cOoUcOJEaGiA/hg/c/IknlJ2D7VaTJHoPjFK3CGc
-        YWF4YDQif9UqO/sqIWHURyXg6FGguvplDh0CeEXUv+W9e7GUmoqHJJkl/hE7af07cS88HC6zGetjYuzs
-        E632onvNGqCiAqisBOjyM3jv6fktl5djKTcXjyIjMU8CNzFNTHIZcZf4jVigtvRYLEiKiGhma2Wy93+k
-        9LFhA3yFhcCuXUBJCUDlLu/ciSV6w26VCjN0kfMgmCmXjvHyg/11RkXBm56OAzrdokQQKlisWBxRHBv7
-        /V2aJihzz8aNWMzLw7zNBldcnP8y7yMXcfiAxok/iWFigK/lcngzMnAhORkGiaSdXrHR/5VECYKuWC63
-        /0xl+LKyMBoT4y/tD4JPnGfFRRy+5ns8xl/CVHw8PNnZOEtVp0kkHaTL938gEkLsXzFFvlT6dXtSEjzr
-        1mFMrUYvXRwkhoIiLuNrnmW/SIR5SsRNZ49pNB6dIFwkx9qAKigOF/xfN89ckikSffpNfPyjRRrWtMmE
-        2yT5legL8gsX0xCfUJbDxB6ZbDaasQa6bnom/a9YLRIxOsQSGHvvmEIxMU3yOWpNj1gMBwk7iTs0SC8N
-        1GG14h2xmLrDPubVviANJVYHs6eT2bul0q6hnBw8phdzi/o+TG1a2roVrfzrYqyb7m8jpC9J/08caAxj
-        sYzFvysI33WmpcFXUIC5zZtRp1D4Ehm7QOGckMJQPeat4BlzMR+oiqB1RC5jX3wbF+euioqaiWGsnraN
-        r5S+KmMu1jxXp5yxt8IYK6Qt9Wul/MBK/JBy599Bx4rgcptsvgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="naviBand1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="naviBand1.Text" xml:space="preserve">
-    <value>生产管理</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.Name" xml:space="preserve">
-    <value>naviBand1</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBand, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.Parent" xml:space="preserve">
-    <value>naviBar1</value>
-  </data>
-  <data name="&gt;&gt;naviBand1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="naviBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="naviBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="naviBar1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="naviBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 262</value>
   </data>
-  <data name="naviBar1.TabIndex" type="System.Int32, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="naviBar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="naviBar1.Text" xml:space="preserve">
+  <data name="naviBar.Text" xml:space="preserve">
     <value>naviBar1</value>
   </data>
-  <data name="&gt;&gt;naviBar1.Name" xml:space="preserve">
-    <value>naviBar1</value>
+  <data name="&gt;&gt;naviBar.Name" xml:space="preserve">
+    <value>naviBar</value>
   </data>
-  <data name="&gt;&gt;naviBar1.Type" xml:space="preserve">
+  <data name="&gt;&gt;naviBar.Type" xml:space="preserve">
     <value>Guifreaks.NavigationBar.NaviBar, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
   </data>
-  <data name="&gt;&gt;naviBar1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;naviBar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;naviBar1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;naviBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -635,6 +250,9 @@
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>179, 262</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
   </data>
   <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
     <value>imageList1</value>

@@ -59,5 +59,33 @@ namespace Com.ChangeSoft.ERP.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap MasterDataBig {
+            get {
+                object obj = ResourceManager.GetObject("MasterDataBig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap MasterDataSmall {
+            get {
+                object obj = ResourceManager.GetObject("MasterDataSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap QuoteBig {
+            get {
+                object obj = ResourceManager.GetObject("QuoteBig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap QuoteSmall {
+            get {
+                object obj = ResourceManager.GetObject("QuoteSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

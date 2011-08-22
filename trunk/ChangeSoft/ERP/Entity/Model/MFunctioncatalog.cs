@@ -24,8 +24,9 @@ namespace Com.ChangeSoft.ERP.Entity
 		#region Private Members
 
         private MFunctioncatalogID id; 
-		private string catalogname; 
-		
+		private string catalogname;
+        private string catalogimage;
+
 		#endregion
 
 		#region Constuctor(s)
@@ -33,7 +34,8 @@ namespace Com.ChangeSoft.ERP.Entity
 		public MFunctioncatalog()
 		{
             id = new MFunctioncatalogID();
-			catalogname = String.Empty; 
+			catalogname = String.Empty;
+            catalogimage = String.Empty;
 
 		}
 
@@ -46,6 +48,7 @@ namespace Com.ChangeSoft.ERP.Entity
             id.Catalogid = _catalogid;
             id.Langid = _langid;
 			catalogname = String.Empty;
+            catalogimage = String.Empty;
 		}
 
 		#endregion // End of Class Constuctor(s)
@@ -65,7 +68,12 @@ namespace Com.ChangeSoft.ERP.Entity
 			get { return catalogname; }
 			set { catalogname = value; }
 		}
-
+        [Property(Column = "CATALOGIMAGE", Length = 50)]
+        public string Catalogimage
+        {
+            get { return catalogimage; }
+            set { catalogimage = value; }
+        }
 
 		#endregion 
 
@@ -92,6 +100,8 @@ namespace Com.ChangeSoft.ERP.Entity
 			
 			int hash = 57; 
 			hash = 27 * hash * id.GetHashCode();
+            hash = 27 * hash * catalogname.GetHashCode();
+            hash = 27 * hash * catalogimage.GetHashCode();
 			return hash; 
 		}
 		
@@ -106,6 +116,7 @@ namespace Com.ChangeSoft.ERP.Entity
 			sbuffer.AppendFormat("Langid = {0}, ",id.Langid);
 			sbuffer.AppendFormat("Catalogid = {0}, ",id.Catalogid);
 			sbuffer.AppendFormat("Catalogname = {0}, ",catalogname);
+            sbuffer.AppendFormat("Catalogimage = {0}, ", catalogimage);
 			sbuffer.Append(" }");
 			return sbuffer.ToString();
         }

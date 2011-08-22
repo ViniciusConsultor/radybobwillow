@@ -121,6 +121,9 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Action\Action_MainForm.cs" />
+    <Compile Include="Action\IAction_MainForm.cs" />
+    <Compile Include="FormVo\FunctionVo.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +189,9 @@
     <None Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Config\Action_MainForm.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="dll\policy.2.0.Npgsql.config" />
     <None Include="img\Thumbs.db" />
     <None Include="log4net.config">
@@ -195,14 +201,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service.config">
+    <None Include="Config\Service.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Thumbs.db" />
-    <None Include="Dao.config">
+    <None Include="Config\Dao.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Action_Company.config">
+    <None Include="Config\Action_Company.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Compile Include="Properties\Settings.Designer.cs">
