@@ -36,6 +36,7 @@ using System.Windows.Forms;
 using System.Text;
 using System.Reflection;
 using System.ComponentModel.Design;
+using System.Collections.Generic;
 
 namespace Noogen.Validation
 {
@@ -72,21 +73,56 @@ namespace Noogen.Validation
 
 		/// <summary>
 		/// Get validation error messages.
+        /// Modified by rad 2011/08/22
+        /// return IList<MessageVo>
 		/// </summary>
-		public string ValidationMessages(bool showErrorIcon)
+		public IList<MessageVo> ValidationMessages(bool showErrorIcon)
 		{
-			StringBuilder sb = new StringBuilder();
 			ValidationRule vr = null;
+            IList<MessageVo> messagelist = new List<MessageVo>();
 			foreach(Control ctrl in _ValidationRules.Keys)
 			{
 				vr = this.GetValidationRule(ctrl);
+
 				if (vr != null) 
 				{
 					if (vr.IsValid == false) 
 					{
-						vr.ResultErrorMessage += vr.ErrorMessage.Replace("%ControlName%", ctrl.Name);
-						sb.Append(vr.ResultErrorMessage);
-						sb.Append(Environment.NewLine);
+                        MessageVo msgvo = new MessageVo();
+                        msgvo.MessageType = "Warning";
+                        if (vr.IsRequiredFieldError)
+                        {
+                            vr.ResultErrorMessage += vr.RequiredFieldErroMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+                        if (vr.IsDataTypeError)
+                        {
+                            vr.ResultErrorMessage += vr.DataTypeErrorMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+                        if (vr.IsCompareError)
+                        {
+                            vr.ResultErrorMessage += vr.CompareErrorMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+                        if (vr.IsRangeError)
+                        {
+                            vr.ResultErrorMessage += vr.RangeErroMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+                        if (vr.IsRegularExpressionError)
+                        {
+                            vr.ResultErrorMessage += vr.RegularExpressionErrorMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+                        if (vr.IsCustomError)
+                        {
+                            vr.ResultErrorMessage += vr.CustomErrorMessage;
+                            msgvo.MessageType = "Warning";
+                        }
+						vr.ResultErrorMessage = vr.ResultErrorMessage.Replace("%ControlName%", ctrl.Name);
+                        msgvo.ResultMessage = vr.ResultErrorMessage;
+                        messagelist.Add(msgvo);
 					}
 					if (showErrorIcon)
 						this._ErrorProvider.SetError(ctrl, vr.ResultErrorMessage);
@@ -94,7 +130,7 @@ namespace Noogen.Validation
 						this._ErrorProvider.SetError(ctrl, null);
 				}
 			}
-			return sb.ToString();
+			return messagelist;
 		}
 		#endregion
 
@@ -114,6 +150,9 @@ namespace Noogen.Validation
 				vr.IsValid = true;
 			}
 
+            if (vr == null || vr.IsValid)
+                vr = this.RequiredFieldValidate(ctrl);
+
 			if (vr == null || vr.IsValid)
 				vr = this.DataTypeValidate(ctrl);
 
@@ -121,16 +160,14 @@ namespace Noogen.Validation
 				vr = this.CompareValidate(ctrl);
 
 			if (vr == null || vr.IsValid)
-				vr = this.CustomValidate(ctrl);
-
-			if (vr == null || vr.IsValid)
 				vr = this.RangeValidate(ctrl);
 
 			if (vr == null || vr.IsValid)
 				vr = this.RegularExpressionValidate(ctrl);
 
-			if (vr == null || vr.IsValid)
-				vr = this.RequiredFieldValidate(ctrl);
+
+            if (vr == null || vr.IsValid)
+                vr = this.CustomValidate(ctrl);
 
 			return (vr == null) ? true : vr.IsValid;
 		}
@@ -154,6 +191,8 @@ namespace Noogen.Validation
 					vr.DataType.ToString());
 
 				vr.IsValid = ValidationUtil.CanConvert(ctrl.Text, vdt);
+                //add by rad 2011/08/22
+                vr.IsDataTypeError = !vr.IsValid;
 			}
 
 			return vr;
@@ -174,6 +213,8 @@ namespace Noogen.Validation
 					&& this._DefaultValidationRule.Operator.Equals(vr.Operator)) return vr;
 
 				vr.IsValid = ValidationRule.Compare(ctrl.Text, vr.ValueToCompare, vr.Operator, vr);
+                //add by rad 2011/8/22
+                vr.IsCompareError = !vr.IsValid;
 			}
 			
 			return vr;
@@ -192,6 +233,8 @@ namespace Noogen.Validation
 			{
 				CustomValidationEventArgs e = new CustomValidationEventArgs(ctrl.Text, vr);
 				vr.OnCustomValidationMethod(e);
+                //add by rad 2011/8/22
+                vr.IsCustomError = !vr.IsValid;
 			}
 			return vr;
 		}
@@ -214,6 +257,8 @@ namespace Noogen.Validation
 
 				if (vr.IsValid)
 					vr.IsValid = ValidationRule.Compare(ctrl.Text, vr.MaximumValue, ValidationCompareOperator.LessThanEqual, vr);
+                //add by rad 2011/8/22
+                vr.IsRangeError = !vr.IsValid;
 			}
 			return vr;
 		}
@@ -246,11 +291,15 @@ namespace Noogen.Validation
 					if (this._DefaultValidationRule.RegExPattern.Equals(vr.RegExPattern)) return vr;
 
 					vr.IsValid = ValidationUtil.ValidateRegEx(ctrl.Text, vr.RegExPattern);
+                    //add by rad 2011/8/22
+                    vr.IsRegularExpressionError = !vr.IsValid;
 				}
 				catch(Exception ex)
 				{
 					vr.ResultErrorMessage = "RegEx Validation Exception: " + ex.Message + Environment.NewLine;
 					vr.IsValid = false;
+                    //add by rad 2011/8/22
+                    vr.IsRegularExpressionError = !vr.IsValid;
 				}
 			}
 			return vr;
@@ -269,6 +318,8 @@ namespace Noogen.Validation
 			{
 				ValidationRule vr2 = new ValidationRule();
 				vr.IsValid = !ValidationRule.Compare(ctrl.Text, vr.InitialValue, ValidationCompareOperator.Equal, vr);
+                //add by rad 2011/8/22
+                vr.IsRequiredFieldError = !vr.IsValid;
 			}
 
 			return vr;
