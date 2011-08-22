@@ -1,4 +1,4 @@
-#region Copyright © 2005 Noogen Technologies Inc.
+#region Copyright ?2005 Noogen Technologies Inc.
 // Author:
 //	Tommy Noogen (tom@noogen.net)
 //
@@ -37,218 +37,317 @@ using System.Web.UI.WebControls;
 
 namespace Noogen.Validation
 {
-	/// <summary>
-	/// ValidationRule is designed to be a simple as possible to
-	/// reduce overhead in run-time.  It's because each validation
-	/// rule can be attach to a control, so we can have a many
-	/// instances of this class.
-	/// </summary>
-	[TypeConverter(typeof(Noogen.Validation.Design.ValidationRuleConverter))]
-	public class ValidationRule : ICloneable
-	{
-		#region "Basic Settings"
-		internal string				ResultErrorMessage	= string.Empty;
+    /// <summary>
+    /// ValidationRule is designed to be a simple as possible to
+    /// reduce overhead in run-time.  It's because each validation
+    /// rule can be attach to a control, so we can have a many
+    /// instances of this class.
+    /// </summary>
+    [TypeConverter(typeof(Noogen.Validation.Design.ValidationRuleConverter))]
+    public class ValidationRule : ICloneable
+    {
+        #region "Basic Settings"
+        internal string ResultErrorMessage = string.Empty;
 
-		private string				_ErrorMessage		= "%ControlName% is invalid.";
-		private string				_InitialValue		= string.Empty;
-		private ValidationDataType  _DataType			= ValidationDataType.String;
-		private bool				_IsValid			= true;
-		private bool				_IsRequired			= false;
-		private bool				_IsCaseSensitive	= true;
+        private string _ErrorMessage = "%ControlName% is invalid.";
+        private string _InitialValue = string.Empty;
+        private ValidationDataType _DataType = ValidationDataType.String;
+        private bool _IsValid = true;
+        private bool _IsRequired = false;
+        private bool _IsCaseSensitive = true;
 
-		/// <summary>
-		/// Set validation case sensitivity.
-		/// </summary>
-		[DefaultValue(true), Category("Basic Settings")]
-		[Description("Case sensitivity validation works best with String DataType.")]
-		public bool IsCaseSensitive
-		{
-			get { return _IsCaseSensitive; }
-			set { _IsCaseSensitive = value; }
-		}
+        //add by rad 2011/8/22
+        private bool _IsRequiredFieldError = false;
 
-		/// <summary>
-		/// Data Type of the validation.
-		/// </summary>
-		[DefaultValue(ValidationDataType.String), Category("Basic Settings")]
-		[Description("DataType of control value.")]
-		public ValidationDataType DataType
-		{
-			get { return _DataType; }
-			set { _DataType = value; }
-		}
+        private bool _IsDataTypeError = false;
 
-		/// <summary>
-		/// ErrorMessage result of validation.
-		/// </summary>
-		[DefaultValue("%ControlName% is invalid."), Category("Basic Settings")]
-		[Description("Message to display/return iwhen validation failed.")]
-		public string ErrorMessage
-		{
-			get { return _ErrorMessage; }
-			set { _ErrorMessage = (value == null) ? string.Empty : value; }
-		}
+        private bool _IsCompareError = false;
 
-		/// <summary>
-		/// Get validity of control value after Validate method is called.
-		/// </summary>
-		[DefaultValue(true), Browsable(false)]
-		public bool IsValid
-		{
-			get { return _IsValid; }
-			set { _IsValid = value; }
-		}
+        private bool _IsCustomError = false;
 
-		/// <summary>
-		/// A mandatory value does not necessarily mean a value other than "". 
-		/// In some cases, a default control value might be used as a prompt 
-		/// e.g. using "[Choose a value]" in a DropDownList control. In this case, 
-		/// the required value must be different than the initial value of 
-		/// "[Choose a value]". InitialValue supports this requirement. The 
-		/// default is "".
-		/// </summary>
-		[DefaultValue(""), Category("Basic Settings")]
-		[Description("Initial value doesn't necessarily be empty string.  It might be like [Choose a value] as in a a DropDown list.")]
-		public string InitialValue
-		{
-			get { return _InitialValue; }
-			set { _InitialValue = (value == null) ? string.Empty : value; }
-		}
+        private bool _IsRangeError = false;
 
-		/// <summary>
-		/// Cause validation to check if field is required.
-		/// </summary>
-		[DefaultValue(false), Category("Basic Settings")]
-		[Description("Make it so control require a value.  Validate to false if control value matches InitialValue.")]
-		public bool IsRequired
-		{
-			get { return _IsRequired; }
-			set { _IsRequired = value; }
-		}
-		#endregion
+        private bool _IsRegularExpressionError = false;
 
-		#region "Compare Validation Settings"
-		private ValidationCompareOperator		_Operator			= ValidationCompareOperator.DataTypeCheck;
-		private string							_ValueToCompare		= string.Empty;
-		
-		/// <summary>
-		/// Get or set operator to use to compare.
-		/// </summary>
-		[DefaultValue(ValidationCompareOperator.DataTypeCheck), Category("Compare Validation")]
-		[Description("Type of comparison to perform with ValueToCompare.  Default is data type checking if DataType is not String.")]
-		public ValidationCompareOperator Operator
-		{
-			get { return _Operator; }
-			set { _Operator = value; }
-		}
+        private string _RequiredFieldErroMessage = "%ControlName% is invalid.";
+        private string _DataTypeErrorMessage = "%ControlName% is invalid.";
+        private string _CompareErrorMessage = "%ControlName% is invalid.";
+        private string _RangeErroMessage = "%ControlName% is invalid.";
+        private string _CustomErrorMessage = "%ControlName% is invalid.";
+        private string _RegularExpressionErrorMessage = "%ControlName% is invalid.";
 
-		/// <summary>
-		/// Get or set value use to compare with the control value.
-		/// </summary>
-		[DefaultValue(""), Category("Compare Validation")]
-		[Description("This is use in combination with Operator.")]
-		public string ValueToCompare
-		{
-			get { return _ValueToCompare; }
-			set { _ValueToCompare = (value == null) ? string.Empty : value; }
-		}
-		#endregion
 
-		#region "Range Validation Settings"
-		private string				_MinimumValue = string.Empty;
-		private string				_MaximumValue = string.Empty;
+        
 
-		/// <summary>
-		/// RangeValidator Minimum Value.
-		/// </summary>
-		[DefaultValue(""), Category("Range Validation")]
-		[Description("Highest value the control can have.  Remember to set DataType when range is not of type String.")]
-		public string MinimumValue 
-		{
-			get { return _MinimumValue; }
-			set 
-			{
-				_MinimumValue = (value == null) ? string.Empty : value; 
-			}
-		}
+        /// <summary>
+        /// Set validation case sensitivity.
+        /// </summary>
+        [DefaultValue(true), Category("Basic Settings")]
+        [Description("Case sensitivity validation works best with String DataType.")]
+        public bool IsCaseSensitive
+        {
+            get { return _IsCaseSensitive; }
+            set { _IsCaseSensitive = value; }
+        }
 
-		/// <summary>
-		/// RangeValidator MaximumValue Value.
-		/// </summary>
-		[DefaultValue(""), Category("Range Validation")]
-		[Description("Lowest value the control can have.  Remember to set DataType when range is not of type String.")]
-		public string MaximumValue
-		{
-			get { return _MaximumValue; }
-			set 
-			{
-				_MaximumValue = (value == null) ? string.Empty : value; 
-			}
-		}
-		#endregion
+        /// <summary>
+        /// Data Type of the validation.
+        /// </summary>
+        [DefaultValue(ValidationDataType.String), Category("Basic Settings")]
+        [Description("DataType of control value.")]
+        public ValidationDataType DataType
+        {
+            get { return _DataType; }
+            set { _DataType = value; }
+        }
 
-		#region "Regular Expression Validation Settings"
-		private string		_RegExPattern	= string.Empty;
+        public bool IsRequiredFieldError
+        {
+            get { return _IsRequiredFieldError; }
+            set { _IsRequiredFieldError = value; }
+        }
+        public bool IsDataTypeError
+        {
+            get { return _IsDataTypeError; }
+            set { _IsDataTypeError = value; }
+        }
+        public bool IsCompareError
+        {
+            get { return _IsCompareError; }
+            set { _IsCompareError = value; }
+        }
+        public bool IsCustomError
+        {
+            get { return _IsCustomError; }
+            set { _IsCustomError = value; }
+        }
 
-		/// <summary>
-		/// Regular Expression Pattern to use for validation.
-		/// </summary>
-		[DefaultValue(""), Category("Regular Expression Validation")]
-		[Description("Regular Expression Pattern to use for validation.  See accompanied regular expression bank...")]
-		public string RegExPattern
-		{
-			get { return _RegExPattern; }
-			set { _RegExPattern = (value == null) ? string.Empty : value; }
-		}
-		#endregion
-		
-		/// <summary>
-		/// Allow for attachment of custom validation method.
-		/// </summary>
-		public event CustomValidationEventHandler CustomValidationMethod;
+        public bool IsRangeError
+        {
+            get { return _IsRangeError; }
+            set { _IsRangeError = value; }
+        }
 
-		/// <summary>
-		/// Delegate invoking of validation method.
-		/// </summary>
-		/// <param name="e"></param>
-		internal protected virtual void OnCustomValidationMethod(CustomValidationEventArgs e)
-		{
-			if (this.CustomValidationMethod != null)
-				this.CustomValidationMethod(this, e);
-		}
+        public bool IsRegularExpressionError
+        {
+            get { return _IsRegularExpressionError; }
+            set { _IsRegularExpressionError = value; }
+        }
 
-		/// <summary>
-		/// Compare two values.
-		/// </summary>
-		/// <param name="leftText"></param>
-		/// <param name="rightText"></param>
-		/// <param name="op"></param>
-		/// <param name="vr"></param>
-		/// <returns></returns>
-		public static bool Compare(	string leftText, 
-									string rightText, 
-									ValidationCompareOperator op, 
-									ValidationRule vr)
-		{
-			if (false == vr.IsCaseSensitive && vr.DataType == ValidationDataType.String)
-			{
-				leftText = leftText.ToLower();
-				rightText = rightText.ToLower();
-			}
-			return ValidationUtil.CompareValues(leftText, rightText, op, vr.DataType);
-		}
 
-		#region ICloneable Members
+        public string RequiredFieldErroMessage
+        {
+            get { return _RequiredFieldErroMessage; }
+            set { _RequiredFieldErroMessage = value; }
+        }
 
-		/// <summary>
-		/// ValidationRule is memberwised cloneable.
-		/// </summary>
-		/// <returns></returns>
-		public object Clone()
-		{
-			return this.MemberwiseClone();
-		}
 
-		#endregion
-	}
+        public string DataTypeErrorMessage
+        {
+            get { return _DataTypeErrorMessage; }
+            set { _DataTypeErrorMessage = value; }
+        }
+
+
+        public string CompareErrorMessage
+        {
+            get { return _CompareErrorMessage; }
+            set { _CompareErrorMessage = value; }
+        }
+
+
+        public string RangeErroMessage
+        {
+            get { return _RangeErroMessage; }
+            set { _RangeErroMessage = value; }
+        }
+
+
+        public string CustomErrorMessage
+        {
+            get { return _CustomErrorMessage; }
+            set { _CustomErrorMessage = value; }
+        }
+
+
+        public string RegularExpressionErrorMessage
+        {
+            get { return _RegularExpressionErrorMessage; }
+            set { _RegularExpressionErrorMessage = value; }
+        }
+
+
+        /// <summary>
+        /// ErrorMessage result of validation.
+        /// </summary>
+        [DefaultValue("%ControlName% is invalid."), Category("Basic Settings")]
+        [Description("Message to display/return iwhen validation failed.")]
+        public string ErrorMessage
+        {
+            get { return _ErrorMessage; }
+            set { _ErrorMessage = (value == null) ? string.Empty : value; }
+        }
+
+        /// <summary>
+        /// Get validity of control value after Validate method is called.
+        /// </summary>
+        [DefaultValue(true), Browsable(false)]
+        public bool IsValid
+        {
+            get { return _IsValid; }
+            set { _IsValid = value; }
+        }
+
+        /// <summary>
+        /// A mandatory value does not necessarily mean a value other than "". 
+        /// In some cases, a default control value might be used as a prompt 
+        /// e.g. using "[Choose a value]" in a DropDownList control. In this case, 
+        /// the required value must be different than the initial value of 
+        /// "[Choose a value]". InitialValue supports this requirement. The 
+        /// default is "".
+        /// </summary>
+        [DefaultValue(""), Category("Basic Settings")]
+        [Description("Initial value doesn't necessarily be empty string.  It might be like [Choose a value] as in a a DropDown list.")]
+        public string InitialValue
+        {
+            get { return _InitialValue; }
+            set { _InitialValue = (value == null) ? string.Empty : value; }
+        }
+
+        /// <summary>
+        /// Cause validation to check if field is required.
+        /// </summary>
+        [DefaultValue(false), Category("Basic Settings")]
+        [Description("Make it so control require a value.  Validate to false if control value matches InitialValue.")]
+        public bool IsRequired
+        {
+            get { return _IsRequired; }
+            set { _IsRequired = value; }
+        }
+        #endregion
+
+        #region "Compare Validation Settings"
+        private ValidationCompareOperator _Operator = ValidationCompareOperator.DataTypeCheck;
+        private string _ValueToCompare = string.Empty;
+
+        /// <summary>
+        /// Get or set operator to use to compare.
+        /// </summary>
+        [DefaultValue(ValidationCompareOperator.DataTypeCheck), Category("Compare Validation")]
+        [Description("Type of comparison to perform with ValueToCompare.  Default is data type checking if DataType is not String.")]
+        public ValidationCompareOperator Operator
+        {
+            get { return _Operator; }
+            set { _Operator = value; }
+        }
+
+        /// <summary>
+        /// Get or set value use to compare with the control value.
+        /// </summary>
+        [DefaultValue(""), Category("Compare Validation")]
+        [Description("This is use in combination with Operator.")]
+        public string ValueToCompare
+        {
+            get { return _ValueToCompare; }
+            set { _ValueToCompare = (value == null) ? string.Empty : value; }
+        }
+        #endregion
+
+        #region "Range Validation Settings"
+        private string _MinimumValue = string.Empty;
+        private string _MaximumValue = string.Empty;
+
+        /// <summary>
+        /// RangeValidator Minimum Value.
+        /// </summary>
+        [DefaultValue(""), Category("Range Validation")]
+        [Description("Highest value the control can have.  Remember to set DataType when range is not of type String.")]
+        public string MinimumValue
+        {
+            get { return _MinimumValue; }
+            set
+            {
+                _MinimumValue = (value == null) ? string.Empty : value;
+            }
+        }
+
+        /// <summary>
+        /// RangeValidator MaximumValue Value.
+        /// </summary>
+        [DefaultValue(""), Category("Range Validation")]
+        [Description("Lowest value the control can have.  Remember to set DataType when range is not of type String.")]
+        public string MaximumValue
+        {
+            get { return _MaximumValue; }
+            set
+            {
+                _MaximumValue = (value == null) ? string.Empty : value;
+            }
+        }
+        #endregion
+
+        #region "Regular Expression Validation Settings"
+        private string _RegExPattern = string.Empty;
+
+        /// <summary>
+        /// Regular Expression Pattern to use for validation.
+        /// </summary>
+        [DefaultValue(""), Category("Regular Expression Validation")]
+        [Description("Regular Expression Pattern to use for validation.  See accompanied regular expression bank...")]
+        public string RegExPattern
+        {
+            get { return _RegExPattern; }
+            set { _RegExPattern = (value == null) ? string.Empty : value; }
+        }
+        #endregion
+
+        /// <summary>
+        /// Allow for attachment of custom validation method.
+        /// </summary>
+        public event CustomValidationEventHandler CustomValidationMethod;
+
+        /// <summary>
+        /// Delegate invoking of validation method.
+        /// </summary>
+        /// <param name="e"></param>
+        internal protected virtual void OnCustomValidationMethod(CustomValidationEventArgs e)
+        {
+            if (this.CustomValidationMethod != null)
+                this.CustomValidationMethod(this, e);
+        }
+
+        /// <summary>
+        /// Compare two values.
+        /// </summary>
+        /// <param name="leftText"></param>
+        /// <param name="rightText"></param>
+        /// <param name="op"></param>
+        /// <param name="vr"></param>
+        /// <returns></returns>
+        public static bool Compare(string leftText,
+                                    string rightText,
+                                    ValidationCompareOperator op,
+                                    ValidationRule vr)
+        {
+            if (false == vr.IsCaseSensitive && vr.DataType == ValidationDataType.String)
+            {
+                leftText = leftText.ToLower();
+                rightText = rightText.ToLower();
+            }
+            return ValidationUtil.CompareValues(leftText, rightText, op, vr.DataType);
+        }
+
+        #region ICloneable Members
+
+        /// <summary>
+        /// ValidationRule is memberwised cloneable.
+        /// </summary>
+        /// <returns></returns>
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
+
+        #endregion
+    }
 }

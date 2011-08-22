@@ -69,6 +69,7 @@ namespace Com.ChangeSoft.ERP
             SplashScreen.UdpateStatusText("Loading Items!!!");
             ToolStripManager.Renderer = new Office2007Renderer();
             rm = new System.Resources.ResourceManager(typeof(MainForm));
+            
             //get all condition
             String d = LangUtils.GetDefaultLanguage();
             ConditionUtils.GetAllConditionsList(d);

@@ -30,14 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCompany));
-            Noogen.Validation.ValidationRule validationRule1 = new Noogen.Validation.ValidationRule();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
-            this.validationProvider2 = new Noogen.Validation.ValidationProvider(this.components);
             this.button2 = new System.Windows.Forms.Button();
+            this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -46,14 +44,11 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            validationRule1.IsRequired = true;
-            this.validationProvider1.SetValidationRule(this.textBox1, validationRule1);
             // 
             // comboBox1
             // 
@@ -66,22 +61,16 @@
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Name = "dateTimePicker1";
             // 
-            // validationProvider1
-            // 
-            this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
-            resources.ApplyResources(this.validationProvider1, "validationProvider1");
-            // 
-            // validationProvider2
-            // 
-            this.validationProvider2.BlinkRate = 500;
-            this.validationProvider2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
-            resources.ApplyResources(this.validationProvider2, "validationProvider2");
-            // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // validationProvider1
+            // 
+            this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            resources.ApplyResources(this.validationProvider1, "validationProvider1");
             // 
             // FrmCompany
             // 
@@ -108,8 +97,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private Noogen.Validation.ValidationProvider validationProvider1;
-        private Noogen.Validation.ValidationProvider validationProvider2;
         private System.Windows.Forms.Button button2;
+        private Noogen.Validation.ValidationProvider validationProvider1;
     }
 }
