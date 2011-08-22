@@ -23,17 +23,19 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                //            SimpleQuery<MFunctioncatalog> q = new SimpleQuery<MFunctioncatalog>(typeof(MFunctioncatalog), @"
-                //                                from MFunctioncatalog where Id.Langid=?", langid);
-                //            result = q.Execute();
-                string query = @"
-                        select LANGID,CATALOGID,CATALOGNAME from M_FUNCTIONCATALOG
-                        where 
-                            LANGID = :key";
-                result = ss.CreateSQLQuery(query)
-                            .AddEntity(typeof(MFunctioncatalog))
-                            .SetParameter("key", langid)
-                            .List<MFunctioncatalog>();
+                SimpleQuery<MFunctioncatalog> q = new SimpleQuery<MFunctioncatalog>(typeof(MFunctioncatalog), @"
+                                                from MFunctioncatalog where Id.Langid=?", langid);
+                result = q.Execute();
+//                string query = @"
+//                        select LANGID,CATALOGID,CATALOGNAME from M_FUNCTIONCATALOG
+//                        where 
+//                            LANGID = :key";
+//                result = ss.CreateSQLQuery(query)
+//                            .AddEntity(typeof(MFunctioncatalog))
+//                            .SetParameter("key", langid)
+//                            .List<MFunctioncatalog>();
+
+
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {

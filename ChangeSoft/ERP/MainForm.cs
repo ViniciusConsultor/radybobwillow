@@ -18,6 +18,8 @@ using NHibernate.Mapping;
 using Com.ChangeSoft.Common;
 using System.Collections;
 using Castle.Windsor;
+using Com.ChangeSoft.ERP.Action;
+using Com.ChangeSoft.ERP.FormVo;
 
 namespace Com.ChangeSoft.ERP
 {
@@ -66,8 +68,6 @@ namespace Com.ChangeSoft.ERP
         {
             SplashScreen.UdpateStatusText("Loading Items!!!");
             ToolStripManager.Renderer = new Office2007Renderer();
-            menuWindow = new MenuWindow(this.dockPanel);
-            menuWindow.Show(this.dockPanel, DockState.DockLeft);
             rm = new System.Resources.ResourceManager(typeof(MainForm));
             //get all condition
             String d = LangUtils.GetDefaultLanguage();
@@ -78,7 +78,7 @@ namespace Com.ChangeSoft.ERP
             //castle windsor initial
             ComponentLocator.Instance();
 
-
+            init_Menu();
             
             //Thread.Sleep(1000);
             //SplashScreen.UdpateStatusTextWithStatus("Success Message", TypeOfMessage.Success);
@@ -109,6 +109,17 @@ namespace Com.ChangeSoft.ERP
             Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.InvariantCulture;
 
         }
+
+        private void init_Menu()
+        {
+            IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
+            IList<FunctionVo> flist = af.GetFunctionDataList();
+
+            menuWindow = new MenuWindow(this.dockPanel,flist);
+            menuWindow.Show(this.dockPanel, DockState.DockLeft);
+
+        }
+
         private void init_ToolStripComboBox()
         {
             langItemlist = LangUtils.GetLanguageList();
