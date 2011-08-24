@@ -20,12 +20,12 @@ namespace Com.ChangeSoft.ERP.Company.Action
         {
             //Com.ChangeSoft.ERP.Entity.Dao.TestDao td = new Com.ChangeSoft.ERP.Entity.Dao.TestDao();
             //通过Windsor的组件容器，获取Dao的实例
-            IMFunctioncatalogDao td = ComponentLocator.Instance().Resolve<IMFunctioncatalogDao>();
+            ICFunctionAllDao td = ComponentLocator.Instance().Resolve<ICFunctionAllDao>();
             ////调用Dao的方法
             //IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
 
             //Test td = new Test();
-            IList<MFunctioncatalog> re = td.GetFunctionCatalogList(Thread.CurrentThread.CurrentUICulture.Name);
+            IList<CFunctionAll> re = td.GetFunctionAllList(Thread.CurrentThread.CurrentUICulture.Name);
 
             log.Debug("result=" + re);
             return re.Count;
