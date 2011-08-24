@@ -31,38 +31,45 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductPlan));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.btnCode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.AccessibleDescription = null;
-            this.button1.AccessibleName = null;
             resources.ApplyResources(this.button1, "button1");
-            this.button1.BackgroundImage = null;
-            this.button1.Font = null;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AccessibleDescription = null;
-            this.label1.AccessibleName = null;
             resources.ApplyResources(this.label1, "label1");
-            this.label1.Font = null;
             this.label1.Name = "label1";
+            // 
+            // txtCode
+            // 
+            resources.ApplyResources(this.txtCode, "txtCode");
+            this.txtCode.Name = "txtCode";
+            // 
+            // btnCode
+            // 
+            resources.ApplyResources(this.btnCode, "btnCode");
+            this.btnCode.Name = "btnCode";
+            this.btnCode.UseVisualStyleBackColor = true;
+            this.btnCode.Click += new System.EventHandler(this.btnCode_Click);
             // 
             // FrmProductPlan
             // 
-            this.AccessibleDescription = null;
-            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackgroundImage = null;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCode);
+            this.Controls.Add(this.txtCode);
             this.Controls.Add(this.button1);
-            this.Font = null;
-            this.Icon = null;
+            this.Controls.Add(this.label1);
             this.Name = "FrmProductPlan";
-            this.ToolTipText = null;
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.txtCode, 0);
+            this.Controls.SetChildIndex(this.btnCode, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,5 +79,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Button btnCode;
     }
 }

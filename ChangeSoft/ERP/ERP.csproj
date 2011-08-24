@@ -274,6 +274,10 @@
     <Content Include="Resources\Up.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="CodeRef\CodeRef.csproj">
+      <Project>{4BD74F38-FF5A-41B2-B498-EB1D6BB631AB}</Project>
+      <Name>CodeRef</Name>
+    </ProjectReference>
     <ProjectReference Include="Common\Common.csproj">
       <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
       <Name>Common</Name>
