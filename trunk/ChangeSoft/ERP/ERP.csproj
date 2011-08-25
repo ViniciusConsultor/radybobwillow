@@ -192,6 +192,9 @@
     <None Include="Config\Action_MainForm.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Config\Action_CodeRef.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="dll\policy.2.0.Npgsql.config" />
     <None Include="img\Thumbs.db" />
     <None Include="log4net.config">
