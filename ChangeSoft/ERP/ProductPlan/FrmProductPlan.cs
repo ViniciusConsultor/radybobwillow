@@ -25,6 +25,11 @@ namespace Com.ChangeSoft.ERP.ProductPlan
         {
             TestCode frm = new TestCode();
             frm.ShowDialog(this);
+
+            if (!String.IsNullOrEmpty(frm.strReturn))
+            {
+                this.txtCode.Text = frm.strReturn;
+            }
         }
     }
 }

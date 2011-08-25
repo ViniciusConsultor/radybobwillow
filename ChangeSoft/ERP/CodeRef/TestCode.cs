@@ -30,7 +30,29 @@ namespace Com.ChangeSoft.ERP.CodeRef
             IAction_TestCode af = ComponentLocator.Instance().Resolve<IAction_TestCode>();
             IList<MFunctioncatalog> flist = af.GetFunctionDataList();
 
-            this.dgvCode.DataSource = flist;
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Columns.Add("Name");
+
+            foreach (MFunctioncatalog mfvo in flist)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = mfvo.Id.Catalogid;
+                dr[1] = mfvo.Catalogname;
+                dt.Rows.Add(dr);
+            }
+
+            this.dgvCode.DataSource = dt;
+        }
+
+        private void dgvCode_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow dgvr = this.dgvCode.CurrentRow;
+            MessageBox.Show(dgvr.Cells[0].Value.ToString());
+
+            this.strReturn = dgvr.Cells[0].Value.ToString();
+            this.Close();
+            this.Dispose();
         }
     }
 }
