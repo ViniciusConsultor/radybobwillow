@@ -19,11 +19,11 @@ namespace Com.ChangeSoft.ERP
 
     {
         private DockPanel dockpanel;
-        IList<FunctionVo> functionlist;
-        public MenuWindow(DockPanel dk,IList<FunctionVo> _flist)
+        IList<FunctionAllVo> functionalllist;
+        public MenuWindow(DockPanel dk,IList<FunctionAllVo> _flist)
         {
             this.dockpanel = dk;
-            this.functionlist = _flist;
+            this.functionalllist = _flist;
             InitializeComponent();
             InitNaviBar();
             naviBar.ActiveBand = naviBar.Bands[0];
@@ -32,7 +32,7 @@ namespace Com.ChangeSoft.ERP
         public void InitNaviBar()
         {
             IList<TreeView> treeviewlist = new List<TreeView>();
-            foreach (FunctionVo fvo in functionlist)
+            foreach (FunctionAllVo fvo in functionalllist)
             {
                 int i = 0;
                 NaviBand band = new NaviBand();
@@ -44,56 +44,46 @@ namespace Com.ChangeSoft.ERP
                 band.SmallImage = (Image)Properties.Resources.ResourceManager.GetObject(fvo.Catalogimage+"Small");
                 band.LargeImage = (Image)Properties.Resources.ResourceManager.GetObject(fvo.Catalogimage+"Big");
                 band.Tag = fvo.Catalogid;
-                InitTreeView(band);
+                InitTreeView(band,fvo.Functionlist);
 
                 naviBar.Bands.Add(band);
                 i++;
             }
         }
 
-        private void InitTreeView(NaviBand band)
+        private void InitTreeView(NaviBand band,IList<FunctionVo> functionlist)
         {
 
             TreeView treeView1 = new TreeView();
-
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("节点0");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("节点1");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("节点2");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("节点3");
-
             treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             treeView1.FullRowSelect = true;
             treeView1.Indent = 50;
             treeView1.ItemHeight = 50;
             treeView1.Location = new System.Drawing.Point(0, 0);
-            treeView1.Name = "treeView1";
-            if ("1".Equals(band.Tag.ToString()))
-            {
-                treeNode1.Text = "FrmCompany0";
-                treeNode1.Name = "FrmCompany0";
-                treeNode1.Tag = "FrmCompany";
-            }
-            else
-            {
-                treeNode1.Text = "FrmProductPlan0";
-                treeNode1.Name = "FrmProductPlan0";
-                treeNode1.Tag = "FrmProductPlan";
-            }
-
-            treeNode2.Name = "节点1";
-            treeNode2.Text = "节点1";
-            treeNode3.Name = "节点2";
-            treeNode3.Text = "节点2";
-            treeNode4.Name = "节点3";
-            treeNode4.Text = "节点3";
-            treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            treeView1.ShowRootLines = false;
+            treeView1.Name = band.Text;
+            treeView1.ShowRootLines = true;
+            treeView1.ShowLines = false;
             treeView1.Size = new System.Drawing.Size(196, 271);
+            ImageList imagelist = new ImageList();
+            imagelist.ImageSize = new Size(48,48);
+
+            treeView1.ImageList = imagelist;
             treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
+
+
+            foreach (FunctionVo vo in functionlist)
+            {
+                TreeNode treeNode1 = new TreeNode(vo.Functionname);
+                treeNode1.Tag = vo.Functionpath;
+                treeNode1.Name = vo.Functionname;
+                treeNode1.Text = vo.Functionname;
+                treeView1.ImageList.Images.Add(vo.Functionimage,(Image)Properties.Resources.ResourceManager.GetObject(vo.Functionimage));
+                treeNode1.ImageKey = vo.Functionimage;
+                treeNode1.SelectedImageKey = vo.Functionimage;
+                treeView1.Nodes.Add(treeNode1);
+
+
+            }
 
             band.ClientArea.Controls.Add(treeView1);
 
@@ -148,12 +138,20 @@ namespace Com.ChangeSoft.ERP
             {
                 return;
             }
-            if ("FrmCompany".Equals(e.Node.Tag))
+
+
+            //BaseForm td = (BaseForm)ComponentLocator.Instance().Resolve(e.Node.Tag.ToString(), typeof(BaseForm));
+
+            //td.Show(this.dockpanel);
+            //td.BringToFront();
+
+            if ("FCompany".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument("企业数据维护");
+                DockContent frm = FindDocument(e.Node.Text);
                 if (frm == null)
                 {
                     FrmCompany frmcom = new FrmCompany();
+                    frmcom.Text = e.Node.Text;
                     frmcom.Show(this.dockpanel);
                 }
                 else
@@ -162,12 +160,13 @@ namespace Com.ChangeSoft.ERP
                     frm.BringToFront();
                 }
             }
-            if ("FrmProductPlan".Equals(e.Node.Tag))
+            if ("FProductPlan".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument("生产计划");
+                DockContent frm = FindDocument(e.Node.Text);
                 if (frm == null)
                 {
                     FrmProductPlan frmproductplan = new FrmProductPlan();
+                    frmproductplan.Text = e.Node.Text;
                     frmproductplan.Show(this.dockpanel);
                 }
                 else

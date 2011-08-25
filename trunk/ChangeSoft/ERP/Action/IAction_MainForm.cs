@@ -3,6 +3,6 @@ namespace Com.ChangeSoft.ERP.Action
 {
     public interface IAction_MainForm
     {
-        System.Collections.Generic.IList<Com.ChangeSoft.ERP.FormVo.FunctionVo> GetFunctionDataList();
+        System.Collections.Generic.IList<Com.ChangeSoft.ERP.FormVo.FunctionAllVo> GetFunctionDataList();
     }
 }

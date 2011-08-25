@@ -10,12 +10,15 @@ namespace Com.ChangeSoft.ERP.FormVo
         #region Private Members
 
         private string langid;
+        private int functionid;
+        private string functionname;
 
+        private string functionpath;
         private int catalogid;
-        private string catalogname;
-        private string catalogimage;
+        private int functionindex;
 
-   
+        private string functionimage;
+
 
         #endregion
 
@@ -27,23 +30,40 @@ namespace Com.ChangeSoft.ERP.FormVo
             set { langid = value; }
         }
 
+        public int Functionid
+        {
+            get { return functionid; }
+            set { functionid = value; }
+        }
+        public string Functionname
+        {
+            get { return functionname; }
+            set { functionname = value; }
+        }
+
+        public string Functionpath
+        {
+            get { return functionpath; }
+            set { functionpath = value; }
+        }
+        public int Functionindex
+        {
+            get { return functionindex; }
+            set { functionindex = value; }
+        }
+        public string Functionimage
+        {
+            get { return functionimage; }
+            set { functionimage = value; }
+        }
+
+
         public int Catalogid
         {
             get { return catalogid; }
             set { catalogid = value; }
         }
 
-        public string Catalogname
-        {
-            get { return catalogname; }
-            set { catalogname = value; }
-        }
-
-        public string Catalogimage
-        {
-            get { return catalogimage; }
-            set { catalogimage = value; }
-        }
 
     }
 }

@@ -60,6 +60,20 @@ namespace Com.ChangeSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Calendar {
+            get {
+                object obj = ResourceManager.GetObject("Calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CompanyData {
+            get {
+                object obj = ResourceManager.GetObject("CompanyData", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap MasterDataBig {
             get {
                 object obj = ResourceManager.GetObject("MasterDataBig", resourceCulture);
@@ -70,6 +84,20 @@ namespace Com.ChangeSoft.ERP.Properties {
         internal static System.Drawing.Bitmap MasterDataSmall {
             get {
                 object obj = ResourceManager.GetObject("MasterDataSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap QuotationEntry {
+            get {
+                object obj = ResourceManager.GetObject("QuotationEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap QuotationSearch {
+            get {
+                object obj = ResourceManager.GetObject("QuotationSearch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
