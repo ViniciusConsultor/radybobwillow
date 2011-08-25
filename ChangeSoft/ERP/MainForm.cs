@@ -114,7 +114,7 @@ namespace Com.ChangeSoft.ERP
         private void init_Menu()
         {
             IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
-            IList<FunctionVo> flist = af.GetFunctionDataList();
+            IList<FunctionAllVo> flist = af.GetFunctionDataList();
 
             menuWindow = new MenuWindow(this.dockPanel,flist);
             menuWindow.Show(this.dockPanel, DockState.DockLeft);

@@ -17,32 +17,46 @@ namespace Com.ChangeSoft.ERP.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_MainForm));
 
-        public IList<FunctionVo> GetFunctionDataList()
+        public IList<FunctionAllVo> GetFunctionDataList()
         {
 
 
 
-            IList<FunctionVo> funcvolist = new List<FunctionVo>();
+            IList<FunctionAllVo> functionallvolist = new List<FunctionAllVo>();
             ////Com.ChangeSoft.ERP.Entity.Dao.TestDao td = new Com.ChangeSoft.ERP.Entity.Dao.TestDao();
             ////通过Windsor的组件容器，获取Dao的实例
-            IMFunctioncatalogDao td = ComponentLocator.Instance().Resolve<IMFunctioncatalogDao>();
+            ICFunctionAllDao td = ComponentLocator.Instance().Resolve<ICFunctionAllDao>();
             //////调用Dao的方法
             ////IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
 
             ////Test td = new Test();
-            IList<MFunctioncatalog> mfuncatalist = td.GetFunctionCatalogList(LangUtils.GetCurrentLanguage());
-            foreach (MFunctioncatalog mfvo in mfuncatalist)
+            IList<CFunctionAll> mfuncatalist = td.GetFunctionAllList(LangUtils.GetCurrentLanguage());
+            foreach (CFunctionAll mfvo in mfuncatalist)
             {
-                FunctionVo fvo = new FunctionVo();
-                fvo.Langid = mfvo.Id.Langid;
-                fvo.Catalogid = mfvo.Id.Catalogid;
-                fvo.Catalogname = mfvo.Catalogname;
-                fvo.Catalogimage = mfvo.Catalogimage;
-                funcvolist.Add(fvo);
+                FunctionAllVo functionallvo = new FunctionAllVo();
+                functionallvo.Langid = mfvo.Id.Langid;
+                functionallvo.Catalogid = mfvo.Id.Catalogid;
+                functionallvo.Catalogname = mfvo.Catalogname;
+                functionallvo.Catalogimage = mfvo.Catalogimage;
+                IList<FunctionVo> funcvolist = new List<FunctionVo>();
+                foreach (MFunction f in mfvo.Functionlist)
+                {
+                    FunctionVo functionvo = new FunctionVo();
+                    functionvo.Langid = f.Id.Langid;
+                    functionvo.Functionid = f.Id.Functionid;
+                    functionvo.Catalogid = f.Catalogid;
+                    functionvo.Functionimage = f.Functionimage;
+                    functionvo.Functionindex = f.Functionindex;
+                    functionvo.Functionname = f.Functionname;
+                    functionvo.Functionpath = f.Functionpath;
+                    funcvolist.Add(functionvo);
+                }
+                functionallvo.Functionlist = funcvolist;
+                functionallvolist.Add(functionallvo);
             }
 
             //log.Debug("result=" + re);
-            return funcvolist;
+            return functionallvolist;
 
         }
     }

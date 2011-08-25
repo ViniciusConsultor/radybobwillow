@@ -123,6 +123,7 @@
     </Compile>
     <Compile Include="Action\Action_MainForm.cs" />
     <Compile Include="Action\IAction_MainForm.cs" />
+    <Compile Include="FormVo\FunctionAllVo.cs" />
     <Compile Include="FormVo\FunctionVo.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -268,10 +269,17 @@
     <Content Include="imgSmall\klipper_dock.png" />
     <Content Include="imgSmall\wizard.png" />
     <Content Include="img\bookmark.png" />
+    <None Include="Config\Action_Menu.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="img\Calandar.png" />
     <Content Include="img\colorize.png" />
+    <None Include="img\CompanyData.png" />
     <Content Include="img\contents.png" />
     <Content Include="img\history.png" />
     <Content Include="img\klipper.png" />
+    <None Include="img\QuotationEntry.png" />
+    <None Include="img\QuotationSearch.png" />
     <Content Include="img\wizard.png" />
     <Content Include="Resources\Down.png" />
     <Content Include="Resources\Up.png" />

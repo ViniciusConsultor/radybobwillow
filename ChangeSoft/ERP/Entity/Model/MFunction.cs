@@ -33,7 +33,9 @@ namespace Com.ChangeSoft.ERP.Entity
 		private string functionpath; 
 		private int catalogid;
         private int functionindex;
-		
+        private string functionimage;
+
+  		
 		#endregion
 
 		#region Constuctor(s)
@@ -42,7 +44,12 @@ namespace Com.ChangeSoft.ERP.Entity
 		{
             id = new MFunctionID();
 			functionname = String.Empty; 
-			functionpath = String.Empty; 
+			functionpath = String.Empty;
+            functionname = String.Empty;
+            functionpath = String.Empty;
+            functionindex = 0;
+            functionimage = String.Empty;
+
 			catalogid = 0; 
 
 		}
@@ -58,6 +65,8 @@ namespace Com.ChangeSoft.ERP.Entity
             id.Functionid = functionid;
 			functionname = String.Empty;
 			functionpath = String.Empty;
+            functionindex = 0;
+            functionimage = String.Empty;
 			catalogid =_catalogid;
 		}
 
@@ -99,6 +108,12 @@ namespace Com.ChangeSoft.ERP.Entity
         {
             get { return functionindex; }
             set { functionindex = value; }
+        }
+        [Property(Column="FUNCTIONIMAGE",Length=100)]
+        public string Functionimage
+        {
+            get { return functionimage; }
+            set { functionimage = value; }
         }
 
 
@@ -143,6 +158,7 @@ namespace Com.ChangeSoft.ERP.Entity
 			sbuffer.AppendFormat("Functionname = {0}, ",functionname);
 			sbuffer.AppendFormat("Functionpath = {0}, ",functionpath);
 			sbuffer.AppendFormat("Catalogid = {0}, ",catalogid);
+            sbuffer.AppendFormat("Functionimage = {0},", functionimage);
 			sbuffer.Append(" }");
 			return sbuffer.ToString();
         }
