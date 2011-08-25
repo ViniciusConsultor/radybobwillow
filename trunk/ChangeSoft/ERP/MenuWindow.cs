@@ -160,7 +160,7 @@ namespace Com.ChangeSoft.ERP
                     frm.BringToFront();
                 }
             }
-            if ("FProductPlan".Equals(e.Node.Tag.ToString()))
+            if ("FQuotationEntry".Equals(e.Node.Tag.ToString()))
             {
                 DockContent frm = FindDocument(e.Node.Text);
                 if (frm == null)
