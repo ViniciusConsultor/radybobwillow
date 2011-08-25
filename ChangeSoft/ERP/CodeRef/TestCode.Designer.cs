@@ -51,7 +51,7 @@
             this.tblBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tblBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tblBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblBase.Size = new System.Drawing.Size(292, 273);
+            this.tblBase.Size = new System.Drawing.Size(294, 277);
             this.tblBase.TabIndex = 0;
             // 
             // dgvCode
@@ -71,7 +71,7 @@
             this.dgvCode.ReadOnly = true;
             this.dgvCode.RowTemplate.Height = 21;
             this.dgvCode.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCode.Size = new System.Drawing.Size(286, 207);
+            this.dgvCode.Size = new System.Drawing.Size(288, 211);
             this.dgvCode.TabIndex = 0;
             this.dgvCode.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCode_CellDoubleClick);
             // 
@@ -80,12 +80,12 @@
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 19);
+            this.textBox1.Size = new System.Drawing.Size(141, 21);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(149, 3);
+            this.button1.Location = new System.Drawing.Point(150, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -94,10 +94,13 @@
             // 
             // TestCode
             // 
+            this.AllowEndUserDocking = false;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 273);
+            this.ClientSize = new System.Drawing.Size(294, 277);
             this.Controls.Add(this.tblBase);
+            this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Float;
+            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "TestCode";
             this.Text = "Form1";
             this.tblBase.ResumeLayout(false);

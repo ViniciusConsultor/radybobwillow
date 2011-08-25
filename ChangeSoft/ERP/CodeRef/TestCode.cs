@@ -13,7 +13,7 @@ using Com.ChangeSoft.ERP.Entity;
 
 namespace Com.ChangeSoft.ERP.CodeRef
 {
-    public partial class TestCode : Form
+    public partial class TestCode : DockContent
     {
         public String strReturn;
         public TestCode()
