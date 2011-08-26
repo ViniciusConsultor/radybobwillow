@@ -51,6 +51,7 @@ namespace Com.ChangeSoft.ERP.Company
                       true);
                 msgwindow.Messagelist = re;
                 msgwindow.ShowMessage();
+                
                 return;
             }
             else

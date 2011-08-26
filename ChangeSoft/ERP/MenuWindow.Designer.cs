@@ -59,6 +59,7 @@
             this.CloseButton = false;
             this.CloseButtonVisible = false;
             this.Controls.Add(this.naviBar);
+            this.DockAreas = ((WeifenLuo.WinFormsUI.Docking.DockAreas)((WeifenLuo.WinFormsUI.Docking.DockAreas.DockLeft | WeifenLuo.WinFormsUI.Docking.DockAreas.DockRight)));
             this.HideOnClose = true;
             this.KeyPreview = true;
             this.Name = "MenuWindow";

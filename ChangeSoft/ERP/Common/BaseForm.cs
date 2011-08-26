@@ -19,6 +19,7 @@ namespace Com.ChangeSoft.Common
             InitializeComponent();
             msgwindow = new MessageWindow();
             msgwindow.Show(this.dockPanel, DockState.DockBottomAutoHide);
+            msgwindow.BringToFront();
             msgwindow.Hide();
         }
 
