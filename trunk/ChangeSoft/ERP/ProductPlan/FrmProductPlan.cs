@@ -24,18 +24,14 @@ namespace Com.ChangeSoft.ERP.ProductPlan
 
         private void btnCode_Click(object sender, EventArgs e)
         {
-             TestCode frm = new TestCode();
-             //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
-             Point p1 = btnCode.PointToScreen(Point.Empty);
-             Rectangle r = new Rectangle(new Point(p1.X,p1.Y+btnCode.Height), frm.Size);
-            
-             frm.Show(this.dockPanel,r);
-            
-            
-            if (!String.IsNullOrEmpty(frm.strReturn))
-            {
-                this.txtCode.Text = frm.strReturn;
-            }
+            List<Control> lst = new List<Control>();
+            lst.Add(this.txtCode);
+            TestCode frm = new TestCode(lst);
+            //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
+            Point p1 = btnCode.PointToScreen(Point.Empty);
+            Rectangle r = new Rectangle(new Point(p1.X, p1.Y + btnCode.Height), frm.Size);
+
+            frm.Show(this.DockPanel, r);
         }
     }
 }
