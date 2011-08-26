@@ -27,7 +27,7 @@ namespace Com.ChangeSoft.ERP.ProductPlan
              TestCode frm = new TestCode();
              //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
              Point p1 = btnCode.PointToScreen(Point.Empty);
-             Rectangle r = new Rectangle(p1, frm.Size);
+             Rectangle r = new Rectangle(new Point(p1.X,p1.Y+btnCode.Height), frm.Size);
             
              frm.Show(this.dockPanel,r);
             
