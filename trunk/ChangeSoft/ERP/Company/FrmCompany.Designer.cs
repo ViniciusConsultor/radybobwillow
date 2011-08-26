@@ -81,6 +81,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Name = "FrmCompany";
+            this.Controls.SetChildIndex(this.dockPanel, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
             this.Controls.SetChildIndex(this.comboBox1, 0);
             this.Controls.SetChildIndex(this.dateTimePicker1, 0);
