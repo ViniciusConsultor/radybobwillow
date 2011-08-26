@@ -25,7 +25,9 @@ namespace Com.ChangeSoft.ERP.ProductPlan
         private void btnCode_Click(object sender, EventArgs e)
         {
              TestCode frm = new TestCode();
-             Rectangle r = new Rectangle(btnCode.Location, frm.Size);
+             //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
+             Point p1 = btnCode.PointToScreen(Point.Empty);
+             Rectangle r = new Rectangle(p1, frm.Size);
             
              frm.Show(this.dockPanel,r);
             
