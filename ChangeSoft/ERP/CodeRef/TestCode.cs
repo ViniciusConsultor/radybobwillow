@@ -16,10 +16,12 @@ namespace Com.ChangeSoft.ERP.CodeRef
     public partial class TestCode : DockContent
     {
         public String strReturn;
-        public TestCode()
+        private List<Control> _lst;
+        public TestCode(List<Control> lst)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterParent;
+            this._lst = lst;
             strReturn = "";
 
             LoadData();
@@ -51,6 +53,8 @@ namespace Com.ChangeSoft.ERP.CodeRef
             MessageBox.Show(dgvr.Cells[0].Value.ToString());
 
             this.strReturn = dgvr.Cells[0].Value.ToString();
+            this._lst[0].Text = dgvr.Cells[0].Value.ToString();
+            this._lst[0].Focus();
             this.Close();
             this.Dispose();
         }
