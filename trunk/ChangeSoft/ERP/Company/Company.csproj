@@ -109,7 +109,9 @@
   <ItemGroup>
     <Compile Include="Action\Action_FrmCompany.cs" />
     <Compile Include="Action\IAction_FrmCompany.cs" />
-    <Compile Include="CheckMethod\Check_Company.cs" />
+    <Compile Include="CheckMethod\Check_Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmCompany.cs">
       <SubType>Form</SubType>
     </Compile>
