@@ -43,7 +43,7 @@ namespace Com.ChangeSoft.ERP.Company
             
             Noogen.Validation.ValidationRule vr = new Noogen.Validation.ValidationRule();
             vr.CustomValidationMethod +=
-             new Noogen.Validation.CustomValidationEventHandler(Check_Company.vr_CustomValidationMethod);
+             new Noogen.Validation.CustomValidationEventHandler(vr_CustomValidationMethod);
             vr.CustomErrorMessage = MessageUtils.GetMessage("W0002","bbbbb","ccccc");
             this.validationProvider1.SetValidationRule(this.dateTimePicker1, vr);
 
