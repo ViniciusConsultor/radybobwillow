@@ -14,26 +14,29 @@ using Noogen.Validation;
 
 namespace Com.ChangeSoft.ERP.Company
 {
-    public partial class FrmCompany : Com.ChangeSoft.Common.BaseForm
+    public partial class FrmCompany : BaseContent
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmCompany));
 
+        
 
-        public FrmCompany()
+        public FrmCompany(BaseForm _baseform)
+            : base(_baseform)
         {
+
             log.Info("FrmCompany init start");
-            
             InitializeComponent();
 
             ValidationRule rule1 = new ValidationRule();
             rule1.IsRequired = true;
-            rule1.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001","aaaaaa");
+            rule1.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", "aaaaaa");
             validationProvider1.SetValidationRule(this.textBox1, rule1);
 
 
 
             log.Info("FrmCompany init end");
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -49,15 +52,15 @@ namespace Com.ChangeSoft.ERP.Company
             {
                 IList<MessageVo> re = this.validationProvider1.ValidationMessages(
                       true);
-                msgwindow.Messagelist = re;
-                msgwindow.ShowMessage();
+                this.baseform.msgwindow.Messagelist = re;
+                this.baseform.msgwindow.ShowMessage();
                 
                 return;
             }
             else
             {
                 this.validationProvider1.ValidationMessages(false);
-                msgwindow.Hide();
+                baseform.msgwindow.Hide();
             }
 
             log.Debug("OK click");
@@ -80,10 +83,6 @@ namespace Com.ChangeSoft.ERP.Company
 
 
 
-        public override void Language_Change()
-        {
-            throw new NotImplementedException();
-        }
 
     }
 }

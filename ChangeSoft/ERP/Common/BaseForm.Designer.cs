@@ -52,6 +52,7 @@
             this.dockPanel.ActiveAutoHideContent = null;
             resources.ApplyResources(this.dockPanel, "dockPanel");
             this.dockPanel.DockBackColor = System.Drawing.SystemColors.Control;
+            this.dockPanel.DocumentStyle = WeifenLuo.WinFormsUI.Docking.DocumentStyle.DockingSdi;
             this.dockPanel.DocumentTabStripLocation = WeifenLuo.WinFormsUI.Docking.DocumentTabStripLocation.Bottom;
             this.dockPanel.Name = "dockPanel";
             this.dockPanel.RightToLeftLayout = true;
@@ -106,9 +107,13 @@
             // 
             this.AllowEndUserDocking = false;
             resources.ApplyResources(this, "$this");
+            this.CloseButton = false;
+            this.CloseButtonVisible = false;
             this.Controls.Add(this.dockPanel);
             this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;
             this.Name = "BaseForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
 
         }
