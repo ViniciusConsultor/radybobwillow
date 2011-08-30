@@ -8,7 +8,6 @@ using System.Windows.Forms;
 using log4net;
 using Com.ChangeSoft.ERP.Company.Action;
 using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Company.CheckMethod;
 using WeifenLuo.WinFormsUI.Docking;
 using Noogen.Validation;
 
