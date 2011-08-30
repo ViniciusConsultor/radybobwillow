@@ -150,9 +150,14 @@ namespace Com.ChangeSoft.ERP
                 DockContent frm = FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    FrmCompany frmcom = new FrmCompany();
-                    frmcom.Text = e.Node.Text;
-                    frmcom.Show(this.dockpanel);
+                    BaseForm baseform = new BaseForm();
+                    baseform.TopLevel = false;
+                    baseform.Text = e.Node.Text;
+                    baseform.Show(this.dockpanel);
+                    FrmCompany frmcompany = new FrmCompany(baseform);
+                    frmcompany.Show(baseform.dockPanel, DockState.Document);
+                    frmcompany.BringToFront();
+
                 }
                 else
                 {
@@ -165,9 +170,13 @@ namespace Com.ChangeSoft.ERP
                 DockContent frm = FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    FrmProductPlan frmproductplan = new FrmProductPlan();
-                    frmproductplan.Text = e.Node.Text;
-                    frmproductplan.Show(this.dockpanel);
+                    BaseForm baseform = new BaseForm();
+                    baseform.TopLevel = false;
+                    baseform.Text = e.Node.Text; 
+                    baseform.Show(this.dockpanel);
+                    FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
+
+                    frmproductplan.Show(baseform.dockPanel, DockState.Document);
                 }
                 else
                 {

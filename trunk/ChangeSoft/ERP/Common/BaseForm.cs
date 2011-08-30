@@ -23,9 +23,7 @@ namespace Com.ChangeSoft.Common
             msgwindow.Hide();
         }
 
-        public virtual void Language_Change()
-        {
-        }
+
         
     }
 

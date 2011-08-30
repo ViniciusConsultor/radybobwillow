@@ -74,19 +74,22 @@
             // 
             // FrmCompany
             // 
+            this.AllowEndUserDocking = false;
             resources.ApplyResources(this, "$this");
+            this.CloseButton = false;
+            this.CloseButtonVisible = false;
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
+            this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCompany";
-            this.Controls.SetChildIndex(this.dockPanel, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
-            this.Controls.SetChildIndex(this.comboBox1, 0);
-            this.Controls.SetChildIndex(this.dateTimePicker1, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 

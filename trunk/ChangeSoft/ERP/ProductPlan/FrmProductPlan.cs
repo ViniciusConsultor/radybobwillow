@@ -7,23 +7,22 @@ using System.Text;
 using System.Windows.Forms;
 using Com.ChangeSoft.ERP.CodeRef;
 using WeifenLuo.WinFormsUI.Docking;
+using Com.ChangeSoft.Common;
 
 namespace Com.ChangeSoft.ERP.ProductPlan
 {
-    public partial class FrmProductPlan : Com.ChangeSoft.Common.BaseForm
+    public partial class FrmProductPlan : Com.ChangeSoft.Common.BaseContent
     {
-        public FrmProductPlan()
+        public FrmProductPlan(BaseForm _baseform):base(_baseform)
         {
             InitializeComponent();
         }
 
-        public override void Language_Change()
-        {
-            throw new NotImplementedException();
-        }
+
 
         private void btnCode_Click(object sender, EventArgs e)
         {
+
             List<Control> lst = new List<Control>();
             lst.Add(this.txtCode);
             TestCode frm = new TestCode(lst);
@@ -31,7 +30,8 @@ namespace Com.ChangeSoft.ERP.ProductPlan
             Point p1 = btnCode.PointToScreen(Point.Empty);
             Rectangle r = new Rectangle(new Point(p1.X, p1.Y + btnCode.Height), frm.Size);
 
-            frm.Show(this.DockPanel, r);
+            frm.Show(this.baseform.dockPanel, r);
+
         }
     }
 }
