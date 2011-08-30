@@ -11,6 +11,12 @@ namespace Com.ChangeSoft.Common
     public partial class BaseContent : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         protected BaseForm baseform;
+
+        public BaseContent()
+        {
+            InitializeComponent();
+        }
+
         public BaseContent(BaseForm _baseform)
         {
             this.baseform = _baseform;

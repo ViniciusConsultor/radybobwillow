@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // BaseContent
+            // 
+            this.AllowEndUserDocking = false;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;
+            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Name = "BaseContent";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
