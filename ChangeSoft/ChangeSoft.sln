@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeRef", "ERP\CodeRef\Code
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Material", "ERP\Material\Material.csproj", "{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "ERP\Factory\Factory.csproj", "{BCD17118-E691-4C92-8E36-250A79662634}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "ERP\Factory\Factory.csproj", "{DAB91044-1151-43E4-9261-1ABA931BF13D}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -70,10 +70,10 @@ Global
 		{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCD17118-E691-4C92-8E36-250A79662634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCD17118-E691-4C92-8E36-250A79662634}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCD17118-E691-4C92-8E36-250A79662634}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCD17118-E691-4C92-8E36-250A79662634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB91044-1151-43E4-9261-1ABA931BF13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB91044-1151-43E4-9261-1ABA931BF13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB91044-1151-43E4-9261-1ABA931BF13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB91044-1151-43E4-9261-1ABA931BF13D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
