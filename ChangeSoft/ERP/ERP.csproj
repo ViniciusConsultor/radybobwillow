@@ -268,6 +268,7 @@
     <Content Include="imgSmall\history.png" />
     <Content Include="imgSmall\klipper_dock.png" />
     <Content Include="imgSmall\wizard.png" />
+    <None Include="img\20110831090330552_easyicon_cn_48.png" />
     <Content Include="img\bookmark.png" />
     <None Include="Config\Action_Menu.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -304,6 +305,10 @@
     <ProjectReference Include="Factory\Factory.csproj">
       <Project>{DAB91044-1151-43E4-9261-1ABA931BF13D}</Project>
       <Name>Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="Material\Material.csproj">
+      <Project>{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}</Project>
+      <Name>Material</Name>
     </ProjectReference>
     <ProjectReference Include="ProductPlan\ProductPlan.csproj">
       <Project>{1F7D2BC3-F658-4F3F-97F6-8BAB71EB91F0}</Project>

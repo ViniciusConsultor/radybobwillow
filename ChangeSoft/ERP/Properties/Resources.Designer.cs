@@ -88,6 +88,13 @@ namespace Com.ChangeSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Material {
+            get {
+                object obj = ResourceManager.GetObject("Material", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap QuotationEntry {
             get {
                 object obj = ResourceManager.GetObject("QuotationEntry", resourceCulture);
