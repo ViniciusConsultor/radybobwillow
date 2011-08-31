@@ -11,6 +11,7 @@ using Com.ChangeSoft.ERP.ProductPlan;
 using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.FormVo;
 using Guifreaks.NavigationBar;
+using Com.ChangeSoft.ERP.Material;
 
 
 namespace Com.ChangeSoft.ERP
@@ -177,6 +178,26 @@ namespace Com.ChangeSoft.ERP
                     FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
 
                     frmproductplan.Show(baseform.dockPanel, DockState.Document);
+                }
+                else
+                {
+                    frm.Show(this.dockpanel);
+                    frm.BringToFront();
+                }
+
+            }
+            if ("FMaterial".Equals(e.Node.Tag.ToString()))
+            {
+                DockContent frm = FindDocument(e.Node.Text);
+                if (frm == null)
+                {
+                    BaseForm baseform = new BaseForm();
+                    baseform.TopLevel = false;
+                    baseform.Text = e.Node.Text;
+                    baseform.Show(this.dockpanel);
+                    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
+
+                    frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
                 }
                 else
                 {

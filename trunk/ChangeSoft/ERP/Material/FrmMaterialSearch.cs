@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Com.ChangeSoft.Common;
 
-namespace Material
+namespace Com.ChangeSoft.ERP.Material
 {
     public partial class FrmMaterialSearch : BaseContent
     {
