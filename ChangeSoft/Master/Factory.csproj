@@ -8,8 +8,8 @@
     <ProjectGuid>{BCD17118-E691-4C92-8E36-250A79662634}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.ERP.Master</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.ERP.Master</AssemblyName>
+    <RootNamespace>Com.ChangeSoft.ERP.Factory</RootNamespace>
+    <AssemblyName>Com.ChangeSoft.ERP.Factory</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
