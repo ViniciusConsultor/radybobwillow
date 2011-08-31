@@ -15,6 +15,15 @@ namespace Com.ChangeSoft.ERP.Material
         public FrmMaterialSearch(BaseForm _baseform):base(_baseform)
         {
             InitializeComponent();
+            this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
+            this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
+            this.toolStripButton3.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Delete");
+            
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

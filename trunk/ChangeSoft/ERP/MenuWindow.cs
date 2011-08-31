@@ -44,6 +44,7 @@ namespace Com.ChangeSoft.ERP
                 
                 band.SmallImage = (Image)Properties.Resources.ResourceManager.GetObject(fvo.Catalogimage+"Small");
                 band.LargeImage = (Image)Properties.Resources.ResourceManager.GetObject(fvo.Catalogimage+"Big");
+               
                 band.Tag = fvo.Catalogid;
                 InitTreeView(band,fvo.Functionlist);
 

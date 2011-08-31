@@ -79,6 +79,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RescourcesUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
@@ -183,5 +184,14 @@
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2011083110080328_easyicon_cn_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20110831100702629_easyicon_cn_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20110831100920807_easyicon_cn_48.png" />
   </ItemGroup>
 </Project>
