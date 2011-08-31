@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeRef", "ERP\CodeRef\Code
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Material", "ERP\Material\Material.csproj", "{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master", "Master\Master.csproj", "{BCD17118-E691-4C92-8E36-250A79662634}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Master\Factory.csproj", "{BCD17118-E691-4C92-8E36-250A79662634}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
