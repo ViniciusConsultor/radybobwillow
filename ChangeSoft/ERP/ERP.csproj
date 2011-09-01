@@ -245,6 +245,7 @@
     <Content Include="dll\Castle.Windsor.dll" />
     <Content Include="dll\Castle.Windsor.pdb" />
     <Content Include="dll\Castle.Windsor.xml" />
+    <Content Include="dll\DevComponents.DotNetBar2.dll" />
     <Content Include="dll\Guifreaks.Common.dll" />
     <Content Include="dll\Guifreaks.Common.pdb" />
     <Content Include="dll\Guifreaks.NavigationBar.dll" />
@@ -262,6 +263,8 @@
     <Content Include="dll\Npgsql.XML" />
     <Content Include="dll\policy.2.0.Npgsql.dll" />
     <Content Include="dll\WeifenLuo.WinFormsUI.Docking.dll" />
+    <Content Include="dll\WHC.Pager.Entity.dll" />
+    <Content Include="dll\WHC.Pager.WinControlEx.dll" />
     <Content Include="dll\zh-CN\Npgsql.resources.dll" />
     <Content Include="imgSmall\bookmark.png" />
     <Content Include="imgSmall\colorize.png" />

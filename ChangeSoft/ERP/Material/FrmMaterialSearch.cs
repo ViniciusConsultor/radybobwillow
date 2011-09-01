@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Com.ChangeSoft.Common;
+using WHC.Pager.Entity;
 
 namespace Com.ChangeSoft.ERP.Material
 {
@@ -18,7 +19,8 @@ namespace Com.ChangeSoft.ERP.Material
             this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
             this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
             this.toolStripButton3.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Delete");
-            
+
+            this.winGridViewPager1.PagerInfo.PageSize = 30;//页面大小
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
