@@ -8,6 +8,8 @@ using Com.ChangeSoft.ERP.Entity;
 using NHibernate;
 using System.Data.Common;
 using Castle.ActiveRecord.Queries;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
@@ -56,5 +58,6 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
             return result;
 
         }
+  
     }
 }

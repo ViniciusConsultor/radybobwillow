@@ -107,8 +107,6 @@
             // 
             this.AllowEndUserDocking = false;
             resources.ApplyResources(this, "$this");
-            this.CloseButton = false;
-            this.CloseButtonVisible = false;
             this.Controls.Add(this.dockPanel);
             this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;
             this.Name = "BaseForm";

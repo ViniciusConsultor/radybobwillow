@@ -35,6 +35,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pagerGridView1 = new Com.ChangeSoft.Control.PagerGridView.PagerGridView();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,12 +71,20 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pagerGridView1, 0, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // pagerGridView1
+            // 
+            this.pagerGridView1.DataMember = "";
+            this.pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
+            this.pagerGridView1.Name = "pagerGridView1";
             // 
             // FrmMaterialSearch
             // 
@@ -100,6 +109,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private Com.ChangeSoft.Control.PagerGridView.PagerGridView pagerGridView1;
 
 
     }
