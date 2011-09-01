@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Com.ChangeSoft.Common;
 
 namespace Factory
 {
-    public partial class FrmFactory : Form
+    public partial class FrmFactory : BaseContent
     {
         public FrmFactory()
         {
