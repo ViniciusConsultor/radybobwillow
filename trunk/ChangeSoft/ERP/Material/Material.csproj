@@ -151,6 +151,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\PagerGridView\PagerGridView.csproj">
+      <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>
+      <Name>PagerGridView</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CodeRef\CodeRef.csproj">
       <Project>{4BD74F38-FF5A-41B2-B498-EB1D6BB631AB}</Project>
       <Name>CodeRef</Name>

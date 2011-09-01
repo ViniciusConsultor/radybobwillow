@@ -8,8 +8,8 @@
     <ProjectGuid>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PagerGridView</RootNamespace>
-    <AssemblyName>PagerGridView</AssemblyName>
+    <RootNamespace>Com.ChangeSoft.Control.PagerGridView</RootNamespace>
+    <AssemblyName>Com.ChangeSoft.Control.PagerGridView</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,6 +53,7 @@
     <Compile Include="PagerGridView.Designer.cs">
       <DependentUpon>PagerGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="PagerHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
@@ -60,6 +61,16 @@
     <EmbeddedResource Include="PagerGridView.resx">
       <DependentUpon>PagerGridView.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP\Common\Common.csproj">
+      <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP\Entity\Entity.csproj">
+      <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

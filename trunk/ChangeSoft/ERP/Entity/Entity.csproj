@@ -91,6 +91,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -106,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\CFunctionAllDaoOracleImp.cs" />
+    <Compile Include="Dao\CPagerDaoOracleImp.cs" />
     <Compile Include="Dao\ICFunctionAllDao.cs" />
+    <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\ITest2Dao.cs" />
     <Compile Include="Dao\ITestDao.cs" />
