@@ -6,20 +6,18 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using WeifenLuo.WinFormsUI.Docking;
 using Com.ChangeSoft.ERP.CodeRef.Action;
 using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.Entity;
 
 namespace Com.ChangeSoft.ERP.CodeRef
 {
-    public partial class TestCode : DockContent
+    public partial class TestCode : BaseCodeForm
     {
         private List<Control> _lst;
         public TestCode(List<Control> lst)
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterParent;
             this._lst = lst;
 
             LoadData();
