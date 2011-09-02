@@ -9,36 +9,61 @@ using System.Data.SqlClient;
 
 namespace Com.ChangeSoft.Common.Control.PagerGridView
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class PagerHelper
     {
         private string sql = "";
         private int currentPage = 0;
         private int pagerSize;
-        private string tablename = "";
-        private IList<SqlParameter> paralist;
+        private string key = "";
+        private SearchCondition condition;
         private int totalrecords = 0;
+        private int totalpages = 0;
+
+        private int currentPageFirst = 0;
+
+  
+        private int currentPageLast = 0;
+
+ 
 
   
 
-        public PagerHelper()
-        {
-        }
 
-        public PagerHelper(string sql,string tablename,IList<SqlParameter> paralist,int currentPage,int pagerSize)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key">CastleWindsor 的配置文件里定义的bean的ID</param>
+        /// <param name="condition"></param>
+        /// <param name="currentPage">从1开始</param>
+        /// <param name="pagerSize"></param>
+        public PagerHelper(string key,SearchCondition condition,int currentPage,int pagerSize)
         {
-            this.sql = sql;
-            this.paralist = paralist;
+
+            this.condition = condition;
             this.pagerSize = pagerSize;
-            this.tablename = tablename;
+            this.key = key;
             this.currentPage = currentPage;
             this.totalrecords = GetCount();
+            this.totalpages = this.totalrecords / this.pagerSize;
+			
+			// Adjust page count if the last page contains partial page.
+			if (this.totalrecords % this.pagerSize > 0)
+				this.totalpages++;
+
+            this.currentPageFirst = (currentPage - 1) * pagerSize + 1;
+            this.CurrentPageLast = (currentPage - 1) * pagerSize + pagerSize;
+
 
         }
 
-        public string Tablename
+        public string Key
         {
-            get { return tablename; }
-            set { tablename = value; }
+            get { return key; }
+            set { key = value; }
         }
 
         public string Sql
@@ -59,10 +84,10 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             set { pagerSize = value; }
         }
 
-        public IList<SqlParameter> Paralist
+        public SearchCondition Condition
         {
-            get { return paralist; }
-            set { paralist = value; }
+            get { return condition; }
+            set { condition = value; }
         }
 
         public int Totalrecords
@@ -71,19 +96,34 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             set { totalrecords = value; }
         }
 
+        public int Totalpages
+        {
+            get { return totalpages; }
+            set { totalpages = value; }
+        }
+        public int CurrentPageFirst
+        {
+            get { return currentPageFirst; }
+            set { currentPageFirst = value; }
+        }
+        public int CurrentPageLast
+        {
+            get { return currentPageLast; }
+            set { currentPageLast = value; }
+        }
         public DataSet GetDataSet()
         {
 
-            ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve("",typeof(ICPagerDao));
-            DataSet ds = td.GetDataSet(this.tablename,this.sql,this.paralist,this.pagerSize,this.currentPage);
+            ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve(key,typeof(ICPagerDao));
+            DataSet ds = td.GetDataSet(this.key,this.condition,this.pagerSize,(this.currentPage-1));
             return ds;
 
         }
 
         public int GetCount()
         {
-            ICPagerDao td = ComponentLocator.Instance().Resolve<ICPagerDao>();
-            int result = td.GetCount(this.tablename, this.sql, this.paralist);
+            ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve(key, typeof(ICPagerDao));
+            int result = td.GetCount(this.key, this.condition);
             return result;
         }
 

@@ -272,6 +272,12 @@
     <Content Include="imgSmall\klipper_dock.png" />
     <Content Include="imgSmall\wizard.png" />
     <None Include="img\20110831090330552_easyicon_cn_48.png" />
+    <None Include="img\20110902041440114_easyicon_cn_48.png" />
+    <None Include="img\20110902041632961_easyicon_cn_48.png" />
+    <None Include="img\20110902041838959_easyicon_cn_48.png" />
+    <None Include="img\20110902041930590_easyicon_cn_48.png" />
+    <None Include="img\20110902042014732_easyicon_cn_48.png" />
+    <None Include="img\20110902042051303_easyicon_cn_48.png" />
     <Content Include="img\bookmark.png" />
     <None Include="Config\Action_Menu.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

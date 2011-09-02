@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Collections.Generic;
+using Com.ChangeSoft.Common;
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
     public interface ICPagerDao
     {
-        int GetCount(string tablename, string sql, IList<SqlParameter> paralist);
-        System.Data.DataSet GetDataSet(string tablename, string sql, IList<SqlParameter> paralist, int pagesize, int pageindex);
+        int GetCount(string key, SearchCondition condition);
+        System.Data.DataSet GetDataSet(string key, SearchCondition condition, int pagesize, int pageindex);
     }
 }

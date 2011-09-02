@@ -51,15 +51,108 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
         }
         public void LoadData()
         {
+
             this.dataGridView1.DataSource=pagerhelper.GetDataSet();
-            this.dataGridView1.DataMember = pagerhelper.Tablename;
+            this.dataGridView1.DataMember = pagerhelper.Key;
+
+            this.lblStatus.Text = pagerhelper.CurrentPage.ToString() + " / " + pagerhelper.Totalpages.ToString();
+            this.lblTotalRecords.Text = pagerhelper.Totalrecords.ToString();
+
+            this.pagerhelper.CurrentPageFirst = (this.pagerhelper.CurrentPage - 1) * this.pagerhelper.PagerSize + 1;
+            this.pagerhelper.CurrentPageLast = (this.pagerhelper.CurrentPage - 1) * this.pagerhelper.PagerSize + this.pagerhelper.PagerSize;
+
+            this.lblCurrentPageFirst.Text = pagerhelper.CurrentPageFirst.ToString();
+            this.lblCurrentPageLast.Text = pagerhelper.CurrentPageLast.ToString();
+            if (this.pagerhelper.CurrentPage == 1 && this.pagerhelper.Totalpages == 1)
+            {
+                this.btnPrevious.Enabled = false;
+                this.btnFirst.Enabled = false;
+                this.btnNext.Enabled = false;
+                this.btnLast.Enabled = false;
+            }else if (this.pagerhelper.CurrentPage == 1)
+            {
+                this.btnPrevious.Enabled = false;
+                this.btnFirst.Enabled = false;
+                this.btnNext.Enabled = true;
+                this.btnLast.Enabled = true;
+
+            }
+            else if (this.pagerhelper.CurrentPage == this.pagerhelper.Totalpages)
+            {
+                this.btnPrevious.Enabled = true;
+                this.btnFirst.Enabled = true;
+                this.btnNext.Enabled = false;
+                this.btnLast.Enabled = false;
+
+            }
+            else
+            {
+                this.btnPrevious.Enabled = true;
+                this.btnFirst.Enabled = true;
+                this.btnNext.Enabled = true;
+                this.btnLast.Enabled = true;
+
+            }
 
         }
         private void btnFirst_Click(object sender, EventArgs e)
         {
-            
+            goFirst();
 
         }
+
+
+
+        private void goFirst()
+        {
+            this.pagerhelper.CurrentPage = 1;
+
+            LoadData();
+        }
+
+        private void goPrevious()
+        {
+
+            this.pagerhelper.CurrentPage--;
+
+            if (this.pagerhelper.CurrentPage < 1)
+                this.pagerhelper.CurrentPage = 1;
+
+            LoadData();
+        }
+
+        private void goNext()
+        {
+            this.pagerhelper.CurrentPage++;
+
+            if (this.pagerhelper.CurrentPage > (this.pagerhelper.Totalpages))
+                this.pagerhelper.CurrentPage = this.pagerhelper.Totalpages;
+
+            LoadData();
+        }
+
+        private void goLast()
+        {
+            this.pagerhelper.CurrentPage = this.pagerhelper.Totalpages;
+
+            LoadData();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            goPrevious();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            goNext();
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            goLast();
+        }
+
 
        
     }
