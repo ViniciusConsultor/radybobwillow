@@ -60,13 +60,13 @@ namespace Com.ChangeSoft.ERP
             TreeView treeView1 = new TreeView();
             treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             treeView1.FullRowSelect = true;
-            treeView1.Indent = 50;
+            treeView1.Indent = 10;
             treeView1.ItemHeight = 50;
             treeView1.Location = new System.Drawing.Point(0, 0);
             treeView1.Name = band.Text;
             treeView1.ShowRootLines = true;
             treeView1.ShowLines = false;
-            treeView1.Size = new System.Drawing.Size(196, 271);
+            treeView1.Size = new System.Drawing.Size(196, 200);
             ImageList imagelist = new ImageList();
             imagelist.ImageSize = new Size(48,48);
 

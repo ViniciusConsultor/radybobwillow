@@ -49,8 +49,11 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             get { return pagerhelper; }
             set { pagerhelper = value; }
         }
+
+
         public void LoadData()
         {
+
 
             this.dataGridView1.DataSource=pagerhelper.GetDataSet();
             this.dataGridView1.DataMember = pagerhelper.Key;
@@ -107,6 +110,12 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
         {
             this.pagerhelper.CurrentPage = 1;
 
+            this.pagerhelper.Totalrecords = this.pagerhelper.GetCount();
+            this.pagerhelper.Totalpages = this.pagerhelper.Totalrecords / this.pagerhelper.PagerSize;
+            // Adjust page count if the last page contains partial page.
+            if (this.pagerhelper.Totalrecords % this.pagerhelper.PagerSize > 0)
+                this.pagerhelper.Totalpages++;
+
             LoadData();
         }
 
@@ -118,12 +127,24 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             if (this.pagerhelper.CurrentPage < 1)
                 this.pagerhelper.CurrentPage = 1;
 
+            this.pagerhelper.Totalrecords = this.pagerhelper.GetCount();
+            this.pagerhelper.Totalpages = this.pagerhelper.Totalrecords / this.pagerhelper.PagerSize;
+            // Adjust page count if the last page contains partial page.
+            if (this.pagerhelper.Totalrecords % this.pagerhelper.PagerSize > 0)
+                this.pagerhelper.Totalpages++;
+
             LoadData();
         }
 
         private void goNext()
         {
             this.pagerhelper.CurrentPage++;
+
+            this.pagerhelper.Totalrecords = this.pagerhelper.GetCount();
+            this.pagerhelper.Totalpages = this.pagerhelper.Totalrecords / this.pagerhelper.PagerSize;
+            // Adjust page count if the last page contains partial page.
+            if (this.pagerhelper.Totalrecords % this.pagerhelper.PagerSize > 0)
+                this.pagerhelper.Totalpages++;
 
             if (this.pagerhelper.CurrentPage > (this.pagerhelper.Totalpages))
                 this.pagerhelper.CurrentPage = this.pagerhelper.Totalpages;
@@ -133,6 +154,12 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
 
         private void goLast()
         {
+            this.pagerhelper.Totalrecords = this.pagerhelper.GetCount();
+            this.pagerhelper.Totalpages = this.pagerhelper.Totalrecords / this.pagerhelper.PagerSize;
+            // Adjust page count if the last page contains partial page.
+            if (this.pagerhelper.Totalrecords % this.pagerhelper.PagerSize > 0)
+                this.pagerhelper.Totalpages++;
+
             this.pagerhelper.CurrentPage = this.pagerhelper.Totalpages;
 
             LoadData();
