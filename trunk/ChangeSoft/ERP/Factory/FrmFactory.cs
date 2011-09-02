@@ -8,11 +8,12 @@ using System.Text;
 using System.Windows.Forms;
 using Com.ChangeSoft.Common;
 
-namespace Factory
+namespace Com.ChangeSoft.ERP.Factory
 {
     public partial class FrmFactory : BaseContent
     {
-        public FrmFactory()
+        public FrmFactory(BaseForm _baseform)
+            : base(_baseform)
         {
             InitializeComponent();
         }

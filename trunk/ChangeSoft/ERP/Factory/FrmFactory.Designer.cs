@@ -1,4 +1,4 @@
-﻿namespace Factory
+﻿namespace Com.ChangeSoft.ERP.Factory
 {
 	partial class FrmFactory
 	{
