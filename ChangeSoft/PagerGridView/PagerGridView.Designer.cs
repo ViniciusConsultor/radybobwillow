@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Control.PagerGridView
+﻿namespace Com.ChangeSoft.Common.Control.PagerGridView
 {
     partial class PagerGridView
     {

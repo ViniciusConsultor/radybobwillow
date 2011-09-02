@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Com.ChangeSoft.Control.PagerGridView
+namespace Com.ChangeSoft.Common.Control.PagerGridView
 {
     public partial class PagerGridView : UserControl
     {
