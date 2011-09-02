@@ -35,7 +35,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pagerGridView1 = new Com.ChangeSoft.Control.PagerGridView.PagerGridView();
+            this.pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +109,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Com.ChangeSoft.Control.PagerGridView.PagerGridView pagerGridView1;
+        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
 
 
     }

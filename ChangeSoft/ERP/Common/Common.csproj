@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="ComponentLocator.cs" />
     <Compile Include="ConditionUtils.cs" />
+    <Compile Include="DataTableUtils.cs" />
     <Compile Include="IBaseAction.cs" />
     <Compile Include="IBaseDao.cs" />
     <Compile Include="LangUtils.cs" />
@@ -80,6 +81,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="RescourcesUtils.cs" />
+    <Compile Include="SearchCondition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">

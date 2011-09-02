@@ -9,17 +9,20 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.OracleClient;
 using Castle.ActiveRecord.Queries;
+using Com.ChangeSoft.Common;
+using System.Collections;
+using NHibernate.Transform;
 
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
     public class CFunctionAllPagerDaoOracleImp:ActiveRecordBase, Com.ChangeSoft.ERP.Entity.Dao.ICPagerDao
     {
-        public DataSet GetDataSet(string tablename,string sql,IList<SqlParameter> paralist,int pagesize,int pageindex)
+        public DataSet GetDataSet(string key,SearchCondition condition,int pagesize,int pageindex)
         {
 
             TransactionScope transaction = new TransactionScope();
             DataSet ds = new DataSet();
-            IList<CFunctionAll> result = new List<CFunctionAll>();
+            IList<CFunctionPager> result =new List<CFunctionPager>();
 
             ISession ss = holder.CreateSession(typeof(CFunctionAllPagerDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
@@ -48,14 +51,49 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
 
                 //ds.Tables.Add(dt);
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
+                //select b.* from
+               //(select a.*, rownum as rowIndex from(select * from M_FUNCTION Where (1=1)  AND LANGID  =  'zh-CN') a) b
+               //where b.rowIndex > 5 and b.rowIndex <= 10
+                StringBuilder sb = new StringBuilder();
+                sb.Append("select b.* from (select a.*, rownum as rowIndex from (");
+                sb.Append("select * from M_FUNCTION ");
+                sb.Append(condition.BuildParameterConditionSql());
+                sb.Append(" order by catalogid,functionid,functionindex ");
+                sb.Append(" ) a");
+                sb.Append(" ) b");
+                sb.Append(" where b.rowIndex >" + pageindex * pagesize);
+                sb.Append(" and b.rowIndex <=" + (pageindex * pagesize + pagesize));
 
-                string query =                 @"SELECT * FROM (" + sql + ")";
-                SimpleQuery<CFunctionAll> q = new SimpleQuery<CFunctionAll>(typeof(CFunctionAll), @"
-                                                from CFunctionAll where Id.Langid=:Langid Order by Id.Catalogid");
-                q.SetParameter("","");
-                result = q.Execute();
 
 
+
+                string query = sb.ToString();
+                                          
+
+                ISQLQuery q = ss.CreateSQLQuery(query);
+                q.AddScalar("langid", NHibernateUtil.String);
+                q.AddScalar("functionid", NHibernateUtil.Int32);
+                q.AddScalar("functionname", NHibernateUtil.String);
+                q.AddScalar("functionpath", NHibernateUtil.String);
+                q.AddScalar("catalogid", NHibernateUtil.Int32);
+                q.AddScalar("functionindex", NHibernateUtil.Int32);
+                q.AddScalar("functionimage", NHibernateUtil.String);
+
+                foreach (DictionaryEntry de in condition.ConditionTable)
+                {
+                    SearchInfo searchInfo = (SearchInfo)de.Value;
+                    q.SetParameter(string.Format("{0}",searchInfo.FieldName), searchInfo.FieldValue);
+                }
+
+                result = q.SetResultTransformer(Transformers.AliasToBean<CFunctionPager>()).List<CFunctionPager>();
+                
+                
+                //转换成datatable
+                DataTable dt = DataTableUtils.ToDataTable(result);
+                dt.TableName = key;
+                ds.Tables.Add(dt);
+
+                
                 transaction.VoteCommit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
@@ -76,7 +114,7 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
             return ds;
 
         }
-        public int GetCount(string tablename, string sql, IList<SqlParameter> paralist)
+        public int GetCount(string key, SearchCondition condition)
         {
 
             TransactionScope transaction = new TransactionScope();
@@ -87,27 +125,17 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
 
             try
             {
-                IDbCommand command = ss.Connection.CreateCommand();
-
-                //                command.CommandText = @"select LANGID,FUNCTIONID,FUNCTIONNAME,
-                //                                        FUNCTIONPATH,CATALOGID,FUNCTIONINDEX,FUNCTIONIMAGE 
-                //                                        FROM M_FUNCTION WHERE 1=1 ";
-                command.CommandText = @"SELECT COUNT(*) FROM (" + sql + ")";
-                
-                foreach (SqlParameter para in paralist)
+                string query = @"select count(FUNCTIONID) as CNT from M_FUNCTION
+                                        "+condition.BuildParameterConditionSql();
+                ISQLQuery q= ss.CreateSQLQuery(query);
+                q.AddScalar("CNT", NHibernateUtil.Int32);
+                foreach (DictionaryEntry de in condition.ConditionTable)
                 {
-                    OracleParameter op = new OracleParameter(para.ParameterName, para.Value);
-
-                    command.Parameters.Add(op);
+                    SearchInfo searchInfo = (SearchInfo)de.Value;
+                    q.SetParameter(string.Format("{0}", searchInfo.FieldName), searchInfo.FieldValue);
                 }
 
-                command.CommandType = CommandType.Text;
-
-
-                tran.Enlist(command);
-
-                intCount = (int)command.ExecuteScalar();
-
+                intCount = (int)q.UniqueResult();
                 transaction.VoteCommit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)

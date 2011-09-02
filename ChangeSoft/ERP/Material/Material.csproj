@@ -163,6 +163,10 @@
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PagerGridView\PagerGridView.csproj">
+      <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>
+      <Name>PagerGridView</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
       <Project>{A012A71F-0C86-4A41-8EF1-DEE89AC5F054}</Project>
       <Name>Service</Name>
