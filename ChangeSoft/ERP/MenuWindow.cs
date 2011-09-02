@@ -12,6 +12,7 @@ using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.FormVo;
 using Guifreaks.NavigationBar;
 using Com.ChangeSoft.ERP.Material;
+using Com.ChangeSoft.ERP.Factory;
 
 
 namespace Com.ChangeSoft.ERP
@@ -199,6 +200,26 @@ namespace Com.ChangeSoft.ERP
                     FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
 
                     frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
+                }
+                else
+                {
+                    frm.Show(this.dockpanel);
+                    frm.BringToFront();
+                }
+
+            }
+            if ("FFactory".Equals(e.Node.Tag.ToString()))
+            {
+                DockContent frm = FindDocument(e.Node.Text);
+                if (frm == null)
+                {
+                    BaseForm baseform = new BaseForm();
+                    baseform.TopLevel = false;
+                    baseform.Text = e.Node.Text;
+                    baseform.Show(this.dockpanel);
+                    FrmFactory frmFactory = new FrmFactory(baseform);
+
+                    frmFactory.Show(baseform.dockPanel, DockState.Document);
                 }
                 else
                 {
