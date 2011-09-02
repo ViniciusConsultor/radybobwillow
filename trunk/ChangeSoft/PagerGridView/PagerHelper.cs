@@ -7,7 +7,7 @@ using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.Entity.Dao;
 using System.Data.SqlClient;
 
-namespace Com.ChangeSoft.Control.PagerGridView
+namespace Com.ChangeSoft.Common.Control.PagerGridView
 {
     public class PagerHelper
     {
@@ -74,7 +74,7 @@ namespace Com.ChangeSoft.Control.PagerGridView
         public DataSet GetDataSet()
         {
 
-            ICPagerDao td = ComponentLocator.Instance().Resolve<ICPagerDao>();
+            ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve("",typeof(ICPagerDao));
             DataSet ds = td.GetDataSet(this.tablename,this.sql,this.paralist,this.pagerSize,this.currentPage);
             return ds;
 
