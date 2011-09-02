@@ -24,7 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Material", "ERP\Material\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "ERP\Factory\Factory.csproj", "{DAB91044-1151-43E4-9261-1ABA931BF13D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagerGridView", "PagerGridView\PagerGridView.csproj", "{2A8AC808-BE4B-4D08-BB70-3204B1291344}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagerGridView", "ERP\PagerGridView\PagerGridView.csproj", "{2A8AC808-BE4B-4D08-BB70-3204B1291344}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

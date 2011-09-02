@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\CFunctionAllDaoOracleImp.cs" />
-    <Compile Include="Dao\CPagerDaoOracleImp.cs" />
+    <Compile Include="Dao\CFunctionAllPagerDaoOracleImp.cs" />
     <Compile Include="Dao\ICFunctionAllDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />

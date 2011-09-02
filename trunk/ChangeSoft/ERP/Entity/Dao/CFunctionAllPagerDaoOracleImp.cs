@@ -8,42 +8,54 @@ using NHibernate;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.OracleClient;
+using Castle.ActiveRecord.Queries;
 
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
-    public class CPagerDaoOracleImp:ActiveRecordBase, Com.ChangeSoft.ERP.Entity.Dao.ICPagerDao
+    public class CFunctionAllPagerDaoOracleImp:ActiveRecordBase, Com.ChangeSoft.ERP.Entity.Dao.ICPagerDao
     {
         public DataSet GetDataSet(string tablename,string sql,IList<SqlParameter> paralist,int pagesize,int pageindex)
         {
 
             TransactionScope transaction = new TransactionScope();
             DataSet ds = new DataSet();
+            IList<CFunctionAll> result = new List<CFunctionAll>();
 
-            ISession ss = holder.CreateSession(typeof(CPagerDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CFunctionAllPagerDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
 
             try
             {
-                IDbCommand command = ss.Connection.CreateCommand();
+                //IDbCommand command = ss.Connection.CreateCommand();
 
 
-                command.CommandText = @"SELECT * FROM (" + sql + ")";
-                foreach (SqlParameter para in paralist)
-                {
-                    command.Parameters.Add((OracleParameter)para);
-                }
+                //command.CommandText = @"SELECT * FROM (" + sql + ")";
+                //foreach (SqlParameter para in paralist)
+                //{
+                //    OracleParameter op = new OracleParameter(para.ParameterName, para.Value);
+                //    command.Parameters.Add((OracleParameter)op);
+                //}
 
-                command.CommandType = CommandType.Text;
+                //command.CommandType = CommandType.Text;
 
                 
-                tran.Enlist(command);
-                IDataReader rdr = command.ExecuteReader();
-                command.Dispose();
-                DataTable dt = new DataTable();
-                dt.TableName = tablename;
-                dt.Load(rdr, LoadOption.Upsert);
+                //tran.Enlist(command);
+                //IDataReader rdr = command.ExecuteReader();
+                //command.Dispose();
+                //DataTable dt = new DataTable();
+                //dt.TableName = tablename;
+                //dt.Load(rdr, LoadOption.Upsert);
 
-                ds.Tables.Add(dt);
+                //ds.Tables.Add(dt);
+                //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
+
+                string query =                 @"SELECT * FROM (" + sql + ")";
+                SimpleQuery<CFunctionAll> q = new SimpleQuery<CFunctionAll>(typeof(CFunctionAll), @"
+                                                from CFunctionAll where Id.Langid=:Langid Order by Id.Catalogid");
+                q.SetParameter("","");
+                result = q.Execute();
+
+
                 transaction.VoteCommit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
@@ -70,7 +82,7 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
             TransactionScope transaction = new TransactionScope();
             int intCount = 0;
 
-            ISession ss = holder.CreateSession(typeof(CPagerDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CFunctionAllPagerDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
 
             try
@@ -84,7 +96,9 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
                 
                 foreach (SqlParameter para in paralist)
                 {
-                    command.Parameters.Add((OracleParameter)para);
+                    OracleParameter op = new OracleParameter(para.ParameterName, para.Value);
+
+                    command.Parameters.Add(op);
                 }
 
                 command.CommandType = CommandType.Text;
