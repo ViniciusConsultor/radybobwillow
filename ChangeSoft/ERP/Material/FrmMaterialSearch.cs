@@ -19,26 +19,6 @@ namespace Com.ChangeSoft.ERP.Material
         public FrmMaterialSearch(BaseForm _baseform):base(_baseform)
         {
             InitializeComponent();
-            //ToolStripManager.Renderer = new Office2007Renderer();
-            //this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
-            //this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
-            //this.toolStripButton3.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Delete");
-
-            //this.button1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            //this.button2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            //this.button4.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-
-            //SearchCondition condition = new SearchCondition();
-            //condition.AddCondition("LANGID",LangUtils.GetCurrentLanguage(),SqlOperator.Equal);
-
-            //this.pagerGridView1.Pagerhelper = new PagerHelper("CFunctionAllPagerDao",condition,1,5);
-            //this.pagerGridView1.LoadData();
-            //this.pagerGridView1.SetColumnAlias("LANGID", "语言");
-            
-        }
-        public void init()
-        {
-           // InitializeComponent();
             ToolStripManager.Renderer = new Office2007Renderer();
             this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
             this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
@@ -54,8 +34,9 @@ namespace Com.ChangeSoft.ERP.Material
             this.pagerGridView1.Pagerhelper = new PagerHelper("CFunctionAllPagerDao", condition, 1, 5);
             this.pagerGridView1.LoadData();
             this.pagerGridView1.SetColumnAlias("LANGID", "语言");
-
+            
         }
+
         private void buttonX1_Click(object sender, EventArgs e)
         {
 
