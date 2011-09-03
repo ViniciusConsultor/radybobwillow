@@ -121,6 +121,9 @@
   <data name="Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20110831100702629_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AssistantButtonDownArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20110903101029125_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20110831100920807_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,8 +138,5 @@
   </data>
   <data name="String1" xml:space="preserve">
     <value />
-  </data>
-  <data name="_20110903101029125_easyicon_cn_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20110903101029125_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
