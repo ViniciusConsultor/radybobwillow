@@ -60,6 +60,13 @@ namespace Com.ChangeSoft.Common.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _20110903101029125_easyicon_cn_16 {
+            get {
+                object obj = ResourceManager.GetObject("_20110903101029125_easyicon_cn_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Add {
             get {
                 object obj = ResourceManager.GetObject("Add", resourceCulture);
