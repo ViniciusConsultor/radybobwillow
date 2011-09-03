@@ -202,4 +202,7 @@
   <ItemGroup>
     <None Include="Resources\20110831100920807_easyicon_cn_48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20110903101029125_easyicon_cn_16.png" />
+  </ItemGroup>
 </Project>

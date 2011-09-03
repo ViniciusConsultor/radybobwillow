@@ -10,6 +10,7 @@ using Com.ChangeSoft.Common;
 using Com.ChangeSoft.ERP.Entity.Dao;
 using Com.ChangeSoft.Common.Control.PagerGridView;
 using System.Data.SqlClient;
+using Com.ChangeSoft.Common.Office2007Renderer;
 
 namespace Com.ChangeSoft.ERP.Material
 {
@@ -18,6 +19,7 @@ namespace Com.ChangeSoft.ERP.Material
         public FrmMaterialSearch(BaseForm _baseform):base(_baseform)
         {
             InitializeComponent();
+            ToolStripManager.Renderer = new Office2007Renderer();
             this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
             this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
             this.toolStripButton3.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Delete");
