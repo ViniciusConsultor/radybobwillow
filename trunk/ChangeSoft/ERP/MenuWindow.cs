@@ -198,7 +198,7 @@ namespace Com.ChangeSoft.ERP
                     baseform.Text = e.Node.Text;
                     baseform.Show(this.dockpanel);
                     FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
-
+                    frmMaterialSearch.init();
                     frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
                 }
                 else
@@ -218,7 +218,7 @@ namespace Com.ChangeSoft.ERP
                     baseform.Text = e.Node.Text;
                     baseform.Show(this.dockpanel);
                     FrmFactory frmFactory = new FrmFactory(baseform);
-
+                    
                     frmFactory.Show(baseform.dockPanel, DockState.Document);
                 }
                 else

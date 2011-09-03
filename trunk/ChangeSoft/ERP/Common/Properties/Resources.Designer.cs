@@ -60,16 +60,16 @@ namespace Com.ChangeSoft.Common.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap _20110903101029125_easyicon_cn_16 {
+        internal static System.Drawing.Bitmap Add {
             get {
-                object obj = ResourceManager.GetObject("_20110903101029125_easyicon_cn_16", resourceCulture);
+                object obj = ResourceManager.GetObject("Add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap Add {
+        internal static System.Drawing.Bitmap AssistantButtonDownArrow {
             get {
-                object obj = ResourceManager.GetObject("Add", resourceCulture);
+                object obj = ResourceManager.GetObject("AssistantButtonDownArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
