@@ -26,6 +26,7 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
 
   
         private int currentPageLast = 0;
+        private DataSet _ds;
 
  
 
@@ -116,6 +117,7 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
 
             ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve(key,typeof(ICPagerDao));
             DataSet ds = td.GetDataSet(this.key,this.condition,this.pagerSize,(this.currentPage-1));
+            _ds = ds;
             return ds;
 
         }
@@ -125,6 +127,19 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             ICPagerDao td = (ICPagerDao)ComponentLocator.Instance().Resolve(key, typeof(ICPagerDao));
             int result = td.GetCount(this.key, this.condition);
             return result;
+        }
+        public IList<string> Columns
+        {
+            get
+            {
+                DataTable dt = _ds.Tables[this.key];
+                IList<string> list = new List<string>();
+                foreach (DataColumn dc in dt.Columns)
+                {
+                    list.Add(dc.ColumnName);
+                }
+                return list;
+            }
         }
 
     }

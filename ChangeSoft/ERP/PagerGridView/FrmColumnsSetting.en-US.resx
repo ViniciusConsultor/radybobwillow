@@ -117,28 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="button1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Select/Unselect</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>物料查询</value>
-  </data>
-  <data name="Grid_catalogid" xml:space="preserve">
-    <value>分类代码</value>
-  </data>
-  <data name="Grid_functionid" xml:space="preserve">
-    <value>功能代码</value>
-  </data>
-  <data name="Grid_functionimage" xml:space="preserve">
-    <value>功能图标</value>
-  </data>
-  <data name="Grid_functionindex" xml:space="preserve">
-    <value>功能排序</value>
-  </data>
-  <data name="Grid_functionname" xml:space="preserve">
-    <value>功能名称</value>
-  </data>
-  <data name="Grid_functionpath" xml:space="preserve">
-    <value>功能路径</value>
-  </data>
-  <data name="Grid_langid" xml:space="preserve">
-    <value>语言代码</value>
+    <value>Display Column Setting</value>
   </data>
 </root>

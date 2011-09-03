@@ -27,7 +27,7 @@ namespace Com.ChangeSoft.ERP
     {
 
         private System.Resources.ResourceManager rm;
-        private IList langItemlist;
+        private IList<ConditionVo> langItemlist;
         private MenuWindow menuWindow;
         public MainForm()
         {
@@ -128,7 +128,7 @@ namespace Com.ChangeSoft.ERP
             this.toolStripComboBox_Language.Items.Clear();
             foreach (ConditionVo vo in langItemlist)
             {
-                this.toolStripComboBox_Language.Items.Add(vo.ConditionName);
+                this.toolStripComboBox_Language.Items.Add(vo);
             }
         }
 

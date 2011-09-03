@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Xml;
+using System.Collections.Generic;
 
 namespace Com.ChangeSoft.Common
 {
@@ -22,7 +23,7 @@ namespace Com.ChangeSoft.Common
             XmlNodeList conditionlist = root.SelectNodes("Condition/Name");
             foreach (XmlNode conditionnode in conditionlist)
             {
-                IList result = new ArrayList();
+                IList<ConditionVo> result = new List<ConditionVo>();
                 String condition = conditionnode.InnerText;
                 XmlNodeList nodelist = root.SelectNodes("Condition[Name='" + condition + "']/Data[Language='" + lang + "']/List/Item");
                 foreach (XmlNode node in nodelist)
@@ -73,6 +74,10 @@ namespace Com.ChangeSoft.Common
         {
             get { return _name; }
             set { _name = value; }
+        }
+        public override string ToString()
+        {
+            return _name;
         }
     }
 }

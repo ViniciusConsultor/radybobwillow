@@ -28,53 +28,53 @@ namespace Com.ChangeSoft.ERP.Entity
 
 		#region Private Members
 
-        private string langid;
-        public string Langid
+        private string grid_langid;
+        public string Grid_langid
         {
-            get { return langid; }
-            set { langid = value; }
+            get { return grid_langid; }
+            set { grid_langid = value; }
         }
-        private int functionid;
+        private int grid_functionid;
 
-        public int Functionid
+        public int Grid_functionid
         {
-            get { return functionid; }
-            set { functionid = value; }
+            get { return grid_functionid; }
+            set { grid_functionid = value; }
         }
 
-        private string functionname;
-        public string Functionname
+        private string grid_functionname;
+        public string Grid_functionname
         {
-            get { return functionname; }
-            set { functionname = value; }
+            get { return grid_functionname; }
+            set { grid_functionname = value; }
         }
-        private string functionpath;
+        private string grid_functionpath;
 
-        public string Functionpath
+        public string Grid_functionpath
         {
-            get { return functionpath; }
-            set { functionpath = value; }
+            get { return grid_functionpath; }
+            set { grid_functionpath = value; }
         }
-        private int catalogid;
+        private int grid_catalogid;
 
-        public int Catalogid
+        public int Grid_catalogid
         {
-            get { return catalogid; }
-            set { catalogid = value; }
+            get { return grid_catalogid; }
+            set { grid_catalogid = value; }
         }
-        private int functionindex;
+        private int grid_functionindex;
 
-        public int Functionindex
+        public int Grid_functionindex
         {
-            get { return functionindex; }
-            set { functionindex = value; }
+            get { return grid_functionindex; }
+            set { grid_functionindex = value; }
         }
-        private string functionimage;
+        private string grid_functionimage;
 
-        public string Functionimage
+        public string Grid_functionimage
         {
-            get { return functionimage; }
-            set { functionimage = value; }
+            get { return grid_functionimage; }
+            set { grid_functionimage = value; }
         }
 
   		

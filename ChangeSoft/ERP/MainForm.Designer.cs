@@ -194,8 +194,8 @@
             // 
             this.toolStripComboBox_Language.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripComboBox_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox_Language.Name = "toolStripComboBox_Language";
             resources.ApplyResources(this.toolStripComboBox_Language, "toolStripComboBox_Language");
+            this.toolStripComboBox_Language.Name = "toolStripComboBox_Language";
             this.toolStripComboBox_Language.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox_Language_SelectedIndexChanged);
             // 
             // toolStrip1
