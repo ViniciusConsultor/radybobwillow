@@ -55,7 +55,14 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
                //(select a.*, rownum as rowIndex from(select * from M_FUNCTION Where (1=1)  AND LANGID  =  'zh-CN') a) b
                //where b.rowIndex > 5 and b.rowIndex <= 10
                 StringBuilder sb = new StringBuilder();
-                sb.Append("select b.* from (select a.*, rownum as rowIndex from (");
+                sb.Append("select b.LANGID grid_langid,");
+                sb.Append("b.FUNCTIONID grid_functionid,");
+                sb.Append("b.FUNCTIONNAME grid_functionname,");
+                sb.Append("b.FUNCTIONPATH grid_functionpath,");
+                sb.Append("b.CATALOGID grid_catalogid,");
+                sb.Append("b.FUNCTIONINDEX grid_functionindex,");
+                sb.Append("b.FUNCTIONIMAGE grid_functionimage");
+                sb.Append(" from (select a.*, rownum as rowIndex from (");
                 sb.Append("select * from M_FUNCTION ");
                 sb.Append(condition.BuildParameterConditionSql());
                 sb.Append(" order by catalogid,functionid,functionindex ");
@@ -71,13 +78,13 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
                                           
 
                 ISQLQuery q = ss.CreateSQLQuery(query);
-                q.AddScalar("langid", NHibernateUtil.String);
-                q.AddScalar("functionid", NHibernateUtil.Int32);
-                q.AddScalar("functionname", NHibernateUtil.String);
-                q.AddScalar("functionpath", NHibernateUtil.String);
-                q.AddScalar("catalogid", NHibernateUtil.Int32);
-                q.AddScalar("functionindex", NHibernateUtil.Int32);
-                q.AddScalar("functionimage", NHibernateUtil.String);
+                q.AddScalar("grid_langid", NHibernateUtil.String);
+                q.AddScalar("grid_functionid", NHibernateUtil.Int32);
+                q.AddScalar("grid_functionname", NHibernateUtil.String);
+                q.AddScalar("grid_functionpath", NHibernateUtil.String);
+                q.AddScalar("grid_catalogid", NHibernateUtil.Int32);
+                q.AddScalar("grid_functionindex", NHibernateUtil.Int32);
+                q.AddScalar("grid_functionimage", NHibernateUtil.String);
 
                 foreach (DictionaryEntry de in condition.ConditionTable)
                 {

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</ProjectGuid>
+    <ProjectGuid>{11F81874-53ED-42FA-A08F-DD481A19740F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common.Control.PagerGridView</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common.Control.PagerGridView</AssemblyName>
+    <RootNamespace>Com.ChangeSoft.Common.Control.ConditionDropDownList</RootNamespace>
+    <AssemblyName>Com.ChangeSoft.Common.Control.ConditionDropDownList</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,51 +45,26 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ColumnInfoVo.cs" />
-    <Compile Include="FrmColumnsSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmColumnsSetting.Designer.cs">
-      <DependentUpon>FrmColumnsSetting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PagerGridView.cs">
+    <Compile Include="ConditionDropDownList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PagerGridView.Designer.cs">
-      <DependentUpon>PagerGridView.cs</DependentUpon>
+    <Compile Include="ConditionDropDownList.Designer.cs">
+      <DependentUpon>ConditionDropDownList.cs</DependentUpon>
     </Compile>
-    <Compile Include="PagerHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmColumnsSetting.en-US.resx">
-      <DependentUpon>FrmColumnsSetting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmColumnsSetting.resx">
-      <DependentUpon>FrmColumnsSetting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PagerGridView.en-US.resx">
-      <DependentUpon>PagerGridView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PagerGridView.resx">
-      <DependentUpon>PagerGridView.cs</DependentUpon>
+    <EmbeddedResource Include="ConditionDropDownList.resx">
+      <DependentUpon>ConditionDropDownList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Entity\Entity.csproj">
-      <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
-      <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

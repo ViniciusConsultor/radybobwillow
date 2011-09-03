@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "ERP\Factory\Fact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagerGridView", "ERP\PagerGridView\PagerGridView.csproj", "{2A8AC808-BE4B-4D08-BB70-3204B1291344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionDropDownList", "ERP\ConditionDropDownList\ConditionDropDownList.csproj", "{11F81874-53ED-42FA-A08F-DD481A19740F}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -80,6 +82,10 @@ Global
 		{2A8AC808-BE4B-4D08-BB70-3204B1291344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8AC808-BE4B-4D08-BB70-3204B1291344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8AC808-BE4B-4D08-BB70-3204B1291344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F81874-53ED-42FA-A08F-DD481A19740F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F81874-53ED-42FA-A08F-DD481A19740F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F81874-53ED-42FA-A08F-DD481A19740F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F81874-53ED-42FA-A08F-DD481A19740F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace Com.ChangeSoft.Common
 {
@@ -13,11 +14,11 @@ namespace Com.ChangeSoft.Common
             return defaultlang;
         }  
 
-        public static IList GetLanguageList()
+        public static IList<ConditionVo> GetLanguageList()
         {
-            IList result = new ArrayList();
+            IList<ConditionVo> result = new List<ConditionVo>();
 
-            result = (IList)ConditionUtils.Conditions[ConditionUtils.COND_LANGUAGE];
+            result = (IList<ConditionVo>)ConditionUtils.Conditions[ConditionUtils.COND_LANGUAGE];
             return result;
         }
 

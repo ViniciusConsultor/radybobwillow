@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaterialSearch));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
+            this.FrmMaterialSearch_pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,8 +50,12 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.conditionDropDownList1 = new Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -94,10 +99,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -155,7 +156,7 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.pagerGridView1, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 3);
@@ -166,13 +167,15 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel24, 0, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // pagerGridView1
+            // FrmMaterialSearch_pagerGridView1
             // 
-            this.pagerGridView1.DataMember = "";
-            this.pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
-            this.pagerGridView1.Name = "pagerGridView1";
-            this.pagerGridView1.Pagerhelper = null;
+            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
+            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
+            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
+            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
+            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
+            this.FrmMaterialSearch_pagerGridView1.Load += new System.EventHandler(this.pagerGridView1_Load);
             // 
             // tableLayoutPanel2
             // 
@@ -254,7 +257,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.conditionDropDownList1, 1, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label5
@@ -262,12 +265,12 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // comboBox1
+            // conditionDropDownList1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Name = "comboBox1";
+            this.conditionDropDownList1.Conditionname = "Language";
+            this.conditionDropDownList1.Defaultselectedindex = 1;
+            resources.ApplyResources(this.conditionDropDownList1, "conditionDropDownList1");
+            this.conditionDropDownList1.Name = "conditionDropDownList1";
             // 
             // tableLayoutPanel7
             // 
@@ -277,6 +280,27 @@
             this.tableLayoutPanel7.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label20, 3, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // textBox12
+            // 
+            resources.ApplyResources(this.textBox12, "textBox12");
+            this.textBox12.Name = "textBox12";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
             // 
             // tableLayoutPanel8
             // 
@@ -536,27 +560,6 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Name = "label11";
             // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            // 
-            // textBox12
-            // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
             // FrmMaterialSearch
             // 
             resources.ApplyResources(this, "$this");
@@ -618,7 +621,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
+        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -660,7 +663,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
@@ -681,6 +683,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label20;
+        private Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
 
 
     }

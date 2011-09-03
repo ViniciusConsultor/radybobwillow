@@ -159,6 +159,10 @@
       <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ConditionDropDownList\ConditionDropDownList.csproj">
+      <Project>{11F81874-53ED-42FA-A08F-DD481A19740F}</Project>
+      <Name>ConditionDropDownList</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
