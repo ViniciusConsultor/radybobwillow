@@ -272,6 +272,10 @@
             this.conditionDropDownList1.Defaultselectedindex = 1;
             resources.ApplyResources(this.conditionDropDownList1, "conditionDropDownList1");
             this.conditionDropDownList1.Name = "conditionDropDownList1";
+            this.conditionDropDownList1.Selectedindex = -1;
+            this.conditionDropDownList1.Selectedname = null;
+            this.conditionDropDownList1.Selectedvalue = null;
+            this.conditionDropDownList1.SelectedIndexChanged += new Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList.OnSelectChangedEventHandler(this.conditionDropDownList1_SelectedIndexChanged);
             // 
             // tableLayoutPanel7
             // 

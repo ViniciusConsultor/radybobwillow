@@ -18,6 +18,28 @@ namespace Com.ChangeSoft.Common.Control.ConditionDropDownList
 
         private int defaultselectedindex;
 
+        private string selectedvalue;
+
+        private string selectedname;
+
+        private int selectedindex=-1;
+
+
+        public delegate void OnSelectChangedEventHandler(object sender, EventArgs e);
+        public event OnSelectChangedEventHandler SelectedIndexChanged;
+
+        protected virtual void OnSelectChanged(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (SelectedIndexChanged != null)
+            {//判断事件是否为空  
+                ComboBox c = (ComboBox)sender;
+                this.selectedname = ((ConditionVo)c.SelectedItem).ConditionName;
+                this.selectedvalue = ((ConditionVo)c.SelectedItem).ConditionValue;
+                this.selectedindex = c.SelectedIndex;
+                SelectedIndexChanged(this, e);//触发事件  
+            }
+        } 
+
 
         public ConditionDropDownList()
         {
@@ -37,6 +59,7 @@ namespace Com.ChangeSoft.Common.Control.ConditionDropDownList
                 this.comboBox1.Items.Add(vo);
             }
             this.comboBox1.SelectedIndex = this.defaultselectedindex;
+            this.comboBox1.SelectedIndexChanged += new EventHandler(OnSelectChanged);
 
         }
 
@@ -53,6 +76,24 @@ namespace Com.ChangeSoft.Common.Control.ConditionDropDownList
             set { defaultselectedindex = value; }
         }
 
+        public string Selectedvalue
+        {
+            get { return selectedvalue; }
+            set { selectedvalue = value; }
+        }
+
+
+        public string Selectedname
+        {
+            get { return selectedname; }
+            set { selectedname = value; }
+        }
+
+        public int Selectedindex
+        {
+            get { return selectedindex; }
+            set { selectedindex = value; }
+        }
 
         public static bool IsDesignMode()
         {

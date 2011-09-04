@@ -85,7 +85,7 @@ namespace Com.ChangeSoft.ERP.Material
                 b.Text = (string)fr.GetObject("$this.Text");
               
 
-                FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(b);
+                FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform,b);
 
                 if (dc == baseform.Pane.Contents.Count- 1)
                 {
@@ -103,7 +103,7 @@ namespace Com.ChangeSoft.ERP.Material
             }
             else
             {
-                frm.Show(baseform.Parentdockpanel);
+                frm.Show();
                 frm.BringToFront();
             }
             //如果画面跳转后自己画面要关闭的话，用下面两句话，关闭自画面
@@ -120,6 +120,11 @@ namespace Com.ChangeSoft.ERP.Material
             re.Add(v);
             this.baseform.msgwindow.Messagelist = re;
             this.baseform.msgwindow.ShowMessage();
+        }
+
+        private void conditionDropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.conditionDropDownList1.Selectedindex.ToString() + ":" + this.conditionDropDownList1.Selectedvalue + ":" + this.conditionDropDownList1.Selectedname);
         }
     }
 }

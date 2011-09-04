@@ -16,6 +16,38 @@ namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
 
         private int defaultselectedindex;
 
+        private string checkedvalue = "";
+        private string checkedname = "";
+
+        public delegate void OnCheckedChangeEventHandler(object sender, EventArgs e);
+        public event OnCheckedChangeEventHandler RadioChanged;
+
+        public string Checkedvalue
+        {
+            get { return checkedvalue; }
+            set { checkedvalue = value; }
+        }
+
+        public string Checkedname
+        {
+            get { return checkedname; }
+            set { checkedname = value; }
+        }
+
+        protected virtual void OnRadioChanged(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (RadioChanged != null)
+            {//判断事件是否为空  
+                RadioButton r = (RadioButton)sender;
+                if (r.Checked)
+                {
+                    this.checkedvalue = (string)r.Tag;
+                    this.checkedname = r.Text;
+                }
+                RadioChanged(this, e);//触发事件  
+            }
+        } 
+
         public ConditionRadioButton()
         {
             InitializeComponent();
@@ -28,30 +60,17 @@ namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
 
             IList<ConditionVo> result = new List<ConditionVo>();
             result = (IList<ConditionVo>)ConditionUtils.Conditions[this.conditionname];
-            int cnt = result.Count;
-            if (cnt > 0)
+            foreach (ConditionVo vo in result)
             {
-                this.tpGB.ColumnCount = cnt;
-                int iCnt = 0;
-                float iWidth = (float)Math.Round((decimal)(this.tpGB.Width / cnt), 1);
-                foreach (ConditionVo vo in result)
-                {
-                    RadioButton radNew = new RadioButton();
-                    radNew.Name = vo.ConditionName + "-" + vo.ConditionValue;
-                    radNew.Text = vo.ConditionName;
-                    radNew.Anchor = AnchorStyles.Right;
-                    if (iCnt == 0)
-                    {
-                        this.tpGB.ColumnStyles[0].Width = iWidth;
-                    }
-                    else
-                    {
-                        this.tpGB.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, iWidth));
-                    }
-                    this.tpGB.Controls.Add(radNew, iCnt, 0);
-                    iCnt++;
-                }
+                RadioButton radNew = new RadioButton();
+                radNew.Name = vo.ConditionName + "-" + vo.ConditionValue;
+                radNew.Tag = vo.ConditionValue;
+                radNew.Text = vo.ConditionName;
+                radNew.Click += new EventHandler(OnRadioChanged);
+                this.flowLayoutPanel1.Controls.Add(radNew);
+                
             }
+
         }
 
 
