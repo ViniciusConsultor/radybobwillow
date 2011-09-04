@@ -16,7 +16,6 @@ namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
 
         private int defaultselectedindex;
 
-
         public ConditionRadioButton()
         {
             InitializeComponent();
@@ -29,16 +28,30 @@ namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
 
             IList<ConditionVo> result = new List<ConditionVo>();
             result = (IList<ConditionVo>)ConditionUtils.Conditions[this.conditionname];
-            foreach (ConditionVo vo in result)
+            int cnt = result.Count;
+            if (cnt > 0)
             {
-                RadioButton radNew = new RadioButton();
-                radNew.Name = vo.ConditionName + "-" + vo.ConditionValue;
-                radNew.Text = vo.ConditionName;
-                radNew.Anchor = AnchorStyles.Right;
-                this.groupBox1.Controls.Add(radNew);
-                
+                this.tpGB.ColumnCount = cnt;
+                int iCnt = 0;
+                float iWidth = (float)Math.Round((decimal)(this.tpGB.Width / cnt), 1);
+                foreach (ConditionVo vo in result)
+                {
+                    RadioButton radNew = new RadioButton();
+                    radNew.Name = vo.ConditionName + "-" + vo.ConditionValue;
+                    radNew.Text = vo.ConditionName;
+                    radNew.Anchor = AnchorStyles.Right;
+                    if (iCnt == 0)
+                    {
+                        this.tpGB.ColumnStyles[0].Width = iWidth;
+                    }
+                    else
+                    {
+                        this.tpGB.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, iWidth));
+                    }
+                    this.tpGB.Controls.Add(radNew, iCnt, 0);
+                    iCnt++;
+                }
             }
-
         }
 
 
