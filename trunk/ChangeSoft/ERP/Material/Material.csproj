@@ -94,6 +94,7 @@
       <HintPath>..\dll\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -114,6 +115,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmMaterialEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialEdit.Designer.cs">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMaterialSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +128,12 @@
       <DependentUpon>FrmMaterialSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMaterialEdit.en-US.resx">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialEdit.resx">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMaterialSearch.en-US.resx">
       <DependentUpon>FrmMaterialSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +175,10 @@
     <ProjectReference Include="..\ConditionDropDownList\ConditionDropDownList.csproj">
       <Project>{11F81874-53ED-42FA-A08F-DD481A19740F}</Project>
       <Name>ConditionDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConditionRadioButton\ConditionRadioButton.csproj">
+      <Project>{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}</Project>
+      <Name>ConditionRadioButton</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>

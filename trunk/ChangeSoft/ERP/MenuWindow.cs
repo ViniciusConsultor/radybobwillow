@@ -13,6 +13,7 @@ using Com.ChangeSoft.ERP.FormVo;
 using Guifreaks.NavigationBar;
 using Com.ChangeSoft.ERP.Material;
 using Com.ChangeSoft.ERP.Factory;
+using System.Resources;
 
 
 namespace Com.ChangeSoft.ERP
@@ -144,22 +145,23 @@ namespace Com.ChangeSoft.ERP
 
 
             //BaseForm td = (BaseForm)ComponentLocator.Instance().Resolve(e.Node.Tag.ToString(), typeof(BaseForm));
+            BaseForm baseform = new BaseForm();
+            baseform.Parentdockpanel = this.dockpanel;
+            baseform.TopLevel = false;
+            baseform.Text = e.Node.Text;
 
             //td.Show(this.dockpanel);
             //td.BringToFront();
 
             if ("FCompany".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument(e.Node.Text);
+                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    BaseForm baseform = new BaseForm();
-                    baseform.TopLevel = false;
-                    baseform.Text = e.Node.Text;
-                    baseform.Show(this.dockpanel);
                     FrmCompany frmcompany = new FrmCompany(baseform);
                     frmcompany.Show(baseform.dockPanel, DockState.Document);
                     frmcompany.BringToFront();
+                    baseform.Show(this.dockpanel);
 
                 }
                 else
@@ -170,16 +172,13 @@ namespace Com.ChangeSoft.ERP
             }
             if ("FQuotationEntry".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument(e.Node.Text);
+                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    BaseForm baseform = new BaseForm();
-                    baseform.TopLevel = false;
-                    baseform.Text = e.Node.Text; 
-                    baseform.Show(this.dockpanel);
                     FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
 
                     frmproductplan.Show(baseform.dockPanel, DockState.Document);
+                    baseform.Show(this.dockpanel);
                 }
                 else
                 {
@@ -190,16 +189,13 @@ namespace Com.ChangeSoft.ERP
             }
             if ("FMaterial".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument(e.Node.Text);
+                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    BaseForm baseform = new BaseForm();
-                    baseform.TopLevel = false;
-                    baseform.Text = e.Node.Text;
-                    baseform.Show(this.dockpanel);
                     FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
 
                     frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
+                    baseform.Show(this.dockpanel);
                 }
                 else
                 {
@@ -210,16 +206,13 @@ namespace Com.ChangeSoft.ERP
             }
             if ("FFactory".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = FindDocument(e.Node.Text);
+                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
                 if (frm == null)
                 {
-                    BaseForm baseform = new BaseForm();
-                    baseform.TopLevel = false;
-                    baseform.Text = e.Node.Text;
-                    baseform.Show(this.dockpanel);
                     FrmFactory frmFactory = new FrmFactory(baseform);
                     
                     frmFactory.Show(baseform.dockPanel, DockState.Document);
+                    baseform.Show(this.dockpanel);
                 }
                 else
                 {

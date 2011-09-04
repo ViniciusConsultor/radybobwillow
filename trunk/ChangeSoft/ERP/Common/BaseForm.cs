@@ -13,6 +13,8 @@ namespace Com.ChangeSoft.Common
     public   partial class BaseForm : WeifenLuo.WinFormsUI.Docking.DockContent
     {
 
+        private DockPanel parentdockpanel;
+
         private Hashtable SessionContext = new Hashtable();
         public MessageWindow msgwindow;
         public BaseForm()
@@ -35,7 +37,69 @@ namespace Com.ChangeSoft.Common
         {
             SessionContext.Add(key, data);
         }
-        
+
+        public DockPanel Parentdockpanel
+        {
+            get { return parentdockpanel; }
+            set { parentdockpanel = value; }
+        }
+
+
+        public DockContent FindParentDocument(string text)
+        {
+            if (parentdockpanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (Form form in MdiChildren)
+                {
+                    if (form.Text == text)
+                    {
+                        return form as DockContent;
+                    }
+                }
+
+                return null;
+            }
+            else
+            {
+                foreach (DockContent content in parentdockpanel.Documents)
+                {
+                    if (content.DockHandler.TabText == text)
+                    {
+                        return content;
+                    }
+                }
+
+                return null;
+            }
+        }
+
+        public DockContent FindChildDocument(string text)
+        {
+            if (dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (Form form in MdiChildren)
+                {
+                    if (form.Text == text)
+                    {
+                        return form as DockContent;
+                    }
+                }
+
+                return null;
+            }
+            else
+            {
+                foreach (DockContent content in dockPanel.Documents)
+                {
+                    if (content.DockHandler.TabText == text)
+                    {
+                        return content;
+                    }
+                }
+
+                return null;
+            }
+        }
     }
 
 
