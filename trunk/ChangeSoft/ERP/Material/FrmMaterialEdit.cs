@@ -12,8 +12,10 @@ namespace Com.ChangeSoft.ERP.Material
 {
     public partial class FrmMaterialEdit : Com.ChangeSoft.Common.BaseContent
     {
-        public FrmMaterialEdit(BaseForm _baseform):base(_baseform)
+        private BaseForm owner;
+        public FrmMaterialEdit(BaseForm _owner, BaseForm _baseform):base(_baseform)
         {
+            this.owner = _owner;
             InitializeComponent();
         }
 
@@ -23,7 +25,14 @@ namespace Com.ChangeSoft.ERP.Material
             {
                 IDockContent content = (IDockContent)baseform.Pane.ActiveContent;
                 content.DockHandler.Close();
+                this.owner.Show();
+                this.owner.BringToFront();
             }
+        }
+
+        private void conditionRadioButton1_RadioChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.conditionRadioButton1.Checkedvalue + ":" + this.conditionRadioButton1.Checkedname);
         }
     }
 }

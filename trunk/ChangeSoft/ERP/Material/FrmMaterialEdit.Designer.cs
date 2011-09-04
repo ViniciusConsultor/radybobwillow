@@ -37,48 +37,33 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AccessibleDescription = null;
-            this.tableLayoutPanel1.AccessibleName = null;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.BackgroundImage = null;
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.conditionRadioButton1, 0, 0);
-            this.tableLayoutPanel1.Font = null;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button1
             // 
-            this.button1.AccessibleDescription = null;
-            this.button1.AccessibleName = null;
             resources.ApplyResources(this.button1, "button1");
-            this.button1.BackgroundImage = null;
-            this.button1.Font = null;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // conditionRadioButton1
             // 
-            this.conditionRadioButton1.AccessibleDescription = null;
-            this.conditionRadioButton1.AccessibleName = null;
-            resources.ApplyResources(this.conditionRadioButton1, "conditionRadioButton1");
-            this.conditionRadioButton1.BackgroundImage = null;
+            this.conditionRadioButton1.Checkedname = "";
+            this.conditionRadioButton1.Checkedvalue = "";
             this.conditionRadioButton1.Conditionname = "Language";
             this.conditionRadioButton1.Defaultselectedindex = 0;
-            this.conditionRadioButton1.Font = null;
+            resources.ApplyResources(this.conditionRadioButton1, "conditionRadioButton1");
             this.conditionRadioButton1.Name = "conditionRadioButton1";
+            this.conditionRadioButton1.RadioChanged += new Com.ChangeSoft.Common.Control.ConditionRadioButton.ConditionRadioButton.OnCheckedChangeEventHandler(this.conditionRadioButton1_RadioChanged);
             // 
             // FrmMaterialEdit
             // 
-            this.AccessibleDescription = null;
-            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = null;
-            this.Icon = null;
             this.Name = "FrmMaterialEdit";
-            this.ToolTipText = null;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
