@@ -15,7 +15,7 @@ namespace Com.ChangeSoft.Common
         public static void GetAllConditionsList(String lang)
         {
 
-            XmlReader reader = new XmlTextReader("Conditions.xml");
+            XmlReader reader = new XmlTextReader("Config\\Conditions.xml");
             XmlDocument doc = new XmlDocument();
             doc.Load(reader);
 
