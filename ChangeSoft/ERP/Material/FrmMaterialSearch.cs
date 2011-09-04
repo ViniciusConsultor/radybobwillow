@@ -12,6 +12,8 @@ using Com.ChangeSoft.Common.Control.PagerGridView;
 using System.Data.SqlClient;
 using Com.ChangeSoft.Common.Office2007Renderer;
 using System.Resources;
+using WeifenLuo.WinFormsUI.Docking;
+using Noogen.Validation;
 
 namespace Com.ChangeSoft.ERP.Material
 {
@@ -67,6 +69,45 @@ namespace Com.ChangeSoft.ERP.Material
         private void pagerGridView1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
+
+            DockContent frm = baseform.FindParentDocument((string)fr.GetObject("$this.Text"));
+            if (frm == null)
+            {
+                FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform);
+
+                int dc = baseform.Pane.Contents.IndexOf(baseform.Pane.ActiveContent);
+                if (baseform.Pane.Contents.Count <= 1)
+                {
+                    frmMaterialEdit.Show(baseform.Parentdockpanel);
+                }
+                else
+                {
+
+                    frmMaterialEdit.Show(baseform.Pane, baseform.Pane.Contents[dc + 1]);
+                }
+
+            }
+            else
+            {
+                frm.Show(baseform.Parentdockpanel);
+                frm.BringToFront();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            IList<MessageVo> re = new List<MessageVo>();
+            MessageVo v = new MessageVo();
+            v.MessageType = "Warning";
+            v.ResultMessage = "ddddddddddd";
+            re.Add(v);
+            this.baseform.msgwindow.Messagelist = re;
+            this.baseform.msgwindow.ShowMessage();
         }
     }
 }

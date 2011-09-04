@@ -25,5 +25,7 @@ namespace Com.ChangeSoft.Common
         public virtual void Language_Change()
         {
         }
+
+
     }
 }
