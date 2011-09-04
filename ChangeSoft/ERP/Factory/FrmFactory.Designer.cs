@@ -30,164 +30,181 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactory));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbAdd = new System.Windows.Forms.ToolStripButton();
-            this.tsbEdit = new System.Windows.Forms.ToolStripButton();
-            this.tsbDelete = new System.Windows.Forms.ToolStripButton();
+            this.tsbBef = new System.Windows.Forms.ToolStripButton();
+            this.tsbNxt = new System.Windows.Forms.ToolStripButton();
+            this.tsbOk = new System.Windows.Forms.ToolStripButton();
             this.tpBase = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnFactory = new System.Windows.Forms.Button();
+            this.txtFactory = new System.Windows.Forms.TextBox();
+            this.lblStar2 = new System.Windows.Forms.Label();
+            this.lblFactory = new System.Windows.Forms.Label();
+            this.lblCompanyNM = new System.Windows.Forms.Label();
+            this.lblCompany = new System.Windows.Forms.Label();
+            this.lblStar1 = new System.Windows.Forms.Label();
+            this.txtCompany = new System.Windows.Forms.TextBox();
+            this.btnCompany = new System.Windows.Forms.Button();
+            this.tpMode = new System.Windows.Forms.TableLayoutPanel();
+            this.rbAdd = new System.Windows.Forms.RadioButton();
+            this.rbUpd = new System.Windows.Forms.RadioButton();
+            this.rbDel = new System.Windows.Forms.RadioButton();
             this.toolStrip1.SuspendLayout();
             this.tpBase.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tpMode.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbAdd,
-            this.tsbEdit,
-            this.tsbDelete});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.tsbBef,
+            this.tsbNxt,
+            this.tsbOk});
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(792, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
             // 
-            // tsbAdd
+            // tsbBef
             // 
-            this.tsbAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbAdd.Image = ((System.Drawing.Image)(resources.GetObject("tsbAdd.Image")));
-            this.tsbAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAdd.Name = "tsbAdd";
-            this.tsbAdd.Size = new System.Drawing.Size(23, 22);
-            this.tsbAdd.Text = "toolStripButton1";
+            this.tsbBef.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbBef, "tsbBef");
+            this.tsbBef.Name = "tsbBef";
             // 
-            // tsbEdit
+            // tsbNxt
             // 
-            this.tsbEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsbEdit.Image")));
-            this.tsbEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbEdit.Name = "tsbEdit";
-            this.tsbEdit.Size = new System.Drawing.Size(23, 22);
-            this.tsbEdit.Text = "toolStripButton2";
+            this.tsbNxt.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbNxt, "tsbNxt");
+            this.tsbNxt.Name = "tsbNxt";
             // 
-            // tsbDelete
+            // tsbOk
             // 
-            this.tsbDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbDelete.Image = ((System.Drawing.Image)(resources.GetObject("tsbDelete.Image")));
-            this.tsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbDelete.Name = "tsbDelete";
-            this.tsbDelete.Size = new System.Drawing.Size(23, 22);
-            this.tsbDelete.Text = "toolStripButton3";
+            this.tsbOk.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbOk, "tsbOk");
+            this.tsbOk.Name = "tsbOk";
             // 
             // tpBase
             // 
-            this.tpBase.AutoScroll = true;
-            this.tpBase.ColumnCount = 1;
-            this.tpBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tpBase.Controls.Add(this.label1, 0, 22);
-            this.tpBase.Controls.Add(this.label2, 0, 13);
-            this.tpBase.Controls.Add(this.label3, 0, 3);
-            this.tpBase.Controls.Add(this.label4, 0, 0);
-            this.tpBase.Controls.Add(this.label5, 0, 23);
-            this.tpBase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tpBase.Location = new System.Drawing.Point(0, 25);
+            resources.ApplyResources(this.tpBase, "tpBase");
+            this.tpBase.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tpBase.Name = "tpBase";
-            this.tpBase.RowCount = 24;
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tpBase.Size = new System.Drawing.Size(792, 548);
-            this.tpBase.TabIndex = 3;
             // 
-            // label1
+            // tableLayoutPanel1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(754, 440);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // label2
+            // tableLayoutPanel2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(754, 260);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.btnFactory, 9, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtFactory, 8, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblStar2, 7, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblFactory, 6, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblCompanyNM, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblCompany, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblStar1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtCompany, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnCompany, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tpMode, 2, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
-            // label3
+            // btnFactory
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(754, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            resources.ApplyResources(this.btnFactory, "btnFactory");
+            this.btnFactory.Name = "btnFactory";
+            this.btnFactory.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // txtFactory
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(754, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            resources.ApplyResources(this.txtFactory, "txtFactory");
+            this.txtFactory.Name = "txtFactory";
             // 
-            // label5
+            // lblStar2
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(754, 460);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            resources.ApplyResources(this.lblStar2, "lblStar2");
+            this.lblStar2.ForeColor = System.Drawing.Color.Red;
+            this.lblStar2.Name = "lblStar2";
+            // 
+            // lblFactory
+            // 
+            resources.ApplyResources(this.lblFactory, "lblFactory");
+            this.lblFactory.Name = "lblFactory";
+            // 
+            // lblCompanyNM
+            // 
+            resources.ApplyResources(this.lblCompanyNM, "lblCompanyNM");
+            this.tableLayoutPanel2.SetColumnSpan(this.lblCompanyNM, 6);
+            this.lblCompanyNM.Name = "lblCompanyNM";
+            // 
+            // lblCompany
+            // 
+            resources.ApplyResources(this.lblCompany, "lblCompany");
+            this.lblCompany.Name = "lblCompany";
+            // 
+            // lblStar1
+            // 
+            resources.ApplyResources(this.lblStar1, "lblStar1");
+            this.lblStar1.ForeColor = System.Drawing.Color.Red;
+            this.lblStar1.Name = "lblStar1";
+            // 
+            // txtCompany
+            // 
+            resources.ApplyResources(this.txtCompany, "txtCompany");
+            this.txtCompany.Name = "txtCompany";
+            // 
+            // btnCompany
+            // 
+            resources.ApplyResources(this.btnCompany, "btnCompany");
+            this.btnCompany.Name = "btnCompany";
+            this.btnCompany.UseVisualStyleBackColor = true;
+            // 
+            // tpMode
+            // 
+            resources.ApplyResources(this.tpMode, "tpMode");
+            this.tableLayoutPanel2.SetColumnSpan(this.tpMode, 3);
+            this.tpMode.Controls.Add(this.rbAdd, 0, 0);
+            this.tpMode.Controls.Add(this.rbUpd, 1, 0);
+            this.tpMode.Controls.Add(this.rbDel, 2, 0);
+            this.tpMode.Name = "tpMode";
+            // 
+            // rbAdd
+            // 
+            resources.ApplyResources(this.rbAdd, "rbAdd");
+            this.rbAdd.Name = "rbAdd";
+            this.rbAdd.TabStop = true;
+            this.rbAdd.UseVisualStyleBackColor = true;
+            // 
+            // rbUpd
+            // 
+            resources.ApplyResources(this.rbUpd, "rbUpd");
+            this.rbUpd.Name = "rbUpd";
+            this.rbUpd.TabStop = true;
+            this.rbUpd.UseVisualStyleBackColor = true;
+            // 
+            // rbDel
+            // 
+            resources.ApplyResources(this.rbDel, "rbDel");
+            this.rbDel.Name = "rbDel";
+            this.rbDel.TabStop = true;
+            this.rbDel.UseVisualStyleBackColor = true;
             // 
             // FrmFactory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 573);
             this.Controls.Add(this.tpBase);
             this.Controls.Add(this.toolStrip1);
-            this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "FrmFactory";
-            this.Text = "FrmFactory";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tpBase.ResumeLayout(false);
-            this.tpBase.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tpMode.ResumeLayout(false);
+            this.tpMode.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,14 +213,24 @@
 		#endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsbAdd;
-        private System.Windows.Forms.ToolStripButton tsbEdit;
-        private System.Windows.Forms.ToolStripButton tsbDelete;
+        private System.Windows.Forms.ToolStripButton tsbBef;
+        private System.Windows.Forms.ToolStripButton tsbNxt;
+        private System.Windows.Forms.ToolStripButton tsbOk;
         private System.Windows.Forms.TableLayoutPanel tpBase;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label lblCompany;
+        private System.Windows.Forms.Label lblStar1;
+        private System.Windows.Forms.TextBox txtCompany;
+        private System.Windows.Forms.Button btnCompany;
+        private System.Windows.Forms.Label lblCompanyNM;
+        private System.Windows.Forms.TableLayoutPanel tpMode;
+        private System.Windows.Forms.RadioButton rbAdd;
+        private System.Windows.Forms.RadioButton rbUpd;
+        private System.Windows.Forms.RadioButton rbDel;
+        private System.Windows.Forms.Label lblFactory;
+        private System.Windows.Forms.Label lblStar2;
+        private System.Windows.Forms.TextBox txtFactory;
+        private System.Windows.Forms.Button btnFactory;
 	}
 }
