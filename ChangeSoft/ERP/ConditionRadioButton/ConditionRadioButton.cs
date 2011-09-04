@@ -34,7 +34,9 @@ namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
                 RadioButton radNew = new RadioButton();
                 radNew.Name = vo.ConditionName + "-" + vo.ConditionValue;
                 radNew.Text = vo.ConditionName;
+                radNew.Anchor = AnchorStyles.Right;
                 this.groupBox1.Controls.Add(radNew);
+                
             }
 
         }
