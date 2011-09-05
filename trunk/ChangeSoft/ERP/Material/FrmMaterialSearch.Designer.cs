@@ -176,7 +176,7 @@
             resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
             this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
             this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
-            this.FrmMaterialSearch_pagerGridView1.Load += new System.EventHandler(this.pagerGridView1_Load);
+            this.FrmMaterialSearch_pagerGridView1.SelectionChanged += new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView.OnSelectionChangedEventHandler(this.FrmMaterialSearch_pagerGridView1_SelectionChanged);
             // 
             // tableLayoutPanel2
             // 
