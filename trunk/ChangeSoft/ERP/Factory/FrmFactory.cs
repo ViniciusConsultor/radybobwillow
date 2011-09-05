@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Com.ChangeSoft.Common;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace Com.ChangeSoft.ERP.Factory
 {
     public partial class FrmFactory : BaseContent
     {
-        public FrmFactory(BaseForm _baseform)
-            : base(_baseform)
+        public FrmFactory(DockPanel _parentdockpanel,BaseForm _owner)
+            : base(_parentdockpanel,_owner)
         {
             InitializeComponent();
         }
