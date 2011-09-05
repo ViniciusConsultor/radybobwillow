@@ -61,6 +61,33 @@ namespace Com.ChangeSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 加载初始数据…… 的本地化字符串。
+        /// </summary>
+        internal static string I0001 {
+            get {
+                return ResourceManager.GetString("I0001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 加载菜单项…… 的本地化字符串。
+        /// </summary>
+        internal static string I0002 {
+            get {
+                return ResourceManager.GetString("I0002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 加载主画面…… 的本地化字符串。
+        /// </summary>
+        internal static string I0003 {
+            get {
+                return ResourceManager.GetString("I0003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 %1 不能为空，请输入。 的本地化字符串。
         /// </summary>
         internal static string W0001 {

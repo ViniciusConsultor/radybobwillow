@@ -50,19 +50,13 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem_System = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.生产管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.仓库管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.数据维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Window = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItarem_ToolBar = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.ToolStripMenuItem_WindowList = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Help = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Contents = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_About = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox_Language = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ddddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.dddddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -111,84 +105,9 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_System,
-            this.生产管理ToolStripMenuItem,
-            this.仓库管理ToolStripMenuItem,
-            this.数据维护ToolStripMenuItem,
-            this.ToolStripMenuItem_Window,
-            this.ToolStripMenuItem_Help,
             this.toolStripComboBox_Language});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            // 
-            // ToolStripMenuItem_System
-            // 
-            this.ToolStripMenuItem_System.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_Exit});
-            this.ToolStripMenuItem_System.Name = "ToolStripMenuItem_System";
-            resources.ApplyResources(this.ToolStripMenuItem_System, "ToolStripMenuItem_System");
-            // 
-            // ToolStripMenuItem_Exit
-            // 
-            this.ToolStripMenuItem_Exit.Name = "ToolStripMenuItem_Exit";
-            resources.ApplyResources(this.ToolStripMenuItem_Exit, "ToolStripMenuItem_Exit");
-            // 
-            // 生产管理ToolStripMenuItem
-            // 
-            this.生产管理ToolStripMenuItem.Name = "生产管理ToolStripMenuItem";
-            resources.ApplyResources(this.生产管理ToolStripMenuItem, "生产管理ToolStripMenuItem");
-            // 
-            // 仓库管理ToolStripMenuItem
-            // 
-            this.仓库管理ToolStripMenuItem.Name = "仓库管理ToolStripMenuItem";
-            resources.ApplyResources(this.仓库管理ToolStripMenuItem, "仓库管理ToolStripMenuItem");
-            // 
-            // 数据维护ToolStripMenuItem
-            // 
-            this.数据维护ToolStripMenuItem.Name = "数据维护ToolStripMenuItem";
-            resources.ApplyResources(this.数据维护ToolStripMenuItem, "数据维护ToolStripMenuItem");
-            // 
-            // ToolStripMenuItem_Window
-            // 
-            this.ToolStripMenuItem_Window.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItarem_ToolBar,
-            this.toolStripSeparator3,
-            this.ToolStripMenuItem_WindowList});
-            this.ToolStripMenuItem_Window.Name = "ToolStripMenuItem_Window";
-            resources.ApplyResources(this.ToolStripMenuItem_Window, "ToolStripMenuItem_Window");
-            // 
-            // ToolStripMenuItarem_ToolBar
-            // 
-            this.ToolStripMenuItarem_ToolBar.Name = "ToolStripMenuItarem_ToolBar";
-            resources.ApplyResources(this.ToolStripMenuItarem_ToolBar, "ToolStripMenuItarem_ToolBar");
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
-            // ToolStripMenuItem_WindowList
-            // 
-            this.ToolStripMenuItem_WindowList.Name = "ToolStripMenuItem_WindowList";
-            resources.ApplyResources(this.ToolStripMenuItem_WindowList, "ToolStripMenuItem_WindowList");
-            // 
-            // ToolStripMenuItem_Help
-            // 
-            this.ToolStripMenuItem_Help.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_Contents,
-            this.ToolStripMenuItem_About});
-            this.ToolStripMenuItem_Help.Name = "ToolStripMenuItem_Help";
-            resources.ApplyResources(this.ToolStripMenuItem_Help, "ToolStripMenuItem_Help");
-            // 
-            // ToolStripMenuItem_Contents
-            // 
-            this.ToolStripMenuItem_Contents.Name = "ToolStripMenuItem_Contents";
-            resources.ApplyResources(this.ToolStripMenuItem_Contents, "ToolStripMenuItem_Contents");
-            // 
-            // ToolStripMenuItem_About
-            // 
-            this.ToolStripMenuItem_About.Name = "ToolStripMenuItem_About";
-            resources.ApplyResources(this.ToolStripMenuItem_About, "ToolStripMenuItem_About");
             // 
             // toolStripComboBox_Language
             // 
@@ -197,6 +116,43 @@
             resources.ApplyResources(this.toolStripComboBox_Language, "toolStripComboBox_Language");
             this.toolStripComboBox_Language.Name = "toolStripComboBox_Language";
             this.toolStripComboBox_Language.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox_Language_SelectedIndexChanged);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ddddToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.dddddToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            // 
+            // ddddToolStripMenuItem
+            // 
+            this.ddddToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.ddddToolStripMenuItem.Name = "ddddToolStripMenuItem";
+            resources.ApplyResources(this.ddddToolStripMenuItem, "ddddToolStripMenuItem");
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            // 
+            // dddddToolStripMenuItem
+            // 
+            this.dddddToolStripMenuItem.Name = "dddddToolStripMenuItem";
+            resources.ApplyResources(this.dddddToolStripMenuItem, "dddddToolStripMenuItem");
             // 
             // toolStrip1
             // 
@@ -250,6 +206,7 @@
             this.dockPanel.DockBackColor = System.Drawing.SystemColors.Control;
             this.dockPanel.Name = "dockPanel";
             this.dockPanel.RightToLeftLayout = true;
+            this.dockPanel.ShowDocumentIcon = true;
             dockPanelGradient1.EndColor = System.Drawing.SystemColors.ControlLight;
             dockPanelGradient1.StartColor = System.Drawing.SystemColors.ControlLight;
             autoHideStripSkin1.DockStripGradient = dockPanelGradient1;
@@ -327,15 +284,6 @@
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_System;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Exit;
-        private System.Windows.Forms.ToolStripMenuItem 生产管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 仓库管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 数据维护ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Window;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Help;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Contents;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_About;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
@@ -343,11 +291,14 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItarem_ToolBar;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_WindowList;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox_Language;
         private WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ddddToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem dddddToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 
     }
 }

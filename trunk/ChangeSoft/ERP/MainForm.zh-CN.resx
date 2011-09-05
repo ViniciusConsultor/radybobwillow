@@ -120,6 +120,33 @@
   <data name="$this.Text" xml:space="preserve">
     <value>ChangeSoft生产管理系统</value>
   </data>
+  <data name="Menu.Function" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Menu.Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="Menu.System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Menu.Window" xml:space="preserve">
+    <value>窗口</value>
+  </data>
+  <data name="SubMenu.Help.About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="SubMenu.Help.Contents" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="SubMenu.System.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="SubMenu.System.Setting" xml:space="preserve">
+    <value>系统设置</value>
+  </data>
+  <data name="SubMenu.Window.ListWindow" xml:space="preserve">
+    <value>窗口</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
