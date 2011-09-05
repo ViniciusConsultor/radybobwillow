@@ -13,7 +13,8 @@ namespace Com.ChangeSoft.ERP.ProductPlan
 {
     public partial class FrmProductPlan : Com.ChangeSoft.Common.BaseContent
     {
-        public FrmProductPlan(BaseForm _baseform):base(_baseform)
+        public FrmProductPlan(DockPanel _parent)
+            : base(_parent)
         {
             InitializeComponent();
         }

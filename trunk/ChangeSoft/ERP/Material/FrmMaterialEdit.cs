@@ -12,22 +12,15 @@ namespace Com.ChangeSoft.ERP.Material
 {
     public partial class FrmMaterialEdit : Com.ChangeSoft.Common.BaseContent
     {
-        private BaseForm owner;
-        public FrmMaterialEdit(BaseForm _owner, BaseForm _baseform):base(_baseform)
+        public FrmMaterialEdit(DockPanel _parentdockpanel, BaseForm _owner):base(_parentdockpanel,_owner)
         {
-            this.owner = _owner;
+            
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (baseform.Pane.ActiveContent is IDockContent)
-            {
-                IDockContent content = (IDockContent)baseform.Pane.ActiveContent;
-                content.DockHandler.Close();
-                this.owner.Show();
-                this.owner.BringToFront();
-            }
+            this.CloseContent();
         }
 
         private void conditionRadioButton1_RadioChanged(object sender, EventArgs e)

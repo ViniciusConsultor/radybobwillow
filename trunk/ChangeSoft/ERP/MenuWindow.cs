@@ -145,82 +145,87 @@ namespace Com.ChangeSoft.ERP
 
 
             //BaseForm td = (BaseForm)ComponentLocator.Instance().Resolve(e.Node.Tag.ToString(), typeof(BaseForm));
-            BaseForm baseform = new BaseForm();
-            baseform.Parentdockpanel = this.dockpanel;
-            baseform.TopLevel = false;
-            baseform.Text = e.Node.Text;
-
-            //td.Show(this.dockpanel);
-            //td.BringToFront();
 
             if ("FCompany".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmCompany frmcompany = new FrmCompany(baseform);
-                    frmcompany.Show(baseform.dockPanel, DockState.Document);
-                    frmcompany.BringToFront();
-                    baseform.Show(this.dockpanel);
+                FrmCompany frmcompany = new FrmCompany(this.dockpanel);
+                frmcompany.DockTitle = e.Node.Text;
+                frmcompany.ShowContent(false);
 
-                }
-                else
-                {
-                    frm.Show(this.dockpanel);
-                    frm.BringToFront();
-                }
+                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
+                //if (frm == null)
+                //{
+                //    FrmCompany frmcompany = new FrmCompany(baseform);
+                //    frmcompany.Show(baseform.dockPanel, DockState.Document);
+                //    frmcompany.BringToFront();
+                //    baseform.Show(this.dockpanel);
+
+                //}
+                //else
+                //{
+                //    frm.Show(this.dockpanel);
+                //    frm.BringToFront();
+                //}
             }
             if ("FQuotationEntry".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
 
-                    frmproductplan.Show(baseform.dockPanel, DockState.Document);
-                    baseform.Show(this.dockpanel);
-                }
-                else
-                {
-                    frm.Show(this.dockpanel);
-                    frm.BringToFront();
-                }
+                FrmProductPlan frmproductplan = new FrmProductPlan(this.dockpanel);
+                frmproductplan.DockTitle = e.Node.Text;
+                frmproductplan.ShowContent(false);
+                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
+                //if (frm == null)
+                //{
+                //    FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
+
+                //    frmproductplan.Show(baseform.dockPanel, DockState.Document);
+                //    baseform.Show(this.dockpanel);
+                //}
+                //else
+                //{
+                //    frm.Show(this.dockpanel);
+                //    frm.BringToFront();
+                //}
 
             }
             if ("FMaterial".Equals(e.Node.Tag.ToString()))
             {
-                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
 
-                    frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
-                    baseform.Show(this.dockpanel);
-                }
-                else
-                {
-                    frm.Show(this.dockpanel);
-                    frm.BringToFront();
-                }
+                FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(this.dockpanel);
+                frmMaterialSearch.DockTitle = e.Node.Text;
+                frmMaterialSearch.ShowContent(false);
+                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
+                //if (frm == null)
+                //{
+                //    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
+
+                //    frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
+                //    baseform.Show(this.dockpanel);
+                //}
+                //else
+                //{
+                //    frm.Show(this.dockpanel);
+                //    frm.BringToFront();
+                //}
 
             }
-            if ("FFactory".Equals(e.Node.Tag.ToString()))
-            {
-                DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmFactory frmFactory = new FrmFactory(baseform);
+            //if ("FFactory".Equals(e.Node.Tag.ToString()))
+            //{
+            //    DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
+            //    if (frm == null)
+            //    {
+            //        FrmFactory frmFactory = new FrmFactory(baseform);
                     
-                    frmFactory.Show(baseform.dockPanel, DockState.Document);
-                    baseform.Show(this.dockpanel);
-                }
-                else
-                {
-                    frm.Show(this.dockpanel);
-                    frm.BringToFront();
-                }
+            //        frmFactory.Show(baseform.dockPanel, DockState.Document);
+            //        baseform.Show(this.dockpanel);
+            //    }
+            //    else
+            //    {
+            //        frm.Show(this.dockpanel);
+            //        frm.BringToFront();
+            //    }
 
-            }
+            //}
         }
 
 

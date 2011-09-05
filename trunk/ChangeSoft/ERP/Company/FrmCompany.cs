@@ -19,8 +19,8 @@ namespace Com.ChangeSoft.ERP.Company
 
         
 
-        public FrmCompany(BaseForm _baseform)
-            : base(_baseform)
+        public FrmCompany(DockPanel _parentdockpanel)
+            : base(_parentdockpanel)
         {
 
             log.Info("FrmCompany init start");

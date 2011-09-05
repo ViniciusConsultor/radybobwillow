@@ -21,7 +21,8 @@ namespace Com.ChangeSoft.ERP.Material
     {
         ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
 
-        public FrmMaterialSearch(BaseForm _baseform):base(_baseform)
+        public FrmMaterialSearch(DockPanel _parentdockpanel)
+            : base(_parentdockpanel)
         {
             InitializeComponent();
             ToolStripManager.Renderer = new Office2007Renderer();
@@ -73,39 +74,48 @@ namespace Com.ChangeSoft.ERP.Material
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            TransferTo();
+        }
+
+        private void TransferTo()
+        {
+
+            FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform.Parentdockpanel, this.baseform);
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
-            int dc = baseform.Pane.Contents.IndexOf(baseform.Pane.ActiveContent);
+            frmMaterialEdit.DockTitle = frmMaterialEdit.Text;
+            frmMaterialEdit.ShowContent(false);
+            //int dc = baseform.Pane.Contents.IndexOf(baseform.Pane.ActiveContent);
 
-            DockContent frm = baseform.FindParentDocument((string)fr.GetObject("$this.Text"));
-            if (frm == null)
-            {
-                BaseForm b = new BaseForm();
-                b.Parentdockpanel = this.baseform.Parentdockpanel;
-                b.TopLevel = false;
-                b.Text = (string)fr.GetObject("$this.Text");
-              
-
-                FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform,b);
-
-                if (dc == baseform.Pane.Contents.Count- 1)
-                {
-                    frmMaterialEdit.Show(b.dockPanel);
-                    b.Show(b.Parentdockpanel);
-                }
-                else
-                {
-                    frmMaterialEdit.Show(b.dockPanel);
-                    b.Show(baseform.Pane, baseform.Pane.Contents[dc + 1]);
-                }
-                frmMaterialEdit.BringToFront();
+            //DockContent frm = baseform.FindParentDocument((string)fr.GetObject("$this.Text"));
+            //if (frm == null)
+            //{
+            //    BaseForm b = new BaseForm();
+            //    b.Parentdockpanel = this.baseform.Parentdockpanel;
+            //    b.TopLevel = false;
+            //    b.Text = (string)fr.GetObject("$this.Text");
 
 
-            }
-            else
-            {
-                frm.Show();
-                frm.BringToFront();
-            }
+            //    FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform, b);
+
+            //    if (dc == baseform.Pane.Contents.Count - 1)
+            //    {
+            //        frmMaterialEdit.Show(b.dockPanel);
+            //        b.Show(b.Parentdockpanel);
+            //    }
+            //    else
+            //    {
+            //        frmMaterialEdit.Show(b.dockPanel);
+            //        b.Show(baseform.Pane, baseform.Pane.Contents[dc + 1]);
+            //    }
+            //    frmMaterialEdit.BringToFront();
+
+
+            //}
+            //else
+            //{
+            //    frm.Show();
+            //    frm.BringToFront();
+            //}
             //如果画面跳转后自己画面要关闭的话，用下面两句话，关闭自画面
             //IDockContent content = (IDockContent)baseform.Pane.Contents[dc];
             //content.DockHandler.Close();
