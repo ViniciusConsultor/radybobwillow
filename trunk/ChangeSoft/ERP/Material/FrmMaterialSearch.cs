@@ -12,7 +12,7 @@ using Com.ChangeSoft.Common.Control.PagerGridView;
 using System.Data.SqlClient;
 using Com.ChangeSoft.Common.Office2007Renderer;
 using System.Resources;
-using WeifenLuo.WinFormsUI.Docking;
+using WeifenLuo.WinFormsUI.Docking; 
 using Noogen.Validation;
 
 namespace Com.ChangeSoft.ERP.Material
@@ -84,41 +84,7 @@ namespace Com.ChangeSoft.ERP.Material
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
             frmMaterialEdit.DockTitle = frmMaterialEdit.Text;
             frmMaterialEdit.ShowContent(false);
-            //int dc = baseform.Pane.Contents.IndexOf(baseform.Pane.ActiveContent);
-
-            //DockContent frm = baseform.FindParentDocument((string)fr.GetObject("$this.Text"));
-            //if (frm == null)
-            //{
-            //    BaseForm b = new BaseForm();
-            //    b.Parentdockpanel = this.baseform.Parentdockpanel;
-            //    b.TopLevel = false;
-            //    b.Text = (string)fr.GetObject("$this.Text");
-
-
-            //    FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform, b);
-
-            //    if (dc == baseform.Pane.Contents.Count - 1)
-            //    {
-            //        frmMaterialEdit.Show(b.dockPanel);
-            //        b.Show(b.Parentdockpanel);
-            //    }
-            //    else
-            //    {
-            //        frmMaterialEdit.Show(b.dockPanel);
-            //        b.Show(baseform.Pane, baseform.Pane.Contents[dc + 1]);
-            //    }
-            //    frmMaterialEdit.BringToFront();
-
-
-            //}
-            //else
-            //{
-            //    frm.Show();
-            //    frm.BringToFront();
-            //}
-            //如果画面跳转后自己画面要关闭的话，用下面两句话，关闭自画面
-            //IDockContent content = (IDockContent)baseform.Pane.Contents[dc];
-            //content.DockHandler.Close();
+ 
         }
 
         private void button6_Click(object sender, EventArgs e)
