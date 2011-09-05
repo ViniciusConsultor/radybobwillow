@@ -30,21 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuWindow));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.naviBar = new Guifreaks.NavigationBar.NaviBar(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.naviBar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "bookmark.png");
-            this.imageList1.Images.SetKeyName(1, "colorize.png");
-            this.imageList1.Images.SetKeyName(2, "contents.png");
-            this.imageList1.Images.SetKeyName(3, "history.png");
-            this.imageList1.Images.SetKeyName(4, "klipper.png");
-            this.imageList1.Images.SetKeyName(5, "wizard.png");
             // 
             // naviBar
             // 
@@ -72,6 +60,5 @@
         #endregion
 
         private Guifreaks.NavigationBar.NaviBar naviBar;
-        private System.Windows.Forms.ImageList imageList1;
     }
 }
