@@ -14,12 +14,14 @@ using Com.ChangeSoft.Common.Office2007Renderer;
 using System.Resources;
 using WeifenLuo.WinFormsUI.Docking; 
 using Noogen.Validation;
+using log4net;
 
 namespace Com.ChangeSoft.ERP.Material
 {
     public partial class FrmMaterialSearch : BaseContent
     {
         ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
+        private static readonly ILog log = LogManager.GetLogger(typeof(FrmMaterialSearch));
 
         public FrmMaterialSearch(DockPanel _parentdockpanel)
             : base(_parentdockpanel)
@@ -39,13 +41,13 @@ namespace Com.ChangeSoft.ERP.Material
 
             this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionAllPagerDao", condition, 1, 5);
             this.FrmMaterialSearch_pagerGridView1.LoadData();
-
+            log.Debug("Search Init");
             //设置列名
             foreach (string key in this.FrmMaterialSearch_pagerGridView1.Pagerhelper.Columns)
             {
                 this.FrmMaterialSearch_pagerGridView1.SetColumnAlias(key, (string)rm.GetObject(key));
             }
-
+            
             //设置可视列
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
             ColumnInfoVo columnvo = new ColumnInfoVo();
@@ -101,6 +103,11 @@ namespace Com.ChangeSoft.ERP.Material
         private void conditionDropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             MessageBox.Show(this.conditionDropDownList1.Selectedindex.ToString() + ":" + this.conditionDropDownList1.Selectedvalue + ":" + this.conditionDropDownList1.Selectedname);
+        }
+
+        private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex.ToString()+":"+this.FrmMaterialSearch_pagerGridView1.SelecteRows.ToString());
         }
     }
 }

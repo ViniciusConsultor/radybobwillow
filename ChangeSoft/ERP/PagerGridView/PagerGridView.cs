@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
+using System.Diagnostics;
+using log4net;
 
 namespace Com.ChangeSoft.Common.Control.PagerGridView
 {
@@ -16,9 +18,12 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
 
         private PagerHelper pagerhelper;
 
+        private static readonly ILog log = LogManager.GetLogger(typeof(PagerGridView));
 
         private IList<ColumnInfoVo> columninfolist;
 
+        public delegate void OnSelectionChangedEventHandler(object sender, EventArgs e);
+        public event OnSelectionChangedEventHandler SelectionChanged;
 
 
 
@@ -28,6 +33,16 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             InitializeComponent();
 
         }
+
+        protected virtual void OnSelectionChanged(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (SelectionChanged != null)
+            {//判断事件是否为空  
+                log.Debug("OnSelectionChanged");
+                SelectionChanged(this, e);//触发事件  
+            }
+        } 
+
 
 
         public IList<ColumnInfoVo> Columninfolist
@@ -58,9 +73,21 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             get { return this.dataGridView1.RowCount; }
         }
 
+        public DataGridViewSelectedRowCollection SelecteRows
+        {
+            get { return this.dataGridView1.SelectedRows; }
+        }
+
         public int SelectedRowIndex
         {
-            get { return this.dataGridView1.SelectedRows[0].Index; }
+            get {
+                int index = -1;
+                if (this.dataGridView1.SelectedRows.Count > 0)
+                {
+                    index = this.dataGridView1.SelectedRows[0].Index;
+                }
+                return index;
+            }
         }
 
         public void SetSelectedRow(int index)
@@ -148,9 +175,13 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
         public void LoadData()
         {
 
+            this.dataGridView1.SelectionChanged -= new EventHandler(OnSelectionChanged);
 
             this.dataGridView1.DataSource = pagerhelper.GetDataSet();
             this.dataGridView1.DataMember = pagerhelper.Key;
+            this.dataGridView1.SelectionChanged += new EventHandler(OnSelectionChanged);
+            log.Debug("Loaddata");
+
 
             this.lblStatus.Text = pagerhelper.CurrentPage.ToString() + " / " + pagerhelper.Totalpages.ToString();
             this.lblTotalRecords.Text = pagerhelper.Totalrecords.ToString();
@@ -365,6 +396,46 @@ namespace Com.ChangeSoft.Common.Control.PagerGridView
             dataGridView1.Columns[vo.Columnname].HeaderText = vo.Columnheadertext;
         }
 
+        private void PagerGridView_Load(object sender, EventArgs e)
+        {
+            if (IsDesignMode())
+                return;
+
+
+
+        }
+
+
+        public static bool IsDesignMode()
+        {
+
+            bool returnFlag = false;
+
+
+
+#if DEBUG
+
+            if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
+            {
+
+                returnFlag = true;
+
+            }
+
+            else if (Process.GetCurrentProcess().ProcessName == "devenv")
+            {
+
+                returnFlag = true;
+
+            }
+
+#endif
+
+
+
+            return returnFlag;
+
+        }
 
 
 
