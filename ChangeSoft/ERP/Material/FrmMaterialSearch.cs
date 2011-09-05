@@ -107,7 +107,7 @@ namespace Com.ChangeSoft.ERP.Material
 
         private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex.ToString()+":"+this.FrmMaterialSearch_pagerGridView1.SelecteRows.ToString());
+            //MessageBox.Show(this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex.ToString()+":"+this.FrmMaterialSearch_pagerGridView1.SelecteRows.ToString());
         }
     }
 }
