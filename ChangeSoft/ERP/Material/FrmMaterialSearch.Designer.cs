@@ -529,6 +529,10 @@
             this.commonToolStrip1.GobackVisible = true;
             this.commonToolStrip1.HelpEnabled = true;
             this.commonToolStrip1.HelpVisible = true;
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.Line2Visible = true;
+            this.commonToolStrip1.Line3Visible = true;
+            this.commonToolStrip1.Line4Visible = true;
             this.commonToolStrip1.Name = "commonToolStrip1";
             this.commonToolStrip1.OkEnabled = true;
             this.commonToolStrip1.OkVisible = true;
@@ -543,7 +547,7 @@
             this.commonToolStrip1.CopyClick += new System.EventHandler(this.commonToolStrip1_Click);
             this.commonToolStrip1.HelpClick += new System.EventHandler(this.commonToolStrip1_Click);
             this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.AddClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.AddClick += new System.EventHandler(this.toolStripButton1_Click);
             this.commonToolStrip1.ReportClick += new System.EventHandler(this.commonToolStrip1_Click);
             this.commonToolStrip1.SaveClick += new System.EventHandler(this.commonToolStrip1_Click);
             this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_Click);
