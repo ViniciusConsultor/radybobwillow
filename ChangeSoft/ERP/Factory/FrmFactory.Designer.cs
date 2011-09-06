@@ -28,11 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactory));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbBef = new System.Windows.Forms.ToolStripButton();
-            this.tsbNxt = new System.Windows.Forms.ToolStripButton();
-            this.tsbOk = new System.Windows.Forms.ToolStripButton();
             this.tpBase = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,39 +46,12 @@
             this.rbAdd = new System.Windows.Forms.RadioButton();
             this.rbUpd = new System.Windows.Forms.RadioButton();
             this.rbDel = new System.Windows.Forms.RadioButton();
-            this.toolStrip1.SuspendLayout();
+            this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tpBase.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tpMode.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbBef,
-            this.tsbNxt,
-            this.tsbOk});
-            this.toolStrip1.Name = "toolStrip1";
-            // 
-            // tsbBef
-            // 
-            this.tsbBef.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.tsbBef, "tsbBef");
-            this.tsbBef.Name = "tsbBef";
-            // 
-            // tsbNxt
-            // 
-            this.tsbNxt.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.tsbNxt, "tsbNxt");
-            this.tsbNxt.Name = "tsbNxt";
-            // 
-            // tsbOk
-            // 
-            this.tsbOk.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.tsbOk, "tsbOk");
-            this.tsbOk.Name = "tsbOk";
             // 
             // tpBase
             // 
@@ -92,22 +62,23 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.btnFactory, 9, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtFactory, 8, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblStar2, 7, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblFactory, 6, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblCompanyNM, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblCompany, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblStar1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtCompany, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnCompany, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tpMode, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnFactory, 9, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtFactory, 8, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblStar2, 7, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblFactory, 6, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblCompanyNM, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblCompany, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblStar1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtCompany, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnCompany, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tpMode, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // btnFactory
@@ -190,32 +161,57 @@
             this.rbDel.TabStop = true;
             this.rbDel.UseVisualStyleBackColor = true;
             // 
+            // commonToolStrip1
+            // 
+            this.commonToolStrip1.AddEnabled = true;
+            this.commonToolStrip1.AddVisible = true;
+            resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.CopyEnabled = true;
+            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CsvEnabled = true;
+            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.DeleteEnabled = true;
+            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.Displaytext = false;
+            this.commonToolStrip1.ExitEnabled = true;
+            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.GobackEnabled = true;
+            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.HelpEnabled = true;
+            this.commonToolStrip1.HelpVisible = true;
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.Line2Visible = true;
+            this.commonToolStrip1.Line3Visible = true;
+            this.commonToolStrip1.Line4Visible = true;
+            this.commonToolStrip1.Name = "commonToolStrip1";
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.ReportEnabled = true;
+            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.UpdateEnabled = true;
+            this.commonToolStrip1.UpdateVisible = true;
+            // 
             // FrmFactory
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tpBase);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "FrmFactory";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.tpBase.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tpMode.ResumeLayout(false);
             this.tpMode.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsbBef;
-        private System.Windows.Forms.ToolStripButton tsbNxt;
-        private System.Windows.Forms.ToolStripButton tsbOk;
         private System.Windows.Forms.TableLayoutPanel tpBase;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -232,5 +228,6 @@
         private System.Windows.Forms.Label lblStar2;
         private System.Windows.Forms.TextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
+        private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
 	}
 }
