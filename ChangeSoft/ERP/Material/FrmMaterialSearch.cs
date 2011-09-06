@@ -57,7 +57,7 @@ namespace Com.ChangeSoft.ERP.Material
             clist.Add(columnvo);
 
             this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name,null);
-            this.tableLayoutPanel1.Enabled = false;
+            //this.tableLayoutPanel1.Enabled = false;
             //commonToolStrip1.AddEnabled = false;
             //commonToolStrip1.UpdateEnabled = false;
             //commonToolStrip1.DeleteEnabled = false;

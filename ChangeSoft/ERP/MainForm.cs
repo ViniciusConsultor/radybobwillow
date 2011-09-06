@@ -130,6 +130,9 @@ namespace Com.ChangeSoft.ERP
 
             menuWindow = new MenuWindow(this.dockPanel,flist);
             menuWindow.Show(this.dockPanel, DockState.DockLeft);
+            this.dockPanel.DockLeftPortion = 0.2;
+            
+
 
         }
 
