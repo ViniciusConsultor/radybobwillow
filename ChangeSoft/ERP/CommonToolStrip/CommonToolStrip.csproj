@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FC0EDDF-C362-4841-AA28-37852CDC1383}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.ChangeSoft.Common.Control.CommonToolStrip</RootNamespace>
+    <AssemblyName>Com.ChangeSoft.Common.Control.CommonToolStrip</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonToolStrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonToolStrip.Designer.cs">
+      <DependentUpon>CommonToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommonToolStrip.en-US.resx">
+      <DependentUpon>CommonToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonToolStrip.resx">
+      <DependentUpon>CommonToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonToolStrip.zh-CN.resx">
+      <DependentUpon>CommonToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goback_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csv_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goback_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Csv_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

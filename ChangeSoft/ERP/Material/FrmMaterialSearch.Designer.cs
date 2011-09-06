@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaterialSearch));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.FrmMaterialSearch_pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -95,11 +91,11 @@
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -126,46 +122,19 @@
             this.tableLayoutPanel14.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButton2, "toolStripButton2");
-            this.toolStripButton2.Name = "toolStripButton2";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButton3, "toolStripButton3");
-            this.toolStripButton3.Name = "toolStripButton3";
-            // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel16, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel19, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel22, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel24, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel16, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel19, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel22, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel24, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // FrmMaterialSearch_pagerGridView1
@@ -542,6 +511,45 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // commonToolStrip1
+            // 
+            this.commonToolStrip1.AddEnabled = true;
+            this.commonToolStrip1.AddVisible = true;
+            resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.CopyEnabled = true;
+            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CsvEnabled = true;
+            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.DeleteEnabled = true;
+            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.Displaytext = false;
+            this.commonToolStrip1.ExitEnabled = true;
+            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.GobackEnabled = true;
+            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.HelpEnabled = true;
+            this.commonToolStrip1.HelpVisible = true;
+            this.commonToolStrip1.Name = "commonToolStrip1";
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.ReportEnabled = true;
+            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.UpdateEnabled = true;
+            this.commonToolStrip1.UpdateVisible = true;
+            this.commonToolStrip1.CsvClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.DeleteClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.CopyClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.HelpClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.AddClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.ReportClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.SaveClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.UpdateClick += new System.EventHandler(this.commonToolStrip1_Click);
+            this.commonToolStrip1.GobackClick += new System.EventHandler(this.commonToolStrip1_Click);
+            // 
             // tableLayoutPanel14
             // 
             resources.ApplyResources(this.tableLayoutPanel14, "tableLayoutPanel14");
@@ -571,11 +579,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "FrmMaterialSearch";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -615,16 +621,11 @@
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
@@ -690,6 +691,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label20;
         private Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
+        private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
 
 
     }

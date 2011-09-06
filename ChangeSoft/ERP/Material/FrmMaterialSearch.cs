@@ -28,9 +28,6 @@ namespace Com.ChangeSoft.ERP.Material
         {
             InitializeComponent();
             ToolStripManager.Renderer = new Office2007Renderer();
-            this.toolStripButton1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Add");
-            this.toolStripButton2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Edit");
-            this.toolStripButton3.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("Delete");
 
             this.button1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
@@ -60,6 +57,35 @@ namespace Com.ChangeSoft.ERP.Material
             clist.Add(columnvo);
 
             this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name,null);
+            //commonToolStrip1.AddEnabled = false;
+            //commonToolStrip1.UpdateEnabled = false;
+            //commonToolStrip1.DeleteEnabled = false;
+            //commonToolStrip1.SaveEnabled = false;
+            //commonToolStrip1.CopyEnabled = false;
+            //commonToolStrip1.ReportEnabled = false;
+            //commonToolStrip1.CsvEnabled = false;
+            //commonToolStrip1.GobackEnabled = false;
+            //commonToolStrip1.OkEnabled = false;
+            //commonToolStrip1.ExitEnabled = false;
+            //commonToolStrip1.HelpEnabled = false;
+            //commonToolStrip1.AddVisible = false;
+            //commonToolStrip1.UpdateVisible = false;
+            //commonToolStrip1.DeleteVisible = false;
+            //commonToolStrip1.SaveVisible = false;
+            //commonToolStrip1.CopyVisible = false;
+            //commonToolStrip1.ReportVisible = false;
+            //commonToolStrip1.CsvVisible = false;
+            //commonToolStrip1.GobackVisible = false;
+            //commonToolStrip1.OkVisible = false;
+            //commonToolStrip1.ExitVisible = false;
+            //commonToolStrip1.HelpVisible = false;
+            //commonToolStrip1.Line1Visible = false;
+            //commonToolStrip1.Line2Visible = false;
+            //commonToolStrip1.Line3Visible = false;
+            //commonToolStrip1.Line4Visible = false;
+
+
+
 
            
         }
@@ -108,6 +134,11 @@ namespace Com.ChangeSoft.ERP.Material
         private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
         {
             //MessageBox.Show(this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex.ToString()+":"+this.FrmMaterialSearch_pagerGridView1.SelecteRows.ToString());
+        }
+
+        private void commonToolStrip1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(sender.ToString() );
         }
     }
 }
