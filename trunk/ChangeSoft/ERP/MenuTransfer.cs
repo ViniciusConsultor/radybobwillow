@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Com.ChangeSoft.ERP
 {
-    public class MenuTransfer
+    public class MenuTransfer : Form
     {
         private string path;
         private string title;
@@ -138,13 +138,13 @@ namespace Com.ChangeSoft.ERP
         {
             if (parentpanel.DocumentStyle == DocumentStyle.SystemMdi)
             {
-                //foreach (Form form in MdiChildren)
-                //{
-                //    if (form.Text == text)
-                //    {
-                //        return form as DockContent;
-                //    }
-                //}
+                foreach (Form form in MdiChildren)
+                {
+                    if (form.Text == text)
+                    {
+                        return form as DockContent;
+                    }
+                }
 
                 return null;
             }
