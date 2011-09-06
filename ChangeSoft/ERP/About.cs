@@ -13,7 +13,7 @@ namespace Com.ChangeSoft.ERP
         public About()
         {
             InitializeComponent();
-            this.Text = String.Format("关于 {0} {0}", AssemblyTitle);
+            this.Text = String.Format("关于 {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("版本 {0} {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
@@ -100,5 +100,10 @@ namespace Com.ChangeSoft.ERP
             }
         }
         #endregion
+
+        private void About_Deactivate(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

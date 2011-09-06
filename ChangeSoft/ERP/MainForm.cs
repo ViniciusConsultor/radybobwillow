@@ -182,6 +182,7 @@ namespace Com.ChangeSoft.ERP
             ToolStripMenuItem submenu_window_listwindow = new ToolStripMenuItem();
             submenu_window_listwindow.Name = "SubMenu_Window_ListWindow";
             submenu_window_listwindow.Text = rm.GetString("SubMenu.Window.ListWindow");
+            submenu_window_listwindow.Click += new EventHandler(submenu_window_listwindow_Click);
 
             menu_window.DropDownItems.AddRange(new ToolStripItem[] {submenu_window_listwindow });
 
@@ -198,6 +199,7 @@ namespace Com.ChangeSoft.ERP
             ToolStripMenuItem submenu_help_about = new ToolStripMenuItem();
             submenu_help_about.Name = "SubMenu_Help_About";
             submenu_help_about.Text = rm.GetString("SubMenu.Help.About");
+            submenu_help_about.Click += new EventHandler(submenu_help_about_Click);
 
             menu_help.DropDownItems.AddRange(new ToolStripItem[] {submenu_help_contents,line3,submenu_help_about });
 
@@ -222,6 +224,19 @@ namespace Com.ChangeSoft.ERP
                 menu_function.DropDownItems.Add(submenu_functioncatalog);
             }
 
+        }
+
+        void submenu_window_listwindow_Click(object sender, EventArgs e)
+        {
+            WindowList w = new WindowList(this.dockPanel);
+            w.ShowDialog();
+
+        }
+
+        void submenu_help_about_Click(object sender, EventArgs e)
+        {
+            About a = new About();
+            a.ShowDialog();
         }
 
         private void Menu_Window_Click(object sender, EventArgs e)

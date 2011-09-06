@@ -86,7 +86,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(271, 16);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "产品名称";
+            this.labelProductName.Text = "ChangeSoft Smart 企业管理系统2010";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelVersion
@@ -98,7 +98,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(271, 16);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "版本";
+            this.labelVersion.Text = "版本 v2.0.1039";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -110,7 +110,7 @@
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(271, 16);
             this.labelCopyright.TabIndex = 21;
-            this.labelCopyright.Text = "版权";
+            this.labelCopyright.Text = "上海乾盈电子信息系统有限公司";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCompanyName
@@ -122,7 +122,7 @@
             this.labelCompanyName.Name = "labelCompanyName";
             this.labelCompanyName.Size = new System.Drawing.Size(271, 16);
             this.labelCompanyName.TabIndex = 22;
-            this.labelCompanyName.Text = "公司名称";
+            this.labelCompanyName.Text = "保留所有权利";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBoxDescription
@@ -137,7 +137,8 @@
             this.textBoxDescription.Size = new System.Drawing.Size(271, 116);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "说明";
+            this.textBoxDescription.Text = "本计算机程序受版权法和国际条约保护，如未经授权而擅自复制、传播、修改本程序（或者其中任何部分）将受到严厉的刑事及民事制裁，并在法律允许的范围内受到最大可能的起诉。" +
+                "";
             // 
             // okButton
             // 
@@ -164,7 +165,8 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About";
+            this.Text = "关于";
+            this.Deactivate += new System.EventHandler(this.About_Deactivate);
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
@@ -179,8 +181,8 @@
         private System.Windows.Forms.Label labelProductName;
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.Label labelCopyright;
-        private System.Windows.Forms.Label labelCompanyName;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Label labelCompanyName;
     }
 }

@@ -111,18 +111,26 @@
     <Compile Include="Dao\ICFunctionAllDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
+    <Compile Include="Dao\ITDescMsDao.cs" />
     <Compile Include="Dao\ITest2Dao.cs" />
     <Compile Include="Dao\ITestDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />
+    <Compile Include="Dao\TDescMsDaoOracleImp.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />
+    <Compile Include="Model\TClsDetailMs.cs" />
+    <Compile Include="Model\TClsMs.cs" />
+    <Compile Include="Model\TDescMs.cs" />
     <Compile Include="Model\Test2.cs" />
     <Compile Include="Model\MFunctionId.cs" />
     <Compile Include="Model\CFunctionAll.cs" />
     <Compile Include="Model\CFunctionPager.cs" />
+    <Compile Include="Model\TDescMsId.cs" />
+    <Compile Include="Model\TClsDetailMsId.cs" />
+    <Compile Include="Model\CClsMsAll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
