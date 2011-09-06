@@ -168,6 +168,10 @@
       <Project>{4BD74F38-FF5A-41B2-B498-EB1D6BB631AB}</Project>
       <Name>CodeRef</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CommonToolStrip\CommonToolStrip.csproj">
+      <Project>{9FC0EDDF-C362-4841-AA28-37852CDC1383}</Project>
+      <Name>CommonToolStrip</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
       <Name>Common</Name>

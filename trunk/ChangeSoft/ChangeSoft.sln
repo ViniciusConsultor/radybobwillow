@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionDropDownList", "ER
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionRadioButton", "ERP\ConditionRadioButton\ConditionRadioButton.csproj", "{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonToolStrip", "ERP\CommonToolStrip\CommonToolStrip.csproj", "{9FC0EDDF-C362-4841-AA28-37852CDC1383}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -92,6 +94,10 @@ Global
 		{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC0EDDF-C362-4841-AA28-37852CDC1383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC0EDDF-C362-4841-AA28-37852CDC1383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC0EDDF-C362-4841-AA28-37852CDC1383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC0EDDF-C362-4841-AA28-37852CDC1383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
