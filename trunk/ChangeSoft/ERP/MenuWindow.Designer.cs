@@ -52,6 +52,7 @@
             this.KeyPreview = true;
             this.Name = "MenuWindow";
             this.ShowHint = WeifenLuo.WinFormsUI.Docking.DockState.DockLeft;
+            this.Load += new System.EventHandler(this.MenuWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.naviBar)).EndInit();
             this.ResumeLayout(false);
 

@@ -28,8 +28,6 @@ namespace Com.ChangeSoft.ERP
             this.dockpanel = dk;
             this.functionalllist = _flist;
             InitializeComponent();
-            InitNaviBar();
-            naviBar.ActiveBand = naviBar.Bands[0];
         }
 
         public void InitNaviBar()
@@ -65,7 +63,7 @@ namespace Com.ChangeSoft.ERP
             treeView1.ItemHeight = 50;
             treeView1.Location = new System.Drawing.Point(0, 0);
             treeView1.Name = band.Text;
-            treeView1.ShowRootLines = true;
+            treeView1.ShowRootLines = false;
             treeView1.ShowLines = false;
             treeView1.Size = new System.Drawing.Size(196, 200);
             ImageList imagelist = new ImageList();
@@ -165,6 +163,15 @@ namespace Com.ChangeSoft.ERP
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
+
+        }
+
+        private void MenuWindow_Load(object sender, EventArgs e)
+        {
+            InitNaviBar();
+            naviBar.VisibleLargeButtons = 3;
+            naviBar.SuspendLayout();
+            naviBar.ActiveBand = naviBar.Bands[0];
 
         }
     }
