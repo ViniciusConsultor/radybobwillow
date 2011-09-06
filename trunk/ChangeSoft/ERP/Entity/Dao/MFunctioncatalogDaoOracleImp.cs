@@ -18,7 +18,7 @@ namespace Com.ChangeSoft.ERP.Entity.Dao
 
             TransactionScope transaction = new TransactionScope();
 
-            ISession ss = holder.CreateSession(typeof(Test));
+            ISession ss = holder.CreateSession(typeof(MFunctioncatalogDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
             try
             {
