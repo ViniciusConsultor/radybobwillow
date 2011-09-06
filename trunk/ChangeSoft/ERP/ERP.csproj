@@ -182,6 +182,12 @@
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="WindowList.en-US.resx">
+      <DependentUpon>WindowList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowList.resx">
+      <DependentUpon>WindowList.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -229,6 +235,12 @@
     </Compile>
     <Compile Include="SplashScreenForm.designer.cs">
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowList.Designer.cs">
+      <DependentUpon>WindowList.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,8 @@ using Com.ChangeSoft.ERP.Company.Action;
 using Com.ChangeSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 using Noogen.Validation;
+using Com.ChangeSoft.ERP.Entity.Dao;
+using Com.ChangeSoft.ERP.Entity;
 
 namespace Com.ChangeSoft.ERP.Company
 {
@@ -67,8 +69,11 @@ namespace Com.ChangeSoft.ERP.Company
             {
                 //通过Windsor组件容器获得Action的实例。
                 IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
+                ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
+                IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
+
                 //调用Action类的方法
-                MessageBox.Show(a.NewMethod().ToString());
+                MessageBox.Show(l.Count.ToString());
                 //NewMethod();
             }
             catch (ApplicationException ex)
