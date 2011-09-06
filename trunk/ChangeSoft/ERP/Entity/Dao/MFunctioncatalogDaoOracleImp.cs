@@ -11,7 +11,7 @@ using System.Data.Common;
 
 namespace Com.ChangeSoft.ERP.Entity.Dao
 {
-    public class MFunctioncatalogDaoOracleImp :Com.ChangeSoft.ERP.Entity.MFunctioncatalog    , IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.IMFunctioncatalogDao{
+    public class MFunctioncatalogDaoOracleImp :ActiveRecordBase, IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.IMFunctioncatalogDao{
         public IList<MFunctioncatalog> GetFunctionCatalogList(String langid)
         {
             IList<MFunctioncatalog> result = new List<MFunctioncatalog>();
