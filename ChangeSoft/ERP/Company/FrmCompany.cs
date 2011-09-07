@@ -69,9 +69,11 @@ namespace Com.ChangeSoft.ERP.Company
             {
                 //通过Windsor组件容器获得Action的实例。
                 IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
-                ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
-                IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
+                //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
+                //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
 
+                ICClsMsAllDao d = ComponentLocator.Instance().Resolve<ICClsMsAllDao>();
+                IList<CClsMsAll> l = d.GetClsMsAllList("02", "zh-CN");
                 //调用Action类的方法
                 MessageBox.Show(l.Count.ToString());
                 //NewMethod();
