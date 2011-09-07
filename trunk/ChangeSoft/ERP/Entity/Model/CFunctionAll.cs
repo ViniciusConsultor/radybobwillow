@@ -78,7 +78,7 @@ namespace Com.ChangeSoft.ERP.Entity
             set { catalogimage = value; }
         }
 
-        [HasMany(typeof(MFunction), Table = "M_FUNCTION", CompositeKeyColumnKeys = new string[] { "LANGID", "CATALOGID" }, OrderBy = "Functionindex")]
+        [HasMany(typeof(MFunction), Table = "MFunction", CompositeKeyColumnKeys = new string[] { "Langid", "Catalogid" }, OrderBy = "Functionindex")]
         public IList Functionlist
         {
             get { return functionlist; }

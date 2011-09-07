@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaterialSearch));
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.FrmMaterialSearch_pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,11 +94,10 @@
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
+            this.FrmMaterialSearch_pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -119,33 +121,45 @@
             this.tableLayoutPanel22.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
             this.tableLayoutPanel24.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel0.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel14
+            // 
+            resources.ApplyResources(this.tableLayoutPanel14, "tableLayoutPanel14");
+            this.tableLayoutPanel14.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.textBox6, 1, 0);
+            this.tableLayoutPanel14.Controls.Add(this.label11, 3, 0);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Name = "label11";
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel16, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel19, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel22, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel24, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.commonToolStrip1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel16, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel19, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel22, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel24, 0, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // FrmMaterialSearch_pagerGridView1
-            // 
-            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
-            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
-            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
-            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
-            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
-            this.FrmMaterialSearch_pagerGridView1.SelectionChanged += new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView.OnSelectionChangedEventHandler(this.FrmMaterialSearch_pagerGridView1_SelectionChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -511,6 +525,23 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // tableLayoutPanel0
+            // 
+            resources.ApplyResources(this.tableLayoutPanel0, "tableLayoutPanel0");
+            this.tableLayoutPanel0.Controls.Add(this.tableLayoutPanel1, 0, 1);
+            this.tableLayoutPanel0.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 2);
+            this.tableLayoutPanel0.Controls.Add(this.commonToolStrip1, 0, 0);
+            this.tableLayoutPanel0.Name = "tableLayoutPanel0";
+            // 
+            // FrmMaterialSearch_pagerGridView1
+            // 
+            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
+            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
+            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
+            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
+            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
+            // 
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
@@ -542,50 +573,16 @@
             this.commonToolStrip1.SaveVisible = true;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
-            this.commonToolStrip1.CsvClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.DeleteClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.CopyClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.HelpClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.AddClick += new System.EventHandler(this.toolStripButton1_Click);
-            this.commonToolStrip1.ReportClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.SaveClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.UpdateClick += new System.EventHandler(this.commonToolStrip1_Click);
-            this.commonToolStrip1.GobackClick += new System.EventHandler(this.commonToolStrip1_Click);
-            // 
-            // tableLayoutPanel14
-            // 
-            resources.ApplyResources(this.tableLayoutPanel14, "tableLayoutPanel14");
-            this.tableLayoutPanel14.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.textBox6, 1, 0);
-            this.tableLayoutPanel14.Controls.Add(this.label11, 3, 0);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Name = "label11";
             // 
             // FrmMaterialSearch
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel0);
             this.Name = "FrmMaterialSearch";
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -622,34 +619,64 @@
             this.tableLayoutPanel23.ResumeLayout(false);
             this.tableLayoutPanel23.PerformLayout();
             this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel14.PerformLayout();
+            this.tableLayoutPanel0.ResumeLayout(false);
+            this.tableLayoutPanel0.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label label5;
+        private Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
         private System.Windows.Forms.Label label16;
@@ -664,37 +691,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label20;
-        private Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel0;
+        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
 
 

@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="Dao\CFunctionAllDaoOracleImp.cs" />
     <Compile Include="Dao\CFunctionAllPagerDaoOracleImp.cs" />
+    <Compile Include="Dao\ICClsMsAllDao.cs" />
     <Compile Include="Dao\ICFunctionAllDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />
     <Compile Include="Dao\TDescMsDaoOracleImp.cs" />
+    <Compile Include="Dao\CClsMsAllDaoOracleImp.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />

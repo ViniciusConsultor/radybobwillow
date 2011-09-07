@@ -25,84 +25,73 @@ using Castle.ActiveRecord.Queries;
 /// </summary>
 namespace Com.ChangeSoft.ERP.Entity
 {
-	[Serializable , ActiveRecord("T_CLS_MS")]
-	public class CClsMsAll : ActiveRecordBase	{
+    [Serializable, ActiveRecord("T_CLS_DETAIL_MS")]
+    public class CClsMsAll : ActiveRecordBase
+    {
 
 		#region Private Members
+        private TClsDetailMsId id;
 
-		private string iClsCd; 
-		private string iClsDesc; 
-		private string iClsCls; 
-		private string iSysuserCls; 
+		private string iClsDetailDesc; 
 		private string iInqItem; 
 		private DateTime iEntryDate; 
 		private DateTime iUpdDate; 
 		private string iUpdTimestamp;
 
-        private IList<TClsDetailMs> tclsdetailmslist = new List<TClsDetailMs>();
+        private TClsMs tClsMs;
 
 		
 		#endregion
 
 		#region Constuctor(s)
-		
-		public CClsMsAll()
+
+        public CClsMsAll()
 		{
-			iClsCd = String.Empty; 
-			iClsDesc = String.Empty; 
-			iClsCls = String.Empty; 
-			iSysuserCls = String.Empty; 
+            id = new TClsDetailMsId() ;
+			iClsDetailDesc = String.Empty; 
 			iInqItem = String.Empty; 
 			iEntryDate = DateTime.MinValue; 
 			iUpdDate = DateTime.MinValue; 
-			iUpdTimestamp = String.Empty; 
-
-		}
-
-		public CClsMsAll(
-			string i_cls_cd)
-			: this()
-		{
-			iClsCd = i_cls_cd;
-			iClsDesc = String.Empty;
-			iClsCls = String.Empty;
-			iSysuserCls = String.Empty;
-			iInqItem = String.Empty;
-			iEntryDate = DateTime.MinValue;
-			iUpdDate = DateTime.MinValue;
 			iUpdTimestamp = String.Empty;
+            tClsMs = new TClsMs();
+
 		}
+
+        //public TClsDetailMs(
+        //    string i_cls_cd, 
+        //    string i_cls_detail_cd, 
+        //    string i_language_cd, 
+        //    DateTime i_entry_date, 
+        //    DateTime i_upd_date, 
+        //    string i_upd_timestamp)
+        //    : this()
+        //{
+        //    iClsCd = i_cls_cd;
+        //    iClsDetailCd = i_cls_detail_cd;
+        //    iLanguageCd = i_language_cd;
+        //    iClsDetailDesc = String.Empty;
+        //    iInqItem = String.Empty;
+        //    iEntryDate = i_entry_date;
+        //    iUpdDate = i_upd_date;
+        //    iUpdTimestamp = i_upd_timestamp;
+        //}
 
 		#endregion // End of Class Constuctor(s)
 		
 		#region Public Properties
-			
-		[PrimaryKey(PrimaryKeyType.Assigned ,"I_CLS_CD", Length=3)]
-		public virtual string IClsCd
-		{
-			get { return iClsCd; }
-			set { iClsCd = value; }
-		}
 
-		[Property(Column="I_CLS_DESC", Length=48)]
-		public virtual string IClsDesc
-		{
-			get { return iClsDesc; }
-			set { iClsDesc = value; }
-		}
+        [CompositeKey]
+        public TClsDetailMsId Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
 
-		[Property(Column="I_CLS_CLS", Length=1)]
-		public virtual string IClsCls
+		[Property(Column="I_CLS_DETAIL_DESC", Length=48)]
+		public virtual string IClsDetailDesc
 		{
-			get { return iClsCls; }
-			set { iClsCls = value; }
-		}
-
-		[Property(Column="I_SYSUSER_CLS", Length=1)]
-		public virtual string ISysuserCls
-		{
-			get { return iSysuserCls; }
-			set { iSysuserCls = value; }
+			get { return iClsDetailDesc; }
+			set { iClsDetailDesc = value; }
 		}
 
 		[Property(Column="I_INQ_ITEM", Length=1)]
@@ -112,34 +101,34 @@ namespace Com.ChangeSoft.ERP.Entity
 			set { iInqItem = value; }
 		}
 
-		[Property(Column="I_ENTRY_DATE")]
+		[Property(Column="I_ENTRY_DATE", NotNull=true)]
 		public virtual DateTime IEntryDate
 		{
 			get { return iEntryDate; }
 			set { iEntryDate = value; }
 		}
 
-		[Property(Column="I_UPD_DATE")]
+		[Property(Column="I_UPD_DATE", NotNull=true)]
 		public virtual DateTime IUpdDate
 		{
 			get { return iUpdDate; }
 			set { iUpdDate = value; }
 		}
 
-		[Property(Column="I_UPD_TIMESTAMP", Length=17)]
+		[Property(Column="I_UPD_TIMESTAMP", NotNull=true, Length=17)]
 		public virtual string IUpdTimestamp
 		{
 			get { return iUpdTimestamp; }
 			set { iUpdTimestamp = value; }
 		}
 
-        [HasMany(typeof(TClsDetailMs), Table = "T_CLS_DETAIL_MS", CompositeKeyColumnKeys = new string[] { "I_CLS_CD"}, OrderBy = "I_CLS_DETAIL_CD")]
-        public IList<TClsDetailMs> Tclsdetailmslist
-        {
-            get { return tclsdetailmslist; }
-            set { tclsdetailmslist = value; }
-        }
 
+        [BelongsTo(CompositeKeyColumns=new string[]{"I_CLS_CD"})]
+        public TClsMs TClsMs
+        {
+            get { return tClsMs; }
+            set { tClsMs = value; }
+        }
 
 		#endregion 
 
@@ -153,9 +142,9 @@ namespace Com.ChangeSoft.ERP.Entity
 		{
 			if( this == obj ) return true;
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
-			TClsMs castObj = (TClsMs)obj; 
+            CClsMsAll castObj = (CClsMsAll)obj; 
 			return ( castObj != null ) &&
-				( this.iClsCd == castObj.IClsCd );
+				( this.id == castObj.id ) ;
 		}
 		
 		/// <summary>
@@ -165,7 +154,7 @@ namespace Com.ChangeSoft.ERP.Entity
 		{
 			
 			int hash = 57; 
-			hash = 27 * hash * iClsCd.GetHashCode();
+			hash = 27 * hash * id.GetHashCode();
 			return hash; 
 		}
 		
@@ -177,10 +166,10 @@ namespace Com.ChangeSoft.ERP.Entity
             StringBuilder sbuffer = new StringBuilder();
 			sbuffer.Append("{");
 			
-			sbuffer.AppendFormat("IClsCd = {0}, ",iClsCd);
-			sbuffer.AppendFormat("IClsDesc = {0}, ",iClsDesc);
-			sbuffer.AppendFormat("IClsCls = {0}, ",iClsCls);
-			sbuffer.AppendFormat("ISysuserCls = {0}, ",iSysuserCls);
+			sbuffer.AppendFormat("IClsCd = {0}, ",id.IClsCd);
+			sbuffer.AppendFormat("IClsDetailCd = {0}, ",id.IClsDetailCd);
+			sbuffer.AppendFormat("ILanguageCd = {0}, ",id.ILanguageCd);
+			sbuffer.AppendFormat("IClsDetailDesc = {0}, ",iClsDetailDesc);
 			sbuffer.AppendFormat("IInqItem = {0}, ",iInqItem);
 			sbuffer.AppendFormat("IEntryDate = {0}, ",iEntryDate);
 			sbuffer.AppendFormat("IUpdDate = {0}, ",iUpdDate);
