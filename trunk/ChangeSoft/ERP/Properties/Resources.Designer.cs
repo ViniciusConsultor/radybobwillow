@@ -144,6 +144,13 @@ namespace Com.ChangeSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap loginbg {
+            get {
+                object obj = ResourceManager.GetObject("loginbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap MasterData16 {
             get {
                 object obj = ResourceManager.GetObject("MasterData16", resourceCulture);
@@ -315,6 +322,13 @@ namespace Com.ChangeSoft.ERP.Properties {
         internal static System.Drawing.Bitmap Sell48 {
             get {
                 object obj = ResourceManager.GetObject("Sell48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap splash {
+            get {
+                object obj = ResourceManager.GetObject("splash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
