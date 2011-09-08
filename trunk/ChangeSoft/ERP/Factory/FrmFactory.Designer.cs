@@ -32,7 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactory));
             this.tpBase = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tpG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblMode = new System.Windows.Forms.Label();
             this.btnFactory = new System.Windows.Forms.Button();
             this.txtFactory = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
@@ -42,15 +43,98 @@
             this.lblStar1 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
             this.btnCompany = new System.Windows.Forms.Button();
-            this.tpMode = new System.Windows.Forms.TableLayoutPanel();
-            this.rbAdd = new System.Windows.Forms.RadioButton();
-            this.rbUpd = new System.Windows.Forms.RadioButton();
-            this.rbDel = new System.Windows.Forms.RadioButton();
             this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.tpG2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnInspectStock = new System.Windows.Forms.Button();
+            this.txtInspectStock = new System.Windows.Forms.TextBox();
+            this.lblInspectStock = new System.Windows.Forms.Label();
+            this.cbbDecide = new System.Windows.Forms.ComboBox();
+            this.lblStar18 = new System.Windows.Forms.Label();
+            this.lblDecide = new System.Windows.Forms.Label();
+            this.lblSurplusStockNM = new System.Windows.Forms.Label();
+            this.btnSurplusStock = new System.Windows.Forms.Button();
+            this.txtSurplusStock = new System.Windows.Forms.TextBox();
+            this.lblSurplusStock = new System.Windows.Forms.Label();
+            this.cbbCost = new System.Windows.Forms.ComboBox();
+            this.lblStar17 = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblServiceStockNM = new System.Windows.Forms.Label();
+            this.btnServiceStock = new System.Windows.Forms.Button();
+            this.txtServiceStock = new System.Windows.Forms.TextBox();
+            this.lblServiceStock = new System.Windows.Forms.Label();
+            this.cbbPlan = new System.Windows.Forms.ComboBox();
+            this.lblStar16 = new System.Windows.Forms.Label();
+            this.lblPlan = new System.Windows.Forms.Label();
+            this.lblDefectStockNM = new System.Windows.Forms.Label();
+            this.btnDefectStock = new System.Windows.Forms.Button();
+            this.txtDefectStock = new System.Windows.Forms.TextBox();
+            this.lblDefectStock = new System.Windows.Forms.Label();
+            this.cbbRate = new System.Windows.Forms.ComboBox();
+            this.lblStar15 = new System.Windows.Forms.Label();
+            this.lblRate = new System.Windows.Forms.Label();
+            this.lblAccStockOutNM = new System.Windows.Forms.Label();
+            this.btnAccStockOut = new System.Windows.Forms.Button();
+            this.txtAccStockOut = new System.Windows.Forms.TextBox();
+            this.lblAccStockOut = new System.Windows.Forms.Label();
+            this.cbbSafe = new System.Windows.Forms.ComboBox();
+            this.lblStar14 = new System.Windows.Forms.Label();
+            this.lblSafe = new System.Windows.Forms.Label();
+            this.lblAccStockInNM = new System.Windows.Forms.Label();
+            this.btnAccStockIn = new System.Windows.Forms.Button();
+            this.txtAccStockIn = new System.Windows.Forms.TextBox();
+            this.lblAccStockIn = new System.Windows.Forms.Label();
+            this.txtStockPeriod = new System.Windows.Forms.TextBox();
+            this.lblStar12 = new System.Windows.Forms.Label();
+            this.lblStockPeriod = new System.Windows.Forms.Label();
+            this.txtAutoPeriod = new System.Windows.Forms.TextBox();
+            this.lblStar11 = new System.Windows.Forms.Label();
+            this.lblAutoPeriod = new System.Windows.Forms.Label();
+            this.txtArrange = new System.Windows.Forms.TextBox();
+            this.lblStar13 = new System.Windows.Forms.Label();
+            this.lblArrange = new System.Windows.Forms.Label();
+            this.lblDepartNM = new System.Windows.Forms.Label();
+            this.btnDepart = new System.Windows.Forms.Button();
+            this.txtDepart = new System.Windows.Forms.TextBox();
+            this.lblDepart = new System.Windows.Forms.Label();
+            this.txtBase = new System.Windows.Forms.TextBox();
+            this.lblBase = new System.Windows.Forms.Label();
+            this.cbbTimezone = new System.Windows.Forms.ComboBox();
+            this.lblStar10 = new System.Windows.Forms.Label();
+            this.lblTimezone = new System.Windows.Forms.Label();
+            this.cbbLanguage = new System.Windows.Forms.ComboBox();
+            this.lblStar9 = new System.Windows.Forms.Label();
+            this.lblLanguage = new System.Windows.Forms.Label();
+            this.txtFax = new System.Windows.Forms.TextBox();
+            this.lblFax = new System.Windows.Forms.Label();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.lblStar8 = new System.Windows.Forms.Label();
+            this.lblTel = new System.Windows.Forms.Label();
+            this.txtAddress3 = new System.Windows.Forms.TextBox();
+            this.lblAddress3 = new System.Windows.Forms.Label();
+            this.txtAddress2 = new System.Windows.Forms.TextBox();
+            this.lblAddress2 = new System.Windows.Forms.Label();
+            this.txtAddress1 = new System.Windows.Forms.TextBox();
+            this.lblStar7 = new System.Windows.Forms.Label();
+            this.lblAddress1 = new System.Windows.Forms.Label();
+            this.lblStar6 = new System.Windows.Forms.Label();
+            this.lblCountry = new System.Windows.Forms.Label();
+            this.txtZipCD = new System.Windows.Forms.TextBox();
+            this.lblStar5 = new System.Windows.Forms.Label();
+            this.lblZipCD = new System.Windows.Forms.Label();
+            this.txtPinyin = new System.Windows.Forms.TextBox();
+            this.lblPinyin = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblStar4 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtAbbreviation = new System.Windows.Forms.TextBox();
+            this.lblStar3 = new System.Windows.Forms.Label();
+            this.lblAbbreviation = new System.Windows.Forms.Label();
+            this.cbbCountry = new System.Windows.Forms.ComboBox();
+            this.lblInspectStockNM = new System.Windows.Forms.Label();
             this.tpBase.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tpMode.SuspendLayout();
+            this.tpG1.SuspendLayout();
+            this.tpG2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpBase
@@ -62,24 +146,30 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tpG1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.commonToolStrip1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tpG2, 0, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // tableLayoutPanel2
+            // tpG1
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.btnFactory, 9, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txtFactory, 8, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblStar2, 7, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblFactory, 6, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblCompanyNM, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblCompany, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblStar1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtCompany, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.btnCompany, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.tpMode, 2, 2);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(this.tpG1, "tpG1");
+            this.tpG1.Controls.Add(this.lblMode, 0, 1);
+            this.tpG1.Controls.Add(this.btnFactory, 9, 2);
+            this.tpG1.Controls.Add(this.txtFactory, 8, 2);
+            this.tpG1.Controls.Add(this.lblStar2, 7, 2);
+            this.tpG1.Controls.Add(this.lblFactory, 6, 2);
+            this.tpG1.Controls.Add(this.lblCompanyNM, 4, 2);
+            this.tpG1.Controls.Add(this.lblCompany, 0, 2);
+            this.tpG1.Controls.Add(this.lblStar1, 1, 2);
+            this.tpG1.Controls.Add(this.txtCompany, 2, 2);
+            this.tpG1.Controls.Add(this.btnCompany, 3, 2);
+            this.tpG1.Name = "tpG1";
+            // 
+            // lblMode
+            // 
+            resources.ApplyResources(this.lblMode, "lblMode");
+            this.lblMode.Name = "lblMode";
             // 
             // btnFactory
             // 
@@ -106,7 +196,7 @@
             // lblCompanyNM
             // 
             resources.ApplyResources(this.lblCompanyNM, "lblCompanyNM");
-            this.tableLayoutPanel2.SetColumnSpan(this.lblCompanyNM, 6);
+            this.lblCompanyNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCompanyNM.Name = "lblCompanyNM";
             // 
             // lblCompany
@@ -130,36 +220,6 @@
             resources.ApplyResources(this.btnCompany, "btnCompany");
             this.btnCompany.Name = "btnCompany";
             this.btnCompany.UseVisualStyleBackColor = true;
-            // 
-            // tpMode
-            // 
-            resources.ApplyResources(this.tpMode, "tpMode");
-            this.tableLayoutPanel2.SetColumnSpan(this.tpMode, 3);
-            this.tpMode.Controls.Add(this.rbAdd, 0, 0);
-            this.tpMode.Controls.Add(this.rbUpd, 1, 0);
-            this.tpMode.Controls.Add(this.rbDel, 2, 0);
-            this.tpMode.Name = "tpMode";
-            // 
-            // rbAdd
-            // 
-            resources.ApplyResources(this.rbAdd, "rbAdd");
-            this.rbAdd.Name = "rbAdd";
-            this.rbAdd.TabStop = true;
-            this.rbAdd.UseVisualStyleBackColor = true;
-            // 
-            // rbUpd
-            // 
-            resources.ApplyResources(this.rbUpd, "rbUpd");
-            this.rbUpd.Name = "rbUpd";
-            this.rbUpd.TabStop = true;
-            this.rbUpd.UseVisualStyleBackColor = true;
-            // 
-            // rbDel
-            // 
-            resources.ApplyResources(this.rbDel, "rbDel");
-            this.rbDel.Name = "rbDel";
-            this.rbDel.TabStop = true;
-            this.rbDel.UseVisualStyleBackColor = true;
             // 
             // commonToolStrip1
             // 
@@ -193,6 +253,581 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
             // 
+            // tpG2
+            // 
+            resources.ApplyResources(this.tpG2, "tpG2");
+            this.tpG2.Controls.Add(this.lblInspectStockNM, 7, 16);
+            this.tpG2.Controls.Add(this.btnInspectStock, 6, 16);
+            this.tpG2.Controls.Add(this.txtInspectStock, 5, 16);
+            this.tpG2.Controls.Add(this.lblInspectStock, 3, 16);
+            this.tpG2.Controls.Add(this.cbbDecide, 2, 16);
+            this.tpG2.Controls.Add(this.lblStar18, 1, 16);
+            this.tpG2.Controls.Add(this.lblDecide, 0, 16);
+            this.tpG2.Controls.Add(this.lblSurplusStockNM, 7, 15);
+            this.tpG2.Controls.Add(this.btnSurplusStock, 6, 15);
+            this.tpG2.Controls.Add(this.txtSurplusStock, 5, 15);
+            this.tpG2.Controls.Add(this.lblSurplusStock, 3, 15);
+            this.tpG2.Controls.Add(this.cbbCost, 2, 15);
+            this.tpG2.Controls.Add(this.lblStar17, 1, 15);
+            this.tpG2.Controls.Add(this.lblCost, 0, 15);
+            this.tpG2.Controls.Add(this.lblServiceStockNM, 7, 14);
+            this.tpG2.Controls.Add(this.btnServiceStock, 6, 14);
+            this.tpG2.Controls.Add(this.txtServiceStock, 5, 14);
+            this.tpG2.Controls.Add(this.lblServiceStock, 3, 14);
+            this.tpG2.Controls.Add(this.cbbPlan, 2, 14);
+            this.tpG2.Controls.Add(this.lblStar16, 1, 14);
+            this.tpG2.Controls.Add(this.lblPlan, 0, 14);
+            this.tpG2.Controls.Add(this.lblDefectStockNM, 7, 13);
+            this.tpG2.Controls.Add(this.btnDefectStock, 6, 13);
+            this.tpG2.Controls.Add(this.txtDefectStock, 5, 13);
+            this.tpG2.Controls.Add(this.lblDefectStock, 3, 13);
+            this.tpG2.Controls.Add(this.cbbRate, 2, 13);
+            this.tpG2.Controls.Add(this.lblStar15, 1, 13);
+            this.tpG2.Controls.Add(this.lblRate, 0, 13);
+            this.tpG2.Controls.Add(this.lblAccStockOutNM, 7, 12);
+            this.tpG2.Controls.Add(this.btnAccStockOut, 6, 12);
+            this.tpG2.Controls.Add(this.txtAccStockOut, 5, 12);
+            this.tpG2.Controls.Add(this.lblAccStockOut, 3, 12);
+            this.tpG2.Controls.Add(this.cbbSafe, 2, 12);
+            this.tpG2.Controls.Add(this.lblStar14, 1, 12);
+            this.tpG2.Controls.Add(this.lblSafe, 0, 12);
+            this.tpG2.Controls.Add(this.lblAccStockInNM, 7, 11);
+            this.tpG2.Controls.Add(this.btnAccStockIn, 6, 11);
+            this.tpG2.Controls.Add(this.txtAccStockIn, 5, 11);
+            this.tpG2.Controls.Add(this.lblAccStockIn, 3, 11);
+            this.tpG2.Controls.Add(this.txtStockPeriod, 5, 10);
+            this.tpG2.Controls.Add(this.lblStar12, 4, 10);
+            this.tpG2.Controls.Add(this.lblStockPeriod, 3, 10);
+            this.tpG2.Controls.Add(this.txtAutoPeriod, 2, 10);
+            this.tpG2.Controls.Add(this.lblStar11, 1, 10);
+            this.tpG2.Controls.Add(this.lblAutoPeriod, 0, 10);
+            this.tpG2.Controls.Add(this.txtArrange, 2, 11);
+            this.tpG2.Controls.Add(this.lblStar13, 1, 11);
+            this.tpG2.Controls.Add(this.lblArrange, 0, 11);
+            this.tpG2.Controls.Add(this.lblDepartNM, 7, 9);
+            this.tpG2.Controls.Add(this.btnDepart, 6, 9);
+            this.tpG2.Controls.Add(this.txtDepart, 5, 9);
+            this.tpG2.Controls.Add(this.lblDepart, 3, 9);
+            this.tpG2.Controls.Add(this.txtBase, 2, 9);
+            this.tpG2.Controls.Add(this.lblBase, 0, 9);
+            this.tpG2.Controls.Add(this.cbbTimezone, 5, 8);
+            this.tpG2.Controls.Add(this.lblStar10, 4, 8);
+            this.tpG2.Controls.Add(this.lblTimezone, 3, 8);
+            this.tpG2.Controls.Add(this.cbbLanguage, 2, 8);
+            this.tpG2.Controls.Add(this.lblStar9, 1, 8);
+            this.tpG2.Controls.Add(this.lblLanguage, 0, 8);
+            this.tpG2.Controls.Add(this.txtFax, 5, 7);
+            this.tpG2.Controls.Add(this.lblFax, 3, 7);
+            this.tpG2.Controls.Add(this.txtTel, 2, 7);
+            this.tpG2.Controls.Add(this.lblStar8, 1, 7);
+            this.tpG2.Controls.Add(this.lblTel, 0, 7);
+            this.tpG2.Controls.Add(this.txtAddress3, 2, 6);
+            this.tpG2.Controls.Add(this.lblAddress3, 0, 6);
+            this.tpG2.Controls.Add(this.txtAddress2, 2, 5);
+            this.tpG2.Controls.Add(this.lblAddress2, 0, 5);
+            this.tpG2.Controls.Add(this.txtAddress1, 2, 4);
+            this.tpG2.Controls.Add(this.lblStar7, 1, 4);
+            this.tpG2.Controls.Add(this.lblAddress1, 0, 4);
+            this.tpG2.Controls.Add(this.lblStar6, 4, 3);
+            this.tpG2.Controls.Add(this.lblCountry, 3, 3);
+            this.tpG2.Controls.Add(this.txtZipCD, 2, 3);
+            this.tpG2.Controls.Add(this.lblStar5, 1, 3);
+            this.tpG2.Controls.Add(this.lblZipCD, 0, 3);
+            this.tpG2.Controls.Add(this.txtPinyin, 2, 2);
+            this.tpG2.Controls.Add(this.lblPinyin, 0, 2);
+            this.tpG2.Controls.Add(this.txtName, 2, 1);
+            this.tpG2.Controls.Add(this.lblStar4, 1, 1);
+            this.tpG2.Controls.Add(this.lblName, 0, 1);
+            this.tpG2.Controls.Add(this.txtAbbreviation, 2, 0);
+            this.tpG2.Controls.Add(this.lblStar3, 1, 0);
+            this.tpG2.Controls.Add(this.lblAbbreviation, 0, 0);
+            this.tpG2.Controls.Add(this.cbbCountry, 5, 3);
+            this.tpG2.Name = "tpG2";
+            // 
+            // btnInspectStock
+            // 
+            resources.ApplyResources(this.btnInspectStock, "btnInspectStock");
+            this.btnInspectStock.Name = "btnInspectStock";
+            this.btnInspectStock.UseVisualStyleBackColor = true;
+            // 
+            // txtInspectStock
+            // 
+            resources.ApplyResources(this.txtInspectStock, "txtInspectStock");
+            this.txtInspectStock.Name = "txtInspectStock";
+            // 
+            // lblInspectStock
+            // 
+            resources.ApplyResources(this.lblInspectStock, "lblInspectStock");
+            this.lblInspectStock.Name = "lblInspectStock";
+            // 
+            // cbbDecide
+            // 
+            resources.ApplyResources(this.cbbDecide, "cbbDecide");
+            this.cbbDecide.FormattingEnabled = true;
+            this.cbbDecide.Name = "cbbDecide";
+            // 
+            // lblStar18
+            // 
+            resources.ApplyResources(this.lblStar18, "lblStar18");
+            this.lblStar18.ForeColor = System.Drawing.Color.Red;
+            this.lblStar18.Name = "lblStar18";
+            // 
+            // lblDecide
+            // 
+            resources.ApplyResources(this.lblDecide, "lblDecide");
+            this.lblDecide.Name = "lblDecide";
+            // 
+            // lblSurplusStockNM
+            // 
+            resources.ApplyResources(this.lblSurplusStockNM, "lblSurplusStockNM");
+            this.lblSurplusStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblSurplusStockNM, 2);
+            this.lblSurplusStockNM.Name = "lblSurplusStockNM";
+            // 
+            // btnSurplusStock
+            // 
+            resources.ApplyResources(this.btnSurplusStock, "btnSurplusStock");
+            this.btnSurplusStock.Name = "btnSurplusStock";
+            this.btnSurplusStock.UseVisualStyleBackColor = true;
+            // 
+            // txtSurplusStock
+            // 
+            resources.ApplyResources(this.txtSurplusStock, "txtSurplusStock");
+            this.txtSurplusStock.Name = "txtSurplusStock";
+            // 
+            // lblSurplusStock
+            // 
+            resources.ApplyResources(this.lblSurplusStock, "lblSurplusStock");
+            this.lblSurplusStock.Name = "lblSurplusStock";
+            // 
+            // cbbCost
+            // 
+            resources.ApplyResources(this.cbbCost, "cbbCost");
+            this.cbbCost.FormattingEnabled = true;
+            this.cbbCost.Name = "cbbCost";
+            // 
+            // lblStar17
+            // 
+            resources.ApplyResources(this.lblStar17, "lblStar17");
+            this.lblStar17.ForeColor = System.Drawing.Color.Red;
+            this.lblStar17.Name = "lblStar17";
+            // 
+            // lblCost
+            // 
+            resources.ApplyResources(this.lblCost, "lblCost");
+            this.lblCost.Name = "lblCost";
+            // 
+            // lblServiceStockNM
+            // 
+            resources.ApplyResources(this.lblServiceStockNM, "lblServiceStockNM");
+            this.lblServiceStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblServiceStockNM, 2);
+            this.lblServiceStockNM.Name = "lblServiceStockNM";
+            // 
+            // btnServiceStock
+            // 
+            resources.ApplyResources(this.btnServiceStock, "btnServiceStock");
+            this.btnServiceStock.Name = "btnServiceStock";
+            this.btnServiceStock.UseVisualStyleBackColor = true;
+            // 
+            // txtServiceStock
+            // 
+            resources.ApplyResources(this.txtServiceStock, "txtServiceStock");
+            this.txtServiceStock.Name = "txtServiceStock";
+            // 
+            // lblServiceStock
+            // 
+            resources.ApplyResources(this.lblServiceStock, "lblServiceStock");
+            this.lblServiceStock.Name = "lblServiceStock";
+            // 
+            // cbbPlan
+            // 
+            resources.ApplyResources(this.cbbPlan, "cbbPlan");
+            this.cbbPlan.FormattingEnabled = true;
+            this.cbbPlan.Name = "cbbPlan";
+            // 
+            // lblStar16
+            // 
+            resources.ApplyResources(this.lblStar16, "lblStar16");
+            this.lblStar16.ForeColor = System.Drawing.Color.Red;
+            this.lblStar16.Name = "lblStar16";
+            // 
+            // lblPlan
+            // 
+            resources.ApplyResources(this.lblPlan, "lblPlan");
+            this.lblPlan.Name = "lblPlan";
+            // 
+            // lblDefectStockNM
+            // 
+            resources.ApplyResources(this.lblDefectStockNM, "lblDefectStockNM");
+            this.lblDefectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblDefectStockNM, 2);
+            this.lblDefectStockNM.Name = "lblDefectStockNM";
+            // 
+            // btnDefectStock
+            // 
+            resources.ApplyResources(this.btnDefectStock, "btnDefectStock");
+            this.btnDefectStock.Name = "btnDefectStock";
+            this.btnDefectStock.UseVisualStyleBackColor = true;
+            // 
+            // txtDefectStock
+            // 
+            resources.ApplyResources(this.txtDefectStock, "txtDefectStock");
+            this.txtDefectStock.Name = "txtDefectStock";
+            // 
+            // lblDefectStock
+            // 
+            resources.ApplyResources(this.lblDefectStock, "lblDefectStock");
+            this.lblDefectStock.Name = "lblDefectStock";
+            // 
+            // cbbRate
+            // 
+            resources.ApplyResources(this.cbbRate, "cbbRate");
+            this.cbbRate.FormattingEnabled = true;
+            this.cbbRate.Name = "cbbRate";
+            // 
+            // lblStar15
+            // 
+            resources.ApplyResources(this.lblStar15, "lblStar15");
+            this.lblStar15.ForeColor = System.Drawing.Color.Red;
+            this.lblStar15.Name = "lblStar15";
+            // 
+            // lblRate
+            // 
+            resources.ApplyResources(this.lblRate, "lblRate");
+            this.lblRate.Name = "lblRate";
+            // 
+            // lblAccStockOutNM
+            // 
+            resources.ApplyResources(this.lblAccStockOutNM, "lblAccStockOutNM");
+            this.lblAccStockOutNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblAccStockOutNM, 2);
+            this.lblAccStockOutNM.Name = "lblAccStockOutNM";
+            // 
+            // btnAccStockOut
+            // 
+            resources.ApplyResources(this.btnAccStockOut, "btnAccStockOut");
+            this.btnAccStockOut.Name = "btnAccStockOut";
+            this.btnAccStockOut.UseVisualStyleBackColor = true;
+            // 
+            // txtAccStockOut
+            // 
+            resources.ApplyResources(this.txtAccStockOut, "txtAccStockOut");
+            this.txtAccStockOut.Name = "txtAccStockOut";
+            // 
+            // lblAccStockOut
+            // 
+            resources.ApplyResources(this.lblAccStockOut, "lblAccStockOut");
+            this.lblAccStockOut.Name = "lblAccStockOut";
+            // 
+            // cbbSafe
+            // 
+            resources.ApplyResources(this.cbbSafe, "cbbSafe");
+            this.cbbSafe.FormattingEnabled = true;
+            this.cbbSafe.Name = "cbbSafe";
+            // 
+            // lblStar14
+            // 
+            resources.ApplyResources(this.lblStar14, "lblStar14");
+            this.lblStar14.ForeColor = System.Drawing.Color.Red;
+            this.lblStar14.Name = "lblStar14";
+            // 
+            // lblSafe
+            // 
+            resources.ApplyResources(this.lblSafe, "lblSafe");
+            this.lblSafe.Name = "lblSafe";
+            // 
+            // lblAccStockInNM
+            // 
+            resources.ApplyResources(this.lblAccStockInNM, "lblAccStockInNM");
+            this.lblAccStockInNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblAccStockInNM, 2);
+            this.lblAccStockInNM.Name = "lblAccStockInNM";
+            // 
+            // btnAccStockIn
+            // 
+            resources.ApplyResources(this.btnAccStockIn, "btnAccStockIn");
+            this.btnAccStockIn.Name = "btnAccStockIn";
+            this.btnAccStockIn.UseVisualStyleBackColor = true;
+            // 
+            // txtAccStockIn
+            // 
+            resources.ApplyResources(this.txtAccStockIn, "txtAccStockIn");
+            this.txtAccStockIn.Name = "txtAccStockIn";
+            // 
+            // lblAccStockIn
+            // 
+            resources.ApplyResources(this.lblAccStockIn, "lblAccStockIn");
+            this.lblAccStockIn.Name = "lblAccStockIn";
+            // 
+            // txtStockPeriod
+            // 
+            resources.ApplyResources(this.txtStockPeriod, "txtStockPeriod");
+            this.txtStockPeriod.Name = "txtStockPeriod";
+            // 
+            // lblStar12
+            // 
+            resources.ApplyResources(this.lblStar12, "lblStar12");
+            this.lblStar12.ForeColor = System.Drawing.Color.Red;
+            this.lblStar12.Name = "lblStar12";
+            // 
+            // lblStockPeriod
+            // 
+            resources.ApplyResources(this.lblStockPeriod, "lblStockPeriod");
+            this.lblStockPeriod.Name = "lblStockPeriod";
+            // 
+            // txtAutoPeriod
+            // 
+            resources.ApplyResources(this.txtAutoPeriod, "txtAutoPeriod");
+            this.txtAutoPeriod.Name = "txtAutoPeriod";
+            // 
+            // lblStar11
+            // 
+            resources.ApplyResources(this.lblStar11, "lblStar11");
+            this.lblStar11.ForeColor = System.Drawing.Color.Red;
+            this.lblStar11.Name = "lblStar11";
+            // 
+            // lblAutoPeriod
+            // 
+            resources.ApplyResources(this.lblAutoPeriod, "lblAutoPeriod");
+            this.lblAutoPeriod.Name = "lblAutoPeriod";
+            // 
+            // txtArrange
+            // 
+            resources.ApplyResources(this.txtArrange, "txtArrange");
+            this.txtArrange.Name = "txtArrange";
+            // 
+            // lblStar13
+            // 
+            resources.ApplyResources(this.lblStar13, "lblStar13");
+            this.lblStar13.ForeColor = System.Drawing.Color.Red;
+            this.lblStar13.Name = "lblStar13";
+            // 
+            // lblArrange
+            // 
+            resources.ApplyResources(this.lblArrange, "lblArrange");
+            this.lblArrange.Name = "lblArrange";
+            // 
+            // lblDepartNM
+            // 
+            resources.ApplyResources(this.lblDepartNM, "lblDepartNM");
+            this.lblDepartNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblDepartNM, 2);
+            this.lblDepartNM.Name = "lblDepartNM";
+            // 
+            // btnDepart
+            // 
+            resources.ApplyResources(this.btnDepart, "btnDepart");
+            this.btnDepart.Name = "btnDepart";
+            this.btnDepart.UseVisualStyleBackColor = true;
+            // 
+            // txtDepart
+            // 
+            resources.ApplyResources(this.txtDepart, "txtDepart");
+            this.txtDepart.Name = "txtDepart";
+            // 
+            // lblDepart
+            // 
+            resources.ApplyResources(this.lblDepart, "lblDepart");
+            this.lblDepart.Name = "lblDepart";
+            // 
+            // txtBase
+            // 
+            resources.ApplyResources(this.txtBase, "txtBase");
+            this.txtBase.Name = "txtBase";
+            // 
+            // lblBase
+            // 
+            resources.ApplyResources(this.lblBase, "lblBase");
+            this.lblBase.Name = "lblBase";
+            // 
+            // cbbTimezone
+            // 
+            this.tpG2.SetColumnSpan(this.cbbTimezone, 3);
+            resources.ApplyResources(this.cbbTimezone, "cbbTimezone");
+            this.cbbTimezone.FormattingEnabled = true;
+            this.cbbTimezone.Name = "cbbTimezone";
+            // 
+            // lblStar10
+            // 
+            resources.ApplyResources(this.lblStar10, "lblStar10");
+            this.lblStar10.ForeColor = System.Drawing.Color.Red;
+            this.lblStar10.Name = "lblStar10";
+            // 
+            // lblTimezone
+            // 
+            resources.ApplyResources(this.lblTimezone, "lblTimezone");
+            this.lblTimezone.Name = "lblTimezone";
+            // 
+            // cbbLanguage
+            // 
+            resources.ApplyResources(this.cbbLanguage, "cbbLanguage");
+            this.cbbLanguage.FormattingEnabled = true;
+            this.cbbLanguage.Name = "cbbLanguage";
+            // 
+            // lblStar9
+            // 
+            resources.ApplyResources(this.lblStar9, "lblStar9");
+            this.lblStar9.ForeColor = System.Drawing.Color.Red;
+            this.lblStar9.Name = "lblStar9";
+            // 
+            // lblLanguage
+            // 
+            resources.ApplyResources(this.lblLanguage, "lblLanguage");
+            this.lblLanguage.Name = "lblLanguage";
+            // 
+            // txtFax
+            // 
+            this.tpG2.SetColumnSpan(this.txtFax, 3);
+            resources.ApplyResources(this.txtFax, "txtFax");
+            this.txtFax.Name = "txtFax";
+            // 
+            // lblFax
+            // 
+            resources.ApplyResources(this.lblFax, "lblFax");
+            this.lblFax.Name = "lblFax";
+            // 
+            // txtTel
+            // 
+            resources.ApplyResources(this.txtTel, "txtTel");
+            this.txtTel.Name = "txtTel";
+            // 
+            // lblStar8
+            // 
+            resources.ApplyResources(this.lblStar8, "lblStar8");
+            this.lblStar8.ForeColor = System.Drawing.Color.Red;
+            this.lblStar8.Name = "lblStar8";
+            // 
+            // lblTel
+            // 
+            resources.ApplyResources(this.lblTel, "lblTel");
+            this.lblTel.Name = "lblTel";
+            // 
+            // txtAddress3
+            // 
+            this.tpG2.SetColumnSpan(this.txtAddress3, 5);
+            resources.ApplyResources(this.txtAddress3, "txtAddress3");
+            this.txtAddress3.Name = "txtAddress3";
+            // 
+            // lblAddress3
+            // 
+            resources.ApplyResources(this.lblAddress3, "lblAddress3");
+            this.lblAddress3.Name = "lblAddress3";
+            // 
+            // txtAddress2
+            // 
+            this.tpG2.SetColumnSpan(this.txtAddress2, 5);
+            resources.ApplyResources(this.txtAddress2, "txtAddress2");
+            this.txtAddress2.Name = "txtAddress2";
+            // 
+            // lblAddress2
+            // 
+            resources.ApplyResources(this.lblAddress2, "lblAddress2");
+            this.lblAddress2.Name = "lblAddress2";
+            // 
+            // txtAddress1
+            // 
+            this.tpG2.SetColumnSpan(this.txtAddress1, 5);
+            resources.ApplyResources(this.txtAddress1, "txtAddress1");
+            this.txtAddress1.Name = "txtAddress1";
+            // 
+            // lblStar7
+            // 
+            resources.ApplyResources(this.lblStar7, "lblStar7");
+            this.lblStar7.ForeColor = System.Drawing.Color.Red;
+            this.lblStar7.Name = "lblStar7";
+            // 
+            // lblAddress1
+            // 
+            resources.ApplyResources(this.lblAddress1, "lblAddress1");
+            this.lblAddress1.Name = "lblAddress1";
+            // 
+            // lblStar6
+            // 
+            resources.ApplyResources(this.lblStar6, "lblStar6");
+            this.lblStar6.ForeColor = System.Drawing.Color.Red;
+            this.lblStar6.Name = "lblStar6";
+            // 
+            // lblCountry
+            // 
+            resources.ApplyResources(this.lblCountry, "lblCountry");
+            this.lblCountry.Name = "lblCountry";
+            // 
+            // txtZipCD
+            // 
+            resources.ApplyResources(this.txtZipCD, "txtZipCD");
+            this.txtZipCD.Name = "txtZipCD";
+            // 
+            // lblStar5
+            // 
+            resources.ApplyResources(this.lblStar5, "lblStar5");
+            this.lblStar5.ForeColor = System.Drawing.Color.Red;
+            this.lblStar5.Name = "lblStar5";
+            // 
+            // lblZipCD
+            // 
+            resources.ApplyResources(this.lblZipCD, "lblZipCD");
+            this.lblZipCD.Name = "lblZipCD";
+            // 
+            // txtPinyin
+            // 
+            this.tpG2.SetColumnSpan(this.txtPinyin, 5);
+            resources.ApplyResources(this.txtPinyin, "txtPinyin");
+            this.txtPinyin.Name = "txtPinyin";
+            // 
+            // lblPinyin
+            // 
+            resources.ApplyResources(this.lblPinyin, "lblPinyin");
+            this.lblPinyin.Name = "lblPinyin";
+            // 
+            // txtName
+            // 
+            this.tpG2.SetColumnSpan(this.txtName, 5);
+            resources.ApplyResources(this.txtName, "txtName");
+            this.txtName.Name = "txtName";
+            // 
+            // lblStar4
+            // 
+            resources.ApplyResources(this.lblStar4, "lblStar4");
+            this.lblStar4.ForeColor = System.Drawing.Color.Red;
+            this.lblStar4.Name = "lblStar4";
+            // 
+            // lblName
+            // 
+            resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.Name = "lblName";
+            // 
+            // txtAbbreviation
+            // 
+            this.tpG2.SetColumnSpan(this.txtAbbreviation, 5);
+            resources.ApplyResources(this.txtAbbreviation, "txtAbbreviation");
+            this.txtAbbreviation.Name = "txtAbbreviation";
+            // 
+            // lblStar3
+            // 
+            resources.ApplyResources(this.lblStar3, "lblStar3");
+            this.lblStar3.ForeColor = System.Drawing.Color.Red;
+            this.lblStar3.Name = "lblStar3";
+            // 
+            // lblAbbreviation
+            // 
+            resources.ApplyResources(this.lblAbbreviation, "lblAbbreviation");
+            this.lblAbbreviation.Name = "lblAbbreviation";
+            // 
+            // cbbCountry
+            // 
+            this.tpG2.SetColumnSpan(this.cbbCountry, 3);
+            resources.ApplyResources(this.cbbCountry, "cbbCountry");
+            this.cbbCountry.FormattingEnabled = true;
+            this.cbbCountry.Name = "cbbCountry";
+            // 
+            // lblInspectStockNM
+            // 
+            resources.ApplyResources(this.lblInspectStockNM, "lblInspectStockNM");
+            this.lblInspectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblInspectStockNM, 2);
+            this.lblInspectStockNM.Name = "lblInspectStockNM";
+            // 
             // FrmFactory
             // 
             resources.ApplyResources(this, "$this");
@@ -202,10 +837,10 @@
             this.tpBase.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tpMode.ResumeLayout(false);
-            this.tpMode.PerformLayout();
+            this.tpG1.ResumeLayout(false);
+            this.tpG1.PerformLayout();
+            this.tpG2.ResumeLayout(false);
+            this.tpG2.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -214,20 +849,104 @@
 
         private System.Windows.Forms.TableLayoutPanel tpBase;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tpG1;
         private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.Label lblStar1;
         private System.Windows.Forms.TextBox txtCompany;
         private System.Windows.Forms.Button btnCompany;
         private System.Windows.Forms.Label lblCompanyNM;
-        private System.Windows.Forms.TableLayoutPanel tpMode;
-        private System.Windows.Forms.RadioButton rbAdd;
-        private System.Windows.Forms.RadioButton rbUpd;
-        private System.Windows.Forms.RadioButton rbDel;
         private System.Windows.Forms.Label lblFactory;
         private System.Windows.Forms.Label lblStar2;
         private System.Windows.Forms.TextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
         private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private System.Windows.Forms.Label lblMode;
+        private System.Windows.Forms.TableLayoutPanel tpG2;
+        private System.Windows.Forms.Label lblAbbreviation;
+        private System.Windows.Forms.Label lblStar3;
+        private System.Windows.Forms.TextBox txtAbbreviation;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblStar4;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPinyin;
+        private System.Windows.Forms.Label lblPinyin;
+        private System.Windows.Forms.Label lblStar5;
+        private System.Windows.Forms.Label lblZipCD;
+        private System.Windows.Forms.Label lblStar6;
+        private System.Windows.Forms.Label lblCountry;
+        private System.Windows.Forms.TextBox txtZipCD;
+        private System.Windows.Forms.ComboBox cbbCountry;
+        private System.Windows.Forms.Label lblStar7;
+        private System.Windows.Forms.Label lblAddress1;
+        private System.Windows.Forms.TextBox txtAddress1;
+        private System.Windows.Forms.TextBox txtAddress2;
+        private System.Windows.Forms.Label lblAddress2;
+        private System.Windows.Forms.Label lblAddress3;
+        private System.Windows.Forms.TextBox txtAddress3;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.Label lblStar8;
+        private System.Windows.Forms.Label lblTel;
+        private System.Windows.Forms.TextBox txtFax;
+        private System.Windows.Forms.Label lblFax;
+        private System.Windows.Forms.Label lblStar9;
+        private System.Windows.Forms.Label lblLanguage;
+        private System.Windows.Forms.ComboBox cbbLanguage;
+        private System.Windows.Forms.Label lblTimezone;
+        private System.Windows.Forms.Label lblStar10;
+        private System.Windows.Forms.ComboBox cbbTimezone;
+        private System.Windows.Forms.Label lblBase;
+        private System.Windows.Forms.TextBox txtBase;
+        private System.Windows.Forms.Label lblDepart;
+        private System.Windows.Forms.TextBox txtDepart;
+        private System.Windows.Forms.Button btnDepart;
+        private System.Windows.Forms.Label lblDepartNM;
+        private System.Windows.Forms.Label lblArrange;
+        private System.Windows.Forms.Label lblStar13;
+        private System.Windows.Forms.TextBox txtArrange;
+        private System.Windows.Forms.Label lblAutoPeriod;
+        private System.Windows.Forms.TextBox txtStockPeriod;
+        private System.Windows.Forms.Label lblStar12;
+        private System.Windows.Forms.Label lblStockPeriod;
+        private System.Windows.Forms.TextBox txtAutoPeriod;
+        private System.Windows.Forms.Label lblStar11;
+        private System.Windows.Forms.Label lblAccStockIn;
+        private System.Windows.Forms.Label lblAccStockInNM;
+        private System.Windows.Forms.Button btnAccStockIn;
+        private System.Windows.Forms.TextBox txtAccStockIn;
+        private System.Windows.Forms.Label lblSafe;
+        private System.Windows.Forms.ComboBox cbbSafe;
+        private System.Windows.Forms.Label lblStar14;
+        private System.Windows.Forms.Label lblAccStockOut;
+        private System.Windows.Forms.Label lblAccStockOutNM;
+        private System.Windows.Forms.Button btnAccStockOut;
+        private System.Windows.Forms.TextBox txtAccStockOut;
+        private System.Windows.Forms.ComboBox cbbRate;
+        private System.Windows.Forms.Label lblStar15;
+        private System.Windows.Forms.Label lblRate;
+        private System.Windows.Forms.Label lblDefectStock;
+        private System.Windows.Forms.TextBox txtDefectStock;
+        private System.Windows.Forms.ComboBox cbbPlan;
+        private System.Windows.Forms.Label lblStar16;
+        private System.Windows.Forms.Label lblPlan;
+        private System.Windows.Forms.Label lblDefectStockNM;
+        private System.Windows.Forms.Button btnDefectStock;
+        private System.Windows.Forms.Button btnServiceStock;
+        private System.Windows.Forms.TextBox txtServiceStock;
+        private System.Windows.Forms.Label lblServiceStock;
+        private System.Windows.Forms.ComboBox cbbCost;
+        private System.Windows.Forms.Label lblStar17;
+        private System.Windows.Forms.Label lblCost;
+        private System.Windows.Forms.Label lblServiceStockNM;
+        private System.Windows.Forms.Label lblSurplusStock;
+        private System.Windows.Forms.Label lblSurplusStockNM;
+        private System.Windows.Forms.Button btnSurplusStock;
+        private System.Windows.Forms.TextBox txtSurplusStock;
+        private System.Windows.Forms.Label lblDecide;
+        private System.Windows.Forms.TextBox txtInspectStock;
+        private System.Windows.Forms.Label lblInspectStock;
+        private System.Windows.Forms.ComboBox cbbDecide;
+        private System.Windows.Forms.Label lblStar18;
+        private System.Windows.Forms.Button btnInspectStock;
+        private System.Windows.Forms.Label lblInspectStockNM;
 	}
 }
