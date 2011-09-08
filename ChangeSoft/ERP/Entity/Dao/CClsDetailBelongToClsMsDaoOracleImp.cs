@@ -13,21 +13,31 @@ using System.Data.SqlClient;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CFunctionAllDaoOracleImp : CFunctionAll,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICFunctionAllDao
+    public class CClsDetailBelongToClsMsDaoOracleImp : ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICClsDetailBelongToClsMsDao
     {
-        public IList<CFunctionAll> GetFunctionAllList(String langid)
+        public IList<CClsDetailBelongToClsMs> GetClsMsAllList(string iClsCd,string iLanguageCd)
         {
-            IList<CFunctionAll> result = new List<CFunctionAll>();
+            IList<CClsDetailBelongToClsMs> result = new List<CClsDetailBelongToClsMs>();
 
             TransactionScope transaction = new TransactionScope();
 
-            ISession ss = holder.CreateSession(typeof(CFunctionAllDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CClsDetailBelongToClsMsDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                SimpleQuery<CFunctionAll> q = new SimpleQuery<CFunctionAll>(typeof(CFunctionAll), @"
-                                                from CFunctionAll where Id.Langid=? Order by Id.Catalogid", langid);
+                SimpleQuery<CClsDetailBelongToClsMs> q = new SimpleQuery<CClsDetailBelongToClsMs>(typeof(CClsDetailBelongToClsMs), @"
+                                                                from CClsDetailBelongToClsMs where Id.IClsCd=:iClsCd and Id.ILanguageCd=:iLanguageCd");
+                q.SetParameter("iClsCd", iClsCd);
+                q.SetParameter("iLanguageCd", iLanguageCd);
+
+                //string sql = "select c.* from CClsDetailBelongToClsMs c inner join TClsMs t on (t.IClsCd = c.Id.IClsCdwhere) where c.Id.IClsCd=:iClsCd and c.Id.ILanguageCd=:iLanguageCd";
+
+                //SimpleQuery<CClsDetailBelongToClsMs> q = new SimpleQuery<CClsDetailBelongToClsMs>(typeof(CClsDetailBelongToClsMs), sql);
+
+                //q.SetParameter("iClsCd", iClsCd);
+                //q.SetParameter("iLanguageCd",iLanguageCd);
+
                 result = q.Execute();
                 //                string query = @"
                 //                        select LANGID,CATALOGID,CATALOGNAME from M_FUNCTIONCATALOG

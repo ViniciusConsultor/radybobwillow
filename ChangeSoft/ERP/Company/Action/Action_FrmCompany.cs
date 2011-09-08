@@ -20,12 +20,12 @@ namespace Com.GainWinSoft.ERP.Company.Action
         {
             //Com.GainWinSoft.ERP.Entity.Dao.TestDao td = new Com.GainWinSoft.ERP.Entity.Dao.TestDao();
             //通过Windsor的组件容器，获取Dao的实例
-            ICFunctionAllDao td = ComponentLocator.Instance().Resolve<ICFunctionAllDao>();
+            ICCatalogHasManyFunctionDao td = ComponentLocator.Instance().Resolve<ICCatalogHasManyFunctionDao>();
             ////调用Dao的方法
             //IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
 
             //Test td = new Test();
-            IList<CFunctionAll> re = td.GetFunctionAllList(Thread.CurrentThread.CurrentUICulture.Name);
+            IList<CCatalogHasManyFunction> re = td.GetFunctionAllList(Thread.CurrentThread.CurrentUICulture.Name);
 
             log.Debug("result=" + re);
             return re.Count;

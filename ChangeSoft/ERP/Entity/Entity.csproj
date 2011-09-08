@@ -106,10 +106,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao\CFunctionAllDaoOracleImp.cs" />
-    <Compile Include="Dao\CFunctionAllPagerDaoOracleImp.cs" />
-    <Compile Include="Dao\ICClsMsAllDao.cs" />
-    <Compile Include="Dao\ICFunctionAllDao.cs" />
+    <Compile Include="Dao\CCatalogHasManyFunctionDaoOracleImp.cs" />
+    <Compile Include="Dao\CFunctionPagerNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\ICClsDetailBelongToClsMsDao.cs" />
+    <Compile Include="Dao\ICCatalogHasManyFunctionDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\ITDescMsDao.cs" />
@@ -119,7 +119,7 @@
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />
     <Compile Include="Dao\TDescMsDaoOracleImp.cs" />
-    <Compile Include="Dao\CClsMsAllDaoOracleImp.cs" />
+    <Compile Include="Dao\CClsDetailBelongToClsMsDaoOracleImp.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />
@@ -129,10 +129,10 @@
     <Compile Include="Model\Test2.cs" />
     <Compile Include="Model\MFunctionId.cs" />
     <Compile Include="Model\CCatalogHasManyFunction.cs" />
-    <Compile Include="Model\CFunctionPager.cs" />
+    <Compile Include="Model\CFunctionPagerNoAR.cs" />
     <Compile Include="Model\TDescMsId.cs" />
     <Compile Include="Model\TClsDetailMsId.cs" />
-    <Compile Include="Model\CClsMsAll.cs" />
+    <Compile Include="Model\CClsDetailBelongToClsMs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

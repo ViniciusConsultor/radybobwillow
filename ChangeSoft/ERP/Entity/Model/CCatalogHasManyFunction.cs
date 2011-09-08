@@ -96,7 +96,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		{
 			if( this == obj ) return true;
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
-            CFunctionAll castObj = (CFunctionAll)obj;
+            CCatalogHasManyFunction castObj = (CCatalogHasManyFunction)obj;
             return (castObj != null) &&
                 (this.id == castObj.id);
 		}

@@ -13,31 +13,21 @@ using System.Data.SqlClient;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CClsMsAllDaoOracleImp : ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICClsMsAllDao
+    public class CCatalogHasManyFunctionDaoOracleImp : CCatalogHasManyFunction,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICCatalogHasManyFunctionDao
     {
-        public IList<CClsMsAll> GetClsMsAllList(string iClsCd,string iLanguageCd)
+        public IList<CCatalogHasManyFunction> GetFunctionAllList(String langid)
         {
-            IList<CClsMsAll> result = new List<CClsMsAll>();
+            IList<CCatalogHasManyFunction> result = new List<CCatalogHasManyFunction>();
 
             TransactionScope transaction = new TransactionScope();
 
-            ISession ss = holder.CreateSession(typeof(CClsMsAllDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CCatalogHasManyFunctionDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                SimpleQuery<CClsMsAll> q = new SimpleQuery<CClsMsAll>(typeof(CClsMsAll), @"
-                                                                from CClsMsAll where Id.IClsCd=:iClsCd and Id.ILanguageCd=:iLanguageCd");
-                q.SetParameter("iClsCd", iClsCd);
-                q.SetParameter("iLanguageCd", iLanguageCd);
-
-                //string sql = "select c.* from CClsMsAll c inner join TClsMs t on (t.IClsCd = c.Id.IClsCdwhere) where c.Id.IClsCd=:iClsCd and c.Id.ILanguageCd=:iLanguageCd";
-
-                //SimpleQuery<CClsMsAll> q = new SimpleQuery<CClsMsAll>(typeof(CClsMsAll), sql);
-
-                //q.SetParameter("iClsCd", iClsCd);
-                //q.SetParameter("iLanguageCd",iLanguageCd);
-
+                SimpleQuery<CCatalogHasManyFunction> q = new SimpleQuery<CCatalogHasManyFunction>(typeof(CCatalogHasManyFunction), @"
+                                                from CCatalogHasManyFunction where Id.Langid=? Order by Id.Catalogid", langid);
                 result = q.Execute();
                 //                string query = @"
                 //                        select LANGID,CATALOGID,CATALOGNAME from M_FUNCTIONCATALOG

@@ -26,7 +26,7 @@ using Castle.ActiveRecord.Queries;
 namespace Com.GainWinSoft.ERP.Entity
 {
     [Serializable, ActiveRecord("T_CLS_DETAIL_MS")]
-    public class CClsMsAll : ActiveRecordBase
+    public class CClsDetailBelongToClsMs : ActiveRecordBase
     {
 
 		#region Private Members
@@ -45,7 +45,7 @@ namespace Com.GainWinSoft.ERP.Entity
 
 		#region Constuctor(s)
 
-        public CClsMsAll()
+        public CClsDetailBelongToClsMs()
 		{
             id = new TClsDetailMsId() ;
 			iClsDetailDesc = String.Empty; 
@@ -142,7 +142,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		{
 			if( this == obj ) return true;
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
-            CClsMsAll castObj = (CClsMsAll)obj; 
+            CClsDetailBelongToClsMs castObj = (CClsDetailBelongToClsMs)obj; 
 			return ( castObj != null ) &&
 				( this.id == castObj.id ) ;
 		}
