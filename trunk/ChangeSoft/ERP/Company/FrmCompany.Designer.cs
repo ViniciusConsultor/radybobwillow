@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.Company
+﻿namespace Com.GainWinSoft.ERP.Company
 {
     partial class FrmCompany
     {

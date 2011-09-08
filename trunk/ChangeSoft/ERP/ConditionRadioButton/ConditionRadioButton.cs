@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
+namespace Com.GainWinSoft.Common.Control.ConditionRadioButton
 {
     public partial class ConditionRadioButton : UserControl
     {

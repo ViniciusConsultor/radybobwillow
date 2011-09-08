@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Common.Control.CommonToolStrip
+﻿namespace Com.GainWinSoft.Common.Control.CommonToolStrip
 {
     partial class CommonToolStrip
     {

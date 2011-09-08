@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Diagnostics;
 
-namespace Com.ChangeSoft.Common.Control.ConditionDropDownList
+namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
 {
     public partial class ConditionDropDownList : UserControl
     {

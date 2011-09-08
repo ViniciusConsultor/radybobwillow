@@ -1,8 +1,8 @@
 ﻿using System;
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface ICClsMsAllDao
     {
-        System.Collections.Generic.IList<Com.ChangeSoft.ERP.Entity.CClsMsAll> GetClsMsAllList(string iClsCd, string iLanguageCd);
+        System.Collections.Generic.IList<Com.GainWinSoft.ERP.Entity.CClsMsAll> GetClsMsAllList(string iClsCd, string iLanguageCd);
     }
 }

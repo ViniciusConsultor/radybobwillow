@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.ProductPlan
+﻿namespace Com.GainWinSoft.ERP.ProductPlan
 {
     partial class FrmProductPlan
     {

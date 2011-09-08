@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WeifenLuo.WinFormsUI.Docking;
-using Com.ChangeSoft.ERP.Company;
-using Com.ChangeSoft.ERP.ProductPlan;
-using Com.ChangeSoft.ERP.Material;
+using Com.GainWinSoft.ERP.Company;
+using Com.GainWinSoft.ERP.ProductPlan;
+using Com.GainWinSoft.ERP.Material;
 using System.Windows.Forms;
-using Com.ChangeSoft.ERP.Factory;
+using Com.GainWinSoft.ERP.Factory;
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     public class MenuTransfer : Form
     {

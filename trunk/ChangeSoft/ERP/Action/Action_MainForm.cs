@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using log4net;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Entity.Dao;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity.Dao;
 using System.Collections;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.Entity;
 using System.Threading;
-using Com.ChangeSoft.ERP.FormVo;
+using Com.GainWinSoft.ERP.FormVo;
 
 
-namespace Com.ChangeSoft.ERP.Action
+namespace Com.GainWinSoft.ERP.Action
 {
-    public class Action_MainForm : Com.ChangeSoft.Common.IBaseAction, Com.ChangeSoft.ERP.Action.IAction_MainForm
+    public class Action_MainForm : Com.GainWinSoft.Common.IBaseAction, Com.GainWinSoft.ERP.Action.IAction_MainForm
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_MainForm));
 
@@ -23,7 +23,7 @@ namespace Com.ChangeSoft.ERP.Action
 
 
             IList<FunctionAllVo> functionallvolist = new List<FunctionAllVo>();
-            ////Com.ChangeSoft.ERP.Entity.Dao.TestDao td = new Com.ChangeSoft.ERP.Entity.Dao.TestDao();
+            ////Com.GainWinSoft.ERP.Entity.Dao.TestDao td = new Com.GainWinSoft.ERP.Entity.Dao.TestDao();
             ////通过Windsor的组件容器，获取Dao的实例
             ICFunctionAllDao td = ComponentLocator.Instance().Resolve<ICFunctionAllDao>();
             //////调用Dao的方法

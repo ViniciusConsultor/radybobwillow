@@ -8,8 +8,8 @@
     <ProjectGuid>{4BD74F38-FF5A-41B2-B498-EB1D6BB631AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.ERP.CodeRef</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.ERP.CodeRef</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.CodeRef</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.CodeRef</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>http://localhost/Com.ChangeSoft.ERP.CodeRef/</PublishUrl>

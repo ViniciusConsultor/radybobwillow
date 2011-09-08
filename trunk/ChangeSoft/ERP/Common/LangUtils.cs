@@ -3,7 +3,7 @@ using System.Collections;
 using System.Threading;
 using System.Collections.Generic;
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public class LangUtils
     {

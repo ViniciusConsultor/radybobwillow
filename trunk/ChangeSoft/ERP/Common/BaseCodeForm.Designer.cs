@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Common
+﻿namespace Com.GainWinSoft.Common
 {
     partial class BaseCodeForm
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Collections.Generic;
-using Com.ChangeSoft.Common;
-namespace Com.ChangeSoft.ERP.Entity.Dao
+using Com.GainWinSoft.Common;
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface ICPagerDao
     {

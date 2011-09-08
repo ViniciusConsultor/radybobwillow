@@ -9,13 +9,13 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.OracleClient;
 using Castle.ActiveRecord.Queries;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Collections;
 using NHibernate.Transform;
 
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CFunctionAllPagerDaoOracleImp:ActiveRecordBase, Com.ChangeSoft.ERP.Entity.Dao.ICPagerDao
+    public class CFunctionAllPagerDaoOracleImp:ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
     {
         public DataSet GetDataSet(string key,SearchCondition condition,int pagesize,int pageindex)
         {

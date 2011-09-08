@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Com.ChangeSoft.ERP.FormVo
+namespace Com.GainWinSoft.ERP.FormVo
 {
     public class FunctionVo
     {

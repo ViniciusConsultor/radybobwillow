@@ -5,18 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.ERP.Company;
+using Com.GainWinSoft.ERP.Company;
 using WeifenLuo.WinFormsUI.Docking;
-using Com.ChangeSoft.ERP.ProductPlan;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.FormVo;
+using Com.GainWinSoft.ERP.ProductPlan;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.FormVo;
 using Guifreaks.NavigationBar;
-using Com.ChangeSoft.ERP.Material;
-using Com.ChangeSoft.ERP.Factory;
+using Com.GainWinSoft.ERP.Material;
+using Com.GainWinSoft.ERP.Factory;
 using System.Resources;
 
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     public partial class MenuWindow : DockContent
 

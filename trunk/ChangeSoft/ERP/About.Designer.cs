@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP
+﻿namespace Com.GainWinSoft.ERP
 {
     partial class About
     {
@@ -86,7 +86,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(271, 16);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "ChangeSoft Smart 企业管理系统2010";
+            this.labelProductName.Text = "GainWinSoft Smart 企业管理系统2010";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelVersion

@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP
+﻿namespace Com.GainWinSoft.ERP
 {
     partial class SplashScreenForm
     {
@@ -61,7 +61,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Com.ChangeSoft.ERP.Properties.Resources.splash;
+            this.pictureBox1.Image = global::Com.GainWinSoft.ERP.Properties.Resources.splash;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(547, 315);

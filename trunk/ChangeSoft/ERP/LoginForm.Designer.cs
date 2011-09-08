@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP
+﻿namespace Com.GainWinSoft.ERP
 {
     partial class LoginForm
     {
@@ -78,7 +78,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Com.ChangeSoft.ERP.Properties.Resources.loginbg;
+            this.BackgroundImage = global::Com.GainWinSoft.ERP.Properties.Resources.loginbg;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);

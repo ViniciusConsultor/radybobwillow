@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Common.Control.PagerGridView
+﻿namespace Com.GainWinSoft.Common.Control.PagerGridView
 {
     partial class FrmColumnsSetting
     {

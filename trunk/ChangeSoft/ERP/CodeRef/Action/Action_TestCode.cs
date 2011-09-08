@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using log4net;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Entity.Dao;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity.Dao;
 using System.Collections;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.Entity;
 using System.Threading;
 
-namespace Com.ChangeSoft.ERP.CodeRef.Action
+namespace Com.GainWinSoft.ERP.CodeRef.Action
 {
-    public class Action_TestCode : Com.ChangeSoft.Common.IBaseAction, Com.ChangeSoft.ERP.CodeRef.Action.IAction_TestCode
+    public class Action_TestCode : Com.GainWinSoft.Common.IBaseAction, Com.GainWinSoft.ERP.CodeRef.Action.IAction_TestCode
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_TestCode));
 

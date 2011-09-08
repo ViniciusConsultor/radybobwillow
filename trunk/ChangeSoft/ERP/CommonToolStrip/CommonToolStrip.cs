@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.Common.Control.CommonToolStrip.Properties;
+using Com.GainWinSoft.Common.Control.CommonToolStrip.Properties;
 using System.Resources;
 
-namespace Com.ChangeSoft.Common.Control.CommonToolStrip
+namespace Com.GainWinSoft.Common.Control.CommonToolStrip
 {
     public partial class CommonToolStrip : UserControl
     {
@@ -553,62 +553,62 @@ namespace Com.ChangeSoft.Common.Control.CommonToolStrip
         {
 
 
-            item_add.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Add_24");
+            item_add.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Add_24");
 
             item_add.Text = rm.GetString("Add");
             item_add.ToolTipText = rm.GetString("Add");
             item_add.ImageScaling = ToolStripItemImageScaling.None;
 
-            item_update.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Update_24");
+            item_update.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Update_24");
             item_update.Text = rm.GetString("Update");
             item_update.ToolTipText = rm.GetString("Update");
             item_update.ImageScaling = ToolStripItemImageScaling.None;
 
-            item_delete.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Delete_24");
+            item_delete.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Delete_24");
             item_delete.Text = rm.GetString("Delete");
             item_delete.ToolTipText = rm.GetString("Delete");
             item_delete.ImageScaling = ToolStripItemImageScaling.None;
 
 
-            item_save.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Save_24");
+            item_save.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Save_24");
             item_save.Text = rm.GetString("Save");
             item_save.ToolTipText = rm.GetString("Save");
             item_save.ImageScaling = ToolStripItemImageScaling.None;
 
 
-            item_copy.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Copy_24");
+            item_copy.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Copy_24");
             item_copy.Text = rm.GetString("Copy");
             item_copy.ToolTipText = rm.GetString("Copy");
             item_copy.ImageScaling = ToolStripItemImageScaling.None;
 
-            item_report.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Report_24");
+            item_report.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Report_24");
             item_report.Text = rm.GetString("Report");
             item_report.ToolTipText = rm.GetString("Report");
             item_report.ImageScaling = ToolStripItemImageScaling.None;
 
-            item_csv.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Csv_24");
+            item_csv.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Csv_24");
             item_csv.Text = rm.GetString("Csv");
             item_csv.ToolTipText = rm.GetString("Csv");
             item_csv.ImageScaling = ToolStripItemImageScaling.None;
-            item_goback.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Goback_24");
+            item_goback.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Goback_24");
             item_goback.Text = rm.GetString("Goback");
             item_goback.ToolTipText = rm.GetString("Goback");
             item_goback.ImageScaling = ToolStripItemImageScaling.None;
 
 
 
-            item_ok.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Ok_24");
+            item_ok.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Ok_24");
             item_ok.Text = rm.GetString("Ok");
             item_ok.ToolTipText = rm.GetString("Ok");
             item_ok.ImageScaling = ToolStripItemImageScaling.None;
 
-            item_exit.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Exit_24");
+            item_exit.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Exit_24");
             item_exit.Text = rm.GetString("Exit");
             item_exit.ToolTipText = rm.GetString("Exit");
             item_exit.ImageScaling = ToolStripItemImageScaling.None;
 
 
-            item_help.Image = (Image)Com.ChangeSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Help_24");
+            item_help.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Help_24");
             item_help.Text = rm.GetString("Help");
             item_help.Alignment = ToolStripItemAlignment.Right;
             item_help.ToolTipText = rm.GetString("Help");

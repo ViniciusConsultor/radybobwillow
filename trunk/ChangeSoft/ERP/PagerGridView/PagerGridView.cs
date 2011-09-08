@@ -11,7 +11,7 @@ using System.IO;
 using System.Diagnostics;
 using log4net;
 
-namespace Com.ChangeSoft.Common.Control.PagerGridView
+namespace Com.GainWinSoft.Common.Control.PagerGridView
 {
     public partial class PagerGridView : UserControl
     {

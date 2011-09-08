@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Com.ChangeSoft.ERP.ProductPlan.Properties {
+namespace Com.GainWinSoft.ERP.ProductPlan.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Com.ChangeSoft.ERP.ProductPlan.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Com.ChangeSoft.ERP.ProductPlan.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Com.GainWinSoft.ERP.ProductPlan.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

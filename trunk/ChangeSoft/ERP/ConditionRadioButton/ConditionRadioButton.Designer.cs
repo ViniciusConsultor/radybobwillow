@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Common.Control.ConditionRadioButton
+﻿namespace Com.GainWinSoft.Common.Control.ConditionRadioButton
 {
     partial class ConditionRadioButton
     {

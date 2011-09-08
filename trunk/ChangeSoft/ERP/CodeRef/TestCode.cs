@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.ERP.CodeRef.Action;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.CodeRef.Action;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity;
 
-namespace Com.ChangeSoft.ERP.CodeRef
+namespace Com.GainWinSoft.ERP.CodeRef
 {
     public partial class TestCode : BaseCodeForm
     {

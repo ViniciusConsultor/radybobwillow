@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.Material
+﻿namespace Com.GainWinSoft.ERP.Material
 {
     partial class FrmMaterialEdit
     {
@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaterialEdit));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.conditionRadioButton1 = new Com.ChangeSoft.Common.Control.ConditionRadioButton.ConditionRadioButton();
+            this.conditionRadioButton1 = new Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             this.conditionRadioButton1.Defaultselectedindex = 0;
             resources.ApplyResources(this.conditionRadioButton1, "conditionRadioButton1");
             this.conditionRadioButton1.Name = "conditionRadioButton1";
-            this.conditionRadioButton1.RadioChanged += new Com.ChangeSoft.Common.Control.ConditionRadioButton.ConditionRadioButton.OnCheckedChangeEventHandler(this.conditionRadioButton1_RadioChanged);
+            this.conditionRadioButton1.RadioChanged += new Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton.OnCheckedChangeEventHandler(this.conditionRadioButton1_RadioChanged);
             // 
             // FrmMaterialEdit
             // 
@@ -72,7 +72,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Com.ChangeSoft.Common.Control.ConditionRadioButton.ConditionRadioButton conditionRadioButton1;
+        private Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton conditionRadioButton1;
         private System.Windows.Forms.Button button1;
     }
 }

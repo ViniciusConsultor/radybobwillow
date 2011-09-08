@@ -1,8 +1,8 @@
 ﻿using System;
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface ICFunctionAllDao
     {
-        System.Collections.Generic.IList<Com.ChangeSoft.ERP.Entity.CFunctionAll> GetFunctionAllList(string langid);
+        System.Collections.Generic.IList<Com.GainWinSoft.ERP.Entity.CFunctionAll> GetFunctionAllList(string langid);
     }
 }

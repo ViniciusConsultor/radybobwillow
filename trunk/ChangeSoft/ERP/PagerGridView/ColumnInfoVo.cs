@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Com.ChangeSoft.Common.Control.PagerGridView
+namespace Com.GainWinSoft.Common.Control.PagerGridView
 {
     public class ColumnInfoVo
     {

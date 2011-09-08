@@ -8,8 +8,8 @@
     <ProjectGuid>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common.Control.PagerGridView</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common.Control.PagerGridView</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.Common.Control.PagerGridView</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.Common.Control.PagerGridView</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

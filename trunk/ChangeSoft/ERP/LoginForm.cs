@@ -12,10 +12,10 @@ using Castle.ActiveRecord.Framework.Config;
 using System.Reflection;
 using log4net.Config;
 using log4net;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Threading;
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     public partial class LoginForm : Form
     {
@@ -57,7 +57,7 @@ namespace Com.ChangeSoft.ERP
             ActiveRecordStarter.ResetInitializationFlag();
             IConfigurationSource source = new
               XmlConfigurationSource("ActiveRecordConfig.xml");
-            Assembly asm1 = Assembly.Load("Com.ChangeSoft.ERP.Entity");
+            Assembly asm1 = Assembly.Load("Com.GainWinSoft.ERP.Entity");
             ActiveRecordStarter.Initialize(
                asm1,
               source);

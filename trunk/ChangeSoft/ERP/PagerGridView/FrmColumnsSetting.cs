@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 
-namespace Com.ChangeSoft.Common.Control.PagerGridView
+namespace Com.GainWinSoft.Common.Control.PagerGridView
 {
     public partial class FrmColumnsSetting : DockContent
     {

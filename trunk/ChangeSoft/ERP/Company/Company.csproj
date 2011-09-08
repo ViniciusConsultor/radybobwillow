@@ -8,8 +8,8 @@
     <ProjectGuid>{E709D4C4-5237-4D22-A21A-39A28C066DE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.ERP.Company</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.ERP.Company</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.Company</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.Company</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>

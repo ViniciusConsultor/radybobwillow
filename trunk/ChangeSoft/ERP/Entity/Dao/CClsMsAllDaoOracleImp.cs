@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using Castle.ActiveRecord;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.Entity;
 using NHibernate;
 using System.Data.Common;
 using Castle.ActiveRecord.Queries;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CClsMsAllDaoOracleImp : ActiveRecordBase, IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.ICClsMsAllDao
+    public class CClsMsAllDaoOracleImp : ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICClsMsAllDao
     {
         public IList<CClsMsAll> GetClsMsAllList(string iClsCd,string iLanguageCd)
         {

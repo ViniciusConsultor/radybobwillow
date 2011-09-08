@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.Factory
+﻿namespace Com.GainWinSoft.ERP.Factory
 {
 	partial class FrmFactory
 	{
@@ -43,7 +43,7 @@
             this.lblStar1 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
             this.btnCompany = new System.Windows.Forms.Button();
-            this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tpG2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblInspectStockNM = new System.Windows.Forms.Label();
             this.btnInspectStock = new System.Windows.Forms.Button();
@@ -860,7 +860,7 @@
         private System.Windows.Forms.Label lblStar2;
         private System.Windows.Forms.TextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
-        private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.TableLayoutPanel tpG2;
         private System.Windows.Forms.Label lblAbbreviation;

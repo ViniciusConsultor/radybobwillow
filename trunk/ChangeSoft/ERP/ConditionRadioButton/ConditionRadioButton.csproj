@@ -8,8 +8,8 @@
     <ProjectGuid>{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common.Control.ConditionRadioButton</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common.Control.ConditionRadioButton</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.Common.Control.ConditionRadioButton</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.Common.Control.ConditionRadioButton</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
