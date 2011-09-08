@@ -7,6 +7,7 @@ using Com.ChangeSoft.ERP.Company;
 using Com.ChangeSoft.ERP.ProductPlan;
 using Com.ChangeSoft.ERP.Material;
 using System.Windows.Forms;
+using Com.ChangeSoft.ERP.Factory;
 
 namespace Com.ChangeSoft.ERP
 {
@@ -114,24 +115,21 @@ namespace Com.ChangeSoft.ERP
                 //}
 
             }
-            //if ("FFactory".Equals(e.Node.Tag.ToString()))
-            //{
-            //    DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-            //    if (frm == null)
-            //    {
-            //        FrmFactory frmFactory = new FrmFactory(baseform);
-
-            //        frmFactory.Show(baseform.dockPanel, DockState.Document);
-            //        baseform.Show(this.dockpanel);
-            //    }
-            //    else
-            //    {
-            //        frm.Show(this.dockpanel);
-            //        frm.BringToFront();
-            //    }
-
-            //}
-
+            if ("FFactory".Equals(path))
+            {
+                DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
+                if (frm == null)
+                {
+                    FrmFactory frmFactory = new FrmFactory(parentpanel);
+                    frmFactory.DockTitle = title;
+                    frmFactory.ShowContent(false);
+                }
+                else
+                {
+                    frm.Show(parentpanel);
+                    frm.BringToFront();
+                }
+            }
         }
 
         private DockContent FindDocument(string text)
