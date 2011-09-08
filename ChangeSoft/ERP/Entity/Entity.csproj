@@ -128,7 +128,7 @@
     <Compile Include="Model\TDescMs.cs" />
     <Compile Include="Model\Test2.cs" />
     <Compile Include="Model\MFunctionId.cs" />
-    <Compile Include="Model\CFunctionAll.cs" />
+    <Compile Include="Model\CCatalogHasManyFunction.cs" />
     <Compile Include="Model\CFunctionPager.cs" />
     <Compile Include="Model\TDescMsId.cs" />
     <Compile Include="Model\TClsDetailMsId.cs" />
