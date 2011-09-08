@@ -27,7 +27,7 @@ using Castle.ActiveRecord.Queries;
 namespace Com.GainWinSoft.ERP.Entity
 {
 
-    public class CFunctionPager 
+    public class CFunctionPagerNoAR 
     {
 
 		#region Private Members

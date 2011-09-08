@@ -25,13 +25,13 @@ namespace Com.GainWinSoft.ERP.Action
             IList<FunctionAllVo> functionallvolist = new List<FunctionAllVo>();
             ////Com.GainWinSoft.ERP.Entity.Dao.TestDao td = new Com.GainWinSoft.ERP.Entity.Dao.TestDao();
             ////通过Windsor的组件容器，获取Dao的实例
-            ICFunctionAllDao td = ComponentLocator.Instance().Resolve<ICFunctionAllDao>();
+            ICCatalogHasManyFunctionDao td = ComponentLocator.Instance().Resolve<ICCatalogHasManyFunctionDao>();
             //////调用Dao的方法
             ////IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
 
             ////Test td = new Test();
-            IList<CFunctionAll> mfuncatalist = td.GetFunctionAllList(LangUtils.GetCurrentLanguage());
-            foreach (CFunctionAll mfvo in mfuncatalist)
+            IList<CCatalogHasManyFunction> mfuncatalist = td.GetFunctionAllList(LangUtils.GetCurrentLanguage());
+            foreach (CCatalogHasManyFunction mfvo in mfuncatalist)
             {
                 FunctionAllVo functionallvo = new FunctionAllVo();
                 functionallvo.Langid = mfvo.Id.Langid;

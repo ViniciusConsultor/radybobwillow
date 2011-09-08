@@ -72,8 +72,8 @@ namespace Com.GainWinSoft.ERP.Company
                 //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
                 //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
 
-                ICClsMsAllDao d = ComponentLocator.Instance().Resolve<ICClsMsAllDao>();
-                IList<CClsMsAll> l = d.GetClsMsAllList("02", "zh-CN");
+                ICClsDetailBelongToClsMsDao d = ComponentLocator.Instance().Resolve<ICClsDetailBelongToClsMsDao>();
+                IList<CClsDetailBelongToClsMs> l = d.GetClsMsAllList("02", "zh-CN");
                 //调用Action类的方法
                 MessageBox.Show(l.Count.ToString());
                 //NewMethod();

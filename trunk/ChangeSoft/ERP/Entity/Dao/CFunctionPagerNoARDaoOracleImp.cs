@@ -15,16 +15,16 @@ using NHibernate.Transform;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CFunctionAllPagerDaoOracleImp:ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
+    public class CFunctionPagerNoARDaoOracleImp : ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
     {
         public DataSet GetDataSet(string key,SearchCondition condition,int pagesize,int pageindex)
         {
 
             TransactionScope transaction = new TransactionScope();
             DataSet ds = new DataSet();
-            IList<CFunctionPager> result =new List<CFunctionPager>();
+            IList<CFunctionPagerNoAR> result = new List<CFunctionPagerNoAR>();
 
-            ISession ss = holder.CreateSession(typeof(CFunctionAllPagerDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CFunctionPagerNoARDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
 
             try
@@ -92,7 +92,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                     q.SetParameter(string.Format("{0}",searchInfo.FieldName), searchInfo.FieldValue);
                 }
 
-                result = q.SetResultTransformer(Transformers.AliasToBean<CFunctionPager>()).List<CFunctionPager>();
+                result = q.SetResultTransformer(Transformers.AliasToBean<CFunctionPagerNoAR>()).List<CFunctionPagerNoAR>();
                 
                 
                 //转换成datatable
@@ -127,7 +127,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             TransactionScope transaction = new TransactionScope();
             int intCount = 0;
 
-            ISession ss = holder.CreateSession(typeof(CFunctionAllPagerDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CFunctionPagerNoARDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
 
             try

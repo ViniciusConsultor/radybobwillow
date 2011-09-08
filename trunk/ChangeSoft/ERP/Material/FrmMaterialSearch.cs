@@ -36,7 +36,7 @@ namespace Com.GainWinSoft.ERP.Material
             SearchCondition condition = new SearchCondition();
             condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);
 
-            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionAllPagerDao", condition, 1, 5);
+            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionPagerNoARDao", condition, 1, 5);
             this.FrmMaterialSearch_pagerGridView1.LoadData();
             log.Debug("Search Init");
             //设置列名
