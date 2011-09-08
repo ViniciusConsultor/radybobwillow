@@ -3,7 +3,7 @@ using System.Data;
 using System.Reflection;
 using System.Collections;
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public class DataTableUtils
     {

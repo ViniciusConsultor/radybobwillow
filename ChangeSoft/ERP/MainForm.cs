@@ -7,21 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
-using Com.ChangeSoft.ERP.Company;
-using Com.ChangeSoft.Common.Office2007Renderer;
+using Com.GainWinSoft.ERP.Company;
+using Com.GainWinSoft.Common.Office2007Renderer;
 using Castle.ActiveRecord;
 using Castle.ActiveRecord.Framework;
 using Castle.ActiveRecord.Framework.Config;
 using System.Reflection;
 using System.Threading;
 using NHibernate.Mapping;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Collections;
 using Castle.Windsor;
-using Com.ChangeSoft.ERP.Action;
-using Com.ChangeSoft.ERP.FormVo;
+using Com.GainWinSoft.ERP.Action;
+using Com.GainWinSoft.ERP.FormVo;
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     public partial class MainForm : Form
     {

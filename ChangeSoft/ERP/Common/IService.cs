@@ -1,6 +1,6 @@
 ﻿
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public interface IService
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     public partial class WindowList : Form
     {

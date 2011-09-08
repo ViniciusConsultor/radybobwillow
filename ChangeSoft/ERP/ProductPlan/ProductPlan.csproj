@@ -8,8 +8,8 @@
     <ProjectGuid>{1F7D2BC3-F658-4F3F-97F6-8BAB71EB91F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.ERP.ProductPlan</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.ERP.ProductPlan</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.ProductPlan</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.ProductPlan</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>

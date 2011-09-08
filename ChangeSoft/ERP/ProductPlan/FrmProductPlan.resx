@@ -121,7 +121,7 @@
     <value>msgwindow</value>
   </data>
   <data name="&gt;&gt;msgwindow.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.MessageWindow, Com.ChangeSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.MessageWindow, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;msgwindow.Parent" xml:space="preserve">
     <value>activeControl</value>
@@ -249,6 +249,6 @@
     <value>FrmProductPlan</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.BaseForm, Com.ChangeSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.BaseForm, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

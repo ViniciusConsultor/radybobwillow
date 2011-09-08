@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.Common.Control.ConditionDropDownList
+﻿namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
 {
     partial class ConditionDropDownList
     {

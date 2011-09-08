@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP
+﻿namespace Com.GainWinSoft.ERP
 {
     partial class MainForm
     {

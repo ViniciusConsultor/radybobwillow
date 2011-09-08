@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Castle.ActiveRecord;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Collections;
 using Castle.ActiveRecord.Queries;
 using NHibernate;
 using System.Data.Common;
 
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class TDescMsDaoOracleImp :ActiveRecordBase, IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.ITDescMsDao{
+    public class TDescMsDaoOracleImp :ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITDescMsDao{
         public IList<TDescMs> GetTDescMsList(string iClsCd,string iLanguageCd)
         {
             IList<TDescMs> result = new List<TDescMs>();

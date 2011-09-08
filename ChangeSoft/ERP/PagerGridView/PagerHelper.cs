@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Entity.Dao;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity.Dao;
 using System.Data.SqlClient;
 
-namespace Com.ChangeSoft.Common.Control.PagerGridView
+namespace Com.GainWinSoft.Common.Control.PagerGridView
 {
     /// <summary>
     /// 

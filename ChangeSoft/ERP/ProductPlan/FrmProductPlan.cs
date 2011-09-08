@@ -5,13 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.ERP.CodeRef;
+using Com.GainWinSoft.ERP.CodeRef;
 using WeifenLuo.WinFormsUI.Docking;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 
-namespace Com.ChangeSoft.ERP.ProductPlan
+namespace Com.GainWinSoft.ERP.ProductPlan
 {
-    public partial class FrmProductPlan : Com.ChangeSoft.Common.BaseContent
+    public partial class FrmProductPlan : Com.GainWinSoft.Common.BaseContent
     {
         public FrmProductPlan(DockPanel _parent)
             : base(_parent)

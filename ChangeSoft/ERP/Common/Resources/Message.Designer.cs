@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Com.ChangeSoft.Common.Resources {
+namespace Com.GainWinSoft.Common.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Com.ChangeSoft.Common.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Com.ChangeSoft.Common.Resources.Message", typeof(Message).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Com.GainWinSoft.Common.Resources.Message", typeof(Message).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

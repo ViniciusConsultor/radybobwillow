@@ -8,8 +8,8 @@
     <ProjectGuid>{11F81874-53ED-42FA-A08F-DD481A19740F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common.Control.ConditionDropDownList</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common.Control.ConditionDropDownList</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.Common.Control.ConditionDropDownList</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.Common.Control.ConditionDropDownList</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

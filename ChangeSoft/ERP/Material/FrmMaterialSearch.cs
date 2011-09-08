@@ -6,17 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.Common;
-using Com.ChangeSoft.ERP.Entity.Dao;
-using Com.ChangeSoft.Common.Control.PagerGridView;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity.Dao;
+using Com.GainWinSoft.Common.Control.PagerGridView;
 using System.Data.SqlClient;
-using Com.ChangeSoft.Common.Office2007Renderer;
+using Com.GainWinSoft.Common.Office2007Renderer;
 using System.Resources;
 using WeifenLuo.WinFormsUI.Docking; 
 using Noogen.Validation;
 using log4net;
 
-namespace Com.ChangeSoft.ERP.Material
+namespace Com.GainWinSoft.ERP.Material
 {
     public partial class FrmMaterialSearch : BaseContent
     {
@@ -29,9 +29,9 @@ namespace Com.ChangeSoft.ERP.Material
             InitializeComponent();
             ToolStripManager.Renderer = new Office2007Renderer();
 
-            this.button1.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.button2.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.button4.Image = (Image)Com.ChangeSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.button1.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.button2.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 
             SearchCondition condition = new SearchCondition();
             condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);

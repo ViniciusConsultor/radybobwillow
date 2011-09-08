@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Castle.ActiveRecord;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using System.Collections;
 using Castle.ActiveRecord.Queries;
 using NHibernate;
 using System.Data.Common;
 
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class MFunctioncatalogDaoOracleImp :ActiveRecordBase, IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.IMFunctioncatalogDao{
+    public class MFunctioncatalogDaoOracleImp :ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.IMFunctioncatalogDao{
         public IList<MFunctioncatalog> GetFunctionCatalogList(String langid)
         {
             IList<MFunctioncatalog> result = new List<MFunctioncatalog>();

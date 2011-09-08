@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Com.ChangeSoft.ERP.Company.Properties {
+namespace Com.GainWinSoft.ERP.Company.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

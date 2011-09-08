@@ -8,11 +8,11 @@
     <ProjectGuid>{2C0AB9FA-D44C-4064-A351-27329A400ECE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.ERP</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.ERP</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>Com.ChangeSoft.ERP.Program</StartupObject>
+    <StartupObject>Com.GainWinSoft.ERP.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

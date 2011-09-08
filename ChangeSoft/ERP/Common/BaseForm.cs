@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 using System.Collections;
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public   partial class BaseForm : WeifenLuo.WinFormsUI.Docking.DockContent
     {

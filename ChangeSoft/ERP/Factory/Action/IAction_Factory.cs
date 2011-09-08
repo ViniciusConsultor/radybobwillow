@@ -1,10 +1,10 @@
 ﻿using System;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.Entity;
 
-namespace Com.ChangeSoft.ERP.Factory.Action
+namespace Com.GainWinSoft.ERP.Factory.Action
 {
     public interface IAction_Factory
     {
-        System.Collections.Generic.IList<Com.ChangeSoft.ERP.Entity.MFunctioncatalog> GetFunctionDataList();
+        System.Collections.Generic.IList<Com.GainWinSoft.ERP.Entity.MFunctioncatalog> GetFunctionDataList();
     }
 }

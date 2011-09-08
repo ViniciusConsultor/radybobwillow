@@ -1,8 +1,8 @@
 ﻿using System;
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface IMFunctioncatalogDao
     {
-        System.Collections.Generic.IList<Com.ChangeSoft.ERP.Entity.MFunctioncatalog> GetFunctionCatalogList(String langid);
+        System.Collections.Generic.IList<Com.GainWinSoft.ERP.Entity.MFunctioncatalog> GetFunctionCatalogList(String langid);
     }
 }

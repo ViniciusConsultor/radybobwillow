@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Castle.ActiveRecord;
 
-namespace Com.ChangeSoft.ERP.Entity
+namespace Com.GainWinSoft.ERP.Entity
 {
     [Serializable]
     public class TClsDetailMsId

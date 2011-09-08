@@ -24,7 +24,7 @@ using Castle.ActiveRecord.Queries;
 /// 
 ///	Created on 2011/8/24 20:15:02
 /// </summary>
-namespace Com.ChangeSoft.ERP.Entity
+namespace Com.GainWinSoft.ERP.Entity
 {
 
     public class CFunctionPager 

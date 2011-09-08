@@ -8,8 +8,8 @@
     <ProjectGuid>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.Common</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.Common</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>

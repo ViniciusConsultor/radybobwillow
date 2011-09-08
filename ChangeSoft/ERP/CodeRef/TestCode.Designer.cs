@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.CodeRef
+﻿namespace Com.GainWinSoft.ERP.CodeRef
 {
     partial class TestCode
     {

@@ -17,7 +17,7 @@ using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Com.ChangeSoft.Common.Office2007Renderer
+namespace Com.GainWinSoft.Common.Office2007Renderer
 {
     /// <summary>
     /// Set the SmoothingMode=AntiAlias until instance disposed.

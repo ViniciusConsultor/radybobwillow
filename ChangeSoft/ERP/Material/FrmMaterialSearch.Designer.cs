@@ -1,4 +1,4 @@
-﻿namespace Com.ChangeSoft.ERP.Material
+﻿namespace Com.GainWinSoft.ERP.Material
 {
     partial class FrmMaterialSearch
     {
@@ -49,7 +49,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.conditionDropDownList1 = new Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.conditionDropDownList1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -95,8 +95,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
-            this.FrmMaterialSearch_pagerGridView1 = new Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView();
-            this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -258,7 +258,7 @@
             this.conditionDropDownList1.Selectedindex = -1;
             this.conditionDropDownList1.Selectedname = null;
             this.conditionDropDownList1.Selectedvalue = null;
-            this.conditionDropDownList1.SelectedIndexChanged += new Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList.OnSelectChangedEventHandler(this.conditionDropDownList1_SelectedIndexChanged);
+            this.conditionDropDownList1.SelectedIndexChanged += new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList.OnSelectChangedEventHandler(this.conditionDropDownList1_SelectedIndexChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -646,7 +646,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label5;
-        private Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
+        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox12;
@@ -692,8 +692,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel0;
-        private Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
-        private Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
+        private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
 
 
     }

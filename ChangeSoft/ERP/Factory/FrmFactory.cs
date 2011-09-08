@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 
-namespace Com.ChangeSoft.ERP.Factory
+namespace Com.GainWinSoft.ERP.Factory
 {
     public partial class FrmFactory : BaseContent
     {

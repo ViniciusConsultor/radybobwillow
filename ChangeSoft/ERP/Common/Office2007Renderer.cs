@@ -17,7 +17,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace Com.ChangeSoft.Common.Office2007Renderer
+namespace Com.GainWinSoft.Common.Office2007Renderer
 {
     /// <summary>
     /// Draw ToolStrips using the Office 2007 themed appearance.

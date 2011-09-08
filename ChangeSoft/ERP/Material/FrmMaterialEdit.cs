@@ -5,12 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 
-namespace Com.ChangeSoft.ERP.Material
+namespace Com.GainWinSoft.ERP.Material
 {
-    public partial class FrmMaterialEdit : Com.ChangeSoft.Common.BaseContent
+    public partial class FrmMaterialEdit : Com.GainWinSoft.Common.BaseContent
     {
         public FrmMaterialEdit(DockPanel _parentdockpanel, BaseForm _owner):base(_parentdockpanel,_owner)
         {

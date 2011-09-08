@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace Com.ChangeSoft.ERP
+namespace Com.GainWinSoft.ERP
 {
     partial class About : Form
     {

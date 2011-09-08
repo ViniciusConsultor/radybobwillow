@@ -159,7 +159,7 @@
     <value>conditionRadioButton1</value>
   </data>
   <data name="&gt;&gt;conditionRadioButton1.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.Control.ConditionRadioButton.ConditionRadioButton, Com.ChangeSoft.Common.Control.ConditionRadioButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton, Com.GainWinSoft.Common.Control.ConditionRadioButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;conditionRadioButton1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -214,6 +214,6 @@
     <value>FrmMaterialEdit</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.BaseContent, Com.ChangeSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.BaseContent, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

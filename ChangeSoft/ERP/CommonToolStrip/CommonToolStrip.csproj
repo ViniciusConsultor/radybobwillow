@@ -8,8 +8,8 @@
     <ProjectGuid>{9FC0EDDF-C362-4841-AA28-37852CDC1383}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.ChangeSoft.Common.Control.CommonToolStrip</RootNamespace>
-    <AssemblyName>Com.ChangeSoft.Common.Control.CommonToolStrip</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.Common.Control.CommonToolStrip</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.Common.Control.CommonToolStrip</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

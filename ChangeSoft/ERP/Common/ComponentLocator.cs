@@ -3,7 +3,7 @@ using Castle.Windsor;
 using Castle.Windsor.Configuration.Interpreters;
 using Castle.MicroKernel;
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public class ComponentLocator 
     {

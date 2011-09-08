@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Com.ChangeSoft.ERP.Company
+namespace Com.GainWinSoft.ERP.Company
 {
     public partial class FrmCompany
     {

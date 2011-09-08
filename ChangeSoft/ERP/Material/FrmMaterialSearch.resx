@@ -667,7 +667,7 @@
     <value>conditionDropDownList1</value>
   </data>
   <data name="&gt;&gt;conditionDropDownList1.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.Control.ConditionDropDownList.ConditionDropDownList, Com.ChangeSoft.Common.Control.ConditionDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList, Com.GainWinSoft.Common.Control.ConditionDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;conditionDropDownList1.Parent" xml:space="preserve">
     <value>tableLayoutPanel6</value>
@@ -2236,7 +2236,7 @@
     <value>FrmMaterialSearch_pagerGridView1</value>
   </data>
   <data name="&gt;&gt;FrmMaterialSearch_pagerGridView1.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.Control.PagerGridView.PagerGridView, Com.ChangeSoft.Common.Control.PagerGridView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView, Com.GainWinSoft.Common.Control.PagerGridView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FrmMaterialSearch_pagerGridView1.Parent" xml:space="preserve">
     <value>tableLayoutPanel0</value>
@@ -2263,7 +2263,7 @@
     <value>commonToolStrip1</value>
   </data>
   <data name="&gt;&gt;commonToolStrip1.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip, Com.ChangeSoft.Common.Control.CommonToolStrip, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip, Com.GainWinSoft.Common.Control.CommonToolStrip, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;commonToolStrip1.Parent" xml:space="preserve">
     <value>tableLayoutPanel0</value>
@@ -2317,6 +2317,6 @@
     <value>FrmMaterialSearch</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Com.ChangeSoft.Common.BaseContent, Com.ChangeSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Com.GainWinSoft.Common.BaseContent, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

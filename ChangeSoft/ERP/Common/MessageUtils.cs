@@ -1,7 +1,7 @@
 ﻿using System.Resources;
 using System.Reflection;
 
-namespace Com.ChangeSoft.Common
+namespace Com.GainWinSoft.Common
 {
     public class MessageUtils
     {

@@ -6,14 +6,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using log4net;
-using Com.ChangeSoft.ERP.Company.Action;
-using Com.ChangeSoft.Common;
+using Com.GainWinSoft.ERP.Company.Action;
+using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 using Noogen.Validation;
-using Com.ChangeSoft.ERP.Entity.Dao;
-using Com.ChangeSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.Entity.Dao;
+using Com.GainWinSoft.ERP.Entity;
 
-namespace Com.ChangeSoft.ERP.Company
+namespace Com.GainWinSoft.ERP.Company
 {
     public partial class FrmCompany : BaseContent
     {

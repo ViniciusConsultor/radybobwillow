@@ -7,9 +7,9 @@ using NHibernate;
 using System.Data.Common;
 using Castle.ActiveRecord.Queries;
 
-namespace Com.ChangeSoft.ERP.Entity.Dao
+namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class Test2DaoOracleImp : ActiveRecordBase,Com.ChangeSoft.Common.IBaseDao, Com.ChangeSoft.ERP.Entity.Dao.ITest2Dao
+    public class Test2DaoOracleImp : ActiveRecordBase,Com.GainWinSoft.Common.IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITest2Dao
     {
 
         public int Count()

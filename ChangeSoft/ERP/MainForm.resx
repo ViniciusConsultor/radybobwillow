@@ -614,7 +614,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>ChangeSoft生产管理系统</value>
+    <value>GainWinSoft生产管理系统</value>
   </data>
   <data name="&gt;&gt;toolStripComboBox_Language.Name" xml:space="preserve">
     <value>toolStripComboBox_Language</value>

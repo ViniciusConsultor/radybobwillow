@@ -14,7 +14,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Com.ChangeSoft.Common.Office2007Renderer
+namespace Com.GainWinSoft.Common.Office2007Renderer
 {
     /// <summary>
     /// Provide Office 2007 Blue Theme colors
