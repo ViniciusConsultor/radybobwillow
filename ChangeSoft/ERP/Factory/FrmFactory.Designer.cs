@@ -45,6 +45,7 @@
             this.btnCompany = new System.Windows.Forms.Button();
             this.commonToolStrip1 = new Com.ChangeSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tpG2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblInspectStockNM = new System.Windows.Forms.Label();
             this.btnInspectStock = new System.Windows.Forms.Button();
             this.txtInspectStock = new System.Windows.Forms.TextBox();
             this.lblInspectStock = new System.Windows.Forms.Label();
@@ -130,7 +131,6 @@
             this.lblStar3 = new System.Windows.Forms.Label();
             this.lblAbbreviation = new System.Windows.Forms.Label();
             this.cbbCountry = new System.Windows.Forms.ComboBox();
-            this.lblInspectStockNM = new System.Windows.Forms.Label();
             this.tpBase.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tpG1.SuspendLayout();
@@ -154,7 +154,7 @@
             // tpG1
             // 
             resources.ApplyResources(this.tpG1, "tpG1");
-            this.tpG1.Controls.Add(this.lblMode, 0, 1);
+            this.tpG1.Controls.Add(this.lblMode, 2, 1);
             this.tpG1.Controls.Add(this.btnFactory, 9, 2);
             this.tpG1.Controls.Add(this.txtFactory, 8, 2);
             this.tpG1.Controls.Add(this.lblStar2, 7, 2);
@@ -169,6 +169,7 @@
             // lblMode
             // 
             resources.ApplyResources(this.lblMode, "lblMode");
+            this.lblMode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMode.Name = "lblMode";
             // 
             // btnFactory
@@ -343,6 +344,13 @@
             this.tpG2.Controls.Add(this.lblAbbreviation, 0, 0);
             this.tpG2.Controls.Add(this.cbbCountry, 5, 3);
             this.tpG2.Name = "tpG2";
+            // 
+            // lblInspectStockNM
+            // 
+            resources.ApplyResources(this.lblInspectStockNM, "lblInspectStockNM");
+            this.lblInspectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tpG2.SetColumnSpan(this.lblInspectStockNM, 2);
+            this.lblInspectStockNM.Name = "lblInspectStockNM";
             // 
             // btnInspectStock
             // 
@@ -820,13 +828,6 @@
             resources.ApplyResources(this.cbbCountry, "cbbCountry");
             this.cbbCountry.FormattingEnabled = true;
             this.cbbCountry.Name = "cbbCountry";
-            // 
-            // lblInspectStockNM
-            // 
-            resources.ApplyResources(this.lblInspectStockNM, "lblInspectStockNM");
-            this.lblInspectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblInspectStockNM, 2);
-            this.lblInspectStockNM.Name = "lblInspectStockNM";
             // 
             // FrmFactory
             // 

@@ -142,13 +142,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
+    <value>125, 5</value>
   </data>
   <data name="lblMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>100, 26</value>
   </data>
   <data name="lblMode.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -157,7 +157,7 @@
     <value>追加模式</value>
   </data>
   <data name="lblMode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;lblMode.Name" xml:space="preserve">
     <value>lblMode</value>
@@ -499,7 +499,7 @@
     <value>0</value>
   </data>
   <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
