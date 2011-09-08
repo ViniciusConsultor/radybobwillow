@@ -9,7 +9,7 @@ namespace Com.GainWinSoft.Common
         {
             string message="";
 
-            ResourceManager rm = new System.Resources.ResourceManager("Com.ChangeSoft.Common.Resources.Message", Assembly.GetExecutingAssembly());
+            ResourceManager rm = new System.Resources.ResourceManager("Com.GainWinSoft.Common.Resources.Message", Assembly.GetExecutingAssembly());
             message = rm.GetString(messageid);
 
             for (int i = 0; i < values.Length; i++)
