@@ -335,6 +335,8 @@
     <None Include="img\p2_icon2_16.png" />
     <None Include="img\p2_icon2_24.png" />
     <None Include="img\p2_icon2.png" />
+    <None Include="img\loginbg.png" />
+    <None Include="img\splash.png" />
     <Content Include="img\wizard.png" />
     <Content Include="Resources\Down.png" />
     <Content Include="Resources\Up.png" />

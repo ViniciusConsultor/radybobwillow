@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列属性集
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("ChangeSoft smart ERP")]
+[assembly: AssemblyTitle("GainWinSoft smart ERP")]
 [assembly: AssemblyDescription("本计算机程序受版权法和国际条约保护，如未经授权而擅自复制、传播、修改本程序（或者其中任何部分）将受到严厉的刑事及民事制裁，并在法律允许的范围内受到最大可能的起诉。")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("上海乾盈电子信息系统有限公司")]
-[assembly: AssemblyProduct("ChangeSoft smart ERP 企业管理系统2010")]
+[assembly: AssemblyProduct("GainWinSoft smart ERP 2010")]
 [assembly: AssemblyCopyright("保留所有权利 Copyright ©  2010")]
-[assembly: AssemblyTrademark("ChangeSoft")]
+[assembly: AssemblyTrademark("GainWinSoft")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 使此程序集中的类型
