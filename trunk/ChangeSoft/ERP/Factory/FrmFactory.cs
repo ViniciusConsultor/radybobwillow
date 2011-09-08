@@ -13,8 +13,8 @@ namespace Com.ChangeSoft.ERP.Factory
 {
     public partial class FrmFactory : BaseContent
     {
-        public FrmFactory(DockPanel _parentdockpanel,BaseForm _owner)
-            : base(_parentdockpanel,_owner)
+        public FrmFactory(DockPanel _parentdockpanel)
+            : base(_parentdockpanel)
         {
             InitializeComponent();
         }
