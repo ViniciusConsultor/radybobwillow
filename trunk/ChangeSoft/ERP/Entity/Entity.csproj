@@ -123,6 +123,10 @@
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />
+    <Compile Include="Model\MLoginUser.cs" />
+    <Compile Include="Model\MRole.cs" />
+    <Compile Include="Model\MRoleFunction.cs" />
+    <Compile Include="Model\MRoleUser.cs" />
     <Compile Include="Model\TClsDetailMs.cs" />
     <Compile Include="Model\TClsMs.cs" />
     <Compile Include="Model\TDescMs.cs" />
