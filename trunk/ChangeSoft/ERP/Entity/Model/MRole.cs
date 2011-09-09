@@ -29,7 +29,7 @@ namespace Com.GainWinSoft.ERP.Entity
 
 		#region Private Members
 
-		private decimal roleid; 
+		private int roleid; 
 		private string rolename; 
 		private DateTime createdatetime; 
 		private string createuserid; 
@@ -54,10 +54,10 @@ namespace Com.GainWinSoft.ERP.Entity
 		}
 
 		public MRole(
-			decimal roleid)
+			int _roleid)
 			: this()
 		{
-			roleid = roleid;
+			roleid = _roleid;
 			rolename = String.Empty;
 			createdatetime = DateTime.MinValue;
 			createuserid = String.Empty;
@@ -71,7 +71,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		#region Public Properties
 			
 		[PrimaryKey(PrimaryKeyType.Identity ,"ROLEID")]
-		public virtual decimal Roleid
+		public virtual int Roleid
 		{
 			get { return roleid; }
 			set { roleid = value; }
