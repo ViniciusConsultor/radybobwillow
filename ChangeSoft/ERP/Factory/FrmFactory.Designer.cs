@@ -225,34 +225,34 @@
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
-            this.commonToolStrip1.AddVisible = true;
+            this.commonToolStrip1.AddVisible = false;
             resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
             this.commonToolStrip1.CopyEnabled = true;
-            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CopyVisible = false;
             this.commonToolStrip1.CsvEnabled = true;
-            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.CsvVisible = false;
             this.commonToolStrip1.DeleteEnabled = true;
-            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.DeleteVisible = false;
             this.commonToolStrip1.Displaytext = false;
             this.commonToolStrip1.ExitEnabled = true;
-            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.ExitVisible = false;
             this.commonToolStrip1.GobackEnabled = true;
-            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.GobackVisible = false;
             this.commonToolStrip1.HelpEnabled = true;
-            this.commonToolStrip1.HelpVisible = true;
-            this.commonToolStrip1.Line1Visible = true;
-            this.commonToolStrip1.Line2Visible = true;
-            this.commonToolStrip1.Line3Visible = true;
-            this.commonToolStrip1.Line4Visible = true;
+            this.commonToolStrip1.HelpVisible = false;
+            this.commonToolStrip1.Line1Visible = false;
+            this.commonToolStrip1.Line2Visible = false;
+            this.commonToolStrip1.Line3Visible = false;
+            this.commonToolStrip1.Line4Visible = false;
             this.commonToolStrip1.Name = "commonToolStrip1";
             this.commonToolStrip1.OkEnabled = true;
-            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.OkVisible = false;
             this.commonToolStrip1.ReportEnabled = true;
-            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.ReportVisible = false;
             this.commonToolStrip1.SaveEnabled = true;
-            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.SaveVisible = false;
             this.commonToolStrip1.UpdateEnabled = true;
-            this.commonToolStrip1.UpdateVisible = true;
+            this.commonToolStrip1.UpdateVisible = false;
             // 
             // tpG2
             // 
