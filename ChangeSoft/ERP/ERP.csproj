@@ -98,6 +98,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -122,9 +123,16 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="Action\Action_MainForm.cs" />
+    <Compile Include="Action\IAction_LoginForm.cs" />
     <Compile Include="Action\IAction_MainForm.cs" />
+    <Compile Include="Action\Action_LoginForm.cs" />
+    <Compile Include="CheckMethod\Check_LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormVo\FunctionAllVo.cs" />
     <Compile Include="FormVo\FunctionVo.cs" />
+    <Compile Include="FormVo\LoginUserInfoVo.cs" />
+    <Compile Include="FormVo\RoleUserVo.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +294,9 @@
     <Content Include="imgSmall\history.png" />
     <Content Include="imgSmall\klipper_dock.png" />
     <Content Include="imgSmall\wizard.png" />
+    <None Include="Config\Action_Login.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="img\20110831090330552_easyicon_cn_48.png" />
     <None Include="img\20110902041440114_easyicon_cn_48.png" />
     <None Include="img\20110902041632961_easyicon_cn_48.png" />
@@ -369,6 +380,10 @@
     <ProjectReference Include="ProductPlan\ProductPlan.csproj">
       <Project>{1F7D2BC3-F658-4F3F-97F6-8BAB71EB91F0}</Project>
       <Name>ProductPlan</Name>
+    </ProjectReference>
+    <ProjectReference Include="ValidationProvider\Noogen.Validation.csproj">
+      <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
+      <Name>Noogen.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -28,65 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtUserId = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblUserId = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
+            this.validationProvider2 = new Noogen.Validation.ValidationProvider(this.components);
             this.SuspendLayout();
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtUserId
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtUserId, "txtUserId");
+            this.txtUserId.Name = "txtUserId";
             // 
-            // textBox2
+            // txtPassword
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.txtPassword, "txtPassword");
+            this.txtPassword.Name = "txtPassword";
             // 
-            // label1
+            // lblUserId
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.lblUserId, "lblUserId");
+            this.lblUserId.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserId.Name = "lblUserId";
             // 
-            // label2
+            // lblPassword
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lblPassword, "lblPassword");
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Name = "lblPassword";
+            // 
+            // validationProvider1
+            // 
+            this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            resources.ApplyResources(this.validationProvider1, "validationProvider1");
+            // 
+            // validationProvider2
+            // 
+            this.validationProvider2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            resources.ApplyResources(this.validationProvider2, "validationProvider2");
             // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Com.GainWinSoft.ERP.Properties.Resources.loginbg;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUserId);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserId);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "LoginForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,11 +109,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtUserId;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblUserId;
+        private System.Windows.Forms.Label lblPassword;
+        private Noogen.Validation.ValidationProvider validationProvider1;
+        private Noogen.Validation.ValidationProvider validationProvider2;
     }
 }

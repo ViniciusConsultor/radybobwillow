@@ -132,4 +132,7 @@
   <data name="W0002" xml:space="preserve">
     <value>%1 的格式不正确 %2。</value>
   </data>
+  <data name="W0003" xml:space="preserve">
+    <value>用户代码或者密码不正确。</value>
+  </data>
 </root>
