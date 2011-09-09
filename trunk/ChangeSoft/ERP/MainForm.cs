@@ -38,11 +38,12 @@ namespace Com.GainWinSoft.ERP
 
         public MainForm()
         {
-
             this.Hide();
             Thread splashthread = new Thread(new ThreadStart(SplashScreen.ShowSplashScreen));
             splashthread.IsBackground = true;
             splashthread.Start();
+
+
             InitializeComponent();
 
         }
@@ -73,7 +74,8 @@ namespace Com.GainWinSoft.ERP
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
+ 
+            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0004"));
             ToolStripManager.Renderer = new Office2007Renderer();
             rm = new System.Resources.ResourceManager(typeof(MainForm));
             
@@ -85,6 +87,16 @@ namespace Com.GainWinSoft.ERP
             
             //castle windsor initial
             ComponentLocator.Instance();
+
+            //加载用户权限。
+
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+
+
+
+
+
+            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
 
             IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
             IList<FunctionAllVo> flist = af.GetFunctionDataList();

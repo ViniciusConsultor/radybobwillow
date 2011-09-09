@@ -126,6 +126,9 @@
   <data name="I0003" xml:space="preserve">
     <value>加载主画面……</value>
   </data>
+  <data name="I0004" xml:space="preserve">
+    <value>加载用户权限……</value>
+  </data>
   <data name="W0001" xml:space="preserve">
     <value>%1 不能为空，请输入。</value>
   </data>

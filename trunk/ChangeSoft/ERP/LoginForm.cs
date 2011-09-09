@@ -25,17 +25,14 @@ namespace Com.GainWinSoft.ERP
         private static readonly ILog log = LogManager.GetLogger(typeof(LoginForm));
         private bool hasCheckError = false;
 
+
         public LoginForm()
         {
-            XmlConfigurator.Configure(new System.IO.FileInfo("log4net.config"));
-            log.Info("LoginForm init start");
-            String d = LangUtils.GetDefaultLanguage();
-            Thread.CurrentThread.CurrentUICulture = (System.Globalization.CultureInfo)new System.Globalization.CultureInfo(d);
-            InitializeComponent();
-            InitialiseAR();
-            log.Info("LoginForm init end");
 
+            InitializeComponent();
         }
+
+
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -76,6 +73,7 @@ namespace Com.GainWinSoft.ERP
                 else
                 {
                     this.validationProvider2.ValidationMessages(false);
+                    SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO ,loginuserinfolist[0]);
                 }
 
 
@@ -120,6 +118,17 @@ namespace Com.GainWinSoft.ERP
             {
                 e.Cancel = true;
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            XmlConfigurator.Configure(new System.IO.FileInfo("log4net.config"));
+            log.Info("LoginForm init start");
+            String d = LangUtils.GetDefaultLanguage();
+            Thread.CurrentThread.CurrentUICulture = (System.Globalization.CultureInfo)new System.Globalization.CultureInfo(d);
+            InitialiseAR();
+            log.Info("LoginForm init end");
+
         }
 
     }

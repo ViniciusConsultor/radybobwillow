@@ -60,6 +60,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap about {
+            get {
+                object obj = ResourceManager.GetObject("about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Bom {
             get {
                 object obj = ResourceManager.GetObject("Bom", resourceCulture);

@@ -328,6 +328,7 @@
     <None Include="img\20110905081319715_easyicon_cn_16.png" />
     <None Include="img\201109050813131000_easyicon_cn_24.png" />
     <None Include="img\20110905081237583_easyicon_cn_48.png" />
+    <None Include="img\about.png" />
     <Content Include="img\bookmark.png" />
     <None Include="Config\Action_Menu.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
