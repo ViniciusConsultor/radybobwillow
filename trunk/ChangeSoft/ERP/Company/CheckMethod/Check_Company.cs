@@ -10,6 +10,8 @@ namespace Com.GainWinSoft.ERP.Company
         //
         // The custom validation method.
         //
+        
+
         public  void vr_CustomValidationMethod(object sender,
                          Noogen.Validation.CustomValidationEventArgs e)
         {

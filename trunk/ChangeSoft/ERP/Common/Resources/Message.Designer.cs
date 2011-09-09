@@ -104,5 +104,14 @@ namespace Com.GainWinSoft.Common.Resources {
                 return ResourceManager.GetString("W0002", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 用户代码或者密码不正确。 的本地化字符串。
+        /// </summary>
+        internal static string W0003 {
+            get {
+                return ResourceManager.GetString("W0003", resourceCulture);
+            }
+        }
     }
 }
