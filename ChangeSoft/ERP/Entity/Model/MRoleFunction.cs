@@ -28,12 +28,11 @@ namespace Com.GainWinSoft.ERP.Entity
 
 		#region Private Members
 
-		private decimal roleid; 
-		private decimal functionid; 
 		private DateTime createdatetime; 
 		private string createuserid; 
 		private DateTime updatedatetime; 
-		private string updateuserid; 
+		private string updateuserid;
+        private MRoleFunctionID id;
 		
 		#endregion
 
@@ -41,8 +40,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		
 		public MRoleFunction()
 		{
-			roleid = 0; 
-			functionid = 0; 
+            id = new MRoleFunctionID();
 			createdatetime = DateTime.MinValue; 
 			createuserid = String.Empty; 
 			updatedatetime = DateTime.MinValue; 
@@ -51,12 +49,13 @@ namespace Com.GainWinSoft.ERP.Entity
 		}
 
 		public MRoleFunction(
-			decimal roleid, 
-			decimal functionid)
+			int roleid, 
+			int functionid)
 			: this()
 		{
-			roleid = roleid;
-			functionid = functionid;
+            id = new MRoleFunctionID();
+            id.Roleid = roleid;
+            id.Functionid = functionid;
 			createdatetime = DateTime.MinValue;
 			createuserid = String.Empty;
 			updatedatetime = DateTime.MinValue;
@@ -66,20 +65,14 @@ namespace Com.GainWinSoft.ERP.Entity
 		#endregion // End of Class Constuctor(s)
 		
 		#region Public Properties
-			
-		[PrimaryKey(PrimaryKeyType.Identity ,"ROLEID")]
-		public virtual decimal Roleid
-		{
-			get { return roleid; }
-			set { roleid = value; }
-		}
 
-		[PrimaryKey(PrimaryKeyType.Identity ,"FUNCTIONID")]
-		public virtual decimal Functionid
-		{
-			get { return functionid; }
-			set { functionid = value; }
-		}
+        [CompositeKey]
+        public MRoleFunctionID Id
+        {
+            get { return id; }
+            set { id = value; }
+        } 
+
 
 		[Property(Column="CREATEDATETIME")]
 		public virtual DateTime Createdatetime
@@ -124,8 +117,7 @@ namespace Com.GainWinSoft.ERP.Entity
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
 			MRoleFunction castObj = (MRoleFunction)obj; 
 			return ( castObj != null ) &&
-				( this.roleid == castObj.Roleid ) &&
-				( this.functionid == castObj.Functionid );
+				( this.id == castObj.id );
 		}
 		
 		/// <summary>
@@ -135,8 +127,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		{
 			
 			int hash = 57; 
-			hash = 27 * hash * roleid.GetHashCode();
-			hash = 27 * hash * functionid.GetHashCode();
+			hash = 27 * hash * id.GetHashCode();
 			return hash; 
 		}
 		
@@ -148,8 +139,8 @@ namespace Com.GainWinSoft.ERP.Entity
             StringBuilder sbuffer = new StringBuilder();
 			sbuffer.Append("{");
 			
-			sbuffer.AppendFormat("Roleid = {0}, ",roleid);
-			sbuffer.AppendFormat("Functionid = {0}, ",functionid);
+			sbuffer.AppendFormat("Roleid = {0}, ",id.Roleid);
+			sbuffer.AppendFormat("Functionid = {0}, ",id.Functionid);
 			sbuffer.AppendFormat("Createdatetime = {0}, ",createdatetime);
 			sbuffer.AppendFormat("Createuserid = {0}, ",createuserid);
 			sbuffer.AppendFormat("Updatedatetime = {0}, ",updatedatetime);

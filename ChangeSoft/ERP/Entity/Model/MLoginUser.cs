@@ -81,10 +81,10 @@ namespace Com.GainWinSoft.ERP.Entity
 		}
 
 		public MLoginUser(
-			string userid)
+			string _userid)
 			: this()
 		{
-			userid = userid;
+			userid = _userid;
 			companyid = String.Empty;
 			password = String.Empty;
 			username = String.Empty;
