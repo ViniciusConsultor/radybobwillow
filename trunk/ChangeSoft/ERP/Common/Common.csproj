@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="ComponentLocator.cs" />
     <Compile Include="ConditionUtils.cs" />
+    <Compile Include="Constant.cs" />
     <Compile Include="DataTableUtils.cs" />
     <Compile Include="IBaseAction.cs" />
     <Compile Include="IBaseDao.cs" />
