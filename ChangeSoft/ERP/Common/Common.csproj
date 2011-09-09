@@ -88,6 +88,7 @@
     </Compile>
     <Compile Include="RescourcesUtils.cs" />
     <Compile Include="SearchCondition.cs" />
+    <Compile Include="SessionUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">

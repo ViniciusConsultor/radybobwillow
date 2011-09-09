@@ -88,6 +88,15 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 加载用户权限…… 的本地化字符串。
+        /// </summary>
+        internal static string I0004 {
+            get {
+                return ResourceManager.GetString("I0004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 %1 不能为空，请输入。 的本地化字符串。
         /// </summary>
         internal static string W0001 {

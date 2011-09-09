@@ -15,7 +15,6 @@ namespace Com.GainWinSoft.Common
 
         private DockPanel parentdockpanel;
 
-        private Hashtable SessionContext = new Hashtable();
         public MessageWindow msgwindow;
         public BaseForm()
         {
@@ -27,16 +26,6 @@ namespace Com.GainWinSoft.Common
             msgwindow.Hide();
         }
 
-        public Object getSession(string key)
-        {
-            Object result = SessionContext[key];
-            return result;
-        }
-
-        public void setSession(string key, Object data)
-        {
-            SessionContext.Add(key, data);
-        }
 
         public DockPanel Parentdockpanel
         {
