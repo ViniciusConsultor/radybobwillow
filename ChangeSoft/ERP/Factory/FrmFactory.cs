@@ -15,7 +15,7 @@ namespace Com.GainWinSoft.ERP.Factory
     {
         /// <summary>
         /// 画面操作模式
-        /// </summary>        
+        /// </summary>
         private string strMode = "";
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Com.GainWinSoft.ERP.Factory
         #region 方法
         /// <summary>
         /// 初期化处理
-        /// </summary>        
+        /// </summary>
         private void Initialize()
         {
             if (string.IsNullOrEmpty(strMode))
@@ -49,7 +49,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// <summary>
         /// 工具栏按钮显示控制
         /// <param name="strMode">画面模式</param>
-        /// </summary>        
+        /// </summary>
         private void SetToolBar(string strMode)
         {
             InitToolBar();
@@ -70,7 +70,7 @@ namespace Com.GainWinSoft.ERP.Factory
 
         /// <summary>
         /// 工具栏按钮初期化
-        /// </summary>        
+        /// </summary>
         private void InitToolBar()
         {
             #region 初期化
@@ -109,23 +109,58 @@ namespace Com.GainWinSoft.ERP.Factory
 
         /// <summary>
         /// 追加模式工具栏按钮控制
-        /// </summary>        
+        /// </summary>
         private void SetToolBarAdd()
         {
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.Line1Visible = false;
         }
 
         /// <summary>
         /// 删除模式工具栏按钮控制
-        /// </summary>        
+        /// </summary>
         private void SetToolBarDel()
         {
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
         }
 
         /// <summary>
         /// 修正模式工具栏按钮控制
-        /// </summary>        
+        /// </summary>
         private void SetToolBarUpd()
         {
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
+        }
+
+        /// <summary>
+        /// G1->G2工具栏按钮控制
+        /// </summary>
+        private void SetToolBarG1G2()
+        {
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.GobackEnabled = true;
+            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.OkEnabled = false;
+            this.commonToolStrip1.OkVisible = false;
+        }
+
+        /// <summary>
+        /// G2->G1工具栏按钮控制
+        /// </summary>
+        private void SetToolBarG2G1()
+        {
+            this.commonToolStrip1.SaveEnabled = false;
+            this.commonToolStrip1.SaveVisible = false;
+            this.commonToolStrip1.GobackEnabled = false;
+            this.commonToolStrip1.GobackVisible = false;
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
         }
         #endregion
 
