@@ -23,7 +23,6 @@ namespace Com.GainWinSoft.ERP
     public partial class LoginForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(LoginForm));
-        private bool hasCheckError = false;
 
 
         public LoginForm()
@@ -48,7 +47,7 @@ namespace Com.GainWinSoft.ERP
                       true);
 
                 this.DialogResult = DialogResult.Abort;
-                
+
                 return;
             }
             else
@@ -56,43 +55,26 @@ namespace Com.GainWinSoft.ERP
                 this.validationProvider1.ValidationMessages(false);
 
                 //验证用户代码和密码正确与否
-                IAction_LoginForm ac = ComponentLocator.Instance().Resolve<IAction_LoginForm>();
-                IList<LoginUserInfoVo> loginuserinfolist =  ac.GetLoginUserList(this.txtUserId.Text, this.txtPassword.Text);
-                if (loginuserinfolist.Count==0)
+                if (!this.validationProvider2.Validate())
                 {
-                    hasCheckError = true;
-                    if (!this.validationProvider2.Validate())
-                    {
-                        IList<MessageVo> re = this.validationProvider2.ValidationMessages(true);
+                    IList<MessageVo> re = this.validationProvider2.ValidationMessages(true);
 
-                        this.DialogResult = DialogResult.Abort;
+                    this.DialogResult = DialogResult.Abort;
 
-                        return;
-                    }
+                    return;
                 }
                 else
                 {
                     this.validationProvider2.ValidationMessages(false);
-                    SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO ,loginuserinfolist[0]);
                 }
 
 
 
             }
 
+            this.DialogResult = DialogResult.OK;
+            this.Close();
 
-
-            bool result = true;
-            if (result)
-            {
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            else
-            {
-                return;
-
-            }
 
         }
         public void InitialiseAR()

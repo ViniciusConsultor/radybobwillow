@@ -20,11 +20,13 @@ using System.Collections;
 using Castle.Windsor;
 using Com.GainWinSoft.ERP.Action;
 using Com.GainWinSoft.ERP.FormVo;
+using log4net;
 
 namespace Com.GainWinSoft.ERP
 {
     public partial class MainForm : Form
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(MainForm));
 
         private System.Resources.ResourceManager rm;
         private IList<ConditionVo> langItemlist;
@@ -75,31 +77,34 @@ namespace Com.GainWinSoft.ERP
         private void MainForm_Load(object sender, EventArgs e)
         {
  
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0004"));
+            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
             ToolStripManager.Renderer = new Office2007Renderer();
-            rm = new System.Resources.ResourceManager(typeof(MainForm));
             
             //get all condition
             String d = LangUtils.GetDefaultLanguage();
             ConditionUtils.GetAllConditionsList(d);
             Thread.CurrentThread.CurrentUICulture = (System.Globalization.CultureInfo)new System.Globalization.CultureInfo(d);
+            rm = new System.Resources.ResourceManager(typeof(MainForm));
+
             init_ToolStripComboBox();
             
             //castle windsor initial
             ComponentLocator.Instance();
 
-            //加载用户权限。
 
             LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
             IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
 
+            //display status strip
+            this.toolStripStatusLabelTime.Text = rm.GetString("Status.Time") + DateTime.Now.GetDateTimeFormats('D')[3].ToString();
+
+            this.toolStripStatusLabelLoginUser.Text = rm.GetString("Status.LoginUser") + uservo.Username;
 
 
-
-
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
+            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0004"));
 
             //IList<FunctionAllVo> flist = af.GetFunctionDataList();
+            //加载用户权限。
             IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));

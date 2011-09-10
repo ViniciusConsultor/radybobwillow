@@ -132,6 +132,12 @@
   <data name="Menu.Window" xml:space="preserve">
     <value>窗口</value>
   </data>
+  <data name="Status.LoginUser" xml:space="preserve">
+    <value>当前用户：</value>
+  </data>
+  <data name="Status.Time" xml:space="preserve">
+    <value>当前日期：</value>
+  </data>
   <data name="SubMenu.Help.About" xml:space="preserve">
     <value>关于</value>
   </data>
