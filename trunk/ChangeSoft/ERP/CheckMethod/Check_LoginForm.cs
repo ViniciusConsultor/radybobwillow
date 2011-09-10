@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Noogen.Validation;
 using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Action;
+using Com.GainWinSoft.ERP.FormVo;
 
 namespace Com.GainWinSoft.ERP
 {
@@ -32,7 +34,17 @@ namespace Com.GainWinSoft.ERP
         public void vr_CustomLoginValidationMethod(object sender,
                          Noogen.Validation.CustomValidationEventArgs e)
         {
-            e.IsValid = !this.hasCheckError;
+                 IAction_LoginForm ac = ComponentLocator.Instance().Resolve<IAction_LoginForm>();
+                IList<LoginUserInfoVo> loginuserinfolist =  ac.GetLoginUserList(this.txtUserId.Text, this.txtPassword.Text);
+                if (loginuserinfolist.Count == 0)
+                {
+                    e.IsValid = false;
+                }
+                else
+                {
+                    e.IsValid = true;
+                    SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO, loginuserinfolist[0]);
+                }
             
         }
     }
