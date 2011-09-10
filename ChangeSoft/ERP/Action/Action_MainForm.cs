@@ -19,9 +19,6 @@ namespace Com.GainWinSoft.ERP.Action
 
         public IList<FunctionAllVo> GetFunctionDataList()
         {
-
-
-
             IList<FunctionAllVo> functionallvolist = new List<FunctionAllVo>();
             ////Com.GainWinSoft.ERP.Entity.Dao.TestDao td = new Com.GainWinSoft.ERP.Entity.Dao.TestDao();
             ////通过Windsor的组件容器，获取Dao的实例
@@ -59,5 +56,41 @@ namespace Com.GainWinSoft.ERP.Action
             return functionallvolist;
 
         }
+
+        public IList<FunctionAllVo> GetCatalogFunctionByUserId(string userid)
+        {
+            IList<FunctionAllVo> functionallvolist = new List<FunctionAllVo>();
+
+            ICCatalogFunctionNoARDao dao = ComponentLocator.Instance().Resolve<ICCatalogFunctionNoARDao>();
+            IList<CCatalogFunctionNoAR> catalogfunctionlist =   dao.GetCatalogFunctionByUserId(LangUtils.GetCurrentLanguage(),userid);
+            int oldcatalogid = -1;
+
+            foreach (CCatalogFunctionNoAR vo in catalogfunctionlist)
+            {
+                if (vo.Catalogid != oldcatalogid)
+                {
+                    FunctionAllVo allvo = new FunctionAllVo();
+                    allvo.Catalogid = vo.Catalogid;
+                    allvo.Catalogimage = vo.Catalogimage;
+                    allvo.Catalogname = vo.Catalogname;
+                    IList<FunctionVo> funclist = new List<FunctionVo>();
+                    allvo.Functionlist=funclist;
+                    functionallvolist.Add(allvo);
+                    oldcatalogid = vo.Catalogid;
+                }
+                FunctionVo fvo = new FunctionVo();
+                fvo.Catalogid = vo.Catalogid;
+                fvo.Functionid = vo.Functionid;
+                fvo.Functionimage = vo.Functionimage;
+                fvo.Functionindex = vo.Functionindex;
+                fvo.Functionname = vo.Functionname;
+                fvo.Functionpath = vo.Functionpath;
+                functionallvolist[functionallvolist.Count - 1].Functionlist.Add(fvo);
+
+            }
+            return functionallvolist;
+        }
+
+
     }
 }

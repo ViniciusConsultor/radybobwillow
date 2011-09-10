@@ -91,6 +91,7 @@ namespace Com.GainWinSoft.ERP
             //加载用户权限。
 
             LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+            IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
 
 
 
@@ -98,9 +99,8 @@ namespace Com.GainWinSoft.ERP
 
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
 
-            IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
-            IList<FunctionAllVo> flist = af.GetFunctionDataList();
-
+            //IList<FunctionAllVo> flist = af.GetFunctionDataList();
+            IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
             init_MenuStrip(flist);
