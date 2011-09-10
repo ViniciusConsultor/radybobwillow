@@ -79,7 +79,12 @@ namespace Com.GainWinSoft.ERP
                 treeNode1.Tag = vo.Functionpath;
                 treeNode1.Name = vo.Functionname;
                 treeNode1.Text = vo.Functionname;
-                treeView1.ImageList.Images.Add(vo.Functionimage,(Image)Properties.Resources.ResourceManager.GetObject(vo.Functionimage));
+                Image icon = (Image)Properties.Resources.ResourceManager.GetObject(vo.Functionimage);
+                if (icon == null)
+                {
+                    icon = (Image)Properties.Resources.ResourceManager.GetObject("DefaultProgram");
+                }
+                treeView1.ImageList.Images.Add(vo.Functionimage,icon);
                 treeNode1.ImageKey = vo.Functionimage;
                 treeNode1.SelectedImageKey = vo.Functionimage;
                 treeView1.Nodes.Add(treeNode1);
