@@ -190,13 +190,13 @@
   <data name="ManufacturePlan48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905081718599_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purchasing16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Procurement16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082333252_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purchasing24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Procurement24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082329520_easyicon_cn_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purchasing48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Procurement48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082324580_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quotation16" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -210,9 +210,6 @@
   </data>
   <data name="QuotationEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\QuotationEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QuotationSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\QuotationSearch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ReportCenter16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905084023307_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -249,5 +246,101 @@
   </data>
   <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\about.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\AccountItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Composition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Composition.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CompositionCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\CompositionCheck.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Currency" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Currency.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerMaterial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\CustomerMaterial.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefaultProgram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\DefaultProgram.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeliveryEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\DeliveryEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeliveryReceiptPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\DeliveryReceiptPrint.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeliveryResultInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\DeliveryResultInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DemandCompute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\DemandCompute.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Department" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Department.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureBatchEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureBatchEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureBatchInstructionEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureBatchInstructionEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureBatchInstructionInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureBatchInstructionInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureBatchProcessAlertInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureBatchProcessAlertInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureInstructionEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureInstructionEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureInstructionExecute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureInstructionExecute.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufactureInstructionRemainInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufactureInstructionRemainInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufacturePlanEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufacturePlanEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufacturePlanInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ManufacturePlanInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrderEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\OrderEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrderInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\OrderInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProcessEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ProcessEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProcurementReplenishmentInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ProcurementReplenishmentInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProspectDemandCompute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ProspectDemandCompute.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProspectManufacturePlanEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ProspectManufacturePlanEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuotationInquiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\QuotationInquiry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReturnEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ReturnEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Role" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Role.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalesResultEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\SalesResultEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemParameter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\SystemParameter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseProcess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\WarehouseProcess.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
