@@ -53,14 +53,14 @@ namespace Com.GainWinSoft.ERP.Entity
 			int functionid)
 			: this()
 		{
-            id = new MRoleFunctionID();
-            id.Roleid = roleid;
-            id.Functionid = functionid;
+            id = new MRoleFunctionID(roleid,functionid);
 			createdatetime = DateTime.MinValue;
 			createuserid = String.Empty;
 			updatedatetime = DateTime.MinValue;
 			updateuserid = String.Empty;
 		}
+
+
 
 		#endregion // End of Class Constuctor(s)
 		

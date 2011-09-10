@@ -61,6 +61,15 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 系统异常，请和系统管理员联系。 的本地化字符串。
+        /// </summary>
+        internal static string E0001 {
+            get {
+                return ResourceManager.GetString("E0001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 加载初始数据…… 的本地化字符串。
         /// </summary>
         internal static string I0001 {

@@ -19,6 +19,14 @@ namespace Com.GainWinSoft.ERP.Entity
         #endregion
 
         #region Constuctor(s)
+        public MRoleFunctionID()
+        {
+        }
+        public MRoleFunctionID(int roleid, int functionid)
+        {
+            this.roleid = roleid;
+            this.functionid = functionid;
+        }
 
 
         #endregion // End of Class Constuctor(s)

@@ -108,6 +108,8 @@
   <ItemGroup>
     <Compile Include="Dao\CCatalogHasManyFunctionDaoOracleImp.cs" />
     <Compile Include="Dao\CFunctionPagerNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\CCatalogFunctionNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\ICCatalogFunctionNoARDao.cs" />
     <Compile Include="Dao\ICClsDetailBelongToClsMsDao.cs" />
     <Compile Include="Dao\ICCatalogHasManyFunctionDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
@@ -141,6 +143,7 @@
     <Compile Include="Model\CClsDetailBelongToClsMs.cs" />
     <Compile Include="Model\MRoleFunctionId.cs" />
     <Compile Include="Model\MRoleUserId.cs" />
+    <Compile Include="Model\CCatalogFunctionNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
