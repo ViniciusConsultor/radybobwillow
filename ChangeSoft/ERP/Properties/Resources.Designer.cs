@@ -158,6 +158,48 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap ManufactureManagement16 {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureManagement16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufactureManagement24 {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureManagement24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufactureManagement48 {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureManagement48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufacturePlan16 {
+            get {
+                object obj = ResourceManager.GetObject("ManufacturePlan16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufacturePlan24 {
+            get {
+                object obj = ResourceManager.GetObject("ManufacturePlan24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufacturePlan48 {
+            get {
+                object obj = ResourceManager.GetObject("ManufacturePlan48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap MasterData16 {
             get {
                 object obj = ResourceManager.GetObject("MasterData16", resourceCulture);
@@ -189,48 +231,6 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap MaterialPrice {
             get {
                 object obj = ResourceManager.GetObject("MaterialPrice", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionManagement16 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionManagement16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionManagement24 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionManagement24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionManagement48 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionManagement48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionPlan16 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionPlan16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionPlan24 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionPlan24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProductionPlan48 {
-            get {
-                object obj = ResourceManager.GetObject("ProductionPlan48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -312,23 +312,23 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap Sell16 {
+        internal static System.Drawing.Bitmap SalesDelivery16 {
             get {
-                object obj = ResourceManager.GetObject("Sell16", resourceCulture);
+                object obj = ResourceManager.GetObject("SalesDelivery16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap Sell24 {
+        internal static System.Drawing.Bitmap SalesDelivery24 {
             get {
-                object obj = ResourceManager.GetObject("Sell24", resourceCulture);
+                object obj = ResourceManager.GetObject("SalesDelivery24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap Sell48 {
+        internal static System.Drawing.Bitmap SalesDelivery48 {
             get {
-                object obj = ResourceManager.GetObject("Sell48", resourceCulture);
+                object obj = ResourceManager.GetObject("SalesDelivery48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
