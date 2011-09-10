@@ -172,22 +172,22 @@
   <data name="MaterialPrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110902042014732_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionManagement16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufactureManagement16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082222409_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionManagement24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufactureManagement24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082217859_easyicon_cn_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionManagement48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufactureManagement48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905082210278_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionPlan16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufacturePlan16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\2011090508174467_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionPlan24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufacturePlan24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905081728117_easyicon_cn_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProductionPlan48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ManufacturePlan48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905081718599_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Purchasing16" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -223,13 +223,13 @@
   <data name="ReportCenter48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905084005756_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sell16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="SalesDelivery16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\2011090508164129_easyicon_cn_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sell24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="SalesDelivery24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905081635577_easyicon_cn_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sell48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="SalesDelivery48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\20110905081628235_easyicon_cn_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
