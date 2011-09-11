@@ -36,8 +36,8 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             DataGridViewRow dgvr = this.dataGridView1.CurrentRow;
 
-            this.SetValue(dgvr.Cells["iClsDetailCd"].Value.ToString());
-
+            this.SetValue(dgvr.Cells["IClsDetailCd"].Value.ToString());
+            this.SetName(dgvr.Cells["IClsDetailDesc"].Value.ToString());
 
             this.SetFocus();
             this.Close();

@@ -32,6 +32,7 @@ namespace Com.GainWinSoft.ERP.Material
             this.btnFactoryHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button2.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.button3.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 
             SearchCondition condition = new SearchCondition();
             condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);
@@ -136,6 +137,23 @@ namespace Com.GainWinSoft.ERP.Material
         private void commonToolStrip1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(sender.ToString() );
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("79");
+            cr.AddValueControl(this.txtItemType1);
+            cr.AddNameControl(this.lblItemType1);
+            cr.ShowDialog(this);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("72");
+            cr.AddValueControl(this.txtManufacturer);
+            cr.AddNameControl(this.lblManufacturer);
+            cr.ShowDialog(this);
         }
     }
 }
