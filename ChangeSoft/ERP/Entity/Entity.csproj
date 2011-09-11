@@ -119,6 +119,7 @@
     <Compile Include="Dao\ITDescMsDao.cs" />
     <Compile Include="Dao\ITest2Dao.cs" />
     <Compile Include="Dao\ITestDao.cs" />
+    <Compile Include="Dao\ITTermMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />

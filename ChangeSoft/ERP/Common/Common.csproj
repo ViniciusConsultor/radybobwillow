@@ -66,6 +66,8 @@
     <Compile Include="IBaseAction.cs" />
     <Compile Include="IBaseDao.cs" />
     <Compile Include="LangUtils.cs" />
+    <Compile Include="PropertiesCopier.Checks.cs" />
+    <Compile Include="PropertiesCopier.cs" />
     <Compile Include="Resources\Message.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -154,10 +156,19 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
