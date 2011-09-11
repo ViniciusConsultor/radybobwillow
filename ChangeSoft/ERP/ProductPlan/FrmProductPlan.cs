@@ -29,9 +29,9 @@ namespace Com.GainWinSoft.ERP.ProductPlan
             TestCode frm = new TestCode(lst);
             //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
             Point p1 = btnCode.PointToScreen(Point.Empty);
-            Rectangle r = new Rectangle(new Point(p1.X, p1.Y + btnCode.Height), frm.Size);
+            Rectangle r = new Rectangle(new Point(p1.X, p1.Y), frm.Size);
 
-            frm.Show(this.baseform.dockPanel, r);
+            frm.ShowDialog(this.baseform.dockPanel);
 
         }
     }
