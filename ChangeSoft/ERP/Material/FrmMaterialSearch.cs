@@ -127,10 +127,6 @@ namespace Com.GainWinSoft.ERP.Material
             this.baseform.msgwindow.ShowMessage();
         }
 
-        private void conditionDropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show(this.conditionDropDownList1.Selectedindex.ToString() + ":" + this.conditionDropDownList1.Selectedvalue + ":" + this.conditionDropDownList1.Selectedname);
-        }
 
         private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
         {

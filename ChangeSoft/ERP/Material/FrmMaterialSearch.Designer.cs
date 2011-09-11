@@ -49,7 +49,6 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.conditionDropDownList1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -97,6 +96,7 @@
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
             this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -241,25 +241,13 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.conditionDropDownList1, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.clsDetailCodeRefDropDownList1, 1, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            // 
-            // conditionDropDownList1
-            // 
-            this.conditionDropDownList1.Autoaddblankitem = true;
-            this.conditionDropDownList1.Conditionname = "Language";
-            this.conditionDropDownList1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.conditionDropDownList1, "conditionDropDownList1");
-            this.conditionDropDownList1.Name = "conditionDropDownList1";
-            this.conditionDropDownList1.Selectedindex = -1;
-            this.conditionDropDownList1.Selectedname = null;
-            this.conditionDropDownList1.Selectedvalue = null;
-            this.conditionDropDownList1.SelectedIndexChanged += new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList.OnSelectChangedEventHandler(this.conditionDropDownList1_SelectedIndexChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -575,6 +563,18 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = false;
             // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "31";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            // 
             // FrmMaterialSearch
             // 
             resources.ApplyResources(this, "$this");
@@ -647,7 +647,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label5;
-        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList conditionDropDownList1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox12;
@@ -695,6 +694,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel0;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
 
 
     }

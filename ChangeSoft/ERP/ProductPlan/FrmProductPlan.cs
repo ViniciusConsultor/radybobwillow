@@ -24,14 +24,14 @@ namespace Com.GainWinSoft.ERP.ProductPlan
         private void btnCode_Click(object sender, EventArgs e)
         {
 
-            List<Control> lst = new List<Control>();
-            lst.Add(this.txtCode);
-            TestCode frm = new TestCode(lst);
-            //Point p = this.PointToClient(btnCode.PointToScreen(Point.Empty));
-            Point p1 = btnCode.PointToScreen(Point.Empty);
-            Rectangle r = new Rectangle(new Point(p1.X, p1.Y), frm.Size);
+            
+       
+           // TestCode frm = new TestCode(lst);
 
-            frm.ShowDialog(this.baseform.dockPanel);
+            CodeRefClsDetail cf = new CodeRefClsDetail("63");
+            cf.AddValueControl(txtCode);
+
+            cf.ShowDialog(this.baseform.dockPanel);
 
         }
     }
