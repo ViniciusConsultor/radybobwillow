@@ -74,6 +74,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap AchievementBudgetEntry {
+            get {
+                object obj = ResourceManager.GetObject("AchievementBudgetEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Bom {
             get {
                 object obj = ResourceManager.GetObject("Bom", resourceCulture);
@@ -193,6 +200,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap EstimateInventoryInquiry {
+            get {
+                object obj = ResourceManager.GetObject("EstimateInventoryInquiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ExchangeRate {
             get {
                 object obj = ResourceManager.GetObject("ExchangeRate", resourceCulture);
@@ -228,9 +242,100 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap InventoryAdjustmentEntry {
+            get {
+                object obj = ResourceManager.GetObject("InventoryAdjustmentEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryAssetsReprot {
+            get {
+                object obj = ResourceManager.GetObject("InventoryAssetsReprot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryCheckEntry {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCheckEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryCheckSetting {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCheckSetting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryDifferenceReport {
+            get {
+                object obj = ResourceManager.GetObject("InventoryDifferenceReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryExcessReport {
+            get {
+                object obj = ResourceManager.GetObject("InventoryExcessReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryInformation {
+            get {
+                object obj = ResourceManager.GetObject("InventoryInformation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryInstructionReport {
+            get {
+                object obj = ResourceManager.GetObject("InventoryInstructionReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryMonthlyCarryOver {
+            get {
+                object obj = ResourceManager.GetObject("InventoryMonthlyCarryOver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryMove {
+            get {
+                object obj = ResourceManager.GetObject("InventoryMove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap InventoryUpdate {
+            get {
+                object obj = ResourceManager.GetObject("InventoryUpdate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap loginbg {
             get {
                 object obj = ResourceManager.GetObject("loginbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap LotTraceInquiry {
+            get {
+                object obj = ResourceManager.GetObject("LotTraceInquiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufactureBatchCostInquiry {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureBatchCostInquiry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -277,6 +382,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap ManufactureInstructionPickingEntry {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureInstructionPickingEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ManufactureInstructionRemainInquiry {
             get {
                 object obj = ResourceManager.GetObject("ManufactureInstructionRemainInquiry", resourceCulture);
@@ -301,6 +413,13 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap ManufactureManagement48 {
             get {
                 object obj = ResourceManager.GetObject("ManufactureManagement48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ManufactureOrder {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureOrder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -340,6 +459,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap ManufactureResultEntry {
+            get {
+                object obj = ResourceManager.GetObject("ManufactureResultEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap MasterData16 {
             get {
                 object obj = ResourceManager.GetObject("MasterData16", resourceCulture);
@@ -368,6 +494,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap MaterialInventoryInquiry {
+            get {
+                object obj = ResourceManager.GetObject("MaterialInventoryInquiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap MaterialPrice {
             get {
                 object obj = ResourceManager.GetObject("MaterialPrice", resourceCulture);
@@ -389,37 +522,23 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap PickingDetails {
+            get {
+                object obj = ResourceManager.GetObject("PickingDetails", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap PickingEstimatePickingList {
+            get {
+                object obj = ResourceManager.GetObject("PickingEstimatePickingList", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ProcessEquipment {
             get {
                 object obj = ResourceManager.GetObject("ProcessEquipment", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Procurement16 {
-            get {
-                object obj = ResourceManager.GetObject("Procurement16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Procurement24 {
-            get {
-                object obj = ResourceManager.GetObject("Procurement24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Procurement48 {
-            get {
-                object obj = ResourceManager.GetObject("Procurement48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap ProcurementReplenishmentInquiry {
-            get {
-                object obj = ResourceManager.GetObject("ProcurementReplenishmentInquiry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -434,6 +553,41 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap ProspectManufacturePlanEntry {
             get {
                 object obj = ResourceManager.GetObject("ProspectManufacturePlanEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Purchase16 {
+            get {
+                object obj = ResourceManager.GetObject("Purchase16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Purchase24 {
+            get {
+                object obj = ResourceManager.GetObject("Purchase24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Purchase48 {
+            get {
+                object obj = ResourceManager.GetObject("Purchase48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap PurchaseOrder {
+            get {
+                object obj = ResourceManager.GetObject("PurchaseOrder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap PurchaseReplenishmentInquiry {
+            get {
+                object obj = ResourceManager.GetObject("PurchaseReplenishmentInquiry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -469,6 +623,41 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap QuotationInquiry {
             get {
                 object obj = ResourceManager.GetObject("QuotationInquiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ReceiptEntry {
+            get {
+                object obj = ResourceManager.GetObject("ReceiptEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ReceiptPickingInquiry {
+            get {
+                object obj = ResourceManager.GetObject("ReceiptPickingInquiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ReceiptQualityInspectionEntry {
+            get {
+                object obj = ResourceManager.GetObject("ReceiptQualityInspectionEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ReceiptQualityInspectionReport {
+            get {
+                object obj = ResourceManager.GetObject("ReceiptQualityInspectionReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ReceiptResultInquiry {
+            get {
+                object obj = ResourceManager.GetObject("ReceiptResultInquiry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -550,6 +739,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap UnplanedReceiptEntry {
+            get {
+                object obj = ResourceManager.GetObject("UnplanedReceiptEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap User {
             get {
                 object obj = ResourceManager.GetObject("User", resourceCulture);
@@ -581,6 +777,20 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap WorkProcess48 {
             get {
                 object obj = ResourceManager.GetObject("WorkProcess48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap WorkSheetEntry {
+            get {
+                object obj = ResourceManager.GetObject("WorkSheetEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap WorkSheetInquiry {
+            get {
+                object obj = ResourceManager.GetObject("WorkSheetInquiry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
