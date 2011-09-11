@@ -100,7 +100,6 @@
             this.ClientSize = new System.Drawing.Size(294, 277);
             this.Controls.Add(this.tblBase);
             this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Float;
-            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "TestCode";
             this.Text = "Form1";
             this.tblBase.ResumeLayout(false);
