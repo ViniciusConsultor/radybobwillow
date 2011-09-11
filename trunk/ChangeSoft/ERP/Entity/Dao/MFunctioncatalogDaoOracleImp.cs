@@ -16,9 +16,9 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         {
             IList<MFunctioncatalog> result = new List<MFunctioncatalog>();
 
-            TransactionScope transaction = new TransactionScope();
 
             ISession ss = holder.CreateSession(typeof(MFunctioncatalogDaoOracleImp));
+
             ITransaction tran = ss.BeginTransaction();
             try
             {
@@ -39,17 +39,17 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return result;

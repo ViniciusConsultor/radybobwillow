@@ -35,8 +35,6 @@ namespace Com.GainWinSoft.ERP.Action
                  result.Mappingid = loginuser.Mappingid;
                  result.Namepinyin = loginuser.Namepinyin;
                  result.Password = loginuser.Password;
-                 result.Rolefunctionlist = new List<FunctionVo>();
-                 result.Roleuserlist = new List<RoleUserVo>();
                  result.Temppasswordflag = loginuser.Temppasswordflag;
                  result.Userid = loginuser.Userid;
                  result.Username = loginuser.Username;

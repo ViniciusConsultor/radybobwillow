@@ -16,7 +16,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         public IList<CClsDetailNoAR> GetClsDetail(string langId,string clsCd)
         {
 
-            TransactionScope transaction = new TransactionScope();
             IList<CClsDetailNoAR> result = new List<CClsDetailNoAR>();
 
             ISession ss = holder.CreateSession(typeof(CClsDetailNoARDaoOracleImp));
@@ -90,21 +89,21 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 result = querycatalogfunction.SetResultTransformer(Transformers.AliasToBean<CClsDetailNoAR>()).List<CClsDetailNoAR>();
 
 
-                transaction.VoteCommit();
+                tran.Commit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return result;

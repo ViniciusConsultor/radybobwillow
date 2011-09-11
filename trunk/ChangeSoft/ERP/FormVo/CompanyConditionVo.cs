@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Com.GainWinSoft.ERP.FormVo
 {
-    class CompanyConditionVo
+    public class CompanyConditionVo
     {
 
         #region Private Members

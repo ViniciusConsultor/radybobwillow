@@ -15,7 +15,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         public int Count()
         {
             int re = 0;
-            TransactionScope transaction = new TransactionScope();
 
             ISession ss = holder.CreateSession(typeof(Test));
             ITransaction tran = ss.BeginTransaction();
@@ -27,22 +26,22 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 t.Username = "fff";
                 t.Loginid = "fff";
                 t.CreateAndFlush();
-                transaction.VoteCommit();
+                tran.Commit();
                 //SessionScope.Current.Flush();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message,ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message,ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
             re = ActiveRecordBase.Count(typeof(Test));
 

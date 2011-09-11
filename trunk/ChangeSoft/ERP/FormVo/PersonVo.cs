@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Com.GainWinSoft.ERP.FormVo
 {
-    class PersonVo
+    public class PersonVo
     {
         
 		#region Private Members

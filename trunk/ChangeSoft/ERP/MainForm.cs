@@ -107,6 +107,10 @@ namespace Com.GainWinSoft.ERP
             //加载用户权限。
             IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
+            //加载工厂
+
+
+
 
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
             init_MenuStrip(flist);
@@ -114,16 +118,7 @@ namespace Com.GainWinSoft.ERP
             
             //Thread.Sleep(1000);
             //SplashScreen.UdpateStatusTextWithStatus("Success Message", TypeOfMessage.Success);
-            //Thread.Sleep(1000);
-            //SplashScreen.UdpateStatusTextWithStatus("Warning Message", TypeOfMessage.Warning);
 
-            //Thread.Sleep(1000);
-            //SplashScreen.UdpateStatusTextWithStatus("Error Message", TypeOfMessage.Error);
-            //Thread.Sleep(1000);
-            //SplashScreen.UdpateStatusText("Testing Default Message Color");
-            //Thread.Sleep(1000);
-            //SplashScreen.UdpateStatusText("Items Loaded..");
-            //Thread.Sleep(500);
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0003"));
 
             this.Show();
