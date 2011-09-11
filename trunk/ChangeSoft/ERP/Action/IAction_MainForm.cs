@@ -8,5 +8,7 @@ namespace Com.GainWinSoft.ERP.Action
         System.Collections.Generic.IList<Com.GainWinSoft.ERP.FormVo.FunctionAllVo> GetFunctionDataList();
 
         IList<FunctionAllVo> GetCatalogFunctionByUserId(string userid);
+
+        TermVo GetTermInfo(string userid);
     }
 }

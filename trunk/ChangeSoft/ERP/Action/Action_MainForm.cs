@@ -95,8 +95,11 @@ namespace Com.GainWinSoft.ERP.Action
         {
             TermVo termvo = new TermVo();
 
+            ITTermMsDao dao = ComponentLocator.Instance().Resolve<ITTermMsDao>();
 
+            TTermMs termms = dao.getTermbyUserId(userid);
 
+            PropertiesCopier.CopyProperties(termms, termvo);
             return termvo;
         }
 

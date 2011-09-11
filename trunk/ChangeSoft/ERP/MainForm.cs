@@ -109,7 +109,7 @@ namespace Com.GainWinSoft.ERP
 
             //加载工厂
 
-
+            TermVo termvo = af.GetTermInfo(uservo.Userid);
 
 
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
