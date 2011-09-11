@@ -164,6 +164,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BaseCodeForm.resx">
+      <DependentUpon>BaseCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseContent.resx">
       <DependentUpon>BaseContent.cs</DependentUpon>
     </EmbeddedResource>
