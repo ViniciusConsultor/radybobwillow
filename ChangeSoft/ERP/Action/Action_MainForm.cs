@@ -91,6 +91,14 @@ namespace Com.GainWinSoft.ERP.Action
             return functionallvolist;
         }
 
+        public TermVo GetTermInfo(string userid)
+        {
+            TermVo termvo = new TermVo();
+
+
+
+            return termvo;
+        }
 
     }
 }

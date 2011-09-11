@@ -16,7 +16,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         public IList<CCatalogFunctionNoAR> GetCatalogFunctionByUserId(string langid,string userid)
         {
 
-            TransactionScope transaction = new TransactionScope();
             IList<CCatalogFunctionNoAR> result = new List<CCatalogFunctionNoAR>();
 
             ISession ss = holder.CreateSession(typeof(CCatalogFunctionNoARDaoOracleImp));
@@ -102,21 +101,21 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 result = querycatalogfunction.SetResultTransformer(Transformers.AliasToBean<CCatalogFunctionNoAR>()).List<CCatalogFunctionNoAR>();
 
 
-                transaction.VoteCommit();
+                tran.Commit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return result;

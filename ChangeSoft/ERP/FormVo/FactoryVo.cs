@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Com.GainWinSoft.ERP.FormVo
 {
-    class FactoryVo
+    public class FactoryVo
     {
         #region member
         private string iFacCd;

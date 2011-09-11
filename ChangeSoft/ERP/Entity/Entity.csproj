@@ -126,6 +126,7 @@
     <Compile Include="Dao\CClsDetailBelongToClsMsDaoOracleImp.cs" />
     <Compile Include="Dao\MLoginUserDaoOracleImp.cs" />
     <Compile Include="Dao\CClsDetailNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\TTermMsDaoOracleImp.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />

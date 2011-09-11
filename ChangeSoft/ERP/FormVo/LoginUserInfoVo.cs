@@ -93,6 +93,31 @@ namespace Com.GainWinSoft.ERP.FormVo
         }
 
 
+        private PersonVo person;
+
+        public PersonVo Person
+        {
+            get { return person; }
+            set { person = value; }
+        }
+
+        private CompanyConditionVo companyCondition;
+
+        public CompanyConditionVo CompanyCondition
+        {
+            get { return companyCondition; }
+            set { companyCondition = value; }
+        }
+
+        private FactoryVo factory;
+
+        public FactoryVo Factory
+        {
+            get { return factory; }
+            set { factory = value; }
+        }
+
+ 
 
 
 

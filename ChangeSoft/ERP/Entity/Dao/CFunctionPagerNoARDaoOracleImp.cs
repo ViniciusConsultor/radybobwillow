@@ -20,7 +20,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         public DataSet GetDataSet(string key,SearchCondition condition,int pagesize,int pageindex)
         {
 
-            TransactionScope transaction = new TransactionScope();
             DataSet ds = new DataSet();
             IList<CFunctionPagerNoAR> result = new List<CFunctionPagerNoAR>();
 
@@ -101,21 +100,21 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 ds.Tables.Add(dt);
 
                 
-                transaction.VoteCommit();
+                tran.Commit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return ds;

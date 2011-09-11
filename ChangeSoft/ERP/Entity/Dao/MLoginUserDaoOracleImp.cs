@@ -16,7 +16,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         {
             MLoginUser result = null;
 
-            TransactionScope transaction = new TransactionScope();
 
             ISession ss = holder.CreateSession(typeof(MLoginUserDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
@@ -41,17 +40,17 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return result;
