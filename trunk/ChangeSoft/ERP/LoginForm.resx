@@ -126,7 +126,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="btnLogin.Text" xml:space="preserve">
     <value>登录</value>
@@ -150,7 +150,7 @@
     <value>86, 33</value>
   </data>
   <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
     <value>取消</value>
@@ -177,7 +177,7 @@
     <value>196, 21</value>
   </data>
   <data name="txtUserId.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtUserId.Name" xml:space="preserve">
     <value>txtUserId</value>
@@ -204,7 +204,7 @@
     <value>196, 21</value>
   </data>
   <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
@@ -405,13 +405,13 @@
     <value>validationProvider1</value>
   </data>
   <data name="&gt;&gt;validationProvider1.Type" xml:space="preserve">
-    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4268.42868, Culture=neutral, PublicKeyToken=null</value>
+    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4269.29987, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;validationProvider2.Name" xml:space="preserve">
     <value>validationProvider2</value>
   </data>
   <data name="&gt;&gt;validationProvider2.Type" xml:space="preserve">
-    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4268.42868, Culture=neutral, PublicKeyToken=null</value>
+    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4269.29987, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>LoginForm</value>
