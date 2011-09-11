@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Com.GainWinSoft.ERP.CodeRef.Action;
 using Com.GainWinSoft.Common;
+using System.Resources;
 
 namespace Com.GainWinSoft.ERP.CodeRef
 {
@@ -27,6 +28,8 @@ namespace Com.GainWinSoft.ERP.CodeRef
             DataSet ds = ac.GetClsDetailDataSet(clsCd);
             this.dataGridView1.DataSource = ds;
             this.dataGridView1.DataMember = "CLSDETAIL";
+            SetColumnsAlias();
+            
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -39,6 +42,18 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.SetFocus();
             this.Close();
             this.Dispose();
+        }
+
+        private void SetColumnsAlias()
+        {
+            ResourceManager rm = new ResourceManager(typeof(CodeRefClsDetail));
+            foreach (DataGridViewColumn col in this.dataGridView1.Columns)
+            {
+                col.HeaderText = rm.GetString(col.Name);
+            }
+
+            this.dataGridView1.Columns["iLanguageCd"].Visible = false;
+            this.dataGridView1.Columns["iInqItem"].Visible = false;
         }
 
     }
