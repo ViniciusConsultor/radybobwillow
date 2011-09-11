@@ -107,6 +107,7 @@ namespace Com.GainWinSoft.ERP
             //加载用户权限。
             IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
+
             SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
             init_MenuStrip(flist);
             init_MenuWindow(flist);
