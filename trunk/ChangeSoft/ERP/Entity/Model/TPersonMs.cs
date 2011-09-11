@@ -199,8 +199,7 @@ namespace Com.GainWinSoft.ERP.Entity
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
 			TPersonMs castObj = (TPersonMs)obj; 
 			return ( castObj != null ) &&
-				( this.iCompanyCd == castObj.ICompanyCd ) &&
-				( this.iPersonCd == castObj.IPersonCd );
+				( this.id == castObj.id );
 		}
 		
 		/// <summary>
@@ -210,8 +209,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		{
 			
 			int hash = 57; 
-			hash = 27 * hash * iCompanyCd.GetHashCode();
-			hash = 27 * hash * iPersonCd.GetHashCode();
+			hash = 27 * hash * id.GetHashCode();
 			return hash; 
 		}
 		
@@ -223,8 +221,8 @@ namespace Com.GainWinSoft.ERP.Entity
             StringBuilder sbuffer = new StringBuilder();
 			sbuffer.Append("{");
 			
-			sbuffer.AppendFormat("ICompanyCd = {0}, ",iCompanyCd);
-			sbuffer.AppendFormat("IPersonCd = {0}, ",iPersonCd);
+			sbuffer.AppendFormat("ICompanyCd = {0}, ",Id.ICompanyCd);
+			sbuffer.AppendFormat("IPersonCd = {0}, ",Id.IPersonCd);
 			sbuffer.AppendFormat("IPersonDesc = {0}, ",iPersonDesc);
 			sbuffer.AppendFormat("IPersonDescKana = {0}, ",iPersonDescKana);
 			sbuffer.AppendFormat("IJobCls = {0}, ",iJobCls);
