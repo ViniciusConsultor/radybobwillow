@@ -114,6 +114,9 @@
     <EmbeddedResource Include="CodeRefClsDetail.resx">
       <DependentUpon>CodeRefClsDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefClsDetail.zh-CN.resx">
+      <DependentUpon>CodeRefClsDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
