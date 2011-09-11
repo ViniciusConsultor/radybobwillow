@@ -51,9 +51,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtItemType1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblItemType1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,9 +69,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtManufacturer = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblManufacturer = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
@@ -89,14 +89,14 @@
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -253,9 +253,9 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox12, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtItemType1, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label20, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.lblItemType1, 3, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
             // label19
@@ -263,21 +263,23 @@
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
             // 
-            // textBox12
+            // txtItemType1
             // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
+            resources.ApplyResources(this.txtItemType1, "txtItemType1");
+            this.txtItemType1.Name = "txtItemType1";
             // 
             // button3
             // 
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label20
+            // lblItemType1
             // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
+            resources.ApplyResources(this.lblItemType1, "lblItemType1");
+            this.lblItemType1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblItemType1.Name = "lblItemType1";
             // 
             // tableLayoutPanel8
             // 
@@ -361,9 +363,9 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel15, "tableLayoutPanel15");
             this.tableLayoutPanel15.Controls.Add(this.label12, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.textBox7, 1, 0);
+            this.tableLayoutPanel15.Controls.Add(this.txtManufacturer, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.button4, 2, 0);
-            this.tableLayoutPanel15.Controls.Add(this.label13, 3, 0);
+            this.tableLayoutPanel15.Controls.Add(this.lblManufacturer, 3, 0);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             // 
             // label12
@@ -371,22 +373,23 @@
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
             // 
-            // textBox7
+            // txtManufacturer
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.txtManufacturer, "txtManufacturer");
+            this.txtManufacturer.Name = "txtManufacturer";
             // 
             // button4
             // 
             resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label13
+            // lblManufacturer
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Name = "label13";
+            resources.ApplyResources(this.lblManufacturer, "lblManufacturer");
+            this.lblManufacturer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblManufacturer.Name = "lblManufacturer";
             // 
             // tableLayoutPanel16
             // 
@@ -480,19 +483,13 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel23, "tableLayoutPanel23");
             this.tableLayoutPanel23.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel23.Controls.Add(this.clsDetailCodeRefDropDownList2, 1, 0);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            // 
-            // comboBox2
-            // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Name = "comboBox2";
             // 
             // tableLayoutPanel24
             // 
@@ -521,6 +518,18 @@
             this.tableLayoutPanel0.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 2);
             this.tableLayoutPanel0.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tableLayoutPanel0.Name = "tableLayoutPanel0";
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "31";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
             // 
             // FrmMaterialSearch_pagerGridView1
             // 
@@ -563,17 +572,17 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = false;
             // 
-            // clsDetailCodeRefDropDownList1
+            // clsDetailCodeRefDropDownList2
             // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "31";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList2.ClsCd = "D9";
+            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
+            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
+            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList2.Selectedname = null;
+            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
             // 
             // FrmMaterialSearch
             // 
@@ -649,9 +658,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtItemType1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblItemType1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
@@ -667,9 +676,9 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtManufacturer;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblManufacturer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.Label label14;
@@ -687,7 +696,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
@@ -695,6 +703,7 @@
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList2;
 
 
     }
