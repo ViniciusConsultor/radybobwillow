@@ -35,15 +35,15 @@ namespace Com.GainWinSoft.ERP
                          Noogen.Validation.CustomValidationEventArgs e)
         {
                  IAction_LoginForm ac = ComponentLocator.Instance().Resolve<IAction_LoginForm>();
-                IList<LoginUserInfoVo> loginuserinfolist =  ac.GetLoginUserList(this.txtUserId.Text, this.txtPassword.Text);
-                if (loginuserinfolist.Count == 0)
+                LoginUserInfoVo loginuserinfo =  ac.GetLoginUserList(this.txtUserId.Text, this.txtPassword.Text);
+                if (loginuserinfo==null)
                 {
                     e.IsValid = false;
                 }
                 else
                 {
                     e.IsValid = true;
-                    SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO, loginuserinfolist[0]);
+                    SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO, loginuserinfo);
                 }
             
         }

@@ -17,35 +17,32 @@ namespace Com.GainWinSoft.ERP.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_MainForm));
 
-        public IList<LoginUserInfoVo> GetLoginUserList(string userid,string password)
+        public LoginUserInfoVo GetLoginUserList(string userid,string password)
         {
 
-            IList<LoginUserInfoVo> result = new List<LoginUserInfoVo>();
+           LoginUserInfoVo result =null;
 
             IMLoginUserDao ml = ComponentLocator.Instance().Resolve<IMLoginUserDao>();
-            IList<MLoginUser>  loginuserlist = ml.GetLoginUserInfo(userid, password);
-            if ((loginuserlist.Count != 0))
+            MLoginUser  loginuser= ml.GetLoginUserInfo(userid, password);
+            if ((loginuser != null))
             {
 
 
+                 result = new LoginUserInfoVo();
+                 result.Companyid = loginuser.Companyid;
+                 result.Deleteflag = loginuser.Deleteflag;
+                 result.Lockflag = loginuser.Lockflag;
+                 result.Mappingid = loginuser.Mappingid;
+                 result.Namepinyin = loginuser.Namepinyin;
+                 result.Password = loginuser.Password;
+                 result.Rolefunctionlist = new List<FunctionVo>();
+                 result.Roleuserlist = new List<RoleUserVo>();
+                 result.Temppasswordflag = loginuser.Temppasswordflag;
+                 result.Userid = loginuser.Userid;
+                 result.Username = loginuser.Username;
+                 result.Usertype = loginuser.Usertype;
 
-                foreach (MLoginUser mloginuser in loginuserlist)
-                {
-                    LoginUserInfoVo lvo = new LoginUserInfoVo();
-                    lvo.Companyid = mloginuser.Companyid;
-                    lvo.Deleteflag = mloginuser.Deleteflag;
-                    lvo.Lockflag = mloginuser.Lockflag;
-                    lvo.Mappingid = mloginuser.Mappingid;
-                    lvo.Namepinyin = mloginuser.Namepinyin;
-                    lvo.Password = mloginuser.Password;
-                    lvo.Rolefunctionlist = new List<FunctionVo>();
-                    lvo.Roleuserlist = new List<RoleUserVo>();
-                    lvo.Temppasswordflag = mloginuser.Temppasswordflag;
-                    lvo.Userid = mloginuser.Userid;
-                    lvo.Username = mloginuser.Username;
-                    lvo.Usertype = mloginuser.Usertype;
-                    result.Add(lvo);
-                }
+                
             }
 
             return result;

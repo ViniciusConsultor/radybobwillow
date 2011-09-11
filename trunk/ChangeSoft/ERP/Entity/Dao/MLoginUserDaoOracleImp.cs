@@ -12,9 +12,9 @@ using System.Data.Common;
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public class MLoginUserDaoOracleImp :ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.IMLoginUserDao{
-        public IList<MLoginUser> GetLoginUserInfo(string userid, string password)
+        public MLoginUser GetLoginUserInfo(string userid, string password)
         {
-            IList<MLoginUser> result = new List<MLoginUser>();
+            MLoginUser result = null;
 
             TransactionScope transaction = new TransactionScope();
 
@@ -23,7 +23,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                SimpleQuery<MLoginUser> q = new SimpleQuery<MLoginUser>(typeof(MLoginUser), @"
+                ScalarQuery<MLoginUser> q = new ScalarQuery<MLoginUser>(typeof(MLoginUser), @"
                                                 from MLoginUser where Userid=:userid and Password=:password");
                 q.SetParameter("userid", userid);
                 q.SetParameter("password", password);
