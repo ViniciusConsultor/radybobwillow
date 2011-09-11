@@ -631,21 +631,21 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             this.toolStrip1.Items.Add(item_help);
             this.toolStrip1.Items.Add(item_separator4);
 
-            item_add.Visible = false;
-            item_delete.Visible = false;
-            item_update.Visible = false;
-            item_save.Visible = false;
-            item_separator1.Visible = false;
-            item_copy.Visible = false;
-            item_separator2.Visible = false;
-            item_report.Visible = false;
-            item_csv.Visible = false;
-            item_separator3.Visible = false;
-            item_goback.Visible = false;
-            item_ok.Visible = false;
-            item_exit.Visible = false;
-            item_separator4.Visible = false;
-            item_help.Visible = false;
+            //item_add.Visible = false;
+            //item_delete.Visible = false;
+            //item_update.Visible = false;
+            //item_save.Visible = false;
+            //item_separator1.Visible = false;
+            //item_copy.Visible = false;
+            //item_separator2.Visible = false;
+            //item_report.Visible = false;
+            //item_csv.Visible = false;
+            //item_separator3.Visible = false;
+            //item_goback.Visible = false;
+            //item_ok.Visible = false;
+            //item_exit.Visible = false;
+            //item_separator4.Visible = false;
+            //item_help.Visible = false;
 
 
 
