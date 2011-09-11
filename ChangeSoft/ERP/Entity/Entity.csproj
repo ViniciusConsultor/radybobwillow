@@ -135,6 +135,7 @@
     <Compile Include="Model\MRoleUser.cs" />
     <Compile Include="Model\TClsDetailMs.cs" />
     <Compile Include="Model\TClsMs.cs" />
+    <Compile Include="Model\TCompanyConditionMs.cs" />
     <Compile Include="Model\TDescMs.cs" />
     <Compile Include="Model\Test2.cs" />
     <Compile Include="Model\MFunctionId.cs" />
@@ -147,6 +148,10 @@
     <Compile Include="Model\MRoleUserId.cs" />
     <Compile Include="Model\CCatalogFunctionNoAR.cs" />
     <Compile Include="Model\CClsDetailNoAR.cs" />
+    <Compile Include="Model\TFactoryMs.cs" />
+    <Compile Include="Model\TPersonMs.cs" />
+    <Compile Include="Model\TTermMs.cs" />
+    <Compile Include="Model\TPersonMsId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
