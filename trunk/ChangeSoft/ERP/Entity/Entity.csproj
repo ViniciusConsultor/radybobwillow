@@ -112,6 +112,7 @@
     <Compile Include="Dao\ICCatalogFunctionNoARDao.cs" />
     <Compile Include="Dao\ICClsDetailBelongToClsMsDao.cs" />
     <Compile Include="Dao\ICCatalogHasManyFunctionDao.cs" />
+    <Compile Include="Dao\ICClsDetailNoARDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\IMLoginUserDao.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Dao\TDescMsDaoOracleImp.cs" />
     <Compile Include="Dao\CClsDetailBelongToClsMsDaoOracleImp.cs" />
     <Compile Include="Dao\MLoginUserDaoOracleImp.cs" />
+    <Compile Include="Dao\CClsDetailNoARDaoOracleImp.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
     <Compile Include="Model\MFunctioncatalogId.cs" />
@@ -144,6 +146,7 @@
     <Compile Include="Model\MRoleFunctionId.cs" />
     <Compile Include="Model\MRoleUserId.cs" />
     <Compile Include="Model\CCatalogFunctionNoAR.cs" />
+    <Compile Include="Model\CClsDetailNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

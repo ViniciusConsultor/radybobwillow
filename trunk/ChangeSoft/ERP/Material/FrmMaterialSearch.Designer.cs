@@ -38,12 +38,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtFactoryCd = new System.Windows.Forms.TextBox();
+            this.lblFactoryNm = new System.Windows.Forms.Label();
+            this.btnFactoryHelper = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCustomerCd = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -172,9 +172,9 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label2, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button1, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtFactoryCd, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblFactoryNm, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnFactoryHelper, 2, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // label1
@@ -182,28 +182,28 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // textBox1
+            // txtFactoryCd
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtFactoryCd, "txtFactoryCd");
+            this.txtFactoryCd.Name = "txtFactoryCd";
             // 
-            // label2
+            // lblFactoryNm
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
+            this.lblFactoryNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFactoryNm.Name = "lblFactoryNm";
             // 
-            // button1
+            // btnFactoryHelper
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnFactoryHelper, "btnFactoryHelper");
+            this.btnFactoryHelper.Name = "btnFactoryHelper";
+            this.btnFactoryHelper.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel5
             // 
             resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txtCustomerCd, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.button2, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.label4, 3, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -213,10 +213,10 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // textBox2
+            // txtCustomerCd
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.txtCustomerCd, "txtCustomerCd");
+            this.txtCustomerCd.Name = "txtCustomerCd";
             // 
             // button2
             // 
@@ -251,8 +251,9 @@
             // 
             // conditionDropDownList1
             // 
+            this.conditionDropDownList1.Autoaddblankitem = true;
             this.conditionDropDownList1.Conditionname = "Language";
-            this.conditionDropDownList1.Defaultselectedindex = 1;
+            this.conditionDropDownList1.Defaultselectedindex = 0;
             resources.ApplyResources(this.conditionDropDownList1, "conditionDropDownList1");
             this.conditionDropDownList1.Name = "conditionDropDownList1";
             this.conditionDropDownList1.Selectedindex = -1;
@@ -545,34 +546,34 @@
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
-            this.commonToolStrip1.AddVisible = true;
+            this.commonToolStrip1.AddVisible = false;
             resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
             this.commonToolStrip1.CopyEnabled = true;
-            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CopyVisible = false;
             this.commonToolStrip1.CsvEnabled = true;
-            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.CsvVisible = false;
             this.commonToolStrip1.DeleteEnabled = true;
-            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.DeleteVisible = false;
             this.commonToolStrip1.Displaytext = false;
             this.commonToolStrip1.ExitEnabled = true;
-            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.ExitVisible = false;
             this.commonToolStrip1.GobackEnabled = true;
-            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.GobackVisible = false;
             this.commonToolStrip1.HelpEnabled = true;
-            this.commonToolStrip1.HelpVisible = true;
-            this.commonToolStrip1.Line1Visible = true;
-            this.commonToolStrip1.Line2Visible = true;
-            this.commonToolStrip1.Line3Visible = true;
-            this.commonToolStrip1.Line4Visible = true;
+            this.commonToolStrip1.HelpVisible = false;
+            this.commonToolStrip1.Line1Visible = false;
+            this.commonToolStrip1.Line2Visible = false;
+            this.commonToolStrip1.Line3Visible = false;
+            this.commonToolStrip1.Line4Visible = false;
             this.commonToolStrip1.Name = "commonToolStrip1";
             this.commonToolStrip1.OkEnabled = true;
-            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.OkVisible = false;
             this.commonToolStrip1.ReportEnabled = true;
-            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.ReportVisible = false;
             this.commonToolStrip1.SaveEnabled = true;
-            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.SaveVisible = false;
             this.commonToolStrip1.UpdateEnabled = true;
-            this.commonToolStrip1.UpdateVisible = true;
+            this.commonToolStrip1.UpdateVisible = false;
             // 
             // FrmMaterialSearch
             // 
@@ -635,12 +636,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtFactoryCd;
+        private System.Windows.Forms.Label lblFactoryNm;
+        private System.Windows.Forms.Button btnFactoryHelper;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCustomerCd;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;

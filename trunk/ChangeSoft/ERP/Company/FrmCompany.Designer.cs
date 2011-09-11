@@ -36,6 +36,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.SuspendLayout();
             // 
             // button1
@@ -72,24 +73,33 @@
             this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             resources.ApplyResources(this.validationProvider1, "validationProvider1");
             // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "D9";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            // 
             // FrmCompany
             // 
-            this.AllowEndUserDocking = false;
             resources.ApplyResources(this, "$this");
             this.CloseButton = false;
             this.CloseButtonVisible = false;
             this.ControlBox = false;
+            this.Controls.Add(this.clsDetailCodeRefDropDownList1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
-            this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCompany";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +113,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button2;
         private Noogen.Validation.ValidationProvider validationProvider1;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
     }
 }

@@ -29,7 +29,7 @@ namespace Com.GainWinSoft.ERP.Material
             InitializeComponent();
             ToolStripManager.Renderer = new Office2007Renderer();
 
-            this.button1.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnFactoryHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button2.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 

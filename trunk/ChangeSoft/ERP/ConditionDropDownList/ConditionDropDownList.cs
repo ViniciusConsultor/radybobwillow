@@ -18,6 +18,9 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
 
         private int defaultselectedindex;
 
+        private bool autoaddblankitem;
+
+
         private string selectedvalue;
 
         private string selectedname;
@@ -51,7 +54,13 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
             if (IsDesignMode())
                 return;
             this.comboBox1.Items.Clear();
-
+            if (autoaddblankitem)
+            {
+                ConditionVo vo = new ConditionVo();
+                vo.ConditionValue = " ";
+                vo.ConditionName = " ";
+                this.comboBox1.Items.Add(vo);
+            }
             IList<ConditionVo> result = new List<ConditionVo>();
             result = (IList<ConditionVo>)ConditionUtils.Conditions[this.conditionname];
             foreach (ConditionVo vo in result)
@@ -95,6 +104,11 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
             set { selectedindex = value; }
         }
 
+        public bool Autoaddblankitem
+        {
+            get { return autoaddblankitem; }
+            set { autoaddblankitem = value; }
+        }
         public static bool IsDesignMode()
         {
 
