@@ -55,36 +55,41 @@ namespace Com.GainWinSoft.Common
 
         public void SetValue(string value)
         {
-            Control c = (Control)controllist[CODE_REF_VALUE_COLUMN];
-            if (c is Label)
+            if (controllist[CODE_REF_VALUE_COLUMN] != null)
             {
-                ((Label)c).Text = value;
+                Control c = (Control)controllist[CODE_REF_VALUE_COLUMN];
+                if (c is Label)
+                {
+                    ((Label)c).Text = value;
+                }
+                else if (c is TextBox)
+                {
+                    ((TextBox)c).Text = value;
+                }
+                else
+                {
+                    c.Text = value;
+                }
             }
-            else if (c is TextBox)
-            {
-                ((TextBox)c).Text = value;
-            }
-            else
-            {
-                c.Text = value;
-            }
-
         }
 
         public void SetName(string value)
         {
-            Control c = (Control)controllist[CODE_REF_NAME_COLUMN];
-            if (c is Label)
+            if (controllist[CODE_REF_NAME_COLUMN] != null)
             {
-                ((Label)c).Text = value;
-            }
-            else if (c is TextBox)
-            {
-                ((TextBox)c).Text = value;
-            }
-            else
-            {
-                c.Text = value;
+                Control c = (Control)controllist[CODE_REF_NAME_COLUMN];
+                if (c is Label)
+                {
+                    ((Label)c).Text = value;
+                }
+                else if (c is TextBox)
+                {
+                    ((TextBox)c).Text = value;
+                }
+                else
+                {
+                    c.Text = value;
+                }
             }
         }
 

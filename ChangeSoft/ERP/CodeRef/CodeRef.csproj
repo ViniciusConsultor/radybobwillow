@@ -103,6 +103,8 @@
     <Compile Include="Action\IAction_CodeRefTradeForMaterial.cs" />
     <Compile Include="Action\IAction_TestCode.cs" />
     <Compile Include="Action\Action_CodeRefTradeForMaterial.cs" />
+    <Compile Include="Action\IAction_CodeRefFactory.cs" />
+    <Compile Include="Action\Action_CodeRefFactory.cs" />
     <Compile Include="CodeRefClsDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +144,12 @@
     <EmbeddedResource Include="TestCode.resx">
       <DependentUpon>TestCode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefFactory.resx">
+      <DependentUpon>CodeRefFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefFactory.zh-CN.resx">
+      <DependentUpon>CodeRefFactory.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -155,6 +163,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="CodeRefFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeRefFactory.Designer.cs">
+      <DependentUpon>CodeRefFactory.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
