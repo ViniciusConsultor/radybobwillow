@@ -510,40 +510,40 @@
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblCustomer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblCustomer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblCustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblCustomer.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 3</value>
   </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblCustomer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblCustomer.Size" type="System.Drawing.Size, System.Drawing">
     <value>205, 20</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblCustomer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblCustomer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lblCustomer.Name" xml:space="preserve">
+    <value>lblCustomer</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblCustomer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblCustomer.Parent" xml:space="preserve">
     <value>tableLayoutPanel5</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblCustomer.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -577,7 +577,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtCustomerCd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,50,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtCustomerCd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblCustomer" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,50,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

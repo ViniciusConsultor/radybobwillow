@@ -351,9 +351,9 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtDLCd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtDLDesc" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnCancel" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="dataGridView1" Row="3" RowSpan="1" Column="0" ColumnSpan="4" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Percent,100,Absolute,10,Absolute,100" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,10,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -368,5 +368,26 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>Com.GainWinSoft.Common.BaseCodeForm, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ICompanyCd" xml:space="preserve">
+    <value>企业代码</value>
+  </data>
+  <data name="IDlArgDesc" xml:space="preserve">
+    <value>客户略称</value>
+  </data>
+  <data name="IDlCd" xml:space="preserve">
+    <value>客户代码</value>
+  </data>
+  <data name="IDlDesc" xml:space="preserve">
+    <value>客户全称</value>
+  </data>
+  <data name="IDlDescKana" xml:space="preserve">
+    <value>客户英文名称</value>
+  </data>
+  <data name="IDlType" xml:space="preserve">
+    <value>客户类型代码</value>
+  </data>
+  <data name="IDlTypeName" xml:space="preserve">
+    <value>客户类型</value>
   </data>
 </root>
