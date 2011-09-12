@@ -120,4 +120,25 @@
   <data name="$this.Text" xml:space="preserve">
     <value>客户查询</value>
   </data>
+  <data name="ICompanyCd" xml:space="preserve">
+    <value>企业代码</value>
+  </data>
+  <data name="IDlArgDesc" xml:space="preserve">
+    <value>客户略称</value>
+  </data>
+  <data name="IDlCd" xml:space="preserve">
+    <value>客户代码</value>
+  </data>
+  <data name="IDlDesc" xml:space="preserve">
+    <value>客户全称</value>
+  </data>
+  <data name="IDlDescKana" xml:space="preserve">
+    <value>客户英文名称</value>
+  </data>
+  <data name="IDlType" xml:space="preserve">
+    <value>客户类型代码</value>
+  </data>
+  <data name="IDlTypeName" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
 </root>

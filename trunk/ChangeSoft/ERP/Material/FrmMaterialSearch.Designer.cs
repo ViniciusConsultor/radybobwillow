@@ -45,7 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtCustomerCd = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCustomer = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -205,7 +205,7 @@
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txtCustomerCd, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.button2, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblCustomer, 3, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             // 
             // label3
@@ -225,11 +225,11 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
+            // lblCustomer
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblCustomer, "lblCustomer");
+            this.lblCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCustomer.Name = "lblCustomer";
             // 
             // tableLayoutPanel3
             // 
@@ -653,7 +653,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCustomerCd;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCustomer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label5;

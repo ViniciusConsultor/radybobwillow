@@ -27,7 +27,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
             IAction_CodeRefTradeForMaterial ac = ComponentLocator.Instance().Resolve<IAction_CodeRefTradeForMaterial>();
             DataSet ds = ac.GetTradeForMaterialDataSet(companyCd,this.txtDLCd.Text,this.txtDLDesc.Text);
             this.dataGridView1.DataSource = ds;
-            this.dataGridView1.DataMember = "CClsDetailNoAR";
+            this.dataGridView1.DataMember = "CCodeRefTradeForMaterial";
             SetColumnsAlias();
         }
 
@@ -53,7 +53,15 @@ namespace Com.GainWinSoft.ERP.CodeRef
             }
 
             this.dataGridView1.Columns["ICompanyCd"].Visible = false;
+            this.dataGridView1.Columns["IDlType"].Visible = false;
 
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.txtDLCd.Text = "";
+            this.txtDLDesc.Text = "";
         }
 
     }

@@ -12,10 +12,11 @@ using Com.GainWinSoft.Common.Control.PagerGridView;
 using System.Data.SqlClient;
 using Com.GainWinSoft.Common.Office2007Renderer;
 using System.Resources;
-using WeifenLuo.WinFormsUI.Docking; 
+using WeifenLuo.WinFormsUI.Docking;
 using Noogen.Validation;
 using log4net;
 using Com.GainWinSoft.ERP.CodeRef;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP.Material
 {
@@ -46,19 +47,19 @@ namespace Com.GainWinSoft.ERP.Material
             {
                 this.FrmMaterialSearch_pagerGridView1.SetColumnAlias(key, (string)rm.GetObject(key));
             }
-            
+
             //设置可视列
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
             ColumnInfoVo columnvo = new ColumnInfoVo();
-            columnvo.Columnname="Grid_functionid";
-            columnvo.Columnwidth=100;
+            columnvo.Columnname = "Grid_functionid";
+            columnvo.Columnwidth = 100;
             clist.Add(columnvo);
-            columnvo=new ColumnInfoVo();
-            columnvo.Columnname="Grid_functionname";
-            columnvo.Columnwidth=200;
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "Grid_functionname";
+            columnvo.Columnwidth = 200;
             clist.Add(columnvo);
 
-            this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name,null);
+            this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name, null);
             //this.tableLayoutPanel1.Enabled = false;
             //commonToolStrip1.AddEnabled = false;
             //commonToolStrip1.UpdateEnabled = false;
@@ -90,7 +91,7 @@ namespace Com.GainWinSoft.ERP.Material
 
 
 
-           
+
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -115,7 +116,7 @@ namespace Com.GainWinSoft.ERP.Material
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
             frmMaterialEdit.DockTitle = frmMaterialEdit.Text;
             frmMaterialEdit.ShowContent(false);
- 
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -137,7 +138,7 @@ namespace Com.GainWinSoft.ERP.Material
 
         private void commonToolStrip1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(sender.ToString() );
+            MessageBox.Show(sender.ToString());
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -159,8 +160,12 @@ namespace Com.GainWinSoft.ERP.Material
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-           // CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial();
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+
+            CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.txtCustomerCd);
+            cr.AddNameControl(this.lblCustomer);
+            cr.ShowDialog(this);
         }
     }
 }
