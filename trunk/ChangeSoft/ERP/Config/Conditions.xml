@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Settings>
+  
   <Condition>
     <Name>Language</Name>
     <Data>
@@ -17,4 +18,50 @@
       </List>
     </Data>
   </Condition>
+  
+  
+  <Condition>
+    <Name>ExchangeCurr</Name>
+    <Data>
+      <Language>zh-CN</Language>
+      <List>
+        <Item value="RMB/RMB">人民币</Item>
+        <Item value="RMB/USD">人民币/日币</Item>
+        <Item value="RMB/JPY">人民币/美元</Item>
+      </List>
+    </Data>
+
+    <Data>
+      <Language>en-US</Language>
+      <List>
+        <Item value="RMB/RMB">RMB/RMB</Item>
+        <Item value="RMB/USD">RMB/US</Item>
+        <Item value="RMB/JPY">RMB/JPY</Item>
+      </List>
+    </Data>
+  </Condition>
+
+
+  <Condition>
+    <Name>CalcMode</Name>
+    <Data>
+      <Language>zh-CN</Language>
+      <List>
+        <Item value="MUL">乘算</Item>
+        <Item value="DIV">除算</Item>
+      </List>
+    </Data>
+
+    <Data>
+      <Language>en-US</Language>
+      <List>
+        <Item value="MUL">Multiplication</Item>
+        <Item value="DIV">Division</Item>
+        
+      </List>
+    </Data>
+  </Condition>
+  
+  
+  
 </Settings>
