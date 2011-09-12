@@ -498,7 +498,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		
 		#region Public Properties
 			
-		[PrimaryKey(PrimaryKeyType.Identity ,"I_USER_ID", Length=10)]
+		[PrimaryKey(PrimaryKeyType.Assigned ,"I_USER_ID", Length=10)]
 		public virtual string IUserId
 		{
 			get { return iUserId; }

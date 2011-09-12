@@ -93,14 +93,74 @@ namespace Com.GainWinSoft.ERP.Action
 
         public TermVo GetTermInfo(string userid)
         {
-            TermVo termvo = new TermVo();
 
             ITTermMsDao dao = ComponentLocator.Instance().Resolve<ITTermMsDao>();
 
             TTermMs termms = dao.getTermbyUserId(userid);
+            if (termms == null)
+            {
+                return null;
+            }
+            else
+            {
+                TermVo termvo = new TermVo();
 
-            PropertiesCopier.CopyProperties(termms, termvo);
-            return termvo;
+                PropertiesCopier.CopyProperties(termms, termvo);
+                return termvo;
+            }
+        }
+        public FactoryVo GetFactoryByCd(string FacCd)
+        {
+            ITFactoryMsDao dao = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
+            TFactoryMs factoryms = dao.getFactoryByCd(FacCd);
+            if (factoryms == null)
+            {
+                throw new ApplicationException(MessageUtils.GetMessage("E0001"));
+            }
+            else
+            {
+                FactoryVo factoryvo = new FactoryVo();
+                PropertiesCopier.CopyProperties(factoryms, factoryvo);
+                return factoryvo;
+
+            }
+        }
+
+        public PersonVo GetPersonByUserId(string userId)
+        {
+            ITPersonMsDao dao = ComponentLocator.Instance().Resolve<ITPersonMsDao>();
+            TPersonMs personms = dao.getPersonByUserId(userId);
+            if (personms == null)
+            {
+                throw new ApplicationException(MessageUtils.GetMessage("E0001"));
+            }
+            else
+            {
+                PersonVo personvo = new PersonVo();
+                PropertiesCopier.CopyProperties(personms, personvo);
+                personvo.ICompanyCd = personms.Id.ICompanyCd;
+                personvo.IPersonCd = personms.Id.IPersonCd;
+
+                return personvo;
+
+            }
+        }
+
+        public CompanyConditionVo GetCompanyCondition(string companyCd)
+        {
+            ITCompanyConditionMsDao dao = ComponentLocator.Instance().Resolve<ITCompanyConditionMsDao>();
+            TCompanyConditionMs companyconditionms = dao.getCompanyCondition(companyCd);
+            if (companyconditionms == null)
+            {
+                throw new ApplicationException(MessageUtils.GetMessage("E0001"));
+            }
+            else
+            {
+                CompanyConditionVo companyconditonvo = new CompanyConditionVo();
+                PropertiesCopier.CopyProperties(companyconditionms, companyconditonvo);
+                return companyconditonvo;
+
+            }
         }
 
     }

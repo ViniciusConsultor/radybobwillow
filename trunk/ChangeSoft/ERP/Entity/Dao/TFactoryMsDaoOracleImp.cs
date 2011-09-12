@@ -10,22 +10,22 @@ using System.Data.Common;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    class TTermMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITTermMsDao
+    class TFactoryMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITFactoryMsDao
     {
-        public TTermMs getTermbyUserId(string userid)
+        public TFactoryMs getFactoryByCd(string facCd)
         {
-            TTermMs termms = null;
+            TFactoryMs factory = null;
 
-            ISession ss = holder.CreateSession(typeof(TTermMsDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(TFactoryMsDaoOracleImp));
 
             ITransaction tran = ss.BeginTransaction();
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                ScalarQuery<TTermMs> q = new ScalarQuery<TTermMs>(typeof(TTermMs), @"
-                                                from TTermMs where IUserId=:userId");
-                q.SetParameter("userId", userid);
-                termms = q.Execute();
+                ScalarQuery<TFactoryMs> q = new ScalarQuery<TFactoryMs>(typeof(TFactoryMs), @"
+                                                from TFactoryMs where IFacCd=:IFacCd");
+                q.SetParameter("IFacCd", facCd);
+                factory = q.Execute();
                 //FindByPrimaryKey找不到数据的时候是抛出ActiveRecordException，不太好处理
                 //termms = (TTermMs)FindByPrimaryKey(typeof(TTermMs), userid);
 
@@ -47,7 +47,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-            return termms;
+            return factory;
         }
     }
 }

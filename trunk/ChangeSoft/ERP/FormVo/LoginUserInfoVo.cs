@@ -116,6 +116,14 @@ namespace Com.GainWinSoft.ERP.FormVo
             get { return factory; }
             set { factory = value; }
         }
+        private TermVo term;
+
+        public TermVo Term
+        {
+            get { return term; }
+            set { term = value; }
+        }
+
 
  
 

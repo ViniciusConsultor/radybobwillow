@@ -149,7 +149,7 @@ namespace Com.GainWinSoft.ERP.Entity
 		
 		#region Public Properties
 			
-		[PrimaryKey(PrimaryKeyType.Identity ,"I_FAC_CD", Length=8)]
+		[PrimaryKey(PrimaryKeyType.Assigned ,"I_FAC_CD", Length=8)]
 		public virtual string IFacCd
 		{
 			get { return iFacCd; }

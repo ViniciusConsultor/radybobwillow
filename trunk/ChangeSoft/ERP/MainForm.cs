@@ -76,54 +76,86 @@ namespace Com.GainWinSoft.ERP
 
         private void MainForm_Load(object sender, EventArgs e)
         {
- 
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
-            ToolStripManager.Renderer = new Office2007Renderer();
-            
-            //get all condition
-            String d = LangUtils.GetDefaultLanguage();
-            ConditionUtils.GetAllConditionsList(d);
-            Thread.CurrentThread.CurrentUICulture = (System.Globalization.CultureInfo)new System.Globalization.CultureInfo(d);
-            rm = new System.Resources.ResourceManager(typeof(MainForm));
+            try
+            {
 
-            init_ToolStripComboBox();
-            
-            //castle windsor initial
-            ComponentLocator.Instance();
+                SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0001"));
+                ToolStripManager.Renderer = new Office2007Renderer();
 
+                //get all condition
+                String d = LangUtils.GetDefaultLanguage();
+                ConditionUtils.GetAllConditionsList(d);
+                Thread.CurrentThread.CurrentUICulture = (System.Globalization.CultureInfo)new System.Globalization.CultureInfo(d);
+                rm = new System.Resources.ResourceManager(typeof(MainForm));
 
-            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
-            IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
+                init_ToolStripComboBox();
 
-            //display status strip
-            this.toolStripStatusLabelTime.Text = rm.GetString("Status.Time") + DateTime.Now.GetDateTimeFormats('D')[3].ToString();
-
-            this.toolStripStatusLabelLoginUser.Text = rm.GetString("Status.LoginUser") + uservo.Username;
+                //castle windsor initial
+                ComponentLocator.Instance();
 
 
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0004"));
+                LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+                IAction_MainForm af = ComponentLocator.Instance().Resolve<IAction_MainForm>();
 
-            //IList<FunctionAllVo> flist = af.GetFunctionDataList();
-            //加载用户权限。
-            IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
+                //display status strip
+                this.toolStripStatusLabelTime.Text = rm.GetString("Status.Time") + DateTime.Now.GetDateTimeFormats('D')[3].ToString();
 
-            //加载工厂
-
-            TermVo termvo = af.GetTermInfo(uservo.Userid);
+                this.toolStripStatusLabelLoginUser.Text = rm.GetString("Status.LoginUser") + uservo.Username;
 
 
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
-            init_MenuStrip(flist);
-            init_MenuWindow(flist);
-            
-            //Thread.Sleep(1000);
-            //SplashScreen.UdpateStatusTextWithStatus("Success Message", TypeOfMessage.Success);
+                SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0004"));
 
-            SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0003"));
+                //IList<FunctionAllVo> flist = af.GetFunctionDataList();
+                //加载用户权限。
+                IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
-            this.Show();
-            SplashScreen.CloseSplashScreen();
-            this.Activate();
+                //加载工厂
+
+                TermVo termvo = af.GetTermInfo(uservo.Userid);
+                uservo.Term = termvo;
+                if (termvo == null)
+                {
+                    uservo.Factory = null;
+                }
+                else
+                {
+                    FactoryVo factory = af.GetFactoryByCd(termvo.IFacCd);
+                    uservo.Factory = factory;
+                }
+                //加载person
+                PersonVo person = af.GetPersonByUserId(uservo.Userid);
+                uservo.Person = person;
+
+                CompanyConditionVo companycondition = af.GetCompanyCondition(person.ICompanyCd);
+                uservo.CompanyCondition = companycondition;
+
+                this.toolStripStatusLabelCompany.Text = companycondition.ICompanyArgDesc;
+
+                //SessionUtils.RemoveSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+                //SessionUtils.SetSession(SessionUtils.COMMON_LOGIN_USER_INFO, uservo);
+
+
+
+                SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0002"));
+                init_MenuStrip(flist);
+                init_MenuWindow(flist);
+
+                //Thread.Sleep(1000);
+                //SplashScreen.UdpateStatusTextWithStatus("Success Message", TypeOfMessage.Success);
+
+                SplashScreen.UdpateStatusText(MessageUtils.GetMessage("I0003"));
+
+                this.Show();
+                SplashScreen.CloseSplashScreen();
+                this.Activate();
+            }
+            catch (ApplicationException ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                this.Dispose();
+            }
+
         }
 
         private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
