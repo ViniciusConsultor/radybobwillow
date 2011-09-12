@@ -10,22 +10,22 @@ using System.Data.Common;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    class TTermMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITTermMsDao
+    class TCompanyConditionMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITCompanyConditionMsDao
     {
-        public TTermMs getTermbyUserId(string userid)
+        public TCompanyConditionMs getCompanyCondition(string companyCd)
         {
-            TTermMs termms = null;
+            TCompanyConditionMs companyconditionms = null;
 
-            ISession ss = holder.CreateSession(typeof(TTermMsDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(TPersonMsDaoOracleImp));
 
             ITransaction tran = ss.BeginTransaction();
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                ScalarQuery<TTermMs> q = new ScalarQuery<TTermMs>(typeof(TTermMs), @"
-                                                from TTermMs where IUserId=:userId");
-                q.SetParameter("userId", userid);
-                termms = q.Execute();
+                ScalarQuery<TCompanyConditionMs> q = new ScalarQuery<TCompanyConditionMs>(typeof(TCompanyConditionMs), @"
+                                                from TCompanyConditionMs where ICompanyCd=:ICompanyCd");
+                q.SetParameter("ICompanyCd", companyCd);
+                companyconditionms = q.Execute();
                 //FindByPrimaryKey找不到数据的时候是抛出ActiveRecordException，不太好处理
                 //termms = (TTermMs)FindByPrimaryKey(typeof(TTermMs), userid);
 
@@ -47,7 +47,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-            return termms;
+            return companyconditionms;
         }
     }
 }

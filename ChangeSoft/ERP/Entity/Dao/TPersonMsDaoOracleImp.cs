@@ -4,28 +4,28 @@ using System.Linq;
 using System.Text;
 using Castle.ActiveRecord;
 using Com.GainWinSoft.Common;
+using System.Data.Common;
 using NHibernate;
 using Castle.ActiveRecord.Queries;
-using System.Data.Common;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    class TTermMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITTermMsDao
+    class TPersonMsDaoOracleImp:ActiveRecordBase,IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ITPersonMsDao
     {
-        public TTermMs getTermbyUserId(string userid)
+        public TPersonMs getPersonByUserId(string userId)
         {
-            TTermMs termms = null;
+            TPersonMs person = null;
 
-            ISession ss = holder.CreateSession(typeof(TTermMsDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(TPersonMsDaoOracleImp));
 
             ITransaction tran = ss.BeginTransaction();
             try
             {
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));
-                ScalarQuery<TTermMs> q = new ScalarQuery<TTermMs>(typeof(TTermMs), @"
-                                                from TTermMs where IUserId=:userId");
-                q.SetParameter("userId", userid);
-                termms = q.Execute();
+                ScalarQuery<TPersonMs> q = new ScalarQuery<TPersonMs>(typeof(TPersonMs), @"
+                                                from TPersonMs where IUserId=:IUserId");
+                q.SetParameter("IUserId", userId);
+                person = q.Execute();
                 //FindByPrimaryKey找不到数据的时候是抛出ActiveRecordException，不太好处理
                 //termms = (TTermMs)FindByPrimaryKey(typeof(TTermMs), userid);
 
@@ -47,7 +47,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-            return termms;
+            return person;
         }
     }
 }

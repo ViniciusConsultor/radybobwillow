@@ -10,5 +10,11 @@ namespace Com.GainWinSoft.ERP.Action
         IList<FunctionAllVo> GetCatalogFunctionByUserId(string userid);
 
         TermVo GetTermInfo(string userid);
+
+        FactoryVo GetFactoryByCd(string FacCd);
+
+        PersonVo GetPersonByUserId(string userId);
+
+        CompanyConditionVo GetCompanyCondition(string companyCd);
     }
 }

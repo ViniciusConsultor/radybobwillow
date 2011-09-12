@@ -116,10 +116,11 @@ namespace Com.GainWinSoft.ERP.FormVo
 		private string iOrtSmApCredit; 
 		private string iOrtSmInvA; 
 		private string iOrtSmInvB; 
-		private string iOrtSmSttCard; 
-		private DateTime iEntryDate; 
-		private DateTime iUpdDate; 
-		private string iUpdTimestamp; 
+		private string iOrtSmSttCard;
+
+        private string test;
+
+  
 		
 		#endregion
 
@@ -784,24 +785,11 @@ namespace Com.GainWinSoft.ERP.FormVo
 			get { return iOrtSmSttCard; }
 			set { iOrtSmSttCard = value; }
 		}
-
-		public virtual DateTime IEntryDate
-		{
-			get { return iEntryDate; }
-			set { iEntryDate = value; }
-		}
-
-		public virtual DateTime IUpdDate
-		{
-			get { return iUpdDate; }
-			set { iUpdDate = value; }
-		}
-
-		public virtual string IUpdTimestamp
-		{
-			get { return iUpdTimestamp; }
-			set { iUpdTimestamp = value; }
-		}
+        public string Test
+        {
+            get { return test; }
+            set { test = value; }
+        }
 
 
 		#endregion 
