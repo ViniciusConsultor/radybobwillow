@@ -22,6 +22,10 @@ namespace Com.GainWinSoft.Common
 
         public static void SetSession(string key, Object data)
         {
+            if (SessionContext.ContainsKey(key))
+            {
+                RemoveSession(key);
+            }
             SessionContext.Add(key, data);
         }
         public static void RemoveSession(string key)

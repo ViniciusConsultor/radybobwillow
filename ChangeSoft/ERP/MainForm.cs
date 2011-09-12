@@ -19,8 +19,8 @@ using Com.GainWinSoft.Common;
 using System.Collections;
 using Castle.Windsor;
 using Com.GainWinSoft.ERP.Action;
-using Com.GainWinSoft.ERP.FormVo;
 using log4net;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP
 {

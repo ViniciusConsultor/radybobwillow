@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Com.GainWinSoft.ERP.FormVo
+namespace Com.GainWinSoft.Common.Vo
 {
 	public class TermVo {
 

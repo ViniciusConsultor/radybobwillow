@@ -9,11 +9,11 @@ using Com.GainWinSoft.ERP.Company;
 using WeifenLuo.WinFormsUI.Docking;
 using Com.GainWinSoft.ERP.ProductPlan;
 using Com.GainWinSoft.Common;
-using Com.GainWinSoft.ERP.FormVo;
 using Guifreaks.NavigationBar;
 using Com.GainWinSoft.ERP.Material;
 using Com.GainWinSoft.ERP.Factory;
 using System.Resources;
+using Com.GainWinSoft.Common.Vo;
 
 
 namespace Com.GainWinSoft.ERP

@@ -63,6 +63,14 @@
     <Compile Include="ConditionUtils.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="DataTableUtils.cs" />
+    <Compile Include="Vo\CompanyConditionVo.cs" />
+    <Compile Include="Vo\FactoryVo.cs" />
+    <Compile Include="Vo\FunctionAllVo.cs" />
+    <Compile Include="Vo\FunctionVo.cs" />
+    <Compile Include="Vo\LoginUserInfoVo.cs" />
+    <Compile Include="Vo\PersonVo.cs" />
+    <Compile Include="Vo\RoleUserVo.cs" />
+    <Compile Include="Vo\TermVo.cs" />
     <Compile Include="IBaseAction.cs" />
     <Compile Include="IBaseDao.cs" />
     <Compile Include="LangUtils.cs" />

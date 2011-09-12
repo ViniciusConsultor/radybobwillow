@@ -15,6 +15,7 @@ using System.Resources;
 using WeifenLuo.WinFormsUI.Docking; 
 using Noogen.Validation;
 using log4net;
+using Com.GainWinSoft.ERP.CodeRef;
 
 namespace Com.GainWinSoft.ERP.Material
 {
@@ -154,6 +155,12 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddValueControl(this.txtManufacturer);
             cr.AddNameControl(this.lblManufacturer);
             cr.ShowDialog(this);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+           // CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial();
         }
     }
 }

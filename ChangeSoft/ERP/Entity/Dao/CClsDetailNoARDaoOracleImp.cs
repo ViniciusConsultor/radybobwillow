@@ -24,21 +24,22 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             try
             {
 
-                IList<TClsMs> clsmslist = new List<TClsMs>();
+                //IList<TClsMs> clsmslist = new List<TClsMs>();
+                TClsMs clsms = null;
                 //get role by userid
-                SimpleQuery<TClsMs> queryclsms = new SimpleQuery<TClsMs>(typeof(TClsMs), @"
+                ScalarQuery<TClsMs> queryclsms = new ScalarQuery<TClsMs>(typeof(TClsMs), @"
                                                 from TClsMs where IClsCd=:clsCd");
                 queryclsms.SetParameter("clsCd", clsCd);
 
-                clsmslist = queryclsms.Execute();
+                clsms = queryclsms.Execute();
 
-                if (clsmslist.Count <= 0)
+                if (clsms==null)
                 {
                
                     throw new ApplicationException(MessageUtils.GetMessage("E0001"));
                 }
 
-                TClsMs clsms = clsmslist[0];
+                
 
                 StringBuilder sb = new StringBuilder();
                 //select f.catalogid,f.functionid,f.functionimage,f.functionindex,f.functionname,f.functionpath,f.langid,c.catalogimage,c.catalogname from (M_FUNCTION f inner join (select functionid from m_role_function 

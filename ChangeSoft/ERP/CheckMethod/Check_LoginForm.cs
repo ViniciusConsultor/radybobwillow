@@ -5,7 +5,7 @@ using System.Text;
 using Noogen.Validation;
 using Com.GainWinSoft.Common;
 using Com.GainWinSoft.ERP.Action;
-using Com.GainWinSoft.ERP.FormVo;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP
 {
@@ -15,6 +15,7 @@ namespace Com.GainWinSoft.ERP
         {
             ValidationRule ruleUserId = new ValidationRule();
             ruleUserId.IsRequired = true;
+            
             ruleUserId.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblUserId.Text);
             validationProvider1.SetValidationRule(this.txtUserId, ruleUserId);
 
