@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Com.GainWinSoft.ERP.FormVo
+namespace Com.GainWinSoft.Common.Vo
 {
     public class PersonVo
     {

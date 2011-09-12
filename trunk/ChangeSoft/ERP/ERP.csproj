@@ -129,14 +129,6 @@
     <Compile Include="CheckMethod\Check_LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVo\CompanyConditionVo.cs" />
-    <Compile Include="FormVo\FactoryVo.cs" />
-    <Compile Include="FormVo\FunctionAllVo.cs" />
-    <Compile Include="FormVo\FunctionVo.cs" />
-    <Compile Include="FormVo\LoginUserInfoVo.cs" />
-    <Compile Include="FormVo\PersonVo.cs" />
-    <Compile Include="FormVo\RoleUserVo.cs" />
-    <Compile Include="FormVo\TermVo.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -460,6 +452,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="FormVo\" />
     <Folder Include="temp\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

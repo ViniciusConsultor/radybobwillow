@@ -16,7 +16,6 @@ using Com.GainWinSoft.Common;
 using System.Threading;
 using Noogen.Validation;
 using Com.GainWinSoft.ERP.Action;
-using Com.GainWinSoft.ERP.FormVo;
 
 namespace Com.GainWinSoft.ERP
 {

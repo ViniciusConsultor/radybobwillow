@@ -8,7 +8,7 @@ using Com.GainWinSoft.ERP.Entity.Dao;
 using System.Collections;
 using Com.GainWinSoft.ERP.Entity;
 using System.Threading;
-using Com.GainWinSoft.ERP.FormVo;
+using Com.GainWinSoft.Common.Vo;
 
 
 namespace Com.GainWinSoft.ERP.Action

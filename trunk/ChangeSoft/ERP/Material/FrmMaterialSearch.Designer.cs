@@ -49,6 +49,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.txtItemType1 = new System.Windows.Forms.TextBox();
@@ -89,14 +90,13 @@
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
-            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -223,6 +223,7 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -248,6 +249,18 @@
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "31";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
             // 
             // tableLayoutPanel7
             // 
@@ -491,6 +504,18 @@
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
             // 
+            // clsDetailCodeRefDropDownList2
+            // 
+            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList2.ClsCd = "D9";
+            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
+            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
+            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList2.Selectedname = null;
+            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
+            // 
             // tableLayoutPanel24
             // 
             resources.ApplyResources(this.tableLayoutPanel24, "tableLayoutPanel24");
@@ -518,18 +543,6 @@
             this.tableLayoutPanel0.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 2);
             this.tableLayoutPanel0.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tableLayoutPanel0.Name = "tableLayoutPanel0";
-            // 
-            // clsDetailCodeRefDropDownList1
-            // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = true;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "31";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
             // 
             // FrmMaterialSearch_pagerGridView1
             // 
@@ -571,18 +584,6 @@
             this.commonToolStrip1.SaveVisible = false;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = false;
-            // 
-            // clsDetailCodeRefDropDownList2
-            // 
-            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = true;
-            this.clsDetailCodeRefDropDownList2.ClsCd = "D9";
-            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
-            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
-            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList2.Selectedname = null;
-            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
             // 
             // FrmMaterialSearch
             // 
