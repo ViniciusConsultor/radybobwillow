@@ -136,6 +136,8 @@
     <Compile Include="Dao\TFactoryMsDaoOracleImp.cs" />
     <Compile Include="Dao\TPersonMsDaoOracleImp.cs" />
     <Compile Include="Dao\TTermMsDaoOracleImp.cs" />
+    <Compile Include="Dao\ICTableDropDownListNoARDao.cs" />
+    <Compile Include="Dao\CTableDropDownListNoARDaoOracleImp.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Model\TPersonMsId.cs" />
     <Compile Include="Model\TTradeMs.cs" />
     <Compile Include="Model\TTradeMsId.cs" />
+    <Compile Include="Model\CTableDropDownListNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

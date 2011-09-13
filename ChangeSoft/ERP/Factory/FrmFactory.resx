@@ -3589,7 +3589,7 @@
     <value>cbbCountry</value>
   </data>
   <data name="&gt;&gt;cbbCountry.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList, TableDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cbbCountry.Parent" xml:space="preserve">
     <value>tpG2</value>
