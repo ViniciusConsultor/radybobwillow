@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonToolStrip", "ERP\Comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClsDetailCodeRefDropDownList", "ERP\ClsDetailCodeRefDropDownList\ClsDetailCodeRefDropDownList.csproj", "{A938F717-9792-4145-B686-EA261DC24EC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDropDownList", "ERP\TableDropDownList\TableDropDownList.csproj", "{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -104,6 +106,10 @@ Global
 		{A938F717-9792-4145-B686-EA261DC24EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A938F717-9792-4145-B686-EA261DC24EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A938F717-9792-4145-B686-EA261DC24EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -102,10 +102,10 @@
             this.lblDepart = new System.Windows.Forms.Label();
             this.txtBase = new System.Windows.Forms.TextBox();
             this.lblBase = new System.Windows.Forms.Label();
-            this.cbbTimezone = new System.Windows.Forms.ComboBox();
+            this.cbbTimezone = new TableDropDownList.TableDropDownList();
             this.lblStar10 = new System.Windows.Forms.Label();
             this.lblTimezone = new System.Windows.Forms.Label();
-            this.cbbLanguage = new System.Windows.Forms.ComboBox();
+            this.cbbLanguage = new TableDropDownList.TableDropDownList();
             this.lblStar9 = new System.Windows.Forms.Label();
             this.lblLanguage = new System.Windows.Forms.Label();
             this.txtFax = new System.Windows.Forms.TextBox();
@@ -133,7 +133,7 @@
             this.txtAbbreviation = new System.Windows.Forms.TextBox();
             this.lblStar3 = new System.Windows.Forms.Label();
             this.lblAbbreviation = new System.Windows.Forms.Label();
-            this.cbbCountry = new System.Windows.Forms.ComboBox();
+            this.cbbCountry = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tpBase.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tpG1.SuspendLayout();
@@ -354,7 +354,7 @@
             // 
             // cbbChange
             // 
-            this.cbbChange.Autoaddblankitem = true;
+            this.cbbChange.Autoaddblankitem = false;
             this.cbbChange.ClsCd = "4C";
             this.cbbChange.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbChange, "cbbChange");
@@ -400,7 +400,7 @@
             // 
             // cbbDecide
             // 
-            this.cbbDecide.Autoaddblankitem = true;
+            this.cbbDecide.Autoaddblankitem = false;
             this.cbbDecide.ClsCd = "9I";
             this.cbbDecide.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbDecide, "cbbDecide");
@@ -446,7 +446,7 @@
             // 
             // cbbCost
             // 
-            this.cbbCost.Autoaddblankitem = true;
+            this.cbbCost.Autoaddblankitem = false;
             this.cbbCost.ClsCd = "BU";
             this.cbbCost.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbCost, "cbbCost");
@@ -492,7 +492,7 @@
             // 
             // cbbPlan
             // 
-            this.cbbPlan.Autoaddblankitem = true;
+            this.cbbPlan.Autoaddblankitem = false;
             this.cbbPlan.ClsCd = "BS";
             this.cbbPlan.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbPlan, "cbbPlan");
@@ -538,7 +538,7 @@
             // 
             // cbbRate
             // 
-            this.cbbRate.Autoaddblankitem = true;
+            this.cbbRate.Autoaddblankitem = false;
             this.cbbRate.ClsCd = "9A";
             this.cbbRate.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbRate, "cbbRate");
@@ -584,7 +584,7 @@
             // 
             // cbbSafe
             // 
-            this.cbbSafe.Autoaddblankitem = true;
+            this.cbbSafe.Autoaddblankitem = false;
             this.cbbSafe.ClsCd = "4D";
             this.cbbSafe.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbSafe, "cbbSafe");
@@ -711,10 +711,19 @@
             // 
             // cbbTimezone
             // 
+            this.cbbTimezone.Autoaddblankitem = false;
+            this.cbbTimezone.Defaultselectedindex = 0;
             this.tpG2.SetColumnSpan(this.cbbTimezone, 3);
             resources.ApplyResources(this.cbbTimezone, "cbbTimezone");
-            this.cbbTimezone.FormattingEnabled = true;
             this.cbbTimezone.Name = "cbbTimezone";
+            this.cbbTimezone.LanguageFlg = false;
+            this.cbbTimezone.Name = "cbbCountry";
+            this.cbbTimezone.NameColumn = "I_TIMEZONE_DESC";
+            this.cbbTimezone.SelectedIndex = -1;
+            this.cbbTimezone.Selectedname = null;
+            this.cbbTimezone.Selectedvalue = null;
+            this.cbbTimezone.TableNm = "T_TIMEZONE_MS";
+            this.cbbTimezone.ValueColumn = "I_TIMEZONE_CD";
             // 
             // lblStar10
             // 
@@ -729,9 +738,18 @@
             // 
             // cbbLanguage
             // 
+            this.cbbLanguage.Autoaddblankitem = false;
+            this.cbbLanguage.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbLanguage, "cbbLanguage");
-            this.cbbLanguage.FormattingEnabled = true;
             this.cbbLanguage.Name = "cbbLanguage";
+            this.cbbLanguage.LanguageFlg = false;
+            this.cbbLanguage.Name = "cbbCountry";
+            this.cbbLanguage.NameColumn = "I_LANGUAGE_DESC";
+            this.cbbLanguage.SelectedIndex = -1;
+            this.cbbLanguage.Selectedname = null;
+            this.cbbLanguage.Selectedvalue = null;
+            this.cbbLanguage.TableNm = "T_LANGUAGE_MS";
+            this.cbbLanguage.ValueColumn = "I_LANGUAGE_CD";
             // 
             // lblStar9
             // 
@@ -884,10 +902,19 @@
             // 
             // cbbCountry
             // 
+            this.cbbCountry.Autoaddblankitem = false;
             this.tpG2.SetColumnSpan(this.cbbCountry, 3);
+            this.cbbCountry.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbCountry, "cbbCountry");
-            this.cbbCountry.FormattingEnabled = true;
+            this.cbbCountry.LanguageColumn = null;
+            this.cbbCountry.LanguageFlg = false;
             this.cbbCountry.Name = "cbbCountry";
+            this.cbbCountry.NameColumn = "I_COUNTRY_DESC";
+            this.cbbCountry.SelectedIndex = -1;
+            this.cbbCountry.Selectedname = null;
+            this.cbbCountry.Selectedvalue = null;
+            this.cbbCountry.TableNm = "T_COUNTRY_MS";
+            this.cbbCountry.ValueColumn = "I_COUNTRY_CD";
             // 
             // FrmFactory
             // 
@@ -936,7 +963,7 @@
         private System.Windows.Forms.Label lblStar6;
         private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.TextBox txtZipCD;
-        private System.Windows.Forms.ComboBox cbbCountry;
+        private TableDropDownList.TableDropDownList cbbCountry;
         private System.Windows.Forms.Label lblStar7;
         private System.Windows.Forms.Label lblAddress1;
         private System.Windows.Forms.TextBox txtAddress1;
@@ -951,10 +978,10 @@
         private System.Windows.Forms.Label lblFax;
         private System.Windows.Forms.Label lblStar9;
         private System.Windows.Forms.Label lblLanguage;
-        private System.Windows.Forms.ComboBox cbbLanguage;
+        private TableDropDownList.TableDropDownList cbbLanguage;
         private System.Windows.Forms.Label lblTimezone;
         private System.Windows.Forms.Label lblStar10;
-        private System.Windows.Forms.ComboBox cbbTimezone;
+        private TableDropDownList.TableDropDownList cbbTimezone;
         private System.Windows.Forms.Label lblBase;
         private System.Windows.Forms.TextBox txtBase;
         private System.Windows.Forms.Label lblDepart;
