@@ -150,6 +150,12 @@
     <EmbeddedResource Include="CodeRefFactory.zh-CN.resx">
       <DependentUpon>CodeRefFactory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefWarehouse.resx">
+      <DependentUpon>CodeRefWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefWarehouse.zh-CN.resx">
+      <DependentUpon>CodeRefWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -169,6 +175,12 @@
     </Compile>
     <Compile Include="CodeRefFactory.Designer.cs">
       <DependentUpon>CodeRefFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeRefWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeRefWarehouse.Designer.cs">
+      <DependentUpon>CodeRefWarehouse.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
