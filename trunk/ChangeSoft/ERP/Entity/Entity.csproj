@@ -168,6 +168,9 @@
     <Compile Include="Model\TTradeMs.cs" />
     <Compile Include="Model\TTradeMsId.cs" />
     <Compile Include="Model\CTableDropDownListNoAR.cs" />
+    <Compile Include="Model\TWarehouseMs.cs" />
+    <Compile Include="Model\TWhPrcsMs.cs" />
+    <Compile Include="Model\TWhPrcsMsId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
