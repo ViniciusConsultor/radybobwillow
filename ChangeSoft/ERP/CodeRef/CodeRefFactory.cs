@@ -20,13 +20,18 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             this.companyCd = companyCd;
             InitializeComponent();
-            this.btnSearch.PerformClick();
+            this.doSearch();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            this.doSearch();
+        }
+
+        private void doSearch()
+        {
             IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
-            DataSet ds = ac.GetFactoryDataSet(companyCd,this.txtFacCd.Text,this.txtFacDesc.Text);
+            DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtFacCd.Text, this.txtFacDesc.Text);
             this.dataGridView1.DataSource = ds;
             this.dataGridView1.DataMember = "CCodeRefFactory";
             SetColumnsAlias();

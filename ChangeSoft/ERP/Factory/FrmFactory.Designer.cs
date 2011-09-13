@@ -102,10 +102,10 @@
             this.lblDepart = new System.Windows.Forms.Label();
             this.txtBase = new System.Windows.Forms.TextBox();
             this.lblBase = new System.Windows.Forms.Label();
-            this.cbbTimezone = new TableDropDownList.TableDropDownList();
+            this.cbbTimezone = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.lblStar10 = new System.Windows.Forms.Label();
             this.lblTimezone = new System.Windows.Forms.Label();
-            this.cbbLanguage = new TableDropDownList.TableDropDownList();
+            this.cbbLanguage = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.lblStar9 = new System.Windows.Forms.Label();
             this.lblLanguage = new System.Windows.Forms.Label();
             this.txtFax = new System.Windows.Forms.TextBox();
@@ -712,12 +712,12 @@
             // cbbTimezone
             // 
             this.cbbTimezone.Autoaddblankitem = false;
-            this.cbbTimezone.Defaultselectedindex = 0;
             this.tpG2.SetColumnSpan(this.cbbTimezone, 3);
+            this.cbbTimezone.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbTimezone, "cbbTimezone");
-            this.cbbTimezone.Name = "cbbTimezone";
+            this.cbbTimezone.LanguageColumn = null;
             this.cbbTimezone.LanguageFlg = false;
-            this.cbbTimezone.Name = "cbbCountry";
+            this.cbbTimezone.Name = "cbbTimezone";
             this.cbbTimezone.NameColumn = "I_TIMEZONE_DESC";
             this.cbbTimezone.SelectedIndex = -1;
             this.cbbTimezone.Selectedname = null;
@@ -741,9 +741,9 @@
             this.cbbLanguage.Autoaddblankitem = false;
             this.cbbLanguage.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbLanguage, "cbbLanguage");
-            this.cbbLanguage.Name = "cbbLanguage";
+            this.cbbLanguage.LanguageColumn = null;
             this.cbbLanguage.LanguageFlg = false;
-            this.cbbLanguage.Name = "cbbCountry";
+            this.cbbLanguage.Name = "cbbLanguage";
             this.cbbLanguage.NameColumn = "I_LANGUAGE_DESC";
             this.cbbLanguage.SelectedIndex = -1;
             this.cbbLanguage.Selectedname = null;
