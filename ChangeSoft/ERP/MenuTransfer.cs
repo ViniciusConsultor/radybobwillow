@@ -8,6 +8,7 @@ using Com.GainWinSoft.ERP.ProductPlan;
 using Com.GainWinSoft.ERP.Material;
 using System.Windows.Forms;
 using Com.GainWinSoft.ERP.Factory;
+using Com.GainWinSoft.ERP.ExchangeRate;
 
 namespace Com.GainWinSoft.ERP
 {
