@@ -105,6 +105,8 @@
     <Compile Include="Action\Action_CodeRefTradeForMaterial.cs" />
     <Compile Include="Action\IAction_CodeRefFactory.cs" />
     <Compile Include="Action\Action_CodeRefFactory.cs" />
+    <Compile Include="Action\Action_CodeRefWarehouse.cs" />
+    <Compile Include="Action\IAction_CodeRefWarehouse.cs" />
     <Compile Include="CodeRefClsDetail.cs">
       <SubType>Form</SubType>
     </Compile>

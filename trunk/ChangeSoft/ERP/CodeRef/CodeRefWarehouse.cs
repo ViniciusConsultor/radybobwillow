@@ -13,14 +13,15 @@ namespace Com.GainWinSoft.ERP.CodeRef
 {
     public partial class CodeRefWarehouse : Com.GainWinSoft.Common.BaseCodeForm
     {
-        private string[] columnlist = { "IFacCd", "ICountryCd", "IFacArgDesc", "IFacDesc", "IFacDescKana", "IAddress1", "IAddress2", "IAddress3" };
-        private string companyCd;
+        private string[] columnlist = { "IWhPrcsCd", "ICountryCd", "IWhPrcsArgDesc", "IWhPrcsDesc", "IWhPrcsDescKana", "IAddress1", "IAddress2", "IAddress3" };
+        private string facCd;
+        private string strWhere;
 
-        public CodeRefWarehouse(string companyCd)
+        public CodeRefWarehouse(string facCd, string strWhere)
         {
-            this.companyCd = companyCd;
+            this.facCd = facCd;
+            this.strWhere = strWhere;
             InitializeComponent();
-            this.doSearch();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -30,10 +31,10 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
         private void doSearch()
         {
-            IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
-            DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtWHCd.Text, this.txtWHDesc.Text);
+            IAction_CodeRefWarehouse ac = ComponentLocator.Instance().Resolve<IAction_CodeRefWarehouse>();
+            DataSet ds = ac.GetWarehouseDataSet(this.facCd, this.strWhere, this.txtWHCd.Text, this.txtWHDesc.Text);
             this.dataGridView1.DataSource = ds;
-            this.dataGridView1.DataMember = "CCodeRefFactory";
+            this.dataGridView1.DataMember = "CCodeRefWarehouse";
             SetColumnsAlias();
         }
 
@@ -41,8 +42,8 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             DataGridViewRow dgvr = this.dataGridView1.CurrentRow;
 
-            this.SetValue(dgvr.Cells["IFacCd"].Value.ToString());
-            this.SetName(dgvr.Cells["IFacDesc"].Value.ToString());
+            this.SetValue(dgvr.Cells["IWhPrcsCd"].Value.ToString());
+            this.SetName(dgvr.Cells["IWhPrcsArgDesc"].Value.ToString());
 
             this.SetFocus();
             this.Close();

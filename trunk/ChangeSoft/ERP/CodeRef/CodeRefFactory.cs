@@ -42,7 +42,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
             DataGridViewRow dgvr = this.dataGridView1.CurrentRow;
 
             this.SetValue(dgvr.Cells["IFacCd"].Value.ToString());
-            this.SetName(dgvr.Cells["IFacDesc"].Value.ToString());
+            this.SetName(dgvr.Cells["IFacArgDesc"].Value.ToString());
 
             this.SetFocus();
             this.Close();

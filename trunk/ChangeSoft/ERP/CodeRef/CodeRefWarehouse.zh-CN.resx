@@ -129,22 +129,19 @@
   <data name="IAddress3" xml:space="preserve">
     <value>住址3</value>
   </data>
-  <data name="ICompanyCd" xml:space="preserve">
-    <value>企业代码</value>
-  </data>
   <data name="ICountryCd" xml:space="preserve">
     <value>国家代码</value>
   </data>
-  <data name="IFacArgDesc" xml:space="preserve">
-    <value>工厂略称</value>
+  <data name="IWhPrcsArgDesc" xml:space="preserve">
+    <value>仓库略称</value>
   </data>
-  <data name="IFacCd" xml:space="preserve">
-    <value>工厂代码</value>
+  <data name="IWhPrcsCd" xml:space="preserve">
+    <value>仓库代码</value>
   </data>
-  <data name="IFacDesc" xml:space="preserve">
-    <value>工厂名称</value>
+  <data name="IWhPrcsDesc" xml:space="preserve">
+    <value>仓库名称</value>
   </data>
-  <data name="IFacDescKana" xml:space="preserve">
-    <value>工厂拼音</value>
+  <data name="IWhPrcsDescKana" xml:space="preserve">
+    <value>仓库拼音</value>
   </data>
 </root>
