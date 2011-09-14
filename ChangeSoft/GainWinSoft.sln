@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClsDetailCodeRefDropDownLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDropDownList", "ERP\TableDropDownList\TableDropDownList.csproj", "{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRate", "ERP\ExchangeRate\ExchangeRate.csproj", "{441653E1-394D-4721-91A5-4663B1EF9883}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -110,6 +112,10 @@ Global
 		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{441653E1-394D-4721-91A5-4663B1EF9883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441653E1-394D-4721-91A5-4663B1EF9883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441653E1-394D-4721-91A5-4663B1EF9883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441653E1-394D-4721-91A5-4663B1EF9883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
