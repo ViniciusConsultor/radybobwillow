@@ -24,14 +24,14 @@ namespace Com.GainWinSoft.ERP.Entity
 
         #region Public Properties
 
-        [Property(Column = "I_FAC_CD", Length = 8)]
+        [KeyProperty(Column = "I_FAC_CD", Length = 8)]
         public virtual string IFacCd
         {
             get { return iFacCd; }
             set { iFacCd = value; }
         }
 
-        [Property(Column = "I_WH_PRCS_CD", Length = 8)]
+        [KeyProperty(Column = "I_WH_PRCS_CD", Length = 8)]
         public virtual string IWhPrcsCd
         {
             get { return iWhPrcsCd; }
