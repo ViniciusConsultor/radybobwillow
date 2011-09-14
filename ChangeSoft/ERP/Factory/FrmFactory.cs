@@ -30,10 +30,17 @@ namespace Com.GainWinSoft.ERP.Factory
             : base(_parentdockpanel)
         {
             InitializeComponent();
-            this.Initialize();
         }
 
         #region 方法
+        /// <summary>
+        /// 画面加载初期化处理
+        /// </summary>
+        private void FrmFactory_Load(object sender, System.EventArgs e)
+        {
+            this.Initialize();
+        }
+
         /// <summary>
         /// 初期化处理
         /// </summary>

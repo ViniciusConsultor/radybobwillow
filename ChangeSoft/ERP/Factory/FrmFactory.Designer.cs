@@ -930,6 +930,7 @@
             this.tpG2.ResumeLayout(false);
             this.tpG2.PerformLayout();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmFactory_Load);
 
 		}
 

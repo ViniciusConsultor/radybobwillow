@@ -138,6 +138,8 @@
     <Compile Include="Dao\TTermMsDaoOracleImp.cs" />
     <Compile Include="Dao\ICTableDropDownListNoARDao.cs" />
     <Compile Include="Dao\CTableDropDownListNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\ITWhPrcsMsDao.cs" />
+    <Compile Include="Dao\TWhPrcsMsDaoOracleImp.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
@@ -171,6 +173,7 @@
     <Compile Include="Model\TWarehouseMs.cs" />
     <Compile Include="Model\TWhPrcsMs.cs" />
     <Compile Include="Model\TWhPrcsMsId.cs" />
+    <Compile Include="Model\TWhPrcsMsNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
