@@ -25,6 +25,25 @@ namespace Com.GainWinSoft.ERP
         }
         public void Parse()
         {
+
+            #region ***ExchangeRade 利率管理***
+            if ("FExchangeRate".Equals(path))
+            {
+                DockContent frm = this.FindDocument(title);
+                if (frm == null)
+                {
+                    FrmExchangeRate frmExchangeRate = new FrmExchangeRate(parentpanel);
+                    frmExchangeRate.DockTitle = title;
+                    frmExchangeRate.ShowContent(false);
+                }
+                else
+                {
+                    frm.Show(parentpanel);
+                    frm.BringToFront();
+                }
+            }
+            #endregion
+
             if ("FCompany".Equals(path))
             {
                 DockContent frm = this.FindDocument(title);

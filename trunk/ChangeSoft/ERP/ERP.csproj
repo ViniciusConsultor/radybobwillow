@@ -434,6 +434,10 @@
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="ExchangeRate\ExchangeRate.csproj">
+      <Project>{441653E1-394D-4721-91A5-4663B1EF9883}</Project>
+      <Name>ExchangeRate</Name>
+    </ProjectReference>
     <ProjectReference Include="Factory\Factory.csproj">
       <Project>{DAB91044-1151-43E4-9261-1ABA931BF13D}</Project>
       <Name>Factory</Name>
