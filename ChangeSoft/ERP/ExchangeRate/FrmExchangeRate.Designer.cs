@@ -41,10 +41,12 @@
             this.lblStar1 = new System.Windows.Forms.Label();
             this.lblCompany = new System.Windows.Forms.Label();
             this.lblRateKbn = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.clsCodeRefDropDownRate = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRate = new System.Windows.Forms.TextBox();
             this.txtValidDate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
@@ -57,17 +59,15 @@
             this.lblValidDate = new System.Windows.Forms.Label();
             this.lblCurrKbn1 = new System.Windows.Forms.Label();
             this.lblRateKbn1 = new System.Windows.Forms.Label();
-            this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
-            this.clsCodeRefDropDownRate = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.cndCurrKbn1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.TblPanelBase.SuspendLayout();
             this.TblPanelBar.SuspendLayout();
             this.TblPanelG1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tblPanelBtn.SuspendLayout();
+            this.tblPanelG3.SuspendLayout();
             this.SuspendLayout();
             // 
             // TblPanelBase
@@ -81,7 +81,7 @@
             resources.ApplyResources(this.TblPanelBar, "TblPanelBar");
             this.TblPanelBar.Controls.Add(this.commonToolStrip1, 0, 0);
             this.TblPanelBar.Controls.Add(this.TblPanelG1, 0, 1);
-            this.TblPanelBar.Controls.Add(this.tableLayoutPanel1, 0, 3);
+            this.TblPanelBar.Controls.Add(this.tblPanelG3, 0, 3);
             this.TblPanelBar.Controls.Add(this.pagerGridView1, 0, 2);
             this.TblPanelBar.Name = "TblPanelBar";
             // 
@@ -127,7 +127,7 @@
             this.TblPanelG1.Controls.Add(this.lblStar1, 1, 0);
             this.TblPanelG1.Controls.Add(this.lblCompany, 0, 0);
             this.TblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
-            this.TblPanelG1.Controls.Add(this.tableLayoutPanel2, 5, 3);
+            this.TblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
             this.TblPanelG1.Controls.Add(this.clsCodeRefDropDownRate, 2, 1);
             this.TblPanelG1.Controls.Add(this.cndCurrKbn, 2, 2);
             this.TblPanelG1.Name = "TblPanelG1";
@@ -170,12 +170,12 @@
             resources.ApplyResources(this.lblRateKbn, "lblRateKbn");
             this.lblRateKbn.Name = "lblRateKbn";
             // 
-            // tableLayoutPanel2
+            // tblPanelBtn
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.button6, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button5, 1, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(this.tblPanelBtn, "tblPanelBtn");
+            this.tblPanelBtn.Controls.Add(this.button6, 2, 0);
+            this.tblPanelBtn.Controls.Add(this.button5, 1, 0);
+            this.tblPanelBtn.Name = "tblPanelBtn";
             // 
             // button6
             // 
@@ -189,25 +189,50 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
+            // clsCodeRefDropDownRate
             // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.txtRate, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtValidDate, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblStar2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblStar3, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblStar5, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblStar4, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblStar6, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblRate, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblCalcMode, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblValidDate, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblCurrKbn1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblRateKbn1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cndCurrKbn1, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.DropDownRate1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cndCalcMode, 2, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.clsCodeRefDropDownRate.Autoaddblankitem = false;
+            this.clsCodeRefDropDownRate.ClsCd = "9A";
+            this.TblPanelG1.SetColumnSpan(this.clsCodeRefDropDownRate, 3);
+            this.clsCodeRefDropDownRate.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsCodeRefDropDownRate, "clsCodeRefDropDownRate");
+            this.clsCodeRefDropDownRate.Name = "clsCodeRefDropDownRate";
+            this.clsCodeRefDropDownRate.Selectedindex = -1;
+            this.clsCodeRefDropDownRate.Selectedname = null;
+            this.clsCodeRefDropDownRate.Selectedvalue = null;
+            this.clsCodeRefDropDownRate.ShowNameDesc = false;
+            // 
+            // cndCurrKbn
+            // 
+            this.cndCurrKbn.Autoaddblankitem = false;
+            this.TblPanelG1.SetColumnSpan(this.cndCurrKbn, 3);
+            this.cndCurrKbn.Conditionname = "ExchangeCurr";
+            this.cndCurrKbn.Defaultselectedindex = 0;
+            resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
+            this.cndCurrKbn.Name = "cndCurrKbn";
+            this.cndCurrKbn.Selectedindex = -1;
+            this.cndCurrKbn.Selectedname = null;
+            this.cndCurrKbn.Selectedvalue = null;
+            // 
+            // tblPanelG3
+            // 
+            resources.ApplyResources(this.tblPanelG3, "tblPanelG3");
+            this.tblPanelG3.Controls.Add(this.txtRate, 6, 3);
+            this.tblPanelG3.Controls.Add(this.txtValidDate, 2, 2);
+            this.tblPanelG3.Controls.Add(this.lblStar2, 1, 0);
+            this.tblPanelG3.Controls.Add(this.lblStar3, 1, 1);
+            this.tblPanelG3.Controls.Add(this.lblStar5, 1, 3);
+            this.tblPanelG3.Controls.Add(this.lblStar4, 1, 2);
+            this.tblPanelG3.Controls.Add(this.lblStar6, 5, 3);
+            this.tblPanelG3.Controls.Add(this.lblRate, 4, 3);
+            this.tblPanelG3.Controls.Add(this.lblCalcMode, 0, 3);
+            this.tblPanelG3.Controls.Add(this.lblValidDate, 0, 2);
+            this.tblPanelG3.Controls.Add(this.lblCurrKbn1, 0, 1);
+            this.tblPanelG3.Controls.Add(this.lblRateKbn1, 0, 0);
+            this.tblPanelG3.Controls.Add(this.cndCurrKbn1, 2, 1);
+            this.tblPanelG3.Controls.Add(this.DropDownRate1, 2, 0);
+            this.tblPanelG3.Controls.Add(this.cndCalcMode, 2, 3);
+            this.tblPanelG3.Name = "tblPanelG3";
             // 
             // txtRate
             // 
@@ -274,40 +299,6 @@
             resources.ApplyResources(this.lblRateKbn1, "lblRateKbn1");
             this.lblRateKbn1.Name = "lblRateKbn1";
             // 
-            // pagerGridView1
-            // 
-            this.pagerGridView1.Columninfolist = null;
-            this.pagerGridView1.DataMember = "";
-            this.pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
-            this.pagerGridView1.Name = "pagerGridView1";
-            this.pagerGridView1.Pagerhelper = null;
-            // 
-            // clsCodeRefDropDownRate
-            // 
-            this.clsCodeRefDropDownRate.Autoaddblankitem = false;
-            this.clsCodeRefDropDownRate.ClsCd = "9A";
-            this.TblPanelG1.SetColumnSpan(this.clsCodeRefDropDownRate, 3);
-            this.clsCodeRefDropDownRate.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsCodeRefDropDownRate, "clsCodeRefDropDownRate");
-            this.clsCodeRefDropDownRate.Name = "clsCodeRefDropDownRate";
-            this.clsCodeRefDropDownRate.Selectedindex = -1;
-            this.clsCodeRefDropDownRate.Selectedname = null;
-            this.clsCodeRefDropDownRate.Selectedvalue = null;
-            this.clsCodeRefDropDownRate.ShowNameDesc = false;
-            // 
-            // cndCurrKbn
-            // 
-            this.cndCurrKbn.Autoaddblankitem = false;
-            this.TblPanelG1.SetColumnSpan(this.cndCurrKbn, 3);
-            this.cndCurrKbn.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
-            this.cndCurrKbn.Name = "cndCurrKbn";
-            this.cndCurrKbn.Selectedindex = -1;
-            this.cndCurrKbn.Selectedname = null;
-            this.cndCurrKbn.Selectedvalue = null;
-            // 
             // cndCurrKbn1
             // 
             this.cndCurrKbn1.Autoaddblankitem = false;
@@ -342,6 +333,15 @@
             this.cndCalcMode.Selectedname = null;
             this.cndCalcMode.Selectedvalue = null;
             // 
+            // pagerGridView1
+            // 
+            this.pagerGridView1.Columninfolist = null;
+            this.pagerGridView1.DataMember = "";
+            this.pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
+            this.pagerGridView1.Name = "pagerGridView1";
+            this.pagerGridView1.Pagerhelper = null;
+            // 
             // FrmExchangeRate
             // 
             resources.ApplyResources(this, "$this");
@@ -353,9 +353,9 @@
             this.TblPanelBar.PerformLayout();
             this.TblPanelG1.ResumeLayout(false);
             this.TblPanelG1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tblPanelBtn.ResumeLayout(false);
+            this.tblPanelG3.ResumeLayout(false);
+            this.tblPanelG3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -373,7 +373,7 @@
         private System.Windows.Forms.Label lblCompanyNM;
         private System.Windows.Forms.Label lblRateKbn;
         private System.Windows.Forms.Label lblCurrKbn;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tblPanelG3;
         private System.Windows.Forms.Label lblCalcMode;
         private System.Windows.Forms.Label lblValidDate;
         private System.Windows.Forms.Label lblCurrKbn1;
@@ -386,7 +386,7 @@
         private System.Windows.Forms.Label lblStar5;
         private System.Windows.Forms.TextBox txtValidDate;
         private System.Windows.Forms.TextBox txtRate;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tblPanelBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
