@@ -48,45 +48,21 @@
             this.cbbChange = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar19 = new System.Windows.Forms.Label();
             this.lblChange = new System.Windows.Forms.Label();
-            this.lblInspectStockNM = new System.Windows.Forms.Label();
-            this.btnInspectStock = new System.Windows.Forms.Button();
-            this.txtInspectStock = new System.Windows.Forms.TextBox();
-            this.lblInspectStock = new System.Windows.Forms.Label();
             this.cbbDecide = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar18 = new System.Windows.Forms.Label();
             this.lblDecide = new System.Windows.Forms.Label();
-            this.lblSurplusStockNM = new System.Windows.Forms.Label();
-            this.btnSurplusStock = new System.Windows.Forms.Button();
-            this.txtSurplusStock = new System.Windows.Forms.TextBox();
-            this.lblSurplusStock = new System.Windows.Forms.Label();
             this.cbbCost = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar17 = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
-            this.lblServiceStockNM = new System.Windows.Forms.Label();
-            this.btnServiceStock = new System.Windows.Forms.Button();
-            this.txtServiceStock = new System.Windows.Forms.TextBox();
-            this.lblServiceStock = new System.Windows.Forms.Label();
             this.cbbPlan = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar16 = new System.Windows.Forms.Label();
             this.lblPlan = new System.Windows.Forms.Label();
-            this.lblDefectStockNM = new System.Windows.Forms.Label();
-            this.btnDefectStock = new System.Windows.Forms.Button();
-            this.txtDefectStock = new System.Windows.Forms.TextBox();
-            this.lblDefectStock = new System.Windows.Forms.Label();
             this.cbbRate = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar15 = new System.Windows.Forms.Label();
             this.lblRate = new System.Windows.Forms.Label();
-            this.lblAccStockOutNM = new System.Windows.Forms.Label();
-            this.btnAccStockOut = new System.Windows.Forms.Button();
-            this.txtAccStockOut = new System.Windows.Forms.TextBox();
-            this.lblAccStockOut = new System.Windows.Forms.Label();
             this.cbbSafe = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar14 = new System.Windows.Forms.Label();
             this.lblSafe = new System.Windows.Forms.Label();
-            this.lblAccStockInNM = new System.Windows.Forms.Label();
-            this.btnAccStockIn = new System.Windows.Forms.Button();
-            this.txtAccStockIn = new System.Windows.Forms.TextBox();
-            this.lblAccStockIn = new System.Windows.Forms.Label();
             this.txtStockPeriod = new System.Windows.Forms.TextBox();
             this.lblStar12 = new System.Windows.Forms.Label();
             this.lblStockPeriod = new System.Windows.Forms.Label();
@@ -264,54 +240,30 @@
             this.tpG2.Controls.Add(this.cbbChange, 2, 10);
             this.tpG2.Controls.Add(this.lblStar19, 1, 10);
             this.tpG2.Controls.Add(this.lblChange, 0, 10);
-            this.tpG2.Controls.Add(this.lblInspectStockNM, 7, 17);
-            this.tpG2.Controls.Add(this.btnInspectStock, 6, 17);
-            this.tpG2.Controls.Add(this.txtInspectStock, 5, 17);
-            this.tpG2.Controls.Add(this.lblInspectStock, 3, 17);
-            this.tpG2.Controls.Add(this.cbbDecide, 2, 17);
-            this.tpG2.Controls.Add(this.lblStar18, 1, 17);
-            this.tpG2.Controls.Add(this.lblDecide, 0, 17);
-            this.tpG2.Controls.Add(this.lblSurplusStockNM, 7, 16);
-            this.tpG2.Controls.Add(this.btnSurplusStock, 6, 16);
-            this.tpG2.Controls.Add(this.txtSurplusStock, 5, 16);
-            this.tpG2.Controls.Add(this.lblSurplusStock, 3, 16);
-            this.tpG2.Controls.Add(this.cbbCost, 2, 16);
-            this.tpG2.Controls.Add(this.lblStar17, 1, 16);
-            this.tpG2.Controls.Add(this.lblCost, 0, 16);
-            this.tpG2.Controls.Add(this.lblServiceStockNM, 7, 15);
-            this.tpG2.Controls.Add(this.btnServiceStock, 6, 15);
-            this.tpG2.Controls.Add(this.txtServiceStock, 5, 15);
-            this.tpG2.Controls.Add(this.lblServiceStock, 3, 15);
-            this.tpG2.Controls.Add(this.cbbPlan, 2, 15);
-            this.tpG2.Controls.Add(this.lblStar16, 1, 15);
-            this.tpG2.Controls.Add(this.lblPlan, 0, 15);
-            this.tpG2.Controls.Add(this.lblDefectStockNM, 7, 14);
-            this.tpG2.Controls.Add(this.btnDefectStock, 6, 14);
-            this.tpG2.Controls.Add(this.txtDefectStock, 5, 14);
-            this.tpG2.Controls.Add(this.lblDefectStock, 3, 14);
-            this.tpG2.Controls.Add(this.cbbRate, 2, 14);
-            this.tpG2.Controls.Add(this.lblStar15, 1, 14);
-            this.tpG2.Controls.Add(this.lblRate, 0, 14);
-            this.tpG2.Controls.Add(this.lblAccStockOutNM, 7, 13);
-            this.tpG2.Controls.Add(this.btnAccStockOut, 6, 13);
-            this.tpG2.Controls.Add(this.txtAccStockOut, 5, 13);
-            this.tpG2.Controls.Add(this.lblAccStockOut, 3, 13);
-            this.tpG2.Controls.Add(this.cbbSafe, 2, 13);
-            this.tpG2.Controls.Add(this.lblStar14, 1, 13);
-            this.tpG2.Controls.Add(this.lblSafe, 0, 13);
-            this.tpG2.Controls.Add(this.lblAccStockInNM, 7, 12);
-            this.tpG2.Controls.Add(this.btnAccStockIn, 6, 12);
-            this.tpG2.Controls.Add(this.txtAccStockIn, 5, 12);
-            this.tpG2.Controls.Add(this.lblAccStockIn, 3, 12);
-            this.tpG2.Controls.Add(this.txtStockPeriod, 5, 11);
-            this.tpG2.Controls.Add(this.lblStar12, 4, 11);
-            this.tpG2.Controls.Add(this.lblStockPeriod, 3, 11);
+            this.tpG2.Controls.Add(this.cbbDecide, 5, 15);
+            this.tpG2.Controls.Add(this.lblStar18, 4, 15);
+            this.tpG2.Controls.Add(this.lblDecide, 3, 15);
+            this.tpG2.Controls.Add(this.cbbCost, 5, 14);
+            this.tpG2.Controls.Add(this.lblStar17, 4, 14);
+            this.tpG2.Controls.Add(this.lblCost, 3, 14);
+            this.tpG2.Controls.Add(this.cbbPlan, 5, 13);
+            this.tpG2.Controls.Add(this.lblStar16, 4, 13);
+            this.tpG2.Controls.Add(this.lblPlan, 3, 13);
+            this.tpG2.Controls.Add(this.cbbRate, 5, 12);
+            this.tpG2.Controls.Add(this.lblStar15, 4, 12);
+            this.tpG2.Controls.Add(this.lblRate, 3, 12);
+            this.tpG2.Controls.Add(this.cbbSafe, 5, 11);
+            this.tpG2.Controls.Add(this.lblStar14, 4, 11);
+            this.tpG2.Controls.Add(this.lblSafe, 3, 11);
+            this.tpG2.Controls.Add(this.txtStockPeriod, 2, 12);
+            this.tpG2.Controls.Add(this.lblStar12, 1, 12);
+            this.tpG2.Controls.Add(this.lblStockPeriod, 0, 12);
             this.tpG2.Controls.Add(this.txtAutoPeriod, 2, 11);
             this.tpG2.Controls.Add(this.lblStar11, 1, 11);
             this.tpG2.Controls.Add(this.lblAutoPeriod, 0, 11);
-            this.tpG2.Controls.Add(this.txtArrange, 2, 12);
-            this.tpG2.Controls.Add(this.lblStar13, 1, 12);
-            this.tpG2.Controls.Add(this.lblArrange, 0, 12);
+            this.tpG2.Controls.Add(this.txtArrange, 2, 13);
+            this.tpG2.Controls.Add(this.lblStar13, 1, 13);
+            this.tpG2.Controls.Add(this.lblArrange, 0, 13);
             this.tpG2.Controls.Add(this.lblDepartNM, 7, 9);
             this.tpG2.Controls.Add(this.btnDepart, 6, 9);
             this.tpG2.Controls.Add(this.txtDepart, 5, 9);
@@ -375,33 +327,11 @@
             resources.ApplyResources(this.lblChange, "lblChange");
             this.lblChange.Name = "lblChange";
             // 
-            // lblInspectStockNM
-            // 
-            resources.ApplyResources(this.lblInspectStockNM, "lblInspectStockNM");
-            this.lblInspectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblInspectStockNM, 2);
-            this.lblInspectStockNM.Name = "lblInspectStockNM";
-            // 
-            // btnInspectStock
-            // 
-            resources.ApplyResources(this.btnInspectStock, "btnInspectStock");
-            this.btnInspectStock.Name = "btnInspectStock";
-            this.btnInspectStock.UseVisualStyleBackColor = true;
-            // 
-            // txtInspectStock
-            // 
-            resources.ApplyResources(this.txtInspectStock, "txtInspectStock");
-            this.txtInspectStock.Name = "txtInspectStock";
-            // 
-            // lblInspectStock
-            // 
-            resources.ApplyResources(this.lblInspectStock, "lblInspectStock");
-            this.lblInspectStock.Name = "lblInspectStock";
-            // 
             // cbbDecide
             // 
             this.cbbDecide.Autoaddblankitem = false;
             this.cbbDecide.ClsCd = "9I";
+            this.tpG2.SetColumnSpan(this.cbbDecide, 3);
             this.cbbDecide.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbDecide, "cbbDecide");
             this.cbbDecide.Name = "cbbDecide";
@@ -421,33 +351,11 @@
             resources.ApplyResources(this.lblDecide, "lblDecide");
             this.lblDecide.Name = "lblDecide";
             // 
-            // lblSurplusStockNM
-            // 
-            resources.ApplyResources(this.lblSurplusStockNM, "lblSurplusStockNM");
-            this.lblSurplusStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblSurplusStockNM, 2);
-            this.lblSurplusStockNM.Name = "lblSurplusStockNM";
-            // 
-            // btnSurplusStock
-            // 
-            resources.ApplyResources(this.btnSurplusStock, "btnSurplusStock");
-            this.btnSurplusStock.Name = "btnSurplusStock";
-            this.btnSurplusStock.UseVisualStyleBackColor = true;
-            // 
-            // txtSurplusStock
-            // 
-            resources.ApplyResources(this.txtSurplusStock, "txtSurplusStock");
-            this.txtSurplusStock.Name = "txtSurplusStock";
-            // 
-            // lblSurplusStock
-            // 
-            resources.ApplyResources(this.lblSurplusStock, "lblSurplusStock");
-            this.lblSurplusStock.Name = "lblSurplusStock";
-            // 
             // cbbCost
             // 
             this.cbbCost.Autoaddblankitem = false;
             this.cbbCost.ClsCd = "BU";
+            this.tpG2.SetColumnSpan(this.cbbCost, 3);
             this.cbbCost.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbCost, "cbbCost");
             this.cbbCost.Name = "cbbCost";
@@ -467,33 +375,11 @@
             resources.ApplyResources(this.lblCost, "lblCost");
             this.lblCost.Name = "lblCost";
             // 
-            // lblServiceStockNM
-            // 
-            resources.ApplyResources(this.lblServiceStockNM, "lblServiceStockNM");
-            this.lblServiceStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblServiceStockNM, 2);
-            this.lblServiceStockNM.Name = "lblServiceStockNM";
-            // 
-            // btnServiceStock
-            // 
-            resources.ApplyResources(this.btnServiceStock, "btnServiceStock");
-            this.btnServiceStock.Name = "btnServiceStock";
-            this.btnServiceStock.UseVisualStyleBackColor = true;
-            // 
-            // txtServiceStock
-            // 
-            resources.ApplyResources(this.txtServiceStock, "txtServiceStock");
-            this.txtServiceStock.Name = "txtServiceStock";
-            // 
-            // lblServiceStock
-            // 
-            resources.ApplyResources(this.lblServiceStock, "lblServiceStock");
-            this.lblServiceStock.Name = "lblServiceStock";
-            // 
             // cbbPlan
             // 
             this.cbbPlan.Autoaddblankitem = false;
             this.cbbPlan.ClsCd = "BS";
+            this.tpG2.SetColumnSpan(this.cbbPlan, 3);
             this.cbbPlan.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbPlan, "cbbPlan");
             this.cbbPlan.Name = "cbbPlan";
@@ -513,33 +399,11 @@
             resources.ApplyResources(this.lblPlan, "lblPlan");
             this.lblPlan.Name = "lblPlan";
             // 
-            // lblDefectStockNM
-            // 
-            resources.ApplyResources(this.lblDefectStockNM, "lblDefectStockNM");
-            this.lblDefectStockNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblDefectStockNM, 2);
-            this.lblDefectStockNM.Name = "lblDefectStockNM";
-            // 
-            // btnDefectStock
-            // 
-            resources.ApplyResources(this.btnDefectStock, "btnDefectStock");
-            this.btnDefectStock.Name = "btnDefectStock";
-            this.btnDefectStock.UseVisualStyleBackColor = true;
-            // 
-            // txtDefectStock
-            // 
-            resources.ApplyResources(this.txtDefectStock, "txtDefectStock");
-            this.txtDefectStock.Name = "txtDefectStock";
-            // 
-            // lblDefectStock
-            // 
-            resources.ApplyResources(this.lblDefectStock, "lblDefectStock");
-            this.lblDefectStock.Name = "lblDefectStock";
-            // 
             // cbbRate
             // 
             this.cbbRate.Autoaddblankitem = false;
             this.cbbRate.ClsCd = "9A";
+            this.tpG2.SetColumnSpan(this.cbbRate, 3);
             this.cbbRate.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbRate, "cbbRate");
             this.cbbRate.Name = "cbbRate";
@@ -559,33 +423,11 @@
             resources.ApplyResources(this.lblRate, "lblRate");
             this.lblRate.Name = "lblRate";
             // 
-            // lblAccStockOutNM
-            // 
-            resources.ApplyResources(this.lblAccStockOutNM, "lblAccStockOutNM");
-            this.lblAccStockOutNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblAccStockOutNM, 2);
-            this.lblAccStockOutNM.Name = "lblAccStockOutNM";
-            // 
-            // btnAccStockOut
-            // 
-            resources.ApplyResources(this.btnAccStockOut, "btnAccStockOut");
-            this.btnAccStockOut.Name = "btnAccStockOut";
-            this.btnAccStockOut.UseVisualStyleBackColor = true;
-            // 
-            // txtAccStockOut
-            // 
-            resources.ApplyResources(this.txtAccStockOut, "txtAccStockOut");
-            this.txtAccStockOut.Name = "txtAccStockOut";
-            // 
-            // lblAccStockOut
-            // 
-            resources.ApplyResources(this.lblAccStockOut, "lblAccStockOut");
-            this.lblAccStockOut.Name = "lblAccStockOut";
-            // 
             // cbbSafe
             // 
             this.cbbSafe.Autoaddblankitem = false;
             this.cbbSafe.ClsCd = "4D";
+            this.tpG2.SetColumnSpan(this.cbbSafe, 3);
             this.cbbSafe.Defaultselectedindex = 0;
             resources.ApplyResources(this.cbbSafe, "cbbSafe");
             this.cbbSafe.Name = "cbbSafe";
@@ -604,29 +446,6 @@
             // 
             resources.ApplyResources(this.lblSafe, "lblSafe");
             this.lblSafe.Name = "lblSafe";
-            // 
-            // lblAccStockInNM
-            // 
-            resources.ApplyResources(this.lblAccStockInNM, "lblAccStockInNM");
-            this.lblAccStockInNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tpG2.SetColumnSpan(this.lblAccStockInNM, 2);
-            this.lblAccStockInNM.Name = "lblAccStockInNM";
-            // 
-            // btnAccStockIn
-            // 
-            resources.ApplyResources(this.btnAccStockIn, "btnAccStockIn");
-            this.btnAccStockIn.Name = "btnAccStockIn";
-            this.btnAccStockIn.UseVisualStyleBackColor = true;
-            // 
-            // txtAccStockIn
-            // 
-            resources.ApplyResources(this.txtAccStockIn, "txtAccStockIn");
-            this.txtAccStockIn.Name = "txtAccStockIn";
-            // 
-            // lblAccStockIn
-            // 
-            resources.ApplyResources(this.lblAccStockIn, "lblAccStockIn");
-            this.lblAccStockIn.Name = "lblAccStockIn";
             // 
             // txtStockPeriod
             // 
@@ -922,6 +741,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tpBase);
             this.Name = "FrmFactory";
+            this.Load += new System.EventHandler(this.FrmFactory_Load);
             this.tpBase.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -930,7 +750,6 @@
             this.tpG2.ResumeLayout(false);
             this.tpG2.PerformLayout();
             this.ResumeLayout(false);
-            this.Load += new System.EventHandler(this.FrmFactory_Load);
 
 		}
 
@@ -998,45 +817,21 @@
         private System.Windows.Forms.Label lblStockPeriod;
         private System.Windows.Forms.TextBox txtAutoPeriod;
         private System.Windows.Forms.Label lblStar11;
-        private System.Windows.Forms.Label lblAccStockIn;
-        private System.Windows.Forms.Label lblAccStockInNM;
-        private System.Windows.Forms.Button btnAccStockIn;
-        private System.Windows.Forms.TextBox txtAccStockIn;
         private System.Windows.Forms.Label lblSafe;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbSafe;
         private System.Windows.Forms.Label lblStar14;
-        private System.Windows.Forms.Label lblAccStockOut;
-        private System.Windows.Forms.Label lblAccStockOutNM;
-        private System.Windows.Forms.Button btnAccStockOut;
-        private System.Windows.Forms.TextBox txtAccStockOut;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbRate;
         private System.Windows.Forms.Label lblStar15;
         private System.Windows.Forms.Label lblRate;
-        private System.Windows.Forms.Label lblDefectStock;
-        private System.Windows.Forms.TextBox txtDefectStock;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbPlan;
         private System.Windows.Forms.Label lblStar16;
         private System.Windows.Forms.Label lblPlan;
-        private System.Windows.Forms.Label lblDefectStockNM;
-        private System.Windows.Forms.Button btnDefectStock;
-        private System.Windows.Forms.Button btnServiceStock;
-        private System.Windows.Forms.TextBox txtServiceStock;
-        private System.Windows.Forms.Label lblServiceStock;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbCost;
         private System.Windows.Forms.Label lblStar17;
         private System.Windows.Forms.Label lblCost;
-        private System.Windows.Forms.Label lblServiceStockNM;
-        private System.Windows.Forms.Label lblSurplusStock;
-        private System.Windows.Forms.Label lblSurplusStockNM;
-        private System.Windows.Forms.Button btnSurplusStock;
-        private System.Windows.Forms.TextBox txtSurplusStock;
         private System.Windows.Forms.Label lblDecide;
-        private System.Windows.Forms.TextBox txtInspectStock;
-        private System.Windows.Forms.Label lblInspectStock;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbDecide;
         private System.Windows.Forms.Label lblStar18;
-        private System.Windows.Forms.Button btnInspectStock;
-        private System.Windows.Forms.Label lblInspectStockNM;
         private System.Windows.Forms.Label lblChange;
         private System.Windows.Forms.Label lblStar19;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbChange;
