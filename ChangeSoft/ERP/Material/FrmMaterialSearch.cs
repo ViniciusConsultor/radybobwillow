@@ -36,30 +36,44 @@ namespace Com.GainWinSoft.ERP.Material
             this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button3.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 
-            SearchCondition condition = new SearchCondition();
-            condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
-            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionPagerNoARDao", condition, 1, 5);
-            this.FrmMaterialSearch_pagerGridView1.LoadData();
-            log.Debug("Search Init");
-            //设置列名
-            foreach (string key in this.FrmMaterialSearch_pagerGridView1.Pagerhelper.Columns)
+            if (uservo.Factory != null)
             {
-                this.FrmMaterialSearch_pagerGridView1.SetColumnAlias(key, (string)rm.GetObject(key));
+                FactoryVo factoryvo = uservo.Factory;
+                this.txtFactoryCd.Text = factoryvo.IFacCd;
+                this.lblFactoryNm.Text = factoryvo.IFacDesc;
+                this.tlpFactory.Enabled = false;
+            }
+            else
+            {
+                this.tlpFactory.Enabled = true;
             }
 
-            //设置可视列
-            IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
-            ColumnInfoVo columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "Grid_functionid";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "Grid_functionname";
-            columnvo.Columnwidth = 200;
-            clist.Add(columnvo);
+//            SearchCondition condition = new SearchCondition();
+//            condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);
 
-            this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name, null);
+//            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionPagerNoARDao", condition, 1, 5);
+//            this.FrmMaterialSearch_pagerGridView1.LoadData();
+//            log.Debug("Search Init");
+//            //设置列名
+//            foreach (string key in this.FrmMaterialSearch_pagerGridView1.Pagerhelper.Columns)
+//            {
+//                this.FrmMaterialSearch_pagerGridView1.SetColumnAlias(key, (string)rm.GetObject(key));
+//            }
+
+            //设置可视列
+//            IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
+//            ColumnInfoVo columnvo = new ColumnInfoVo();
+//            columnvo.Columnname = "Grid_functionid";
+//            columnvo.Columnwidth = 100;
+//            clist.Add(columnvo);
+//            columnvo = new ColumnInfoVo();
+//            columnvo.Columnname = "Grid_functionname";
+//            columnvo.Columnwidth = 200;
+//            clist.Add(columnvo);
+//
+//            this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name, null);
             //this.tableLayoutPanel1.Enabled = false;
             //commonToolStrip1.AddEnabled = false;
             //commonToolStrip1.UpdateEnabled = false;
@@ -166,6 +180,13 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddValueControl(this.txtCustomerCd);
             cr.AddNameControl(this.lblCustomer);
             cr.ShowDialog(this);
+        }
+
+
+
+        private void commonToolStrip1_ExitClick(object sender, EventArgs e)
+        {
+            this.CloseContent();
         }
     }
 }

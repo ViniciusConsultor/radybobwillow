@@ -115,6 +115,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\Action_MaterialSearch.cs" />
+    <Compile Include="FormVo\CardVo.cs" />
     <Compile Include="FrmMaterialEdit.cs">
       <SubType>Form</SubType>
     </Compile>

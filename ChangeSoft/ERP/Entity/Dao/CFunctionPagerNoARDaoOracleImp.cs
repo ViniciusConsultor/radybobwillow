@@ -63,7 +63,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 sb.Append("b.FUNCTIONIMAGE grid_functionimage");
                 sb.Append(" from (select a.*, rownum as rowIndex from (");
                 sb.Append("select * from M_FUNCTION ");
-                sb.Append(condition.BuildParameterConditionSql());
+                sb.Append(condition.BuildParameterConditionSql(true));
                 sb.Append(" order by catalogid,functionid,functionindex ");
                 sb.Append(" ) a");
                 sb.Append(" ) b");
@@ -132,7 +132,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             try
             {
                 string query = @"select count(FUNCTIONID) as CNT from M_FUNCTION
-                                        "+condition.BuildParameterConditionSql();
+                                        "+condition.BuildParameterConditionSql(true);
                 ISQLQuery q= ss.CreateSQLQuery(query);
                 q.AddScalar("CNT", NHibernateUtil.Int32);
                 foreach (DictionaryEntry de in condition.ConditionTable)

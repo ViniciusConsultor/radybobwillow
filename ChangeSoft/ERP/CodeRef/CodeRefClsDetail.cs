@@ -51,7 +51,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
             {
                 col.HeaderText = rm.GetString(col.Name);
             }
-
+            this.dataGridView1.Columns["IClsCd"].Visible = false;
             this.dataGridView1.Columns["ILanguageCd"].Visible = false;
             this.dataGridView1.Columns["IInqItem"].Visible = false;
         }

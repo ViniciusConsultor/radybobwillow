@@ -24,7 +24,7 @@ using Castle.ActiveRecord.Queries;
 /// </summary>
 namespace Com.GainWinSoft.ERP.Entity
 {
-
+    [Serializable]
     public class CCatalogFunctionNoAR 
     {
 

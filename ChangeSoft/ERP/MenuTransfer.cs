@@ -26,6 +26,7 @@ namespace Com.GainWinSoft.ERP
         }
         public void Parse()
         {
+            Cursor = Cursors.WaitCursor;
 
             #region ***ExchangeRade 利率管理***
             if ("FExchangeRate".Equals(path))
@@ -90,21 +91,11 @@ namespace Com.GainWinSoft.ERP
                     frm.Show(parentpanel);
                     frm.BringToFront();
                 }
-                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                //if (frm == null)
-                //{
-                //    FrmProductPlan frmproductplan = new FrmProductPlan(baseform);
 
-                //    frmproductplan.Show(baseform.dockPanel, DockState.Document);
-                //    baseform.Show(this.dockpanel);
-                //}
-                //else
-                //{
-                //    frm.Show(this.dockpanel);
-                //    frm.BringToFront();
-                //}
 
             }
+
+            #region 物料管理
             if ("FMaterial".Equals(path))
             {
 
@@ -120,21 +111,11 @@ namespace Com.GainWinSoft.ERP
                     frm.Show(parentpanel);
                     frm.BringToFront();
                 }
-                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                //if (frm == null)
-                //{
-                //    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(baseform);
 
-                //    frmMaterialSearch.Show(baseform.dockPanel, DockState.Document);
-                //    baseform.Show(this.dockpanel);
-                //}
-                //else
-                //{
-                //    frm.Show(this.dockpanel);
-                //    frm.BringToFront();
-                //}
 
             }
+            #endregion
+
             if ("FFactory".Equals(path))
             {
                 DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
@@ -150,6 +131,11 @@ namespace Com.GainWinSoft.ERP
                     frm.BringToFront();
                 }
             }
+
+
+
+            Cursor = Cursors.Default;
+
         }
 
         private DockContent FindDocument(string text)

@@ -116,6 +116,7 @@
     <Compile Include="Dao\ICClsDetailNoARDao.cs" />
     <Compile Include="Dao\ICCodeRefTradeForMaterialNoARDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
+    <Compile Include="Dao\ICTPmMsNoARDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\IMLoginUserDao.cs" />
     <Compile Include="Dao\ITCompanyConditionMsDao.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Dao\CTableDropDownListNoARDaoOracleImp.cs" />
     <Compile Include="Dao\ITWhPrcsMsDao.cs" />
     <Compile Include="Dao\TWhPrcsMsDaoOracleImp.cs" />
+    <Compile Include="Dao\CTPmMsNoARDaoOracleImp.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
@@ -165,15 +167,21 @@
     <Compile Include="Model\CClsDetailNoAR.cs" />
     <Compile Include="Model\TFactoryMs.cs" />
     <Compile Include="Model\TPersonMs.cs" />
+    <Compile Include="Model\TPmMs.cs" />
+    <Compile Include="Model\TPmMsAdd.cs" />
+    <Compile Include="Model\TPmMsAddRtcm.cs" />
     <Compile Include="Model\TTermMs.cs" />
     <Compile Include="Model\TPersonMsId.cs" />
     <Compile Include="Model\TTradeMs.cs" />
     <Compile Include="Model\TTradeMsId.cs" />
     <Compile Include="Model\CTableDropDownListNoAR.cs" />
+    <Compile Include="Model\TUnitMs.cs" />
     <Compile Include="Model\TWarehouseMs.cs" />
     <Compile Include="Model\TWhPrcsMs.cs" />
     <Compile Include="Model\TWhPrcsMsId.cs" />
     <Compile Include="Model\TWhPrcsMsNoAR.cs" />
+    <Compile Include="Model\TPmMsId.cs" />
+    <Compile Include="Model\CTPmMsNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDropDownList", "ERP\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRate", "ERP\ExchangeRate\ExchangeRate.csproj", "{441653E1-394D-4721-91A5-4663B1EF9883}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBox", "ERP\ValidatingTextBox\TextBox.csproj", "{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -116,6 +118,10 @@ Global
 		{441653E1-394D-4721-91A5-4663B1EF9883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{441653E1-394D-4721-91A5-4663B1EF9883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{441653E1-394D-4721-91A5-4663B1EF9883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
