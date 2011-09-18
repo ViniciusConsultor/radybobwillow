@@ -17,6 +17,17 @@ namespace Com.GainWinSoft.Common
         }
 
         /// <summary>
+        /// 只用作条件，不会参与拼SQL的
+        /// </summary>
+        /// <param name="fielName"></param>
+        /// <param name="fieldValue"></param>
+        /// <returns></returns>
+        public SearchCondition AddCondition(string fielName, object fieldValue)
+        {
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, fieldValue));
+            return this;
+        }
+        /// <summary>
         /// 为查询添加条件
         /// <example>
         /// 用法一：
@@ -78,9 +89,9 @@ namespace Com.GainWinSoft.Common
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
         /// <returns></returns>
         public SearchCondition AddCondition(string fielName, object fieldValue, SqlOperator sqlOperator, 
-            bool excludeIfEmpty, string groupName)
+            bool excludeIfEmpty, string groupName,bool parameterOnly)
         {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, fieldValue, sqlOperator, excludeIfEmpty, groupName));
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, fieldValue, sqlOperator, excludeIfEmpty, groupName,parameterOnly));
             return this;
         }
 
@@ -92,9 +103,18 @@ namespace Com.GainWinSoft.Common
         /// ]]>
         /// </summary>
         /// <returns></returns> 
-        public string BuildConditionSql()
+        public string BuildConditionSql(bool withWhere)
         {
-            string sql = " Where (1=1) ";
+
+            string sql="";
+            if (withWhere)
+            {
+                sql = " Where (1=1) ";
+            }
+            else
+            {
+                sql = "(1=1)";
+            }
             string fieldName = string.Empty;
             SearchInfo searchInfo = null;
 
@@ -105,6 +125,11 @@ namespace Com.GainWinSoft.Common
             {
                 searchInfo = (SearchInfo)de.Value;
 
+                //如果只是作为参数，不参与sql条件的生成。
+                if (searchInfo.ParameterOnly)
+                {
+                    continue;
+                }
                 //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                 if (searchInfo.ExcludeIfEmpty &&
                     (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
@@ -159,6 +184,12 @@ namespace Com.GainWinSoft.Common
                 {
                     searchInfo = (SearchInfo)de.Value;
 
+                    //如果只是作为参数，不参与sql条件的生成。
+                    if (searchInfo.ParameterOnly)
+                    {
+                        continue;
+                    }
+
                     //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                     if (searchInfo.ExcludeIfEmpty && 
                         (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())) )
@@ -191,6 +222,8 @@ namespace Com.GainWinSoft.Common
             return sql;
         }
 
+ 
+
 
         /// <summary>
         /// 根据对象构造相关的条件语句（不使用参数），如返回的语句是:
@@ -199,9 +232,17 @@ namespace Com.GainWinSoft.Common
         /// ]]>
         /// </summary>
         /// <returns></returns> 
-        public string BuildParameterConditionSql()
+        public string BuildParameterConditionSql(bool withWhere)
         {
-            string sql = " Where (1=1) ";
+            string sql = "";
+            if (withWhere)
+            {
+                sql = " Where (1=1) ";
+            }
+            else
+            {
+                sql = "(1=1)";
+            }
             string fieldName = string.Empty;
             SearchInfo searchInfo = null;
 
@@ -211,6 +252,12 @@ namespace Com.GainWinSoft.Common
             foreach (DictionaryEntry de in this.conditionTable)
             {
                 searchInfo = (SearchInfo)de.Value;
+
+                //如果只是作为参数，不参与sql条件的生成。
+                if (searchInfo.ParameterOnly)
+                {
+                    continue;
+                }
 
                 //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                 if (searchInfo.ExcludeIfEmpty &&
@@ -515,8 +562,31 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldName">字段名称</param>
         /// <param name="fieldValue">字段的值</param>
         /// <param name="sqlOperator">字段的Sql操作符号</param>
+        /// 
         public SearchInfo(string fieldName, object fieldValue, SqlOperator sqlOperator)
             : this(fieldName, fieldValue, sqlOperator, true)
+        { }
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="fieldName">字段名称</param>
+        /// <param name="fieldValue">字段的值</param>
+        /// <param name="sqlOperator">字段的Sql操作符号</param>
+        /// 
+        public SearchInfo(string fieldName, object fieldValue)
+            : this(fieldName, fieldValue, SqlOperator.Equal, true, true)
+        { }
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="fieldName">字段名称</param>
+        /// <param name="fieldValue">字段的值</param>
+        /// <param name="sqlOperator">字段的Sql操作符号</param>
+        /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
+        /// <param name="parameterOnly">如果为true的话，改字段不做为查询条件拼SQL的Clause</param>
+        public SearchInfo(string fieldName, object fieldValue, SqlOperator sqlOperator,bool excludeIfEmpty, bool parameterOnly)
+            : this(fieldName, fieldValue, sqlOperator, excludeIfEmpty, null, parameterOnly)
         { }
 
         /// <summary>
@@ -527,7 +597,7 @@ namespace Com.GainWinSoft.Common
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         public SearchInfo(string fieldName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty)
-            : this(fieldName, fieldValue, sqlOperator, excludeIfEmpty, null)
+            : this(fieldName, fieldValue, sqlOperator, excludeIfEmpty, null, false)
         { }
 
         /// <summary>
@@ -538,13 +608,14 @@ namespace Com.GainWinSoft.Common
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public SearchInfo(string fieldName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty, string groupName)
+        public SearchInfo(string fieldName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty, string groupName,bool parameterOnly)
         {
             this.fieldName = fieldName;
             this.fieldValue = fieldValue;
             this.sqlOperator = sqlOperator;
             this.excludeIfEmpty = excludeIfEmpty;
             this.groupName = groupName;
+            this.parameterOnly = parameterOnly;
         }
 
         private string fieldName;
@@ -552,6 +623,15 @@ namespace Com.GainWinSoft.Common
         private SqlOperator sqlOperator;
         private bool excludeIfEmpty = true;
         private string groupName;
+        private bool parameterOnly = false;
+
+
+
+        public bool ParameterOnly
+        {
+            get { return parameterOnly; }
+            set { parameterOnly = value; }
+        }
 
         /// <summary>
         /// 分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件

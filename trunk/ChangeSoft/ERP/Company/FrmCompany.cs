@@ -68,12 +68,16 @@ namespace Com.GainWinSoft.ERP.Company
             try
             {
                 //通过Windsor组件容器获得Action的实例。
-                IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
+                //IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
                 //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
                 //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
 
-                ICClsDetailNoARDao d = ComponentLocator.Instance().Resolve<ICClsDetailNoARDao>();
-                IList<CClsDetailNoAR> l = d.GetClsDetail("zh-CN","63");
+                ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
+                SearchCondition condition = new SearchCondition();
+                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS", "00",SqlOperator.Equal);
+                //condition.AddCondition("T_PM_MS.I_FAC_CD","F
+
+                IList<CTPmMsNoAR> l = d.GetPmMsDetail(condition,false);
                 //调用Action类的方法
                 MessageBox.Show(l.Count.ToString());
                 //NewMethod();
