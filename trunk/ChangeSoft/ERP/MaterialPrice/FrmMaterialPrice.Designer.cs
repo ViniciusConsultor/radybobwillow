@@ -35,60 +35,60 @@
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblStar2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblCustomId = new System.Windows.Forms.Label();
             this.tblPanelG2Btn = new System.Windows.Forms.TableLayoutPanel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.tblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCompany = new System.Windows.Forms.Label();
-            this.lblStar1 = new System.Windows.Forms.Label();
-            this.txtCompany = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblCompanyNM = new System.Windows.Forms.Label();
-            this.lblCustomId = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblStar2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.tblPanelG2CusID = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tblPanelG2Pn1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.tblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCompanyNM = new System.Windows.Forms.Label();
+            this.txtCompany = new System.Windows.Forms.TextBox();
+            this.lblStar1 = new System.Windows.Forms.Label();
+            this.lblCompany = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG3.SuspendLayout();
             this.tblPanelG2.SuspendLayout();
             this.tblPanelG2Btn.SuspendLayout();
-            this.tblPanelG1.SuspendLayout();
             this.tblPanelG2CusID.SuspendLayout();
             this.tblPanelG2Pn1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tblPanelG1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblPanelBase
@@ -148,6 +148,93 @@
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList2, 2, 6);
             this.tblPanelG2.Name = "tblPanelG2";
             // 
+            // textBox7
+            // 
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Name = "label7";
+            // 
+            // lblStar2
+            // 
+            resources.ApplyResources(this.lblStar2, "lblStar2");
+            this.lblStar2.ForeColor = System.Drawing.Color.Red;
+            this.lblStar2.Name = "lblStar2";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // lblCustomId
+            // 
+            resources.ApplyResources(this.lblCustomId, "lblCustomId");
+            this.lblCustomId.Name = "lblCustomId";
+            // 
             // tblPanelG2Btn
             // 
             resources.ApplyResources(this.tblPanelG2Btn, "tblPanelG2Btn");
@@ -166,6 +253,173 @@
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
+            // 
+            // tblPanelG2CusID
+            // 
+            resources.ApplyResources(this.tblPanelG2CusID, "tblPanelG2CusID");
+            this.tblPanelG2CusID.Controls.Add(this.label13, 0, 0);
+            this.tblPanelG2CusID.Controls.Add(this.button2, 0, 0);
+            this.tblPanelG2CusID.Controls.Add(this.textBox1, 0, 0);
+            this.tblPanelG2CusID.Name = "tblPanelG2CusID";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label13.Name = "label13";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // tblPanelG2Pn1
+            // 
+            resources.ApplyResources(this.tblPanelG2Pn1, "tblPanelG2Pn1");
+            this.tblPanelG2Pn1.Controls.Add(this.label17, 5, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.label16, 6, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.label15, 4, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.textBox3, 3, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.label14, 2, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.button3, 1, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.textBox2, 0, 0);
+            this.tblPanelG2Pn1.Name = "tblPanelG2Pn1";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Name = "label17";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label16.Name = "label16";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label19, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label18, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Name = "label19";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "39";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            // 
+            // clsDetailCodeRefDropDownList2
+            // 
+            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList2.ClsCd = "40";
+            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
+            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
+            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList2.Selectedname = null;
+            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
+            // 
+            // tblPanelG1
+            // 
+            resources.ApplyResources(this.tblPanelG1, "tblPanelG1");
+            this.tblPanelG1.Controls.Add(this.lblCompanyNM, 4, 0);
+            this.tblPanelG1.Controls.Add(this.txtCompany, 2, 0);
+            this.tblPanelG1.Controls.Add(this.lblStar1, 0, 0);
+            this.tblPanelG1.Controls.Add(this.lblCompany, 0, 0);
+            this.tblPanelG1.Controls.Add(this.button1, 3, 0);
+            this.tblPanelG1.Name = "tblPanelG1";
+            // 
+            // lblCompanyNM
+            // 
+            resources.ApplyResources(this.lblCompanyNM, "lblCompanyNM");
+            this.lblCompanyNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCompanyNM.Name = "lblCompanyNM";
+            // 
+            // txtCompany
+            // 
+            resources.ApplyResources(this.txtCompany, "txtCompany");
+            this.txtCompany.Name = "txtCompany";
+            // 
+            // lblStar1
+            // 
+            resources.ApplyResources(this.lblStar1, "lblStar1");
+            this.lblStar1.ForeColor = System.Drawing.Color.Red;
+            this.lblStar1.Name = "lblStar1";
+            // 
+            // lblCompany
+            // 
+            resources.ApplyResources(this.lblCompany, "lblCompany");
+            this.lblCompany.Name = "lblCompany";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // commonToolStrip1
             // 
@@ -199,260 +453,6 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
             // 
-            // tblPanelG1
-            // 
-            resources.ApplyResources(this.tblPanelG1, "tblPanelG1");
-            this.tblPanelG1.Controls.Add(this.lblCompanyNM, 4, 0);
-            this.tblPanelG1.Controls.Add(this.txtCompany, 2, 0);
-            this.tblPanelG1.Controls.Add(this.lblStar1, 0, 0);
-            this.tblPanelG1.Controls.Add(this.lblCompany, 0, 0);
-            this.tblPanelG1.Controls.Add(this.button1, 3, 0);
-            this.tblPanelG1.Name = "tblPanelG1";
-            // 
-            // lblCompany
-            // 
-            resources.ApplyResources(this.lblCompany, "lblCompany");
-            this.lblCompany.Name = "lblCompany";
-            // 
-            // lblStar1
-            // 
-            resources.ApplyResources(this.lblStar1, "lblStar1");
-            this.lblStar1.ForeColor = System.Drawing.Color.Red;
-            this.lblStar1.Name = "lblStar1";
-            // 
-            // txtCompany
-            // 
-            resources.ApplyResources(this.txtCompany, "txtCompany");
-            this.txtCompany.Name = "txtCompany";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // lblCompanyNM
-            // 
-            resources.ApplyResources(this.lblCompanyNM, "lblCompanyNM");
-            this.lblCompanyNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCompanyNM.Name = "lblCompanyNM";
-            // 
-            // lblCustomId
-            // 
-            resources.ApplyResources(this.lblCustomId, "lblCustomId");
-            this.lblCustomId.Name = "lblCustomId";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // lblStar2
-            // 
-            resources.ApplyResources(this.lblStar2, "lblStar2");
-            this.lblStar2.ForeColor = System.Drawing.Color.Red;
-            this.lblStar2.Name = "lblStar2";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Name = "label9";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Name = "label10";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Name = "label11";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Name = "label12";
-            // 
-            // tblPanelG2CusID
-            // 
-            resources.ApplyResources(this.tblPanelG2CusID, "tblPanelG2CusID");
-            this.tblPanelG2CusID.Controls.Add(this.label13, 0, 0);
-            this.tblPanelG2CusID.Controls.Add(this.button2, 0, 0);
-            this.tblPanelG2CusID.Controls.Add(this.textBox1, 0, 0);
-            this.tblPanelG2CusID.Name = "tblPanelG2CusID";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Name = "label13";
-            // 
-            // tblPanelG2Pn1
-            // 
-            resources.ApplyResources(this.tblPanelG2Pn1, "tblPanelG2Pn1");
-            this.tblPanelG2Pn1.Controls.Add(this.label17, 5, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.label16, 6, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.label15, 4, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.textBox3, 3, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.label14, 2, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.button3, 1, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.textBox2, 0, 0);
-            this.tblPanelG2Pn1.Name = "tblPanelG2Pn1";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label16.Name = "label16";
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Name = "label17";
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label18, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Name = "label19";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // clsDetailCodeRefDropDownList1
-            // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "39";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // clsDetailCodeRefDropDownList2
-            // 
-            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList2.ClsCd = "40";
-            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
-            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
-            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList2.Selectedname = null;
-            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
-            // 
             // FrmMaterialPrice
             // 
             resources.ApplyResources(this, "$this");
@@ -466,14 +466,14 @@
             this.tblPanelG2.ResumeLayout(false);
             this.tblPanelG2.PerformLayout();
             this.tblPanelG2Btn.ResumeLayout(false);
-            this.tblPanelG1.ResumeLayout(false);
-            this.tblPanelG1.PerformLayout();
             this.tblPanelG2CusID.ResumeLayout(false);
             this.tblPanelG2CusID.PerformLayout();
             this.tblPanelG2Pn1.ResumeLayout(false);
             this.tblPanelG2Pn1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tblPanelG1.ResumeLayout(false);
+            this.tblPanelG1.PerformLayout();
             this.ResumeLayout(false);
 
         }
