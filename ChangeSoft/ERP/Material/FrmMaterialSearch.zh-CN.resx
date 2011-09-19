@@ -120,25 +120,73 @@
   <data name="$this.Text" xml:space="preserve">
     <value>物料查询</value>
   </data>
-  <data name="Grid_catalogid" xml:space="preserve">
-    <value>分类代码</value>
+  <data name="IDispItemCd" xml:space="preserve">
+    <value>显示用物料代码</value>
   </data>
-  <data name="Grid_functionid" xml:space="preserve">
-    <value>功能代码</value>
+  <data name="IDispItemRev" xml:space="preserve">
+    <value>显示用物料版本</value>
   </data>
-  <data name="Grid_functionimage" xml:space="preserve">
-    <value>功能图标</value>
+  <data name="IDlCd" xml:space="preserve">
+    <value>客户代码</value>
   </data>
-  <data name="Grid_functionindex" xml:space="preserve">
-    <value>功能排序</value>
+  <data name="IDrwNo" xml:space="preserve">
+    <value>图号</value>
   </data>
-  <data name="Grid_functionname" xml:space="preserve">
-    <value>功能名称</value>
+  <data name="IFacCd" xml:space="preserve">
+    <value>工厂代码</value>
   </data>
-  <data name="Grid_functionpath" xml:space="preserve">
-    <value>功能路径</value>
+  <data name="IItemCd" xml:space="preserve">
+    <value>物料代码</value>
   </data>
-  <data name="Grid_langid" xml:space="preserve">
-    <value>语言代码</value>
+  <data name="IItemCls" xml:space="preserve">
+    <value>物料种类</value>
+  </data>
+  <data name="IItemDesc" xml:space="preserve">
+    <value>物料名称</value>
+  </data>
+  <data name="IItemRev" xml:space="preserve">
+    <value>物料版本</value>
+  </data>
+  <data name="IItemType" xml:space="preserve">
+    <value>物料分类</value>
+  </data>
+  <data name="IItemType3" xml:space="preserve">
+    <value>课税分类</value>
+  </data>
+  <data name="IMakerCd" xml:space="preserve">
+    <value>制造商代码</value>
+  </data>
+  <data name="IMntCls" xml:space="preserve">
+    <value>维护分类</value>
+  </data>
+  <data name="IMntclsdesc" xml:space="preserve">
+    <value>维护分类名称</value>
+  </data>
+  <data name="IModel" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="IQryMtrl" xml:space="preserve">
+    <value>材质</value>
+  </data>
+  <data name="ISeiban" xml:space="preserve">
+    <value>序列号</value>
+  </data>
+  <data name="ISpec" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="VDlDesc" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="VItemclsdesc" xml:space="preserve">
+    <value>物料种类名称</value>
+  </data>
+  <data name="VItemtype3desc" xml:space="preserve">
+    <value>课税分类名称</value>
+  </data>
+  <data name="VItemtypedesc" xml:space="preserve">
+    <value>物料分类名称</value>
+  </data>
+  <data name="VMakerdesc" xml:space="preserve">
+    <value>制造商名称</value>
   </data>
 </root>

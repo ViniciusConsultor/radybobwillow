@@ -58,10 +58,64 @@ namespace Com.GainWinSoft.ERP.Material.Action
 
             //设置可视列
 
+            IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
+            ColumnInfoVo columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IDispItemCd";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IDispItemRev";
+            columnvo.Columnwidth = 50;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IItemDesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "VDlDesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "VItemclsdesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "VItemtypedesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "VMakerdesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IModel";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IDrwNo";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "ISpec";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "ISeiban";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IQryMtrl";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
 
 
 
-           gridview.SetDisplayColumns(gridview.Name, null);
+
+
+
+
+
+            gridview.SetDisplayColumns(gridview.Name, clist);
 
 
         }
