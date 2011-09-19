@@ -5,6 +5,7 @@ using System.Collections;
 
 using System.Data.Common;
 using System.Data;
+using NHibernate;
 
 namespace Com.GainWinSoft.Common
 {
@@ -25,6 +26,22 @@ namespace Com.GainWinSoft.Common
         public object GetAddtionalCondition(string key)
         {
             return conditionTable[key];
+        }
+
+
+
+        public void SetParameterValue(ISQLQuery query)
+        {
+            foreach (DictionaryEntry de in this.ConditionTable)
+            {
+                if (de.Value.GetType() != typeof(SearchInfo))
+                {
+                    continue;
+                }
+                SearchInfo searchInfo = (SearchInfo)de.Value;
+                if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                    query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
+            }
         }
         /// <summary>
         /// 只用作条件，不会参与拼SQL的
@@ -413,6 +430,10 @@ namespace Com.GainWinSoft.Common
             SearchInfo searchInfo = null;
             foreach (DictionaryEntry de in this.conditionTable)
             {
+                if (de.Value.GetType() != typeof(SearchInfo))
+                {
+                    continue;
+                }
                 searchInfo = (SearchInfo)de.Value;
                 if (!string.IsNullOrEmpty(searchInfo.GroupName) && !htGroupNames.Contains(searchInfo.GroupName))
                 {
