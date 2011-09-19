@@ -162,40 +162,28 @@
   <data name="tpG1.ColumnCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="lblFactoryNm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFactoryNm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblFactoryNM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="lblFactoryNm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lblFactoryNM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 5</value>
   </data>
-  <data name="lblFactoryNm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 8</value>
+  <data name="lblFactoryNM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 26</value>
   </data>
-  <data name="lblFactoryNm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="lblFactoryNM.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="lblFactoryNm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 20</value>
+  <data name="&gt;&gt;lblFactoryNM.Name" xml:space="preserve">
+    <value>lblFactoryNM</value>
   </data>
-  <data name="lblFactoryNm.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="lblFactoryNm.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblFactoryNm.Name" xml:space="preserve">
-    <value>lblFactoryNm</value>
-  </data>
-  <data name="&gt;&gt;lblFactoryNm.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblFactoryNM.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblFactoryNm.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblFactoryNM.Parent" xml:space="preserve">
     <value>tpG1</value>
   </data>
-  <data name="&gt;&gt;lblFactoryNm.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblFactoryNM.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnFactory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -367,7 +355,7 @@
     <value>1</value>
   </data>
   <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFactoryNm" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFactoryNM" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tpG2.ColumnCount" type="System.Int32, mscorlib">
     <value>6</value>

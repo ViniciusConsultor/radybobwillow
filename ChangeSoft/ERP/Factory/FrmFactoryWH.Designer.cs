@@ -128,8 +128,8 @@
             // 
             // lblFactoryNM
             // 
-            resources.ApplyResources(this.lblFactoryNM, "lblFactoryNM");
             this.lblFactoryNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.lblFactoryNM, "lblFactoryNM");
             this.lblFactoryNM.Name = "lblFactoryNM";
             // 
             // btnFactory

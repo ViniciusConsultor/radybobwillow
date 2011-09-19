@@ -33,7 +33,7 @@
             this.tpBase = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tpG1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblMode = new System.Windows.Forms.Label();
+            this.lblMode = new xpLabel.xpLabel();
             this.btnFactory = new System.Windows.Forms.Button();
             this.txtFactory = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
@@ -133,7 +133,7 @@
             // tpG1
             // 
             resources.ApplyResources(this.tpG1, "tpG1");
-            this.tpG1.Controls.Add(this.lblMode, 2, 1);
+            this.tpG1.Controls.Add(this.lblMode, 0, 1);
             this.tpG1.Controls.Add(this.btnFactory, 9, 2);
             this.tpG1.Controls.Add(this.txtFactory, 8, 2);
             this.tpG1.Controls.Add(this.lblStar2, 7, 2);
@@ -147,9 +147,15 @@
             // 
             // lblMode
             // 
+            this.lblMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.lblMode.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.lblMode.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(150)))), ((int)(((byte)(21)))));
+            this.lblMode.BackColorScheme = xpLabel.BackColorSchemeType.Office2003Orange;
+            this.tpG1.SetColumnSpan(this.lblMode, 11);
             resources.ApplyResources(this.lblMode, "lblMode");
-            this.lblMode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMode.Name = "lblMode";
+            this.lblMode.ShowShadow = false;
+            this.lblMode.TextAlign = xpLabel.TextAlignStyle.TAlignMiddleMiddle;
             // 
             // btnFactory
             // 
@@ -768,7 +774,7 @@
         private System.Windows.Forms.TextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
-        private System.Windows.Forms.Label lblMode;
+        private xpLabel.xpLabel lblMode;
         private System.Windows.Forms.TableLayoutPanel tpG2;
         private System.Windows.Forms.Label lblAbbreviation;
         private System.Windows.Forms.Label lblStar3;

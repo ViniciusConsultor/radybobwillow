@@ -140,6 +140,10 @@
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\xpLabel\xpLabel.csproj">
+      <Project>{1ECBEA5F-7603-407A-8069-1FEF303F7E83}</Project>
+      <Name>xpLabel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

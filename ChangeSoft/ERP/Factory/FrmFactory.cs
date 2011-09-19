@@ -47,8 +47,8 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void FrmFactory_Load(object sender, System.EventArgs e)
         {
-            this.Initialize();
             this.Check_Init();
+            this.Initialize();
         }
 
         /// <summary>
@@ -66,15 +66,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.SetLayout(this.strMode);
             this.removeAllClickEvent();
             this.addAllClickEvent();
-
-            this.vdpRequireG1 = new ValidationProvider(this.components);
-            this.vdpRequireG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
-            this.vdpRequireG2 = new ValidationProvider(this.components);
-            this.vdpRequireG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
-            this.vdpExistG1 = new ValidationProvider(this.components);
-            this.vdpExistG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
-            this.vdpExistG2 = new ValidationProvider(this.components);
-            this.vdpExistG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
         }
 
         /// <summary>
@@ -170,6 +161,7 @@ namespace Com.GainWinSoft.ERP.Factory
             CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(this.uservo.CompanyCondition.ICompanyCd);
             cr.AddValueControl(this.txtFactory);
             cr.ShowDialog(this);
+            this.txtFactory.Focus();
         }
         #endregion
 
@@ -363,6 +355,15 @@ namespace Com.GainWinSoft.ERP.Factory
             #endregion
         }
 
+        private void ClearError()
+        {
+            this.vdpRequireG1.ValidationMessages(false);
+            this.vdpRequireG2.ValidationMessages(false);
+            this.vdpExistG1.ValidationMessages(false);
+            this.vdpExistG2.ValidationMessages(false);
+            this.baseform.msgwindow.Hide();
+        }
+
         /// <summary>
         /// 追加模式，控制画面上的显示项目
         /// </summary>
@@ -371,6 +372,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "追加模式";
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
+            this.ClearError();
         }
 
         /// <summary>
@@ -381,6 +383,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "删除模式";
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
+            this.ClearError();
         }
 
         /// <summary>
@@ -391,6 +394,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "修改模式";
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
+            this.ClearError();
         }
 
         /// <summary>
@@ -401,6 +405,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = false;
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
+            this.ClearError();
         }
 
         /// <summary>
@@ -412,6 +417,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
+            this.ClearError();
         }
         #endregion
 
@@ -421,6 +427,18 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void Check_Init()
         {
+            #region Init
+            this.vdpRequireG1 = new ValidationProvider(this.components);
+            this.vdpRequireG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpRequireG2 = new ValidationProvider(this.components);
+            this.vdpRequireG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpExistG1 = new ValidationProvider(this.components);
+            this.vdpExistG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpExistG2 = new ValidationProvider(this.components);
+            this.vdpExistG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            #endregion
+
+            #region vdpRequireG1
             ValidationRule ruleCompany = new ValidationRule();
             ruleCompany.IsRequired = true;
             ruleCompany.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblCompany.Text);
@@ -430,6 +448,16 @@ namespace Com.GainWinSoft.ERP.Factory
             ruleFactory.IsRequired = true;
             ruleFactory.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblFactory.Text);
             this.vdpRequireG1.SetValidationRule(this.txtFactory, ruleFactory);
+            #endregion
+
+            #region vdpRequireG2
+            #endregion
+
+            #region vdpExistG1
+            #endregion
+
+            #region vdpExistG2
+            #endregion
         }
 
         private Boolean CheckCard()
@@ -440,6 +468,8 @@ namespace Com.GainWinSoft.ERP.Factory
             {
                 IList<MessageVo> re = this.vdpRequireG1.ValidationMessages(true);
                 this.DialogResult = DialogResult.Abort;
+                this.baseform.msgwindow.Messagelist = re;
+                this.baseform.msgwindow.ShowMessage();
                 rtnValue = false;
             }
 
