@@ -45,9 +45,9 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.SetValue(dgvr.Cells["IWhPrcsCd"].Value.ToString());
             this.SetName(dgvr.Cells["IWhPrcsArgDesc"].Value.ToString());
 
-            this.SetFocus();
+            //this.SetFocus();
             this.Close();
-            this.Dispose();
+            //this.Dispose();
         }
 
         private void SetColumnsAlias()

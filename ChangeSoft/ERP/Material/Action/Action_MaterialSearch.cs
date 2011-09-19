@@ -53,7 +53,7 @@ namespace Com.GainWinSoft.ERP.Material.Action
             //设置列名
             foreach (string key in gridview.Pagerhelper.Columns)
             {
-                gridview.SetColumnAlias(key, (string)rm.GetObject(key));
+                gridview.SetColumnAlias(key, rm.GetString(key));
             }
 
             //设置可视列

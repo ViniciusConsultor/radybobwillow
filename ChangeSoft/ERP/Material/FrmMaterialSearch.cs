@@ -123,7 +123,7 @@ namespace Com.GainWinSoft.ERP.Material
 
             CardVo cardvo = new CardVo();
             cardvo.IFacCd = this.txtFactoryCd.Text;
-            Action_MaterialSearch action = (Action_MaterialSearch)ComponentLocator.Instance().Resolve(typeof(Action_MaterialSearch));
+            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
 
 
@@ -148,6 +148,7 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddValueControl(this.txtItemType1);
             cr.AddNameControl(this.lblItemType1);
             cr.ShowDialog(this);
+            this.txtItemType1.Focus();
 
         }
 
@@ -157,6 +158,7 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddValueControl(this.txtManufacturer);
             cr.AddNameControl(this.lblManufacturer);
             cr.ShowDialog(this);
+            this.txtManufacturer.Focus();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -167,6 +169,7 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddValueControl(this.txtCustomerCd);
             cr.AddNameControl(this.lblCustomer);
             cr.ShowDialog(this);
+            this.txtCustomerCd.Focus();
         }
 
 
