@@ -39,9 +39,9 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.SetValue(dgvr.Cells["IClsDetailCd"].Value.ToString());
             this.SetName(dgvr.Cells["IClsDetailDesc"].Value.ToString());
 
-            this.SetFocus();
+            //this.SetFocus();
             this.Close();
-            this.Dispose();
+//            this.Dispose();
         }
 
         private void SetColumnsAlias()
