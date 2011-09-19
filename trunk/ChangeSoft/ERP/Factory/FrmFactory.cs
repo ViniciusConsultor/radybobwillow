@@ -315,14 +315,14 @@ namespace Com.GainWinSoft.ERP.Factory
             this.txtName.Text = "";
             this.txtPinyin.Text = "";
             this.txtZipCD.Text = "";
-            //this.cbbCountry.SelectedIndex = 0;
+            this.cbbCountry.SelectedIndex = 0;
             this.txtAddress1.Text = "";
             this.txtAddress2.Text = "";
             this.txtAddress3.Text = "";
             this.txtTel.Text = "";
             this.txtFax.Text = "";
-            //this.cbbLanguage.SelectedIndex = 0;
-            //this.cbbTimezone.SelectedIndex = 0;
+            this.cbbLanguage.SelectedIndex = 0;
+            this.cbbTimezone.SelectedIndex = 0;
             this.txtBase.Text = "";
             this.txtDepart.Text = "";
             this.lblDepartNM.Text = "";
@@ -330,23 +330,11 @@ namespace Com.GainWinSoft.ERP.Factory
             this.txtAutoPeriod.Text = "";
             this.txtStockPeriod.Text = "";
             this.txtArrange.Text = "";
-            this.txtAccStockIn.Text = "";
-            this.lblAccStockInNM.Text = "";
             this.cbbSafe.Selectedindex = 0;
-            this.txtAccStockOut.Text = "";
-            this.lblAccStockOutNM.Text = "";
             this.cbbRate.Selectedindex = 0;
-            this.txtDefectStock.Text = "";
-            this.lblDefectStockNM.Text = "";
             this.cbbPlan.Selectedindex = 0;
-            this.txtServiceStock.Text = "";
-            this.lblServiceStockNM.Text = "";
             this.cbbCost.Selectedindex = 0;
-            this.txtSurplusStock.Text = "";
-            this.lblSurplusStockNM.Text = "";
             this.cbbDecide.Selectedindex = 0;
-            this.txtInspectStock.Text = "";
-            this.lblInspectStockNM.Text = "";
             #endregion
         }
 
