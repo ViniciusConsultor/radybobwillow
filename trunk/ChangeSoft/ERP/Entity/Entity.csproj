@@ -183,6 +183,7 @@
     <Compile Include="Model\TWhPrcsMsNoAR.cs" />
     <Compile Include="Model\TPmMsId.cs" />
     <Compile Include="Model\CTPmMsNoAR.cs" />
+    <Compile Include="Model\CTPmMsPagerNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

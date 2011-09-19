@@ -105,8 +105,11 @@ namespace Com.GainWinSoft.Common
             {
                 IDockContent content = (IDockContent)baseform.Pane.ActiveContent;
                 content.DockHandler.Close();
-                this.owner.Show();
-                this.owner.BringToFront();
+                if (owner != null)
+                {
+                    this.owner.Show();
+                    this.owner.BringToFront();
+                }
             }
         }
 

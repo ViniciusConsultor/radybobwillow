@@ -2343,9 +2343,9 @@
   <data name="tableLayoutPanel0.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="FrmMaterialSearch_pagerGridView1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpFactory" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,26,Absolute,213,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -2360,5 +2360,74 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>Com.GainWinSoft.Common.BaseContent, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="IDispItemCd" xml:space="preserve">
+    <value>显示用物料代码</value>
+  </data>
+  <data name="IDispItemRev" xml:space="preserve">
+    <value>显示用物料版本</value>
+  </data>
+  <data name="IDlCd" xml:space="preserve">
+    <value>客户代码</value>
+  </data>
+  <data name="IDrwNo" xml:space="preserve">
+    <value>图号</value>
+  </data>
+  <data name="IFacCd" xml:space="preserve">
+    <value>工厂代码</value>
+  </data>
+  <data name="IItemCd" xml:space="preserve">
+    <value>物料代码</value>
+  </data>
+  <data name="IItemCls" xml:space="preserve">
+    <value>物料种类</value>
+  </data>
+  <data name="IItemDesc" xml:space="preserve">
+    <value>物料名称</value>
+  </data>
+  <data name="IItemRev" xml:space="preserve">
+    <value>物料版本</value>
+  </data>
+  <data name="IItemType" xml:space="preserve">
+    <value>物料分类</value>
+  </data>
+  <data name="IItemType3" xml:space="preserve">
+    <value>课税分类</value>
+  </data>
+  <data name="IMakerCd" xml:space="preserve">
+    <value>制造商代码</value>
+  </data>
+  <data name="IMntCls" xml:space="preserve">
+    <value>维护分类</value>
+  </data>
+  <data name="IMntclsdesc" xml:space="preserve">
+    <value>维护分类名称</value>
+  </data>
+  <data name="IModel" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="ISeiban" xml:space="preserve">
+    <value>序列号</value>
+  </data>
+  <data name="ISpec" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="VDlDesc" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="VItemclsdesc" xml:space="preserve">
+    <value>物料种类名称</value>
+  </data>
+  <data name="VItemtype3desc" xml:space="preserve">
+    <value>课税分类名称</value>
+  </data>
+  <data name="VItemtypedesc" xml:space="preserve">
+    <value>物料分类名称</value>
+  </data>
+  <data name="VMakerdesc" xml:space="preserve">
+    <value>制造商名称</value>
+  </data>
+  <data name="IQryMtrl" xml:space="preserve">
+    <value>材质</value>
   </data>
 </root>
