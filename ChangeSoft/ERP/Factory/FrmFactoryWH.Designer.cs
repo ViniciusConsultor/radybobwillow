@@ -34,7 +34,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tpG1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblFactoryNm = new System.Windows.Forms.Label();
+            this.lblFactoryNM = new System.Windows.Forms.Label();
             this.btnFactory = new System.Windows.Forms.Button();
             this.txtFactory = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
@@ -119,18 +119,18 @@
             // tpG1
             // 
             resources.ApplyResources(this.tpG1, "tpG1");
-            this.tpG1.Controls.Add(this.lblFactoryNm, 4, 1);
+            this.tpG1.Controls.Add(this.lblFactoryNM, 4, 1);
             this.tpG1.Controls.Add(this.btnFactory, 3, 1);
             this.tpG1.Controls.Add(this.txtFactory, 2, 1);
             this.tpG1.Controls.Add(this.lblStar2, 1, 1);
             this.tpG1.Controls.Add(this.lblFactory, 0, 1);
             this.tpG1.Name = "tpG1";
             // 
-            // lblFactoryNm
+            // lblFactoryNM
             // 
-            resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
-            this.lblFactoryNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblFactoryNm.Name = "lblFactoryNm";
+            resources.ApplyResources(this.lblFactoryNM, "lblFactoryNM");
+            this.lblFactoryNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFactoryNM.Name = "lblFactoryNM";
             // 
             // btnFactory
             // 
@@ -342,7 +342,7 @@
         private System.Windows.Forms.Label lblStar2;
         private System.Windows.Forms.TextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
-        private System.Windows.Forms.Label lblFactoryNm;
+        private System.Windows.Forms.Label lblFactoryNM;
         private System.Windows.Forms.TableLayoutPanel tpG2;
         private System.Windows.Forms.Label lblAccStockIn;
         private System.Windows.Forms.TextBox txtAccStockIn;
