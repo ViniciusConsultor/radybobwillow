@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MaterialPrice
+using Com.GainWinSoft.Common;
+using WeifenLuo.WinFormsUI.Docking;
+
+namespace Com.GainWinSoft.ERP.MaterialPrice
 {
-    public partial class FrmMaterialPriceEdit : Form
+    public partial class FrmMaterialPriceEdit : BaseContent
     {
-        public FrmMaterialPriceEdit()
+        public FrmMaterialPriceEdit(DockPanel _parentdockpanel)
+            : base(_parentdockpanel)
         {
             InitializeComponent();
         }
