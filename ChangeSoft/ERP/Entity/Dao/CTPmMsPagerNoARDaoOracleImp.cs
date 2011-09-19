@@ -2,42 +2,105 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Castle.ActiveRecord;
 using NHibernate;
-using NHibernate.Transform;
+using System.Data;
+using Castle.ActiveRecord;
 using Com.GainWinSoft.Common;
-using System.Data.Common;
-using Castle.ActiveRecord.Queries;
 using System.Collections;
+using NHibernate.Transform;
+using System.Data.Common;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    class CTPmMsNoARDaoOracleImp : ActiveRecordBase, IBaseDao, Com.GainWinSoft.ERP.Entity.Dao.ICTPmMsNoARDao
+    class CTPmMsPagerNoARDaoOracleImp : ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
     {
-        public IList<CTPmMsNoAR> GetPmMsDetail(SearchCondition condition)
+        #region ICPagerDao 成员
+
+        public int GetCount(string key, Com.GainWinSoft.Common.SearchCondition condition)
         {
 
-            IList<CTPmMsNoAR> result = new List<CTPmMsNoAR>();
+            int intCount = 0;
 
-            ISession ss = holder.CreateSession(typeof(CTPmMsNoARDaoOracleImp));
+            ISession ss = holder.CreateSession(typeof(CTPmMsPagerNoARDaoOracleImp));
             ITransaction tran = ss.BeginTransaction();
 
             try
             {
 
-
-
+                StringBuilder sb = new StringBuilder();
+                
 
                 StringBuilder sql = CreateSelectSQL(condition);
 
+                sb.AppendLine("select count(*) as CNT from (");
+                sb.AppendLine(sql.ToString());
+                sb.AppendLine(" ) a");
 
-                ISQLQuery query = ss.CreateSQLQuery(sql.ToString());
+                ISQLQuery q = ss.CreateSQLQuery(sb.ToString());
+                q.AddScalar("CNT", NHibernateUtil.Int32);
+
+                condition.SetParameterValue(q);
+                intCount = (int)q.UniqueResult();
+                tran.Commit();
+            }
+            catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
+            {
+                tran.Rollback();
+                throw new ApplicationException(ex.Message, ex);
+            }
+            catch (DbException ex)
+            {
+                tran.Rollback();
+                throw new ApplicationException(ex.Message, ex);
+            }
+            finally
+            {
+                tran.Dispose();
+            }
+
+            return intCount;
+        }
+
+        public System.Data.DataSet GetDataSet(string tablename, Com.GainWinSoft.Common.SearchCondition condition, int pagesize, int pageindex)
+        {
+            
+            DataSet ds = new DataSet();
+            IList<CTPmMsNoAR> result = new List<CTPmMsNoAR>();
+
+            ISession ss = holder.CreateSession(typeof(CTPmMsPagerNoARDaoOracleImp));
+            ITransaction tran = ss.BeginTransaction();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+
+
+                StringBuilder sql = CreateSelectSQL(condition);
+                
+                sb.AppendLine("select b.*");
+                sb.AppendLine(" from (select a.*, rownum as rowIndex from (");
+                sb.AppendLine(sql.ToString());
+                sb.AppendLine(" ) a");
+                sb.AppendLine(" ) b");
+                sb.AppendLine(" where b.rowIndex >" + pageindex * pagesize);
+                sb.AppendLine(" and b.rowIndex <=" + (pageindex * pagesize + pagesize));
+
+
+
+                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
 
                 AddScalar(query);
 
+
                 condition.SetParameterValue(query);
 
+
                 result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsNoAR>()).List<CTPmMsNoAR>();
+
+                //转换成datatable
+                DataTable dt = DataTableUtils.ToDataTable(result);
+                dt.TableName = tablename;
+                ds.Tables.Add(dt);
 
 
                 tran.Commit();
@@ -56,10 +119,13 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             {
                 tran.Dispose();
             }
-
-            return result;
+            return ds;
 
         }
+
+        #endregion
+
+
 
         private void AddScalar(ISQLQuery query)
         {
@@ -884,5 +950,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             //------------------------------------------------------------------------------------------------------------------------------------
             return sql;
         }
+
     }
 }

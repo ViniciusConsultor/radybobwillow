@@ -15,9 +15,9 @@ using NHibernate.Transform;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
-    public class CFunctionPagerNoARDaoOracleImp : ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
+    public class CFunctionPagerNoARDaoOracleImp : ActiveRecordBase, IBaseDao,  Com.GainWinSoft.ERP.Entity.Dao.ICPagerDao
     {
-        public DataSet GetDataSet(string key,SearchCondition condition,int pagesize,int pageindex)
+        public DataSet GetDataSet(string tablename,SearchCondition condition,int pagesize,int pageindex)
         {
 
             DataSet ds = new DataSet();
@@ -96,7 +96,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 
                 //转换成datatable
                 DataTable dt = DataTableUtils.ToDataTable(result);
-                dt.TableName = key;
+                dt.TableName = tablename;
                 ds.Tables.Add(dt);
 
                 
@@ -123,7 +123,6 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         public int GetCount(string key, SearchCondition condition)
         {
 
-            TransactionScope transaction = new TransactionScope();
             int intCount = 0;
 
             ISession ss = holder.CreateSession(typeof(CFunctionPagerNoARDaoOracleImp));
@@ -142,21 +141,21 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 }
 
                 intCount = (int)q.UniqueResult();
-                transaction.VoteCommit();
+                tran.Commit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             catch (DbException ex)
             {
-                transaction.VoteRollBack();
+                tran.Rollback();
                 throw new ApplicationException(ex.Message, ex);
             }
             finally
             {
-                transaction.Dispose();
+                tran.Dispose();
             }
 
             return intCount;

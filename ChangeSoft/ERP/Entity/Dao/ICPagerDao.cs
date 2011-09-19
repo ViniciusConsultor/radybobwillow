@@ -6,7 +6,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface ICPagerDao
     {
-        int GetCount(string key, SearchCondition condition);
-        System.Data.DataSet GetDataSet(string key, SearchCondition condition, int pagesize, int pageindex);
+        int GetCount(string tablename, SearchCondition condition);
+        System.Data.DataSet GetDataSet(string tablename, SearchCondition condition, int pagesize, int pageindex);
     }
 }
