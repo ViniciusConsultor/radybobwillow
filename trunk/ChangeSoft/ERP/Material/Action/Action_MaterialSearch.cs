@@ -59,6 +59,8 @@ namespace Com.GainWinSoft.ERP.Material.Action
             //设置可视列
 
 
+
+
            gridview.SetDisplayColumns(gridview.Name, null);
 
 

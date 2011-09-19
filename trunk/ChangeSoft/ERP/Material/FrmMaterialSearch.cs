@@ -123,6 +123,7 @@ namespace Com.GainWinSoft.ERP.Material
 
             CardVo cardvo = new CardVo();
             cardvo.IFacCd = this.txtFactoryCd.Text;
+
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
 
