@@ -35,7 +35,7 @@
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtEffDate = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -57,22 +57,22 @@
             this.tblPanelG2CusID = new System.Windows.Forms.TableLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCusID = new System.Windows.Forms.TextBox();
             this.tblPanelG2Pn1 = new System.Windows.Forms.TableLayoutPanel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtVerNo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMaterialCode = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRef_39 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRef_40 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCompanyNM = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
@@ -124,7 +124,7 @@
             // tblPanelG2
             // 
             resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
-            this.tblPanelG2.Controls.Add(this.textBox7, 2, 5);
+            this.tblPanelG2.Controls.Add(this.txtEffDate, 2, 5);
             this.tblPanelG2.Controls.Add(this.textBox6, 2, 3);
             this.tblPanelG2.Controls.Add(this.label12, 1, 1);
             this.tblPanelG2.Controls.Add(this.label11, 1, 0);
@@ -144,14 +144,14 @@
             this.tblPanelG2.Controls.Add(this.tblPanelG2CusID, 2, 0);
             this.tblPanelG2.Controls.Add(this.tblPanelG2Pn1, 2, 1);
             this.tblPanelG2.Controls.Add(this.tableLayoutPanel1, 2, 2);
-            this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList1, 2, 4);
-            this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList2, 2, 6);
+            this.tblPanelG2.Controls.Add(this.clsDetailCodeRef_39, 2, 4);
+            this.tblPanelG2.Controls.Add(this.clsDetailCodeRef_40, 2, 6);
             this.tblPanelG2.Name = "tblPanelG2";
             // 
-            // textBox7
+            // txtEffDate
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.txtEffDate, "txtEffDate");
+            this.txtEffDate.Name = "txtEffDate";
             // 
             // textBox6
             // 
@@ -259,7 +259,7 @@
             resources.ApplyResources(this.tblPanelG2CusID, "tblPanelG2CusID");
             this.tblPanelG2CusID.Controls.Add(this.label13, 0, 0);
             this.tblPanelG2CusID.Controls.Add(this.button2, 0, 0);
-            this.tblPanelG2CusID.Controls.Add(this.textBox1, 0, 0);
+            this.tblPanelG2CusID.Controls.Add(this.txtCusID, 0, 0);
             this.tblPanelG2CusID.Name = "tblPanelG2CusID";
             // 
             // label13
@@ -274,10 +274,10 @@
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtCusID
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtCusID, "txtCusID");
+            this.txtCusID.Name = "txtCusID";
             // 
             // tblPanelG2Pn1
             // 
@@ -285,10 +285,10 @@
             this.tblPanelG2Pn1.Controls.Add(this.label17, 5, 0);
             this.tblPanelG2Pn1.Controls.Add(this.label16, 6, 0);
             this.tblPanelG2Pn1.Controls.Add(this.label15, 4, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.textBox3, 3, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.txtVerNo, 3, 0);
             this.tblPanelG2Pn1.Controls.Add(this.label14, 2, 0);
             this.tblPanelG2Pn1.Controls.Add(this.button3, 1, 0);
-            this.tblPanelG2Pn1.Controls.Add(this.textBox2, 0, 0);
+            this.tblPanelG2Pn1.Controls.Add(this.txtMaterialCode, 0, 0);
             this.tblPanelG2Pn1.Name = "tblPanelG2Pn1";
             // 
             // label17
@@ -308,10 +308,10 @@
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
             // 
-            // textBox3
+            // txtVerNo
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.txtVerNo, "txtVerNo");
+            this.txtVerNo.Name = "txtVerNo";
             // 
             // label14
             // 
@@ -324,10 +324,10 @@
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtMaterialCode
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.txtMaterialCode, "txtMaterialCode");
+            this.txtMaterialCode.Name = "txtMaterialCode";
             // 
             // tableLayoutPanel1
             // 
@@ -359,29 +359,29 @@
             resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.Name = "textBox4";
             // 
-            // clsDetailCodeRefDropDownList1
+            // clsDetailCodeRef_39
             // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "39";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            this.clsDetailCodeRef_39.Autoaddblankitem = false;
+            this.clsDetailCodeRef_39.ClsCd = "39";
+            this.clsDetailCodeRef_39.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRef_39, "clsDetailCodeRef_39");
+            this.clsDetailCodeRef_39.Name = "clsDetailCodeRef_39";
+            this.clsDetailCodeRef_39.Selectedindex = -1;
+            this.clsDetailCodeRef_39.Selectedname = null;
+            this.clsDetailCodeRef_39.Selectedvalue = null;
+            this.clsDetailCodeRef_39.ShowNameDesc = false;
             // 
-            // clsDetailCodeRefDropDownList2
+            // clsDetailCodeRef_40
             // 
-            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList2.ClsCd = "40";
-            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
-            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
-            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList2.Selectedname = null;
-            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
+            this.clsDetailCodeRef_40.Autoaddblankitem = false;
+            this.clsDetailCodeRef_40.ClsCd = "40";
+            this.clsDetailCodeRef_40.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRef_40, "clsDetailCodeRef_40");
+            this.clsDetailCodeRef_40.Name = "clsDetailCodeRef_40";
+            this.clsDetailCodeRef_40.Selectedindex = -1;
+            this.clsDetailCodeRef_40.Selectedname = null;
+            this.clsDetailCodeRef_40.Selectedvalue = null;
+            this.clsDetailCodeRef_40.ShowNameDesc = false;
             // 
             // tblPanelG1
             // 
@@ -512,14 +512,14 @@
         private System.Windows.Forms.TableLayoutPanel tblPanelG2CusID;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCusID;
         private System.Windows.Forms.TableLayoutPanel tblPanelG2Pn1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMaterialCode;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtVerNo;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label19;
@@ -527,9 +527,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList2;
+        private System.Windows.Forms.TextBox txtEffDate;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRef_39;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRef_40;
 
     }
 }
