@@ -136,6 +136,10 @@
       <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
       <Name>TableDropDownList</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
+      <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
+      <Name>Noogen.Validation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

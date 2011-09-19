@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 using Com.GainWinSoft.Common.Vo;
+using Noogen.Validation;
 
 namespace Com.GainWinSoft.ERP.Factory
 {
@@ -22,6 +23,14 @@ namespace Com.GainWinSoft.ERP.Factory
         /// 利用者情报
         /// </summary>
         private LoginUserInfoVo uservo;
+
+        /// <summary>
+        /// Check用Validation
+        /// </summary>
+        private ValidationProvider vdpRequireG1;
+        private ValidationProvider vdpRequireG2;
+        private ValidationProvider vdpExistG1;
+        private ValidationProvider vdpExistG2;
 
         /// <summary>
         /// 应用程序的主入口点。
@@ -39,6 +48,7 @@ namespace Com.GainWinSoft.ERP.Factory
         private void FrmFactory_Load(object sender, System.EventArgs e)
         {
             this.Initialize();
+            this.Check_Init();
         }
 
         /// <summary>
@@ -56,6 +66,15 @@ namespace Com.GainWinSoft.ERP.Factory
             this.SetLayout(this.strMode);
             this.removeAllClickEvent();
             this.addAllClickEvent();
+
+            this.vdpRequireG1 = new ValidationProvider(this.components);
+            this.vdpRequireG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpRequireG2 = new ValidationProvider(this.components);
+            this.vdpRequireG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpExistG1 = new ValidationProvider(this.components);
+            this.vdpExistG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpExistG2 = new ValidationProvider(this.components);
+            this.vdpExistG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
         }
 
         /// <summary>
@@ -89,6 +108,12 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void commonToolStrip1_OkClick(object sender, EventArgs e)
         {
+            if (!this.CheckCard())
+            {
+                return;
+            }
+
+            this.LoadData();
             this.SetLayoutG1G2();
         }
 
@@ -387,6 +412,47 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
+        }
+        #endregion
+
+        #region 各种Check
+        /// <summary>
+        /// 各种Check用Validation初期化
+        /// </summary>
+        private void Check_Init()
+        {
+            ValidationRule ruleCompany = new ValidationRule();
+            ruleCompany.IsRequired = true;
+            ruleCompany.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblCompany.Text);
+            this.vdpRequireG1.SetValidationRule(this.txtCompany, ruleCompany);
+
+            ValidationRule ruleFactory = new ValidationRule();
+            ruleFactory.IsRequired = true;
+            ruleFactory.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblFactory.Text);
+            this.vdpRequireG1.SetValidationRule(this.txtFactory, ruleFactory);
+        }
+
+        private Boolean CheckCard()
+        {
+            Boolean rtnValue = true;
+
+            if (!this.vdpRequireG1.Validate())
+            {
+                IList<MessageVo> re = this.vdpRequireG1.ValidationMessages(true);
+                this.DialogResult = DialogResult.Abort;
+                rtnValue = false;
+            }
+
+            return rtnValue;
+        }
+        #endregion
+
+        #region 各种数据抽出
+        /// <summary>
+        /// 根据画面输入条件，抽出数据
+        /// </summary>
+        private void LoadData()
+        {
         }
         #endregion
 

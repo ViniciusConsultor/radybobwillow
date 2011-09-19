@@ -127,281 +127,20 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tpG1.Name" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;tpG1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpG1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tpG1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;commonToolStrip1.Name" xml:space="preserve">
-    <value>commonToolStrip1</value>
-  </data>
-  <data name="&gt;&gt;commonToolStrip1.Type" xml:space="preserve">
-    <value>Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip, Com.GainWinSoft.Common.Control.CommonToolStrip, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;commonToolStrip1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;commonToolStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Name" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tpG2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tpG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="cbbChange" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar19" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblChange" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbDecide" Row="15" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar18" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblDecide" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbCost" Row="14" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar17" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCost" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbPlan" Row="13" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar16" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblPlan" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbRate" Row="12" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar15" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbSafe" Row="11" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar14" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblSafe" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtStockPeriod" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar12" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStockPeriod" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAutoPeriod" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar11" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAutoPeriod" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtArrange" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar13" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblArrange" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDepartNM" Row="9" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="btnDepart" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtDepart" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblDepart" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtBase" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblBase" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbTimezone" Row="8" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar10" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblTimezone" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbLanguage" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar9" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLanguage" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtFax" Row="7" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblFax" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtTel" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar8" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblTel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress3" Row="6" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress3" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress2" Row="5" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress1" Row="4" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar7" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAddress1" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCountry" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtZipCD" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblZipCD" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtPinyin" Row="2" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblPinyin" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtName" Row="1" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblName" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAbbreviation" Row="0" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAbbreviation" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbCountry" Row="3" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,200,Absolute,110,Absolute,15,Absolute,80,Absolute,26,Absolute,100,Absolute,100,Percent,100" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100,Absolute,1,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 562</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>tpBase</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tpG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tpG2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,57,Percent,100,Absolute,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tpBase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tpBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tpBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tpBase.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tpBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 562</value>
-  </data>
-  <data name="tpBase.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tpBase.Name" xml:space="preserve">
-    <value>tpBase</value>
-  </data>
-  <data name="&gt;&gt;tpBase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpBase.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tpBase.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpBase.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,550" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <data name="tpG1.ColumnCount" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="&gt;&gt;lblMode.Name" xml:space="preserve">
-    <value>lblMode</value>
-  </data>
-  <data name="&gt;&gt;lblMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblMode.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblMode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnFactory.Name" xml:space="preserve">
-    <value>btnFactory</value>
-  </data>
-  <data name="&gt;&gt;btnFactory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFactory.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;btnFactory.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtFactory.Name" xml:space="preserve">
-    <value>txtFactory</value>
-  </data>
-  <data name="&gt;&gt;txtFactory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtFactory.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;txtFactory.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblStar2.Name" xml:space="preserve">
-    <value>lblStar2</value>
-  </data>
-  <data name="&gt;&gt;lblStar2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar2.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblStar2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblFactory.Name" xml:space="preserve">
-    <value>lblFactory</value>
-  </data>
-  <data name="&gt;&gt;lblFactory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFactory.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblFactory.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblCompanyNM.Name" xml:space="preserve">
-    <value>lblCompanyNM</value>
-  </data>
-  <data name="&gt;&gt;lblCompanyNM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCompanyNM.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblCompanyNM.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblCompany.Name" xml:space="preserve">
-    <value>lblCompany</value>
-  </data>
-  <data name="&gt;&gt;lblCompany.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCompany.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblCompany.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblStar1.Name" xml:space="preserve">
-    <value>lblStar1</value>
-  </data>
-  <data name="&gt;&gt;lblStar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar1.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;lblStar1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtCompany.Name" xml:space="preserve">
-    <value>txtCompany</value>
-  </data>
-  <data name="&gt;&gt;txtCompany.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCompany.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;txtCompany.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btnCompany.Name" xml:space="preserve">
-    <value>btnCompany</value>
-  </data>
-  <data name="&gt;&gt;btnCompany.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCompany.Parent" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;btnCompany.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tpG1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tpG1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 35</value>
-  </data>
-  <data name="tpG1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tpG1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tpG1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 57</value>
-  </data>
-  <data name="tpG1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tpG1.Name" xml:space="preserve">
-    <value>tpG1</value>
-  </data>
-  <data name="&gt;&gt;tpG1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpG1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tpG1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="lblMode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="lblMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 5</value>
   </data>
@@ -735,6 +474,39 @@
   <data name="&gt;&gt;btnCompany.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="tpG1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tpG1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="tpG1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tpG1.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tpG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 57</value>
+  </data>
+  <data name="tpG1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpG1.Name" xml:space="preserve">
+    <value>tpG1</value>
+  </data>
+  <data name="&gt;&gt;tpG1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpG1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tpG1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -765,824 +537,8 @@
   <data name="&gt;&gt;commonToolStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="lblDepart.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="tpG2.ColumnCount" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="&gt;&gt;cbbChange.Name" xml:space="preserve">
-    <value>cbbChange</value>
-  </data>
-  <data name="&gt;&gt;cbbChange.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbChange.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbChange.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblStar19.Name" xml:space="preserve">
-    <value>lblStar19</value>
-  </data>
-  <data name="&gt;&gt;lblStar19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar19.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar19.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblChange.Name" xml:space="preserve">
-    <value>lblChange</value>
-  </data>
-  <data name="&gt;&gt;lblChange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblChange.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblChange.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cbbDecide.Name" xml:space="preserve">
-    <value>cbbDecide</value>
-  </data>
-  <data name="&gt;&gt;cbbDecide.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbDecide.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbDecide.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblStar18.Name" xml:space="preserve">
-    <value>lblStar18</value>
-  </data>
-  <data name="&gt;&gt;lblStar18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar18.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar18.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblDecide.Name" xml:space="preserve">
-    <value>lblDecide</value>
-  </data>
-  <data name="&gt;&gt;lblDecide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDecide.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblDecide.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cbbCost.Name" xml:space="preserve">
-    <value>cbbCost</value>
-  </data>
-  <data name="&gt;&gt;cbbCost.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbCost.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbCost.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblStar17.Name" xml:space="preserve">
-    <value>lblStar17</value>
-  </data>
-  <data name="&gt;&gt;lblStar17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar17.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar17.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lblCost.Name" xml:space="preserve">
-    <value>lblCost</value>
-  </data>
-  <data name="&gt;&gt;lblCost.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCost.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblCost.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;cbbPlan.Name" xml:space="preserve">
-    <value>cbbPlan</value>
-  </data>
-  <data name="&gt;&gt;cbbPlan.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbPlan.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbPlan.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lblStar16.Name" xml:space="preserve">
-    <value>lblStar16</value>
-  </data>
-  <data name="&gt;&gt;lblStar16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar16.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar16.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lblPlan.Name" xml:space="preserve">
-    <value>lblPlan</value>
-  </data>
-  <data name="&gt;&gt;lblPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPlan.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblPlan.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cbbRate.Name" xml:space="preserve">
-    <value>cbbRate</value>
-  </data>
-  <data name="&gt;&gt;cbbRate.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbRate.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbRate.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;lblStar15.Name" xml:space="preserve">
-    <value>lblStar15</value>
-  </data>
-  <data name="&gt;&gt;lblStar15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar15.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar15.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;lblRate.Name" xml:space="preserve">
-    <value>lblRate</value>
-  </data>
-  <data name="&gt;&gt;lblRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblRate.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblRate.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;cbbSafe.Name" xml:space="preserve">
-    <value>cbbSafe</value>
-  </data>
-  <data name="&gt;&gt;cbbSafe.Type" xml:space="preserve">
-    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbSafe.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbSafe.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lblStar14.Name" xml:space="preserve">
-    <value>lblStar14</value>
-  </data>
-  <data name="&gt;&gt;lblStar14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar14.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar14.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lblSafe.Name" xml:space="preserve">
-    <value>lblSafe</value>
-  </data>
-  <data name="&gt;&gt;lblSafe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSafe.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblSafe.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;txtStockPeriod.Name" xml:space="preserve">
-    <value>txtStockPeriod</value>
-  </data>
-  <data name="&gt;&gt;txtStockPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtStockPeriod.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtStockPeriod.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;lblStar12.Name" xml:space="preserve">
-    <value>lblStar12</value>
-  </data>
-  <data name="&gt;&gt;lblStar12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar12.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar12.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;lblStockPeriod.Name" xml:space="preserve">
-    <value>lblStockPeriod</value>
-  </data>
-  <data name="&gt;&gt;lblStockPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStockPeriod.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStockPeriod.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;txtAutoPeriod.Name" xml:space="preserve">
-    <value>txtAutoPeriod</value>
-  </data>
-  <data name="&gt;&gt;txtAutoPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAutoPeriod.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtAutoPeriod.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;lblStar11.Name" xml:space="preserve">
-    <value>lblStar11</value>
-  </data>
-  <data name="&gt;&gt;lblStar11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar11.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar11.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;lblAutoPeriod.Name" xml:space="preserve">
-    <value>lblAutoPeriod</value>
-  </data>
-  <data name="&gt;&gt;lblAutoPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAutoPeriod.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblAutoPeriod.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;txtArrange.Name" xml:space="preserve">
-    <value>txtArrange</value>
-  </data>
-  <data name="&gt;&gt;txtArrange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtArrange.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtArrange.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;lblStar13.Name" xml:space="preserve">
-    <value>lblStar13</value>
-  </data>
-  <data name="&gt;&gt;lblStar13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar13.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar13.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;lblArrange.Name" xml:space="preserve">
-    <value>lblArrange</value>
-  </data>
-  <data name="&gt;&gt;lblArrange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblArrange.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblArrange.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;lblDepartNM.Name" xml:space="preserve">
-    <value>lblDepartNM</value>
-  </data>
-  <data name="&gt;&gt;lblDepartNM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDepartNM.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblDepartNM.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;btnDepart.Name" xml:space="preserve">
-    <value>btnDepart</value>
-  </data>
-  <data name="&gt;&gt;btnDepart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDepart.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;btnDepart.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;txtDepart.Name" xml:space="preserve">
-    <value>txtDepart</value>
-  </data>
-  <data name="&gt;&gt;txtDepart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtDepart.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtDepart.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;lblDepart.Name" xml:space="preserve">
-    <value>lblDepart</value>
-  </data>
-  <data name="&gt;&gt;lblDepart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDepart.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblDepart.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;txtBase.Name" xml:space="preserve">
-    <value>txtBase</value>
-  </data>
-  <data name="&gt;&gt;txtBase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtBase.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtBase.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;lblBase.Name" xml:space="preserve">
-    <value>lblBase</value>
-  </data>
-  <data name="&gt;&gt;lblBase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBase.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblBase.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;cbbTimezone.Name" xml:space="preserve">
-    <value>cbbTimezone</value>
-  </data>
-  <data name="&gt;&gt;cbbTimezone.Type" xml:space="preserve">
-    <value>Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList, TableDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbTimezone.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbTimezone.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;lblStar10.Name" xml:space="preserve">
-    <value>lblStar10</value>
-  </data>
-  <data name="&gt;&gt;lblStar10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar10.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar10.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;lblTimezone.Name" xml:space="preserve">
-    <value>lblTimezone</value>
-  </data>
-  <data name="&gt;&gt;lblTimezone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTimezone.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblTimezone.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Name" xml:space="preserve">
-    <value>cbbLanguage</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Type" xml:space="preserve">
-    <value>Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList, TableDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;lblStar9.Name" xml:space="preserve">
-    <value>lblStar9</value>
-  </data>
-  <data name="&gt;&gt;lblStar9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar9.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar9.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;lblLanguage.Name" xml:space="preserve">
-    <value>lblLanguage</value>
-  </data>
-  <data name="&gt;&gt;lblLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblLanguage.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblLanguage.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;txtFax.Name" xml:space="preserve">
-    <value>txtFax</value>
-  </data>
-  <data name="&gt;&gt;txtFax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtFax.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtFax.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;lblFax.Name" xml:space="preserve">
-    <value>lblFax</value>
-  </data>
-  <data name="&gt;&gt;lblFax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFax.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblFax.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;txtTel.Name" xml:space="preserve">
-    <value>txtTel</value>
-  </data>
-  <data name="&gt;&gt;txtTel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtTel.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtTel.ZOrder" xml:space="preserve">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;lblStar8.Name" xml:space="preserve">
-    <value>lblStar8</value>
-  </data>
-  <data name="&gt;&gt;lblStar8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar8.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar8.ZOrder" xml:space="preserve">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;lblTel.Name" xml:space="preserve">
-    <value>lblTel</value>
-  </data>
-  <data name="&gt;&gt;lblTel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTel.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblTel.ZOrder" xml:space="preserve">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;txtAddress3.Name" xml:space="preserve">
-    <value>txtAddress3</value>
-  </data>
-  <data name="&gt;&gt;txtAddress3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAddress3.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtAddress3.ZOrder" xml:space="preserve">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;lblAddress3.Name" xml:space="preserve">
-    <value>lblAddress3</value>
-  </data>
-  <data name="&gt;&gt;lblAddress3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAddress3.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblAddress3.ZOrder" xml:space="preserve">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;txtAddress2.Name" xml:space="preserve">
-    <value>txtAddress2</value>
-  </data>
-  <data name="&gt;&gt;txtAddress2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAddress2.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtAddress2.ZOrder" xml:space="preserve">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;lblAddress2.Name" xml:space="preserve">
-    <value>lblAddress2</value>
-  </data>
-  <data name="&gt;&gt;lblAddress2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAddress2.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblAddress2.ZOrder" xml:space="preserve">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;txtAddress1.Name" xml:space="preserve">
-    <value>txtAddress1</value>
-  </data>
-  <data name="&gt;&gt;txtAddress1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAddress1.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtAddress1.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;lblStar7.Name" xml:space="preserve">
-    <value>lblStar7</value>
-  </data>
-  <data name="&gt;&gt;lblStar7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar7.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar7.ZOrder" xml:space="preserve">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;lblAddress1.Name" xml:space="preserve">
-    <value>lblAddress1</value>
-  </data>
-  <data name="&gt;&gt;lblAddress1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAddress1.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblAddress1.ZOrder" xml:space="preserve">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;lblStar6.Name" xml:space="preserve">
-    <value>lblStar6</value>
-  </data>
-  <data name="&gt;&gt;lblStar6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar6.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar6.ZOrder" xml:space="preserve">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;lblCountry.Name" xml:space="preserve">
-    <value>lblCountry</value>
-  </data>
-  <data name="&gt;&gt;lblCountry.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCountry.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblCountry.ZOrder" xml:space="preserve">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;txtZipCD.Name" xml:space="preserve">
-    <value>txtZipCD</value>
-  </data>
-  <data name="&gt;&gt;txtZipCD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtZipCD.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtZipCD.ZOrder" xml:space="preserve">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;lblStar5.Name" xml:space="preserve">
-    <value>lblStar5</value>
-  </data>
-  <data name="&gt;&gt;lblStar5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar5.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar5.ZOrder" xml:space="preserve">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;lblZipCD.Name" xml:space="preserve">
-    <value>lblZipCD</value>
-  </data>
-  <data name="&gt;&gt;lblZipCD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblZipCD.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblZipCD.ZOrder" xml:space="preserve">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;txtPinyin.Name" xml:space="preserve">
-    <value>txtPinyin</value>
-  </data>
-  <data name="&gt;&gt;txtPinyin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtPinyin.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtPinyin.ZOrder" xml:space="preserve">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;lblPinyin.Name" xml:space="preserve">
-    <value>lblPinyin</value>
-  </data>
-  <data name="&gt;&gt;lblPinyin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPinyin.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblPinyin.ZOrder" xml:space="preserve">
-    <value>57</value>
-  </data>
-  <data name="&gt;&gt;txtName.Name" xml:space="preserve">
-    <value>txtName</value>
-  </data>
-  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
-    <value>58</value>
-  </data>
-  <data name="&gt;&gt;lblStar4.Name" xml:space="preserve">
-    <value>lblStar4</value>
-  </data>
-  <data name="&gt;&gt;lblStar4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar4.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar4.ZOrder" xml:space="preserve">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;lblName.Name" xml:space="preserve">
-    <value>lblName</value>
-  </data>
-  <data name="&gt;&gt;lblName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblName.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;txtAbbreviation.Name" xml:space="preserve">
-    <value>txtAbbreviation</value>
-  </data>
-  <data name="&gt;&gt;txtAbbreviation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAbbreviation.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;txtAbbreviation.ZOrder" xml:space="preserve">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;lblStar3.Name" xml:space="preserve">
-    <value>lblStar3</value>
-  </data>
-  <data name="&gt;&gt;lblStar3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStar3.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblStar3.ZOrder" xml:space="preserve">
-    <value>62</value>
-  </data>
-  <data name="&gt;&gt;lblAbbreviation.Name" xml:space="preserve">
-    <value>lblAbbreviation</value>
-  </data>
-  <data name="&gt;&gt;lblAbbreviation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAbbreviation.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;lblAbbreviation.ZOrder" xml:space="preserve">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;cbbCountry.Name" xml:space="preserve">
-    <value>cbbCountry</value>
-  </data>
-  <data name="&gt;&gt;cbbCountry.Type" xml:space="preserve">
-    <value>Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList, TableDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbbCountry.Parent" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;cbbCountry.ZOrder" xml:space="preserve">
-    <value>64</value>
-  </data>
-  <data name="tpG2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tpG2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 92</value>
-  </data>
-  <data name="tpG2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tpG2.RowCount" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="tpG2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 460</value>
-  </data>
-  <data name="tpG2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Name" xml:space="preserve">
-    <value>tpG2</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpG2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tpG2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tpG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="cbbChange" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar19" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblChange" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbDecide" Row="15" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar18" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblDecide" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbCost" Row="14" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar17" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCost" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbPlan" Row="13" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar16" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblPlan" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbRate" Row="12" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar15" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbSafe" Row="11" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar14" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblSafe" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtStockPeriod" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar12" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStockPeriod" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAutoPeriod" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar11" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAutoPeriod" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtArrange" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar13" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblArrange" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDepartNM" Row="9" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="btnDepart" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtDepart" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblDepart" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtBase" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblBase" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbTimezone" Row="8" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar10" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblTimezone" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbLanguage" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar9" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLanguage" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtFax" Row="7" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblFax" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtTel" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar8" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblTel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress3" Row="6" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress3" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress2" Row="5" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress1" Row="4" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar7" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAddress1" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCountry" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtZipCD" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblZipCD" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtPinyin" Row="2" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblPinyin" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtName" Row="1" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblName" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAbbreviation" Row="0" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAbbreviation" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbCountry" Row="3" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,200,Absolute,110,Absolute,15,Absolute,80,Absolute,26,Absolute,100,Absolute,100,Percent,100" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100,Absolute,1,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="cbbChange.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3848,6 +2804,105 @@
   </data>
   <data name="&gt;&gt;cbbCountry.ZOrder" xml:space="preserve">
     <value>64</value>
+  </data>
+  <data name="tpG2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tpG2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 92</value>
+  </data>
+  <data name="tpG2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tpG2.RowCount" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="tpG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 460</value>
+  </data>
+  <data name="tpG2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpG2.Name" xml:space="preserve">
+    <value>tpG2</value>
+  </data>
+  <data name="&gt;&gt;tpG2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpG2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tpG2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tpG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="cbbChange" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar19" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblChange" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbDecide" Row="15" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar18" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblDecide" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbCost" Row="14" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar17" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCost" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbPlan" Row="13" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar16" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblPlan" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbRate" Row="12" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar15" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbSafe" Row="11" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar14" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblSafe" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtStockPeriod" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar12" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStockPeriod" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAutoPeriod" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar11" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAutoPeriod" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtArrange" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar13" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblArrange" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDepartNM" Row="9" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="btnDepart" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtDepart" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblDepart" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtBase" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblBase" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbTimezone" Row="8" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar10" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblTimezone" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbLanguage" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar9" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLanguage" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtFax" Row="7" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblFax" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtTel" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar8" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblTel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress3" Row="6" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress3" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress2" Row="5" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress1" Row="4" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar7" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAddress1" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCountry" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtZipCD" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblZipCD" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtPinyin" Row="2" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblPinyin" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtName" Row="1" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblName" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAbbreviation" Row="0" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAbbreviation" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbCountry" Row="3" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,200,Absolute,110,Absolute,15,Absolute,80,Absolute,26,Absolute,100,Absolute,100,Percent,100" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100,Absolute,1,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 562</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>tpBase</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tpG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tpG2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,57,Percent,100,Absolute,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tpBase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tpBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tpBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tpBase.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpBase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 562</value>
+  </data>
+  <data name="tpBase.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tpBase.Name" xml:space="preserve">
+    <value>tpBase</value>
+  </data>
+  <data name="&gt;&gt;tpBase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpBase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tpBase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpBase.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,550" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
