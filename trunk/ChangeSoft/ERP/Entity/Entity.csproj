@@ -110,6 +110,7 @@
     <Compile Include="Dao\CCodeRefTradeForMaterialNoARDaoOracleImp.cs" />
     <Compile Include="Dao\CFunctionPagerNoARDaoOracleImp.cs" />
     <Compile Include="Dao\CCatalogFunctionNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\CTPmMsPagerNoARDaoOracleImp.cs" />
     <Compile Include="Dao\ICCatalogFunctionNoARDao.cs" />
     <Compile Include="Dao\ICClsDetailBelongToClsMsDao.cs" />
     <Compile Include="Dao\ICCatalogHasManyFunctionDao.cs" />

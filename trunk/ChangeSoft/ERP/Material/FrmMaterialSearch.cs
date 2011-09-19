@@ -17,6 +17,8 @@ using Noogen.Validation;
 using log4net;
 using Com.GainWinSoft.ERP.CodeRef;
 using Com.GainWinSoft.Common.Vo;
+using Com.GainWinSoft.ERP.Material.Action;
+using Com.GainWinSoft.ERP.Material.FormVo;
 
 namespace Com.GainWinSoft.ERP.Material
 {
@@ -50,30 +52,6 @@ namespace Com.GainWinSoft.ERP.Material
                 this.tlpFactory.Enabled = true;
             }
 
-//            SearchCondition condition = new SearchCondition();
-//            condition.AddCondition("LANGID", LangUtils.GetCurrentLanguage(), SqlOperator.Equal);
-
-//            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = new PagerHelper("CFunctionPagerNoARDao", condition, 1, 5);
-//            this.FrmMaterialSearch_pagerGridView1.LoadData();
-//            log.Debug("Search Init");
-//            //设置列名
-//            foreach (string key in this.FrmMaterialSearch_pagerGridView1.Pagerhelper.Columns)
-//            {
-//                this.FrmMaterialSearch_pagerGridView1.SetColumnAlias(key, (string)rm.GetObject(key));
-//            }
-
-            //设置可视列
-//            IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
-//            ColumnInfoVo columnvo = new ColumnInfoVo();
-//            columnvo.Columnname = "Grid_functionid";
-//            columnvo.Columnwidth = 100;
-//            clist.Add(columnvo);
-//            columnvo = new ColumnInfoVo();
-//            columnvo.Columnname = "Grid_functionname";
-//            columnvo.Columnwidth = 200;
-//            clist.Add(columnvo);
-//
-//            this.FrmMaterialSearch_pagerGridView1.SetDisplayColumns(this.FrmMaterialSearch_pagerGridView1.Name, null);
             //this.tableLayoutPanel1.Enabled = false;
             //commonToolStrip1.AddEnabled = false;
             //commonToolStrip1.UpdateEnabled = false;
@@ -135,13 +113,22 @@ namespace Com.GainWinSoft.ERP.Material
 
         private void button6_Click(object sender, EventArgs e)
         {
-            IList<MessageVo> re = new List<MessageVo>();
-            MessageVo v = new MessageVo();
-            v.MessageType = "Warning";
-            v.ResultMessage = "ddddddddddd";
-            re.Add(v);
-            this.baseform.msgwindow.Messagelist = re;
-            this.baseform.msgwindow.ShowMessage();
+            //IList<MessageVo> re = new List<MessageVo>();
+            //MessageVo v = new MessageVo();
+            //v.MessageType = "Warning";
+            //v.ResultMessage = "ddddddddddd";
+            //re.Add(v);
+            //this.baseform.msgwindow.Messagelist = re;
+            //this.baseform.msgwindow.ShowMessage();
+
+            CardVo cardvo = new CardVo();
+            cardvo.IFacCd = this.txtFactoryCd.Text;
+            Action_MaterialSearch action = (Action_MaterialSearch)ComponentLocator.Instance().Resolve(typeof(Action_MaterialSearch));
+            action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
+
+
+
+
         }
 
 

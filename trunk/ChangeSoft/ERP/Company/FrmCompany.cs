@@ -74,10 +74,10 @@ namespace Com.GainWinSoft.ERP.Company
 
                 ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
                 SearchCondition condition = new SearchCondition();
-                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS", "00",SqlOperator.Equal);
+                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS","I_ITEM_ENTRY_CLS","00",SqlOperator.Equal);
                 //condition.AddCondition("T_PM_MS.I_FAC_CD","F
 
-                IList<CTPmMsNoAR> l = d.GetPmMsDetail(condition,false);
+                IList<CTPmMsNoAR> l = d.GetPmMsDetail(condition);
                 //调用Action类的方法
                 MessageBox.Show(l.Count.ToString());
                 //NewMethod();

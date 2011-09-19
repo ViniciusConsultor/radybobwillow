@@ -6,7 +6,7 @@ using System.Text;
 namespace Com.GainWinSoft.ERP.Material.FormVo
 {
     [Serializable]
-    class CardVo
+    public class CardVo
     {
         private string iFacCd;
         private string vFacdesc;
@@ -19,6 +19,9 @@ namespace Com.GainWinSoft.ERP.Material.FormVo
         private string vItemtypedesc;
 
         private string iItemCd;
+        private string iDispItemCd;
+        private string iDispItemRev;
+
         private string iItemDesc;
         private string iItemRev;
         private string iMakerCd;        //制造商
@@ -155,6 +158,20 @@ namespace Com.GainWinSoft.ERP.Material.FormVo
         {
             get { return iMntclsdesc; }
             set { iMntclsdesc = value; }
+        }
+
+
+
+        public string IDispItemCd
+        {
+            get { return iDispItemCd; }
+            set { iDispItemCd = value; }
+        }
+
+        public string IDispItemRev
+        {
+            get { return iDispItemRev; }
+            set { iDispItemRev = value; }
         }
     }
 }
