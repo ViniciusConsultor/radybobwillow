@@ -46,6 +46,30 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">字段值</param>
         /// <param name="sqlOperator">SqlOperator枚举类型</param>
         /// <returns>增加条件后的Hashtable</returns>
+        public SearchCondition AddCondition(string fieldName,object fieldValue, SqlOperator sqlOperator)
+        {
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fieldName, fieldName, fieldValue, sqlOperator));
+            return this;
+        }
+        /// <summary>
+        /// 为查询添加条件
+        /// <example>
+        /// 用法一：
+        /// SearchCondition searchObj = new SearchCondition();
+        /// searchObj.AddCondition("Test", 1, SqlOperator.NotEqual);
+        /// searchObj.AddCondition("Test2", "Test2Value", SqlOperator.Like);
+        /// string conditionSql = searchObj.BuildConditionSql();
+        /// 
+        /// 用法二：AddCondition函数可以串起来添加多个条件
+        /// SearchCondition searchObj = new SearchCondition();
+        /// searchObj.AddCondition("Test", 1, SqlOperator.NotEqual).AddCondition("Test2", "Test2Value", SqlOperator.Like);
+        /// string conditionSql = searchObj.BuildConditionSql();
+        /// </example>
+        /// </summary>
+        /// <param name="fielName">字段名称</param>
+        /// <param name="fieldValue">字段值</param>
+        /// <param name="sqlOperator">SqlOperator枚举类型</param>
+        /// <returns>增加条件后的Hashtable</returns>
         public SearchCondition AddCondition(string fielName,string parameterName, object fieldValue, SqlOperator sqlOperator)
         {
             this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName,parameterName, fieldValue, sqlOperator));
@@ -123,6 +147,12 @@ namespace Com.GainWinSoft.Common
 
             foreach (DictionaryEntry de in this.conditionTable)
             {
+
+
+                if (de.Value.GetType() != typeof(SearchInfo))
+                {
+                    continue;
+                }
                 searchInfo = (SearchInfo)de.Value;
 
                 //如果只是作为参数，不参与sql条件的生成。
@@ -182,6 +212,12 @@ namespace Com.GainWinSoft.Common
                 tempSql = " AND ({0})";
                 foreach (DictionaryEntry de in this.conditionTable)
                 {
+
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
+                    {
+                        continue;
+                    }
                     searchInfo = (SearchInfo)de.Value;
 
                     //如果只是作为参数，不参与sql条件的生成。
@@ -251,6 +287,12 @@ namespace Com.GainWinSoft.Common
 
             foreach (DictionaryEntry de in this.conditionTable)
             {
+
+
+                if (de.Value.GetType() != typeof(SearchInfo))
+                {
+                    continue;
+                }
                 searchInfo = (SearchInfo)de.Value;
 
                 //如果只是作为参数，不参与sql条件的生成。
@@ -311,6 +353,12 @@ namespace Com.GainWinSoft.Common
                 tempSql = " AND ({0})";
                 foreach (DictionaryEntry de in this.conditionTable)
                 {
+
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
+                    {
+                        continue;
+                    }
                     searchInfo = (SearchInfo)de.Value;
 
                     //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
