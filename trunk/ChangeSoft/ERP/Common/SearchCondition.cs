@@ -11,11 +11,21 @@ namespace Com.GainWinSoft.Common
     public class SearchCondition
     {
         private Hashtable conditionTable = new Hashtable();
+        
         public Hashtable ConditionTable
         {
             get { return this.conditionTable; }
         }
 
+        public void SetAddtionalCondition(string key, object value)
+        {
+            conditionTable.Add(key, value);
+        }
+
+        public object GetAddtionalCondition(string key)
+        {
+            return conditionTable[key];
+        }
         /// <summary>
         /// 只用作条件，不会参与拼SQL的
         /// </summary>
