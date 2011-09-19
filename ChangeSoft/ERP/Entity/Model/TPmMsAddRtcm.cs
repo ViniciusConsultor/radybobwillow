@@ -94,7 +94,7 @@ using Castle.ActiveRecord.Queries;
 /// </summary>
 namespace Com.GainWinSoft.ERP.Entity
 {
-	[Serializable , ActiveRecord("T_PM_MS_ADD_RTCM", DynamicUpdate = true, Lazy = true)]
+	[Serializable , ActiveRecord("T_PM_MS_ADD_RTCM")]
 	public class TPmMsAddRtcm : ActiveRecordBase	{
 
 		#region Private Members
