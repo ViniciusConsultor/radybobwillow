@@ -78,6 +78,7 @@
     <Compile Include="Action\Action_FrmExchangeRate.cs" />
     <Compile Include="Action\IAction_FrmExchangeRate.cs" />
     <Compile Include="FormVo\FrmExRateCardVo.cs" />
+    <Compile Include="FormVo\FrmExRateDetailVo.cs" />
     <Compile Include="FrmExchangeRate.cs">
       <SubType>Form</SubType>
     </Compile>
