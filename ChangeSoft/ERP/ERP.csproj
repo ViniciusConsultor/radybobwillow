@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AlphaGradientPanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\AlphaGradientPanel.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>dll\Castle.ActiveRecord.dll</HintPath>
@@ -98,6 +102,9 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -129,6 +136,12 @@
     <Compile Include="CheckMethod\Check_LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstForm.Designer.cs">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +167,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstForm.resx">
+      <DependentUpon>FirstForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.en-US.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -349,6 +365,7 @@
     <None Include="img\CustomerMaterial.png" />
     <None Include="img\Currency.png" />
     <None Include="img\EstimateInventoryInquiry.png" />
+    <None Include="img\down_32.png" />
     <Content Include="img\history.png" />
     <None Include="img\Inventory16.png" />
     <None Include="img\Inventory24.png" />
@@ -414,6 +431,13 @@
     <None Include="img\ManufactureInstructionPickingEntry.png" />
     <None Include="img\PurchaseOrder.png" />
     <None Include="img\LotTraceInquiry.png" />
+    <None Include="img\leftup_32.png" />
+    <None Include="img\rightup_32.png" />
+    <None Include="img\rightdown_32.png" />
+    <None Include="img\up_32.png" />
+    <None Include="img\leftdown_32.png" />
+    <None Include="img\left_32.png" />
+    <None Include="img\right_32.png" />
     <Content Include="img\wizard.png" />
     <None Include="img\WorkSheetInquiry.png" />
     <None Include="img\WorkSheetEntry.png" />
@@ -460,6 +484,14 @@
     <ProjectReference Include="ValidationProvider\Noogen.Validation.csproj">
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="XAccordionPanel\AccordionPanel.csproj">
+      <Project>{9CA367B8-0B98-49D1-84FB-735E612E3BA9}</Project>
+      <Name>AccordionPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="xpLabel\xpLabel.csproj">
+      <Project>{1ECBEA5F-7603-407A-8069-1FEF303F7E83}</Project>
+      <Name>xpLabel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

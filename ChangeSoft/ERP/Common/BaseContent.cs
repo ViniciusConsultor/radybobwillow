@@ -49,6 +49,68 @@ namespace Com.GainWinSoft.Common
             }
         }
 
+        public void ShowContentAtFirst(bool closeowner)
+        {
+            int dc = 0;
+
+            DockContent frm = this.FindParentDocument(this.title);
+            if (frm == null)
+            {
+
+                BaseForm b = new BaseForm();
+                b.Parentdockpanel = parentdockpanel;
+                b.TopLevel = false;
+                b.Text = this.title;
+                this.baseform = b;
+                //display at the first
+                this.Show(this.baseform.dockPanel);
+                if (this.parentdockpanel.DocumentsCount == 0)
+                {
+                    this.baseform.Show(this.baseform.Parentdockpanel);
+                }
+                else
+                {
+                    this.baseform.Show(this.baseform.Parentdockpanel.Panes[1], this.baseform.Parentdockpanel.Panes[1].Contents[0]);
+                }
+
+
+
+//                if (this.owner == null)
+//                {
+//                    this.Show(this.baseform.dockPanel);
+//                    this.baseform.Show(this.baseform.Parentdockpanel);
+//                }
+//                else
+//                {
+//                    this.Show(this.baseform.dockPanel);
+//                    dc = owner.Pane.Contents.IndexOf(owner.Pane.ActiveContent);
+//                    if ((dc == owner.Pane.Contents.Count - 1))
+//                    {
+//                        this.baseform.Show(this.baseform.Parentdockpanel);
+//                    }
+//                    else
+//                    {
+//                        this.baseform.Show(owner.Pane, owner.Pane.Contents[dc + 1]);
+//                    }
+//                }
+                this.BringToFront();
+
+
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+
+            //如果画面跳转后自己画面要关闭的话，用下面两句话，关闭自画面
+            if (closeowner)
+            {
+                IDockContent content = (IDockContent)baseform.Pane.Contents[dc];
+                content.DockHandler.Close();
+            }
+        }
+
         public void ShowContent(bool closeowner)
         {
             int dc =0;

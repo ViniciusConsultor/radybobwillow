@@ -14,6 +14,7 @@ using Com.GainWinSoft.ERP.Material;
 using Com.GainWinSoft.ERP.Factory;
 using System.Resources;
 using Com.GainWinSoft.Common.Vo;
+using log4net;
 
 
 namespace Com.GainWinSoft.ERP
@@ -21,6 +22,9 @@ namespace Com.GainWinSoft.ERP
     public partial class MenuWindow : DockContent
 
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(MenuWindow));
+        private static ResourceManager rm = new System.Resources.ResourceManager(typeof(MenuWindow));
+
         private DockPanel dockpanel;
         IList<FunctionAllVo> functionalllist;
         public MenuWindow(DockPanel dk,IList<FunctionAllVo> _flist)
@@ -46,11 +50,39 @@ namespace Com.GainWinSoft.ERP
                 band.LargeImage = (Image)Properties.Resources.ResourceManager.GetObject(fvo.Catalogimage+"24");
                
                 band.Tag = fvo.Catalogid;
+                //band.Click += new EventHandler(band_Click);
                 InitTreeView(band,fvo.Functionlist);
 
                 naviBar.Bands.Add(band);
                 i++;
             }
+            naviBar.ActiveBandChanging += new NaviBandEventHandler(naviBar_ActiveBandChanged);
+
+        }
+
+        void naviBar_ActiveBandChanged(object sender, NaviBandEventArgs e)
+        {
+
+            log.Info(e.NewActiveBand.Tag.ToString());
+            
+            string title = rm.GetString("FirstPage");
+            DockContent frm = this.FindDocument(title);
+            if (frm == null)
+            {
+                FirstForm firstform = new FirstForm(this.dockpanel);
+                firstform.DockTitle = title;
+                firstform.Functioncatalog = e.NewActiveBand.Tag.ToString();
+                firstform.ShowContentAtFirst(false);
+                firstform.SetPanelVisible();
+            }
+            else
+            {
+                frm.Show(this.dockpanel);
+                frm.BringToFront();
+                ((FirstForm)((BaseForm)(frm.Pane.Contents[0])).dockPanel.Panes[1].Contents[0]).Functioncatalog = e.NewActiveBand.Tag.ToString();
+                ((FirstForm)((BaseForm)(frm.Pane.Contents[0])).dockPanel.Panes[1].Contents[0]).SetPanelVisible();
+            }
+
         }
 
         private void InitTreeView(NaviBand band,IList<FunctionVo> functionlist)

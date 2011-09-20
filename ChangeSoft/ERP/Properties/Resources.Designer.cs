@@ -200,6 +200,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap down {
+            get {
+                object obj = ResourceManager.GetObject("down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap EstimateInventoryInquiry {
             get {
                 object obj = ResourceManager.GetObject("EstimateInventoryInquiry", resourceCulture);
@@ -315,6 +322,27 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap InventoryUpdate {
             get {
                 object obj = ResourceManager.GetObject("InventoryUpdate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap left {
+            get {
+                object obj = ResourceManager.GetObject("left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap leftdown {
+            get {
+                object obj = ResourceManager.GetObject("leftdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap leftup {
+            get {
+                object obj = ResourceManager.GetObject("leftup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -690,6 +718,27 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap right {
+            get {
+                object obj = ResourceManager.GetObject("right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap rightdown {
+            get {
+                object obj = ResourceManager.GetObject("rightdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap rightup {
+            get {
+                object obj = ResourceManager.GetObject("rightup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Role {
             get {
                 object obj = ResourceManager.GetObject("Role", resourceCulture);
@@ -742,6 +791,13 @@ namespace Com.GainWinSoft.ERP.Properties {
         internal static System.Drawing.Bitmap UnplanedReceiptEntry {
             get {
                 object obj = ResourceManager.GetObject("UnplanedReceiptEntry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap up {
+            get {
+                object obj = ResourceManager.GetObject("up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
