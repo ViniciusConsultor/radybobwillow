@@ -469,6 +469,10 @@
       <Project>{DAB91044-1151-43E4-9261-1ABA931BF13D}</Project>
       <Name>Factory</Name>
     </ProjectReference>
+    <ProjectReference Include="MasterCheck\MasterCheck.csproj">
+      <Project>{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}</Project>
+      <Name>MasterCheck</Name>
+    </ProjectReference>
     <ProjectReference Include="Material\Material.csproj">
       <Project>{A2018A47-0B55-4BAD-9C91-EAD8B9CA04E8}</Project>
       <Name>Material</Name>
