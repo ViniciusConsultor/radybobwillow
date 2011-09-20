@@ -72,6 +72,7 @@ namespace Com.GainWinSoft.ERP
                 FirstForm firstform = new FirstForm(this.dockpanel);
                 firstform.DockTitle = title;
                 firstform.Functioncatalog = e.NewActiveBand.Tag.ToString();
+                firstform.Functionlist = this.functionalllist;
                 firstform.ShowContentAtFirst(false);
                 firstform.SetPanelVisible();
             }
@@ -79,8 +80,10 @@ namespace Com.GainWinSoft.ERP
             {
                 frm.Show(this.dockpanel);
                 frm.BringToFront();
-                ((FirstForm)((BaseForm)(frm.Pane.Contents[0])).dockPanel.Panes[1].Contents[0]).Functioncatalog = e.NewActiveBand.Tag.ToString();
-                ((FirstForm)((BaseForm)(frm.Pane.Contents[0])).dockPanel.Panes[1].Contents[0]).SetPanelVisible();
+                FirstForm firstform = ((FirstForm)((BaseForm)(frm.Pane.Contents[0])).dockPanel.Panes[1].Contents[0]);
+                firstform.Functioncatalog = e.NewActiveBand.Tag.ToString();
+                firstform.Functionlist = this.functionalllist;
+               firstform.SetPanelVisible();
             }
 
         }

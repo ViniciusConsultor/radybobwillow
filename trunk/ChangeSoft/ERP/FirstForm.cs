@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP
 {
@@ -13,6 +14,13 @@ namespace Com.GainWinSoft.ERP
     {
 
         private string functioncatalog;
+        private IList<FunctionAllVo> functionlist;
+
+        public IList<FunctionAllVo> Functionlist
+        {
+            get { return functionlist; }
+            set { functionlist = value; }
+        }
         public FirstForm(DockPanel _parentdockpanel)
             : base(_parentdockpanel)
         {
@@ -36,7 +44,8 @@ namespace Com.GainWinSoft.ERP
         {
 
             this.linkMaterial.Text = "物料管理";
-            this.linkLabel2.Text = "报价单输入";
+            this.linkQuotationEntry.Text = "报价单输入";
+            
 
         }
 
