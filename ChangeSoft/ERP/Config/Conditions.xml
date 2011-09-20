@@ -47,8 +47,8 @@
     <Data>
       <Language>zh-CN</Language>
       <List>
-        <Item value="MUL">乘算</Item>
-        <Item value="DIV">除算</Item>
+        <Item value="M">乘算</Item>
+        <Item value="D">除算</Item>
       </List>
     </Data>
 
