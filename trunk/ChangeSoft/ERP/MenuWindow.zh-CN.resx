@@ -430,4 +430,7 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
   </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>起始页</value>
+  </data>
 </root>

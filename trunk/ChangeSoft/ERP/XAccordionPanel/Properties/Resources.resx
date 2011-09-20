@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,51 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="naviBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="ChevronDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="naviBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="ChevronLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="naviBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 262</value>
+  <data name="ChevronRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="naviBar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="ChevronUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronUp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="naviBar.Text" xml:space="preserve">
-    <value>naviBar1</value>
+  <data name="closePanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closePanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;naviBar.Name" xml:space="preserve">
-    <value>naviBar</value>
+  <data name="Collapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\collapse.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;naviBar.Type" xml:space="preserve">
-    <value>Guifreaks.NavigationBar.NaviBar, Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434</value>
+  <data name="Collapse_h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\collapse_h.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;naviBar.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\expand.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;naviBar.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="Expand_h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\expand_h.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="IDS_ArgumentException" xml:space="preserve">
+    <value>Parameter {0} can't be null</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>156, 262</value>
+  <data name="IDS_InvalidOperationExceptionInteger" xml:space="preserve">
+    <value>Value of '{0}' is not valid for '{1}'. '{1}' must be greater than or equal to {2}.
+Parameter name: {1}</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt</value>
+  <data name="IDS_InvalidBoundArgument" xml:space="preserve">
+    <value>Value of '{0}' is not valid for '{1}'. 'Value' should be between '{2}' and '{3}'.
+Parameter name: {1}</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MenuWindow</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>WeifenLuo.WinFormsUI.Docking.DockContent, WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="FirstPage" xml:space="preserve">
-    <value>起始页</value>
+  <data name="IDS_InvalidLowBoundArgument" xml:space="preserve">
+    <value>Value of '{0}' is not valid for '{1}'. 'Maximum' must be greater than or equal to 0.
+Parameter name: {1}</value>
   </data>
 </root>

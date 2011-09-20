@@ -186,10 +186,17 @@ namespace Com.GainWinSoft.ERP
             langItemlist = LangUtils.GetLanguageList();
 
             this.toolStripComboBox_Language.Items.Clear();
+            int selectedindex = 0;
+            int cnt=0;
             foreach (ConditionVo vo in langItemlist)
             {
+                if (vo.ConditionValue.Equals( LangUtils.GetCurrentLanguage())){
+                    selectedindex=cnt;
+                }
                 this.toolStripComboBox_Language.Items.Add(vo);
+                cnt++;
             }
+            this.toolStripComboBox_Language.SelectedIndex = selectedindex;
         }
 
         private void init_MenuStrip(IList<FunctionAllVo> flist)
