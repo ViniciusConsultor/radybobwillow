@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Action\Action_FrmExchangeRate.cs" />
     <Compile Include="Action\IAction_FrmExchangeRate.cs" />
+    <Compile Include="FormVo\FrmExRateCardVo.cs" />
     <Compile Include="FrmExchangeRate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,7 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CheckMethod\" />
-    <Folder Include="FormVo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
