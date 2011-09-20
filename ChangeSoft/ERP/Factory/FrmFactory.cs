@@ -10,6 +10,7 @@ using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
 using Com.GainWinSoft.Common.Vo;
 using Noogen.Validation;
+using Com.GainWinSoft.ERP.MasterCheck;
 
 namespace Com.GainWinSoft.ERP.Factory
 {
@@ -66,6 +67,16 @@ namespace Com.GainWinSoft.ERP.Factory
             this.SetLayout(this.strMode);
             this.removeAllClickEvent();
             this.addAllClickEvent();
+
+            this.txtCompany.Text = "1";
+            #region Company delete
+            this.lblCompany.Visible = false;
+            this.lblStar2.Visible = false;
+            this.txtCompany.Visible = false;
+            this.txtCompany.Enabled = false;
+            this.lblCompanyNM.Visible = false;
+            this.btnCompany.Visible = false;
+            #endregion
         }
 
         /// <summary>
@@ -99,7 +110,8 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void commonToolStrip1_OkClick(object sender, EventArgs e)
         {
-            if (!this.CheckCard())
+            this.ClearError();
+            if (!this.CheckG1())
             {
                 return;
             }
@@ -113,6 +125,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void commonToolStrip1_GobackClick(object sender, EventArgs e)
         {
+            this.ClearError();
             this.SetLayoutG2G1();
         }
 
@@ -121,6 +134,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void commonToolStrip1_SaveClick(object sender, EventArgs e)
         {
+            this.ClearError();
         }
 
         /// <summary>
@@ -129,8 +143,9 @@ namespace Com.GainWinSoft.ERP.Factory
         private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
         {
             this.strMode = Constant.MODE_UPD;
-            SetToolBar(this.strMode);
-            SetLayout(this.strMode);
+            this.ClearError();
+            this.SetToolBar(this.strMode);
+            this.SetLayout(this.strMode);
         }
 
         /// <summary>
@@ -139,8 +154,9 @@ namespace Com.GainWinSoft.ERP.Factory
         private void commonToolStrip1_DeleteClick(object sender, EventArgs e)
         {
             this.strMode = Constant.MODE_DEL;
-            SetToolBar(this.strMode);
-            SetLayout(this.strMode);
+            this.ClearError(); 
+            this.SetToolBar(this.strMode);
+            this.SetLayout(this.strMode);
         }
 
         /// <summary>
@@ -149,8 +165,9 @@ namespace Com.GainWinSoft.ERP.Factory
         private void commonToolStrip1_AddClick(object sender, EventArgs e)
         {
             this.strMode = Constant.MODE_ADD;
-            SetToolBar(this.strMode);
-            SetLayout(this.strMode);
+            this.ClearError();
+            this.SetToolBar(this.strMode);
+            this.SetLayout(this.strMode);
         }
 
         /// <summary>
@@ -316,7 +333,7 @@ namespace Com.GainWinSoft.ERP.Factory
         private void ClearG1()
         {
             #region G1项目
-            this.txtCompany.Text = "";
+            //this.txtCompany.Text = "";
             this.lblCompanyNM.Text = "";
             this.txtFactory.Text = "";
             #endregion
@@ -372,7 +389,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "追加模式";
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
-            this.ClearError();
         }
 
         /// <summary>
@@ -383,7 +399,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "删除模式";
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
-            this.ClearError();
         }
 
         /// <summary>
@@ -394,7 +409,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblMode.Text = "修改模式";
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
-            this.ClearError();
         }
 
         /// <summary>
@@ -405,7 +419,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = false;
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
-            this.ClearError();
         }
 
         /// <summary>
@@ -417,7 +430,6 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
-            this.ClearError();
         }
         #endregion
 
@@ -451,22 +463,133 @@ namespace Com.GainWinSoft.ERP.Factory
             #endregion
 
             #region vdpRequireG2
+            ValidationRule ruleAbbreviation = new ValidationRule();
+            ruleAbbreviation.IsRequired = true;
+            ruleAbbreviation.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblAbbreviation.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtAbbreviation, ruleAbbreviation);
+
+            ValidationRule ruleName = new ValidationRule();
+            ruleName.IsRequired = true;
+            ruleName.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblName.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtName, ruleName);
+
+            ValidationRule ruleZip = new ValidationRule();
+            ruleZip.IsRequired = true;
+            ruleZip.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblZipCD.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtZipCD, ruleZip);
+
+            ValidationRule ruleCountry = new ValidationRule();
+            ruleCountry.IsRequired = true;
+            ruleCountry.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblCountry.Text);
+            this.vdpRequireG2.SetValidationRule(this.cbbCountry, ruleCountry);
+
+            ValidationRule ruleAddress = new ValidationRule();
+            ruleAddress.IsRequired = true;
+            ruleAddress.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblAddress1.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtAddress1, ruleAddress);
+
+            ValidationRule ruleTel = new ValidationRule();
+            ruleTel.IsRequired = true;
+            ruleTel.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblTel.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtTel, ruleTel);
+
+            ValidationRule ruleLanguage = new ValidationRule();
+            ruleLanguage.IsRequired = true;
+            ruleLanguage.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblLanguage.Text);
+            this.vdpRequireG2.SetValidationRule(this.cbbLanguage, ruleLanguage);
+
+            ValidationRule ruleTimeZone = new ValidationRule();
+            ruleTimeZone.IsRequired = true;
+            ruleTimeZone.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblTimezone.Text);
+            this.vdpRequireG2.SetValidationRule(this.cbbTimezone, ruleTimeZone);
+
+            ValidationRule ruleChange = new ValidationRule();
+            ruleChange.IsRequired = true;
+            ruleChange.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblChange.Text);
+            this.vdpRequireG2.SetValidationRule(this.cbbChange, ruleChange);
+
+            ValidationRule ruleAutoPeriod = new ValidationRule();
+            ruleAutoPeriod.IsRequired = true;
+            ruleAutoPeriod.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblAutoPeriod.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtAutoPeriod, ruleAutoPeriod);
+
+            ValidationRule ruleStockPeriod = new ValidationRule();
+            ruleStockPeriod.IsRequired = true;
+            ruleStockPeriod.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblStockPeriod.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtStockPeriod, ruleStockPeriod);
+
+            ValidationRule ruleArrange = new ValidationRule();
+            ruleArrange.IsRequired = true;
+            ruleArrange.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.lblArrange.Text);
+            this.vdpRequireG2.SetValidationRule(this.txtArrange, ruleArrange);
             #endregion
 
             #region vdpExistG1
+            ValidationRule ruleCompanyExit = new ValidationRule();
+            ruleCompanyExit.IsCustomError = true;
+            ruleCompanyExit.CustomValidationMethod += new CustomValidationEventHandler(ruleCompanyExit_CustomValidationMethod);
+            ruleCompanyExit.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.lblCompany.Text);
+            this.vdpExistG1.SetValidationRule(this.txtCompany, ruleCompanyExit);
+
+            ValidationRule ruleFactoryExit = new ValidationRule();
+            ruleFactoryExit.IsCustomError = true;
+            ruleFactoryExit.CustomValidationMethod += new CustomValidationEventHandler(ruleFactoryExit_CustomValidationMethod);
+            ruleFactoryExit.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.lblFactory.Text);
+            this.vdpExistG1.SetValidationRule(this.txtFactory, ruleFactoryExit);
+
             #endregion
 
             #region vdpExistG2
+            ValidationRule ruleDepartExit = new ValidationRule();
+            ruleDepartExit.IsCustomError = true;
+            ruleDepartExit.CustomValidationMethod += new CustomValidationEventHandler(ruleDepartExit_CustomValidationMethod);
+            ruleDepartExit.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.lblDepart.Text);
+            this.vdpExistG2.SetValidationRule(this.txtDepart, ruleDepartExit);
             #endregion
         }
 
-        private Boolean CheckCard()
+        /// <summary>
+        /// 企业代码存在Check
+        /// </summary>
+        private void ruleCompanyExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
+        {
+            e.IsValid = false;
+        }
+
+        /// <summary>
+        /// 工厂代码存在Check
+        /// </summary>
+        private void ruleFactoryExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
+        {
+            CheckFactory check = new CheckFactory();
+            e.IsValid = check.Check01Bool(this.txtFactory.Text);
+        }
+
+        /// <summary>
+        /// 部门代码存在Check
+        /// </summary>
+        private void ruleDepartExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
+        {
+        }
+
+        /// <summary>
+        /// Group1各种Check
+        /// </summary>
+        private Boolean CheckG1()
         {
             Boolean rtnValue = true;
 
             if (!this.vdpRequireG1.Validate())
             {
                 IList<MessageVo> re = this.vdpRequireG1.ValidationMessages(true);
+                this.DialogResult = DialogResult.Abort;
+                this.baseform.msgwindow.Messagelist = re;
+                this.baseform.msgwindow.ShowMessage();
+                rtnValue = false;
+            }
+            else if (!this.vdpExistG1.Validate())
+            {
+                IList<MessageVo> re = this.vdpExistG1.ValidationMessages(true);
                 this.DialogResult = DialogResult.Abort;
                 this.baseform.msgwindow.Messagelist = re;
                 this.baseform.msgwindow.ShowMessage();

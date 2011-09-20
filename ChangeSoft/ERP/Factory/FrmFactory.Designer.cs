@@ -134,15 +134,15 @@
             // 
             resources.ApplyResources(this.tpG1, "tpG1");
             this.tpG1.Controls.Add(this.lblMode, 0, 1);
-            this.tpG1.Controls.Add(this.btnFactory, 9, 2);
-            this.tpG1.Controls.Add(this.txtFactory, 8, 2);
+            this.tpG1.Controls.Add(this.btnFactory, 3, 2);
+            this.tpG1.Controls.Add(this.txtFactory, 2, 2);
             this.tpG1.Controls.Add(this.lblStar2, 7, 2);
-            this.tpG1.Controls.Add(this.lblFactory, 6, 2);
-            this.tpG1.Controls.Add(this.lblCompanyNM, 4, 2);
-            this.tpG1.Controls.Add(this.lblCompany, 0, 2);
+            this.tpG1.Controls.Add(this.lblFactory, 0, 2);
+            this.tpG1.Controls.Add(this.lblCompanyNM, 10, 2);
+            this.tpG1.Controls.Add(this.lblCompany, 6, 2);
             this.tpG1.Controls.Add(this.lblStar1, 1, 2);
-            this.tpG1.Controls.Add(this.txtCompany, 2, 2);
-            this.tpG1.Controls.Add(this.btnCompany, 3, 2);
+            this.tpG1.Controls.Add(this.txtCompany, 8, 2);
+            this.tpG1.Controls.Add(this.btnCompany, 9, 2);
             this.tpG1.Name = "tpG1";
             // 
             // lblMode
