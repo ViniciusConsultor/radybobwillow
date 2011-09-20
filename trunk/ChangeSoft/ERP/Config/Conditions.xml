@@ -55,8 +55,8 @@
     <Data>
       <Language>en-US</Language>
       <List>
-        <Item value="MUL">Multiplication</Item>
-        <Item value="DIV">Division</Item>
+        <Item value="M">Multiplication</Item>
+        <Item value="D">Division</Item>
         
       </List>
     </Data>
