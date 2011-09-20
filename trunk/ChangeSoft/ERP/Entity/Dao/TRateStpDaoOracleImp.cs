@@ -34,6 +34,21 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
         #endregion
 
+        public TRateMs getTRateMs(string facCd)
+        {
+            TRateMs rateMs = null;
+
+
+
+            return rateMs;
+        }
+
+
+
+
+
+
+
 
         #region Sample
         public TFactoryMs getFactoryByCd(string facCd)
