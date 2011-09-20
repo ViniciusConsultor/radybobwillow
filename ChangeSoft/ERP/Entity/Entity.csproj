@@ -126,6 +126,7 @@
     <Compile Include="Dao\ITestDao.cs" />
     <Compile Include="Dao\ITFactoryMsDao.cs" />
     <Compile Include="Dao\ITPersonMsDao.cs" />
+    <Compile Include="Dao\ITRateStpDao.cs" />
     <Compile Include="Dao\ITTermMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
     <Compile Include="Dao\TCompanyConditionMsDaoOracleImp.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Dao\CClsDetailNoARDaoOracleImp.cs" />
     <Compile Include="Dao\TFactoryMsDaoOracleImp.cs" />
     <Compile Include="Dao\TPersonMsDaoOracleImp.cs" />
+    <Compile Include="Dao\TRateStpDaoOracleImp.cs" />
     <Compile Include="Dao\TTermMsDaoOracleImp.cs" />
     <Compile Include="Dao\ICTableDropDownListNoARDao.cs" />
     <Compile Include="Dao\CTableDropDownListNoARDaoOracleImp.cs" />
@@ -171,6 +173,10 @@
     <Compile Include="Model\TPmMs.cs" />
     <Compile Include="Model\TPmMsAdd.cs" />
     <Compile Include="Model\TPmMsAddRtcm.cs" />
+    <Compile Include="Model\TRateMs.cs" />
+    <Compile Include="Model\TRateMsID.cs" />
+    <Compile Include="Model\TRateStp.cs" />
+    <Compile Include="Model\TRateStpId.cs" />
     <Compile Include="Model\TTermMs.cs" />
     <Compile Include="Model\TPersonMsId.cs" />
     <Compile Include="Model\TTradeMs.cs" />
