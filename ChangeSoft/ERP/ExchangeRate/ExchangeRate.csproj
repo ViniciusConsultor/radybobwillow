@@ -75,6 +75,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\Action_FrmExchangeRate.cs" />
+    <Compile Include="Action\IAction_FrmExchangeRate.cs" />
     <Compile Include="FrmExchangeRate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,7 +121,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Action\" />
     <Folder Include="CheckMethod\" />
     <Folder Include="FormVo\" />
   </ItemGroup>

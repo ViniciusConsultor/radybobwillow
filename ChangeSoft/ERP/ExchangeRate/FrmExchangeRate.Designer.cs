@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExchangeRate));
             this.TblPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.TblPanelBar = new System.Windows.Forms.TableLayoutPanel();
-            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.TblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCurrKbn = new System.Windows.Forms.Label();
             this.lblCompanyNM = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.TblPanelBase.SuspendLayout();
             this.TblPanelBar.SuspendLayout();
             this.TblPanelG1.SuspendLayout();
@@ -79,43 +79,11 @@
             // TblPanelBar
             // 
             resources.ApplyResources(this.TblPanelBar, "TblPanelBar");
-            this.TblPanelBar.Controls.Add(this.commonToolStrip1, 0, 0);
             this.TblPanelBar.Controls.Add(this.TblPanelG1, 0, 1);
             this.TblPanelBar.Controls.Add(this.tblPanelG3, 0, 3);
             this.TblPanelBar.Controls.Add(this.pagerGridView1, 0, 2);
+            this.TblPanelBar.Controls.Add(this.commonToolStrip1, 0, 0);
             this.TblPanelBar.Name = "TblPanelBar";
-            // 
-            // commonToolStrip1
-            // 
-            this.commonToolStrip1.AddEnabled = true;
-            this.commonToolStrip1.AddVisible = false;
-            resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
-            this.commonToolStrip1.CopyEnabled = true;
-            this.commonToolStrip1.CopyVisible = false;
-            this.commonToolStrip1.CsvEnabled = true;
-            this.commonToolStrip1.CsvVisible = false;
-            this.commonToolStrip1.DeleteEnabled = true;
-            this.commonToolStrip1.DeleteVisible = false;
-            this.commonToolStrip1.Displaytext = false;
-            this.commonToolStrip1.ExitEnabled = true;
-            this.commonToolStrip1.ExitVisible = false;
-            this.commonToolStrip1.GobackEnabled = true;
-            this.commonToolStrip1.GobackVisible = false;
-            this.commonToolStrip1.HelpEnabled = true;
-            this.commonToolStrip1.HelpVisible = false;
-            this.commonToolStrip1.Line1Visible = false;
-            this.commonToolStrip1.Line2Visible = false;
-            this.commonToolStrip1.Line3Visible = false;
-            this.commonToolStrip1.Line4Visible = false;
-            this.commonToolStrip1.Name = "commonToolStrip1";
-            this.commonToolStrip1.OkEnabled = true;
-            this.commonToolStrip1.OkVisible = false;
-            this.commonToolStrip1.ReportEnabled = true;
-            this.commonToolStrip1.ReportVisible = false;
-            this.commonToolStrip1.SaveEnabled = true;
-            this.commonToolStrip1.SaveVisible = false;
-            this.commonToolStrip1.UpdateEnabled = true;
-            this.commonToolStrip1.UpdateVisible = false;
             // 
             // TblPanelG1
             // 
@@ -342,6 +310,38 @@
             this.pagerGridView1.Name = "pagerGridView1";
             this.pagerGridView1.Pagerhelper = null;
             // 
+            // commonToolStrip1
+            // 
+            this.commonToolStrip1.AddEnabled = true;
+            this.commonToolStrip1.AddVisible = true;
+            resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.CopyEnabled = true;
+            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CsvEnabled = true;
+            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.DeleteEnabled = true;
+            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.Displaytext = false;
+            this.commonToolStrip1.ExitEnabled = true;
+            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.GobackEnabled = true;
+            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.HelpEnabled = true;
+            this.commonToolStrip1.HelpVisible = true;
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.Line2Visible = true;
+            this.commonToolStrip1.Line3Visible = true;
+            this.commonToolStrip1.Line4Visible = true;
+            this.commonToolStrip1.Name = "commonToolStrip1";
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.ReportEnabled = true;
+            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.UpdateEnabled = true;
+            this.commonToolStrip1.UpdateVisible = true;
+            // 
             // FrmExchangeRate
             // 
             resources.ApplyResources(this, "$this");
@@ -364,7 +364,6 @@
 
         private System.Windows.Forms.TableLayoutPanel TblPanelBase;
         private System.Windows.Forms.TableLayoutPanel TblPanelBar;
-        private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private System.Windows.Forms.TableLayoutPanel TblPanelG1;
         private System.Windows.Forms.Label lblStar1;
         private System.Windows.Forms.Label lblCompany;
@@ -395,5 +394,6 @@
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn1;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList DropDownRate1;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCalcMode;
+        private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
     }
 }
