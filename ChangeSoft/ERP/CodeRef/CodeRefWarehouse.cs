@@ -47,7 +47,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
             //this.SetFocus();
             this.Close();
-            //this.Dispose();
+            this.Dispose();
         }
 
         private void SetColumnsAlias()
