@@ -132,6 +132,10 @@
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MasterCheck\MasterCheck.csproj">
+      <Project>{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}</Project>
+      <Name>MasterCheck</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TableDropDownList\TableDropDownList.csproj">
       <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
       <Name>TableDropDownList</Name>

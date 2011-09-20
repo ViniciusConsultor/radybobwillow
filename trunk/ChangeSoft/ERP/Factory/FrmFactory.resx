@@ -136,7 +136,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 14pt</value>
+    <value>SimSun, 14pt</value>
   </data>
   <data name="lblMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -160,7 +160,7 @@
     <value>lblMode</value>
   </data>
   <data name="&gt;&gt;lblMode.Type" xml:space="preserve">
-    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4279.42755, Culture=neutral, PublicKeyToken=null</value>
+    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4280.17264, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblMode.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -175,7 +175,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>712, 32</value>
+    <value>226, 32</value>
   </data>
   <data name="btnFactory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -202,7 +202,7 @@
     <value>Fill</value>
   </data>
   <data name="txtFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 34</value>
+    <value>128, 34</value>
   </data>
   <data name="txtFactory.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
@@ -277,13 +277,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 31</value>
+    <value>0, 31</value>
   </data>
   <data name="lblFactory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblFactory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 26</value>
+    <value>110, 26</value>
   </data>
   <data name="lblFactory.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -316,13 +316,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblCompanyNM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 34</value>
+    <value>740, 34</value>
   </data>
   <data name="lblCompanyNM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="lblCompanyNM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="lblCompanyNM.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -349,13 +349,13 @@
     <value>Fill</value>
   </data>
   <data name="lblCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 31</value>
+    <value>516, 31</value>
   </data>
   <data name="lblCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>80, 26</value>
   </data>
   <data name="lblCompany.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -421,7 +421,7 @@
     <value>Fill</value>
   </data>
   <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 34</value>
+    <value>614, 34</value>
   </data>
   <data name="txtCompany.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
@@ -448,7 +448,7 @@
     <value>Fill</value>
   </data>
   <data name="btnCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 32</value>
+    <value>712, 32</value>
   </data>
   <data name="btnCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -502,7 +502,7 @@
     <value>0</value>
   </data>
   <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="0" ColumnSpan="11" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="0" ColumnSpan="11" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2911,7 +2911,7 @@
     <value>784, 562</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt</value>
+    <value>SimSun, 9pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> 工厂情报设定</value>
