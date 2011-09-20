@@ -141,4 +141,7 @@
   <data name="W0003" xml:space="preserve">
     <value>用户代码或者密码不正确。</value>
   </data>
+  <data name="W0004" xml:space="preserve">
+    <value>%1 在数据表中不存在，请重新输入。</value>
+  </data>
 </root>
