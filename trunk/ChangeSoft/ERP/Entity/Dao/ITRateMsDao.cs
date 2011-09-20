@@ -10,7 +10,5 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         //Com.GainWinSoft.ERP.Entity.TRateMs getFactoryByCd(string facCd);
         IList<Com.GainWinSoft.ERP.Entity.TRateMs> getTRateMs(string companyCd, string facCd, string facNm);
 
-
-
     }
 }
