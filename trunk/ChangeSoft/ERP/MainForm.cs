@@ -206,6 +206,8 @@ namespace Com.GainWinSoft.ERP
             ToolStripMenuItem submenu_system_exit = new ToolStripMenuItem();
             submenu_system_exit.Name = "SubMenu_System_Exit";
             submenu_system_exit.Text = rm.GetString("SubMenu.System.Exit");
+            submenu_system_exit.Click += new EventHandler(submenu_system_exit_Click);
+
 
             menu_system.DropDownItems.AddRange(new ToolStripItem[]{
                 submenu_system_setting,line1,submenu_system_exit
@@ -269,6 +271,13 @@ namespace Com.GainWinSoft.ERP
                 menu_function.DropDownItems.Add(submenu_functioncatalog);
             }
 
+        }
+
+        void submenu_system_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+            Application.Exit();
         }
 
         void submenu_window_listwindow_Click(object sender, EventArgs e)
