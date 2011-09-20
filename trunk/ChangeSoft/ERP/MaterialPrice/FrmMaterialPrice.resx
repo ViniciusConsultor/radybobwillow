@@ -136,7 +136,7 @@
     <value>3, 3</value>
   </data>
   <data name="pagerGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>786, 209</value>
+    <value>786, 288</value>
   </data>
   <data name="pagerGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -157,7 +157,7 @@
     <value>Fill</value>
   </data>
   <data name="tblPanelG3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 316</value>
+    <value>0, 237</value>
   </data>
   <data name="tblPanelG3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -166,7 +166,7 @@
     <value>1</value>
   </data>
   <data name="tblPanelG3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>792, 215</value>
+    <value>792, 294</value>
   </data>
   <data name="tblPanelG3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -193,7 +193,7 @@
     <value>Left</value>
   </data>
   <data name="txtEffDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 177</value>
+    <value>128, 133</value>
   </data>
   <data name="txtEffDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 19</value>
@@ -213,28 +213,28 @@
   <data name="&gt;&gt;txtEffDate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="txtDrwNo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 104</value>
+  <data name="txtDrwNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 81</value>
   </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtDrwNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>271, 19</value>
   </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtDrwNo.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
   </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
+  <data name="&gt;&gt;txtDrwNo.Name" xml:space="preserve">
+    <value>txtDrwNo</value>
   </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtDrwNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtDrwNo.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtDrwNo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
@@ -247,10 +247,10 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 31</value>
+    <value>113, 26</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 31</value>
+    <value>9, 26</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -283,10 +283,10 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 0</value>
+    <value>113, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 31</value>
+    <value>9, 26</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -319,10 +319,10 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 101</value>
+    <value>113, 78</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 38</value>
+    <value>9, 26</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -355,10 +355,10 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 62</value>
+    <value>113, 52</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 39</value>
+    <value>9, 26</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -391,10 +391,10 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 139</value>
+    <value>113, 104</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 35</value>
+    <value>9, 26</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -427,10 +427,10 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 174</value>
+    <value>113, 130</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 25</value>
+    <value>9, 26</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -463,10 +463,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 199</value>
+    <value>113, 156</value>
   </data>
   <data name="lblStar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 46</value>
+    <value>9, 26</value>
   </data>
   <data name="lblStar2.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -489,238 +489,238 @@
   <data name="&gt;&gt;lblStar2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblProvUpcls.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblProvUpcls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblProvUpcls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 199</value>
+  <data name="lblProvUpcls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 156</value>
   </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblProvUpcls.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 46</value>
+  <data name="lblProvUpcls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblProvUpcls.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
+  <data name="lblProvUpcls.Text" xml:space="preserve">
     <value>临时单价区分</value>
   </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblProvUpcls.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;lblProvUpcls.Name" xml:space="preserve">
+    <value>lblProvUpcls</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblProvUpcls.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblProvUpcls.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblProvUpcls.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblUpCls.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblUpCls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblUpCls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 139</value>
+  <data name="lblUpCls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 104</value>
   </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblUpCls.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 35</value>
+  <data name="lblUpCls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblUpCls.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="lblUpCls.Text" xml:space="preserve">
     <value>单价区分</value>
   </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblUpCls.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;lblUpCls.Name" xml:space="preserve">
+    <value>lblUpCls</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblUpCls.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblUpCls.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblUpCls.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblEffStartDate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblEffStartDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblEffStartDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 174</value>
+  <data name="lblEffStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 130</value>
   </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblEffStartDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 25</value>
+  <data name="lblEffStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblEffStartDate.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lblEffStartDate.Text" xml:space="preserve">
     <value>有效开始日</value>
   </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblEffStartDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lblEffStartDate.Name" xml:space="preserve">
+    <value>lblEffStartDate</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblEffStartDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblEffStartDate.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblEffStartDate.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblDrwNo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblDrwNo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblDrwNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 101</value>
+  <data name="lblDrwNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblDrwNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 38</value>
+  <data name="lblDrwNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblDrwNo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>图纸编号</value>
+  <data name="lblDrwNo.Text" xml:space="preserve">
+    <value>图号</value>
   </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblDrwNo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;lblDrwNo.Name" xml:space="preserve">
+    <value>lblDrwNo</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblDrwNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblDrwNo.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblDrwNo.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblModel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblModel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblModel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 62</value>
+  <data name="lblModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 52</value>
   </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 39</value>
+  <data name="lblModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblModel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="lblModel.Text" xml:space="preserve">
     <value>型式</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblModel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;lblModel.Name" xml:space="preserve">
+    <value>lblModel</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblModel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblModel.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblModel.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbltxtMateria.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lbltxtMateria.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbltxtMateria.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 31</value>
+  <data name="lbltxtMateria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
   </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lbltxtMateria.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 31</value>
+  <data name="lbltxtMateria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbltxtMateria.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="lbltxtMateria.Text" xml:space="preserve">
     <value>物料代码</value>
   </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lbltxtMateria.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;lbltxtMateria.Name" xml:space="preserve">
+    <value>lbltxtMateria</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbltxtMateria.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbltxtMateria.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbltxtMateria.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
   <data name="lblCustomId.AutoSize" type="System.Boolean, mscorlib">
@@ -739,7 +739,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblCustomId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 31</value>
+    <value>110, 26</value>
   </data>
   <data name="lblCustomId.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -765,77 +765,77 @@
   <data name="tblPanelG2Btn.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnSearch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 1</value>
+  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 1</value>
   </data>
-  <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 34</value>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
+  <data name="btnSearch.Text" xml:space="preserve">
     <value>查询</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
     <value>tblPanelG2Btn</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnClear.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 1</value>
+  <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 1</value>
   </data>
-  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnClear.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 34</value>
+  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 24</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="btnClear.Text" xml:space="preserve">
     <value>清除</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
     <value>tblPanelG2Btn</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tblPanelG2Btn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="tblPanelG2Btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 245</value>
+    <value>125, 182</value>
   </data>
   <data name="tblPanelG2Btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -844,7 +844,7 @@
     <value>1</value>
   </data>
   <data name="tblPanelG2Btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>655, 36</value>
+    <value>667, 26</value>
   </data>
   <data name="tblPanelG2Btn.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -862,7 +862,7 @@
     <value>16</value>
   </data>
   <data name="tblPanelG2Btn.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button6" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button5" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75.72254,Percent,24.27746,Absolute,132" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,80.6142,Percent,19.3858,Absolute,112" /&gt;&lt;Rows Styles="Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG2CusID.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -877,13 +877,13 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 3</value>
+    <value>149, 3</value>
   </data>
   <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 25</value>
+    <value>275, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -903,31 +903,31 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnCusHelpler.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 3</value>
+  <data name="btnCusHelpler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 3</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 23</value>
+  <data name="btnCusHelpler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnCusHelpler.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="btnCusHelpler.Text" xml:space="preserve">
     <value>button2</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;btnCusHelpler.Name" xml:space="preserve">
+    <value>btnCusHelpler</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCusHelpler.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCusHelpler.Parent" xml:space="preserve">
     <value>tblPanelG2CusID</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnCusHelpler.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="txtCusID.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -937,7 +937,7 @@
     <value>3, 3</value>
   </data>
   <data name="txtCusID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 19</value>
+    <value>104, 19</value>
   </data>
   <data name="txtCusID.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -958,7 +958,7 @@
     <value>Fill</value>
   </data>
   <data name="tblPanelG2CusID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 0</value>
+    <value>125, 0</value>
   </data>
   <data name="tblPanelG2CusID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -967,7 +967,7 @@
     <value>1</value>
   </data>
   <data name="tblPanelG2CusID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>655, 31</value>
+    <value>667, 26</value>
   </data>
   <data name="tblPanelG2CusID.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -985,7 +985,7 @@
     <value>17</value>
   </data>
   <data name="tblPanelG2CusID.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label13" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtCusID" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Absolute,36,Absolute,281,Absolute,229" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label13" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnCusHelpler" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtCusID" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,36,Absolute,281,Absolute,240" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG2Pn1.ColumnCount" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1000,10 +1000,10 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 0</value>
+    <value>362, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 31</value>
+    <value>10, 26</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1026,86 +1026,86 @@
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblMateriaNmDsp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label16.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblMateriaNmDsp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblMateriaNmDsp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 3</value>
+  <data name="lblMateriaNmDsp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 3</value>
   </data>
-  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblMateriaNmDsp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 25</value>
+  <data name="lblMateriaNmDsp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 20</value>
   </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblMateriaNmDsp.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblMateriaNmDsp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
+  <data name="&gt;&gt;lblMateriaNmDsp.Name" xml:space="preserve">
+    <value>lblMateriaNmDsp</value>
   </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNmDsp.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNmDsp.Parent" xml:space="preserve">
     <value>tblPanelG2Pn1</value>
   </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNmDsp.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblMateriaNm.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblMateriaNm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblMateriaNm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 0</value>
+  <data name="lblMateriaNm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 0</value>
   </data>
-  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblMateriaNm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 31</value>
+  <data name="lblMateriaNm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 26</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblMateriaNm.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="label15.Text" xml:space="preserve">
+  <data name="lblMateriaNm.Text" xml:space="preserve">
     <value>物料名称</value>
   </data>
-  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblMateriaNm.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
+  <data name="&gt;&gt;lblMateriaNm.Name" xml:space="preserve">
+    <value>lblMateriaNm</value>
   </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNm.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNm.Parent" xml:space="preserve">
     <value>tblPanelG2Pn1</value>
   </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblMateriaNm.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="txtVerNo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="txtVerNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 3</value>
+    <value>241, 3</value>
   </data>
   <data name="txtVerNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 19</value>
@@ -1125,70 +1125,70 @@
   <data name="&gt;&gt;txtVerNo.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblVer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label14.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblVer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblVer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 0</value>
+  <data name="lblVer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 0</value>
   </data>
-  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblVer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 31</value>
+  <data name="lblVer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 26</value>
   </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblVer.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label14.Text" xml:space="preserve">
+  <data name="lblVer.Text" xml:space="preserve">
     <value>版本</value>
   </data>
-  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblVer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
+  <data name="&gt;&gt;lblVer.Name" xml:space="preserve">
+    <value>lblVer</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblVer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblVer.Parent" xml:space="preserve">
     <value>tblPanelG2Pn1</value>
   </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblVer.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btntxtMaterialHelper.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 3</value>
+  <data name="btntxtMaterialHelper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 3</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 23</value>
+  <data name="btntxtMaterialHelper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btntxtMaterialHelper.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="btntxtMaterialHelper.Text" xml:space="preserve">
     <value>button3</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;btntxtMaterialHelper.Name" xml:space="preserve">
+    <value>btntxtMaterialHelper</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btntxtMaterialHelper.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btntxtMaterialHelper.Parent" xml:space="preserve">
     <value>tblPanelG2Pn1</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btntxtMaterialHelper.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="txtMaterialCode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1198,7 +1198,7 @@
     <value>3, 3</value>
   </data>
   <data name="txtMaterialCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 19</value>
+    <value>162, 19</value>
   </data>
   <data name="txtMaterialCode.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1219,7 +1219,7 @@
     <value>Fill</value>
   </data>
   <data name="tblPanelG2Pn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 31</value>
+    <value>125, 26</value>
   </data>
   <data name="tblPanelG2Pn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1228,7 +1228,7 @@
     <value>1</value>
   </data>
   <data name="tblPanelG2Pn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>655, 31</value>
+    <value>667, 26</value>
   </data>
   <data name="tblPanelG2Pn1.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1246,33 +1246,33 @@
     <value>18</value>
   </data>
   <data name="tblPanelG2Pn1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label17" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtVerNo" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtMaterialCode" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,81.18812,Percent,18.81188,Absolute,32,Absolute,47,Absolute,61,Absolute,36,Absolute,243,Absolute,37" /&gt;&lt;Rows Styles="Percent,50,Absolute,31,Absolute,31,Absolute,31" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label17" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNmDsp" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtVerNo" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblVer" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btntxtMaterialHelper" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtMaterialCode" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,81.18812,Percent,18.81188,Absolute,32,Absolute,47,Absolute,74,Absolute,16,Absolute,250,Absolute,41" /&gt;&lt;Rows Styles="Percent,50,Absolute,26,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+  <data name="tblPanelG2Pn2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="textBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="txtSpec.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtSpec.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 3</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 19</value>
+  <data name="txtSpec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 19</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtSpec.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;txtSpec.Name" xml:space="preserve">
+    <value>txtSpec</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtSpec.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;txtSpec.Parent" xml:space="preserve">
+    <value>tblPanelG2Pn2</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtSpec.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
@@ -1285,10 +1285,10 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 0</value>
+    <value>362, 0</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 39</value>
+    <value>10, 26</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1306,109 +1306,109 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>tblPanelG2Pn2</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblSpec.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label18.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblSpec.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblSpec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 0</value>
+  <data name="lblSpec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 0</value>
   </data>
-  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblSpec.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 39</value>
+  <data name="lblSpec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
   </data>
-  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblSpec.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label18.Text" xml:space="preserve">
+  <data name="lblSpec.Text" xml:space="preserve">
     <value>式样</value>
   </data>
-  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblSpec.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
+  <data name="&gt;&gt;lblSpec.Name" xml:space="preserve">
+    <value>lblSpec</value>
   </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblSpec.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;lblSpec.Parent" xml:space="preserve">
+    <value>tblPanelG2Pn2</value>
   </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblSpec.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="txtModel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 19</value>
+  <data name="txtModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 19</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtModel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
+  <data name="&gt;&gt;txtModel.Name" xml:space="preserve">
+    <value>txtModel</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtModel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;txtModel.Parent" xml:space="preserve">
+    <value>tblPanelG2Pn2</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtModel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="tblPanelG2Pn2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 62</value>
+  <data name="tblPanelG2Pn2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 52</value>
   </data>
-  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tblPanelG2Pn2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+  <data name="tblPanelG2Pn2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>655, 39</value>
+  <data name="tblPanelG2Pn2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>667, 26</value>
   </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tblPanelG2Pn2.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;tblPanelG2Pn2.Name" xml:space="preserve">
+    <value>tblPanelG2Pn2</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tblPanelG2Pn2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tblPanelG2Pn2.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tblPanelG2Pn2.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox5" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,80.7947,Percent,19.2053,Absolute,35,Absolute,241,Absolute,38" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="tblPanelG2Pn2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtSpec" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblSpec" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtModel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,79.02299,Percent,20.97701,Absolute,16,Absolute,249,Absolute,42" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="clsDetailCodeRef_39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 142</value>
+    <value>128, 107</value>
   </data>
   <data name="clsDetailCodeRef_39.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 20</value>
@@ -1429,7 +1429,7 @@
     <value>20</value>
   </data>
   <data name="clsDetailCodeRef_40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 202</value>
+    <value>128, 159</value>
   </data>
   <data name="clsDetailCodeRef_40.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 20</value>
@@ -1453,16 +1453,16 @@
     <value>Fill</value>
   </data>
   <data name="tblPanelG2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 35</value>
+    <value>0, 26</value>
   </data>
   <data name="tblPanelG2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="tblPanelG2.RowCount" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="tblPanelG2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>792, 281</value>
+    <value>792, 211</value>
   </data>
   <data name="tblPanelG2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1480,69 +1480,69 @@
     <value>1</value>
   </data>
   <data name="tblPanelG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtEffDate" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCustomId" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2Btn" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2CusID" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2Pn1" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel1" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRef_39" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRef_40" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Absolute,24,Absolute,655" /&gt;&lt;Rows Styles="Percent,50,Absolute,31,Absolute,39,Absolute,38,Absolute,35,Absolute,25,Absolute,46,Absolute,36" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtEffDate" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="txtDrwNo" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblProvUpcls" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblUpCls" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblEffStartDate" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDrwNo" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblModel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbltxtMateria" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCustomId" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2Btn" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2CusID" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2Pn1" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2Pn2" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRef_39" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRef_40" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,667" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG1.ColumnCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="lblCompanyNM.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblFacNM.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblCompanyNM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblFacNM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="lblCompanyNM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblFacNM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblCompanyNM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 3</value>
+  <data name="lblFacNM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 3</value>
   </data>
-  <data name="lblCompanyNM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblFacNM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="lblCompanyNM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 23</value>
+  <data name="lblFacNM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 20</value>
   </data>
-  <data name="lblCompanyNM.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblFacNM.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="lblCompanyNM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblFacNM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;lblCompanyNM.Name" xml:space="preserve">
-    <value>lblCompanyNM</value>
+  <data name="&gt;&gt;lblFacNM.Name" xml:space="preserve">
+    <value>lblFacNM</value>
   </data>
-  <data name="&gt;&gt;lblCompanyNM.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblFacNM.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblCompanyNM.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblFacNM.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
-  <data name="&gt;&gt;lblCompanyNM.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblFacNM.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtCompany.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="txtFacCd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 3</value>
+  <data name="txtFacCd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 3</value>
   </data>
-  <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 19</value>
+  <data name="txtFacCd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 19</value>
   </data>
-  <data name="txtCompany.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtFacCd.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;txtCompany.Name" xml:space="preserve">
-    <value>txtCompany</value>
+  <data name="&gt;&gt;txtFacCd.Name" xml:space="preserve">
+    <value>txtFacCd</value>
   </data>
-  <data name="&gt;&gt;txtCompany.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtFacCd.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtCompany.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtFacCd.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
-  <data name="&gt;&gt;txtCompany.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtFacCd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="lblStar1.AutoSize" type="System.Boolean, mscorlib">
@@ -1558,7 +1558,7 @@
     <value>113, 0</value>
   </data>
   <data name="lblStar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 29</value>
+    <value>9, 26</value>
   </data>
   <data name="lblStar1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1581,80 +1581,83 @@
   <data name="&gt;&gt;lblStar1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblCompany.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblFac.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblCompany.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblFac.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="lblCompany.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblFac.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblCompany.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblFac.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="lblCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblFac.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="lblCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 29</value>
+  <data name="lblFac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
   </data>
-  <data name="lblCompany.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblFac.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblCompany.Text" xml:space="preserve">
-    <value>公司代码</value>
+  <data name="lblFac.Text" xml:space="preserve">
+    <value>工厂代码</value>
   </data>
-  <data name="lblCompany.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblFac.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;lblCompany.Name" xml:space="preserve">
-    <value>lblCompany</value>
+  <data name="&gt;&gt;lblFac.Name" xml:space="preserve">
+    <value>lblFac</value>
   </data>
-  <data name="&gt;&gt;lblCompany.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblFac.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblCompany.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblFac.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
-  <data name="&gt;&gt;lblCompany.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblFac.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 3</value>
+  <data name="btnFacHelper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 3</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 23</value>
+  <data name="btnFacHelper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnFacHelper.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="btnFacHelper.Text" xml:space="preserve">
     <value>button1</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;btnFacHelper.Name" xml:space="preserve">
+    <value>btnFacHelper</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnFacHelper.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnFacHelper.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnFacHelper.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="tblPanelG1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="tblPanelG1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>0, 0</value>
+  </data>
+  <data name="tblPanelG1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="tblPanelG1.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tblPanelG1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>786, 29</value>
+    <value>792, 26</value>
   </data>
   <data name="tblPanelG1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1672,7 +1675,7 @@
     <value>2</value>
   </data>
   <data name="tblPanelG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,24,Absolute,109,Absolute,35,Absolute,280,Absolute,228" /&gt;&lt;Rows Styles="Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFacNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtFacCd" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblFac" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnFacHelper" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,111,Absolute,35,Absolute,290,Absolute,231" /&gt;&lt;Rows Styles="Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelGrp.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 51</value>
@@ -1702,7 +1705,7 @@
     <value>0</value>
   </data>
   <data name="tblPanelGrp.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tblPanelG3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,6.591337,Percent,52.91902,Percent,40.48964" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tblPanelG3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,26,Percent,41.93549,Percent,58.06451" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
