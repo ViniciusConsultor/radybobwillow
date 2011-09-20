@@ -20,6 +20,15 @@ namespace Com.GainWinSoft.ERP.MaterialPrice
             InitializeComponent();
         }
 
+        private void lblCompanyNM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDlCd_Click(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }
