@@ -65,12 +65,16 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             //this.SetLayout(this.strMode);
             FrmExRateCardVo frmExRateCardVo = new FrmExRateCardVo();
 
-            frmExRateCardVo.ICompanyCd = "";//公司代码
-            frmExRateCardVo.IDlCurrCd = ""; //结算货币
-            frmExRateCardVo.ICnvMethod = "";//转换方式
+            frmExRateCardVo.ICompanyCd = "00";//公司代码
+            frmExRateCardVo.IDlCurrCd = "01"; //结算货币
+            frmExRateCardVo.ICnvMethod = "M";//转换方式
             frmExRateCardVo.IEffEndDate = Convert.ToDecimal("20111231");//有效日
             frmExRateCardVo.IRate = (decimal)1.1;
             frmExRateCardVo.IRateCls = "01";
+            frmExRateCardVo.IEntryDate = DateTime.Now;
+            frmExRateCardVo.IUpdDate = DateTime.Now;
+            frmExRateCardVo.IUpdTimestamp = DateTime.Now.ToShortDateString();
+                     
 
             Action_FrmExchangeRate action = new Action_FrmExchangeRate();
             action.InsExchangeRateStp(frmExRateCardVo);
