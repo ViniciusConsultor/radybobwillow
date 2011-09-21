@@ -438,6 +438,7 @@
     <None Include="img\leftdown_32.png" />
     <None Include="img\left_32.png" />
     <None Include="img\right_32.png" />
+    <None Include="img\Unit.png" />
     <Content Include="img\wizard.png" />
     <None Include="img\WorkSheetInquiry.png" />
     <None Include="img\WorkSheetEntry.png" />

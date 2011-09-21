@@ -788,6 +788,13 @@ namespace Com.GainWinSoft.ERP.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Unit {
+            get {
+                object obj = ResourceManager.GetObject("Unit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap UnplanedReceiptEntry {
             get {
                 object obj = ResourceManager.GetObject("UnplanedReceiptEntry", resourceCulture);
