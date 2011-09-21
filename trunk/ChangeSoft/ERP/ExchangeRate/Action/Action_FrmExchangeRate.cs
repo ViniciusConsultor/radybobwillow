@@ -27,7 +27,15 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
             //IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
             TRateStp tRateModel = new TRateStp();
             PropertiesCopier.CopyProperties(exRatevo, tRateModel);
-                          
+            tRateModel.Id.ICompanyCd = "00";
+            tRateModel.Id.IJournalNo = (decimal)1000001;
+            tRateModel.IPgId = "FxRate";
+            tRateModel.IPrcsCls = "00";
+            tRateModel.IPrcsDate = DateTime.Now;
+            tRateModel.IPrcsTime = DateTime.Now.ToShortTimeString();
+            tRateModel.IRefTimestamp = "100001";
+
+
             //Test td = new Test();
             Boolean re = td.InsTRateStp(tRateModel);
 
