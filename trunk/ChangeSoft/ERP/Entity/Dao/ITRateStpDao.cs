@@ -7,7 +7,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
         //IList<Com.GainWinSoft.ERP.Entity.TRateStp> GetDetail(string langId, string langColumn, string talbeNm, string valueColumn, string nameColumn);
         //IList<Com.GainWinSoft.ERP.Entity.CTableDropDownListNoAR> GetDetail(string talbeNm, string valueColumn, string nameColumn);
 
-        Boolean InsTRateStp(string strFromVo);
+        Boolean InsTRateStp(TRateStp trateStpModel);
 
     }
 }
