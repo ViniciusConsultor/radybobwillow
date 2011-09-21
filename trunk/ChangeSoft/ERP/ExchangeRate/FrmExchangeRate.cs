@@ -41,8 +41,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
         private void FrmExchangeRate_Load(object sender, EventArgs e)
         {
-            this.commonToolStrip1.UpdateClick -= new EventHandler(commonToolStrip1_UpdateClick);
-            this.commonToolStrip1.SaveClick -= new EventHandler(commonToolStrip1_SaveClick);
+            this.commonToolStrip1.UpdateClick += new EventHandler(commonToolStrip1_UpdateClick);
+            this.commonToolStrip1.SaveClick += new EventHandler(commonToolStrip1_SaveClick);
         }
 
 
@@ -68,7 +68,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             frmExRateCardVo.ICompanyCd = "";//公司代码
             frmExRateCardVo.IDlCurrCd = ""; //结算货币
             frmExRateCardVo.ICnvMethod = "";//转换方式
-            frmExRateCardVo.IEffEndDate = "20111231";//有效日
+            frmExRateCardVo.IEffEndDate = Convert.ToDecimal("20111231");//有效日
             frmExRateCardVo.IRate = (decimal)1.1;
             frmExRateCardVo.IRateCls = "01";
 
