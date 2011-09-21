@@ -23,7 +23,30 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
            //InsStp
            //呼叫pslql
 
+            ISession ss = holder.CreateSession(typeof(TRateStpDaoOracleImp));
+            ITransaction tran = ss.BeginTransaction();
 
+            try
+            {
+                tRateStpModel.CreateAndFlush();
+                tran.Commit();
+
+            }            
+            catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
+            {
+                tran.Rollback();
+                throw new ApplicationException(ex.Message, ex);
+            }
+            catch (DbException ex)
+            {
+                tran.Rollback();
+                throw new ApplicationException(ex.Message, ex);
+            }
+            finally
+            {
+                tran.Dispose();
+            }
+            
 
 
 
@@ -35,14 +58,14 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
         #endregion
 
-        public TRateMs getTRateMs(string facCd)
-        {
-            TRateMs rateMs = null;
+        //public TRateMs getTRateMs(string facCd)
+        //{
+        //    TRateMs rateMs = null;
 
 
 
-            return rateMs;
-        }
+        //    return rateMs;
+        //}
 
 
 
