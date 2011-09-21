@@ -12,7 +12,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.FormVo
         private string iCompanyCd;      //公司代碼
         private string iRateCls;        //匯率區分
         private string iDlCurrCd;       // 結算貨幣
-        private string iEffEndDate;    //有效終了日
+        private decimal iEffEndDate;    //有效終了日
 
         private decimal iRate;          //匯率
         private string iCnvMethod;      //轉換方法
@@ -45,7 +45,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.FormVo
             set { iDlCurrCd = value; }
         }
 
-        public string IEffEndDate
+        public decimal IEffEndDate
         {
             get { return iEffEndDate; }
             set { iEffEndDate = value; }
