@@ -43,6 +43,8 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.linkQuotationEntry = new System.Windows.Forms.LinkLabel();
+            this.linkQuotationInquiry = new System.Windows.Forms.LinkLabel();
+            this.linkOrderEntry = new System.Windows.Forms.LinkLabel();
             this.tlpFuncCatalog1 = new System.Windows.Forms.TableLayoutPanel();
             this.picBoxFactory = new System.Windows.Forms.PictureBox();
             this.linkFactory = new System.Windows.Forms.LinkLabel();
@@ -70,9 +72,29 @@
             this.linkBOM = new System.Windows.Forms.LinkLabel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.linkCustomer = new System.Windows.Forms.LinkLabel();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.linkMaterialPrice = new System.Windows.Forms.LinkLabel();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.linkSystemParameter = new System.Windows.Forms.LinkLabel();
+            this.linkCustomerMaterial = new System.Windows.Forms.LinkLabel();
+            this.linkCalendar = new System.Windows.Forms.LinkLabel();
+            this.linkProcessEquipment = new System.Windows.Forms.LinkLabel();
+            this.linkUnit = new System.Windows.Forms.LinkLabel();
+            this.linkCurrency = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkAccountItem = new System.Windows.Forms.LinkLabel();
+            this.linkExchangeRate = new System.Windows.Forms.LinkLabel();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.panel2 = new Com.GainWinSoft.Common.Control.XAccordionPanel.Panel();
-            this.linkQuotationInquiry = new System.Windows.Forms.LinkLabel();
-            this.linkOrderEntry = new System.Windows.Forms.LinkLabel();
             linkUser = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -103,17 +125,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.SuspendLayout();
             // 
             // linkUser
             // 
             linkUser.AutoSize = true;
             linkUser.Dock = System.Windows.Forms.DockStyle.Top;
-            linkUser.Location = new System.Drawing.Point(55, 25);
+            linkUser.Location = new System.Drawing.Point(47, 25);
             linkUser.Name = "linkUser";
-            linkUser.Size = new System.Drawing.Size(2, 5);
+            linkUser.Size = new System.Drawing.Size(1, 5);
             linkUser.TabIndex = 15;
             linkUser.TabStop = true;
+            linkUser.Tag = "FUser";
             linkUser.Text = "linkUser";
             // 
             // tableLayoutPanel1
@@ -203,13 +238,14 @@
             this.XPWorkflow.ForeColor = System.Drawing.SystemColors.ControlText;
             this.XPWorkflow.Image = null;
             this.XPWorkflow.LinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.XPWorkflow.Location = new System.Drawing.Point(238, 3);
+            this.XPWorkflow.Location = new System.Drawing.Point(235, 0);
+            this.XPWorkflow.Margin = new System.Windows.Forms.Padding(0);
             this.XPWorkflow.MinimumSize = new System.Drawing.Size(27, 27);
             this.XPWorkflow.Name = "XPWorkflow";
             this.XPWorkflow.PanelStyle = Com.GainWinSoft.Common.Control.XAccordionPanel.PanelStyle.Office2007;
             this.tableLayoutPanel1.SetRowSpan(this.XPWorkflow, 2);
             this.XPWorkflow.ShowXAccordionPanelPanelProfessionalStyle = true;
-            this.XPWorkflow.Size = new System.Drawing.Size(543, 556);
+            this.XPWorkflow.Size = new System.Drawing.Size(549, 562);
             this.XPWorkflow.TabIndex = 1;
             this.XPWorkflow.Text = "流程";
             this.XPWorkflow.ToolTipTextCloseIcon = null;
@@ -243,7 +279,7 @@
             this.tlpFuncCatalog2.Controls.Add(this.linkQuotationEntry, 6, 2);
             this.tlpFuncCatalog2.Controls.Add(this.linkQuotationInquiry, 4, 2);
             this.tlpFuncCatalog2.Controls.Add(this.linkOrderEntry, 6, 5);
-            this.tlpFuncCatalog2.Location = new System.Drawing.Point(87, 42);
+            this.tlpFuncCatalog2.Location = new System.Drawing.Point(414, 42);
             this.tlpFuncCatalog2.Margin = new System.Windows.Forms.Padding(0);
             this.tlpFuncCatalog2.Name = "tlpFuncCatalog2";
             this.tlpFuncCatalog2.RowCount = 13;
@@ -260,28 +296,29 @@
             this.tlpFuncCatalog2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tlpFuncCatalog2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tlpFuncCatalog2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpFuncCatalog2.Size = new System.Drawing.Size(437, 486);
+            this.tlpFuncCatalog2.Size = new System.Drawing.Size(110, 100);
             this.tlpFuncCatalog2.TabIndex = 0;
             // 
             // pictureBox17
             // 
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox17.Image = global::Com.GainWinSoft.ERP.Properties.Resources.QuotationInquiry;
-            this.pictureBox17.Location = new System.Drawing.Point(128, 20);
+            this.pictureBox17.Location = new System.Drawing.Point(38, 20);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox17.Size = new System.Drawing.Size(6, 5);
             this.pictureBox17.TabIndex = 1;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "QuotationInquiry";
             // 
             // pictureBox18
             // 
             this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox18.Image = global::Com.GainWinSoft.ERP.Properties.Resources.down;
-            this.pictureBox18.Location = new System.Drawing.Point(200, 100);
+            this.pictureBox18.Location = new System.Drawing.Point(50, 30);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox18.Size = new System.Drawing.Size(6, 5);
             this.pictureBox18.TabIndex = 3;
             this.pictureBox18.TabStop = false;
             // 
@@ -289,32 +326,34 @@
             // 
             this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox19.Image = global::Com.GainWinSoft.ERP.Properties.Resources.OrderInquiry;
-            this.pictureBox19.Location = new System.Drawing.Point(128, 140);
+            this.pictureBox19.Location = new System.Drawing.Point(38, 35);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox19.Size = new System.Drawing.Size(6, 5);
             this.pictureBox19.TabIndex = 4;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "OrderInquiry";
             // 
             // linkOrderInquiry
             // 
             this.linkOrderInquiry.AutoSize = true;
             this.linkOrderInquiry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkOrderInquiry.Location = new System.Drawing.Point(131, 180);
+            this.linkOrderInquiry.Location = new System.Drawing.Point(41, 40);
             this.linkOrderInquiry.Name = "linkOrderInquiry";
-            this.linkOrderInquiry.Size = new System.Drawing.Size(30, 40);
+            this.linkOrderInquiry.Size = new System.Drawing.Size(1, 5);
             this.linkOrderInquiry.TabIndex = 5;
             this.linkOrderInquiry.TabStop = true;
+            this.linkOrderInquiry.Tag = "FOrderInquiry";
             this.linkOrderInquiry.Text = "linkOrderInquiry";
             // 
             // pictureBox20
             // 
             this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox20.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox20.Location = new System.Drawing.Point(164, 20);
+            this.pictureBox20.Location = new System.Drawing.Point(44, 20);
             this.pictureBox20.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox20.Size = new System.Drawing.Size(6, 5);
             this.pictureBox20.TabIndex = 6;
             this.pictureBox20.TabStop = false;
             // 
@@ -322,21 +361,22 @@
             // 
             this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox21.Image = global::Com.GainWinSoft.ERP.Properties.Resources.QuotationEntry;
-            this.pictureBox21.Location = new System.Drawing.Point(200, 20);
+            this.pictureBox21.Location = new System.Drawing.Point(50, 20);
             this.pictureBox21.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox21.Size = new System.Drawing.Size(6, 5);
             this.pictureBox21.TabIndex = 7;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Tag = "QuotationEntry";
             // 
             // pictureBox22
             // 
             this.pictureBox22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox22.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox22.Location = new System.Drawing.Point(164, 140);
+            this.pictureBox22.Location = new System.Drawing.Point(44, 35);
             this.pictureBox22.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox22.Size = new System.Drawing.Size(6, 5);
             this.pictureBox22.TabIndex = 8;
             this.pictureBox22.TabStop = false;
             // 
@@ -344,23 +384,49 @@
             // 
             this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox23.Image = global::Com.GainWinSoft.ERP.Properties.Resources.OrderEntry;
-            this.pictureBox23.Location = new System.Drawing.Point(200, 140);
+            this.pictureBox23.Location = new System.Drawing.Point(50, 35);
             this.pictureBox23.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox23.Size = new System.Drawing.Size(6, 5);
             this.pictureBox23.TabIndex = 9;
             this.pictureBox23.TabStop = false;
+            this.pictureBox23.Tag = "OrderEntry";
             // 
             // linkQuotationEntry
             // 
             this.linkQuotationEntry.AutoSize = true;
             this.linkQuotationEntry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkQuotationEntry.Location = new System.Drawing.Point(203, 60);
+            this.linkQuotationEntry.Location = new System.Drawing.Point(53, 25);
             this.linkQuotationEntry.Name = "linkQuotationEntry";
-            this.linkQuotationEntry.Size = new System.Drawing.Size(30, 40);
+            this.linkQuotationEntry.Size = new System.Drawing.Size(1, 5);
             this.linkQuotationEntry.TabIndex = 10;
             this.linkQuotationEntry.TabStop = true;
+            this.linkQuotationEntry.Tag = "FQuotationEntry";
             this.linkQuotationEntry.Text = "linkQuotationEntry";
+            // 
+            // linkQuotationInquiry
+            // 
+            this.linkQuotationInquiry.AutoSize = true;
+            this.linkQuotationInquiry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkQuotationInquiry.Location = new System.Drawing.Point(41, 25);
+            this.linkQuotationInquiry.Name = "linkQuotationInquiry";
+            this.linkQuotationInquiry.Size = new System.Drawing.Size(1, 5);
+            this.linkQuotationInquiry.TabIndex = 11;
+            this.linkQuotationInquiry.TabStop = true;
+            this.linkQuotationInquiry.Tag = "FQuotationInquiry";
+            this.linkQuotationInquiry.Text = "linkLabel1";
+            // 
+            // linkOrderEntry
+            // 
+            this.linkOrderEntry.AutoSize = true;
+            this.linkOrderEntry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkOrderEntry.Location = new System.Drawing.Point(53, 40);
+            this.linkOrderEntry.Name = "linkOrderEntry";
+            this.linkOrderEntry.Size = new System.Drawing.Size(1, 5);
+            this.linkOrderEntry.TabIndex = 12;
+            this.linkOrderEntry.TabStop = true;
+            this.linkOrderEntry.Tag = "FOrderEntry";
+            this.linkOrderEntry.Text = "linkLabel2";
             // 
             // tlpFuncCatalog1
             // 
@@ -403,8 +469,30 @@
             this.tlpFuncCatalog1.Controls.Add(this.pictureBox14, 4, 7);
             this.tlpFuncCatalog1.Controls.Add(this.pictureBox15, 5, 7);
             this.tlpFuncCatalog1.Controls.Add(this.linkBOM, 5, 8);
-            this.tlpFuncCatalog1.Controls.Add(this.pictureBox16, 4, 4);
-            this.tlpFuncCatalog1.Controls.Add(this.linkCustomer, 4, 5);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox16, 3, 4);
+            this.tlpFuncCatalog1.Controls.Add(this.linkCustomer, 3, 5);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox24, 1, 9);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox25, 1, 10);
+            this.tlpFuncCatalog1.Controls.Add(this.linkMaterialPrice, 1, 11);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox26, 5, 4);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox27, 11, 4);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox28, 7, 7);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox29, 9, 7);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox30, 11, 7);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox31, 7, 10);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox32, 9, 10);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox33, 11, 10);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox34, 9, 4);
+            this.tlpFuncCatalog1.Controls.Add(this.linkSystemParameter, 9, 5);
+            this.tlpFuncCatalog1.Controls.Add(this.linkCustomerMaterial, 5, 5);
+            this.tlpFuncCatalog1.Controls.Add(this.linkCalendar, 11, 5);
+            this.tlpFuncCatalog1.Controls.Add(this.linkProcessEquipment, 7, 8);
+            this.tlpFuncCatalog1.Controls.Add(this.linkUnit, 9, 8);
+            this.tlpFuncCatalog1.Controls.Add(this.linkCurrency, 11, 8);
+            this.tlpFuncCatalog1.Controls.Add(this.linkLabel8, 7, 11);
+            this.tlpFuncCatalog1.Controls.Add(this.linkAccountItem, 9, 11);
+            this.tlpFuncCatalog1.Controls.Add(this.linkExchangeRate, 11, 11);
+            this.tlpFuncCatalog1.Controls.Add(this.pictureBox35, 4, 4);
             this.tlpFuncCatalog1.Location = new System.Drawing.Point(19, 42);
             this.tlpFuncCatalog1.Margin = new System.Windows.Forms.Padding(0);
             this.tlpFuncCatalog1.Name = "tlpFuncCatalog1";
@@ -422,7 +510,7 @@
             this.tlpFuncCatalog1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tlpFuncCatalog1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tlpFuncCatalog1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpFuncCatalog1.Size = new System.Drawing.Size(131, 106);
+            this.tlpFuncCatalog1.Size = new System.Drawing.Size(117, 100);
             this.tlpFuncCatalog1.TabIndex = 0;
             // 
             // picBoxFactory
@@ -432,9 +520,10 @@
             this.picBoxFactory.Location = new System.Drawing.Point(20, 20);
             this.picBoxFactory.Margin = new System.Windows.Forms.Padding(0);
             this.picBoxFactory.Name = "picBoxFactory";
-            this.picBoxFactory.Size = new System.Drawing.Size(8, 5);
+            this.picBoxFactory.Size = new System.Drawing.Size(6, 5);
             this.picBoxFactory.TabIndex = 1;
             this.picBoxFactory.TabStop = false;
+            this.picBoxFactory.Tag = "Factory";
             // 
             // linkFactory
             // 
@@ -442,9 +531,10 @@
             this.linkFactory.Dock = System.Windows.Forms.DockStyle.Top;
             this.linkFactory.Location = new System.Drawing.Point(23, 25);
             this.linkFactory.Name = "linkFactory";
-            this.linkFactory.Size = new System.Drawing.Size(2, 5);
+            this.linkFactory.Size = new System.Drawing.Size(1, 5);
             this.linkFactory.TabIndex = 2;
             this.linkFactory.TabStop = true;
+            this.linkFactory.Tag = "FFactory";
             this.linkFactory.Text = "linkLabel3";
             // 
             // pictureBox1
@@ -454,7 +544,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(20, 30);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox1.Size = new System.Drawing.Size(6, 5);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -465,9 +555,10 @@
             this.pictureBox2.Location = new System.Drawing.Point(20, 35);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox2.Size = new System.Drawing.Size(6, 5);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "WarehouseProcess";
             // 
             // linkWarehouseProcess
             // 
@@ -475,9 +566,10 @@
             this.linkWarehouseProcess.Dock = System.Windows.Forms.DockStyle.Top;
             this.linkWarehouseProcess.Location = new System.Drawing.Point(23, 40);
             this.linkWarehouseProcess.Name = "linkWarehouseProcess";
-            this.linkWarehouseProcess.Size = new System.Drawing.Size(2, 5);
+            this.linkWarehouseProcess.Size = new System.Drawing.Size(1, 5);
             this.linkWarehouseProcess.TabIndex = 5;
             this.linkWarehouseProcess.TabStop = true;
+            this.linkWarehouseProcess.Tag = "FWarehouseProcess";
             this.linkWarehouseProcess.Text = "linkLabel3";
             // 
             // linkMaterial
@@ -485,11 +577,11 @@
             this.linkMaterial.AutoSize = true;
             this.linkMaterial.Location = new System.Drawing.Point(23, 55);
             this.linkMaterial.Name = "linkMaterial";
-            this.linkMaterial.Size = new System.Drawing.Size(2, 5);
+            this.linkMaterial.Size = new System.Drawing.Size(1, 5);
             this.linkMaterial.TabIndex = 0;
             this.linkMaterial.TabStop = true;
+            this.linkMaterial.Tag = "FMaterial";
             this.linkMaterial.Text = "linkLabel1";
-            this.linkMaterial.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox3
             // 
@@ -498,7 +590,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(20, 45);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox3.Size = new System.Drawing.Size(6, 5);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -509,18 +601,19 @@
             this.pictureBox4.Location = new System.Drawing.Point(20, 50);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox4.Size = new System.Drawing.Size(6, 5);
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "Material";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 50);
+            this.pictureBox5.Location = new System.Drawing.Point(26, 50);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox5.Size = new System.Drawing.Size(6, 5);
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
@@ -528,54 +621,58 @@
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Composition;
-            this.pictureBox6.Location = new System.Drawing.Point(36, 50);
+            this.pictureBox6.Location = new System.Drawing.Point(32, 50);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox6.Size = new System.Drawing.Size(6, 5);
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "Composition";
             // 
             // linkComposition
             // 
             this.linkComposition.AutoSize = true;
             this.linkComposition.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkComposition.Location = new System.Drawing.Point(39, 55);
+            this.linkComposition.Location = new System.Drawing.Point(35, 55);
             this.linkComposition.Name = "linkComposition";
-            this.linkComposition.Size = new System.Drawing.Size(2, 5);
+            this.linkComposition.Size = new System.Drawing.Size(1, 5);
             this.linkComposition.TabIndex = 10;
             this.linkComposition.TabStop = true;
+            this.linkComposition.Tag = "FComposition";
             this.linkComposition.Text = "linkLabel1";
             // 
             // pictureBox7
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Department;
-            this.pictureBox7.Location = new System.Drawing.Point(36, 20);
+            this.pictureBox7.Location = new System.Drawing.Point(32, 20);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox7.Size = new System.Drawing.Size(6, 5);
             this.pictureBox7.TabIndex = 11;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "Department";
             // 
             // linkDepartment
             // 
             this.linkDepartment.AutoSize = true;
             this.linkDepartment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkDepartment.Location = new System.Drawing.Point(39, 25);
+            this.linkDepartment.Location = new System.Drawing.Point(35, 25);
             this.linkDepartment.Name = "linkDepartment";
-            this.linkDepartment.Size = new System.Drawing.Size(2, 5);
+            this.linkDepartment.Size = new System.Drawing.Size(1, 5);
             this.linkDepartment.TabIndex = 12;
             this.linkDepartment.TabStop = true;
+            this.linkDepartment.Tag = "FDepartment";
             this.linkDepartment.Text = "linkLabel1";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox8.Location = new System.Drawing.Point(44, 20);
+            this.pictureBox8.Location = new System.Drawing.Point(38, 20);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox8.Size = new System.Drawing.Size(6, 5);
             this.pictureBox8.TabIndex = 13;
             this.pictureBox8.TabStop = false;
             // 
@@ -583,21 +680,22 @@
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = global::Com.GainWinSoft.ERP.Properties.Resources.User;
-            this.pictureBox9.Location = new System.Drawing.Point(52, 20);
+            this.pictureBox9.Location = new System.Drawing.Point(44, 20);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox9.Size = new System.Drawing.Size(6, 5);
             this.pictureBox9.TabIndex = 14;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "User";
             // 
             // pictureBox10
             // 
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Image = global::Com.GainWinSoft.ERP.Properties.Resources.down;
-            this.pictureBox10.Location = new System.Drawing.Point(36, 60);
+            this.pictureBox10.Location = new System.Drawing.Point(32, 60);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox10.Size = new System.Drawing.Size(6, 5);
             this.pictureBox10.TabIndex = 16;
             this.pictureBox10.TabStop = false;
             // 
@@ -605,32 +703,34 @@
             // 
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox11.Image = global::Com.GainWinSoft.ERP.Properties.Resources.CompositionCheck;
-            this.pictureBox11.Location = new System.Drawing.Point(36, 65);
+            this.pictureBox11.Location = new System.Drawing.Point(32, 65);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox11.Size = new System.Drawing.Size(6, 5);
             this.pictureBox11.TabIndex = 17;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "CompositionCheck";
             // 
             // linkCompositionCheck
             // 
             this.linkCompositionCheck.AutoSize = true;
             this.linkCompositionCheck.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkCompositionCheck.Location = new System.Drawing.Point(39, 70);
+            this.linkCompositionCheck.Location = new System.Drawing.Point(35, 70);
             this.linkCompositionCheck.Name = "linkCompositionCheck";
-            this.linkCompositionCheck.Size = new System.Drawing.Size(2, 5);
+            this.linkCompositionCheck.Size = new System.Drawing.Size(1, 5);
             this.linkCompositionCheck.TabIndex = 18;
             this.linkCompositionCheck.TabStop = true;
+            this.linkCompositionCheck.Tag = "FCompositionCheck";
             this.linkCompositionCheck.Text = "linkLabel3";
             // 
             // pictureBox12
             // 
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox12.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox12.Location = new System.Drawing.Point(60, 20);
+            this.pictureBox12.Location = new System.Drawing.Point(50, 20);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox12.Size = new System.Drawing.Size(6, 5);
             this.pictureBox12.TabIndex = 19;
             this.pictureBox12.TabStop = false;
             // 
@@ -638,32 +738,34 @@
             // 
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox13.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Role;
-            this.pictureBox13.Location = new System.Drawing.Point(68, 20);
+            this.pictureBox13.Location = new System.Drawing.Point(56, 20);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox13.Size = new System.Drawing.Size(6, 5);
             this.pictureBox13.TabIndex = 20;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "Role";
             // 
             // linkRole
             // 
             this.linkRole.AutoSize = true;
             this.linkRole.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkRole.Location = new System.Drawing.Point(71, 25);
+            this.linkRole.Location = new System.Drawing.Point(59, 25);
             this.linkRole.Name = "linkRole";
-            this.linkRole.Size = new System.Drawing.Size(2, 5);
+            this.linkRole.Size = new System.Drawing.Size(1, 5);
             this.linkRole.TabIndex = 21;
             this.linkRole.TabStop = true;
+            this.linkRole.Tag = "FRole";
             this.linkRole.Text = "linkLabel3";
             // 
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox14.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
-            this.pictureBox14.Location = new System.Drawing.Point(44, 50);
+            this.pictureBox14.Location = new System.Drawing.Point(38, 50);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox14.Size = new System.Drawing.Size(6, 5);
             this.pictureBox14.TabIndex = 22;
             this.pictureBox14.TabStop = false;
             // 
@@ -671,45 +773,310 @@
             // 
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox15.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Bom;
-            this.pictureBox15.Location = new System.Drawing.Point(52, 50);
+            this.pictureBox15.Location = new System.Drawing.Point(44, 50);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox15.Size = new System.Drawing.Size(6, 5);
             this.pictureBox15.TabIndex = 23;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "Bom";
             // 
             // linkBOM
             // 
             this.linkBOM.AutoSize = true;
             this.linkBOM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkBOM.Location = new System.Drawing.Point(55, 55);
+            this.linkBOM.Location = new System.Drawing.Point(47, 55);
             this.linkBOM.Name = "linkBOM";
-            this.linkBOM.Size = new System.Drawing.Size(2, 5);
+            this.linkBOM.Size = new System.Drawing.Size(1, 5);
             this.linkBOM.TabIndex = 24;
             this.linkBOM.TabStop = true;
+            this.linkBOM.Tag = "FBom";
             this.linkBOM.Text = "linkLabel3";
             // 
             // pictureBox16
             // 
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox16.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Customer;
-            this.pictureBox16.Location = new System.Drawing.Point(44, 35);
+            this.pictureBox16.Location = new System.Drawing.Point(32, 35);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(8, 5);
+            this.pictureBox16.Size = new System.Drawing.Size(6, 5);
             this.pictureBox16.TabIndex = 25;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "Customer";
             // 
             // linkCustomer
             // 
             this.linkCustomer.AutoSize = true;
             this.linkCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkCustomer.Location = new System.Drawing.Point(47, 40);
+            this.linkCustomer.Location = new System.Drawing.Point(35, 40);
             this.linkCustomer.Name = "linkCustomer";
-            this.linkCustomer.Size = new System.Drawing.Size(2, 5);
+            this.linkCustomer.Size = new System.Drawing.Size(1, 5);
             this.linkCustomer.TabIndex = 26;
             this.linkCustomer.TabStop = true;
+            this.linkCustomer.Tag = "FCustomer";
             this.linkCustomer.Text = "linkLabel3";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox24.Image = global::Com.GainWinSoft.ERP.Properties.Resources.down;
+            this.pictureBox24.Location = new System.Drawing.Point(20, 60);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox24.TabIndex = 27;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox25.Image = global::Com.GainWinSoft.ERP.Properties.Resources.MaterialPrice;
+            this.pictureBox25.Location = new System.Drawing.Point(20, 65);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox25.TabIndex = 28;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "MaterialPrice";
+            // 
+            // linkMaterialPrice
+            // 
+            this.linkMaterialPrice.AutoSize = true;
+            this.linkMaterialPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkMaterialPrice.Location = new System.Drawing.Point(23, 70);
+            this.linkMaterialPrice.Name = "linkMaterialPrice";
+            this.linkMaterialPrice.Size = new System.Drawing.Size(1, 5);
+            this.linkMaterialPrice.TabIndex = 29;
+            this.linkMaterialPrice.TabStop = true;
+            this.linkMaterialPrice.Tag = "FMaterialPrice";
+            this.linkMaterialPrice.Text = "linkLabel1";
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox26.Image = global::Com.GainWinSoft.ERP.Properties.Resources.CustomerMaterial;
+            this.pictureBox26.Location = new System.Drawing.Point(44, 35);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox26.TabIndex = 30;
+            this.pictureBox26.TabStop = false;
+            this.pictureBox26.Tag = "CustomerMaterial";
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox27.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Calendar;
+            this.pictureBox27.Location = new System.Drawing.Point(80, 35);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox27.TabIndex = 31;
+            this.pictureBox27.TabStop = false;
+            this.pictureBox27.Tag = "Calendar";
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox28.Image = global::Com.GainWinSoft.ERP.Properties.Resources.ProcessEquipment;
+            this.pictureBox28.Location = new System.Drawing.Point(56, 50);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox28.TabIndex = 32;
+            this.pictureBox28.TabStop = false;
+            this.pictureBox28.Tag = "ProcessEquipment";
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox29.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Unit;
+            this.pictureBox29.Location = new System.Drawing.Point(68, 50);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox29.TabIndex = 33;
+            this.pictureBox29.TabStop = false;
+            this.pictureBox29.Tag = "Unit";
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox30.Image = global::Com.GainWinSoft.ERP.Properties.Resources.Currency;
+            this.pictureBox30.Location = new System.Drawing.Point(80, 50);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox30.TabIndex = 34;
+            this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "Currency";
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox31.Location = new System.Drawing.Point(56, 65);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox31.TabIndex = 35;
+            this.pictureBox31.TabStop = false;
+            this.pictureBox31.Visible = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox32.Image = global::Com.GainWinSoft.ERP.Properties.Resources.AccountItem;
+            this.pictureBox32.Location = new System.Drawing.Point(68, 65);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox32.TabIndex = 36;
+            this.pictureBox32.TabStop = false;
+            this.pictureBox32.Tag = "AccountItem";
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox33.Image = global::Com.GainWinSoft.ERP.Properties.Resources.ExchangeRate;
+            this.pictureBox33.Location = new System.Drawing.Point(80, 65);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox33.TabIndex = 37;
+            this.pictureBox33.TabStop = false;
+            this.pictureBox33.Tag = "ExchangeRate";
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox34.Image = global::Com.GainWinSoft.ERP.Properties.Resources.SystemParameter;
+            this.pictureBox34.Location = new System.Drawing.Point(68, 35);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox34.TabIndex = 38;
+            this.pictureBox34.TabStop = false;
+            this.pictureBox34.Tag = "SystemParameter";
+            // 
+            // linkSystemParameter
+            // 
+            this.linkSystemParameter.AutoSize = true;
+            this.linkSystemParameter.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkSystemParameter.Location = new System.Drawing.Point(71, 40);
+            this.linkSystemParameter.Name = "linkSystemParameter";
+            this.linkSystemParameter.Size = new System.Drawing.Size(1, 5);
+            this.linkSystemParameter.TabIndex = 39;
+            this.linkSystemParameter.TabStop = true;
+            this.linkSystemParameter.Tag = "FSystemParameter";
+            this.linkSystemParameter.Text = "linkLabel2";
+            // 
+            // linkCustomerMaterial
+            // 
+            this.linkCustomerMaterial.AutoSize = true;
+            this.linkCustomerMaterial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkCustomerMaterial.Location = new System.Drawing.Point(47, 40);
+            this.linkCustomerMaterial.Name = "linkCustomerMaterial";
+            this.linkCustomerMaterial.Size = new System.Drawing.Size(1, 5);
+            this.linkCustomerMaterial.TabIndex = 40;
+            this.linkCustomerMaterial.TabStop = true;
+            this.linkCustomerMaterial.Tag = "FCustomerMaterial";
+            this.linkCustomerMaterial.Text = "linkLabel3";
+            // 
+            // linkCalendar
+            // 
+            this.linkCalendar.AutoSize = true;
+            this.linkCalendar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkCalendar.Location = new System.Drawing.Point(83, 40);
+            this.linkCalendar.Name = "linkCalendar";
+            this.linkCalendar.Size = new System.Drawing.Size(1, 5);
+            this.linkCalendar.TabIndex = 41;
+            this.linkCalendar.TabStop = true;
+            this.linkCalendar.Tag = "FCalendar";
+            this.linkCalendar.Text = "linkLabel4";
+            // 
+            // linkProcessEquipment
+            // 
+            this.linkProcessEquipment.AutoSize = true;
+            this.linkProcessEquipment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkProcessEquipment.Location = new System.Drawing.Point(59, 55);
+            this.linkProcessEquipment.Name = "linkProcessEquipment";
+            this.linkProcessEquipment.Size = new System.Drawing.Size(1, 5);
+            this.linkProcessEquipment.TabIndex = 42;
+            this.linkProcessEquipment.TabStop = true;
+            this.linkProcessEquipment.Tag = "FProcessEquipment";
+            this.linkProcessEquipment.Text = "linkLabel5";
+            // 
+            // linkUnit
+            // 
+            this.linkUnit.AutoSize = true;
+            this.linkUnit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkUnit.Location = new System.Drawing.Point(71, 55);
+            this.linkUnit.Name = "linkUnit";
+            this.linkUnit.Size = new System.Drawing.Size(1, 5);
+            this.linkUnit.TabIndex = 43;
+            this.linkUnit.TabStop = true;
+            this.linkUnit.Tag = "FUnit";
+            this.linkUnit.Text = "linkLabel6";
+            // 
+            // linkCurrency
+            // 
+            this.linkCurrency.AutoSize = true;
+            this.linkCurrency.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkCurrency.Location = new System.Drawing.Point(83, 55);
+            this.linkCurrency.Name = "linkCurrency";
+            this.linkCurrency.Size = new System.Drawing.Size(1, 5);
+            this.linkCurrency.TabIndex = 44;
+            this.linkCurrency.TabStop = true;
+            this.linkCurrency.Tag = "FCurrency";
+            this.linkCurrency.Text = "linkLabel7";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkLabel8.Location = new System.Drawing.Point(59, 70);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(1, 5);
+            this.linkLabel8.TabIndex = 45;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "linkLabel8";
+            this.linkLabel8.Visible = false;
+            // 
+            // linkAccountItem
+            // 
+            this.linkAccountItem.AutoSize = true;
+            this.linkAccountItem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkAccountItem.Location = new System.Drawing.Point(71, 70);
+            this.linkAccountItem.Name = "linkAccountItem";
+            this.linkAccountItem.Size = new System.Drawing.Size(1, 5);
+            this.linkAccountItem.TabIndex = 46;
+            this.linkAccountItem.TabStop = true;
+            this.linkAccountItem.Tag = "FAccountItem";
+            this.linkAccountItem.Text = "linkLabel9";
+            // 
+            // linkExchangeRate
+            // 
+            this.linkExchangeRate.AutoSize = true;
+            this.linkExchangeRate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.linkExchangeRate.Location = new System.Drawing.Point(83, 70);
+            this.linkExchangeRate.Name = "linkExchangeRate";
+            this.linkExchangeRate.Size = new System.Drawing.Size(1, 5);
+            this.linkExchangeRate.TabIndex = 47;
+            this.linkExchangeRate.TabStop = true;
+            this.linkExchangeRate.Tag = "FExchangeRate";
+            this.linkExchangeRate.Text = "linkLabel10";
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox35.Image = global::Com.GainWinSoft.ERP.Properties.Resources.right;
+            this.pictureBox35.Location = new System.Drawing.Point(38, 35);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(6, 5);
+            this.pictureBox35.TabIndex = 48;
+            this.pictureBox35.TabStop = false;
             // 
             // panel2
             // 
@@ -745,28 +1112,6 @@
             this.panel2.ToolTipTextCloseIcon = null;
             this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel2.ToolTipTextExpandIconPanelExpanded = null;
-            // 
-            // linkQuotationInquiry
-            // 
-            this.linkQuotationInquiry.AutoSize = true;
-            this.linkQuotationInquiry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkQuotationInquiry.Location = new System.Drawing.Point(131, 60);
-            this.linkQuotationInquiry.Name = "linkQuotationInquiry";
-            this.linkQuotationInquiry.Size = new System.Drawing.Size(30, 36);
-            this.linkQuotationInquiry.TabIndex = 11;
-            this.linkQuotationInquiry.TabStop = true;
-            this.linkQuotationInquiry.Text = "linkLabel1";
-            // 
-            // linkOrderEntry
-            // 
-            this.linkOrderEntry.AutoSize = true;
-            this.linkOrderEntry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.linkOrderEntry.Location = new System.Drawing.Point(203, 180);
-            this.linkOrderEntry.Name = "linkOrderEntry";
-            this.linkOrderEntry.Size = new System.Drawing.Size(30, 36);
-            this.linkOrderEntry.TabIndex = 12;
-            this.linkOrderEntry.TabStop = true;
-            this.linkOrderEntry.Text = "linkLabel2";
             // 
             // FirstForm
             // 
@@ -805,6 +1150,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -855,6 +1212,28 @@
         private System.Windows.Forms.LinkLabel linkQuotationEntry;
         private System.Windows.Forms.LinkLabel linkQuotationInquiry;
         private System.Windows.Forms.LinkLabel linkOrderEntry;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.LinkLabel linkMaterialPrice;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.PictureBox pictureBox33;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.LinkLabel linkSystemParameter;
+        private System.Windows.Forms.LinkLabel linkCustomerMaterial;
+        private System.Windows.Forms.LinkLabel linkCalendar;
+        private System.Windows.Forms.LinkLabel linkProcessEquipment;
+        private System.Windows.Forms.LinkLabel linkUnit;
+        private System.Windows.Forms.LinkLabel linkCurrency;
+        private System.Windows.Forms.LinkLabel linkLabel8;
+        private System.Windows.Forms.LinkLabel linkAccountItem;
+        private System.Windows.Forms.LinkLabel linkExchangeRate;
+        private System.Windows.Forms.PictureBox pictureBox35;
 
     }
 }
