@@ -23,7 +23,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// <summary>
         /// 利用者情报
         /// </summary>
-        private LoginUserInfoVo uservo;
+        //private LoginUserInfoVo uservo;
 
         /// <summary>
         /// Check用Validation
