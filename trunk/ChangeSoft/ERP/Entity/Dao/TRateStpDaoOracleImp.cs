@@ -15,8 +15,9 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
     {
         #region 登陆工作表
 
-        public Boolean InsTRateStp(string strFromVo)
+        public Boolean InsTRateStp(TRateStp tRateStpModel)
         {
+
            //判断模式
            //Copyvalue
            //InsStp
