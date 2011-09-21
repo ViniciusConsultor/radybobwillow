@@ -348,6 +348,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.TblPanelBase);
             this.Name = "FrmExchangeRate";
+            this.Load += new System.EventHandler(this.FrmExchangeRate_Load);
             this.TblPanelBase.ResumeLayout(false);
             this.TblPanelBar.ResumeLayout(false);
             this.TblPanelBar.PerformLayout();
