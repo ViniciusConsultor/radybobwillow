@@ -27,7 +27,7 @@ using Castle.ActiveRecord.Queries;
 /// </summary>
 namespace Com.GainWinSoft.ERP.Entity
 {
-	[Serializable , ActiveRecord("T_RATE_MS", DynamicUpdate = true, Lazy = true)]
+	[Serializable , ActiveRecord("T_RATE_MS")]
 	public class TRateMs : ActiveRecordBase	{
 
 		#region Private Members
