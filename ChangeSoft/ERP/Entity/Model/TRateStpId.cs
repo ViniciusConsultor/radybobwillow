@@ -73,7 +73,7 @@ namespace Com.GainWinSoft.ERP.Entity
             set { iCompanyCd = value; }
         }
 
-        [KeyProperty(Column = "iJournalNo", Length = 10)]
+        [KeyProperty(Column = "I_JOURNAL_NO", Length = 10)]
         public virtual Decimal? IJournalNo
         {
             get { return iJournalNo; }
