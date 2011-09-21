@@ -78,13 +78,11 @@
     <Compile Include="Action\Action_Factory.cs" />
     <Compile Include="Action\IAction_Factory.cs" />
     <Compile Include="FrmFactory.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFactory.Designer.cs">
       <DependentUpon>FrmFactory.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFactoryWH.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFactoryWH.Designer.cs">
       <DependentUpon>FrmFactoryWH.cs</DependentUpon>
