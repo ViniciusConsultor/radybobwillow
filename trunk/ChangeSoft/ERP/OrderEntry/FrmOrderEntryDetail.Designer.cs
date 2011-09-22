@@ -1,4 +1,4 @@
-﻿namespace OrderEntry
+﻿namespace Com.GainWinSoft.ERP.OrderEntry
 {
     partial class FrmOrderEntryDetail
     {
@@ -76,7 +76,7 @@
             this.tblPanelGrp.RowCount = 4;
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 306F));
             this.tblPanelGrp.Size = new System.Drawing.Size(792, 547);
             this.tblPanelGrp.TabIndex = 1;

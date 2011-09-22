@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OrderEntry
+using Com.GainWinSoft.Common;
+using WeifenLuo.WinFormsUI.Docking;
+
+namespace Com.GainWinSoft.ERP.OrderEntry
 {
-    public partial class FrmOrderEntryDetail : Form
+    public partial class FrmOrderEntryDetail : BaseContent
     {
-        public FrmOrderEntryDetail()
+        public FrmOrderEntryDetail(DockPanel _parentdockpanel)
+            : base(_parentdockpanel)
         {
             InitializeComponent();
         }
