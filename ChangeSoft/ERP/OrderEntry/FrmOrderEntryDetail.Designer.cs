@@ -30,6 +30,7 @@
         {
             this.lblPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.xpLabel1 = new xpLabel.xpLabel();
+            this.tblPanelGrp = new System.Windows.Forms.TableLayoutPanel();
             this.lblPanelBase.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +39,7 @@
             this.lblPanelBase.ColumnCount = 1;
             this.lblPanelBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.lblPanelBase.Controls.Add(this.xpLabel1, 0, 0);
+            this.lblPanelBase.Controls.Add(this.tblPanelGrp, 0, 1);
             this.lblPanelBase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPanelBase.Location = new System.Drawing.Point(0, 0);
             this.lblPanelBase.Margin = new System.Windows.Forms.Padding(0);
@@ -63,6 +65,22 @@
             this.xpLabel1.Text = "xpLabel1";
             this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignLeftMiddle;
             // 
+            // tblPanelGrp
+            // 
+            this.tblPanelGrp.ColumnCount = 1;
+            this.tblPanelGrp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblPanelGrp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblPanelGrp.Location = new System.Drawing.Point(0, 26);
+            this.tblPanelGrp.Margin = new System.Windows.Forms.Padding(0);
+            this.tblPanelGrp.Name = "tblPanelGrp";
+            this.tblPanelGrp.RowCount = 4;
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 306F));
+            this.tblPanelGrp.Size = new System.Drawing.Size(792, 547);
+            this.tblPanelGrp.TabIndex = 1;
+            // 
             // FrmOrderEntryDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -80,5 +98,6 @@
 
         private System.Windows.Forms.TableLayoutPanel lblPanelBase;
         private xpLabel.xpLabel xpLabel1;
+        private System.Windows.Forms.TableLayoutPanel tblPanelGrp;
     }
 }
