@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccordionPanel", "ERP\XAcco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterCheck", "ERP\MasterCheck\MasterCheck.csproj", "{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderEntry", "ERP\OrderEntry\OrderEntry.csproj", "{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -140,6 +142,10 @@ Global
 		{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
