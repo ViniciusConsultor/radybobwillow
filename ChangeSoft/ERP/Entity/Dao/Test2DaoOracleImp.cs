@@ -42,6 +42,8 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             finally
             {
                 tran.Dispose();
+                holder.ReleaseSession(ss);
+
             }
             re = ActiveRecordBase.Count(typeof(Test));
 

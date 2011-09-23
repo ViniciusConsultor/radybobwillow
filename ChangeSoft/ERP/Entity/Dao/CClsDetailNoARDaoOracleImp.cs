@@ -105,6 +105,8 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             finally
             {
                 tran.Dispose();
+                holder.ReleaseSession(ss);
+
             }
 
             return result;
