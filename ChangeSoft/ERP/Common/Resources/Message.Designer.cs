@@ -106,6 +106,24 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 维护系统运行中使用的基础数据的最基本模块，是基本数据输入的入口。 的本地化字符串。
+        /// </summary>
+        internal static string I0101 {
+            get {
+                return ResourceManager.GetString("I0101", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 客户报价单和订单的输入和查询，主要功能是通过统一订单提供用户整合的一站式供应链服务，订单管理以及订单跟踪管理能够使用户的物流服务得到全程的满足。 的本地化字符串。
+        /// </summary>
+        internal static string I0102 {
+            get {
+                return ResourceManager.GetString("I0102", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 %1 不能为空，请输入。 的本地化字符串。
         /// </summary>
         internal static string W0001 {

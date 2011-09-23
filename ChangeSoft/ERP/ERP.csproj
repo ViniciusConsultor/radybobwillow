@@ -300,6 +300,7 @@
     <Content Include="dll\Npgsql.dll" />
     <Content Include="dll\Npgsql.pdb" />
     <Content Include="dll\Npgsql.XML" />
+    <Content Include="dll\Oracle.DataAccess.dll" />
     <Content Include="dll\policy.2.0.Npgsql.dll" />
     <Content Include="dll\WeifenLuo.WinFormsUI.Docking.dll" />
     <Content Include="dll\WHC.Pager.Entity.dll" />

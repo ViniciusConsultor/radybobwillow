@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
             this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.xDateTimePicker1 = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -61,6 +62,7 @@
             // 
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button2
             // 
@@ -85,12 +87,19 @@
             this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
             this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
             // 
+            // xDateTimePicker1
+            // 
+            resources.ApplyResources(this.xDateTimePicker1, "xDateTimePicker1");
+            this.xDateTimePicker1.Name = "xDateTimePicker1";
+
+            // 
             // FrmCompany
             // 
             resources.ApplyResources(this, "$this");
             this.CloseButton = false;
             this.CloseButtonVisible = false;
             this.ControlBox = false;
+            this.Controls.Add(this.xDateTimePicker1);
             this.Controls.Add(this.clsDetailCodeRefDropDownList1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -100,6 +109,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCompany";
+            this.Load += new System.EventHandler(this.FrmCompany_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +124,6 @@
         private System.Windows.Forms.Button button2;
         private Noogen.Validation.ValidationProvider validationProvider1;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
+        private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xDateTimePicker1;
     }
 }
