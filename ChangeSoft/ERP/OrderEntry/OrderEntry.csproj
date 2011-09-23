@@ -96,6 +96,14 @@
       <Project>{9FC0EDDF-C362-4841-AA28-37852CDC1383}</Project>
       <Name>CommonToolStrip</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ConditionDropDownList\ConditionDropDownList.csproj">
+      <Project>{11F81874-53ED-42FA-A08F-DD481A19740F}</Project>
+      <Name>ConditionDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConditionRadioButton\ConditionRadioButton.csproj">
+      <Project>{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}</Project>
+      <Name>ConditionRadioButton</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PagerGridView\PagerGridView.csproj">
       <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>
       <Name>PagerGridView</Name>
