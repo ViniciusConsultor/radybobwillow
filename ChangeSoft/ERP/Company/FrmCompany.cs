@@ -42,27 +42,27 @@ namespace Com.GainWinSoft.ERP.Company
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Noogen.Validation.ValidationRule vr = new Noogen.Validation.ValidationRule();
-            vr.CustomValidationMethod +=
-             new Noogen.Validation.CustomValidationEventHandler(vr_CustomValidationMethod);
-            vr.CustomErrorMessage = MessageUtils.GetMessage("W0002","bbbbb","ccccc");
-            this.validationProvider1.SetValidationRule(this.dateTimePicker1, vr);
-
-
-            if (!this.validationProvider1.Validate())
-            {
-                IList<MessageVo> re = this.validationProvider1.ValidationMessages(
-                      true);
-                this.baseform.msgwindow.Messagelist = re;
-                this.baseform.msgwindow.ShowMessage();
-                
-                return;
-            }
-            else
-            {
-                this.validationProvider1.ValidationMessages(false);
-                baseform.msgwindow.Hide();
-            }
+//            Noogen.Validation.ValidationRule vr = new Noogen.Validation.ValidationRule();
+//            vr.CustomValidationMethod +=
+//             new Noogen.Validation.CustomValidationEventHandler(vr_CustomValidationMethod);
+//            vr.CustomErrorMessage = MessageUtils.GetMessage("W0002","bbbbb","ccccc");
+//            this.validationProvider1.SetValidationRule(this.dateTimePicker1, vr);
+//
+//
+//            if (!this.validationProvider1.Validate())
+//            {
+//                IList<MessageVo> re = this.validationProvider1.ValidationMessages(
+//                      true);
+//                this.baseform.msgwindow.Messagelist = re;
+//                this.baseform.msgwindow.ShowMessage();
+//                
+//                return;
+//            }
+//            else
+//            {
+//                this.validationProvider1.ValidationMessages(false);
+//                baseform.msgwindow.Hide();
+//            }
 
             log.Debug("OK click");
             try
@@ -71,16 +71,17 @@ namespace Com.GainWinSoft.ERP.Company
                 //IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
                 //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
                 //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
-
-                ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
-                SearchCondition condition = new SearchCondition();
-                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS","I_ITEM_ENTRY_CLS","00",SqlOperator.Equal);
-                //condition.AddCondition("T_PM_MS.I_FAC_CD","F
-
-                IList<CTPmMsNoAR> l = d.GetPmMsDetail(condition);
-                //调用Action类的方法
-                MessageBox.Show(l.Count.ToString());
-                //NewMethod();
+                StoredProcedureExecOracleImp dd = new StoredProcedureExecOracleImp();
+                dd.TestStoredProcedure();
+//                ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
+//                SearchCondition condition = new SearchCondition();
+//                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS","I_ITEM_ENTRY_CLS","00",SqlOperator.Equal);
+//                //condition.AddCondition("T_PM_MS.I_FAC_CD","F
+//
+//                IList<CTPmMsNoAR> l = d.GetPmMsDetail(condition);
+//                //调用Action类的方法
+//                MessageBox.Show(l.Count.ToString());
+//                //NewMethod();
             }
             catch (ApplicationException ex)
             {

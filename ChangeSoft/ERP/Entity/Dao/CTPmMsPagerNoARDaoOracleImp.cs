@@ -9,6 +9,8 @@ using Com.GainWinSoft.Common;
 using System.Collections;
 using NHibernate.Transform;
 using System.Data.Common;
+using System.Data.SqlClient;
+using Oracle.DataAccess.Client;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
@@ -87,20 +89,86 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+//                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+//
+//                AddScalar(query);
+//
+//
+//                condition.SetParameterValue(query);
+//
+//
+//                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
+//
+//                //转换成datatable
+//                DataTable dt = DataTableUtils.ToDataTable(result);
+//                dt.TableName = tablename;
+//                ds.Tables.Add(dt);
 
-                AddScalar(query);
 
 
-                condition.SetParameterValue(query);
+                IDbCommand command = ss.Connection.CreateCommand();
+                ((OracleCommand)command).BindByName = true;
+
+                IDbDataParameter para = command.CreateParameter();
+                para.ParameterName = "langCd";
+                para.DbType = DbType.String;
+                para.Value = "zh-CN";
+                para.Direction = ParameterDirection.Input;
+
+                command.Parameters.Add(para);
+
+                para = command.CreateParameter();
+                para.ParameterName = "companyCd";
+                para.DbType = DbType.String;
+                para.Value = "01";
+                para.Direction = ParameterDirection.Input;
+                command.Parameters.Add(para);
+
+                para = command.CreateParameter();
+                para.ParameterName = "IITEMENTRYCLS";
+                para.DbType = DbType.String;
+                para.Value = "00";
+                para.Direction = ParameterDirection.Input;
+                command.Parameters.Add(para);
+
+                para = command.CreateParameter();
+                para.ParameterName = "IFACCD";
+                para.DbType = DbType.String;
+                para.Value = "FAC01";
+                para.Direction = ParameterDirection.Input;
+                command.Parameters.Add(para);
+//
+//                sb = new StringBuilder();
+//
+//                sb.AppendLine(" select T_PM_MS.*, VTL_CLS_01.I_CLS_DETAIL_DESC,VTL_CLS_02.I_CLS_DETAIL_DESC  from T_PM_MS ");
+//
+//                sb.Append("     LEFT JOIN T_CLS_DETAIL_MS VTL_CLS_01 ON ( VTL_CLS_01.I_CLS_CD = '").Append(Constant.ITEM).AppendLine("' AND VTL_CLS_01.I_CLS_DETAIL_CD = T_PM_MS.I_ITEM_CLS ");//品目区分名
+//                //-------[2.0.0906.0801] 2009.06.08 Fsol)imatomi add str
+//                sb.Append("           AND VTL_CLS_01.I_LANGUAGE_CD = ").Append(":langCd").AppendLine(")");
+//                //-------[2.0.0906.0801] 2009.06.08 Fsol)imatomi add end
+//
+//                sb.Append("     LEFT JOIN T_CLS_DETAIL_MS VTL_CLS_02 ON ( VTL_CLS_02.I_CLS_CD = '").Append(Constant.CTRL).AppendLine("' AND VTL_CLS_02.I_CLS_DETAIL_CD = T_PM_MS.I_CTRL_CLS ");//管理区分名
+//                //-------[2.0.0906.0801] 2009.06.08 Fsol)imatomi add str
+//                sb.Append("           AND VTL_CLS_02.I_LANGUAGE_CD = ").Append(":langCd").AppendLine(")");
+//                //-------[2.0.0906.0801] 2009.06.08 Fsol)imatomi add end
+//
+//                sb.AppendLine(" where  I_FAC_CD=:IFACCD");
+//
+                command.CommandText = sb.ToString();
+
+                command.CommandType = CommandType.Text;
 
 
-                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
 
-                //转换成datatable
-                DataTable dt = DataTableUtils.ToDataTable(result);
+                tran.Enlist(command);
+                IDataReader rdr = command.ExecuteReader();
+                DataTable dt = new DataTable();
                 dt.TableName = tablename;
+                dt.Load(rdr, LoadOption.Upsert);
+
                 ds.Tables.Add(dt);
+                command.Dispose();
+
 
 
                 tran.Commit();

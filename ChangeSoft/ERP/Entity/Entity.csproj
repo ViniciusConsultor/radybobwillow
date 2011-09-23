@@ -87,6 +87,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\zh-CN\Npgsql.resources.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Oracle.DataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -129,6 +133,7 @@
     <Compile Include="Dao\ITRateStpDao.cs" />
     <Compile Include="Dao\ITTermMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
+    <Compile Include="Dao\StoredProcedureExecOracleImp.cs" />
     <Compile Include="Dao\TCompanyConditionMsDaoOracleImp.cs" />
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />
