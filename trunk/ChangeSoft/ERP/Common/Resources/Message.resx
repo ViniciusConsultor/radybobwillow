@@ -144,4 +144,7 @@
   <data name="W0004" xml:space="preserve">
     <value>%1 在数据表中不存在，请重新输入。</value>
   </data>
+  <data name="W0005" xml:space="preserve">
+    <value>数据库操作失败，错误代码：%1  错误内容：%2</value>
+  </data>
 </root>

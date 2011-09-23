@@ -101,6 +101,7 @@
     <Compile Include="RescourcesUtils.cs" />
     <Compile Include="SearchCondition.cs" />
     <Compile Include="SessionUtils.cs" />
+    <Compile Include="StoredProcedureCondition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
@@ -162,6 +163,10 @@
     <Reference Include="Npgsql, Version=2.0.11.91, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

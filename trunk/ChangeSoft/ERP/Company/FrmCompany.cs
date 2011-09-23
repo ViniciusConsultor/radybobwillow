@@ -71,9 +71,30 @@ namespace Com.GainWinSoft.ERP.Company
                 //IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
                 //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
                 //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
-                StoredProcedureExecOracleImp dd = new StoredProcedureExecOracleImp();
-                dd.TestStoredProcedure();
-//                ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
+                //StoredProcedureExecDaoOracleImp dd = new StoredProcedureExecDaoOracleImp();
+                IStoredProcedureExecDao dd = ComponentLocator.Instance().Resolve<IStoredProcedureExecDao>();
+
+                StoredProcedureCondition condition = new StoredProcedureCondition();
+                condition.AddCondition("I_JOURNAL_NO", 1000002,ParameterDirection.Input);
+                condition.AddCondition("I_COMPANY_CD", "00", ParameterDirection.Input);
+                condition.AddCondition("I_ERR_CD", DbType.String,6,ParameterDirection.Output);
+                condition.AddCondition("I_ERR_ITEM", DbType.String,100,ParameterDirection.Output);
+                decimal returnvalue = dd.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", condition);
+                string ierrcd = (string)condition.GetStoredProcedureOutputValue("I_ERR_CD");
+                string ierritem = (string)condition.GetStoredProcedureOutputValue("I_ERR_ITEM");
+
+                if (returnvalue != 0)
+                {
+                    IList<MessageVo> msglist = new List<MessageVo>();
+                    MessageVo vo = new MessageVo();
+                    vo.MessageType = "Warning";
+                    vo.ResultMessage = MessageUtils.GetMessage("W0005", ierrcd, ierritem);
+                    msglist.Add(vo);
+                    this.baseform.msgwindow.Messagelist = msglist;
+                    this.baseform.msgwindow.ShowMessage();
+                }
+
+                //  ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
 //                SearchCondition condition = new SearchCondition();
 //                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS","I_ITEM_ENTRY_CLS","00",SqlOperator.Equal);
 //                //condition.AddCondition("T_PM_MS.I_FAC_CD","F
