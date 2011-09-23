@@ -88,12 +88,12 @@
             this.lblOrderNo = new System.Windows.Forms.Label();
             this.lblOderNoStar = new System.Windows.Forms.Label();
             this.dateTextBox1 = new AMS.TextBox.DateTextBox();
-            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.button2 = new System.Windows.Forms.Button();
             this.numericTextBox1 = new AMS.TextBox.NumericTextBox();
             this.numericTextBox2 = new AMS.TextBox.NumericTextBox();
             this.numericTextBox3 = new AMS.TextBox.NumericTextBox();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
@@ -158,7 +158,7 @@
             // tblPanelGrp
             // 
             this.tblPanelGrp.ColumnCount = 1;
-            this.tblPanelGrp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tblPanelGrp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 792F));
             this.tblPanelGrp.Controls.Add(this.lblPanelG1, 0, 1);
             this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
             this.tblPanelGrp.Controls.Add(this.tblPanelG3, 0, 3);
@@ -942,21 +942,6 @@
             this.dateTextBox1.TabIndex = 14;
             this.dateTextBox1.Text = "09/22/2011";
             // 
-            // clsDetailCodeRefDropDownList1
-            // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "A8";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            this.clsDetailCodeRefDropDownList1.Location = new System.Drawing.Point(339, 26);
-            this.clsDetailCodeRefDropDownList1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
-            this.clsDetailCodeRefDropDownList1.Size = new System.Drawing.Size(104, 20);
-            this.clsDetailCodeRefDropDownList1.TabIndex = 15;
-            // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1033,6 +1018,21 @@
             this.tblPanelG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblPanelG3.Size = new System.Drawing.Size(792, 145);
             this.tblPanelG3.TabIndex = 2;
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "A8";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList1.Location = new System.Drawing.Point(339, 26);
+            this.clsDetailCodeRefDropDownList1.Margin = new System.Windows.Forms.Padding(0);
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList1.Size = new System.Drawing.Size(104, 20);
+            this.clsDetailCodeRefDropDownList1.TabIndex = 15;
             // 
             // pagerGridView1
             // 
