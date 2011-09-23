@@ -89,54 +89,54 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-//                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+
+                AddScalar(query);
+
+
+                condition.SetParameterValue(query);
+
+
+                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
+
+                //转换成datatable
+                DataTable dt = DataTableUtils.ToDataTable(result);
+                dt.TableName = tablename;
+                ds.Tables.Add(dt);
+
+
+
+//                IDbCommand command = ss.Connection.CreateCommand();
+//                ((OracleCommand)command).BindByName = true;
 //
-//                AddScalar(query);
+//                IDbDataParameter para = command.CreateParameter();
+//                para.ParameterName = "langCd";
+//                para.DbType = DbType.String;
+//                para.Value = "zh-CN";
+//                para.Direction = ParameterDirection.Input;
 //
+//                command.Parameters.Add(para);
 //
-//                condition.SetParameterValue(query);
+//                para = command.CreateParameter();
+//                para.ParameterName = "companyCd";
+//                para.DbType = DbType.String;
+//                para.Value = "01";
+//                para.Direction = ParameterDirection.Input;
+//                command.Parameters.Add(para);
 //
+//                para = command.CreateParameter();
+//                para.ParameterName = "IITEMENTRYCLS";
+//                para.DbType = DbType.String;
+//                para.Value = "00";
+//                para.Direction = ParameterDirection.Input;
+//                command.Parameters.Add(para);
 //
-//                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
-//
-//                //转换成datatable
-//                DataTable dt = DataTableUtils.ToDataTable(result);
-//                dt.TableName = tablename;
-//                ds.Tables.Add(dt);
-
-
-
-                IDbCommand command = ss.Connection.CreateCommand();
-                ((OracleCommand)command).BindByName = true;
-
-                IDbDataParameter para = command.CreateParameter();
-                para.ParameterName = "langCd";
-                para.DbType = DbType.String;
-                para.Value = "zh-CN";
-                para.Direction = ParameterDirection.Input;
-
-                command.Parameters.Add(para);
-
-                para = command.CreateParameter();
-                para.ParameterName = "companyCd";
-                para.DbType = DbType.String;
-                para.Value = "01";
-                para.Direction = ParameterDirection.Input;
-                command.Parameters.Add(para);
-
-                para = command.CreateParameter();
-                para.ParameterName = "IITEMENTRYCLS";
-                para.DbType = DbType.String;
-                para.Value = "00";
-                para.Direction = ParameterDirection.Input;
-                command.Parameters.Add(para);
-
-                para = command.CreateParameter();
-                para.ParameterName = "IFACCD";
-                para.DbType = DbType.String;
-                para.Value = "FAC01";
-                para.Direction = ParameterDirection.Input;
-                command.Parameters.Add(para);
+//                para = command.CreateParameter();
+//                para.ParameterName = "IFACCD";
+//                para.DbType = DbType.String;
+//                para.Value = "FAC01";
+//                para.Direction = ParameterDirection.Input;
+//                command.Parameters.Add(para);
 //
 //                sb = new StringBuilder();
 //
@@ -154,20 +154,20 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 //
 //                sb.AppendLine(" where  I_FAC_CD=:IFACCD");
 //
-                command.CommandText = sb.ToString();
-
-                command.CommandType = CommandType.Text;
-
-
-
-                tran.Enlist(command);
-                IDataReader rdr = command.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.TableName = tablename;
-                dt.Load(rdr, LoadOption.Upsert);
-
-                ds.Tables.Add(dt);
-                command.Dispose();
+//                command.CommandText = sb.ToString();
+//
+//                command.CommandType = CommandType.Text;
+//
+//
+//
+//                tran.Enlist(command);
+//                IDataReader rdr = command.ExecuteReader();
+//                DataTable dt = new DataTable();
+//                dt.TableName = tablename;
+//                dt.Load(rdr, LoadOption.Upsert);
+//
+//                ds.Tables.Add(dt);
+//                command.Dispose();
 
 
 
@@ -186,6 +186,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             finally
             {
                 tran.Dispose();
+                holder.ReleaseSession(ss);
             }
             return ds;
 
