@@ -25,18 +25,18 @@
     <Data>
       <Language>zh-CN</Language>
       <List>
-        <Item value="00">人民币</Item>
-        <Item value="01">人民币/日币</Item>
-        <Item value="02">人民币/美元</Item>
+        <Item value="RMB">人民币</Item>
+        <Item value="JPY">人民币/日币</Item>
+        <Item value="USD">人民币/美元</Item>
       </List>
     </Data>
 
     <Data>
       <Language>en-US</Language>
       <List>
-        <Item value="00">RMB/RMB</Item>
-        <Item value="01">RMB/US</Item>
-        <Item value="02">RMB/JPY</Item>
+        <Item value="RMB">RMB/RMB</Item>
+        <Item value="JYP">RMB/US</Item>
+        <Item value="USD">RMB/JPY</Item>
       </List>
     </Data>
   </Condition>
