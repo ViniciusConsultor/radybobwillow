@@ -165,6 +165,10 @@
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XDateTimePicker\XDateTimePicker.csproj">
+      <Project>{D99733E2-A187-47ED-99C3-5C4A36FD18BB}</Project>
+      <Name>XDateTimePicker</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FormVo\" />

@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 using Com.GainWinSoft.Common.Vo;
+using Com.GainWinSoft.Common;
 
 namespace Com.GainWinSoft.ERP
 {
@@ -132,12 +133,15 @@ namespace Com.GainWinSoft.ERP
                 this.tlpFuncCatalog1.Visible = true;
                 this.tlpFuncCatalog1.Dock = DockStyle.Fill;
                 this.tlpFuncCatalog2.Visible = false;
+                this.label1.Text = MessageUtils.GetMessage("I0101");
             }
             if ("1".Equals(this.functioncatalogindex))
             {
                 this.tlpFuncCatalog1.Visible = false;
                 this.tlpFuncCatalog2.Visible = true;
                 this.tlpFuncCatalog2.Dock = DockStyle.Fill;
+                this.label1.Text = MessageUtils.GetMessage("I0102");
+
             }
 
         }

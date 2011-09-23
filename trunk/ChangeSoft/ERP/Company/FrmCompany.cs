@@ -33,7 +33,8 @@ namespace Com.GainWinSoft.ERP.Company
             rule1.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", "aaaaaa");
             validationProvider1.SetValidationRule(this.textBox1, rule1);
 
-
+            this.dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            this.dateTimePicker1.CustomFormat = "       "; 
 
             log.Info("FrmCompany init end");
         }
@@ -110,6 +111,21 @@ namespace Com.GainWinSoft.ERP.Company
             }
             
             
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+  
+            this.dateTimePicker1.Format=DateTimePickerFormat.Long; 
+            this.dateTimePicker1.CustomFormat=null; 
+
+             
+
+        }
+
+        private void FrmCompany_Load(object sender, EventArgs e)
+        {
+            this.xDateTimePicker1.SetDefaultValue("2011/08/12");
         }
 
 
