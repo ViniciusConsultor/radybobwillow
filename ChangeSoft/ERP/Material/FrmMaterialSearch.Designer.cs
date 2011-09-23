@@ -172,9 +172,9 @@
             // tableLayoutPanel4
             // 
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.lblCustomer, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button2, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCustomerCd, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblCustomer, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.button2, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtCustomerCd, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
@@ -217,7 +217,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.clsDetailCodeRefDropDownList1, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.clsDetailCodeRefDropDownList1, 2, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label5
@@ -241,9 +241,9 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.txtItemType1, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.lblItemType1, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtItemType1, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button3, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.lblItemType1, 4, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
             // label19
@@ -287,7 +287,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel10, "tableLayoutPanel10");
             this.tableLayoutPanel10.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.textBox3, 2, 0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             // 
             // label6
@@ -304,7 +304,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel11, "tableLayoutPanel11");
             this.tableLayoutPanel11.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.textBox4, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.textBox4, 2, 0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             // 
             // label7
@@ -334,7 +334,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel13, "tableLayoutPanel13");
             this.tableLayoutPanel13.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.textBox5, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.textBox5, 2, 0);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             // 
             // label9
@@ -351,9 +351,9 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel15, "tableLayoutPanel15");
             this.tableLayoutPanel15.Controls.Add(this.label12, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.txtManufacturer, 1, 0);
-            this.tableLayoutPanel15.Controls.Add(this.button4, 2, 0);
-            this.tableLayoutPanel15.Controls.Add(this.lblManufacturer, 3, 0);
+            this.tableLayoutPanel15.Controls.Add(this.txtManufacturer, 2, 0);
+            this.tableLayoutPanel15.Controls.Add(this.button4, 3, 0);
+            this.tableLayoutPanel15.Controls.Add(this.lblManufacturer, 4, 0);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             // 
             // label12
@@ -390,7 +390,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel17, "tableLayoutPanel17");
             this.tableLayoutPanel17.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.textBox8, 1, 0);
+            this.tableLayoutPanel17.Controls.Add(this.textBox8, 2, 0);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             // 
             // label14
@@ -407,7 +407,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel18, "tableLayoutPanel18");
             this.tableLayoutPanel18.Controls.Add(this.label15, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.textBox9, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.textBox9, 2, 0);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             // 
             // label15
@@ -431,7 +431,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel20, "tableLayoutPanel20");
             this.tableLayoutPanel20.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.textBox10, 1, 0);
+            this.tableLayoutPanel20.Controls.Add(this.textBox10, 2, 0);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             // 
             // label16
@@ -448,7 +448,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel21, "tableLayoutPanel21");
             this.tableLayoutPanel21.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.textBox11, 1, 0);
+            this.tableLayoutPanel21.Controls.Add(this.textBox11, 2, 0);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             // 
             // label17
@@ -471,7 +471,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel23, "tableLayoutPanel23");
             this.tableLayoutPanel23.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.clsDetailCodeRefDropDownList2, 1, 0);
+            this.tableLayoutPanel23.Controls.Add(this.clsDetailCodeRefDropDownList2, 2, 0);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             // 
             // label18
@@ -494,8 +494,8 @@
             // tableLayoutPanel24
             // 
             resources.ApplyResources(this.tableLayoutPanel24, "tableLayoutPanel24");
-            this.tableLayoutPanel24.Controls.Add(this.button5, 1, 0);
-            this.tableLayoutPanel24.Controls.Add(this.button6, 3, 0);
+            this.tableLayoutPanel24.Controls.Add(this.button5, 3, 0);
+            this.tableLayoutPanel24.Controls.Add(this.button6, 5, 0);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             // 
             // button5
@@ -587,9 +587,9 @@
             // tlpFactory
             // 
             resources.ApplyResources(this.tlpFactory, "tlpFactory");
-            this.tlpFactory.Controls.Add(this.lblFactoryNm, 3, 0);
-            this.tlpFactory.Controls.Add(this.txtFactoryCd, 1, 0);
-            this.tlpFactory.Controls.Add(this.btnFactoryHelper, 2, 0);
+            this.tlpFactory.Controls.Add(this.lblFactoryNm, 4, 0);
+            this.tlpFactory.Controls.Add(this.txtFactoryCd, 2, 0);
+            this.tlpFactory.Controls.Add(this.btnFactoryHelper, 3, 0);
             this.tlpFactory.Controls.Add(this.label1, 0, 0);
             this.tlpFactory.Name = "tlpFactory";
             // 

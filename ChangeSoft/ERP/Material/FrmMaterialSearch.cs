@@ -120,14 +120,14 @@ namespace Com.GainWinSoft.ERP.Material
             //re.Add(v);
             //this.baseform.msgwindow.Messagelist = re;
             //this.baseform.msgwindow.ShowMessage();
-
+            this.Cursor = Cursors.WaitCursor;
             CardVo cardvo = new CardVo();
             cardvo.IFacCd = this.txtFactoryCd.Text;
 
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
 
-
+            this.Cursor = Cursors.Default;
 
 
         }

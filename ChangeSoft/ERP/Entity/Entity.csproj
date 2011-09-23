@@ -124,6 +124,7 @@
     <Compile Include="Dao\ICTPmMsNoARDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\IMLoginUserDao.cs" />
+    <Compile Include="Dao\IStoredProcedureExecDao.cs" />
     <Compile Include="Dao\ITCompanyConditionMsDao.cs" />
     <Compile Include="Dao\ITDescMsDao.cs" />
     <Compile Include="Dao\ITest2Dao.cs" />
@@ -133,7 +134,7 @@
     <Compile Include="Dao\ITRateStpDao.cs" />
     <Compile Include="Dao\ITTermMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
-    <Compile Include="Dao\StoredProcedureExecOracleImp.cs" />
+    <Compile Include="Dao\StoredProcedureExecDaoOracleImp.cs" />
     <Compile Include="Dao\TCompanyConditionMsDaoOracleImp.cs" />
     <Compile Include="Dao\TestDaoOracleImp.cs" />
     <Compile Include="Dao\Test2DaoOracleImp.cs" />
