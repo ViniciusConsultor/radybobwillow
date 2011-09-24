@@ -161,6 +161,10 @@
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ReportCenter\ReportCenter.csproj">
+      <Project>{E1EEB1F8-808A-4FA8-B4BA-70F7137AE769}</Project>
+      <Name>ReportCenter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
