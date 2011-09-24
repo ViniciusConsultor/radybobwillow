@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPmMs" targetNamespace="http://tempuri.org/DataSetPmMs.xsd" xmlns:mstns="http://tempuri.org/DataSetPmMs.xsd" xmlns="http://tempuri.org/DataSetPmMs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPmMs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSetPmMs" msprop:Generator_UserDSName="DataSetPmMs" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TPmMs" msprop:Generator_UserTableName="TPmMs" msprop:Generator_RowDeletedName="TPmMsRowDeleted" msprop:Generator_TableClassName="TPmMsDataTable" msprop:Generator_RowChangedName="TPmMsRowChanged" msprop:Generator_RowClassName="TPmMsRow" msprop:Generator_RowChangingName="TPmMsRowChanging" msprop:Generator_RowEvArgName="TPmMsRowChangeEvent" msprop:Generator_RowEvHandlerName="TPmMsRowChangeEventHandler" msprop:Generator_TablePropName="TPmMs" msprop:Generator_TableVarName="tableTPmMs" msprop:Generator_RowDeletingName="TPmMsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IFacCd" msprop:Generator_UserColumnName="IFacCd" msprop:Generator_ColumnPropNameInRow="IFacCd" msprop:Generator_ColumnVarNameInTable="columnIFacCd" msprop:Generator_ColumnPropNameInTable="IFacCdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IItemCd" msprop:Generator_UserColumnName="IItemCd" msprop:Generator_ColumnPropNameInRow="IItemCd" msprop:Generator_ColumnVarNameInTable="columnIItemCd" msprop:Generator_ColumnPropNameInTable="IItemCdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IItemDesc" msprop:Generator_UserColumnName="IItemDesc" msprop:Generator_ColumnPropNameInRow="IItemDesc" msprop:Generator_ColumnVarNameInTable="columnIItemDesc" msprop:Generator_ColumnPropNameInTable="IItemDescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BarCode" msprop:Generator_UserColumnName="BarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

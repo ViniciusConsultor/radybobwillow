@@ -12,6 +12,9 @@ using WeifenLuo.WinFormsUI.Docking;
 using Noogen.Validation;
 using Com.GainWinSoft.ERP.Entity.Dao;
 using Com.GainWinSoft.ERP.Entity;
+using Com.GainWinSoft.ERP.ReportCenter;
+using System.Reflection;
+using System.Resources;
 
 namespace Com.GainWinSoft.ERP.Company
 {
@@ -68,33 +71,45 @@ namespace Com.GainWinSoft.ERP.Company
             log.Debug("OK click");
             try
             {
-                //通过Windsor组件容器获得Action的实例。
-                //IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
-                //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
-                //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
-                //StoredProcedureExecDaoOracleImp dd = new StoredProcedureExecDaoOracleImp();
-                IStoredProcedureExecDao dd = ComponentLocator.Instance().Resolve<IStoredProcedureExecDao>();
 
-                StoredProcedureCondition condition = new StoredProcedureCondition();
-                condition.AddCondition("I_JOURNAL_NO", 1000002,ParameterDirection.Input);
-                condition.AddCondition("I_COMPANY_CD", "00", ParameterDirection.Input);
-                condition.AddCondition("I_ERR_CD", DbType.String,6,ParameterDirection.Output);
-                condition.AddCondition("I_ERR_ITEM", DbType.String,100,ParameterDirection.Output);
-                decimal returnvalue = dd.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", condition);
-                string ierrcd = (string)condition.GetStoredProcedureOutputValue("I_ERR_CD");
-                string ierritem = (string)condition.GetStoredProcedureOutputValue("I_ERR_ITEM");
+                ResourceManager rm = new System.Resources.ResourceManager("Com.GainWinSoft.ERP.ReportCenter.Rdlc.RdlcPmMs",Assembly.GetAssembly(typeof(FrmReportViewer)));
 
-                if (returnvalue != 0)
-                {
-                    IList<MessageVo> msglist = new List<MessageVo>();
-                    MessageVo vo = new MessageVo();
-                    vo.MessageType = "Warning";
-                    vo.ResultMessage = MessageUtils.GetMessage("W0005", ierrcd, ierritem);
-                    msglist.Add(vo);
-                    this.baseform.msgwindow.Messagelist = msglist;
-                    this.baseform.msgwindow.ShowMessage();
-                }
+                FrmReportViewer frmReportViewr = new FrmReportViewer(this.baseform.Parentdockpanel);
+                //ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
 
+                frmReportViewr.DockTitle = rm.GetString("ReportName");
+                frmReportViewr.Reportname = "Com.GainWinSoft.ERP.ReportCenter.Rdlc.RdlcPmMs.rdlc";
+                frmReportViewr.DatasetName = "DataSetPmMs_TPmMs";
+                frmReportViewr.Condition = null;
+                frmReportViewr.ShowContent(false);
+
+//                //通过Windsor组件容器获得Action的实例。
+//                //IAction_FrmCompany a = ComponentLocator.Instance().Resolve<IAction_FrmCompany>();
+//                //ITDescMsDao d = ComponentLocator.Instance().Resolve<ITDescMsDao>();
+//                //IList<TDescMs> l  = d.GetTDescMsList("63", "zh-CN");
+//                //StoredProcedureExecDaoOracleImp dd = new StoredProcedureExecDaoOracleImp();
+//                IStoredProcedureExecDao dd = ComponentLocator.Instance().Resolve<IStoredProcedureExecDao>();
+//
+//                StoredProcedureCondition condition = new StoredProcedureCondition();
+//                condition.AddCondition("I_JOURNAL_NO", 1000002,ParameterDirection.Input);
+//                condition.AddCondition("I_COMPANY_CD", "00", ParameterDirection.Input);
+//                condition.AddCondition("I_ERR_CD", DbType.String,6,ParameterDirection.Output);
+//                condition.AddCondition("I_ERR_ITEM", DbType.String,100,ParameterDirection.Output);
+//                decimal returnvalue = dd.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", condition);
+//                string ierrcd = (string)condition.GetStoredProcedureOutputValue("I_ERR_CD");
+//                string ierritem = (string)condition.GetStoredProcedureOutputValue("I_ERR_ITEM");
+//
+//                if (returnvalue != 0)
+//                {
+//                    IList<MessageVo> msglist = new List<MessageVo>();
+//                    MessageVo vo = new MessageVo();
+//                    vo.MessageType = "Warning";
+//                    vo.ResultMessage = MessageUtils.GetMessage("W0005", ierrcd, ierritem);
+//                    msglist.Add(vo);
+//                    this.baseform.msgwindow.Messagelist = msglist;
+//                    this.baseform.msgwindow.ShowMessage();
+//                }
+//
                 //  ICTPmMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPmMsNoARDao>();
 //                SearchCondition condition = new SearchCondition();
 //                condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS","I_ITEM_ENTRY_CLS","00",SqlOperator.Equal);
