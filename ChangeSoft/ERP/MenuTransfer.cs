@@ -9,6 +9,7 @@ using Com.GainWinSoft.ERP.Material;
 using System.Windows.Forms;
 using Com.GainWinSoft.ERP.Factory;
 using Com.GainWinSoft.ERP.ExchangeRate;
+using Com.GainWinSoft.Common;
 
 namespace Com.GainWinSoft.ERP
 {
@@ -28,110 +29,124 @@ namespace Com.GainWinSoft.ERP
         {
             Cursor = Cursors.WaitCursor;
 
-            #region ***ExchangeRade 利率管理***
-            if ("FExchangeRate".Equals(path))
+            DockContent frm = this.FindDocument(title);
+            if (frm == null)
             {
-                DockContent frm = this.FindDocument(title);
-                if (frm == null)
-                {
-                    FrmExchangeRate frmExchangeRate = new FrmExchangeRate(parentpanel);
-                    frmExchangeRate.DockTitle = title;
-                    frmExchangeRate.ShowContent(false);
-                }
-                else
-                {
-                    frm.Show(parentpanel);
-                    frm.BringToFront();
-                }
+                BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path,typeof(BaseContent));
+                frmNewConent.DockTitle = title;
+                frmNewConent.Parentdockpanel = parentpanel;
+                frmNewConent.ShowContent(false);
             }
-            #endregion
-
-            if ("FCompany".Equals(path))
+            else
             {
-                DockContent frm = this.FindDocument(title);
-                if (frm == null)
-                {
-                    FrmCompany frmcompany = new FrmCompany(parentpanel);
-                    frmcompany.DockTitle = title;
-                    frmcompany.ShowContent(false);
-                }
-                else
-                {
-                    frm.Show(parentpanel);
-                    frm.BringToFront();
-                }
-
-                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
-                //if (frm == null)
-                //{
-                //    FrmCompany frmcompany = new FrmCompany(baseform);
-                //    frmcompany.Show(baseform.dockPanel, DockState.Document);
-                //    frmcompany.BringToFront();
-                //    baseform.Show(this.dockpanel);
-
-                //}
-                //else
-                //{
-                //    frm.Show(this.dockpanel);
-                //    frm.BringToFront();
-                //}
-            }
-            if ("FQuotationEntry".Equals(path))
-            {
-                DockContent frm = this.FindDocument(title);
-                if (frm == null)
-                {
-
-                    FrmProductPlan frmproductplan = new FrmProductPlan(parentpanel);
-                    frmproductplan.DockTitle = title;
-                    frmproductplan.ShowContent(false);
-                }
-                else
-                {
-                    frm.Show(parentpanel);
-                    frm.BringToFront();
-                }
-
-
+                frm.Show(parentpanel);
+                frm.BringToFront();
             }
 
-            #region 物料管理
-            if ("FMaterial".Equals(path))
-            {
-
-                DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(parentpanel);
-                    frmMaterialSearch.DockTitle = title;
-                    frmMaterialSearch.ShowContent(false);
-                }
-                else
-                {
-                    frm.Show(parentpanel);
-                    frm.BringToFront();
-                }
-
-
-            }
-            #endregion
-
-            if ("FFactory".Equals(path))
-            {
-                DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
-                if (frm == null)
-                {
-                    FrmFactory frmFactory = new FrmFactory(parentpanel);
-                    frmFactory.DockTitle = title;
-                    frmFactory.ShowContent(false);
-                }
-                else
-                {
-                    frm.Show(parentpanel);
-                    frm.BringToFront();
-                }
-            }
-
+//            #region ***ExchangeRade 利率管理***
+//            if ("FExchangeRate".Equals(path))
+//            {
+//                DockContent frm = this.FindDocument(title);
+//                if (frm == null)
+//                {
+//                    FrmExchangeRate frmExchangeRate = new FrmExchangeRate(parentpanel);
+//                    frmExchangeRate.DockTitle = title;
+//                    frmExchangeRate.ShowContent(false);
+//                }
+//                else
+//                {
+//                    frm.Show(parentpanel);
+//                    frm.BringToFront();
+//                }
+//            }
+//            #endregion
+//
+//            if ("FCompany".Equals(path))
+//            {
+//                DockContent frm = this.FindDocument(title);
+//                if (frm == null)
+//                {
+//                    FrmCompany frmcompany = new FrmCompany(parentpanel);
+//                    frmcompany.DockTitle = title;
+//                    frmcompany.ShowContent(false);
+//                }
+//                else
+//                {
+//                    frm.Show(parentpanel);
+//                    frm.BringToFront();
+//                }
+//
+//                //DockContent frm = this.FindDocument(e.Node.Text);  // FindDocument(e.Node.Text);
+//                //if (frm == null)
+//                //{
+//                //    FrmCompany frmcompany = new FrmCompany(baseform);
+//                //    frmcompany.Show(baseform.dockPanel, DockState.Document);
+//                //    frmcompany.BringToFront();
+//                //    baseform.Show(this.dockpanel);
+//
+//                //}
+//                //else
+//                //{
+//                //    frm.Show(this.dockpanel);
+//                //    frm.BringToFront();
+//                //}
+//            }
+//            if ("FQuotationEntry".Equals(path))
+//            {
+//                DockContent frm = this.FindDocument(title);
+//                if (frm == null)
+//                {
+//
+//                    FrmProductPlan frmproductplan = new FrmProductPlan(parentpanel);
+//                    frmproductplan.DockTitle = title;
+//                    frmproductplan.ShowContent(false);
+//                }
+//                else
+//                {
+//                    frm.Show(parentpanel);
+//                    frm.BringToFront();
+//                }
+//
+//
+//            }
+//
+//            #region 物料管理
+//            if ("FMaterial".Equals(path))
+//            {
+//
+//                DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
+//                if (frm == null)
+//                {
+//                    FrmMaterialSearch frmMaterialSearch = new FrmMaterialSearch(parentpanel);
+//                    frmMaterialSearch.DockTitle = title;
+//                    frmMaterialSearch.ShowContent(false);
+//                }
+//                else
+//                {
+//                    frm.Show(parentpanel);
+//                    frm.BringToFront();
+//                }
+//
+//
+//            }
+//            #endregion
+//
+//            if ("FFactory".Equals(path))
+//            {
+//                DockContent frm = this.FindDocument(title);  // FindDocument(e.Node.Text);
+//                if (frm == null)
+//                {
+//                    FrmFactory frmFactory = new FrmFactory(parentpanel);
+//                    frmFactory.DockTitle = title;
+//                    frmFactory.ShowContent(false);
+//                }
+//                else
+//                {
+//                    frm.Show(parentpanel);
+//                    frm.BringToFront();
+//                }
+//            }
+//
 
 
             Cursor = Cursors.Default;
