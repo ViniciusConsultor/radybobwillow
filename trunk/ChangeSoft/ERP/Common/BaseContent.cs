@@ -14,7 +14,7 @@ namespace Com.GainWinSoft.Common
     {
         protected BaseForm baseform;
 
-        protected BaseForm owner;
+        private BaseForm owner;
 
         private DockPanel parentdockpanel;
 
@@ -33,7 +33,7 @@ namespace Com.GainWinSoft.Common
         }
 
 
-        public BaseContent(DockPanel parentdockpanel ,BaseForm _owner)
+        public BaseContent(DockPanel parentdockpanel, BaseForm _owner)
         {
             this.parentdockpanel = parentdockpanel;
             this.owner = _owner;
@@ -45,7 +45,9 @@ namespace Com.GainWinSoft.Common
         public string DockTitle
         {
             get { return title; }
-            set { title = value;
+            set
+            {
+                title = value;
             }
         }
 
@@ -75,24 +77,24 @@ namespace Com.GainWinSoft.Common
 
 
 
-//                if (this.owner == null)
-//                {
-//                    this.Show(this.baseform.dockPanel);
-//                    this.baseform.Show(this.baseform.Parentdockpanel);
-//                }
-//                else
-//                {
-//                    this.Show(this.baseform.dockPanel);
-//                    dc = owner.Pane.Contents.IndexOf(owner.Pane.ActiveContent);
-//                    if ((dc == owner.Pane.Contents.Count - 1))
-//                    {
-//                        this.baseform.Show(this.baseform.Parentdockpanel);
-//                    }
-//                    else
-//                    {
-//                        this.baseform.Show(owner.Pane, owner.Pane.Contents[dc + 1]);
-//                    }
-//                }
+                //                if (this.owner == null)
+                //                {
+                //                    this.Show(this.baseform.dockPanel);
+                //                    this.baseform.Show(this.baseform.Parentdockpanel);
+                //                }
+                //                else
+                //                {
+                //                    this.Show(this.baseform.dockPanel);
+                //                    dc = owner.Pane.Contents.IndexOf(owner.Pane.ActiveContent);
+                //                    if ((dc == owner.Pane.Contents.Count - 1))
+                //                    {
+                //                        this.baseform.Show(this.baseform.Parentdockpanel);
+                //                    }
+                //                    else
+                //                    {
+                //                        this.baseform.Show(owner.Pane, owner.Pane.Contents[dc + 1]);
+                //                    }
+                //                }
                 this.BringToFront();
 
 
@@ -113,7 +115,7 @@ namespace Com.GainWinSoft.Common
 
         public void ShowContent(bool closeowner)
         {
-            int dc =0;
+            int dc = 0;
 
             DockContent frm = this.FindParentDocument(this.title);
             if (frm == null)
@@ -125,7 +127,7 @@ namespace Com.GainWinSoft.Common
                 b.Text = this.title;
                 this.baseform = b;
 
-                if (this.owner==null)
+                if (this.owner == null)
                 {
                     this.Show(this.baseform.dockPanel);
                     this.baseform.Show(this.baseform.Parentdockpanel);
@@ -152,7 +154,7 @@ namespace Com.GainWinSoft.Common
                 frm.Show();
                 frm.BringToFront();
             }
-            
+
             //如果画面跳转后自己画面要关闭的话，用下面两句话，关闭自画面
             if (closeowner)
             {
@@ -208,5 +210,17 @@ namespace Com.GainWinSoft.Common
         }
 
 
+
+        public Com.GainWinSoft.Common.BaseForm Owner
+        {
+            get { return owner; }
+            set { owner = value; }
+        }
+
+        public WeifenLuo.WinFormsUI.Docking.DockPanel Parentdockpanel
+        {
+            get { return parentdockpanel; }
+            set { parentdockpanel = value; }
+        }
     }
 }

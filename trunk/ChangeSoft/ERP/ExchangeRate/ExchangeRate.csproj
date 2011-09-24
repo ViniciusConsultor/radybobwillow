@@ -8,8 +8,8 @@
     <ProjectGuid>{441653E1-394D-4721-91A5-4663B1EF9883}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExchangeRate</RootNamespace>
-    <AssemblyName>ExchangeRate</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.ExchangeRate</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.ExchangeRate</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
