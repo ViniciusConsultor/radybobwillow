@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using Com.GainWinSoft.ERP.Factory;
 using Com.GainWinSoft.ERP.ExchangeRate;
 using Com.GainWinSoft.Common;
+using log4net;
 
 namespace Com.GainWinSoft.ERP
 {
     public class MenuTransfer : Form
     {
+
+        private static readonly ILog log = LogManager.GetLogger(typeof(MenuTransfer));
+
         private string path;
         private string title;
         private DockPanel parentpanel;
@@ -35,11 +39,18 @@ namespace Com.GainWinSoft.ERP
                 IRepositoryFactory factory = ComponentLocator.Instance().Resolve<IRepositoryFactory>();
 
                 IBaseContent frmNewConent = null;
-                frmNewConent =  factory.Create(path);
-                //BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path, typeof(BaseContent));
-                frmNewConent.DockTitle = title;
-                frmNewConent.Parentdockpanel = parentpanel;
-                frmNewConent.ShowContent(false);
+                try
+                {
+                    frmNewConent = factory.Create(path);
+                    //BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path, typeof(BaseContent));
+                    frmNewConent.DockTitle = title;
+                    frmNewConent.Parentdockpanel = parentpanel;
+                    frmNewConent.ShowContent(false);
+                }
+                catch (Exception ex)
+                {
+                    log.Info(ex.Message);
+                }
 
                 //ComponentLocator.Instance().Release(frmNewConent);
 
