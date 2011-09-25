@@ -22,7 +22,22 @@ namespace Com.GainWinSoft.ERP.Company
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmCompany));
 
-        
+        public FrmCompany()
+            : base()
+        {
+            log.Info("FrmCompany init start");
+            InitializeComponent();
+
+            ValidationRule rule1 = new ValidationRule();
+            rule1.IsRequired = true;
+            rule1.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", "aaaaaa");
+            validationProvider1.SetValidationRule(this.textBox1, rule1);
+
+            this.dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            this.dateTimePicker1.CustomFormat = "       ";
+
+            log.Info("FrmCompany init end");
+        }
 
         public FrmCompany(DockPanel _parentdockpanel)
             : base(_parentdockpanel)

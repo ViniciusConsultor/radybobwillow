@@ -32,10 +32,19 @@ namespace Com.GainWinSoft.ERP
             DockContent frm = this.FindDocument(title);
             if (frm == null)
             {
-                BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path,typeof(BaseContent));
+                IRepositoryFactory factory = ComponentLocator.Instance().Resolve<IRepositoryFactory>();
+
+                IBaseContent frmNewConent = null;
+                frmNewConent =  factory.Create(path);
+                ComponentLocator.Instance().Release(frmNewConent);
+                ComponentLocator.Instance().Release(factory);
+                //BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path, typeof(BaseContent));
                 frmNewConent.DockTitle = title;
                 frmNewConent.Parentdockpanel = parentpanel;
                 frmNewConent.ShowContent(false);
+
+                //ComponentLocator.Instance().Release(frmNewConent);
+
             }
             else
             {

@@ -10,7 +10,7 @@ using WeifenLuo.WinFormsUI.Docking;
 
 namespace Com.GainWinSoft.Common
 {
-    public partial class BaseContent : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class BaseContent : WeifenLuo.WinFormsUI.Docking.DockContent, Com.GainWinSoft.Common.IBaseContent
     {
         protected BaseForm baseform;
 
@@ -160,6 +160,8 @@ namespace Com.GainWinSoft.Common
             {
                 IDockContent content = (IDockContent)baseform.Pane.Contents[dc];
                 content.DockHandler.Close();
+                baseform.Close();
+                baseform.Dispose();
             }
         }
 
@@ -169,6 +171,8 @@ namespace Com.GainWinSoft.Common
             {
                 IDockContent content = (IDockContent)baseform.Pane.ActiveContent;
                 content.DockHandler.Close();
+                baseform.Close();
+                baseform.Dispose();
                 if (owner != null)
                 {
                     this.owner.Show();

@@ -63,6 +63,8 @@
     <Compile Include="ConditionUtils.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="DataTableUtils.cs" />
+    <Compile Include="IBaseContent.cs" />
+    <Compile Include="IRepositoryFactory.cs" />
     <Compile Include="Vo\CodeFile1.cs" />
     <Compile Include="Vo\CompanyConditionVo.cs" />
     <Compile Include="Vo\FactoryVo.cs" />
