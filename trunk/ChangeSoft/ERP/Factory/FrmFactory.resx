@@ -136,7 +136,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 14pt</value>
+    <value>SimSun-ExtB, 14pt</value>
   </data>
   <data name="lblMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -160,7 +160,7 @@
     <value>lblMode</value>
   </data>
   <data name="&gt;&gt;lblMode.Type" xml:space="preserve">
-    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4280.17264, Culture=neutral, PublicKeyToken=null</value>
+    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4285.42014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblMode.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -208,7 +208,7 @@
     <value>8</value>
   </data>
   <data name="txtFactory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 21</value>
+    <value>94, 19</value>
   </data>
   <data name="txtFactory.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -427,7 +427,7 @@
     <value>8</value>
   </data>
   <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 21</value>
+    <value>94, 19</value>
   </data>
   <data name="txtCompany.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1174,7 +1174,7 @@
     <value>3</value>
   </data>
   <data name="txtStockPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+    <value>40, 19</value>
   </data>
   <data name="txtStockPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1279,7 +1279,7 @@
     <value>3</value>
   </data>
   <data name="txtAutoPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+    <value>40, 19</value>
   </data>
   <data name="txtAutoPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -1384,7 +1384,7 @@
     <value>3</value>
   </data>
   <data name="txtArrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+    <value>40, 19</value>
   </data>
   <data name="txtArrange.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1558,7 +1558,7 @@
     <value>8</value>
   </data>
   <data name="txtDepart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 21</value>
+    <value>74, 19</value>
   </data>
   <data name="txtDepart.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1627,7 +1627,7 @@
     <value>8</value>
   </data>
   <data name="txtBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 21</value>
+    <value>194, 19</value>
   </data>
   <data name="txtBase.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1903,7 +1903,7 @@
     <value>20</value>
   </data>
   <data name="txtFax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+    <value>200, 19</value>
   </data>
   <data name="txtFax.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1969,7 +1969,7 @@
     <value>20</value>
   </data>
   <data name="txtTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 21</value>
+    <value>194, 19</value>
   </data>
   <data name="txtTel.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2077,7 +2077,7 @@
     <value>80</value>
   </data>
   <data name="txtAddress3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtAddress3.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2143,7 +2143,7 @@
     <value>80</value>
   </data>
   <data name="txtAddress2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtAddress2.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2209,7 +2209,7 @@
     <value>80</value>
   </data>
   <data name="txtAddress1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtAddress1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -2398,7 +2398,7 @@
     <value>10</value>
   </data>
   <data name="txtZipCD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 21</value>
+    <value>194, 19</value>
   </data>
   <data name="txtZipCD.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2506,7 +2506,7 @@
     <value>30</value>
   </data>
   <data name="txtPinyin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtPinyin.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2572,7 +2572,7 @@
     <value>120</value>
   </data>
   <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtName.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2680,7 +2680,7 @@
     <value>60</value>
   </data>
   <data name="txtAbbreviation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 21</value>
+    <value>425, 19</value>
   </data>
   <data name="txtAbbreviation.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2911,7 +2911,7 @@
     <value>784, 562</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
+    <value>SimSun-ExtB, 9pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> 工厂情报设定</value>

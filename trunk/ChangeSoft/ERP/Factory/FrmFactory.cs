@@ -180,6 +180,18 @@ namespace Com.GainWinSoft.ERP.Factory
             cr.ShowDialog(this);
             this.txtFactory.Focus();
         }
+
+        /// <summary>
+        /// 部门代码参照按钮的点击事件
+        /// </summary>
+        private void btnDepart_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefSection cr = new CodeRef.CodeRefSection(this.uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.txtDepart);
+            cr.AddNameControl(this.lblDepartNM);
+            cr.ShowDialog(this);
+            this.txtDepart.Focus();
+        }
         #endregion
 
         #region 私有函数
