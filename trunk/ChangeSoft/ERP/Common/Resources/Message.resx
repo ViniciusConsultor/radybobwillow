@@ -130,7 +130,7 @@
     <value>加载主画面……</value>
   </data>
   <data name="I0004" xml:space="preserve">
-    <value>加载用户权限……</value>
+    <value>加载用户数据……</value>
   </data>
   <data name="I0101" xml:space="preserve">
     <value>维护系统运行中使用的基础数据的最基本模块，是基本数据输入的入口。</value>

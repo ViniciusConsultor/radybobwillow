@@ -121,10 +121,10 @@
     <value>物料查询</value>
   </data>
   <data name="IDispItemCd" xml:space="preserve">
-    <value>显示用物料代码</value>
+    <value>物料代码</value>
   </data>
   <data name="IDispItemRev" xml:space="preserve">
-    <value>显示用物料版本</value>
+    <value>物料版本</value>
   </data>
   <data name="IDlCd" xml:space="preserve">
     <value>客户代码</value>

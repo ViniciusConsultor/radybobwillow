@@ -97,7 +97,7 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
-        ///   查找类似 加载用户权限…… 的本地化字符串。
+        ///   查找类似 加载用户数据…… 的本地化字符串。
         /// </summary>
         internal static string I0004 {
             get {

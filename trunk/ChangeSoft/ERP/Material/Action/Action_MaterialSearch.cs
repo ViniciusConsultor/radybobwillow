@@ -18,6 +18,7 @@ namespace Com.GainWinSoft.ERP.Material.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_MaterialSearch));
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
+        private string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
 
         public void GetPmMsDetail(PagerGridView gridview, CardVo cardvo)
         {
@@ -47,11 +48,10 @@ namespace Com.GainWinSoft.ERP.Material.Action
 
 
 
-            gridview.Pagerhelper = new PagerHelper("CTPmMsPagerNoARDao", condition, 1, 5);
+            gridview.Pagerhelper = new PagerHelper("CTPmMsPagerNoARDao", condition, 1, 15);
             gridview.LoadData();
             log.Debug("Search Init");
             //设置列名
-            string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
             
             foreach(string key in columnlist)
             {
@@ -63,6 +63,13 @@ namespace Com.GainWinSoft.ERP.Material.Action
 //                gridview.SetColumnAlias(key, rm.GetString(key));
 //            }
 
+            SetDisplayColumns(gridview);
+
+
+        }
+
+        private  void SetDisplayColumns(PagerGridView gridview)
+        {
             //设置可视列
 
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
@@ -115,15 +122,29 @@ namespace Com.GainWinSoft.ERP.Material.Action
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
 
-
-
-
-
-
-
-
             gridview.SetDisplayColumns(gridview.Name, clist);
+        }
 
+        public void Init_GridView(PagerGridView gridview)
+        {
+            DataTable dt = new DataTable();
+
+            foreach (string key in columnlist)
+            {
+                DataColumn col = new DataColumn();
+                col.ColumnName = key;
+                dt.Columns.Add(col);
+            }
+
+            gridview.InitGridView(dt);
+
+            foreach (string key in columnlist)
+            {
+                gridview.SetColumnAlias(key, rm.GetString(key));
+            }
+
+
+            SetDisplayColumns(gridview);
 
         }
     }

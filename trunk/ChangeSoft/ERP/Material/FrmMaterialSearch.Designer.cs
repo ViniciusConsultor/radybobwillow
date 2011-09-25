@@ -89,15 +89,15 @@
             this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnInquiry = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFactoryCd = new System.Windows.Forms.TextBox();
             this.lblFactoryNm = new System.Windows.Forms.Label();
             this.btnFactoryHelper = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
-            this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tlpFactory = new System.Windows.Forms.TableLayoutPanel();
+            this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -498,7 +498,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel24, "tableLayoutPanel24");
             this.tableLayoutPanel24.Controls.Add(this.button5, 3, 0);
-            this.tableLayoutPanel24.Controls.Add(this.button6, 5, 0);
+            this.tableLayoutPanel24.Controls.Add(this.btnInquiry, 5, 0);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             // 
             // button5
@@ -507,12 +507,12 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnInquiry
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            resources.ApplyResources(this.btnInquiry, "btnInquiry");
+            this.btnInquiry.Name = "btnInquiry";
+            this.btnInquiry.UseVisualStyleBackColor = true;
+            this.btnInquiry.Click += new System.EventHandler(this.btnInquiry_Click);
             // 
             // label1
             // 
@@ -546,15 +546,6 @@
             this.tableLayoutPanel0.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tableLayoutPanel0.Controls.Add(this.tlpFactory, 0, 1);
             this.tableLayoutPanel0.Name = "tableLayoutPanel0";
-            // 
-            // FrmMaterialSearch_pagerGridView1
-            // 
-            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
-            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
-            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
-            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
-            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
             // 
             // commonToolStrip1
             // 
@@ -598,12 +589,22 @@
             this.tlpFactory.Controls.Add(this.label1, 0, 0);
             this.tlpFactory.Name = "tlpFactory";
             // 
+            // FrmMaterialSearch_pagerGridView1
+            // 
+            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
+            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
+            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
+            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
+            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
+            // 
             // FrmMaterialSearch
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel0);
             this.Name = "FrmMaterialSearch";
+            this.Load += new System.EventHandler(this.FrmMaterialSearch_Load);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -712,7 +713,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnInquiry;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel0;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
