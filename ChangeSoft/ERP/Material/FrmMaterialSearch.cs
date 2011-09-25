@@ -38,21 +38,6 @@ namespace Com.GainWinSoft.ERP.Material
             this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.button3.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 
-            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
-
-            if (uservo.Factory != null)
-            {
-                FactoryVo factoryvo = uservo.Factory;
-                this.txtFactoryCd.Text = factoryvo.IFacCd;
-                this.lblFactoryNm.Text = factoryvo.IFacDesc;
-                this.tlpFactory.Enabled = false;
-                this.txtCustomerCd.Focus();
-            }
-            else
-            {
-                this.tlpFactory.Enabled = true;
-                this.txtFactoryCd.Focus();
-            }
 
             //this.tableLayoutPanel1.Enabled = false;
             //commonToolStrip1.AddEnabled = false;
@@ -88,16 +73,6 @@ namespace Com.GainWinSoft.ERP.Material
 
         }
 
-        private void buttonX1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pagerGridView1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             TransferTo();
@@ -110,27 +85,6 @@ namespace Com.GainWinSoft.ERP.Material
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
             frmMaterialEdit.DockTitle = frmMaterialEdit.Text;
             frmMaterialEdit.ShowContent(false);
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //IList<MessageVo> re = new List<MessageVo>();
-            //MessageVo v = new MessageVo();
-            //v.MessageType = "Warning";
-            //v.ResultMessage = "ddddddddddd";
-            //re.Add(v);
-            //this.baseform.msgwindow.Messagelist = re;
-            //this.baseform.msgwindow.ShowMessage();
-            this.Cursor = Cursors.WaitCursor;
-            CardVo cardvo = new CardVo();
-            cardvo.IFacCd = this.txtFactoryCd.Text;
-
-            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
-            action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
-
-            this.Cursor = Cursors.Default;
-
 
         }
 
@@ -191,6 +145,49 @@ namespace Com.GainWinSoft.ERP.Material
             cr.AddNameControl(this.lblFactoryNm);
             cr.ShowDialog(this);
             this.txtFactoryCd.Focus();
+
+        }
+
+        private void FrmMaterialSearch_Load(object sender, EventArgs e)
+        {
+            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
+            action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+
+            if (uservo.Factory != null)
+            {
+                FactoryVo factoryvo = uservo.Factory;
+                this.txtFactoryCd.Text = factoryvo.IFacCd;
+                this.lblFactoryNm.Text = factoryvo.IFacDesc;
+                this.tlpFactory.Enabled = false;
+                this.txtCustomerCd.Focus();
+            }
+            else
+            {
+                this.tlpFactory.Enabled = true;
+                this.txtFactoryCd.Focus();
+            }
+
+        }
+
+        private void btnInquiry_Click(object sender, EventArgs e)
+        {
+            //IList<MessageVo> re = new List<MessageVo>();
+            //MessageVo v = new MessageVo();
+            //v.MessageType = "Warning";
+            //v.ResultMessage = "ddddddddddd";
+            //re.Add(v);
+            //this.baseform.msgwindow.Messagelist = re;
+            //this.baseform.msgwindow.ShowMessage();
+            this.Cursor = Cursors.WaitCursor;
+            CardVo cardvo = new CardVo();
+            cardvo.IFacCd = this.txtFactoryCd.Text;
+
+            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
+            action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
+            this.FrmMaterialSearch_pagerGridView1.Focus();
+
+            this.Cursor = Cursors.Default;
 
         }
     }

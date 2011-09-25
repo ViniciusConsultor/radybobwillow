@@ -110,7 +110,6 @@ namespace Com.GainWinSoft.ERP
                 IList<FunctionAllVo> flist = af.GetCatalogFunctionByUserId(uservo.Userid);
 
                 //加载工厂
-
                 TermVo termvo = af.GetTermInfo(uservo.Userid);
                 uservo.Term = termvo;
                 if (termvo == null)

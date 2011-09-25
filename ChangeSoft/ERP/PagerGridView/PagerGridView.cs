@@ -171,6 +171,12 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
             set { pagerhelper = value; }
         }
 
+        public void InitGridView(DataTable defaultdataTable)
+        {
+            this.dataGridView1.DataSource = defaultdataTable;
+
+        }
+
 
         public void LoadData()
         {
