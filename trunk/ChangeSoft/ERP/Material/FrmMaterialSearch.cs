@@ -24,9 +24,18 @@ namespace Com.GainWinSoft.ERP.Material
 {
     public partial class FrmMaterialSearch : BaseContent
     {
-        ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
+        private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmMaterialSearch));
+        private LoginUserInfoVo uservo;
+        
+        private int currentGroup = 1;
+        private int firstGroup = 1;
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_parentdockpanel"></param>
         public FrmMaterialSearch(DockPanel _parentdockpanel)
             : base(_parentdockpanel)
         {
@@ -34,50 +43,14 @@ namespace Com.GainWinSoft.ERP.Material
             ToolStripManager.Renderer = new Office2007Renderer();
 
             this.btnFactoryHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.button2.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.button4.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.button3.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-
-
-            //this.tableLayoutPanel1.Enabled = false;
-            //commonToolStrip1.AddEnabled = false;
-            //commonToolStrip1.UpdateEnabled = false;
-            //commonToolStrip1.DeleteEnabled = false;
-            //commonToolStrip1.SaveEnabled = false;
-            //commonToolStrip1.CopyEnabled = false;
-            //commonToolStrip1.ReportEnabled = false;
-            //commonToolStrip1.CsvEnabled = false;
-            //commonToolStrip1.GobackEnabled = false;
-            //commonToolStrip1.OkEnabled = false;
-            //commonToolStrip1.ExitEnabled = false;
-            //commonToolStrip1.HelpEnabled = false;
-            //commonToolStrip1.AddVisible = false;
-            //commonToolStrip1.UpdateVisible = false;
-            //commonToolStrip1.DeleteVisible = false;
-            //commonToolStrip1.SaveVisible = false;
-            //commonToolStrip1.CopyVisible = false;
-            //commonToolStrip1.ReportVisible = false;
-            //commonToolStrip1.CsvVisible = false;
-            //commonToolStrip1.GobackVisible = false;
-            //commonToolStrip1.OkVisible = false;
-            //commonToolStrip1.ExitVisible = false;
-            //commonToolStrip1.HelpVisible = false;
-            //commonToolStrip1.Line1Visible = false;
-            //commonToolStrip1.Line2Visible = false;
-            //commonToolStrip1.Line3Visible = false;
-            //commonToolStrip1.Line4Visible = false;
-
-
-
-
+            this.btnCustomerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnMakerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnItemTypeHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
 
         }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            TransferTo();
-        }
-
+        /// <summary>
+        /// 画面跳转到编辑画面
+        /// </summary>
         private void TransferTo()
         {
 
@@ -94,39 +67,24 @@ namespace Com.GainWinSoft.ERP.Material
             //MessageBox.Show(this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex.ToString()+":"+this.FrmMaterialSearch_pagerGridView1.SelecteRows.ToString());
         }
 
-        private void commonToolStrip1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(sender.ToString());
-        }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnItemTypeHelper_Click(object sender, EventArgs e)
         {
             CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("79");
-            cr.AddValueControl(this.txtItemType1);
-            cr.AddNameControl(this.lblItemType1);
+            cr.AddValueControl(this.txtItemType);
+            cr.AddNameControl(this.lblItemType);
             cr.ShowDialog(this);
-            this.txtItemType1.Focus();
+            this.txtItemType.Focus();
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnMakerHelper_Click(object sender, EventArgs e)
         {
             CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("72");
-            cr.AddValueControl(this.txtManufacturer);
-            cr.AddNameControl(this.lblManufacturer);
+            cr.AddValueControl(this.txtMakerCd);
+            cr.AddNameControl(this.lblMakerNm);
             cr.ShowDialog(this);
-            this.txtManufacturer.Focus();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
-
-            CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial(uservo.CompanyCondition.ICompanyCd);
-            cr.AddValueControl(this.txtCustomerCd);
-            cr.AddNameControl(this.lblCustomer);
-            cr.ShowDialog(this);
-            this.txtCustomerCd.Focus();
+            this.txtMakerCd.Focus();
         }
 
 
@@ -138,7 +96,6 @@ namespace Com.GainWinSoft.ERP.Material
 
         private void btnFactoryHelper_Click(object sender, EventArgs e)
         {
-            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
             CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(uservo.CompanyCondition.ICompanyCd);
             cr.AddValueControl(this.txtFactoryCd);
@@ -152,25 +109,99 @@ namespace Com.GainWinSoft.ERP.Material
         {
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
-            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+
+            uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
             if (uservo.Factory != null)
             {
                 FactoryVo factoryvo = uservo.Factory;
                 this.txtFactoryCd.Text = factoryvo.IFacCd;
                 this.lblFactoryNm.Text = factoryvo.IFacDesc;
-                this.tlpFactory.Enabled = false;
+                this.tlpG1.Enabled = false;
+                this.tlpG2.Enabled = true;
+                this.tlpG3.Enabled = false;
                 this.txtCustomerCd.Focus();
+                this.firstGroup = 2;
+                this.currentGroup = 2;
             }
             else
             {
-                this.tlpFactory.Enabled = true;
+                this.tlpG1.Enabled = true;
                 this.txtFactoryCd.Focus();
+                this.firstGroup = 1;
+                this.currentGroup = 1;
+            }
+            SetCommonToolstrip();
+            SetGroupLayout();
+
+        }
+
+        /// <summary>
+        /// 控制组的状态
+        /// </summary>
+        public void SetGroupLayout()
+        {
+            if (currentGroup == 1)
+            {
+                this.tlpG1.Enabled = true;
+                this.tlpG2.Enabled = false;
+                this.tlpG3.Enabled = false;
+
+            }
+
+            if (currentGroup == 2)
+            {
+                this.tlpG1.Enabled = false;
+                this.tlpG2.Enabled = true;
+                this.tlpG3.Enabled = false;
+
+            }
+            if (currentGroup == 3)
+            {
+                this.tlpG1.Enabled = false;
+                this.tlpG2.Enabled = false;
+                this.tlpG3.Enabled = true;
+
+            }
+
+        }
+        /// <summary>
+        /// 根据组迁移不同，控制CommonToolStrip的状态
+        /// </summary>
+        public void SetCommonToolstrip()
+        {
+            if (currentGroup == firstGroup)
+            {
+                this.commonToolStrip1.GobackEnabled = false;
+                this.commonToolStrip1.UpdateEnabled = false;
+                this.commonToolStrip1.DeleteEnabled = false;
+                this.commonToolStrip1.OkEnabled = true;
+            }
+            if (currentGroup == 3)
+            {
+                this.commonToolStrip1.UpdateEnabled = true;
+                this.commonToolStrip1.DeleteEnabled = true;
+                this.commonToolStrip1.GobackEnabled = true;
+                this.commonToolStrip1.OkEnabled = false;
+            }
+            if (currentGroup == 2 && firstGroup == 1)
+            {
+                this.commonToolStrip1.UpdateEnabled = false;
+                this.commonToolStrip1.DeleteEnabled = false;
+                this.commonToolStrip1.GobackEnabled = true;
+                this.commonToolStrip1.OkEnabled = true;
+
             }
 
         }
 
         private void btnInquiry_Click(object sender, EventArgs e)
+        {
+            Data_Inquiry();
+
+        }
+
+        private void Data_Inquiry()
         {
             //IList<MessageVo> re = new List<MessageVo>();
             //MessageVo v = new MessageVo();
@@ -188,7 +219,57 @@ namespace Com.GainWinSoft.ERP.Material
             this.FrmMaterialSearch_pagerGridView1.Focus();
 
             this.Cursor = Cursors.Default;
+        }
 
+        private void btnCustomerHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.txtCustomerCd);
+            cr.AddNameControl(this.lblCustomer);
+            cr.ShowDialog(this);
+            this.txtCustomerCd.Focus();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void commonToolStrip1_GobackClick(object sender, EventArgs e)
+        {
+            if (currentGroup == 3)
+            {
+                IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
+                action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
+            }
+            currentGroup--;
+            this.SetCommonToolstrip();
+            this.SetGroupLayout();
+
+        }
+
+        /// <summary>
+        /// OK按钮按下的时候根据当前不同的组做不同的事
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commonToolStrip1_OkClick(object sender, EventArgs e)
+        {
+            if (currentGroup == 1)
+            {
+                //check group1
+
+            }
+            if (currentGroup == 2)
+            {
+                //check group2
+
+                Data_Inquiry();
+            }
+
+            currentGroup++;
+            this.SetCommonToolstrip();
+            this.SetGroupLayout();
         }
     }
 }

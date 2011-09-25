@@ -35,7 +35,7 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
 
         private ResourceManager rm = new ResourceManager(typeof(CommonToolStrip));
 
-        private bool displaytext = false;
+        private bool displaytext = true;
 
         private bool _addEnabled;
 
@@ -660,6 +660,8 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             item_ok.Click += new EventHandler(OnOkClick);
             item_exit.Click += new EventHandler(OnExitClick);
             item_help.Click += new EventHandler(OnHelpClick);
+
+            toolStripMenuItem1.Checked = this.displaytext;
             DisplayText();
 
 
