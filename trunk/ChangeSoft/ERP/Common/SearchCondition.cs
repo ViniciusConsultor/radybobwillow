@@ -30,6 +30,27 @@ namespace Com.GainWinSoft.Common
 
 
 
+        public void SetCommandParameterValue(IDbCommand command)
+        {
+            foreach (DictionaryEntry de in this.ConditionTable)
+            {
+                if (de.Value.GetType() != typeof(SearchInfo))
+                {
+                    continue;
+                }
+                SearchInfo searchInfo = (SearchInfo)de.Value;
+                if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                {
+                    //query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
+                    IDbDataParameter para = command.CreateParameter();
+                    para.ParameterName = searchInfo.ParameterName;
+                    para.Value = searchInfo.FieldValue;
+                    command.Parameters.Add(para);
+                }
+            }
+        }
+
+
         public void SetParameterValue(ISQLQuery query)
         {
             foreach (DictionaryEntry de in this.ConditionTable)
