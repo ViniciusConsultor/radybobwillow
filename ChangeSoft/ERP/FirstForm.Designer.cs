@@ -238,14 +238,13 @@
             this.XPWorkflow.ForeColor = System.Drawing.SystemColors.ControlText;
             this.XPWorkflow.Image = null;
             this.XPWorkflow.LinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.XPWorkflow.Location = new System.Drawing.Point(235, 0);
-            this.XPWorkflow.Margin = new System.Windows.Forms.Padding(0);
+            this.XPWorkflow.Location = new System.Drawing.Point(238, 3);
             this.XPWorkflow.MinimumSize = new System.Drawing.Size(27, 27);
             this.XPWorkflow.Name = "XPWorkflow";
             this.XPWorkflow.PanelStyle = Com.GainWinSoft.Common.Control.XAccordionPanel.PanelStyle.Office2007;
             this.tableLayoutPanel1.SetRowSpan(this.XPWorkflow, 2);
             this.XPWorkflow.ShowXAccordionPanelPanelProfessionalStyle = true;
-            this.XPWorkflow.Size = new System.Drawing.Size(549, 562);
+            this.XPWorkflow.Size = new System.Drawing.Size(543, 556);
             this.XPWorkflow.TabIndex = 1;
             this.XPWorkflow.Text = "流程";
             this.XPWorkflow.ToolTipTextCloseIcon = null;
