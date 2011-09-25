@@ -513,6 +513,7 @@
             resources.ApplyResources(this.btnDepart, "btnDepart");
             this.btnDepart.Name = "btnDepart";
             this.btnDepart.UseVisualStyleBackColor = true;
+            this.btnDepart.Click += new System.EventHandler(this.btnDepart_Click);
             // 
             // txtDepart
             // 

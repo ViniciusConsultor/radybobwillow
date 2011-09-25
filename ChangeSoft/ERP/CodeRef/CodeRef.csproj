@@ -107,6 +107,8 @@
     <Compile Include="Action\Action_CodeRefFactory.cs" />
     <Compile Include="Action\Action_CodeRefWarehouse.cs" />
     <Compile Include="Action\IAction_CodeRefWarehouse.cs" />
+    <Compile Include="Action\IAction_CodeRefSection.cs" />
+    <Compile Include="Action\Action_CodeRefSection.cs" />
     <Compile Include="CodeRefClsDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +160,12 @@
     <EmbeddedResource Include="CodeRefWarehouse.zh-CN.resx">
       <DependentUpon>CodeRefWarehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefSection.resx">
+      <DependentUpon>CodeRefSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefSection.zh-CN.resx">
+      <DependentUpon>CodeRefSection.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -183,6 +191,12 @@
     </Compile>
     <Compile Include="CodeRefWarehouse.Designer.cs">
       <DependentUpon>CodeRefWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeRefSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeRefSection.Designer.cs">
+      <DependentUpon>CodeRefSection.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -46,7 +46,6 @@ namespace Com.GainWinSoft.ERP.MasterCheck
                     ITFactoryMsDao d = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
                     vo = d.getFactoryByCd(facCd);
                 }
-
             }
             catch (Exception ex)
             {
@@ -55,6 +54,5 @@ namespace Com.GainWinSoft.ERP.MasterCheck
 
             return vo;
         }
-
     }
 }
