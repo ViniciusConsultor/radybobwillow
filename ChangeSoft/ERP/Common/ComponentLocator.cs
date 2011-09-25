@@ -25,10 +25,19 @@ namespace Com.GainWinSoft.Common
             //T Resolve<T>()或者factrory.create都不会重新new
             //一个实例，导致一个画面打开再关闭的时候，还是取得原来的实例，但是原来的实例里IsDisposed却是true
             //导致画面打开失败。
-            //if (instance==null)
-            //{
+            /*
+                <component id="FExchangeRate"
+                service="Com.GainWinSoft.Common.IBaseContent,Com.GainWinSoft.Common"
+                    type="Com.GainWinSoft.ERP.ExchangeRate.FrmExchangeRate, Com.GainWinSoft.ERP.ExchangeRate"
+                    lifestyle="transient" />
+             * Windsor 默认取得组件是singleton模式的，组件定义的时候lifestyle="transient"  表示每次都new一个实例。
+             * 完美解决。
+
+             */
+            if (instance==null)
+            {
                 instance = new ComponentLocator();
-            //}
+            }
 
             return instance;
         }

@@ -36,8 +36,6 @@ namespace Com.GainWinSoft.ERP
 
                 IBaseContent frmNewConent = null;
                 frmNewConent =  factory.Create(path);
-                ComponentLocator.Instance().Release(frmNewConent);
-                ComponentLocator.Instance().Release(factory);
                 //BaseContent frmNewConent = (BaseContent)ComponentLocator.Instance().Resolve(path, typeof(BaseContent));
                 frmNewConent.DockTitle = title;
                 frmNewConent.Parentdockpanel = parentpanel;
