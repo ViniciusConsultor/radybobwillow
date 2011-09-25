@@ -188,6 +188,7 @@
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
+            this.button2.TabStop = false;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -260,6 +261,7 @@
             // 
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
+            this.button3.TabStop = false;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -370,6 +372,7 @@
             // 
             resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
+            this.button4.TabStop = false;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -531,7 +534,9 @@
             // 
             resources.ApplyResources(this.btnFactoryHelper, "btnFactoryHelper");
             this.btnFactoryHelper.Name = "btnFactoryHelper";
+            this.btnFactoryHelper.TabStop = false;
             this.btnFactoryHelper.UseVisualStyleBackColor = true;
+            this.btnFactoryHelper.Click += new System.EventHandler(this.btnFactoryHelper_Click);
             // 
             // tableLayoutPanel0
             // 

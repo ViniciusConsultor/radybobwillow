@@ -46,10 +46,12 @@ namespace Com.GainWinSoft.ERP.Material
                 this.txtFactoryCd.Text = factoryvo.IFacCd;
                 this.lblFactoryNm.Text = factoryvo.IFacDesc;
                 this.tlpFactory.Enabled = false;
+                this.txtCustomerCd.Focus();
             }
             else
             {
                 this.tlpFactory.Enabled = true;
+                this.txtFactoryCd.Focus();
             }
 
             //this.tableLayoutPanel1.Enabled = false;
@@ -178,6 +180,18 @@ namespace Com.GainWinSoft.ERP.Material
         private void commonToolStrip1_ExitClick(object sender, EventArgs e)
         {
             this.CloseContent();
+        }
+
+        private void btnFactoryHelper_Click(object sender, EventArgs e)
+        {
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+
+            CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.txtFactoryCd);
+            cr.AddNameControl(this.lblFactoryNm);
+            cr.ShowDialog(this);
+            this.txtFactoryCd.Focus();
+
         }
     }
 }
