@@ -51,10 +51,17 @@ namespace Com.GainWinSoft.ERP.Material.Action
             gridview.LoadData();
             log.Debug("Search Init");
             //设置列名
-            foreach (string key in gridview.Pagerhelper.Columns)
+            string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
+            
+            foreach(string key in columnlist)
             {
                 gridview.SetColumnAlias(key, rm.GetString(key));
             }
+
+//            foreach (string key in gridview.Pagerhelper.Columns)
+//            {
+//                gridview.SetColumnAlias(key, rm.GetString(key));
+//            }
 
             //设置可视列
 

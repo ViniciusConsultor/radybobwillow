@@ -38,11 +38,34 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 sb.AppendLine(sql.ToString());
                 sb.AppendLine(" ) a");
 
-                ISQLQuery q = ss.CreateSQLQuery(sb.ToString());
-                q.AddScalar("CNT", NHibernateUtil.Int32);
+//                ISQLQuery q = ss.CreateSQLQuery(sb.ToString());
+//                q.AddScalar("CNT", NHibernateUtil.Int32);
+//
+//                condition.SetParameterValue(q);
+//                intCount = (int)q.UniqueResult();
 
-                condition.SetParameterValue(q);
-                intCount = (int)q.UniqueResult();
+                IDbCommand command = ss.Connection.CreateCommand();
+                ((OracleCommand)command).BindByName = true;
+
+                command.CommandText = sb.ToString();
+
+                command.CommandType = CommandType.Text;
+                condition.SetCommandParameterValue(command);
+
+
+
+                tran.Enlist(command);
+
+                intCount = Convert.ToInt32(command.ExecuteScalar());
+
+//                IDataReader d = command.ExecuteReader();
+//                while (d.Read())
+//                {
+//                    intCount = Convert.ToInt32(d.GetValue(0));
+//                }
+                command.Dispose();
+
+
                 tran.Commit();
             }
             catch (Castle.ActiveRecord.Framework.ActiveRecordException ex)
@@ -91,22 +114,58 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
 
 
-                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+//                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+//
+//                AddScalar(query);
+//
+//
+//                condition.SetParameterValue(query);
+//
+//
+//                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
+//
+//                //转换成datatable
+//                DataTable dt = DataTableUtils.ToDataTable(result);
+//                dt.TableName = tablename;
+//                ds.Tables.Add(dt);
 
-                AddScalar(query);
 
 
-                condition.SetParameterValue(query);
+                IDbCommand command = ss.Connection.CreateCommand();
+                ((OracleCommand)command).BindByName = true;
+
+                command.CommandText = sb.ToString();
+
+                command.CommandType = CommandType.Text;
+                condition.SetCommandParameterValue(command);
 
 
-                result = query.SetResultTransformer(Transformers.AliasToBean<CTPmMsPagerNoAR>()).List<CTPmMsPagerNoAR>();
 
-                //转换成datatable
-                DataTable dt = DataTableUtils.ToDataTable(result);
+                tran.Enlist(command);
+                IDataReader rdr = command.ExecuteReader();
+                DataTable dt = new DataTable();
+
                 dt.TableName = tablename;
-                ds.Tables.Add(dt);
+                dt.Load(rdr, LoadOption.Upsert);
 
 
+
+                DataTable newdt = new DataTable();
+
+                string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
+                foreach(string key in columnlist)
+                {
+                    DataColumn col = new DataColumn();
+                    col.ColumnName = key;
+                    newdt.Columns.Add(col);
+                }
+                foreach (DataRow row in dt.Rows)
+                {
+                    newdt.ImportRow(row);
+                }
+                newdt.TableName = tablename;
+                ds.Tables.Add(newdt);
+                command.Dispose();
 
 //                IDbCommand command = ss.Connection.CreateCommand();
 //                ((OracleCommand)command).BindByName = true;
