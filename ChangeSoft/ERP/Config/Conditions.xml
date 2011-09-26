@@ -63,22 +63,24 @@
   </Condition>
 
     <Condition>
-        <Name>EditMode</Name>
+        <Name>ActionMode</Name>
         <Data>
             <Language>zh-CN</Language>
             <List>
-                <Item value="ADD">添加模式</Item>
-                <Item value="EDIT">编辑模式</Item>
-                <Item value="DELETE">删除模式</Item>
+                <Item value="C">添加模式</Item>
+                <Item value="U">编辑模式</Item>
+                <Item value="D">删除模式</Item>
+                <Item value="R">参照模式</Item>
             </List>
         </Data>
 
         <Data>
             <Language>en-US</Language>
             <List>
-                <Item value="ADD">Add Mode</Item>
-                <Item value="EDIT">Edit Mode</Item>
-                <Item value="DELETE">Delete Mode</Item>
+                <Item value="C">Create Mode</Item>
+                <Item value="U">Update Mode</Item>
+                <Item value="D">Delete Mode</Item>
+                <Item value="R">Retrieve Mode</Item>
             </List>
         </Data>
     </Condition>  
