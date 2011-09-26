@@ -34,6 +34,8 @@ namespace Com.GainWinSoft.ERP.Factory
         private ValidationProvider vdpRequireG2;
         private ValidationProvider vdpExistG1;
         private ValidationProvider vdpExistG2;
+        private ValidationProvider vdpCustomG1;
+        private ValidationProvider vdpCustomG2;
 
         /// <summary>
         /// 应用程序的主入口点。
@@ -407,7 +409,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void SetLayoutAdd()
         {
-            this.lblMode.Text = "追加模式";
+            this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "C");
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
         }
@@ -417,7 +419,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void SetLayoutDel()
         {
-            this.lblMode.Text = "删除模式";
+            this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "D");
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
         }
@@ -427,7 +429,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void SetLayoutUpd()
         {
-            this.lblMode.Text = "修改模式";
+            this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "U");
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
         }
@@ -469,6 +471,10 @@ namespace Com.GainWinSoft.ERP.Factory
             this.vdpExistG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             this.vdpExistG2 = new ValidationProvider(this.components);
             this.vdpExistG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpCustomG1 = new ValidationProvider(this.components);
+            this.vdpCustomG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpCustomG2 = new ValidationProvider(this.components);
+            this.vdpCustomG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             #endregion
 
             #region vdpRequireG1
@@ -557,7 +563,6 @@ namespace Com.GainWinSoft.ERP.Factory
             ruleFactoryExit.CustomValidationMethod += new CustomValidationEventHandler(ruleFactoryExit_CustomValidationMethod);
             ruleFactoryExit.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.lblFactory.Text);
             this.vdpExistG1.SetValidationRule(this.txtFactory, ruleFactoryExit);
-
             #endregion
 
             #region vdpExistG2
@@ -567,6 +572,12 @@ namespace Com.GainWinSoft.ERP.Factory
             ruleDepartExit.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.lblDepart.Text);
             this.vdpExistG2.SetValidationRule(this.txtDepart, ruleDepartExit);
             #endregion
+
+            #region vdpCustomG1
+            #endregion
+
+            #region vdpCustomG2
+            #endregion
         }
 
         /// <summary>
@@ -574,7 +585,6 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void ruleCompanyExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
-            //e.IsValid = false;
         }
 
         /// <summary>
@@ -591,6 +601,15 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void ruleDepartExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
+            CheckSection check = new CheckSection();
+            e.IsValid = false;
+            this.lblDepartNM.Text = "";
+            TSectionMs vo = check.Check01Vo(this.txtCompany.Text, this.txtDepart.Text);
+            if (vo != null && !String.IsNullOrEmpty(vo.Id.ISectionCd))
+            {
+                e.IsValid = true;
+                this.lblDepartNM.Text = vo.ISectionDesc;
+            }
         }
 
         /// <summary>
