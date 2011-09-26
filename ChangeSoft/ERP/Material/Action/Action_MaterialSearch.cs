@@ -20,9 +20,9 @@ namespace Com.GainWinSoft.ERP.Material.Action
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialSearch));
         private string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
 
-        public void GetPmMsDetail(PagerGridView gridview, CardVo cardvo)
+        public Int32 GetPmMsDetail(PagerGridView gridview, CardVo cardvo)
         {
-            DataSet ds = new DataSet();
+            
 
             LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
             
@@ -64,6 +64,9 @@ namespace Com.GainWinSoft.ERP.Material.Action
 //            }
 
             SetDisplayColumns(gridview);
+            DataSet ds = (DataSet)gridview.DataSource;
+            DataTable dt = ds.Tables["CTPmMsPagerNoARDao"];
+            return dt.Rows.Count;
 
 
         }

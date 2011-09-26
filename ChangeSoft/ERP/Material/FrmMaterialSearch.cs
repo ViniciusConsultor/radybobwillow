@@ -38,6 +38,8 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private ValidationProvider vdpG1;
         private ValidationProvider vdpBusinessG2;
+        private ValidationProvider vdpBusinessG3;
+
 
 
 
@@ -78,7 +80,8 @@ namespace Com.GainWinSoft.ERP.Material
             {
                 this.ClearError();
             }
-            Data_Inquiry();
+            this.FrmMaterialSearch_pagerGridView1.Focus();
+            //Data_Inquiry();
             currentGroup++;
             SetCommonToolstrip();
             SetGroupLayout();
@@ -162,6 +165,8 @@ namespace Com.GainWinSoft.ERP.Material
             this.vdpG1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             this.vdpBusinessG2 = new ValidationProvider(this.components);
             this.vdpBusinessG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+            this.vdpBusinessG3 = new ValidationProvider(this.components);
+            this.vdpBusinessG3.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
 
 
             ValidationRule ruleFactory = new ValidationRule();
@@ -194,6 +199,47 @@ namespace Com.GainWinSoft.ERP.Material
             ruleMakerExist.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.caplblMaker.Text);
             this.vdpBusinessG2.SetValidationRule(this.txtMakerCd, ruleMakerExist);
 
+            ValidationRule ruleInquiry = new ValidationRule();
+            ruleInquiry.IsCustomError = true;
+            ruleInquiry.CustomValidationMethod += new CustomValidationEventHandler(ruleInquiry_CustomValidationMethod);
+            ruleInquiry.CustomErrorMessage = MessageUtils.GetMessage("W0005");
+            this.vdpBusinessG3.SetValidationRule(this.FrmMaterialSearch_pagerGridView1, ruleInquiry);
+
+
+
+
+        }
+
+        void ruleInquiry_CustomValidationMethod(object sender, CustomValidationEventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            CardVo cardvo = new CardVo();
+            cardvo.IFacCd = this.txtFactoryCd.Text;
+            cardvo.IDispItemCd = this.txtDispItemCd.Text;
+            cardvo.IDispItemRev = this.txtDispItemRev.Text;
+            cardvo.IDlCd = this.txtCustomerCd.Text;
+            cardvo.IDrwNo = this.txtDrwNo.Text;
+            cardvo.IItemCls = this.cbbItemCls.Selectedvalue;
+            cardvo.IItemType = this.txtItemType.Text;
+            cardvo.IMakerCd = this.txtMakerCd.Text;
+            cardvo.IMntCls = this.cbbMntCls.Selectedvalue;
+            cardvo.IModel = this.txtModel.Text;
+            cardvo.IQryMtrl = this.txtQryMtrl.Text;
+            cardvo.ISeiban = this.txtSeiban.Text;
+            cardvo.ISpec = this.txtSpec.Text;
+
+
+            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
+            int count = action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
+            if (count == 0)
+            {
+                e.IsValid = false;
+            }
+            else
+            {
+                e.IsValid = true;
+            }
+            this.Cursor = Cursors.Default;
         }
         /// <summary>
         /// 清除CheckError
@@ -202,6 +248,7 @@ namespace Com.GainWinSoft.ERP.Material
         {
             this.vdpG1.ValidationMessages(false);
             this.vdpBusinessG2.ValidationMessages(false);
+            this.vdpBusinessG3.ValidationMessages(false);
             this.baseform.msgwindow.Hide();
         }
 
@@ -236,6 +283,15 @@ namespace Com.GainWinSoft.ERP.Material
             if (!this.vdpBusinessG2.Validate())
             {
                 IList<MessageVo> re = this.vdpBusinessG2.ValidationMessages(true);
+                this.DialogResult = DialogResult.Abort;
+                this.baseform.msgwindow.Messagelist = re;
+                this.baseform.msgwindow.ShowMessage();
+                rtnValue = false;
+            }
+
+            if (!this.vdpBusinessG3.Validate())
+            {
+                IList<MessageVo> re = this.vdpBusinessG3.ValidationMessages(true);
                 this.DialogResult = DialogResult.Abort;
                 this.baseform.msgwindow.Messagelist = re;
                 this.baseform.msgwindow.ShowMessage();
@@ -309,7 +365,8 @@ namespace Com.GainWinSoft.ERP.Material
                     this.ClearError();
                 }
 
-                Data_Inquiry();
+                //Data_Inquiry();
+                this.FrmMaterialSearch_pagerGridView1.Focus();
             }
 
             currentGroup++;
@@ -519,28 +576,28 @@ namespace Com.GainWinSoft.ERP.Material
             //re.Add(v);
             //this.baseform.msgwindow.Messagelist = re;
             //this.baseform.msgwindow.ShowMessage();
-            this.Cursor = Cursors.WaitCursor;
-            CardVo cardvo = new CardVo();
-            cardvo.IFacCd = this.txtFactoryCd.Text;
-            cardvo.IDispItemCd = this.txtDispItemCd.Text;
-            cardvo.IDispItemRev = this.txtDispItemRev.Text;
-            cardvo.IDlCd = this.txtCustomerCd.Text;
-            cardvo.IDrwNo = this.txtDrwNo.Text;
-            cardvo.IItemCls = this.cbbItemCls.Selectedvalue;
-            cardvo.IItemType = this.txtItemType.Text;
-            cardvo.IMakerCd = this.txtMakerCd.Text;
-            cardvo.IMntCls = this.cbbMntCls.Selectedvalue;
-            cardvo.IModel = this.txtModel.Text;
-            cardvo.IQryMtrl = this.txtQryMtrl.Text;
-            cardvo.ISeiban = this.txtSeiban.Text;
-            cardvo.ISpec = this.txtSpec.Text;
-
-
-            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
-            action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
-            this.FrmMaterialSearch_pagerGridView1.Focus();
-
-            this.Cursor = Cursors.Default;
+//            this.Cursor = Cursors.WaitCursor;
+//            CardVo cardvo = new CardVo();
+//            cardvo.IFacCd = this.txtFactoryCd.Text;
+//            cardvo.IDispItemCd = this.txtDispItemCd.Text;
+//            cardvo.IDispItemRev = this.txtDispItemRev.Text;
+//            cardvo.IDlCd = this.txtCustomerCd.Text;
+//            cardvo.IDrwNo = this.txtDrwNo.Text;
+//            cardvo.IItemCls = this.cbbItemCls.Selectedvalue;
+//            cardvo.IItemType = this.txtItemType.Text;
+//            cardvo.IMakerCd = this.txtMakerCd.Text;
+//            cardvo.IMntCls = this.cbbMntCls.Selectedvalue;
+//            cardvo.IModel = this.txtModel.Text;
+//            cardvo.IQryMtrl = this.txtQryMtrl.Text;
+//            cardvo.ISeiban = this.txtSeiban.Text;
+//            cardvo.ISpec = this.txtSpec.Text;
+//
+//
+//            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
+//            action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
+//            this.FrmMaterialSearch_pagerGridView1.Focus();
+//
+//            this.Cursor = Cursors.Default;
         }
         #endregion
 

@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Com.GainWinSoft.Common;
 using WeifenLuo.WinFormsUI.Docking;
+using System.Collections;
 
 namespace Com.GainWinSoft.ERP.Material
 {
@@ -27,5 +28,13 @@ namespace Com.GainWinSoft.ERP.Material
         {
             MessageBox.Show(this.conditionRadioButton1.Checkedvalue + ":" + this.conditionRadioButton1.Checkedname);
         }
+
+        private void FrmMaterialEdit_Load(object sender, EventArgs e)
+        {
+            Hashtable ht = (Hashtable)SessionUtils.GetSession(this.Name);
+            ht.Add("ddd", "ddd");
+
+        }
+
     }
 }

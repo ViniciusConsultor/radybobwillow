@@ -176,5 +176,14 @@ namespace Com.GainWinSoft.Common.Resources {
                 return ResourceManager.GetString("W0004", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 没有查询到符合条件的数据。 的本地化字符串。
+        /// </summary>
+        internal static string W0005 {
+            get {
+                return ResourceManager.GetString("W0005", resourceCulture);
+            }
+        }
     }
 }
