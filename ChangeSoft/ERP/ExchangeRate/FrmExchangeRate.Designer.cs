@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExchangeRate));
-            this.TblPanelBase = new System.Windows.Forms.TableLayoutPanel();
-            this.TblPanelBar = new System.Windows.Forms.TableLayoutPanel();
-            this.TblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblPanelBase = new System.Windows.Forms.TableLayoutPanel();
+            this.tblPanelGrp = new System.Windows.Forms.TableLayoutPanel();
+            this.tblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCurrKbn = new System.Windows.Forms.Label();
             this.lblCompanyNM = new System.Windows.Forms.Label();
             this.btnCompany = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.lblCompany = new System.Windows.Forms.Label();
             this.lblRateKbn = new System.Windows.Forms.Label();
             this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.clsCodeRefDropDownRate = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
@@ -61,44 +61,46 @@
             this.cndCurrKbn1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.TblPanelBase.SuspendLayout();
-            this.TblPanelBar.SuspendLayout();
-            this.TblPanelG1.SuspendLayout();
+            this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
+            this.tblPanelBase.SuspendLayout();
+            this.tblPanelGrp.SuspendLayout();
+            this.tblPanelG1.SuspendLayout();
             this.tblPanelBtn.SuspendLayout();
             this.tblPanelG3.SuspendLayout();
+            this.tblPanelG2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TblPanelBase
+            // tblPanelBase
             // 
-            resources.ApplyResources(this.TblPanelBase, "TblPanelBase");
-            this.TblPanelBase.Controls.Add(this.TblPanelBar, 0, 0);
-            this.TblPanelBase.Name = "TblPanelBase";
+            resources.ApplyResources(this.tblPanelBase, "tblPanelBase");
+            this.tblPanelBase.Controls.Add(this.tblPanelGrp, 0, 0);
+            this.tblPanelBase.Name = "tblPanelBase";
             // 
-            // TblPanelBar
+            // tblPanelGrp
             // 
-            resources.ApplyResources(this.TblPanelBar, "TblPanelBar");
-            this.TblPanelBar.Controls.Add(this.TblPanelG1, 0, 1);
-            this.TblPanelBar.Controls.Add(this.tblPanelG3, 0, 3);
-            this.TblPanelBar.Controls.Add(this.pagerGridView1, 0, 2);
-            this.TblPanelBar.Controls.Add(this.commonToolStrip1, 0, 0);
-            this.TblPanelBar.Name = "TblPanelBar";
+            resources.ApplyResources(this.tblPanelGrp, "tblPanelGrp");
+            this.tblPanelGrp.Controls.Add(this.tblPanelG1, 0, 1);
+            this.tblPanelGrp.Controls.Add(this.tblPanelG3, 0, 3);
+            this.tblPanelGrp.Controls.Add(this.commonToolStrip1, 0, 0);
+            this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
+            this.tblPanelGrp.Name = "tblPanelGrp";
             // 
-            // TblPanelG1
+            // tblPanelG1
             // 
-            resources.ApplyResources(this.TblPanelG1, "TblPanelG1");
-            this.TblPanelG1.Controls.Add(this.lblCurrKbn, 0, 2);
-            this.TblPanelG1.Controls.Add(this.lblCompanyNM, 4, 0);
-            this.TblPanelG1.Controls.Add(this.btnCompany, 3, 0);
-            this.TblPanelG1.Controls.Add(this.txtCompany, 2, 0);
-            this.TblPanelG1.Controls.Add(this.lblStar1, 1, 0);
-            this.TblPanelG1.Controls.Add(this.lblCompany, 0, 0);
-            this.TblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
-            this.TblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
-            this.TblPanelG1.Controls.Add(this.clsCodeRefDropDownRate, 2, 1);
-            this.TblPanelG1.Controls.Add(this.cndCurrKbn, 2, 2);
-            this.TblPanelG1.Name = "TblPanelG1";
+            resources.ApplyResources(this.tblPanelG1, "tblPanelG1");
+            this.tblPanelG1.Controls.Add(this.lblCurrKbn, 0, 2);
+            this.tblPanelG1.Controls.Add(this.lblCompanyNM, 4, 0);
+            this.tblPanelG1.Controls.Add(this.btnCompany, 3, 0);
+            this.tblPanelG1.Controls.Add(this.txtCompany, 2, 0);
+            this.tblPanelG1.Controls.Add(this.lblStar1, 1, 0);
+            this.tblPanelG1.Controls.Add(this.lblCompany, 0, 0);
+            this.tblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
+            this.tblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
+            this.tblPanelG1.Controls.Add(this.clsCodeRefDropDownRate, 2, 1);
+            this.tblPanelG1.Controls.Add(this.cndCurrKbn, 2, 2);
+            this.tblPanelG1.Name = "tblPanelG1";
             // 
             // lblCurrKbn
             // 
@@ -141,15 +143,16 @@
             // tblPanelBtn
             // 
             resources.ApplyResources(this.tblPanelBtn, "tblPanelBtn");
-            this.tblPanelBtn.Controls.Add(this.button6, 2, 0);
+            this.tblPanelBtn.Controls.Add(this.btnSearch, 2, 0);
             this.tblPanelBtn.Controls.Add(this.button5, 1, 0);
             this.tblPanelBtn.Name = "tblPanelBtn";
             // 
-            // button6
+            // btnSearch
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnSearch, "btnSearch");
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // button5
             // 
@@ -161,7 +164,7 @@
             // 
             this.clsCodeRefDropDownRate.Autoaddblankitem = false;
             this.clsCodeRefDropDownRate.ClsCd = "9A";
-            this.TblPanelG1.SetColumnSpan(this.clsCodeRefDropDownRate, 3);
+            this.tblPanelG1.SetColumnSpan(this.clsCodeRefDropDownRate, 3);
             this.clsCodeRefDropDownRate.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsCodeRefDropDownRate, "clsCodeRefDropDownRate");
             this.clsCodeRefDropDownRate.Name = "clsCodeRefDropDownRate";
@@ -173,7 +176,7 @@
             // cndCurrKbn
             // 
             this.cndCurrKbn.Autoaddblankitem = false;
-            this.TblPanelG1.SetColumnSpan(this.cndCurrKbn, 3);
+            this.tblPanelG1.SetColumnSpan(this.cndCurrKbn, 3);
             this.cndCurrKbn.Conditionname = "ExchangeCurr";
             this.cndCurrKbn.Defaultselectedindex = 0;
             resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
@@ -301,15 +304,6 @@
             this.cndCalcMode.Selectedname = null;
             this.cndCalcMode.Selectedvalue = null;
             // 
-            // pagerGridView1
-            // 
-            this.pagerGridView1.Columninfolist = null;
-            this.pagerGridView1.DataMember = "";
-            this.pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
-            this.pagerGridView1.Name = "pagerGridView1";
-            this.pagerGridView1.Pagerhelper = null;
-            // 
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
@@ -342,30 +336,46 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
             // 
+            // tblPanelG2
+            // 
+            resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
+            this.tblPanelG2.Controls.Add(this.pagerGridView1, 0, 0);
+            this.tblPanelG2.Name = "tblPanelG2";
+            // 
+            // pagerGridView1
+            // 
+            this.pagerGridView1.Columninfolist = null;
+            this.pagerGridView1.DataMember = "";
+            this.pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
+            this.pagerGridView1.Name = "pagerGridView1";
+            this.pagerGridView1.Pagerhelper = null;
+            // 
             // FrmExchangeRate
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.TblPanelBase);
+            this.Controls.Add(this.tblPanelBase);
             this.Name = "FrmExchangeRate";
             this.Load += new System.EventHandler(this.FrmExchangeRate_Load);
-            this.TblPanelBase.ResumeLayout(false);
-            this.TblPanelBar.ResumeLayout(false);
-            this.TblPanelBar.PerformLayout();
-            this.TblPanelG1.ResumeLayout(false);
-            this.TblPanelG1.PerformLayout();
+            this.tblPanelBase.ResumeLayout(false);
+            this.tblPanelGrp.ResumeLayout(false);
+            this.tblPanelGrp.PerformLayout();
+            this.tblPanelG1.ResumeLayout(false);
+            this.tblPanelG1.PerformLayout();
             this.tblPanelBtn.ResumeLayout(false);
             this.tblPanelG3.ResumeLayout(false);
             this.tblPanelG3.PerformLayout();
+            this.tblPanelG2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel TblPanelBase;
-        private System.Windows.Forms.TableLayoutPanel TblPanelBar;
-        private System.Windows.Forms.TableLayoutPanel TblPanelG1;
+        private System.Windows.Forms.TableLayoutPanel tblPanelBase;
+        private System.Windows.Forms.TableLayoutPanel tblPanelGrp;
+        private System.Windows.Forms.TableLayoutPanel tblPanelG1;
         private System.Windows.Forms.Label lblStar1;
         private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.TextBox txtCompany;
@@ -388,13 +398,14 @@
         private System.Windows.Forms.TextBox txtRate;
         private System.Windows.Forms.TableLayoutPanel tblPanelBtn;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
+        private System.Windows.Forms.Button btnSearch;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsCodeRefDropDownRate;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn1;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList DropDownRate1;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCalcMode;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private System.Windows.Forms.TableLayoutPanel tblPanelG2;
+        private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
     }
 }
