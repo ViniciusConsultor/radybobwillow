@@ -156,4 +156,7 @@
   <data name="W0004" xml:space="preserve">
     <value>%1 在数据表中不存在，请重新输入。</value>
   </data>
+  <data name="W0005" xml:space="preserve">
+    <value>没有查询到符合条件的数据。</value>
+  </data>
 </root>

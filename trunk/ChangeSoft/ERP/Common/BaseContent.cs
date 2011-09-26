@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Resources;
 using WeifenLuo.WinFormsUI.Docking;
+using System.Collections;
 
 namespace Com.GainWinSoft.Common
 {
@@ -63,6 +64,8 @@ namespace Com.GainWinSoft.Common
                 b.Parentdockpanel = parentdockpanel;
                 b.TopLevel = false;
                 b.Text = this.title;
+                b.SessionKey = this.Name;
+                SessionUtils.SetSession(this.Name, new Hashtable());
                 if (tempowner != null)
                 {
                     tempowner.ChildContent = b;
@@ -130,6 +133,8 @@ namespace Com.GainWinSoft.Common
                 b.Parentdockpanel = parentdockpanel;
                 b.TopLevel = false;
                 b.Text = this.title;
+                b.SessionKey = this.Name;
+                SessionUtils.SetSession(this.Name, new Hashtable());
                 if (tempowner != null)
                 {
                     tempowner.ChildContent = b;

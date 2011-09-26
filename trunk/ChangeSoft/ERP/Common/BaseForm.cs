@@ -22,6 +22,9 @@ namespace Com.GainWinSoft.Common
 
         private DockContent childContent;
 
+        private string sessionKey;
+
+
 
         public BaseForm()
         {
@@ -32,6 +35,12 @@ namespace Com.GainWinSoft.Common
             msgwindow.Hide();
         }
 
+
+        public string SessionKey
+        {
+            get { return sessionKey; }
+            set { sessionKey = value; }
+        }
 
         public DockContent OwnerForm
         {
@@ -124,6 +133,7 @@ namespace Com.GainWinSoft.Common
                 {
                     ((BaseForm)this.OwnerForm).childContent = null;
                 }
+                SessionUtils.RemoveSession(this.SessionKey);
                 e.Cancel = false;
                 return;
 

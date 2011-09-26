@@ -64,6 +64,7 @@
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmMaterialEdit";
+            this.Load += new System.EventHandler(this.FrmMaterialEdit_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
