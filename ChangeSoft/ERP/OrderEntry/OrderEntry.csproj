@@ -8,8 +8,8 @@
     <ProjectGuid>{DE08E3BA-AE4D-4184-B49E-70DE862A2DAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OrderEntry</RootNamespace>
-    <AssemblyName>OrderEntry</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.OrderEntry</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.OrderEntry</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

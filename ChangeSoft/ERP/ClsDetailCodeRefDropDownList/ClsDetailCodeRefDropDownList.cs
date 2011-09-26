@@ -24,7 +24,7 @@ namespace ClsDetailCodeRefDropDownList
             set { clsCd = value; }
         }
 
-        private bool showNameDesc=false;
+        private bool showNameDesc = false;
 
         public bool ShowNameDesc
         {
@@ -73,7 +73,11 @@ namespace ClsDetailCodeRefDropDownList
         public int Selectedindex
         {
             get { return selectedindex; }
-            set { selectedindex = value; }
+            set
+            {
+                selectedindex = value;
+                this.comboBox1.SelectedIndex = value;
+            }
         }
 
         public delegate void OnSelectChangedEventHandler(object sender, EventArgs e);
@@ -89,7 +93,7 @@ namespace ClsDetailCodeRefDropDownList
                 this.selectedindex = c.SelectedIndex;
                 SelectedIndexChanged(this, e);//触发事件  
             }
-        } 
+        }
 
         public ClsDetailCodeRefDropDownList()
         {

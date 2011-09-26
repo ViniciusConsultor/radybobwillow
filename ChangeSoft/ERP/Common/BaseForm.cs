@@ -15,10 +15,16 @@ namespace Com.GainWinSoft.Common
 
         private DockPanel parentdockpanel;
 
+        private DockContent ownerForm;
+
+
         public MessageWindow msgwindow;
+
+        private DockContent childContent;
+
+
         public BaseForm()
         {
-      
             InitializeComponent();
             msgwindow = new MessageWindow();
             msgwindow.Show(this.dockPanel, DockState.DockBottomAutoHide);
@@ -26,6 +32,18 @@ namespace Com.GainWinSoft.Common
             msgwindow.Hide();
         }
 
+
+        public DockContent OwnerForm
+        {
+            get { return ownerForm; }
+            set { ownerForm = value; }
+        }
+
+        public DockContent ChildContent
+        {
+            get { return childContent; }
+            set { childContent = value; }
+        }
 
         public DockPanel Parentdockpanel
         {
@@ -87,6 +105,28 @@ namespace Com.GainWinSoft.Common
                 }
 
                 return null;
+            }
+        }
+
+        private void BaseForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+
+            if (this.childContent != null)
+            {
+                MessageBox.Show(MessageUtils.GetMessage("E0002"), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Cancel = true;
+                return;
+            }
+            else
+            {
+                if (((BaseForm)this.OwnerForm) != null)
+                {
+                    ((BaseForm)this.OwnerForm).childContent = null;
+                }
+                e.Cancel = false;
+                return;
+
             }
         }
     }

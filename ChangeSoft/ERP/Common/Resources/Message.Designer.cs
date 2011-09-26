@@ -70,6 +70,15 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 请先关闭子窗口。 的本地化字符串。
+        /// </summary>
+        internal static string E0002 {
+            get {
+                return ResourceManager.GetString("E0002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 加载初始数据…… 的本地化字符串。
         /// </summary>
         internal static string I0001 {
