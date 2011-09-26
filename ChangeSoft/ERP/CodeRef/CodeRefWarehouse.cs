@@ -63,9 +63,12 @@ namespace Com.GainWinSoft.ERP.CodeRef
                 this.dataGridView1.Columns[i].Visible = false;
             }
 
-            for (int i = 0; i < columnlist.Length; i++)
+            if (this.dataGridView1.RowCount > 0)
             {
-                this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                for (int i = 0; i < columnlist.Length; i++)
+                {
+                    this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                }
             }
         }
 

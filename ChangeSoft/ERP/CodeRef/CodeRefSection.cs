@@ -30,8 +30,8 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
         private void doSearch()
         {
-            IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
-            DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtSecCd.Text, this.txtSecDesc.Text);
+            IAction_CodeRefSection ac = ComponentLocator.Instance().Resolve<IAction_CodeRefSection>();
+            DataSet ds = ac.GetSectionDataSet(companyCd, this.txtSecCd.Text, this.txtSecDesc.Text);
             this.dataGridView1.DataSource = ds;
             this.dataGridView1.DataMember = "CCodeRefSection";
             SetColumnsAlias();
@@ -62,9 +62,12 @@ namespace Com.GainWinSoft.ERP.CodeRef
                 this.dataGridView1.Columns[i].Visible = false;
             }
 
-            for (int i = 0; i < columnlist.Length; i++)
+            if (this.dataGridView1.RowCount > 0)
             {
-                this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                for (int i = 0; i < columnlist.Length; i++)
+                {
+                    this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                }
             }
         }
 
