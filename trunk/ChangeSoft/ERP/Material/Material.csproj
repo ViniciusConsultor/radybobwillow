@@ -98,6 +98,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -210,9 +211,29 @@
       <Project>{A012A71F-0C86-4A41-8EF1-DEE89AC5F054}</Project>
       <Name>Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TableDropDownList\TableDropDownList.csproj">
+      <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
+      <Name>TableDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
+      <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
+      <Name>TextBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
       <Name>Noogen.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XAccordionPanel\AccordionPanel.csproj">
+      <Project>{9CA367B8-0B98-49D1-84FB-735E612E3BA9}</Project>
+      <Name>AccordionPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDateTimePicker\XDateTimePicker.csproj">
+      <Project>{D99733E2-A187-47ED-99C3-5C4A36FD18BB}</Project>
+      <Name>XDateTimePicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xpLabel\xpLabel.csproj">
+      <Project>{1ECBEA5F-7603-407A-8069-1FEF303F7E83}</Project>
+      <Name>xpLabel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

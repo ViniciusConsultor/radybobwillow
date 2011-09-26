@@ -219,10 +219,10 @@ namespace Com.GainWinSoft.ERP.Material
             cardvo.IDispItemRev = this.txtDispItemRev.Text;
             cardvo.IDlCd = this.txtCustomerCd.Text;
             cardvo.IDrwNo = this.txtDrwNo.Text;
-            cardvo.IItemCls = this.cbbItemCls.Selectedvalue;
+            cardvo.IItemCls = this.clsddlItemCls.Selectedvalue;
             cardvo.IItemType = this.txtItemType.Text;
             cardvo.IMakerCd = this.txtMakerCd.Text;
-            cardvo.IMntCls = this.cbbMntCls.Selectedvalue;
+            cardvo.IMntCls = this.clsddlMntCls.Selectedvalue;
             cardvo.IModel = this.txtModel.Text;
             cardvo.IQryMtrl = this.txtQryMtrl.Text;
             cardvo.ISeiban = this.txtSeiban.Text;
@@ -501,8 +501,8 @@ namespace Com.GainWinSoft.ERP.Material
             this.btnCustomerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.btnMakerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.btnItemTypeHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.cbbItemCls.Selectedindex = 0;
-            this.cbbMntCls.Selectedindex = 0;
+            this.clsddlItemCls.Selectedindex = 0;
+            this.clsddlMntCls.Selectedindex = 0;
 
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
@@ -536,7 +536,7 @@ namespace Com.GainWinSoft.ERP.Material
         {
             this.txtCustomerCd.Text = "";
             this.lblCustomer.Text = "";
-            this.cbbItemCls.Selectedindex = 0;
+            this.clsddlItemCls.Selectedindex = 0;
             this.txtItemType.Text = "";
             this.lblItemType.Text = "";
             this.txtDispItemCd.Text = "";
@@ -548,7 +548,7 @@ namespace Com.GainWinSoft.ERP.Material
             this.txtSeiban.Text = "";
             this.txtSpec.Text = "";
             this.txtDrwNo.Text = "";
-            this.cbbMntCls.Selectedindex = 0;
+            this.clsddlMntCls.Selectedindex = 0;
         }
 
         /// <summary>
