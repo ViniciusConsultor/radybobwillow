@@ -47,28 +47,28 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 }
                 sb.Append(" order by t.i_dl_cd");
 
-                ISQLQuery querycatalogfunction = ss.CreateSQLQuery(sb.ToString());
-                querycatalogfunction.AddScalar("iCompanyCd", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlCd", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlDesc", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlArgDesc", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlDescKana", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlType", NHibernateUtil.String);
-                querycatalogfunction.AddScalar("iDlTypeName", NHibernateUtil.String);
+                ISQLQuery query = ss.CreateSQLQuery(sb.ToString());
+                query.AddScalar("iCompanyCd", NHibernateUtil.String);
+                query.AddScalar("iDlCd", NHibernateUtil.String);
+                query.AddScalar("iDlDesc", NHibernateUtil.String);
+                query.AddScalar("iDlArgDesc", NHibernateUtil.String);
+                query.AddScalar("iDlDescKana", NHibernateUtil.String);
+                query.AddScalar("iDlType", NHibernateUtil.String);
+                query.AddScalar("iDlTypeName", NHibernateUtil.String);
 
 
-                querycatalogfunction.SetParameter("langId", langId);
-                querycatalogfunction.SetParameter("companyCd", companyCd);
+                query.SetParameter("langId", langId);
+                query.SetParameter("companyCd", companyCd);
                 if (dlCd != string.Empty)
                 {
-                    querycatalogfunction.SetParameter("dlCd", dlCd);
+                    query.SetParameter("dlCd", dlCd);
                 }
                 if (dlDesc != string.Empty)
                 {
-                    querycatalogfunction.SetParameter("dlDesc", dlDesc);
+                    query.SetParameter("dlDesc", dlDesc);
                 }
 
-                result = querycatalogfunction.SetResultTransformer(Transformers.AliasToBean<CCodeRefTradeForMaterialNoAR>()).List<CCodeRefTradeForMaterialNoAR>();
+                result = query.SetResultTransformer(Transformers.AliasToBean<CCodeRefTradeForMaterialNoAR>()).List<CCodeRefTradeForMaterialNoAR>();
 
 
                 tran.Commit();

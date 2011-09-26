@@ -117,6 +117,9 @@
   <ItemGroup>
     <Compile Include="Action\Action_MaterialSearch.cs" />
     <Compile Include="Action\IAction_MaterialSearch.cs" />
+    <Compile Include="CheckMethod\Check_FrmMaterialSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormVo\CardVo.cs" />
     <Compile Include="FrmMaterialEdit.cs">
       <SubType>Form</SubType>
@@ -194,6 +197,10 @@
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasterCheck\MasterCheck.csproj">
+      <Project>{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}</Project>
+      <Name>MasterCheck</Name>
     </ProjectReference>
     <ProjectReference Include="..\PagerGridView\PagerGridView.csproj">
       <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>

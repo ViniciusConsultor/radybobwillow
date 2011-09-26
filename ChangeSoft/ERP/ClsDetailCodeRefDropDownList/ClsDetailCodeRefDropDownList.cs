@@ -134,7 +134,7 @@ namespace ClsDetailCodeRefDropDownList
                 return;
 
             ICClsDetailNoARDao d = ComponentLocator.Instance().Resolve<ICClsDetailNoARDao>();
-            IList<CClsDetailNoAR> list = d.GetClsDetail(LangUtils.GetCurrentLanguage(), this.clsCd);
+            IList<CClsDetailNoAR> list = d.GetClsDetailList(LangUtils.GetCurrentLanguage(), this.clsCd);
 
             this.comboBox1.Items.Clear();
             if (autoaddblankitem)

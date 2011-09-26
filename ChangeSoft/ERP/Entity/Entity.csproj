@@ -134,6 +134,7 @@
     <Compile Include="Dao\ITRateMsDao.cs" />
     <Compile Include="Dao\ITRateStpDao.cs" />
     <Compile Include="Dao\ITTermMsDao.cs" />
+    <Compile Include="Dao\ITTradeMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
     <Compile Include="Dao\StoredProcedureExecDaoOracleImp.cs" />
     <Compile Include="Dao\TCompanyConditionMsDaoOracleImp.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Dao\CTPmMsNoARDaoOracleImp.cs" />
     <Compile Include="Dao\ITSectionMsDao.cs" />
     <Compile Include="Dao\TSectionMsDaoOracleImp.cs" />
+    <Compile Include="Dao\TTradeMsDaoOracleImp.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
