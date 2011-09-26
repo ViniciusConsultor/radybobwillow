@@ -772,13 +772,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 1</value>
+    <value>554, 1</value>
   </data>
   <data name="btnSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
+    <value>112, 24</value>
   </data>
   <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -805,7 +805,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 1</value>
+    <value>447, 1</value>
   </data>
   <data name="btnClear.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -862,7 +862,7 @@
     <value>16</value>
   </data>
   <data name="tblPanelG2Btn.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,80.6142,Percent,19.3858,Absolute,112" /&gt;&lt;Rows Styles="Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,80.6142,Percent,19.3858,Absolute,113" /&gt;&lt;Rows Styles="Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG2CusID.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1000,7 +1000,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 0</value>
+    <value>361, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 26</value>
@@ -1036,7 +1036,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblMateriaNmDsp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 3</value>
+    <value>377, 3</value>
   </data>
   <data name="lblMateriaNmDsp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1072,7 +1072,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblMateriaNm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 0</value>
+    <value>284, 0</value>
   </data>
   <data name="lblMateriaNm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1105,7 +1105,7 @@
     <value>Fill</value>
   </data>
   <data name="txtVerNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 3</value>
+    <value>240, 3</value>
   </data>
   <data name="txtVerNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 19</value>
@@ -1135,7 +1135,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 0</value>
+    <value>205, 0</value>
   </data>
   <data name="lblVer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1168,7 +1168,7 @@
     <value>NoControl</value>
   </data>
   <data name="btntxtMaterialHelper.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 3</value>
+    <value>170, 3</value>
   </data>
   <data name="btntxtMaterialHelper.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 20</value>
@@ -1198,7 +1198,7 @@
     <value>3, 3</value>
   </data>
   <data name="txtMaterialCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 19</value>
+    <value>161, 19</value>
   </data>
   <data name="txtMaterialCode.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1246,7 +1246,7 @@
     <value>18</value>
   </data>
   <data name="tblPanelG2Pn1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label17" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNmDsp" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtVerNo" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblVer" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btntxtMaterialHelper" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtMaterialCode" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,81.18812,Percent,18.81188,Absolute,32,Absolute,47,Absolute,74,Absolute,16,Absolute,250,Absolute,41" /&gt;&lt;Rows Styles="Percent,50,Absolute,26,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label17" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNmDsp" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblMateriaNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtVerNo" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblVer" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btntxtMaterialHelper" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtMaterialCode" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,81.18812,Percent,18.81188,Absolute,32,Absolute,47,Absolute,74,Absolute,16,Absolute,250,Absolute,42" /&gt;&lt;Rows Styles="Percent,50,Absolute,26,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG2Pn2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1255,7 +1255,7 @@
     <value>Fill</value>
   </data>
   <data name="txtSpec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 3</value>
+    <value>377, 3</value>
   </data>
   <data name="txtSpec.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 19</value>
@@ -1285,7 +1285,7 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 0</value>
+    <value>361, 0</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 26</value>
@@ -1321,7 +1321,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblSpec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 0</value>
+    <value>283, 0</value>
   </data>
   <data name="lblSpec.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1357,7 +1357,7 @@
     <value>3, 3</value>
   </data>
   <data name="txtModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 19</value>
+    <value>277, 19</value>
   </data>
   <data name="txtModel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1405,7 +1405,7 @@
     <value>19</value>
   </data>
   <data name="tblPanelG2Pn2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtSpec" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblSpec" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtModel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,79.02299,Percent,20.97701,Absolute,16,Absolute,249,Absolute,42" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtSpec" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblSpec" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtModel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,79.02299,Percent,20.97701,Absolute,16,Absolute,249,Absolute,43" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="clsDetailCodeRef_39.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 107</value>
