@@ -528,28 +528,28 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cbbItemCls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="clsddlItemCls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="cbbItemCls.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="clsddlItemCls.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 3</value>
   </data>
-  <data name="cbbItemCls.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="clsddlItemCls.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 20</value>
   </data>
-  <data name="cbbItemCls.TabIndex" type="System.Int32, mscorlib">
+  <data name="clsddlItemCls.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;cbbItemCls.Name" xml:space="preserve">
-    <value>cbbItemCls</value>
+  <data name="&gt;&gt;clsddlItemCls.Name" xml:space="preserve">
+    <value>clsddlItemCls</value>
   </data>
-  <data name="&gt;&gt;cbbItemCls.Type" xml:space="preserve">
+  <data name="&gt;&gt;clsddlItemCls.Type" xml:space="preserve">
     <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;cbbItemCls.Parent" xml:space="preserve">
+  <data name="&gt;&gt;clsddlItemCls.Parent" xml:space="preserve">
     <value>tableLayoutPanel6</value>
   </data>
-  <data name="&gt;&gt;cbbItemCls.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;clsddlItemCls.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -583,7 +583,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label5" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbItemCls" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label5" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="clsddlItemCls" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel7.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1893,28 +1893,28 @@
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cbbMntCls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="clsddlMntCls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="cbbMntCls.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="clsddlMntCls.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 3</value>
   </data>
-  <data name="cbbMntCls.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="clsddlMntCls.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 20</value>
   </data>
-  <data name="cbbMntCls.TabIndex" type="System.Int32, mscorlib">
+  <data name="clsddlMntCls.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;cbbMntCls.Name" xml:space="preserve">
-    <value>cbbMntCls</value>
+  <data name="&gt;&gt;clsddlMntCls.Name" xml:space="preserve">
+    <value>clsddlMntCls</value>
   </data>
-  <data name="&gt;&gt;cbbMntCls.Type" xml:space="preserve">
+  <data name="&gt;&gt;clsddlMntCls.Type" xml:space="preserve">
     <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;cbbMntCls.Parent" xml:space="preserve">
+  <data name="&gt;&gt;clsddlMntCls.Parent" xml:space="preserve">
     <value>tableLayoutPanel23</value>
   </data>
-  <data name="&gt;&gt;cbbMntCls.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;clsddlMntCls.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel23.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1948,7 +1948,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel23.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label18" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbMntCls" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label18" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="clsddlMntCls" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel22.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2154,6 +2154,9 @@
   <data name="&gt;&gt;caplblFactory.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="txtFactoryCd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="txtFactoryCd.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10pt</value>
   </data>
@@ -2164,7 +2167,7 @@
     <value>8</value>
   </data>
   <data name="txtFactoryCd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
+    <value>94, 23</value>
   </data>
   <data name="txtFactoryCd.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2191,13 +2194,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblFactoryNm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 3</value>
+    <value>244, 3</value>
   </data>
   <data name="lblFactoryNm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="lblFactoryNm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>576, 20</value>
+    <value>526, 20</value>
   </data>
   <data name="lblFactoryNm.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2217,11 +2220,14 @@
   <data name="&gt;&gt;lblFactoryNm.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnFactoryHelper.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="btnFactoryHelper.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnFactoryHelper.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 1</value>
+    <value>216, 1</value>
   </data>
   <data name="btnFactoryHelper.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -2314,7 +2320,7 @@
     <value>2</value>
   </data>
   <data name="tlpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFactoryNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtFactoryCd" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactoryHelper" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="caplblFactory" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Absolute,50,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFactoryNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="txtFactoryCd" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnFactoryHelper" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="caplblFactory" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tlpG3.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>

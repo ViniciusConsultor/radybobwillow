@@ -45,7 +45,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbbItemCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsddlItemCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.caplblItemType = new System.Windows.Forms.Label();
             this.txtItemType = new System.Windows.Forms.TextBox();
@@ -86,7 +86,7 @@
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
-            this.cbbMntCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsddlMntCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnInquiry = new System.Windows.Forms.Button();
@@ -220,7 +220,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.cbbItemCls, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.clsddlItemCls, 2, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label5
@@ -228,17 +228,17 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // cbbItemCls
+            // clsddlItemCls
             // 
-            this.cbbItemCls.Autoaddblankitem = true;
-            this.cbbItemCls.ClsCd = "31";
-            this.cbbItemCls.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cbbItemCls, "cbbItemCls");
-            this.cbbItemCls.Name = "cbbItemCls";
-            this.cbbItemCls.Selectedindex = -1;
-            this.cbbItemCls.Selectedname = null;
-            this.cbbItemCls.Selectedvalue = null;
-            this.cbbItemCls.ShowNameDesc = false;
+            this.clsddlItemCls.Autoaddblankitem = true;
+            this.clsddlItemCls.ClsCd = "31";
+            this.clsddlItemCls.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsddlItemCls, "clsddlItemCls");
+            this.clsddlItemCls.Name = "clsddlItemCls";
+            this.clsddlItemCls.Selectedindex = -1;
+            this.clsddlItemCls.Selectedname = null;
+            this.clsddlItemCls.Selectedvalue = null;
+            this.clsddlItemCls.ShowNameDesc = false;
             // 
             // tableLayoutPanel7
             // 
@@ -476,7 +476,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel23, "tableLayoutPanel23");
             this.tableLayoutPanel23.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.cbbMntCls, 2, 0);
+            this.tableLayoutPanel23.Controls.Add(this.clsddlMntCls, 2, 0);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             // 
             // label18
@@ -484,17 +484,17 @@
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
             // 
-            // cbbMntCls
+            // clsddlMntCls
             // 
-            this.cbbMntCls.Autoaddblankitem = true;
-            this.cbbMntCls.ClsCd = "D9";
-            this.cbbMntCls.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cbbMntCls, "cbbMntCls");
-            this.cbbMntCls.Name = "cbbMntCls";
-            this.cbbMntCls.Selectedindex = -1;
-            this.cbbMntCls.Selectedname = null;
-            this.cbbMntCls.Selectedvalue = null;
-            this.cbbMntCls.ShowNameDesc = false;
+            this.clsddlMntCls.Autoaddblankitem = true;
+            this.clsddlMntCls.ClsCd = "D9";
+            this.clsddlMntCls.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsddlMntCls, "clsddlMntCls");
+            this.clsddlMntCls.Name = "clsddlMntCls";
+            this.clsddlMntCls.Selectedindex = -1;
+            this.clsddlMntCls.Selectedname = null;
+            this.clsddlMntCls.Selectedvalue = null;
+            this.clsddlMntCls.ShowNameDesc = false;
             // 
             // tableLayoutPanel24
             // 
@@ -732,8 +732,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel0;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView FrmMaterialSearch_pagerGridView1;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbItemCls;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbMntCls;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddlItemCls;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddlMntCls;
         private System.Windows.Forms.TableLayoutPanel tlpG1;
         private System.Windows.Forms.TableLayoutPanel tlpG3;
 
