@@ -47,6 +47,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 //DataTable dt = new DataTable();
                 //dt.TableName = tablename;
                 //dt.Load(rdr, LoadOption.Upsert);
+     
 
                 //ds.Tables.Add(dt);
                 //result = (IList<MFunctioncatalog>)FindAll(typeof(MFunctioncatalog));

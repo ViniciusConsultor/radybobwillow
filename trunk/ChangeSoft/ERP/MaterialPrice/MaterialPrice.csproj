@@ -8,8 +8,8 @@
     <ProjectGuid>{B6EFF4A6-EE4A-4C93-A4D8-71E4CDBCB0B1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MaterialPrice</RootNamespace>
-    <AssemblyName>MaterialPrice</AssemblyName>
+    <RootNamespace>Com.GainWinSoft.ERP.MaterialPrice</RootNamespace>
+    <AssemblyName>Com.GainWinSoft.ERP.MaterialPrice</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

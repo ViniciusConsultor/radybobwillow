@@ -40,14 +40,14 @@
             this.lblCustomer = new System.Windows.Forms.Label();
             this.btnCustomerHelper = new System.Windows.Forms.Button();
             this.txtCustomerCd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.caplblCustomer = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.cbbItemCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.caplblItemType = new System.Windows.Forms.Label();
             this.txtItemType = new System.Windows.Forms.TextBox();
             this.btnItemTypeHelper = new System.Windows.Forms.Button();
             this.lblItemType = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.caplblMaker = new System.Windows.Forms.Label();
             this.txtMakerCd = new System.Windows.Forms.TextBox();
             this.btnMakerHelper = new System.Windows.Forms.Button();
             this.lblMakerNm = new System.Windows.Forms.Label();
@@ -90,15 +90,15 @@
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnInquiry = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.caplblFactory = new System.Windows.Forms.Label();
             this.txtFactoryCd = new System.Windows.Forms.TextBox();
             this.lblFactoryNm = new System.Windows.Forms.Label();
             this.btnFactoryHelper = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tlpG1 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpG3 = new System.Windows.Forms.TableLayoutPanel();
             this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
-            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tableLayoutPanel14.SuspendLayout();
             this.tlpG2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -177,7 +177,7 @@
             this.tableLayoutPanel4.Controls.Add(this.lblCustomer, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnCustomerHelper, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtCustomerCd, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.caplblCustomer, 0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // lblCustomer
@@ -199,10 +199,10 @@
             resources.ApplyResources(this.txtCustomerCd, "txtCustomerCd");
             this.txtCustomerCd.Name = "txtCustomerCd";
             // 
-            // label3
+            // caplblCustomer
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.caplblCustomer, "caplblCustomer");
+            this.caplblCustomer.Name = "caplblCustomer";
             // 
             // tableLayoutPanel5
             // 
@@ -243,16 +243,16 @@
             // tableLayoutPanel7
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
-            this.tableLayoutPanel7.Controls.Add(this.label19, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.caplblItemType, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txtItemType, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.btnItemTypeHelper, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.lblItemType, 4, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
-            // label19
+            // caplblItemType
             // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
+            resources.ApplyResources(this.caplblItemType, "caplblItemType");
+            this.caplblItemType.Name = "caplblItemType";
             // 
             // txtItemType
             // 
@@ -298,7 +298,6 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtDispItemCd
             // 
@@ -355,16 +354,16 @@
             // tableLayoutPanel15
             // 
             resources.ApplyResources(this.tableLayoutPanel15, "tableLayoutPanel15");
-            this.tableLayoutPanel15.Controls.Add(this.label12, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.caplblMaker, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.txtMakerCd, 2, 0);
             this.tableLayoutPanel15.Controls.Add(this.btnMakerHelper, 3, 0);
             this.tableLayoutPanel15.Controls.Add(this.lblMakerNm, 4, 0);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             // 
-            // label12
+            // caplblMaker
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            resources.ApplyResources(this.caplblMaker, "caplblMaker");
+            this.caplblMaker.Name = "caplblMaker";
             // 
             // txtMakerCd
             // 
@@ -517,10 +516,10 @@
             this.btnInquiry.UseVisualStyleBackColor = true;
             this.btnInquiry.Click += new System.EventHandler(this.btnInquiry_Click);
             // 
-            // label1
+            // caplblFactory
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.caplblFactory, "caplblFactory");
+            this.caplblFactory.Name = "caplblFactory";
             // 
             // txtFactoryCd
             // 
@@ -549,30 +548,6 @@
             this.tableLayoutPanel0.Controls.Add(this.tlpG1, 0, 1);
             this.tableLayoutPanel0.Controls.Add(this.tlpG3, 0, 3);
             this.tableLayoutPanel0.Name = "tableLayoutPanel0";
-            // 
-            // tlpG1
-            // 
-            resources.ApplyResources(this.tlpG1, "tlpG1");
-            this.tlpG1.Controls.Add(this.lblFactoryNm, 4, 0);
-            this.tlpG1.Controls.Add(this.txtFactoryCd, 2, 0);
-            this.tlpG1.Controls.Add(this.btnFactoryHelper, 3, 0);
-            this.tlpG1.Controls.Add(this.label1, 0, 0);
-            this.tlpG1.Name = "tlpG1";
-            // 
-            // tlpG3
-            // 
-            resources.ApplyResources(this.tlpG3, "tlpG3");
-            this.tlpG3.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 0);
-            this.tlpG3.Name = "tlpG3";
-            // 
-            // FrmMaterialSearch_pagerGridView1
-            // 
-            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
-            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
-            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
-            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
-            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
             // 
             // commonToolStrip1
             // 
@@ -608,6 +583,30 @@
             this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_OkClick);
             this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_ExitClick);
             this.commonToolStrip1.GobackClick += new System.EventHandler(this.commonToolStrip1_GobackClick);
+            // 
+            // tlpG1
+            // 
+            resources.ApplyResources(this.tlpG1, "tlpG1");
+            this.tlpG1.Controls.Add(this.lblFactoryNm, 4, 0);
+            this.tlpG1.Controls.Add(this.txtFactoryCd, 2, 0);
+            this.tlpG1.Controls.Add(this.btnFactoryHelper, 3, 0);
+            this.tlpG1.Controls.Add(this.caplblFactory, 0, 0);
+            this.tlpG1.Name = "tlpG1";
+            // 
+            // tlpG3
+            // 
+            resources.ApplyResources(this.tlpG3, "tlpG3");
+            this.tlpG3.Controls.Add(this.FrmMaterialSearch_pagerGridView1, 0, 0);
+            this.tlpG3.Name = "tlpG3";
+            // 
+            // FrmMaterialSearch_pagerGridView1
+            // 
+            this.FrmMaterialSearch_pagerGridView1.Columninfolist = null;
+            this.FrmMaterialSearch_pagerGridView1.DataMember = "";
+            this.FrmMaterialSearch_pagerGridView1.DataSource = null;
+            resources.ApplyResources(this.FrmMaterialSearch_pagerGridView1, "FrmMaterialSearch_pagerGridView1");
+            this.FrmMaterialSearch_pagerGridView1.Name = "FrmMaterialSearch_pagerGridView1";
+            this.FrmMaterialSearch_pagerGridView1.Pagerhelper = null;
             // 
             // FrmMaterialSearch
             // 
@@ -671,12 +670,12 @@
         private System.Windows.Forms.TableLayoutPanel tlpG2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label caplblFactory;
         private System.Windows.Forms.TextBox txtFactoryCd;
         private System.Windows.Forms.Label lblFactoryNm;
         private System.Windows.Forms.Button btnFactoryHelper;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label caplblCustomer;
         private System.Windows.Forms.TextBox txtCustomerCd;
         private System.Windows.Forms.Button btnCustomerHelper;
         private System.Windows.Forms.Label lblCustomer;
@@ -684,7 +683,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label caplblItemType;
         private System.Windows.Forms.TextBox txtItemType;
         private System.Windows.Forms.Button btnItemTypeHelper;
         private System.Windows.Forms.Label lblItemType;
@@ -702,7 +701,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label caplblMaker;
         private System.Windows.Forms.TextBox txtMakerCd;
         private System.Windows.Forms.Button btnMakerHelper;
         private System.Windows.Forms.Label lblMakerNm;

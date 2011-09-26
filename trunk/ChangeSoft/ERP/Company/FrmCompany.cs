@@ -119,7 +119,7 @@ namespace Com.GainWinSoft.ERP.Company
 //                    IList<MessageVo> msglist = new List<MessageVo>();
 //                    MessageVo vo = new MessageVo();
 //                    vo.MessageType = "Warning";
-//                    vo.ResultMessage = MessageUtils.GetMessage("W0005", ierrcd, ierritem);
+//                    vo.ResultMessage = MessageUtils.GetMessage("S0001", ierrcd, ierritem);
 //                    msglist.Add(vo);
 //                    this.baseform.msgwindow.Messagelist = msglist;
 //                    this.baseform.msgwindow.ShowMessage();

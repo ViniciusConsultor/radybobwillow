@@ -17,7 +17,7 @@ namespace Com.GainWinSoft.ERP.CodeRef.Action
         public DataSet GetClsDetailDataSet(string clsCd)
         {
             ICClsDetailNoARDao d = ComponentLocator.Instance().Resolve<ICClsDetailNoARDao>();
-            IList<CClsDetailNoAR> list = d.GetClsDetail(LangUtils.GetCurrentLanguage(), clsCd);
+            IList<CClsDetailNoAR> list = d.GetClsDetailList(LangUtils.GetCurrentLanguage(), clsCd);
             DataTable dt = DataTableUtils.ToDataTable(list);
             dt.TableName = "CClsDetailNoAR";
             DataSet ds = new DataSet();

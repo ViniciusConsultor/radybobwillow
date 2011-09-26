@@ -124,6 +124,15 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
+        ///   查找类似 数据库操作失败，错误代码：%1  错误内容：%2 的本地化字符串。
+        /// </summary>
+        internal static string S0001 {
+            get {
+                return ResourceManager.GetString("S0001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 %1 不能为空，请输入。 的本地化字符串。
         /// </summary>
         internal static string W0001 {
@@ -156,15 +165,6 @@ namespace Com.GainWinSoft.Common.Resources {
         internal static string W0004 {
             get {
                 return ResourceManager.GetString("W0004", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 数据库操作失败，错误代码：%1  错误内容：%2 的本地化字符串。
-        /// </summary>
-        internal static string W0005 {
-            get {
-                return ResourceManager.GetString("W0005", resourceCulture);
             }
         }
     }

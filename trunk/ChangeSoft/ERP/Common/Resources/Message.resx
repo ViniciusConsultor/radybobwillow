@@ -138,6 +138,9 @@
   <data name="I0102" xml:space="preserve">
     <value>客户报价单和订单的输入和查询，主要功能是通过统一订单提供用户整合的一站式供应链服务，订单管理以及订单跟踪管理能够使用户的物流服务得到全程的满足。</value>
   </data>
+  <data name="S0001" xml:space="preserve">
+    <value>数据库操作失败，错误代码：%1  错误内容：%2</value>
+  </data>
   <data name="W0001" xml:space="preserve">
     <value>%1 不能为空，请输入。</value>
   </data>
@@ -149,8 +152,5 @@
   </data>
   <data name="W0004" xml:space="preserve">
     <value>%1 在数据表中不存在，请重新输入。</value>
-  </data>
-  <data name="W0005" xml:space="preserve">
-    <value>数据库操作失败，错误代码：%1  错误内容：%2</value>
   </data>
 </root>
