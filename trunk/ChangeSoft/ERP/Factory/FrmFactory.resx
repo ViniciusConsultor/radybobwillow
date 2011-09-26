@@ -136,19 +136,19 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 14pt</value>
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
   <data name="lblMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
+    <value>0, 6</value>
   </data>
   <data name="lblMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 26</value>
+    <value>915, 32</value>
   </data>
   <data name="lblMode.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -160,7 +160,7 @@
     <value>lblMode</value>
   </data>
   <data name="&gt;&gt;lblMode.Type" xml:space="preserve">
-    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4285.42014, Culture=neutral, PublicKeyToken=null</value>
+    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4286.17742, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblMode.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -175,13 +175,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 32</value>
+    <value>263, 39</value>
   </data>
   <data name="btnFactory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="btnFactory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
+    <value>28, 31</value>
   </data>
   <data name="btnFactory.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -202,13 +202,16 @@
     <value>Fill</value>
   </data>
   <data name="txtFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 34</value>
+    <value>148, 42</value>
+  </data>
+  <data name="txtFactory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtFactory.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="txtFactory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 19</value>
+    <value>111, 21</value>
   </data>
   <data name="txtFactory.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -238,13 +241,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 34</value>
+    <value>697, 42</value>
   </data>
   <data name="lblStar2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="lblStar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>9, 20</value>
+    <value>11, 25</value>
   </data>
   <data name="lblStar2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -277,13 +280,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblFactory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 31</value>
+    <value>0, 38</value>
   </data>
   <data name="lblFactory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblFactory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 33</value>
   </data>
   <data name="lblFactory.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -316,13 +319,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblCompanyNM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 34</value>
+    <value>861, 42</value>
   </data>
   <data name="lblCompanyNM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="lblCompanyNM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 20</value>
+    <value>51, 25</value>
   </data>
   <data name="lblCompanyNM.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -349,13 +352,13 @@
     <value>Fill</value>
   </data>
   <data name="lblCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 31</value>
+    <value>601, 38</value>
   </data>
   <data name="lblCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 26</value>
+    <value>93, 33</value>
   </data>
   <data name="lblCompany.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -388,13 +391,13 @@
     <value>MiddleRight</value>
   </data>
   <data name="lblStar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 31</value>
+    <value>128, 38</value>
   </data>
   <data name="lblStar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 33</value>
   </data>
   <data name="lblStar1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -421,13 +424,16 @@
     <value>Fill</value>
   </data>
   <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 34</value>
+    <value>714, 42</value>
+  </data>
+  <data name="txtCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtCompany.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 19</value>
+    <value>111, 21</value>
   </data>
   <data name="txtCompany.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -448,13 +454,13 @@
     <value>Fill</value>
   </data>
   <data name="btnCompany.Location" type="System.Drawing.Point, System.Drawing">
-    <value>712, 32</value>
+    <value>829, 39</value>
   </data>
   <data name="btnCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="btnCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
+    <value>28, 31</value>
   </data>
   <data name="btnCompany.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -475,7 +481,7 @@
     <value>Fill</value>
   </data>
   <data name="tpG1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 35</value>
+    <value>0, 44</value>
   </data>
   <data name="tpG1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -484,7 +490,7 @@
     <value>3</value>
   </data>
   <data name="tpG1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 57</value>
+    <value>915, 71</value>
   </data>
   <data name="tpG1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -502,7 +508,7 @@
     <value>0</value>
   </data>
   <data name="tpG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="0" ColumnSpan="11" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,100,Absolute,26,Absolute,250,Absolute,15,Absolute,80,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Absolute,5,Absolute,26,Absolute,26" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMode" Row="1" RowSpan="1" Column="0" ColumnSpan="11" /&gt;&lt;Control Name="btnFactory" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactory" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFactory" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="2" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,128,Absolute,17,Absolute,117,Absolute,30,Absolute,292,Absolute,17,Absolute,93,Absolute,17,Absolute,117,Absolute,30,Percent,100" /&gt;&lt;Rows Styles="Absolute,6,Absolute,32,Absolute,32" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -517,7 +523,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="commonToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 35</value>
+    <value>915, 44</value>
   </data>
   <data name="commonToolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -541,10 +547,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbChange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 263</value>
+    <value>148, 324</value>
+  </data>
+  <data name="cbbChange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbChange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 20</value>
+    <value>227, 24</value>
   </data>
   <data name="cbbChange.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -574,13 +583,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 260</value>
+    <value>128, 320</value>
   </data>
   <data name="lblStar19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar19.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -613,13 +622,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblChange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 260</value>
+    <value>0, 320</value>
   </data>
   <data name="lblChange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblChange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblChange.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -646,10 +655,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbDecide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 393</value>
+    <value>526, 484</value>
+  </data>
+  <data name="cbbDecide.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbDecide.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbDecide.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -679,13 +691,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 390</value>
+    <value>506, 480</value>
   </data>
   <data name="lblStar18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar18.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -718,13 +730,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblDecide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 390</value>
+    <value>378, 480</value>
   </data>
   <data name="lblDecide.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblDecide.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblDecide.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -751,10 +763,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 367</value>
+    <value>526, 452</value>
+  </data>
+  <data name="cbbCost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbCost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbCost.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -784,13 +799,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 364</value>
+    <value>506, 448</value>
   </data>
   <data name="lblStar17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar17.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -823,13 +838,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 364</value>
+    <value>378, 448</value>
   </data>
   <data name="lblCost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblCost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblCost.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -856,10 +871,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 341</value>
+    <value>526, 420</value>
+  </data>
+  <data name="cbbPlan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbPlan.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -889,13 +907,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 338</value>
+    <value>506, 416</value>
   </data>
   <data name="lblStar16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar16.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -928,13 +946,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 338</value>
+    <value>378, 416</value>
   </data>
   <data name="lblPlan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblPlan.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -961,10 +979,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 315</value>
+    <value>526, 388</value>
+  </data>
+  <data name="cbbRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbRate.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -994,13 +1015,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 312</value>
+    <value>506, 384</value>
   </data>
   <data name="lblStar15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar15.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1033,13 +1054,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 312</value>
+    <value>378, 384</value>
   </data>
   <data name="lblRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblRate.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1066,10 +1087,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbSafe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 289</value>
+    <value>526, 356</value>
+  </data>
+  <data name="cbbSafe.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbSafe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbSafe.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1099,13 +1123,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 286</value>
+    <value>506, 352</value>
   </data>
   <data name="lblStar14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar14.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1138,13 +1162,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblSafe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 286</value>
+    <value>378, 352</value>
   </data>
   <data name="lblSafe.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblSafe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblSafe.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -1168,13 +1192,16 @@
     <value>17</value>
   </data>
   <data name="txtStockPeriod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 315</value>
+    <value>148, 388</value>
+  </data>
+  <data name="txtStockPeriod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtStockPeriod.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="txtStockPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
+    <value>46, 21</value>
   </data>
   <data name="txtStockPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1204,13 +1231,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 312</value>
+    <value>128, 384</value>
   </data>
   <data name="lblStar12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar12.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -1243,13 +1270,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStockPeriod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 312</value>
+    <value>0, 384</value>
   </data>
   <data name="lblStockPeriod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStockPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblStockPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -1273,13 +1300,16 @@
     <value>20</value>
   </data>
   <data name="txtAutoPeriod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 289</value>
+    <value>148, 356</value>
+  </data>
+  <data name="txtAutoPeriod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtAutoPeriod.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="txtAutoPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
+    <value>46, 21</value>
   </data>
   <data name="txtAutoPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -1309,13 +1339,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 286</value>
+    <value>128, 352</value>
   </data>
   <data name="lblStar11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar11.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -1348,13 +1378,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblAutoPeriod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 286</value>
+    <value>0, 352</value>
   </data>
   <data name="lblAutoPeriod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblAutoPeriod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblAutoPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1378,13 +1408,16 @@
     <value>23</value>
   </data>
   <data name="txtArrange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 341</value>
+    <value>148, 420</value>
+  </data>
+  <data name="txtArrange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtArrange.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="txtArrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
+    <value>46, 21</value>
   </data>
   <data name="txtArrange.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1414,13 +1447,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 338</value>
+    <value>128, 416</value>
   </data>
   <data name="lblStar13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar13.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1453,13 +1486,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblArrange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 338</value>
+    <value>0, 416</value>
   </data>
   <data name="lblArrange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblArrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblArrange.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -1492,13 +1525,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblDepartNM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 237</value>
+    <value>649, 292</value>
   </data>
   <data name="lblDepartNM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="lblDepartNM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 20</value>
+    <value>228, 24</value>
   </data>
   <data name="lblDepartNM.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1525,13 +1558,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnDepart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 235</value>
+    <value>617, 289</value>
   </data>
   <data name="btnDepart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="btnDepart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
+    <value>28, 30</value>
   </data>
   <data name="btnDepart.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -1552,13 +1585,16 @@
     <value>Fill</value>
   </data>
   <data name="txtDepart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 237</value>
+    <value>526, 292</value>
+  </data>
+  <data name="txtDepart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtDepart.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="txtDepart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 19</value>
+    <value>87, 21</value>
   </data>
   <data name="txtDepart.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1588,13 +1624,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblDepart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 234</value>
+    <value>378, 288</value>
   </data>
   <data name="lblDepart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblDepart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblDepart.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -1621,13 +1657,16 @@
     <value>Fill</value>
   </data>
   <data name="txtBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 237</value>
+    <value>148, 292</value>
+  </data>
+  <data name="txtBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtBase.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="txtBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 19</value>
+    <value>227, 21</value>
   </data>
   <data name="txtBase.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1654,13 +1693,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 234</value>
+    <value>0, 288</value>
   </data>
   <data name="lblBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblBase.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1687,10 +1726,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbTimezone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 211</value>
+    <value>526, 260</value>
+  </data>
+  <data name="cbbTimezone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbTimezone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbTimezone.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1720,13 +1762,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 208</value>
+    <value>506, 256</value>
   </data>
   <data name="lblStar10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar10.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1759,13 +1801,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblTimezone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 208</value>
+    <value>378, 256</value>
   </data>
   <data name="lblTimezone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblTimezone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblTimezone.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1792,10 +1834,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 211</value>
+    <value>148, 260</value>
+  </data>
+  <data name="cbbLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 20</value>
+    <value>227, 24</value>
   </data>
   <data name="cbbLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1825,13 +1870,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 208</value>
+    <value>128, 256</value>
   </data>
   <data name="lblStar9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar9.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -1864,13 +1909,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 208</value>
+    <value>0, 256</value>
   </data>
   <data name="lblLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1897,13 +1942,16 @@
     <value>Fill</value>
   </data>
   <data name="txtFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 185</value>
+    <value>526, 228</value>
+  </data>
+  <data name="txtFax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtFax.MaxLength" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="txtFax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
+    <value>234, 21</value>
   </data>
   <data name="txtFax.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1930,13 +1978,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 182</value>
+    <value>378, 224</value>
   </data>
   <data name="lblFax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblFax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblFax.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -1963,13 +2011,16 @@
     <value>Fill</value>
   </data>
   <data name="txtTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 185</value>
+    <value>148, 228</value>
+  </data>
+  <data name="txtTel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtTel.MaxLength" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="txtTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 19</value>
+    <value>227, 21</value>
   </data>
   <data name="txtTel.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1999,13 +2050,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 182</value>
+    <value>128, 224</value>
   </data>
   <data name="lblStar8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar8.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -2038,13 +2089,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 182</value>
+    <value>0, 224</value>
   </data>
   <data name="lblTel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblTel.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -2071,13 +2122,16 @@
     <value>Fill</value>
   </data>
   <data name="txtAddress3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 159</value>
+    <value>148, 196</value>
+  </data>
+  <data name="txtAddress3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtAddress3.MaxLength" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
   <data name="txtAddress3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtAddress3.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2104,13 +2158,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblAddress3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 156</value>
+    <value>0, 192</value>
   </data>
   <data name="lblAddress3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblAddress3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblAddress3.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2137,13 +2191,16 @@
     <value>Fill</value>
   </data>
   <data name="txtAddress2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 133</value>
+    <value>148, 164</value>
+  </data>
+  <data name="txtAddress2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtAddress2.MaxLength" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
   <data name="txtAddress2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtAddress2.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2170,13 +2227,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblAddress2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 130</value>
+    <value>0, 160</value>
   </data>
   <data name="lblAddress2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblAddress2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblAddress2.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2203,13 +2260,16 @@
     <value>Fill</value>
   </data>
   <data name="txtAddress1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 107</value>
+    <value>148, 132</value>
+  </data>
+  <data name="txtAddress1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtAddress1.MaxLength" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
   <data name="txtAddress1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtAddress1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -2239,13 +2299,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 104</value>
+    <value>128, 128</value>
   </data>
   <data name="lblStar7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar7.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2278,13 +2338,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblAddress1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 104</value>
+    <value>0, 128</value>
   </data>
   <data name="lblAddress1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblAddress1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblAddress1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -2320,13 +2380,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 78</value>
+    <value>506, 96</value>
   </data>
   <data name="lblStar6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar6.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2359,13 +2419,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblCountry.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 78</value>
+    <value>378, 96</value>
   </data>
   <data name="lblCountry.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblCountry.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblCountry.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2392,13 +2452,16 @@
     <value>Fill</value>
   </data>
   <data name="txtZipCD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 81</value>
+    <value>148, 100</value>
+  </data>
+  <data name="txtZipCD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtZipCD.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="txtZipCD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 19</value>
+    <value>227, 21</value>
   </data>
   <data name="txtZipCD.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2428,13 +2491,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 78</value>
+    <value>128, 96</value>
   </data>
   <data name="lblStar5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2467,13 +2530,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblZipCD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 78</value>
+    <value>0, 96</value>
   </data>
   <data name="lblZipCD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblZipCD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblZipCD.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2500,13 +2563,16 @@
     <value>Fill</value>
   </data>
   <data name="txtPinyin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 55</value>
+    <value>148, 68</value>
+  </data>
+  <data name="txtPinyin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtPinyin.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="txtPinyin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtPinyin.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2533,13 +2599,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblPinyin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 52</value>
+    <value>0, 64</value>
   </data>
   <data name="lblPinyin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblPinyin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblPinyin.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2566,13 +2632,16 @@
     <value>Fill</value>
   </data>
   <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 29</value>
+    <value>148, 36</value>
+  </data>
+  <data name="txtName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtName.MaxLength" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
   <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtName.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2602,13 +2671,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblStar4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2641,13 +2710,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
+    <value>0, 32</value>
   </data>
   <data name="lblName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2674,13 +2743,16 @@
     <value>Fill</value>
   </data>
   <data name="txtAbbreviation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 3</value>
+    <value>148, 4</value>
+  </data>
+  <data name="txtAbbreviation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txtAbbreviation.MaxLength" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
   <data name="txtAbbreviation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 19</value>
+    <value>495, 21</value>
   </data>
   <data name="txtAbbreviation.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2710,13 +2782,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblStar3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 0</value>
+    <value>128, 0</value>
   </data>
   <data name="lblStar3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblStar3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 26</value>
+    <value>17, 32</value>
   </data>
   <data name="lblStar3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2755,7 +2827,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblAbbreviation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 26</value>
+    <value>128, 32</value>
   </data>
   <data name="lblAbbreviation.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2782,10 +2854,13 @@
     <value>Fill</value>
   </data>
   <data name="cbbCountry.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 81</value>
+    <value>526, 100</value>
+  </data>
+  <data name="cbbCountry.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbbCountry.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>234, 24</value>
   </data>
   <data name="cbbCountry.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2806,7 +2881,7 @@
     <value>Fill</value>
   </data>
   <data name="tpG2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 92</value>
+    <value>0, 115</value>
   </data>
   <data name="tpG2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -2815,7 +2890,7 @@
     <value>19</value>
   </data>
   <data name="tpG2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 460</value>
+    <value>915, 575</value>
   </data>
   <data name="tpG2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2833,7 +2908,7 @@
     <value>2</value>
   </data>
   <data name="tpG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="cbbChange" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar19" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblChange" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbDecide" Row="15" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar18" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblDecide" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbCost" Row="14" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar17" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCost" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbPlan" Row="13" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar16" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblPlan" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbRate" Row="12" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar15" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbSafe" Row="11" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar14" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblSafe" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtStockPeriod" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar12" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStockPeriod" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAutoPeriod" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar11" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAutoPeriod" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtArrange" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar13" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblArrange" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDepartNM" Row="9" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="btnDepart" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtDepart" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblDepart" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtBase" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblBase" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbTimezone" Row="8" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar10" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblTimezone" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbLanguage" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar9" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLanguage" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtFax" Row="7" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblFax" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtTel" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar8" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblTel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress3" Row="6" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress3" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress2" Row="5" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress1" Row="4" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar7" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAddress1" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCountry" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtZipCD" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblZipCD" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtPinyin" Row="2" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblPinyin" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtName" Row="1" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblName" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAbbreviation" Row="0" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAbbreviation" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbCountry" Row="3" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,200,Absolute,110,Absolute,15,Absolute,80,Absolute,26,Absolute,100,Absolute,100,Percent,100" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100,Absolute,1,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="cbbChange" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar19" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblChange" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbDecide" Row="15" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar18" Row="15" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblDecide" Row="15" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbCost" Row="14" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar17" Row="14" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCost" Row="14" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbPlan" Row="13" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar16" Row="13" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblPlan" Row="13" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbRate" Row="12" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar15" Row="12" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="12" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbSafe" Row="11" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar14" Row="11" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblSafe" Row="11" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtStockPeriod" Row="12" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar12" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStockPeriod" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAutoPeriod" Row="11" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar11" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAutoPeriod" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtArrange" Row="13" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar13" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblArrange" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDepartNM" Row="9" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="btnDepart" Row="9" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtDepart" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblDepart" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtBase" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblBase" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbTimezone" Row="8" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblStar10" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblTimezone" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="cbbLanguage" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar9" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLanguage" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtFax" Row="7" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="lblFax" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtTel" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar8" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblTel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress3" Row="6" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress3" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress2" Row="5" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblAddress2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAddress1" Row="4" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar7" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAddress1" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCountry" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtZipCD" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblZipCD" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtPinyin" Row="2" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblPinyin" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtName" Row="1" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblName" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtAbbreviation" Row="0" RowSpan="1" Column="2" ColumnSpan="5" /&gt;&lt;Control Name="lblStar3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblAbbreviation" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cbbCountry" Row="3" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,128,Absolute,17,Absolute,233,Absolute,128,Absolute,17,Absolute,93,Absolute,30,Absolute,117,Absolute,117,Percent,100" /&gt;&lt;Rows Styles="Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Absolute,32,Percent,100,Absolute,1,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2848,7 +2923,7 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 562</value>
+    <value>915, 702</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2866,7 +2941,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tpG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tpG2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,57,Percent,100,Absolute,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tpG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tpG2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,44,Absolute,71,Percent,100,Absolute,12" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tpBase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2881,7 +2956,7 @@
     <value>1</value>
   </data>
   <data name="tpBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 562</value>
+    <value>915, 702</value>
   </data>
   <data name="tpBase.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2899,19 +2974,22 @@
     <value>0</value>
   </data>
   <data name="tpBase.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,562" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,702" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>784, 562</value>
+    <value>915, 702</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> 工厂情报设定</value>

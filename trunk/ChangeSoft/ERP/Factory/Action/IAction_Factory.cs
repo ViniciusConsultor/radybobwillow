@@ -1,10 +1,11 @@
 ﻿using System;
 using Com.GainWinSoft.ERP.Entity;
+using System.Collections.Generic;
 
 namespace Com.GainWinSoft.ERP.Factory.Action
 {
     public interface IAction_Factory
     {
-        System.Collections.Generic.IList<Com.GainWinSoft.ERP.Entity.MFunctioncatalog> GetFunctionDataList();
+        TFactoryMs GetFactoryByCd(String facCd);
     }
 }

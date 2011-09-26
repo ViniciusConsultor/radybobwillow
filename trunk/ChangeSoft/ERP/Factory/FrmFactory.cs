@@ -11,6 +11,8 @@ using WeifenLuo.WinFormsUI.Docking;
 using Com.GainWinSoft.Common.Vo;
 using Noogen.Validation;
 using Com.GainWinSoft.ERP.MasterCheck;
+using Com.GainWinSoft.ERP.Factory.Action;
+using Com.GainWinSoft.ERP.Entity;
 
 namespace Com.GainWinSoft.ERP.Factory
 {
@@ -68,7 +70,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.removeAllClickEvent();
             this.addAllClickEvent();
 
-            this.txtCompany.Text = "1";
+            this.txtCompany.Text = this.uservo.CompanyCondition.ICompanyCd;
             #region Company delete
             this.lblCompany.Visible = false;
             this.lblStar2.Visible = false;
@@ -118,6 +120,12 @@ namespace Com.GainWinSoft.ERP.Factory
 
             this.LoadData();
             this.SetLayoutG1G2();
+            this.SetToolBarG1G2();
+
+            if (Constant.MODE_DEL.Equals(this.strMode))
+            {
+                this.tpG2.Enabled = false;
+            }
         }
 
         /// <summary>
@@ -127,6 +135,7 @@ namespace Com.GainWinSoft.ERP.Factory
         {
             this.ClearError();
             this.SetLayoutG2G1();
+            this.SetToolBarG2G1();
         }
 
         /// <summary>
@@ -175,7 +184,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void btnFactory_Click(object sender, EventArgs e)
         {
-            CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(this.uservo.CompanyCondition.ICompanyCd);
+            CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(this.txtCompany.Text);
             cr.AddValueControl(this.txtFactory);
             cr.ShowDialog(this);
             this.txtFactory.Focus();
@@ -186,7 +195,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void btnDepart_Click(object sender, EventArgs e)
         {
-            CodeRef.CodeRefSection cr = new CodeRef.CodeRefSection(this.uservo.CompanyCondition.ICompanyCd);
+            CodeRef.CodeRefSection cr = new CodeRef.CodeRefSection(this.txtCompany.Text);
             cr.AddValueControl(this.txtDepart);
             cr.AddNameControl(this.lblDepartNM);
             cr.ShowDialog(this);
@@ -565,7 +574,7 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void ruleCompanyExit_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
-            e.IsValid = false;
+            //e.IsValid = false;
         }
 
         /// <summary>
@@ -612,12 +621,98 @@ namespace Com.GainWinSoft.ERP.Factory
         }
         #endregion
 
-        #region 各种数据抽出
+        #region 各种数据处理
         /// <summary>
         /// 根据画面输入条件，抽出数据
         /// </summary>
         private void LoadData()
         {
+            IAction_Factory ac = ComponentLocator.Instance().Resolve<IAction_Factory>();
+            TFactoryMs facVo = ac.GetFactoryByCd(this.txtFactory.Text);
+
+            this.SetVoToForm(facVo);
+        }
+
+        /// <summary>
+        /// 根据EntityVo的值给画面上的控件赋值
+        /// </summary>
+        private void SetVoToForm(TFactoryMs facVo)
+        {
+            #region
+            this.txtAbbreviation.Text = facVo.IFacArgDesc;
+            this.txtName.Text = facVo.IFacDesc;
+            this.txtPinyin.Text = facVo.IFacDescKana;
+            this.txtZipCD.Text = facVo.IMailNo;
+            this.cbbCountry.Selectedvalue = facVo.ICountryCd;
+            this.txtAddress1.Text = facVo.IAddress1;
+            this.txtAddress2.Text = facVo.IAddress2;
+            this.txtAddress3.Text = facVo.IAddress3;
+            this.txtTel.Text = facVo.ITel;
+            this.txtFax.Text = facVo.IFaxNo;
+            this.cbbLanguage.Selectedvalue = facVo.ILanguageCd;
+            this.cbbTimezone.Selectedvalue = facVo.ITimezoneCd;
+            this.txtBase.Text = facVo.IBaseCd;
+            this.txtDepart.Text = facVo.ISectionCd;
+
+            CheckSection secCheck = new CheckSection();
+            TSectionMs secVo = secCheck.Check01Vo(this.txtCompany.Text, facVo.ISectionCd);
+            if (secVo != null && !String.IsNullOrEmpty(secVo.Id.ISectionCd))
+            {
+                this.lblDepartNM.Text = secVo.ISectionDesc;
+            }
+            else
+            {
+                this.lblDepartNM.Text = "";
+            }
+
+            this.cbbChange.Selectedvalue = facVo.IEgChgCls;
+            this.txtAutoPeriod.Text = facVo.IMrpPeriod.ToString();
+            this.txtStockPeriod.Text = facVo.IAlcPeriod.ToString();
+            this.txtArrange.Text = facVo.IPoCreatePeriod.ToString();
+            this.cbbSafe.Selectedvalue = facVo.ISafeStockCls;
+            this.cbbRate.Selectedvalue = facVo.IRateCls;
+            this.cbbPlan.Selectedvalue = facVo.IPlanCrtCls;
+            this.cbbCost.Selectedvalue = facVo.IRsltCstCalcCls;
+            this.cbbDecide.Selectedvalue = facVo.IPoCreateCls;
+            #endregion
+        }
+
+        /// <summary>
+        /// 根据画面上控件的值，生成EntityVo
+        /// </summary>
+        private TFactoryMs getVoFromForm()
+        {
+            TFactoryMs facVo = new TFactoryMs();
+
+            #region
+            facVo.ICompanyCd = this.txtCompany.Text;
+            facVo.IFacCd = this.txtFactory.Text;
+            facVo.IFacArgDesc = this.txtAbbreviation.Text;
+            facVo.IFacDesc = this.txtName.Text;
+            facVo.IFacDescKana = this.txtPinyin.Text;
+            facVo.IMailNo = this.txtZipCD.Text;
+            facVo.ICountryCd = this.cbbCountry.Selectedvalue;
+            facVo.IAddress1 = this.txtAddress1.Text;
+            facVo.IAddress2 = this.txtAddress2.Text;
+            facVo.IAddress3 = this.txtAddress3.Text;
+            facVo.ITel = this.txtTel.Text;
+            facVo.IFaxNo = this.txtFax.Text;
+            facVo.ILanguageCd = this.cbbLanguage.Selectedvalue;
+            facVo.ITimezoneCd = this.cbbTimezone.Selectedvalue;
+            facVo.IBaseCd = this.txtBase.Text;
+            facVo.ISectionCd = this.txtDepart.Text;
+            facVo.IEgChgCls = this.cbbChange.Selectedvalue;
+            facVo.IMrpPeriod = Convert.ToDecimal(this.txtAutoPeriod.Text);
+            facVo.IAlcPeriod = Convert.ToDecimal(this.txtStockPeriod.Text);
+            facVo.IPoCreatePeriod = Convert.ToDecimal(this.txtArrange.Text);
+            facVo.ISafeStockCls = this.cbbSafe.Selectedvalue;
+            facVo.IRateCls = this.cbbRate.Selectedvalue;
+            facVo.IPlanCrtCls = this.cbbPlan.Selectedvalue;
+            facVo.IRsltCstCalcCls = this.cbbCost.Selectedvalue;
+            facVo.IPoCreateCls = this.cbbDecide.Selectedvalue;
+            #endregion
+
+            return facVo;
         }
         #endregion
 
