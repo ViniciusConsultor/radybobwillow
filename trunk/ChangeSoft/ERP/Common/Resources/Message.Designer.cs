@@ -70,7 +70,7 @@ namespace Com.GainWinSoft.Common.Resources {
         }
         
         /// <summary>
-        ///   查找类似 请先关闭子窗口。 的本地化字符串。
+        ///   查找类似 请先关闭【%1】子窗口。 的本地化字符串。
         /// </summary>
         internal static string E0002 {
             get {
