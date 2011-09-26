@@ -15,22 +15,13 @@ namespace Com.GainWinSoft.ERP.Factory.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_Factory));
 
-        public IList<MFunctioncatalog> GetFunctionDataList()
+        public TFactoryMs GetFactoryByCd(String facCd)
         {
-            IList<MFunctioncatalog> funcvolist = new List<MFunctioncatalog>();
-            IMFunctioncatalogDao td = ComponentLocator.Instance().Resolve<IMFunctioncatalogDao>();
-            IList<MFunctioncatalog> mfuncatalist = td.GetFunctionCatalogList(LangUtils.GetCurrentLanguage());
-            //foreach (MFunctioncatalog mfvo in mfuncatalist)
-            //{
-            //    FunctionVo fvo = new FunctionVo();
-            //    fvo.Langid = mfvo.Id.Langid;
-            //    fvo.Catalogid = mfvo.Id.Catalogid;
-            //    fvo.Catalogname = mfvo.Catalogname;
-            //    fvo.Catalogimage = mfvo.Catalogimage;
-            //    funcvolist.Add(fvo);
-            //}
+            TFactoryMs facVo = new TFactoryMs();
+            ITFactoryMsDao td = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
+            facVo = td.getFactoryByCd(facCd);
 
-            return mfuncatalist;
+            return facVo;
         }
     }
 }
