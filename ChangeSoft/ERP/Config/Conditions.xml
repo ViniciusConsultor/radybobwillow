@@ -61,7 +61,26 @@
       </List>
     </Data>
   </Condition>
-  
-  
+
+    <Condition>
+        <Name>EditMode</Name>
+        <Data>
+            <Language>zh-CN</Language>
+            <List>
+                <Item value="ADD">添加模式</Item>
+                <Item value="EDIT">编辑模式</Item>
+                <Item value="DELETE">删除模式</Item>
+            </List>
+        </Data>
+
+        <Data>
+            <Language>en-US</Language>
+            <List>
+                <Item value="ADD">Add Mode</Item>
+                <Item value="EDIT">Edit Mode</Item>
+                <Item value="DELETE">Delete Mode</Item>
+            </List>
+        </Data>
+    </Condition>  
   
 </Settings>
