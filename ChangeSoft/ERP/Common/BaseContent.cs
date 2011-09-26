@@ -36,7 +36,6 @@ namespace Com.GainWinSoft.Common
         public BaseContent(DockPanel parentdockpanel, BaseForm _owner)
         {
             this.parentdockpanel = parentdockpanel;
-            _owner.ChildContent = this;
             tempowner = _owner;
 
             InitializeComponent();
@@ -62,9 +61,13 @@ namespace Com.GainWinSoft.Common
 
                 BaseForm b = new BaseForm();
                 b.Parentdockpanel = parentdockpanel;
-                b.OwnerForm = tempowner;
                 b.TopLevel = false;
                 b.Text = this.title;
+                if (tempowner != null)
+                {
+                    tempowner.ChildContent = b;
+                }
+                b.OwnerForm = tempowner;
                 this.baseform = b;
                 //display at the first
                 this.Show(this.baseform.dockPanel);
@@ -124,10 +127,14 @@ namespace Com.GainWinSoft.Common
             {
 
                 BaseForm b = new BaseForm();
-                b.OwnerForm = tempowner;
                 b.Parentdockpanel = parentdockpanel;
                 b.TopLevel = false;
                 b.Text = this.title;
+                if (tempowner != null)
+                {
+                    tempowner.ChildContent = b;
+                } 
+                b.OwnerForm = tempowner;
                 this.baseform = b;
 
                 if (this.baseform.OwnerForm == null)
@@ -175,7 +182,7 @@ namespace Com.GainWinSoft.Common
 
                 if (baseform.ChildContent != null)
                 {
-                    MessageBox.Show(MessageUtils.GetMessage("E0002"), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(MessageUtils.GetMessage("E0002",baseform.ChildContent.Text), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
 
                 }

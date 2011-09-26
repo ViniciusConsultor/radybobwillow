@@ -114,7 +114,7 @@ namespace Com.GainWinSoft.Common
 
             if (this.childContent != null)
             {
-                MessageBox.Show(MessageUtils.GetMessage("E0002"), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(MessageUtils.GetMessage("E0002", this.childContent.Text), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }

@@ -342,6 +342,8 @@ namespace Com.GainWinSoft.ERP.Material
         /// <param name="e"></param>
         private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
         {
+            int d = this.FrmMaterialSearch_pagerGridView1.SelectedRowIndex;
+            log.Info("FrmMaterialSearch_pagerGridView1.SelectedRowIndex: " + d);
             TransferTo();
         }
 
