@@ -544,6 +544,11 @@ namespace Com.GainWinSoft.ERP.Material
         }
         #endregion
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.ClearG2();
+        }
+
 
 
     }
