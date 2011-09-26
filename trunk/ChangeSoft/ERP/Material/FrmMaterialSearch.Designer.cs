@@ -580,8 +580,11 @@
             this.commonToolStrip1.SaveVisible = false;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
+            this.commonToolStrip1.DeleteClick += new System.EventHandler(this.commonToolStrip1_DeleteClick);
             this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_OkClick);
+            this.commonToolStrip1.AddClick += new System.EventHandler(this.commonToolStrip1_AddClick);
             this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_ExitClick);
+            this.commonToolStrip1.UpdateClick += new System.EventHandler(this.commonToolStrip1_UpdateClick);
             this.commonToolStrip1.GobackClick += new System.EventHandler(this.commonToolStrip1_GobackClick);
             // 
             // tlpG1

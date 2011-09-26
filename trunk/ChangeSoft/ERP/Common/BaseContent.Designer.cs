@@ -40,6 +40,7 @@
             this.Name = "BaseContent";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BaseContent_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -51,13 +51,6 @@ namespace Com.GainWinSoft.ERP.Material
             : base(_parentdockpanel)
         {
             InitializeComponent();
-            ToolStripManager.Renderer = new Office2007Renderer();
-
-            this.btnFactoryHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.btnCustomerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.btnMakerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-            this.btnItemTypeHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
-
         }
         #endregion
 
@@ -323,6 +316,39 @@ namespace Com.GainWinSoft.ERP.Material
             this.SetCommonToolstrip();
             this.SetGroupLayout();
         }
+
+        /// <summary>
+        /// 添加按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commonToolStrip1_AddClick(object sender, EventArgs e)
+        {
+            TransferTo();
+        }
+        /// <summary>
+        /// 删除按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commonToolStrip1_DeleteClick(object sender, EventArgs e)
+        {
+            TransferTo();
+        }
+        /// <summary>
+        /// 修改按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
+        {
+            TransferTo();
+        }
+
+
+
+
+
         #endregion
 
         #region 画面状态
@@ -360,27 +386,41 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         public void SetCommonToolstrip()
         {
-            if (currentGroup == firstGroup)
+            if (currentGroup == 1)
             {
-                this.commonToolStrip1.GobackEnabled = false;
+                this.commonToolStrip1.AddEnabled = false;
                 this.commonToolStrip1.UpdateEnabled = false;
                 this.commonToolStrip1.DeleteEnabled = false;
+                this.commonToolStrip1.GobackEnabled = false;
                 this.commonToolStrip1.OkEnabled = true;
+
             }
-            if (currentGroup == 3)
-            {
-                this.commonToolStrip1.UpdateEnabled = true;
-                this.commonToolStrip1.DeleteEnabled = true;
-                this.commonToolStrip1.GobackEnabled = true;
-                this.commonToolStrip1.OkEnabled = false;
-            }
+
             if (currentGroup == 2 && firstGroup == 1)
             {
+                this.commonToolStrip1.AddEnabled = true;
                 this.commonToolStrip1.UpdateEnabled = false;
                 this.commonToolStrip1.DeleteEnabled = false;
                 this.commonToolStrip1.GobackEnabled = true;
                 this.commonToolStrip1.OkEnabled = true;
 
+            }
+            if (currentGroup == 2 && firstGroup == 2)
+            {
+                this.commonToolStrip1.AddEnabled = true;
+                this.commonToolStrip1.GobackEnabled = false;
+                this.commonToolStrip1.UpdateEnabled = false;
+                this.commonToolStrip1.DeleteEnabled = false;
+                this.commonToolStrip1.OkEnabled = true;
+            }
+
+            if (currentGroup == 3)
+            {
+                this.commonToolStrip1.AddEnabled = true;
+                this.commonToolStrip1.UpdateEnabled = true;
+                this.commonToolStrip1.DeleteEnabled = true;
+                this.commonToolStrip1.GobackEnabled = true;
+                this.commonToolStrip1.OkEnabled = false;
             }
 
         }
@@ -396,6 +436,15 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private void Initialize()
         {
+            ToolStripManager.Renderer = new Office2007Renderer();
+
+            this.btnFactoryHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnCustomerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnMakerHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.btnItemTypeHelper.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
+            this.cbbItemCls.Selectedindex = 0;
+            this.cbbMntCls.Selectedindex = 0;
+
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
 
@@ -471,6 +520,19 @@ namespace Com.GainWinSoft.ERP.Material
             this.Cursor = Cursors.WaitCursor;
             CardVo cardvo = new CardVo();
             cardvo.IFacCd = this.txtFactoryCd.Text;
+            cardvo.IDispItemCd = this.txtDispItemCd.Text;
+            cardvo.IDispItemRev = this.txtDispItemRev.Text;
+            cardvo.IDlCd = this.txtCustomerCd.Text;
+            cardvo.IDrwNo = this.txtDrwNo.Text;
+            cardvo.IItemCls = this.cbbItemCls.Selectedvalue;
+            cardvo.IItemType = this.txtItemType.Text;
+            cardvo.IMakerCd = this.txtMakerCd.Text;
+            cardvo.IMntCls = this.cbbMntCls.Selectedvalue;
+            cardvo.IModel = this.txtModel.Text;
+            cardvo.IQryMtrl = this.txtQryMtrl.Text;
+            cardvo.ISeiban = this.txtSeiban.Text;
+            cardvo.ISpec = this.txtSpec.Text;
+
 
             IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
             action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);

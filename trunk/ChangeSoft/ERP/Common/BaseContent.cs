@@ -14,8 +14,7 @@ namespace Com.GainWinSoft.Common
     {
         protected BaseForm baseform;
 
-        private BaseForm owner;
-
+        protected BaseForm tempowner;
         private DockPanel parentdockpanel;
 
         private string title;
@@ -24,6 +23,7 @@ namespace Com.GainWinSoft.Common
         public BaseContent()
         {
             InitializeComponent();
+            
         }
 
         public BaseContent(DockPanel parentdockpanel)
@@ -36,7 +36,8 @@ namespace Com.GainWinSoft.Common
         public BaseContent(DockPanel parentdockpanel, BaseForm _owner)
         {
             this.parentdockpanel = parentdockpanel;
-            this.owner = _owner;
+            _owner.ChildContent = this;
+            tempowner = _owner;
 
             InitializeComponent();
         }
@@ -61,6 +62,7 @@ namespace Com.GainWinSoft.Common
 
                 BaseForm b = new BaseForm();
                 b.Parentdockpanel = parentdockpanel;
+                b.OwnerForm = tempowner;
                 b.TopLevel = false;
                 b.Text = this.title;
                 this.baseform = b;
@@ -122,12 +124,13 @@ namespace Com.GainWinSoft.Common
             {
 
                 BaseForm b = new BaseForm();
+                b.OwnerForm = tempowner;
                 b.Parentdockpanel = parentdockpanel;
                 b.TopLevel = false;
                 b.Text = this.title;
                 this.baseform = b;
 
-                if (this.owner == null)
+                if (this.baseform.OwnerForm == null)
                 {
                     this.Show(this.baseform.dockPanel);
                     this.baseform.Show(this.baseform.Parentdockpanel);
@@ -135,14 +138,14 @@ namespace Com.GainWinSoft.Common
                 else
                 {
                     this.Show(this.baseform.dockPanel);
-                    dc = owner.Pane.Contents.IndexOf(owner.Pane.ActiveContent);
-                    if ((dc == owner.Pane.Contents.Count - 1))
+                    dc = ((BaseForm)this.baseform.OwnerForm).Pane.Contents.IndexOf(((BaseForm)this.baseform.OwnerForm).Pane.ActiveContent);
+                    if ((dc == ((BaseForm)this.baseform.OwnerForm).Pane.Contents.Count - 1))
                     {
                         this.baseform.Show(this.baseform.Parentdockpanel);
                     }
                     else
                     {
-                        this.baseform.Show(owner.Pane, owner.Pane.Contents[dc + 1]);
+                        this.baseform.Show(((BaseForm)this.baseform.OwnerForm).Pane, ((BaseForm)this.baseform.OwnerForm).Pane.Contents[dc + 1]);
                     }
                 }
                 this.BringToFront();
@@ -169,15 +172,26 @@ namespace Com.GainWinSoft.Common
         {
             if (baseform.Pane.ActiveContent is IDockContent)
             {
+
+                if (baseform.ChildContent != null)
+                {
+                    MessageBox.Show(MessageUtils.GetMessage("E0002"), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+
+                }
+
                 IDockContent content = (IDockContent)baseform.Pane.ActiveContent;
+
                 content.DockHandler.Close();
+                if (((BaseForm)this.baseform.OwnerForm) != null)
+                {
+                    ((BaseForm)this.baseform.OwnerForm).ChildContent = null;
+                    ((BaseForm)this.baseform.OwnerForm).Show();
+                    ((BaseForm)this.baseform.OwnerForm).BringToFront();
+                }
                 baseform.Close();
                 baseform.Dispose();
-                if (owner != null)
-                {
-                    this.owner.Show();
-                    this.owner.BringToFront();
-                }
+
             }
         }
 
@@ -215,16 +229,15 @@ namespace Com.GainWinSoft.Common
 
 
 
-        public Com.GainWinSoft.Common.BaseForm Owner
-        {
-            get { return owner; }
-            set { owner = value; }
-        }
-
         public WeifenLuo.WinFormsUI.Docking.DockPanel Parentdockpanel
         {
             get { return parentdockpanel; }
             set { parentdockpanel = value; }
+        }
+
+        private void BaseContent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

@@ -120,6 +120,9 @@
   <data name="E0001" xml:space="preserve">
     <value>系统异常，请和系统管理员联系。</value>
   </data>
+  <data name="E0002" xml:space="preserve">
+    <value>请先关闭子窗口。</value>
+  </data>
   <data name="I0001" xml:space="preserve">
     <value>加载初始数据……</value>
   </data>
