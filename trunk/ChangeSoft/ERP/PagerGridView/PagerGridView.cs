@@ -174,6 +174,10 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
         public void InitGridView(DataTable defaultdataTable)
         {
             this.dataGridView1.DataSource = defaultdataTable;
+            this.lblStatus.Text = "";
+            this.lblTotalRecords.Text = "";
+            this.lblCurrentPageFirst.Text = "";
+            this.lblCurrentPageLast.Text = "";
 
         }
 
