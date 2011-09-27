@@ -468,28 +468,28 @@
   <data name="tblPanelBtn.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button5" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,214,Absolute,96,Absolute,93,Percent,100" /&gt;&lt;Rows Styles="Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="clsCodeRefDropDownRate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="clsddl_9A.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="clsCodeRefDropDownRate.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="clsddl_9A.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 29</value>
   </data>
-  <data name="clsCodeRefDropDownRate.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="clsddl_9A.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 20</value>
   </data>
-  <data name="clsCodeRefDropDownRate.TabIndex" type="System.Int32, mscorlib">
+  <data name="clsddl_9A.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;clsCodeRefDropDownRate.Name" xml:space="preserve">
-    <value>clsCodeRefDropDownRate</value>
+  <data name="&gt;&gt;clsddl_9A.Name" xml:space="preserve">
+    <value>clsddl_9A</value>
   </data>
-  <data name="&gt;&gt;clsCodeRefDropDownRate.Type" xml:space="preserve">
+  <data name="&gt;&gt;clsddl_9A.Type" xml:space="preserve">
     <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;clsCodeRefDropDownRate.Parent" xml:space="preserve">
+  <data name="&gt;&gt;clsddl_9A.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
-  <data name="&gt;&gt;clsCodeRefDropDownRate.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;clsddl_9A.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="cndCurrKbn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -547,7 +547,7 @@
     <value>0</value>
   </data>
   <data name="tblPanelG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsCodeRefDropDownRate" Row="1" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;Control Name="cndCurrKbn" Row="2" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,110,Absolute,411" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsddl_9A" Row="1" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;Control Name="cndCurrKbn" Row="2" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,110,Absolute,411" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG3.ColumnCount" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1095,31 +1095,31 @@
   <data name="tblPanelG2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="pagerGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="pgvRateMs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="pagerGridView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pgvRateMs.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="pagerGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pgvRateMs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="pagerGridView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pgvRateMs.Size" type="System.Drawing.Size, System.Drawing">
     <value>784, 220</value>
   </data>
-  <data name="pagerGridView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="pgvRateMs.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pagerGridView1.Name" xml:space="preserve">
-    <value>pagerGridView1</value>
+  <data name="&gt;&gt;pgvRateMs.Name" xml:space="preserve">
+    <value>pgvRateMs</value>
   </data>
-  <data name="&gt;&gt;pagerGridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;pgvRateMs.Type" xml:space="preserve">
     <value>Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView, Com.GainWinSoft.Common.Control.PagerGridView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;pagerGridView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pgvRateMs.Parent" xml:space="preserve">
     <value>tblPanelG2</value>
   </data>
-  <data name="&gt;&gt;pagerGridView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pgvRateMs.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tblPanelG2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1153,7 +1153,7 @@
     <value>3</value>
   </data>
   <data name="tblPanelG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pagerGridView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pgvRateMs" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelGrp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
