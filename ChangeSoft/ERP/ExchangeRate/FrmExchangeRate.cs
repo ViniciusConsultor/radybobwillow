@@ -64,6 +64,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
             this.commonToolStrip1.UpdateClick += new EventHandler(commonToolStrip1_UpdateClick);
             this.commonToolStrip1.SaveClick += new EventHandler(commonToolStrip1_SaveClick);
+            this.btnSearch.Click += new EventHandler(btnSearch_Click);
         }
 
 
@@ -108,28 +109,14 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
             //this.SetToolBar(this.strMode);
             //this.SetLayout(this.strMode);
-
+            
+            /* for test
             this.removeAllClickEvent();
             this.addAllClickEvent();
 
-
             this.SetGroupLayout();
             this.SetCommonToolstrip();
-
-            //this.txtCompany.Text = "1";
-
-
-            //#region Company delete
-            //this.lblCompany.Visible = false;
-            //this.lblStar2.Visible = false;
-            //this.txtCompany.Visible = false;
-            //this.txtCompany.Enabled = false;
-            //this.lblCompanyNM.Visible = false;
-            //this.btnCompany.Visible = false;
-                            
-
-
-            //#endregion
+             * */
         }
         #endregion
 
@@ -199,6 +186,13 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.Cursor = Cursors.WaitCursor;
 
             IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
+            FrmExRateCardVo  cardvo = new FrmExRateCardVo();
+            cardvo.ICompanyCd = this.txtCompany.Text;
+            cardvo.IDlCurrCd = "";
+            cardvo.IRateCls = clsddl_9A.Selectedvalue;
+
+             Int32 intRes  =  action.GetRateMsDetail(pgvRateMs,cardvo);
+
             
             this.Cursor = Cursors.Default;
         }
