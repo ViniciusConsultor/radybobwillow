@@ -59,6 +59,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -120,6 +121,18 @@
     <ProjectReference Include="..\PagerGridView\PagerGridView.csproj">
       <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>
       <Name>PagerGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TableDropDownList\TableDropDownList.csproj">
+      <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
+      <Name>TableDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
+      <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
+      <Name>TextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDateTimePicker\XDateTimePicker.csproj">
+      <Project>{D99733E2-A187-47ED-99C3-5C4A36FD18BB}</Project>
+      <Name>XDateTimePicker</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
