@@ -107,6 +107,10 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
                 
             }
 
+            this.clsddl_9A.Selectedindex = 0;
+            this.tddlCurr.SelectedIndex = 0;
+
+
             //this.SetToolBar(this.strMode);
             //this.SetLayout(this.strMode);
             
@@ -186,12 +190,15 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.Cursor = Cursors.WaitCursor;
 
             IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
-            FrmExRateCardVo  cardvo = new FrmExRateCardVo();
-            cardvo.ICompanyCd = this.txtCompany.Text;
-            cardvo.IDlCurrCd = "";
-            cardvo.IRateCls = clsddl_9A.Selectedvalue;
 
-             Int32 intRes  =  action.GetRateMsDetail(pgvRateMs,cardvo);
+            FrmExRateCardVo  cardvo = new FrmExRateCardVo();
+            
+
+            cardvo.ICompanyCd = this.txtCompany.Text;
+            cardvo.IDlCurrCd = this.tddlCurr.Selectedvalue;
+            cardvo.IRateCls = clsddl_9A.Selectedvalue;
+            
+            Int32 intRes  =  action.GetRateMsDetail(pgvRateMs,cardvo);
 
             
             this.Cursor = Cursors.Default;
