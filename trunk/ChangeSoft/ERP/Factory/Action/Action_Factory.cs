@@ -23,5 +23,23 @@ namespace Com.GainWinSoft.ERP.Factory.Action
 
             return facVo;
         }
+
+        public Boolean SaveDataToStp(String strMode, TFactoryMs facVo)
+        {
+            Boolean rtnValue = true;
+
+            TFcConditionStp facStp = new TFcConditionStp();
+
+            PropertiesCopier.CopyProperties(facVo, facStp);
+            facStp.Id.IJournalNo = 10001;
+            facStp.Id.ICompanyCd = facVo.ICompanyCd;
+            facStp.IPrcsCls = "";
+            facStp.IUserId = "";
+            facStp.IPrcsDate = DateTime.Now;
+            facStp.IPrcsTime = DateTime.Now.ToShortTimeString();
+            facStp.IUpdCls = "";
+
+            return rtnValue;
+        }
     }
 }
