@@ -326,6 +326,9 @@
     <None Include="Config\Action_Factory.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Config\Action_ExRateMs.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="img\20110831090330552_easyicon_cn_48.png" />
     <None Include="img\20110902041440114_easyicon_cn_48.png" />
     <None Include="img\20110902041632961_easyicon_cn_48.png" />
