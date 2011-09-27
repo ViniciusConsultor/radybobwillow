@@ -19,16 +19,6 @@ namespace Com.GainWinSoft.ERP.Material
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.CloseContent();
-        }
-
-        private void conditionRadioButton1_RadioChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show(this.conditionRadioButton1.Checkedvalue + ":" + this.conditionRadioButton1.Checkedname);
-        }
-
         private void FrmMaterialEdit_Load(object sender, EventArgs e)
         {
             Hashtable ht = (Hashtable)SessionUtils.GetSession(this.Name);
