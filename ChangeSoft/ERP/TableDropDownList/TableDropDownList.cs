@@ -90,12 +90,12 @@ namespace Com.GainWinSoft.ERP.TableDropDownList
 
         protected virtual void OnSelectChanged(Object sender, EventArgs e)
         {//事件触发方法  
+            ComboBox c = (ComboBox)sender;
+            this.selectedname = ((ConditionVo)c.SelectedItem).ConditionName;
+            this.selectedvalue = ((ConditionVo)c.SelectedItem).ConditionValue;
+            this.selectedIndex = c.SelectedIndex;
             if (SelectedIndexChanged != null)
             {//判断事件是否为空  
-                ComboBox c = (ComboBox)sender;
-                this.selectedname = ((ConditionVo)c.SelectedItem).ConditionName;
-                this.selectedvalue = ((ConditionVo)c.SelectedItem).ConditionValue;
-                this.selectedIndex = c.SelectedIndex;
                 SelectedIndexChanged(this, e);//触发事件  
             }
         }
