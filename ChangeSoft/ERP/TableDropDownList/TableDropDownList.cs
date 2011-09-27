@@ -155,8 +155,8 @@ namespace Com.GainWinSoft.ERP.TableDropDownList
                 this.comboBox1.Items.Add(conditionvo);
             }
 
-            this.comboBox1.SelectedIndex = this.defaultselectedindex;
             this.comboBox1.SelectedIndexChanged += new EventHandler(OnSelectChanged);
+            this.comboBox1.SelectedIndex = this.defaultselectedindex;
         }
     }
 }

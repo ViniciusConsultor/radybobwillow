@@ -67,8 +67,8 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
             {
                 this.comboBox1.Items.Add(vo);
             }
-            this.comboBox1.SelectedIndex = this.defaultselectedindex;
             this.comboBox1.SelectedIndexChanged += new EventHandler(OnSelectChanged);
+            this.comboBox1.SelectedIndex = this.defaultselectedindex;
 
         }
 
