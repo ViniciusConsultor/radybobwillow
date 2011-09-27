@@ -181,6 +181,7 @@
     <Compile Include="Model\CCatalogFunctionNoAR.cs" />
     <Compile Include="Model\CClsDetailNoAR.cs" />
     <Compile Include="Model\TFactoryMs.cs" />
+    <Compile Include="Model\TFcConditionStp.cs" />
     <Compile Include="Model\TPersonMs.cs" />
     <Compile Include="Model\TPmMs.cs" />
     <Compile Include="Model\TPmMsAdd.cs" />
@@ -206,6 +207,7 @@
     <Compile Include="Model\CTPmMsNoAR.cs" />
     <Compile Include="Model\CTPmMsPagerNoAR.cs" />
     <Compile Include="Model\TRateMsPagerNoAR.cs" />
+    <Compile Include="Model\TFcConditionStpId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>
