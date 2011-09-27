@@ -382,7 +382,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnFactoryHelper" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtFactoryCd" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblFactoryNm" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="caplblFactory" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Absolute,100,Absolute,26,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>31</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -415,7 +415,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,26,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,26,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Absolute,26,Percent,5,Absolute,100,Absolute,15,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Absolute,26,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
