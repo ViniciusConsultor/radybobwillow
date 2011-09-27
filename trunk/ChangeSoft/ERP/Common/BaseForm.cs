@@ -119,7 +119,11 @@ namespace Com.GainWinSoft.Common
 
         private void BaseForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (e.CloseReason==CloseReason.MdiFormClosing)
+            {
+                e.Cancel = false;
+                return;
+            }
 
             if (this.childContent != null)
             {

@@ -389,5 +389,9 @@ namespace Com.GainWinSoft.ERP
             return frm;
         }
 
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
+
     }
 }
