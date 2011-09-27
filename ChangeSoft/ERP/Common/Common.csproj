@@ -104,6 +104,7 @@
     <Compile Include="SearchCondition.cs" />
     <Compile Include="SessionUtils.cs" />
     <Compile Include="StoredProcedureCondition.cs" />
+    <Compile Include="CommonUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
