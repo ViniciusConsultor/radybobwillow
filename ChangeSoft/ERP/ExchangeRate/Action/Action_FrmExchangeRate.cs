@@ -41,7 +41,12 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
 
 
                condition.SetAddtionalCondition(CurrCD, cardvo.IDlCurrCd);
-               condition.SetAddtionalCondition(CurrCD, cardvo.IRateCls);
+               condition.SetAddtionalCondition(RateCls, cardvo.IRateCls);
+
+
+
+
+
 
                if (!string.IsNullOrEmpty(cardvo.IDlCurrCd))
                {
@@ -53,7 +58,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                {
                    condition.AddCondition("T_RATE_MS.I_RATE_CLS", "I_RATE_CLS", cardvo.IRateCls, SqlOperator.Equal);                   
                }
-
+               condition.AddCondition("I_COMPANY_CD", uservo.CompanyCondition.ICompanyCd);
+               condition.AddCondition("I_LANGUAGE_CD", LangUtils.GetCurrentLanguage());
 
 
                gridview.Pagerhelper = new PagerHelper("TrateMsPagerNoARDao", condition, 1, 15);
