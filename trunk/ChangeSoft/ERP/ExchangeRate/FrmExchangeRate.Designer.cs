@@ -43,11 +43,7 @@
             this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtRate = new System.Windows.Forms.TextBox();
-            this.txtValidDate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
             this.lblStar3 = new System.Windows.Forms.Label();
             this.lblStar5 = new System.Windows.Forms.Label();
@@ -58,12 +54,17 @@
             this.lblValidDate = new System.Windows.Forms.Label();
             this.lblCurrKbn1 = new System.Windows.Forms.Label();
             this.lblRateKbn1 = new System.Windows.Forms.Label();
-            this.cndCurrKbn1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
             this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
+            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.cndCurrKbn1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
+            this.txtRate = new System.Windows.Forms.TextBox();
+            this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -99,7 +100,8 @@
             this.tblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
             this.tblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
             this.tblPanelG1.Controls.Add(this.clsddl_9A, 2, 1);
-            this.tblPanelG1.Controls.Add(this.cndCurrKbn, 2, 2);
+            this.tblPanelG1.Controls.Add(this.cndCurrKbn, 3, 2);
+            this.tblPanelG1.Controls.Add(this.tddlCurr, 2, 2);
             this.tblPanelG1.Name = "tblPanelG1";
             // 
             // lblCurrKbn
@@ -160,36 +162,10 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // clsddl_9A
-            // 
-            this.clsddl_9A.Autoaddblankitem = true;
-            this.clsddl_9A.ClsCd = "9A";
-            this.tblPanelG1.SetColumnSpan(this.clsddl_9A, 3);
-            this.clsddl_9A.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
-            this.clsddl_9A.Name = "clsddl_9A";
-            this.clsddl_9A.Selectedindex = -1;
-            this.clsddl_9A.Selectedname = null;
-            this.clsddl_9A.Selectedvalue = null;
-            this.clsddl_9A.ShowNameDesc = false;
-            // 
-            // cndCurrKbn
-            // 
-            this.cndCurrKbn.Autoaddblankitem = false;
-            this.tblPanelG1.SetColumnSpan(this.cndCurrKbn, 3);
-            this.cndCurrKbn.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
-            this.cndCurrKbn.Name = "cndCurrKbn";
-            this.cndCurrKbn.Selectedindex = -1;
-            this.cndCurrKbn.Selectedname = null;
-            this.cndCurrKbn.Selectedvalue = null;
-            // 
             // tblPanelG3
             // 
             resources.ApplyResources(this.tblPanelG3, "tblPanelG3");
             this.tblPanelG3.Controls.Add(this.txtRate, 6, 3);
-            this.tblPanelG3.Controls.Add(this.txtValidDate, 2, 2);
             this.tblPanelG3.Controls.Add(this.lblStar2, 1, 0);
             this.tblPanelG3.Controls.Add(this.lblStar3, 1, 1);
             this.tblPanelG3.Controls.Add(this.lblStar5, 1, 3);
@@ -203,17 +179,8 @@
             this.tblPanelG3.Controls.Add(this.cndCurrKbn1, 2, 1);
             this.tblPanelG3.Controls.Add(this.DropDownRate1, 2, 0);
             this.tblPanelG3.Controls.Add(this.cndCalcMode, 2, 3);
+            this.tblPanelG3.Controls.Add(this.xdtpEffEedDate, 2, 2);
             this.tblPanelG3.Name = "tblPanelG3";
-            // 
-            // txtRate
-            // 
-            resources.ApplyResources(this.txtRate, "txtRate");
-            this.txtRate.Name = "txtRate";
-            // 
-            // txtValidDate
-            // 
-            resources.ApplyResources(this.txtValidDate, "txtValidDate");
-            this.txtValidDate.Name = "txtValidDate";
             // 
             // lblStar2
             // 
@@ -270,40 +237,6 @@
             resources.ApplyResources(this.lblRateKbn1, "lblRateKbn1");
             this.lblRateKbn1.Name = "lblRateKbn1";
             // 
-            // cndCurrKbn1
-            // 
-            this.cndCurrKbn1.Autoaddblankitem = false;
-            this.cndCurrKbn1.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn1, "cndCurrKbn1");
-            this.cndCurrKbn1.Name = "cndCurrKbn1";
-            this.cndCurrKbn1.Selectedindex = -1;
-            this.cndCurrKbn1.Selectedname = null;
-            this.cndCurrKbn1.Selectedvalue = null;
-            // 
-            // DropDownRate1
-            // 
-            this.DropDownRate1.Autoaddblankitem = false;
-            this.DropDownRate1.ClsCd = "9A";
-            this.DropDownRate1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.DropDownRate1, "DropDownRate1");
-            this.DropDownRate1.Name = "DropDownRate1";
-            this.DropDownRate1.Selectedindex = -1;
-            this.DropDownRate1.Selectedname = null;
-            this.DropDownRate1.Selectedvalue = null;
-            this.DropDownRate1.ShowNameDesc = false;
-            // 
-            // cndCalcMode
-            // 
-            this.cndCalcMode.Autoaddblankitem = false;
-            this.cndCalcMode.Conditionname = "CalcMode";
-            this.cndCalcMode.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
-            this.cndCalcMode.Name = "cndCalcMode";
-            this.cndCalcMode.Selectedindex = -1;
-            this.cndCalcMode.Selectedname = null;
-            this.cndCalcMode.Selectedvalue = null;
-            // 
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
@@ -351,6 +284,90 @@
             this.pgvRateMs.Name = "pgvRateMs";
             this.pgvRateMs.Pagerhelper = null;
             // 
+            // clsddl_9A
+            // 
+            this.clsddl_9A.Autoaddblankitem = true;
+            this.clsddl_9A.ClsCd = "9A";
+            this.clsddl_9A.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
+            this.clsddl_9A.Name = "clsddl_9A";
+            this.clsddl_9A.Selectedindex = -1;
+            this.clsddl_9A.Selectedname = null;
+            this.clsddl_9A.Selectedvalue = null;
+            this.clsddl_9A.ShowNameDesc = false;
+            // 
+            // cndCurrKbn
+            // 
+            this.cndCurrKbn.Autoaddblankitem = false;
+            this.cndCurrKbn.Conditionname = "ExchangeCurr";
+            this.cndCurrKbn.Defaultselectedindex = 0;
+            resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
+            this.cndCurrKbn.Name = "cndCurrKbn";
+            this.cndCurrKbn.Selectedindex = -1;
+            this.cndCurrKbn.Selectedname = null;
+            this.cndCurrKbn.Selectedvalue = null;
+            // 
+            // cndCurrKbn1
+            // 
+            this.cndCurrKbn1.Autoaddblankitem = false;
+            this.cndCurrKbn1.Conditionname = "ExchangeCurr";
+            this.cndCurrKbn1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.cndCurrKbn1, "cndCurrKbn1");
+            this.cndCurrKbn1.Name = "cndCurrKbn1";
+            this.cndCurrKbn1.Selectedindex = -1;
+            this.cndCurrKbn1.Selectedname = null;
+            this.cndCurrKbn1.Selectedvalue = null;
+            // 
+            // DropDownRate1
+            // 
+            this.DropDownRate1.Autoaddblankitem = false;
+            this.DropDownRate1.ClsCd = "9A";
+            this.DropDownRate1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.DropDownRate1, "DropDownRate1");
+            this.DropDownRate1.Name = "DropDownRate1";
+            this.DropDownRate1.Selectedindex = -1;
+            this.DropDownRate1.Selectedname = null;
+            this.DropDownRate1.Selectedvalue = null;
+            this.DropDownRate1.ShowNameDesc = false;
+            // 
+            // cndCalcMode
+            // 
+            this.cndCalcMode.Autoaddblankitem = false;
+            this.cndCalcMode.Conditionname = "CalcMode";
+            this.cndCalcMode.Defaultselectedindex = 0;
+            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
+            this.cndCalcMode.Name = "cndCalcMode";
+            this.cndCalcMode.Selectedindex = -1;
+            this.cndCalcMode.Selectedname = null;
+            this.cndCalcMode.Selectedvalue = null;
+            // 
+            // tddlCurr
+            // 
+            this.tddlCurr.Autoaddblankitem = false;
+            this.tddlCurr.Defaultselectedindex = 0;
+            this.tddlCurr.LanguageColumn = null;
+            this.tddlCurr.LanguageFlg = false;
+            resources.ApplyResources(this.tddlCurr, "tddlCurr");
+            this.tddlCurr.Name = "tddlCurr";
+            this.tddlCurr.NameColumn = "I_CURR_DESC";
+            this.tddlCurr.SelectedIndex = -1;
+            this.tddlCurr.Selectedname = null;
+            this.tddlCurr.Selectedvalue = null;
+            this.tddlCurr.TableNm = "T_CURR_MS";
+            this.tddlCurr.ValueColumn = "I_CURR_CD";
+            // 
+            // txtRate
+            // 
+            resources.ApplyResources(this.txtRate, "txtRate");
+            this.txtRate.Name = "txtRate";
+            // 
+            // xdtpEffEedDate
+            // 
+            this.tblPanelG3.SetColumnSpan(this.xdtpEffEedDate, 2);
+            resources.ApplyResources(this.xdtpEffEedDate, "xdtpEffEedDate");
+            this.xdtpEffEedDate.Name = "xdtpEffEedDate";
+            this.xdtpEffEedDate.Value = new System.DateTime(2011, 9, 27, 16, 41, 7, 156);
+            // 
             // FrmExchangeRate
             // 
             resources.ApplyResources(this, "$this");
@@ -394,8 +411,6 @@
         private System.Windows.Forms.Label lblStar2;
         private System.Windows.Forms.Label lblStar3;
         private System.Windows.Forms.Label lblStar5;
-        private System.Windows.Forms.TextBox txtValidDate;
-        private System.Windows.Forms.TextBox txtRate;
         private System.Windows.Forms.TableLayoutPanel tblPanelBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnSearch;
@@ -407,5 +422,8 @@
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private System.Windows.Forms.TableLayoutPanel tblPanelG2;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pgvRateMs;
+        private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tddlCurr;
+        private System.Windows.Forms.TextBox txtRate;
+        private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xdtpEffEedDate;
     }
 }

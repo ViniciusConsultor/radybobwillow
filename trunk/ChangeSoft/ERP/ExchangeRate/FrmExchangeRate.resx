@@ -232,13 +232,13 @@
     <value>2</value>
   </data>
   <data name="txtCompany.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+    <value>Fill</value>
   </data>
   <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 3</value>
   </data>
   <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 19</value>
+    <value>104, 19</value>
   </data>
   <data name="txtCompany.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -475,7 +475,7 @@
     <value>127, 29</value>
   </data>
   <data name="clsddl_9A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="clsddl_9A.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -496,10 +496,10 @@
     <value>Fill</value>
   </data>
   <data name="cndCurrKbn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 55</value>
+    <value>237, 55</value>
   </data>
   <data name="cndCurrKbn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 20</value>
+    <value>23, 20</value>
   </data>
   <data name="cndCurrKbn.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -515,6 +515,27 @@
   </data>
   <data name="&gt;&gt;cndCurrKbn.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="tddlCurr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 55</value>
+  </data>
+  <data name="tddlCurr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="tddlCurr.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;tddlCurr.Name" xml:space="preserve">
+    <value>tddlCurr</value>
+  </data>
+  <data name="&gt;&gt;tddlCurr.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList, TableDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tddlCurr.Parent" xml:space="preserve">
+    <value>tblPanelG1</value>
+  </data>
+  <data name="&gt;&gt;tddlCurr.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="tblPanelG1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -547,7 +568,7 @@
     <value>0</value>
   </data>
   <data name="tblPanelG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsddl_9A" Row="1" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;Control Name="cndCurrKbn" Row="2" RowSpan="1" Column="2" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,110,Absolute,411" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsddl_9A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="cndCurrKbn" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="tddlCurr" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,110,Absolute,411" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG3.ColumnCount" type="System.Int32, mscorlib">
     <value>8</value>
@@ -575,30 +596,6 @@
   </data>
   <data name="&gt;&gt;txtRate.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="txtValidDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtValidDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 55</value>
-  </data>
-  <data name="txtValidDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 19</value>
-  </data>
-  <data name="txtValidDate.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;txtValidDate.Name" xml:space="preserve">
-    <value>txtValidDate</value>
-  </data>
-  <data name="&gt;&gt;txtValidDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtValidDate.Parent" xml:space="preserve">
-    <value>tblPanelG3</value>
-  </data>
-  <data name="&gt;&gt;txtValidDate.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="lblStar2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -634,7 +631,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblStar2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lblStar3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -670,7 +667,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblStar3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="lblStar5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -706,7 +703,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblStar5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lblStar4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -742,7 +739,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblStar4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lblStar6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -778,7 +775,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblStar6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="lblRate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -814,7 +811,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblRate.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="lblCalcMode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -850,7 +847,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblCalcMode.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="lblValidDate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -886,7 +883,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblValidDate.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="lblCurrKbn1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -922,7 +919,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblCurrKbn1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="lblRateKbn1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -958,7 +955,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;lblRateKbn1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="cndCurrKbn1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -982,7 +979,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;cndCurrKbn1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="DropDownRate1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1006,7 +1003,7 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;DropDownRate1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="cndCalcMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1030,6 +1027,27 @@
     <value>tblPanelG3</value>
   </data>
   <data name="&gt;&gt;cndCalcMode.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="xdtpEffEedDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 55</value>
+  </data>
+  <data name="xdtpEffEedDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="xdtpEffEedDate.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;xdtpEffEedDate.Name" xml:space="preserve">
+    <value>xdtpEffEedDate</value>
+  </data>
+  <data name="&gt;&gt;xdtpEffEedDate.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xdtpEffEedDate.Parent" xml:space="preserve">
+    <value>tblPanelG3</value>
+  </data>
+  <data name="&gt;&gt;xdtpEffEedDate.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
   <data name="tblPanelG3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1063,7 +1081,7 @@
     <value>1</value>
   </data>
   <data name="tblPanelG3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtRate" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="txtValidDate" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar3" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar4" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCalcMode" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblValidDate" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCurrKbn1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cndCurrKbn1" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="DropDownRate1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="cndCalcMode" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,110,Absolute,52,Absolute,56,Absolute,15,Absolute,121,Absolute,305" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,27,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtRate" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblStar2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar3" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar4" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblStar6" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblRate" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCalcMode" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblValidDate" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCurrKbn1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cndCurrKbn1" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="DropDownRate1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="cndCalcMode" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="xdtpEffEedDate" Row="2" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,15,Absolute,110,Absolute,52,Absolute,56,Absolute,15,Absolute,121,Absolute,305" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,27,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1232,6 +1250,9 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FrmExchangeRate</value>
