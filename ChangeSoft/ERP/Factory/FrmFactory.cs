@@ -146,6 +146,16 @@ namespace Com.GainWinSoft.ERP.Factory
         private void commonToolStrip1_SaveClick(object sender, EventArgs e)
         {
             this.ClearError();
+            if (!this.CheckG1())
+            {
+                return;
+            }
+            if (!this.CheckG2())
+            {
+                return;
+            }
+
+            this.SaveData();
         }
 
         /// <summary>
@@ -627,14 +637,63 @@ namespace Com.GainWinSoft.ERP.Factory
                 this.baseform.msgwindow.ShowMessage();
                 rtnValue = false;
             }
-            else if (!this.vdpExistG1.Validate())
+
+            if (rtnValue && !Constant.MODE_ADD.Equals(this.strMode))
             {
-                IList<MessageVo> re = this.vdpExistG1.ValidationMessages(true);
+                if (!this.vdpExistG1.Validate())
+                {
+                    IList<MessageVo> re = this.vdpExistG1.ValidationMessages(true);
+                    this.DialogResult = DialogResult.Abort;
+                    this.baseform.msgwindow.Messagelist = re;
+                    this.baseform.msgwindow.ShowMessage();
+                    rtnValue = false;
+                }
+            }
+
+            return rtnValue;
+        }
+
+        /// <summary>
+        /// Group2各种Check
+        /// </summary>
+        private Boolean CheckG2()
+        {
+            Boolean rtnValue = true;
+
+            if (!this.vdpRequireG2.Validate())
+            {
+                IList<MessageVo> re = this.vdpRequireG2.ValidationMessages(true);
                 this.DialogResult = DialogResult.Abort;
                 this.baseform.msgwindow.Messagelist = re;
                 this.baseform.msgwindow.ShowMessage();
                 rtnValue = false;
             }
+
+            if (rtnValue && !Constant.MODE_DEL.Equals(this.strMode))
+            {
+                if (!this.vdpExistG2.Validate())
+                {
+                    IList<MessageVo> re = this.vdpExistG2.ValidationMessages(true);
+                    this.DialogResult = DialogResult.Abort;
+                    this.baseform.msgwindow.Messagelist = re;
+                    this.baseform.msgwindow.ShowMessage();
+                    rtnValue = false;
+                }
+            }
+
+            #region 暂时先去掉。Group2的逻辑Check
+            //if (rtnValue && !Constant.MODE_DEL.Equals(this.strMode))
+            //{
+            //    if (!this.vdpCustomG2.Validate())
+            //    {
+            //        IList<MessageVo> re = this.vdpCustomG2.ValidationMessages(true);
+            //        this.DialogResult = DialogResult.Abort;
+            //        this.baseform.msgwindow.Messagelist = re;
+            //        this.baseform.msgwindow.ShowMessage();
+            //        rtnValue = false;
+            //    }
+            //}
+            #endregion
 
             return rtnValue;
         }
@@ -650,6 +709,14 @@ namespace Com.GainWinSoft.ERP.Factory
             TFactoryMs facVo = ac.GetFactoryByCd(this.txtFactory.Text);
 
             this.SetVoToForm(facVo);
+        }
+
+        /// <summary>
+        /// 根据画面输入内容，更新数据库
+        /// </summary>
+        private void SaveData()
+        {
+            TFactoryMs facVo = this.getVoFromForm();
         }
 
         /// <summary>

@@ -7,5 +7,6 @@ namespace Com.GainWinSoft.ERP.Factory.Action
     public interface IAction_Factory
     {
         TFactoryMs GetFactoryByCd(String facCd);
+        Boolean SaveDataToStp(String strMode, TFactoryMs facVo);
     }
 }
