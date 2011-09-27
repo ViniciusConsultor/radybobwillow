@@ -29,22 +29,19 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
         //汇率区分
         string RateCls = "RateCls";
 
-        #region 查询汇率
-        public void GetRateMsDetail(PagerGridView gridview, 
+        #   region 查询汇率
+        public Int32 GetRateMsDetail(PagerGridView gridview, 
                 Com.GainWinSoft.ERP.ExchangeRate.FormVo.FrmExRateCardVo cardvo){
                     log.Debug("Search Init start");
 
 
-               DataSet ds = new DataSet();
+            
                LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
                SearchCondition condition = new SearchCondition();
 
 
                condition.SetAddtionalCondition(CurrCD, cardvo.IDlCurrCd);
                condition.SetAddtionalCondition(CurrCD, cardvo.IRateCls);
-
-
-
 
                if (!string.IsNullOrEmpty(cardvo.IDlCurrCd))
                {
@@ -56,11 +53,12 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                {
                    condition.AddCondition("T_RATE_MS.I_RATE_CLS", "I_RATE_CLS", cardvo.IRateCls, SqlOperator.Equal);                   
                }
-               
-    
-                  
-               gridview.Pagerhelper = new PagerHelper("CTPmMsPagerNoARDao", condition, 1, 15);
+
+
+
+               gridview.Pagerhelper = new PagerHelper("TrateMsPagerNoARDao", condition, 1, 15);
                gridview.LoadData();
+
                log.Debug("Search Init over");
                 
                           
@@ -71,6 +69,9 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                }
 
                SetDisplayColumns(gridview);
+               DataSet ds = (DataSet)gridview.DataSource;
+               DataTable dt = ds.Tables["TrateMsPagerNoARDao"];
+               return dt.Rows.Count;
 
         }
         #endregion
@@ -83,54 +84,46 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
 
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
             ColumnInfoVo columnvo = new ColumnInfoVo();
-                   
-            columnvo.Columnname = "IDispItemCd";
+
+            columnvo.Columnname = "ICompanyCd";
+            columnvo.Columnwidth = 0;
+            clist.Add(columnvo);
+
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IRateCls";
+            columnvo.Columnwidth = 50;
+            clist.Add(columnvo);
+
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IRateClsDesc";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IDispItemRev";
+            columnvo.Columnname = "IDlCurrCd";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "iDlCurrCdDesc";
+            columnvo.Columnwidth = 100;
+            clist.Add(columnvo);
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IEffEndDate";
+            columnvo.Columnwidth = 50;
+            clist.Add(columnvo);
+
+            columnvo = new ColumnInfoVo();
+            columnvo.Columnname = "IRate";
             columnvo.Columnwidth = 50;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IItemDesc";
+            columnvo.Columnname = "ICnvMethod";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "VDlDesc";
+            columnvo.Columnname = "ICnvMethodDesc";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "VItemclsdesc";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "VItemtypedesc";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "VMakerdesc";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IModel";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IDrwNo";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "ISpec";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "ISeiban";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
-            columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IQryMtrl";
-            columnvo.Columnwidth = 100;
-            clist.Add(columnvo);
+
 
             gridview.SetDisplayColumns(gridview.Name, clist);
         }
