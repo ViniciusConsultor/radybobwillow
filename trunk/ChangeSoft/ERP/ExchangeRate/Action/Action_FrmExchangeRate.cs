@@ -24,8 +24,10 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmExchangeRate));
         private string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo" };
 
-
-
+        //货币代码
+        string CurrCD = "CurrCD";
+        //汇率区分
+        string RateCls = "RateCls";
 
         #region 查询汇率
         public void GetRateMsDetail(PagerGridView gridview, 
@@ -38,15 +40,30 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                SearchCondition condition = new SearchCondition();
 
 
-               condition.SetAddtionalCondition("ALLFACTORY", false);
-               condition.AddCondition("T_PM_MS.I_ITEM_ENTRY_CLS", "IITEMENTRYCLS", "00", SqlOperator.Equal);
+               condition.SetAddtionalCondition(CurrCD, cardvo.IDlCurrCd);
+               condition.SetAddtionalCondition(CurrCD, cardvo.IRateCls);
 
 
+
+
+               if (!string.IsNullOrEmpty(cardvo.IDlCurrCd))
+               {
+                   condition.AddCondition("T_RATE_MS.I_DL_CURR_CD", "I_DL_CURR_CD", cardvo.IDlCurrCd, SqlOperator.Equal);
+
+               }
+
+               if (!string.IsNullOrEmpty(cardvo.IRateCls))
+               {
+                   condition.AddCondition("T_RATE_MS.I_RATE_CLS", "I_RATE_CLS", cardvo.IRateCls, SqlOperator.Equal);                   
+               }
+               
+    
+                  
                gridview.Pagerhelper = new PagerHelper("CTPmMsPagerNoARDao", condition, 1, 15);
                gridview.LoadData();
                log.Debug("Search Init over");
-
-
+                
+                          
 
                foreach (string key in columnlist)
                {
@@ -66,6 +83,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
 
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
             ColumnInfoVo columnvo = new ColumnInfoVo();
+                   
             columnvo.Columnname = "IDispItemCd";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
@@ -166,8 +184,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
 
             tRateModel.IUpdCls = "0";
             tRateModel.IUserId = "flyant";
-
-
+                              
+             
             //Test td = new Test();
             Boolean re = td.InsTRateStp(tRateModel);
 
