@@ -43,7 +43,7 @@
             this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.clsCodeRefDropDownRate = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRate = new System.Windows.Forms.TextBox();
@@ -63,7 +63,7 @@
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
+            this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -98,7 +98,7 @@
             this.tblPanelG1.Controls.Add(this.lblCompany, 0, 0);
             this.tblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
             this.tblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
-            this.tblPanelG1.Controls.Add(this.clsCodeRefDropDownRate, 2, 1);
+            this.tblPanelG1.Controls.Add(this.clsddl_9A, 2, 1);
             this.tblPanelG1.Controls.Add(this.cndCurrKbn, 2, 2);
             this.tblPanelG1.Name = "tblPanelG1";
             // 
@@ -160,18 +160,18 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // clsCodeRefDropDownRate
+            // clsddl_9A
             // 
-            this.clsCodeRefDropDownRate.Autoaddblankitem = false;
-            this.clsCodeRefDropDownRate.ClsCd = "9A";
-            this.tblPanelG1.SetColumnSpan(this.clsCodeRefDropDownRate, 3);
-            this.clsCodeRefDropDownRate.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsCodeRefDropDownRate, "clsCodeRefDropDownRate");
-            this.clsCodeRefDropDownRate.Name = "clsCodeRefDropDownRate";
-            this.clsCodeRefDropDownRate.Selectedindex = -1;
-            this.clsCodeRefDropDownRate.Selectedname = null;
-            this.clsCodeRefDropDownRate.Selectedvalue = null;
-            this.clsCodeRefDropDownRate.ShowNameDesc = false;
+            this.clsddl_9A.Autoaddblankitem = true;
+            this.clsddl_9A.ClsCd = "9A";
+            this.tblPanelG1.SetColumnSpan(this.clsddl_9A, 3);
+            this.clsddl_9A.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
+            this.clsddl_9A.Name = "clsddl_9A";
+            this.clsddl_9A.Selectedindex = -1;
+            this.clsddl_9A.Selectedname = null;
+            this.clsddl_9A.Selectedvalue = null;
+            this.clsddl_9A.ShowNameDesc = false;
             // 
             // cndCurrKbn
             // 
@@ -339,17 +339,17 @@
             // tblPanelG2
             // 
             resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
-            this.tblPanelG2.Controls.Add(this.pagerGridView1, 0, 0);
+            this.tblPanelG2.Controls.Add(this.pgvRateMs, 0, 0);
             this.tblPanelG2.Name = "tblPanelG2";
             // 
-            // pagerGridView1
+            // pgvRateMs
             // 
-            this.pagerGridView1.Columninfolist = null;
-            this.pagerGridView1.DataMember = "";
-            this.pagerGridView1.DataSource = null;
-            resources.ApplyResources(this.pagerGridView1, "pagerGridView1");
-            this.pagerGridView1.Name = "pagerGridView1";
-            this.pagerGridView1.Pagerhelper = null;
+            this.pgvRateMs.Columninfolist = null;
+            this.pgvRateMs.DataMember = "";
+            this.pgvRateMs.DataSource = null;
+            resources.ApplyResources(this.pgvRateMs, "pgvRateMs");
+            this.pgvRateMs.Name = "pgvRateMs";
+            this.pgvRateMs.Pagerhelper = null;
             // 
             // FrmExchangeRate
             // 
@@ -399,13 +399,13 @@
         private System.Windows.Forms.TableLayoutPanel tblPanelBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnSearch;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsCodeRefDropDownRate;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddl_9A;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn1;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList DropDownRate1;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCalcMode;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private System.Windows.Forms.TableLayoutPanel tblPanelG2;
-        private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pagerGridView1;
+        private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pgvRateMs;
     }
 }
