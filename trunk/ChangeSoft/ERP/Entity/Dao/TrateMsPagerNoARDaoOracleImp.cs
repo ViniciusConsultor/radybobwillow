@@ -153,7 +153,8 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
                 DataTable newdt = new DataTable();
 
-                string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo", "IFacCd", "IItemCd", "IItemCls", "IItemDesc", "IItemRev", "IItemType", "IItemType3", "IMakerCd", "IMntCls", "IMntclsdesc", "IModel", "IQryMtrl", "ISeiban", "ISpec", "VDlDesc", "VItemclsdesc", "VItemtype3desc", "VItemtypedesc", "VMakerdesc" };
+                string[] columnlist = new string[] { "I_COMPANY_CD", "I_RATE_CLS", "I_CLS_DETAIL_DESC", "I_DL_CURR_CD"
+                                , "I_CURR_DESC", "I_EFF_END_DATE", "I_RATE", "I_CNV_METHOD", "I_CNV_METHOD_DESC" };
                 foreach(string key in columnlist)
                 {
                     DataColumn col = new DataColumn();
