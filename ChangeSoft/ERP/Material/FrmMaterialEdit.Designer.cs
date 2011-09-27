@@ -34,13 +34,20 @@
             this.xplblMode = new xpLabel.xpLabel();
             this.commonToolStrip = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tlpG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnFactoryHelper = new System.Windows.Forms.Button();
+            this.txtFactoryCd = new System.Windows.Forms.TextBox();
+            this.lblFactoryNm = new System.Windows.Forms.Label();
             this.caplblFactory = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblFactoryNm = new System.Windows.Forms.Label();
-            this.txtFactoryCd = new System.Windows.Forms.TextBox();
-            this.btnFactoryHelper = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tlpG1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -49,6 +56,7 @@
             this.tableLayoutPanel1.Controls.Add(this.xplblMode, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.commonToolStrip, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tlpG1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // xplblMode
@@ -104,6 +112,24 @@
             this.tlpG1.Controls.Add(this.label1, 1, 0);
             this.tlpG1.Name = "tlpG1";
             // 
+            // btnFactoryHelper
+            // 
+            resources.ApplyResources(this.btnFactoryHelper, "btnFactoryHelper");
+            this.btnFactoryHelper.Name = "btnFactoryHelper";
+            this.btnFactoryHelper.TabStop = false;
+            this.btnFactoryHelper.UseVisualStyleBackColor = true;
+            // 
+            // txtFactoryCd
+            // 
+            resources.ApplyResources(this.txtFactoryCd, "txtFactoryCd");
+            this.txtFactoryCd.Name = "txtFactoryCd";
+            // 
+            // lblFactoryNm
+            // 
+            resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
+            this.lblFactoryNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFactoryNm.Name = "lblFactoryNm";
+            // 
             // caplblFactory
             // 
             resources.ApplyResources(this.caplblFactory, "caplblFactory");
@@ -114,23 +140,42 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // lblFactoryNm
+            // tabControl1
             // 
-            resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
-            this.lblFactoryNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblFactoryNm.Name = "lblFactoryNm";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
             // 
-            // txtFactoryCd
+            // tabPage1
             // 
-            resources.ApplyResources(this.txtFactoryCd, "txtFactoryCd");
-            this.txtFactoryCd.Name = "txtFactoryCd";
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabPage1.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.UseWaitCursor = true;
             // 
-            // btnFactoryHelper
+            // tabPage2
             // 
-            resources.ApplyResources(this.btnFactoryHelper, "btnFactoryHelper");
-            this.btnFactoryHelper.Name = "btnFactoryHelper";
-            this.btnFactoryHelper.TabStop = false;
-            this.btnFactoryHelper.UseVisualStyleBackColor = true;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseWaitCursor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.UseWaitCursor = true;
             // 
             // FrmMaterialEdit
             // 
@@ -142,6 +187,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tlpG1.ResumeLayout(false);
             this.tlpG1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -157,5 +204,10 @@
         private System.Windows.Forms.Label lblFactoryNm;
         private System.Windows.Forms.TextBox txtFactoryCd;
         private System.Windows.Forms.Button btnFactoryHelper;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
