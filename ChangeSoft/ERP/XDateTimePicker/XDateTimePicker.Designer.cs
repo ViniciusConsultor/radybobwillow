@@ -52,6 +52,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1.Location = new System.Drawing.Point(0, 0);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(0);
             this.dateTimePicker1.Name = "dateTimePicker1";
