@@ -12,7 +12,7 @@ namespace Com.GainWinSoft.Common
     public class SearchCondition
     {
         private Hashtable conditionTable = new Hashtable();
-        
+
         public Hashtable ConditionTable
         {
             get { return this.conditionTable; }
@@ -34,18 +34,22 @@ namespace Com.GainWinSoft.Common
         {
             foreach (DictionaryEntry de in this.ConditionTable)
             {
-                if (de.Value.GetType() != typeof(SearchInfo))
+                if (de.Value != null)
                 {
-                    continue;
-                }
-                SearchInfo searchInfo = (SearchInfo)de.Value;
-                if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
-                {
-                    //query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
-                    IDbDataParameter para = command.CreateParameter();
-                    para.ParameterName = searchInfo.ParameterName;
-                    para.Value = searchInfo.FieldValue;
-                    command.Parameters.Add(para);
+                    if (de.Value.GetType() != typeof(SearchInfo))
+                    {
+                        continue;
+                    }
+
+                    SearchInfo searchInfo = (SearchInfo)de.Value;
+                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                    {
+                        //query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
+                        IDbDataParameter para = command.CreateParameter();
+                        para.ParameterName = searchInfo.ParameterName;
+                        para.Value = searchInfo.FieldValue;
+                        command.Parameters.Add(para);
+                    }
                 }
             }
         }
@@ -55,13 +59,17 @@ namespace Com.GainWinSoft.Common
         {
             foreach (DictionaryEntry de in this.ConditionTable)
             {
-                if (de.Value.GetType() != typeof(SearchInfo))
+                if (de.Value != null)
                 {
-                    continue;
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
+                    {
+                        continue;
+                    }
+                    SearchInfo searchInfo = (SearchInfo)de.Value;
+                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                        query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
                 }
-                SearchInfo searchInfo = (SearchInfo)de.Value;
-                if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
-                    query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
             }
         }
         /// <summary>
@@ -94,7 +102,7 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">字段值</param>
         /// <param name="sqlOperator">SqlOperator枚举类型</param>
         /// <returns>增加条件后的Hashtable</returns>
-        public SearchCondition AddCondition(string fieldName,object fieldValue, SqlOperator sqlOperator)
+        public SearchCondition AddCondition(string fieldName, object fieldValue, SqlOperator sqlOperator)
         {
             this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fieldName, fieldName, fieldValue, sqlOperator));
             return this;
@@ -118,9 +126,9 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">字段值</param>
         /// <param name="sqlOperator">SqlOperator枚举类型</param>
         /// <returns>增加条件后的Hashtable</returns>
-        public SearchCondition AddCondition(string fielName,string parameterName, object fieldValue, SqlOperator sqlOperator)
+        public SearchCondition AddCondition(string fielName, string parameterName, object fieldValue, SqlOperator sqlOperator)
         {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName,parameterName, fieldValue, sqlOperator));
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, parameterName, fieldValue, sqlOperator));
             return this;
         }
 
@@ -144,9 +152,9 @@ namespace Com.GainWinSoft.Common
         /// <param name="sqlOperator">SqlOperator枚举类型</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         /// <returns></returns>
-        public SearchCondition AddCondition(string fielName,string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty)
+        public SearchCondition AddCondition(string fielName, string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty)
         {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName,parameterName, fieldValue, sqlOperator, excludeIfEmpty));
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, parameterName, fieldValue, sqlOperator, excludeIfEmpty));
             return this;
         }
 
@@ -160,10 +168,10 @@ namespace Com.GainWinSoft.Common
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
         /// <returns></returns>
-        public SearchCondition AddCondition(string fielName, string parameterName, object fieldValue, SqlOperator sqlOperator, 
-            bool excludeIfEmpty, string groupName,bool parameterOnly)
+        public SearchCondition AddCondition(string fielName, string parameterName, object fieldValue, SqlOperator sqlOperator,
+            bool excludeIfEmpty, string groupName, bool parameterOnly)
         {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName,parameterName, fieldValue, sqlOperator, excludeIfEmpty, groupName,parameterOnly));
+            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new SearchInfo(fielName, parameterName, fieldValue, sqlOperator, excludeIfEmpty, groupName, parameterOnly));
             return this;
         }
 
@@ -178,7 +186,7 @@ namespace Com.GainWinSoft.Common
         public string BuildConditionSql(bool withWhere)
         {
 
-            string sql="";
+            string sql = "";
             if (withWhere)
             {
                 sql = " Where (1=1) ";
@@ -195,44 +203,47 @@ namespace Com.GainWinSoft.Common
 
             foreach (DictionaryEntry de in this.conditionTable)
             {
-
-
-                if (de.Value.GetType() != typeof(SearchInfo))
-                {
-                    continue;
-                }
-                searchInfo = (SearchInfo)de.Value;
-
-                //如果只是作为参数，不参与sql条件的生成。
-                if (searchInfo.ParameterOnly)
-                {
-                    continue;
-                }
-                //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
-                if (searchInfo.ExcludeIfEmpty &&
-                    (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
-                {
-                    continue;
-                }
-
-                //只有组别名称为空才继续，即正常的sql条件
-                if (string.IsNullOrEmpty(searchInfo.GroupName))
+                if (de.Value != null)
                 {
 
-                    if (searchInfo.SqlOperator == SqlOperator.Like)
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
                     {
-                        sb.AppendFormat(" AND {0} {1} '{2}'", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%{0}%", searchInfo.FieldValue));
+                        continue;
                     }
-                    else if (searchInfo.SqlOperator == SqlOperator.In )
+                    searchInfo = (SearchInfo)de.Value;
+
+                    //如果只是作为参数，不参与sql条件的生成。
+                    if (searchInfo.ParameterOnly)
                     {
-                        sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("({0})", searchInfo.FieldValue)); 
+                        continue;
                     }
-                    else
+                    //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
+                    if (searchInfo.ExcludeIfEmpty &&
+                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
                     {
-                        sb.AppendFormat(" AND {0} {1} '{2}'", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), searchInfo.FieldValue);
+                        continue;
+                    }
+
+                    //只有组别名称为空才继续，即正常的sql条件
+                    if (string.IsNullOrEmpty(searchInfo.GroupName))
+                    {
+
+                        if (searchInfo.SqlOperator == SqlOperator.Like)
+                        {
+                            sb.AppendFormat(" AND {0} {1} '{2}'", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%{0}%", searchInfo.FieldValue));
+                        }
+                        else if (searchInfo.SqlOperator == SqlOperator.In)
+                        {
+                            sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("({0})", searchInfo.FieldValue));
+                        }
+                        else
+                        {
+                            sb.AppendFormat(" AND {0} {1} '{2}'", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), searchInfo.FieldValue);
+                        }
                     }
                 }
             }
@@ -261,42 +272,45 @@ namespace Com.GainWinSoft.Common
                 foreach (DictionaryEntry de in this.conditionTable)
                 {
 
-
-                    if (de.Value.GetType() != typeof(SearchInfo))
+                    if (de.Value != null)
                     {
-                        continue;
-                    }
-                    searchInfo = (SearchInfo)de.Value;
 
-                    //如果只是作为参数，不参与sql条件的生成。
-                    if (searchInfo.ParameterOnly)
-                    {
-                        continue;
-                    }
-
-                    //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
-                    if (searchInfo.ExcludeIfEmpty && 
-                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())) )
-                    {
-                        continue;
-                    }
-
-                    if (groupName.Equals(searchInfo.GroupName, StringComparison.OrdinalIgnoreCase))
-                    {
-                        if (searchInfo.SqlOperator == SqlOperator.Like)
+                        if (de.Value.GetType() != typeof(SearchInfo))
                         {
-                            sb.AppendFormat(" OR {0} {1} '{2}'", searchInfo.FieldName,
-                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%{0}%", searchInfo.FieldValue));
+                            continue;
                         }
-                        else
+                        searchInfo = (SearchInfo)de.Value;
+
+                        //如果只是作为参数，不参与sql条件的生成。
+                        if (searchInfo.ParameterOnly)
                         {
-                            sb.AppendFormat(" OR {0} {1} '{2}'", searchInfo.FieldName,
-                                this.ConvertSqlOperator(searchInfo.SqlOperator), searchInfo.FieldValue);
+                            continue;
+                        }
+
+                        //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
+                        if (searchInfo.ExcludeIfEmpty &&
+                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
+                        {
+                            continue;
+                        }
+
+                        if (groupName.Equals(searchInfo.GroupName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            if (searchInfo.SqlOperator == SqlOperator.Like)
+                            {
+                                sb.AppendFormat(" OR {0} {1} '{2}'", searchInfo.FieldName,
+                                    this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%{0}%", searchInfo.FieldValue));
+                            }
+                            else
+                            {
+                                sb.AppendFormat(" OR {0} {1} '{2}'", searchInfo.FieldName,
+                                    this.ConvertSqlOperator(searchInfo.SqlOperator), searchInfo.FieldValue);
+                            }
                         }
                     }
                 }
 
-                if(!string.IsNullOrEmpty(sb.ToString()))
+                if (!string.IsNullOrEmpty(sb.ToString()))
                 {
                     tempSql = string.Format(tempSql, sb.ToString().Substring(3));//从第一个Or开始位置
                     sql += tempSql;
@@ -306,7 +320,7 @@ namespace Com.GainWinSoft.Common
             return sql;
         }
 
- 
+
 
 
         /// <summary>
@@ -335,45 +349,48 @@ namespace Com.GainWinSoft.Common
 
             foreach (DictionaryEntry de in this.conditionTable)
             {
-
-
-                if (de.Value.GetType() != typeof(SearchInfo))
-                {
-                    continue;
-                }
-                searchInfo = (SearchInfo)de.Value;
-
-                //如果只是作为参数，不参与sql条件的生成。
-                if (searchInfo.ParameterOnly)
-                {
-                    continue;
-                }
-
-                //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
-                if (searchInfo.ExcludeIfEmpty &&
-                    (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
-                {
-                    continue;
-                }
-
-                //只有组别名称为空才继续，即正常的sql条件
-                if (string.IsNullOrEmpty(searchInfo.GroupName))
+                if (de.Value != null)
                 {
 
-                    if (searchInfo.SqlOperator == SqlOperator.Like)
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
                     {
-                        sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                        continue;
                     }
-                    else if (searchInfo.SqlOperator == SqlOperator.In)
+                    searchInfo = (SearchInfo)de.Value;
+
+                    //如果只是作为参数，不参与sql条件的生成。
+                    if (searchInfo.ParameterOnly)
                     {
-                        sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("(:{0})", searchInfo.ParameterName));
+                        continue;
                     }
-                    else
+
+                    //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
+                    if (searchInfo.ExcludeIfEmpty &&
+                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
                     {
-                        sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
-                            this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format(":{0}",searchInfo.ParameterName));
+                        continue;
+                    }
+
+                    //只有组别名称为空才继续，即正常的sql条件
+                    if (string.IsNullOrEmpty(searchInfo.GroupName))
+                    {
+
+                        if (searchInfo.SqlOperator == SqlOperator.Like)
+                        {
+                            sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                        }
+                        else if (searchInfo.SqlOperator == SqlOperator.In)
+                        {
+                            sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("(:{0})", searchInfo.ParameterName));
+                        }
+                        else
+                        {
+                            sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format(":{0}", searchInfo.ParameterName));
+                        }
                     }
                 }
             }
@@ -401,32 +418,35 @@ namespace Com.GainWinSoft.Common
                 tempSql = " AND ({0})";
                 foreach (DictionaryEntry de in this.conditionTable)
                 {
-
-
-                    if (de.Value.GetType() != typeof(SearchInfo))
+                    if (de.Value != null)
                     {
-                        continue;
-                    }
-                    searchInfo = (SearchInfo)de.Value;
 
-                    //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
-                    if (searchInfo.ExcludeIfEmpty &&
-                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
-                    {
-                        continue;
-                    }
 
-                    if (groupName.Equals(searchInfo.GroupName, StringComparison.OrdinalIgnoreCase))
-                    {
-                        if (searchInfo.SqlOperator == SqlOperator.Like)
+                        if (de.Value.GetType() != typeof(SearchInfo))
                         {
-                            sb.AppendFormat(" OR {0} {1} {2}", searchInfo.FieldName,
-                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                            continue;
                         }
-                        else
+                        searchInfo = (SearchInfo)de.Value;
+
+                        //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
+                        if (searchInfo.ExcludeIfEmpty &&
+                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
                         {
-                            sb.AppendFormat(" OR {0} {1} {2}", searchInfo.FieldName,
-                                this.ConvertSqlOperator(searchInfo.SqlOperator),string.Format(":{0}", searchInfo.ParameterName));
+                            continue;
+                        }
+
+                        if (groupName.Equals(searchInfo.GroupName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            if (searchInfo.SqlOperator == SqlOperator.Like)
+                            {
+                                sb.AppendFormat(" OR {0} {1} {2}", searchInfo.FieldName,
+                                    this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                            }
+                            else
+                            {
+                                sb.AppendFormat(" OR {0} {1} {2}", searchInfo.FieldName,
+                                    this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format(":{0}", searchInfo.ParameterName));
+                            }
                         }
                     }
                 }
@@ -451,14 +471,18 @@ namespace Com.GainWinSoft.Common
             SearchInfo searchInfo = null;
             foreach (DictionaryEntry de in this.conditionTable)
             {
-                if (de.Value.GetType() != typeof(SearchInfo))
+                if (de.Value != null)
                 {
-                    continue;
-                }
-                searchInfo = (SearchInfo)de.Value;
-                if (!string.IsNullOrEmpty(searchInfo.GroupName) && !htGroupNames.Contains(searchInfo.GroupName))
-                {
-                    htGroupNames.Add(searchInfo.GroupName, searchInfo.GroupName);
+
+                    if (de.Value.GetType() != typeof(SearchInfo))
+                    {
+                        continue;
+                    }
+                    searchInfo = (SearchInfo)de.Value;
+                    if (!string.IsNullOrEmpty(searchInfo.GroupName) && !htGroupNames.Contains(searchInfo.GroupName))
+                    {
+                        htGroupNames.Add(searchInfo.GroupName, searchInfo.GroupName);
+                    }
                 }
             }
 
@@ -645,7 +669,7 @@ namespace Com.GainWinSoft.Common
                     break;
             }
             return type;
-        } 
+        }
         #endregion
     }
 
@@ -663,8 +687,8 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">字段的值</param>
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// 
-        public SearchInfo(string fieldName,string parameterName, object fieldValue, SqlOperator sqlOperator)
-            : this(fieldName,parameterName, fieldValue, sqlOperator, true)
+        public SearchInfo(string fieldName, string parameterName, object fieldValue, SqlOperator sqlOperator)
+            : this(fieldName, parameterName, fieldValue, sqlOperator, true)
         { }
         /// <summary>
         /// 构造函数
@@ -685,8 +709,8 @@ namespace Com.GainWinSoft.Common
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         /// <param name="parameterOnly">如果为true的话，改字段不做为查询条件拼SQL的Clause</param>
-        public SearchInfo(string fieldName,string parameterName, object fieldValue, SqlOperator sqlOperator,bool excludeIfEmpty, bool parameterOnly)
-            : this(fieldName,parameterName, fieldValue, sqlOperator, excludeIfEmpty, null, parameterOnly)
+        public SearchInfo(string fieldName, string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty, bool parameterOnly)
+            : this(fieldName, parameterName, fieldValue, sqlOperator, excludeIfEmpty, null, parameterOnly)
         { }
 
         /// <summary>
@@ -696,8 +720,8 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">字段的值</param>
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
-        public SearchInfo(string fieldName,string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty)
-            : this(fieldName,parameterName, fieldValue, sqlOperator, excludeIfEmpty, null, false)
+        public SearchInfo(string fieldName, string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty)
+            : this(fieldName, parameterName, fieldValue, sqlOperator, excludeIfEmpty, null, false)
         { }
 
         /// <summary>
@@ -708,7 +732,7 @@ namespace Com.GainWinSoft.Common
         /// <param name="sqlOperator">字段的Sql操作符号</param>
         /// <param name="excludeIfEmpty">如果字段为空或者Null则不作为查询条件</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public SearchInfo(string fieldName, string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty, string groupName,bool parameterOnly)
+        public SearchInfo(string fieldName, string parameterName, object fieldValue, SqlOperator sqlOperator, bool excludeIfEmpty, string groupName, bool parameterOnly)
         {
             this.fieldName = fieldName;
             this.parameterName = parameterName;
