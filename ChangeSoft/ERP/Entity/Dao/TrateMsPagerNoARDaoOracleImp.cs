@@ -11,6 +11,7 @@ using NHibernate.Transform;
 using System.Data.Common;
 using System.Data.SqlClient;
 using Oracle.DataAccess.Client;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
@@ -261,8 +262,29 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
         private StringBuilder CreateSelectSQL(SearchCondition condition)
         {
+
             StringBuilder sql = new StringBuilder();
-         
+            sql.AppendLine(" SELECT ");
+            sql.AppendLine("        T_RATE_MS.I_RATE_CLS ");                // レート区分
+            sql.AppendLine("       ,T_CLS_DETAIL_MS.I_CLS_DETAIL_DESC ");   // レート区分名
+            sql.AppendLine("       ,T_RATE_MS.I_DL_CURR_CD ");              // 取引通貨
+            sql.AppendLine("       ,T_CURR_MS.I_CURR_DESC ");               // 通貨名
+            sql.AppendLine("       ,DECODE(T_RATE_MS.I_EFF_END_DATE,99999999,99991231,T_RATE_MS.I_EFF_END_DATE) I_EFF_END_DATE ");            // 有効期限
+            sql.AppendLine("       ,T_RATE_MS.I_RATE ");                    // レート
+            sql.AppendLine("       ,T_RATE_MS.I_CNV_METHOD ");              // 換算方式
+            sql.AppendLine("       ,T_RATE_MS.I_UPD_TIMESTAMP ");           // 更新タイプスタンプ
+            sql.AppendLine("       ,T_RATE_MS.I_EFF_END_DATE I_EFF_END_DATE_NUM ");//有効期限(データ)
+            sql.AppendLine("  FROM ");
+            sql.AppendLine("       T_RATE_MS LEFT JOIN T_CURR_MS ON _RATE_MS.I_DL_CURR_CD = T_CURR_MS.I_CURR_CD");
+            sql.Append("               AND T_RATE_MS.I_COMPANY_CD = ").Append(":I_COMPANY_CD");
+            sql.AppendLine("       LEFT JOIN T_CLS_DETAIL_MS ON T_RATE_MS.I_RATE_CLS = T_CLS_DETAIL_MS.I_CLS_DETAIL_CD");
+            sql.AppendLine("            AND T_CLS_DETAIL_MS.I_CLS_CD = ").AppendLine(CommonUtil.AddSquote(Constant.RATE));
+            sql.AppendLine("            AND T_CLS_DETAIL_MS.I_LANGUAGE_CD = ").Append(":I_LANGUAGE_CD");
+           
+
+            sql.AppendLine(condition.BuildParameterConditionSql(true));
+
+            sql.AppendLine(" ORDER BY T_RATE_MS.I_RATE_CLS, T_RATE_MS.I_DL_CURR_CD, T_RATE_MS.I_EFF_END_DATE ");
             return sql;
         }
 
