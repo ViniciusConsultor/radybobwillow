@@ -23,6 +23,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmExchangeRate));
 
         IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
+
+        #region 画面用变量--------
         /// <summary>
         /// 画面操作模式
         /// </summary>
@@ -40,6 +42,13 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// 第一组
         /// </summary>
         private int firstGroup = 1;
+
+        /// <summary>
+        /// intResult
+        /// </summary>
+        private Int32 frmIntResult= 0;
+        #endregion
+
 
 
         /// <summary>
@@ -69,12 +78,14 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         private void removeAllClickEvent()
         {
-            //this.commonToolStrip1.AddClick -= new EventHandler(commonToolStrip1_AddClick);
-            //this.commonToolStrip1.DeleteClick -= new EventHandler(commonToolStrip1_DeleteClick);
-            //this.commonToolStrip1.UpdateClick -= new EventHandler(commonToolStrip1_UpdateClick);
-            //this.commonToolStrip1.SaveClick -= new EventHandler(commonToolStrip1_SaveClick);
-            //this.commonToolStrip1.GobackClick -= new EventHandler(commonToolStrip1_GobackClick);
-            //this.commonToolStrip1.OkClick -= new EventHandler(commonToolStrip1_OkClick);
+            this.commonToolStrip1.SaveClick -= new EventHandler(commonToolStrip1_SaveClick);
+
+            this.commonToolStrip1.GobackClick -= new EventHandler(commonToolStrip1_GobackClick);
+            this.commonToolStrip1.OkClick -= new EventHandler(commonToolStrip1_OkClick);
+
+            this.btnClear.Click -= new EventHandler(btnClear_Click);
+
+            this.btnSearch.Click -= new EventHandler(btnSearch_Click);
         }
 
         /// <summary>
@@ -82,18 +93,18 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         private void addAllClickEvent()
         {
-            //this.commonToolStrip1.AddClick += new EventHandler(commonToolStrip1_AddClick);
-            //this.commonToolStrip1.DeleteClick += new EventHandler(commonToolStrip1_DeleteClick);
-            //this.commonToolStrip1.UpdateClick += new EventHandler(commonToolStrip1_UpdateClick);
-            //this.commonToolStrip1.SaveClick += new EventHandler(commonToolStrip1_SaveClick);
-            // this.commonToolStrip1.UpdateClick += new EventHandler(commonToolStrip1_UpdateClick);
+
             this.commonToolStrip1.SaveClick += new EventHandler(commonToolStrip1_SaveClick);
-            
+
             this.commonToolStrip1.GobackClick += new EventHandler(commonToolStrip1_GobackClick);
             this.commonToolStrip1.OkClick += new EventHandler(commonToolStrip1_OkClick);
 
-            this.btnClear.Click += new EventHandler(btnClear_Click); 
+            this.btnClear.Click += new EventHandler(btnClear_Click);
+
             this.btnSearch.Click += new EventHandler(btnSearch_Click);
+
+            this.pgvRateMs.DoubleClick += new EventHandler(pgvRateMs_DoubleClick);
+           
         }
 
         #region 初期化处理 Initialize
@@ -113,9 +124,9 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.addAllClickEvent();
             
             //
-            this.clsddl_9A.Selectedindex = 0;
-            this.tddlCurr.SelectedIndex = 0;
-            action.Init_GridView(this.pgvRateMs);
+            this.ClearG1();
+            this.ClearG2();
+            this.ClearG3();
 
             
             this.SetGroupLayout();
@@ -164,16 +175,30 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         }
         #endregion
 
+
+
+
         #region 查询按钮 btnInquiry_Click
         private void btnSearch_Click(object sender, EventArgs e)
         {
             this.Data_Inquiry();
+
+            currentGroup++;
+            SetCommonToolstrip();
+            SetGroupLayout();
         }
         #endregion
 
+
+
+
+
+
+
         #region   Data_Inquiry
-        private void Data_Inquiry()
+        private Boolean Data_Inquiry()
         {
+            Boolean bolResult = false;
             this.Cursor = Cursors.WaitCursor;
 
             //IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
@@ -186,8 +211,16 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             
             Int32 intRes  =  action.GetRateMsDetail(pgvRateMs,cardvo);
 
+            if (intRes > 0)
+            {
+
+                bolResult = true;
+            }
+
             
             this.Cursor = Cursors.Default;
+
+            return bolResult;
         }
         #endregion
 
@@ -197,31 +230,44 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         public void SetCommonToolstrip()
         {
+            SetCommonToolstripFalse();
+
             if (currentGroup == firstGroup)
             {
-                this.commonToolStrip1.GobackEnabled = false;
-                this.commonToolStrip1.UpdateEnabled = false;
-                this.commonToolStrip1.DeleteEnabled = false;
                 this.commonToolStrip1.OkEnabled = true;
-            }
 
-            if (currentGroup == 3)
+            }else if (currentGroup == 3)
             {
+
                 this.commonToolStrip1.UpdateEnabled = true;
                 this.commonToolStrip1.DeleteEnabled = true;
                 this.commonToolStrip1.GobackEnabled = true;
-                this.commonToolStrip1.OkEnabled = false;
-            }
-            if (currentGroup == 2 && firstGroup == 1)
+                this.commonToolStrip1.AddEnabled = true;
+
+            }else if (currentGroup == 2)
             {
-                this.commonToolStrip1.UpdateEnabled = false;
-                this.commonToolStrip1.DeleteEnabled = false;
+
                 this.commonToolStrip1.GobackEnabled = true;
                 this.commonToolStrip1.OkEnabled = true;
 
             }
 
         }
+
+        public void SetCommonToolstripFalse()
+        {
+            this.commonToolStrip1.CsvEnabled = false;
+            this.commonToolStrip1.CopyEnabled = false;
+            this.commonToolStrip1.GobackEnabled = false;
+            this.commonToolStrip1.UpdateEnabled = false;
+            this.commonToolStrip1.DeleteEnabled = false;
+            this.commonToolStrip1.SaveEnabled = false;
+            this.commonToolStrip1.ReportEnabled = false;
+            this.commonToolStrip1.OkEnabled = false;
+            this.commonToolStrip1.AddEnabled = false;
+            this.commonToolStrip1.GobackEnabled = false;
+        }
+
         #endregion
 
 
@@ -309,6 +355,12 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
                 //{
                 //    this.ClearError();
                 //}
+                if (!Data_Inquiry())
+                {
+                    return;
+                }
+
+
 
             }
             if (currentGroup == 2)
@@ -325,6 +377,14 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
                 //Data_Inquiry();
                 //this.FrmMaterialSearch_pagerGridView1.Focus();
+
+
+                if (pgvRateMs.SelectedRowIndex >= 0)
+                {
+                    SetDetail2Form();
+                }
+               
+               
             }
 
             currentGroup++;
@@ -342,28 +402,64 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
         private void ClearG1()
         {
-            this.clsddl_9A.Selectedindex = 0;
-            this.tddlCurr.SelectedIndex = 0;
+            this.clsddl_9A.Selectedvalue = "";
+            this.tddlCurr.Selectedvalue = "";
                    
         }
 
         private void ClearG3()
-        {
-            //xdtpEffEedDate.Text = "";
+        {            
             xdtpEffEedDate.SetDefaultValue("");
-            clsddl_9A_G3.Selectedindex = 0;
-            cndCurrKbn_G3.Selectedindex = 0;
-            cndCalcMode.Selectedindex = 0;
-
+            clsddl_9A_G3.Selectedvalue = "";
+            cndCurrKbn_G3.Selectedvalue = "";
+            cndCalcMode.Selectedvalue = "";
+            this.txtRate.Text = "";
         }
 
         #region 清除G1的检索条件
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearG1();
         }
 
         #endregion
+
+        #region datagridview操作
+
+        private void SetDetail2Form()
+        {
+
+            DataGridViewRow row = this.pgvRateMs.SelecteRows[0];
+
+            //汇率区分
+            this.clsddl_9A_G3.Selectedvalue = row.Cells["I_RATE_CLS"].Value.ToString();
+            
+           
+            this.cndCurrKbn_G3.Selectedvalue = row.Cells["I_DL_CURR_CD"].Value.ToString();
+
+                 
+            this.xdtpEffEedDate.Value = CommonUtil.ToDateTime(row.Cells["I_EFF_END_DATE"].Value);
+            
+            this.cndCalcMode.Selectedvalue = row.Cells["I_CNV_METHOD"].Value.ToString();
+            this.txtRate.Text = row.Cells["I_RATE"].Value.ToString();
+
+
+
+
+        }
+
+        private void pgvRateMs_DoubleClick(object sender, EventArgs e)
+        {
+            currentGroup++;
+            this.SetCommonToolstrip();
+            this.SetGroupLayout();
+
+            SetDetail2Form();
+        }
+
+        #endregion
+
 
     }
 }
