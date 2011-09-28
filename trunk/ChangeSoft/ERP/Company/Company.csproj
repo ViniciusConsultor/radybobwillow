@@ -90,6 +90,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -164,6 +165,10 @@
     <ProjectReference Include="..\ReportCenter\ReportCenter.csproj">
       <Project>{E1EEB1F8-808A-4FA8-B4BA-70F7137AE769}</Project>
       <Name>ReportCenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
+      <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
+      <Name>TextBox</Name>
     </ProjectReference>
     <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
