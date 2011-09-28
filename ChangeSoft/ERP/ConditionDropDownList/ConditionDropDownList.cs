@@ -88,7 +88,19 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
         public string Selectedvalue
         {
             get { return selectedvalue; }
-            set { selectedvalue = value; }
+            set
+            {
+                selectedvalue = value;
+                int i = 0;
+                foreach (ConditionVo vo in this.comboBox1.Items)
+                {
+                    if (vo.ConditionValue.Equals(selectedvalue))
+                    {
+                        this.comboBox1.SelectedIndex = i;
+                    }
+                    i++;
+                }
+            }
         }
 
 

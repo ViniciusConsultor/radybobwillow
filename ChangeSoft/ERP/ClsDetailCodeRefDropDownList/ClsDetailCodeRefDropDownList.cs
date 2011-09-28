@@ -56,8 +56,24 @@ namespace ClsDetailCodeRefDropDownList
 
         public string Selectedvalue
         {
-            get { return selectedvalue; }
-            set { selectedvalue = value; }
+            get
+            {
+                return selectedvalue;
+            }
+            set
+            {
+                selectedvalue = value;
+                int i = 0;
+                foreach (ConditionVo vo in this.comboBox1.Items)
+                {
+                    if (vo.ConditionValue.Equals(selectedvalue))
+                    {
+                        this.comboBox1.SelectedIndex = i;
+                    }
+                    i++;
+                }
+
+            }
         }
 
         private string selectedname;
@@ -72,7 +88,10 @@ namespace ClsDetailCodeRefDropDownList
 
         public int Selectedindex
         {
-            get { return selectedindex; }
+            get
+            {
+                selectedindex = this.comboBox1.SelectedIndex; 
+                return selectedindex; }
             set
             {
                 selectedindex = value;

@@ -206,6 +206,8 @@
             this.commonToolStrip.AddEnabled = true;
             this.commonToolStrip.AddVisible = false;
             resources.ApplyResources(this.commonToolStrip, "commonToolStrip");
+            this.commonToolStrip.CleargroupEnabled = true;
+            this.commonToolStrip.CleargroupVisible = true;
             this.commonToolStrip.CopyEnabled = true;
             this.commonToolStrip.CopyVisible = false;
             this.commonToolStrip.CsvEnabled = true;
