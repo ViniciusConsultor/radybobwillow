@@ -93,8 +93,16 @@ namespace Com.GainWinSoft.ERP.TableDropDownList
         private int selectedIndex = -1;
         public int SelectedIndex
         {
-            get { return selectedIndex; }
-            set { selectedIndex = value; }
+            get
+            {
+                selectedIndex = this.comboBox1.SelectedIndex;
+                return selectedIndex;
+            }
+            set
+            {
+                selectedIndex = value;
+                this.comboBox1.SelectedIndex = value;
+            }
         }
 
         public delegate void OnSelectChangedEventHandler(object sender, EventArgs e);
