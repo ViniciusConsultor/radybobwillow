@@ -112,8 +112,16 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
 
         public int Selectedindex
         {
-            get { return selectedindex; }
-            set { selectedindex = value; }
+            get
+            {
+                selectedindex = this.comboBox1.SelectedIndex;
+                return selectedindex;
+            }
+            set
+            {
+                selectedindex = value;
+                this.comboBox1.SelectedIndex = value;
+            }
         }
 
         public bool Autoaddblankitem
