@@ -142,8 +142,8 @@ namespace Com.GainWinSoft.ERP.TableDropDownList
             if (autoaddblankitem)
             {
                 ConditionVo vo = new ConditionVo();
-                vo.ConditionValue = " ";
-                vo.ConditionName = " ";
+                vo.ConditionValue = "";
+                vo.ConditionName = "";
                 this.comboBox1.Items.Add(vo);
             }
 

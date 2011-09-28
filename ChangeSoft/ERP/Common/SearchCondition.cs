@@ -42,7 +42,7 @@ namespace Com.GainWinSoft.Common
                     }
 
                     SearchInfo searchInfo = (SearchInfo)de.Value;
-                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim()))
                     {
                         //query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
                         IDbDataParameter para = command.CreateParameter();
@@ -67,7 +67,7 @@ namespace Com.GainWinSoft.Common
                         continue;
                     }
                     SearchInfo searchInfo = (SearchInfo)de.Value;
-                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString()))
+                    if (searchInfo.FieldValue != null && !string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim()))
                         query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
                 }
             }
@@ -220,7 +220,7 @@ namespace Com.GainWinSoft.Common
                     }
                     //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                     if (searchInfo.ExcludeIfEmpty &&
-                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
+                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim())))
                     {
                         continue;
                     }
@@ -289,7 +289,7 @@ namespace Com.GainWinSoft.Common
 
                         //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                         if (searchInfo.ExcludeIfEmpty &&
-                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
+                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim())))
                         {
                             continue;
                         }
@@ -367,7 +367,7 @@ namespace Com.GainWinSoft.Common
 
                     //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                     if (searchInfo.ExcludeIfEmpty &&
-                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
+                        (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim())))
                     {
                         continue;
                     }
@@ -430,7 +430,7 @@ namespace Com.GainWinSoft.Common
 
                         //如果选择ExcludeIfEmpty为True,并且该字段为空值的话,跳过
                         if (searchInfo.ExcludeIfEmpty &&
-                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString())))
+                            (searchInfo.FieldValue == null || string.IsNullOrEmpty(searchInfo.FieldValue.ToString().Trim())))
                         {
                             continue;
                         }

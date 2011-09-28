@@ -57,8 +57,8 @@ namespace Com.GainWinSoft.Common.Control.ConditionDropDownList
             if (autoaddblankitem)
             {
                 ConditionVo vo = new ConditionVo();
-                vo.ConditionValue = " ";
-                vo.ConditionName = " ";
+                vo.ConditionValue = "";
+                vo.ConditionName = "";
                 this.comboBox1.Items.Add(vo);
             }
             IList<ConditionVo> result = new List<ConditionVo>();

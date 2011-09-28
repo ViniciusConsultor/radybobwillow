@@ -26,7 +26,8 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
         public event OnSelectionChangedEventHandler SelectionChanged;
 
 
-
+        public event EventHandler DoubleClick;
+        public event EventHandler Click;
 
         public PagerGridView()
         {
@@ -41,8 +42,25 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
                 log.Debug("OnSelectionChanged");
                 SelectionChanged(this, e);//触发事件  
             }
-        } 
+        }
 
+        protected virtual void OnDoubleClick(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (DoubleClick != null)
+            {//判断事件是否为空  
+
+                DoubleClick(this, e);//触发事件  
+            }
+        }
+
+        protected virtual void OnClick(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (Click != null)
+            {//判断事件是否为空  
+
+                Click(this, e);//触发事件  
+            }
+        }
 
 
         public IList<ColumnInfoVo> Columninfolist
@@ -185,11 +203,15 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
         public void LoadData()
         {
 
-            this.dataGridView1.SelectionChanged -= new EventHandler(OnSelectionChanged);
+            //this.dataGridView1.SelectionChanged -= new EventHandler(OnSelectionChanged);
+            //this.dataGridView1.Click -= new EventHandler(OnClick);
+            //this.dataGridView1.DoubleClick -= new EventHandler(OnDoubleClick);
 
             this.dataGridView1.DataSource = pagerhelper.GetDataSet();
             this.dataGridView1.DataMember = pagerhelper.Key;
-            this.dataGridView1.SelectionChanged += new EventHandler(OnSelectionChanged);
+            
+            //this.dataGridView1.SelectionChanged += new EventHandler(OnSelectionChanged);
+            
             log.Debug("Loaddata");
 
 
@@ -408,10 +430,14 @@ namespace Com.GainWinSoft.Common.Control.PagerGridView
 
         private void PagerGridView_Load(object sender, EventArgs e)
         {
+            
+            
             if (IsDesignMode())
                 return;
 
-
+            this.dataGridView1.SelectionChanged += new EventHandler(OnSelectionChanged);
+            this.dataGridView1.Click += new EventHandler(OnClick);
+            this.dataGridView1.DoubleClick += new EventHandler(OnDoubleClick);
 
         }
 
