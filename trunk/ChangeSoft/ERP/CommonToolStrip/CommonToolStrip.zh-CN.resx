@@ -120,6 +120,9 @@
   <data name="Add" xml:space="preserve">
     <value>新建</value>
   </data>
+  <data name="Cleargroup" xml:space="preserve">
+    <value>清空</value>
+  </data>
   <data name="Copy" xml:space="preserve">
     <value>复制</value>
   </data>

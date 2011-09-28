@@ -67,6 +67,13 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Cleargroup_24 {
+            get {
+                object obj = ResourceManager.GetObject("Cleargroup_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Copy_24 {
             get {
                 object obj = ResourceManager.GetObject("Copy_24", resourceCulture);
