@@ -27,6 +27,8 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
         private ToolStripButton item_csv = new ToolStripButton();
         private ToolStripSeparator item_separator3 = new ToolStripSeparator();
 
+        private ToolStripButton item_cleargroup = new ToolStripButton();
+
         private ToolStripButton item_goback = new ToolStripButton();
         private ToolStripButton item_ok = new ToolStripButton(); ToolStripButton item_exit = new ToolStripButton();
 
@@ -142,6 +144,26 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
                 item_csv.Enabled = value;
             }
         }
+
+        private bool _cleargroupEnabled;
+
+        public bool CleargroupEnabled
+        {
+            get
+            {
+                _cleargroupEnabled = item_cleargroup.Enabled;
+                return _cleargroupEnabled;
+            }
+            set
+            {
+                _cleargroupEnabled = value;
+                item_cleargroup.Enabled = value;
+            }
+        }
+
+
+
+
         private bool _gobackEnabled;
 
         public bool GobackEnabled
@@ -310,6 +332,24 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
                 item_csv.Visible = value;
             }
         }
+
+        private bool _cleargroupVisible;
+
+        public bool CleargroupVisible
+        {
+            get
+            {
+                _cleargroupVisible = item_cleargroup.Visible;
+                return _cleargroupVisible;
+            }
+            set
+            {
+                _cleargroupVisible = value;
+                item_cleargroup.Visible = value;
+            }
+        }
+
+
         private bool _gobackVisible;
 
         public bool GobackVisible
@@ -375,10 +415,15 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
 
         public bool Line1Visible
         {
-            get { _line1Visible = this.item_separator1.Visible;
-                return _line1Visible; }
-            set { _line1Visible = value;
-            item_separator1.Visible = value;
+            get
+            {
+                _line1Visible = this.item_separator1.Visible;
+                return _line1Visible;
+            }
+            set
+            {
+                _line1Visible = value;
+                item_separator1.Visible = value;
             }
         }
         private bool _line2Visible = true;
@@ -394,8 +439,8 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
                 _line2Visible = value;
                 item_separator2.Visible = value;
             }
-        }       
-        
+        }
+
         private bool _line3Visible = true;
 
         public bool Line3Visible
@@ -434,6 +479,7 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
         public event EventHandler CopyClick;
         public event EventHandler ReportClick;
         public event EventHandler CsvClick;
+        public event EventHandler CleargroupClick;
         public event EventHandler GobackClick;
         public event EventHandler OkClick;
         public event EventHandler ExitClick;
@@ -501,6 +547,15 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             }
         }
 
+        protected virtual void OnCleargroupClick(Object sender, EventArgs e)
+        {//事件触发方法  
+            if (CleargroupClick != null)
+            {//判断事件是否为空  
+
+                CleargroupClick(this, e);//触发事件  
+            }
+        }
+
         protected virtual void OnGobackClick(Object sender, EventArgs e)
         {//事件触发方法  
             if (GobackClick != null)
@@ -535,7 +590,7 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
 
                 HelpClick(this, e);//触发事件  
             }
-        } 
+        }
 
         public bool Displaytext
         {
@@ -590,6 +645,14 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             item_csv.Text = rm.GetString("Csv");
             item_csv.ToolTipText = rm.GetString("Csv");
             item_csv.ImageScaling = ToolStripItemImageScaling.None;
+
+
+            item_cleargroup.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Cleargroup_24");
+            item_cleargroup.Text = rm.GetString("Cleargroup");
+            item_cleargroup.ToolTipText = rm.GetString("Cleargroup");
+            item_cleargroup.ImageScaling = ToolStripItemImageScaling.None;
+
+
             item_goback.Image = (Image)Com.GainWinSoft.Common.Control.CommonToolStrip.Properties.Resources.ResourceManager.GetObject("Goback_24");
             item_goback.Text = rm.GetString("Goback");
             item_goback.ToolTipText = rm.GetString("Goback");
@@ -625,6 +688,7 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             this.toolStrip1.Items.Add(item_report);
             this.toolStrip1.Items.Add(item_csv);
             this.toolStrip1.Items.Add(item_separator3);
+            this.toolStrip1.Items.Add(item_cleargroup);
             this.toolStrip1.Items.Add(item_goback);
             this.toolStrip1.Items.Add(item_ok);
             this.toolStrip1.Items.Add(item_exit);
@@ -656,6 +720,7 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
             item_copy.Click += new EventHandler(OnCopyClick);
             item_report.Click += new EventHandler(OnReportClick);
             item_csv.Click += new EventHandler(OnCsvClick);
+            item_cleargroup.Click+=new EventHandler(OnCleargroupClick);
             item_goback.Click += new EventHandler(OnGobackClick);
             item_ok.Click += new EventHandler(OnOkClick);
             item_exit.Click += new EventHandler(OnExitClick);
@@ -687,6 +752,8 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
                 item_report.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_csv.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
                 item_csv.TextImageRelation = TextImageRelation.ImageBeforeText;
+                item_cleargroup.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                item_cleargroup.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_goback.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
                 item_goback.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_ok.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
@@ -714,6 +781,8 @@ namespace Com.GainWinSoft.Common.Control.CommonToolStrip
                 item_report.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_csv.DisplayStyle = ToolStripItemDisplayStyle.Image;
                 item_csv.TextImageRelation = TextImageRelation.ImageBeforeText;
+                item_cleargroup.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                item_cleargroup.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_goback.DisplayStyle = ToolStripItemDisplayStyle.Image;
                 item_goback.TextImageRelation = TextImageRelation.ImageBeforeText;
                 item_ok.DisplayStyle = ToolStripItemDisplayStyle.Image;
