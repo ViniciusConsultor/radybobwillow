@@ -50,13 +50,13 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
 
 
 
-               if (!string.IsNullOrEmpty(cardvo.IDlCurrCd))
+               if (!string.IsNullOrEmpty(cardvo.IDlCurrCd.Trim()))
                {
                    condition.AddCondition("T_RATE_MS.I_DL_CURR_CD", "I_DL_CURR_CD", cardvo.IDlCurrCd, SqlOperator.Equal);
 
                }
 
-               if (!string.IsNullOrEmpty(cardvo.IRateCls))
+               if (!string.IsNullOrEmpty(cardvo.IRateCls.Trim()))
                {
                    condition.AddCondition("T_RATE_MS.I_RATE_CLS", "I_RATE_CLS", cardvo.IRateCls, SqlOperator.Equal);                   
                }
