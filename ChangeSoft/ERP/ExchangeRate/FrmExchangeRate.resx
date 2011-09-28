@@ -143,8 +143,8 @@
   <data name="tblPanelGrp.Size" type="System.Drawing.Size, System.Drawing">
     <value>784, 562</value>
   </data>
-  <data name="&gt;&gt;cndCurrKbn1.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="commonToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>778, 29</value>
@@ -154,6 +154,9 @@
   </data>
   <data name="lblStar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lblStar6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 78</value>
   </data>
   <data name="&gt;&gt;lblCompany.Name" xml:space="preserve">
     <value>lblCompany</value>
@@ -189,8 +192,8 @@
   <data name="tblPanelG3.Size" type="System.Drawing.Size, System.Drawing">
     <value>784, 197</value>
   </data>
-  <data name="&gt;&gt;btnCompany.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblStar6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblValidDate.Text" xml:space="preserve">
     <value>有效期限</value>
@@ -309,9 +312,6 @@
   <data name="lblCompany.Text" xml:space="preserve">
     <value>公司代码</value>
   </data>
-  <data name="btnSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
   <data name="btnSearch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -330,8 +330,8 @@
   <data name="commonToolStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tblPanelBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="&gt;&gt;lblStar3.Name" xml:space="preserve">
+    <value>lblStar3</value>
   </data>
   <data name="lblValidDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -439,7 +439,7 @@
     <value>Fill</value>
   </data>
   <data name="tblPanelG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsddl_9A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tddlCurr" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,110,Absolute,411" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCurrKbn" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRateKbn" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelBtn" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="clsddl_9A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tddlCurr" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,148,Absolute,373" /&gt;&lt;Rows Styles="Absolute,26,Absolute,26,Absolute,26,Absolute,29,Absolute,17" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="cndCurrKbn_G3.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -454,10 +454,13 @@
     <value>4</value>
   </data>
   <data name="tblPanelBtn.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,214,Absolute,96,Absolute,93,Percent,100" /&gt;&lt;Rows Styles="Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnSearch" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,181,Absolute,89,Absolute,89,Percent,100" /&gt;&lt;Rows Styles="Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="&gt;&gt;lblCurrKbn.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;cndCalcMode.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList, Com.GainWinSoft.Common.Control.ConditionDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -465,8 +468,8 @@
   <data name="tblPanelG1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="lblRate.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="&gt;&gt;tddlCurr.Name" xml:space="preserve">
+    <value>tddlCurr</value>
   </data>
   <data name="&gt;&gt;lblStar5.Name" xml:space="preserve">
     <value>lblStar5</value>
@@ -476,9 +479,6 @@
   </data>
   <data name="lblStar5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="lblCurrKbn.Text" xml:space="preserve">
-    <value>交易货币</value>
   </data>
   <data name="tblPanelG1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -495,8 +495,8 @@
   <data name="&gt;&gt;tblPanelG2.Parent" xml:space="preserve">
     <value>tblPanelGrp</value>
   </data>
-  <data name="lblStar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 78</value>
+  <data name="tblPanelBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="&gt;&gt;cndCurrKbn_G3.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -540,6 +540,9 @@
   <data name="&gt;&gt;commonToolStrip1.Parent" xml:space="preserve">
     <value>tblPanelGrp</value>
   </data>
+  <data name="lblStar2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="&gt;&gt;tblPanelBtn.Name" xml:space="preserve">
     <value>tblPanelBtn</value>
   </data>
@@ -563,9 +566,6 @@
   </data>
   <data name="lblCompany.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;lblCompanyNM.Parent" xml:space="preserve">
-    <value>tblPanelG1</value>
   </data>
   <data name="lblStar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -696,6 +696,12 @@
   <data name="lblStar4.Size" type="System.Drawing.Size, System.Drawing">
     <value>9, 26</value>
   </data>
+  <data name="&gt;&gt;cndCurrKbn1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tblPanelG2.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;tblPanelG1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -719,6 +725,12 @@
   </data>
   <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 19</value>
+  </data>
+  <data name="tblPanelBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="clsddl_9A_G3.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="&gt;&gt;lblStar4.Parent" xml:space="preserve">
     <value>tblPanelG3</value>
@@ -756,11 +768,8 @@
   <data name="tblPanelG2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="lblCurrKbn1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DropDownRate1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 3</value>
+  <data name="lblStar3.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="&gt;&gt;lblStar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -776,9 +785,6 @@
   </data>
   <data name="lblValidDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 26</value>
-  </data>
-  <data name="lblStar6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;lblStar4.Name" xml:space="preserve">
     <value>lblStar4</value>
@@ -822,8 +828,8 @@
   <data name="btnCompany.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tblPanelBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="DropDownRate1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="xdtpEffEedDate.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -873,14 +879,20 @@
   <data name="&gt;&gt;cndCurrKbn1.Parent" xml:space="preserve">
     <value>tblPanelG3</value>
   </data>
+  <data name="DropDownRate1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 3</value>
+  </data>
   <data name="commonToolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="tblPanelGrp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="lblCurrKbn1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lblCompanyNM.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblRateKbn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
   </data>
   <data name="tblPanelBase.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -942,6 +954,9 @@
   <data name="lblCompanyNM.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;btnCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;lblStar6.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -984,9 +999,6 @@
   <data name="cndCurrKbn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;tddlCurr.Name" xml:space="preserve">
-    <value>tddlCurr</value>
-  </data>
   <data name="lblStar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>8, 26</value>
   </data>
@@ -1008,6 +1020,9 @@
   <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 3</value>
   </data>
+  <data name="lblRate.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
   <data name="&gt;&gt;tblPanelG3.Name" xml:space="preserve">
     <value>tblPanelG3</value>
   </data>
@@ -1020,17 +1035,11 @@
   <data name="&gt;&gt;lblStar3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblStar4.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
+  <data name="tblPanelGrp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="tblPanelBase.Size" type="System.Drawing.Size, System.Drawing">
     <value>784, 562</value>
-  </data>
-  <data name="btnSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tddlCurr.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
   </data>
   <data name="&gt;&gt;pgvRateMs.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1083,11 +1092,8 @@
   <data name="lblStar3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tblPanelG2.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="DropDownRate1.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+  <data name="btnSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;xdtpEffEedDate.Parent" xml:space="preserve">
     <value>tblPanelG3</value>
@@ -1106,6 +1112,9 @@
   </data>
   <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
     <value>btnClear</value>
+  </data>
+  <data name="lblStar4.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
   <data name="tblPanelG2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1134,8 +1143,8 @@
   <data name="&gt;&gt;lblStar4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lblStar3.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="lblStar1.Text" xml:space="preserve">
+    <value> </value>
   </data>
   <data name="&gt;&gt;cndCurrKbn.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -1158,9 +1167,6 @@
   <data name="&gt;&gt;lblStar1.Name" xml:space="preserve">
     <value>lblStar1</value>
   </data>
-  <data name="&gt;&gt;lblStar3.Name" xml:space="preserve">
-    <value>lblStar3</value>
-  </data>
   <data name="&gt;&gt;lblStar1.Parent" xml:space="preserve">
     <value>tblPanelG1</value>
   </data>
@@ -1175,9 +1181,6 @@
   </data>
   <data name="lblRateKbn1.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 26</value>
-  </data>
-  <data name="lblStar1.Text" xml:space="preserve">
-    <value> </value>
   </data>
   <data name="lblCompanyNM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1251,8 +1254,8 @@
   <data name="tblPanelG2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="clsddl_9A_G3.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+  <data name="&gt;&gt;lblCompanyNM.Parent" xml:space="preserve">
+    <value>tblPanelG1</value>
   </data>
   <data name="&gt;&gt;cndCurrKbn.Name" xml:space="preserve">
     <value>cndCurrKbn</value>
@@ -1260,8 +1263,8 @@
   <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblStar2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lblCurrKbn.Text" xml:space="preserve">
+    <value>交易货币</value>
   </data>
   <data name="tblPanelGrp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1299,11 +1302,11 @@
   <data name="&gt;&gt;lblStar6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cndCalcMode.Type" xml:space="preserve">
-    <value>Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList, Com.GainWinSoft.Common.Control.ConditionDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="tddlCurr.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <data name="lblRateKbn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 26</value>
+  <data name="btnSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="&gt;&gt;lblCompany.ZOrder" xml:space="preserve">
     <value>5</value>
