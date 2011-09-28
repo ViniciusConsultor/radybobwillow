@@ -102,8 +102,10 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.btnClear.Click += new EventHandler(btnClear_Click);
 
             this.btnSearch.Click += new EventHandler(btnSearch_Click);
-
+            this.commonToolStrip1.UpdateClick += new EventHandler(pgvRateMs_DoubleClick);
             this.pgvRateMs.DoubleClick += new EventHandler(pgvRateMs_DoubleClick);
+
+            this.commonToolStrip1.AddClick += new EventHandler(commonToolStrip1_AddClick); 
            
         }
 
@@ -115,11 +117,11 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         {
             
 
-            //this.SetToolBar(this.strMode);
-            //this.SetLayout(this.strMode);
-            //IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
-            //action.Init_GridView(this.FrmMaterialSearch_pagerGridView1);
-            
+            //if (string.IsNullOrEmpty(strMode))
+            //{
+            //    this.strMode = Constant.MODE_ADD;
+            //}
+
             this.removeAllClickEvent();
             this.addAllClickEvent();
             
@@ -234,22 +236,24 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
             if (currentGroup == firstGroup)
             {
+                this.commonToolStrip1.AddEnabled = true;
                 this.commonToolStrip1.OkEnabled = true;
 
             }else if (currentGroup == 3)
             {
 
-                this.commonToolStrip1.UpdateEnabled = true;
-                this.commonToolStrip1.DeleteEnabled = true;
                 this.commonToolStrip1.GobackEnabled = true;
-                this.commonToolStrip1.AddEnabled = true;
+                
+                this.commonToolStrip1.SaveEnabled = true;
 
             }else if (currentGroup == 2)
             {
 
-                this.commonToolStrip1.GobackEnabled = true;
+                this.commonToolStrip1.AddEnabled = true;
                 this.commonToolStrip1.OkEnabled = true;
-
+                this.commonToolStrip1.UpdateEnabled = true;
+                this.commonToolStrip1.DeleteEnabled = true;
+                this.commonToolStrip1.GobackEnabled = true;
             }
 
         }
@@ -271,22 +275,15 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         #endregion
 
 
-
+        #region       保存按钮的点击事件
 
         /// <summary>
         /// 保存按钮的点击事件
         /// </summary>
         private void commonToolStrip1_SaveClick(object sender, EventArgs e)
         {
+            /*
             //this.ClearError();
-        }
-
-        /// <summary>
-        /// 修改按钮的点击事件
-        /// </summary>
-        private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
-        {
-            this.strMode = Constant.MODE_UPD;
             //this.ClearError();
             //this.SetToolBar(this.strMode);
             //this.SetLayout(this.strMode);
@@ -301,17 +298,50 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             frmExRateCardVo.IEntryDate = DateTime.Now;
             frmExRateCardVo.IUpdDate = DateTime.Now;
             frmExRateCardVo.IUpdTimestamp = DateTime.Now.ToShortDateString();
-                     
+
 
             Action_FrmExchangeRate action = new Action_FrmExchangeRate();
-            action.InsExchangeRateStp(frmExRateCardVo);
+            action.InsExchangeRateStp(frmExRateCardVo);  */
 
         }
+          #endregion
 
+
+        #region       修改按钮的点击事件
+        /// <summary>
+        /// 修改按钮的点击事件
+        /// </summary>
+        private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
+        {
+            this.strMode = Constant.MODE_UPD;
+
+            pgvRateMs_DoubleClick(sender, e);
+
+
+        }
+        #endregion
+
+        #region       退出按钮的点击事件
         private void commonToolStrip1_ExitClick(object sender, EventArgs e)
         {
             this.CloseContent();
         }
+        #endregion
+
+
+        private void commonToolStrip1_AddClick(object sender, EventArgs e)
+        {
+            this.strMode = Constant.MODE_ADD; 
+            
+            currentGroup = 3;
+            this.SetCommonToolstrip();
+            this.SetGroupLayout();
+
+        }
+
+
+
+
 
         #region GroupTrans
         /// <summary>
@@ -331,6 +361,14 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             {
 
                 ClearG3();
+
+                if (pgvRateMs.RowCount == 0)
+                {
+                    currentGroup = 1;
+                    this.SetCommonToolstrip();
+                    this.SetGroupLayout();
+                    return;
+                }
             }
             currentGroup--;
             this.SetCommonToolstrip();
@@ -451,6 +489,9 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
         private void pgvRateMs_DoubleClick(object sender, EventArgs e)
         {
+
+            this.strMode = Constant.MODE_UPD;
+
             currentGroup++;
             this.SetCommonToolstrip();
             this.SetGroupLayout();
