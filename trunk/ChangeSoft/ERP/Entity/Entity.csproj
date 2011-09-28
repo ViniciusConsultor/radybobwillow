@@ -157,6 +157,7 @@
     <Compile Include="Dao\TSectionMsDaoOracleImp.cs" />
     <Compile Include="Dao\TTradeMsDaoOracleImp.cs" />
     <Compile Include="Dao\TrateMsPagerNoARDaoOracleImp.cs" />
+    <Compile Include="Dao\ITFcConditionStpDao.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
