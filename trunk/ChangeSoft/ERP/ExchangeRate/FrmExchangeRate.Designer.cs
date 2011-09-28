@@ -42,8 +42,11 @@
             this.lblRateKbn = new System.Windows.Forms.Label();
             this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtRate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
             this.lblStar3 = new System.Windows.Forms.Label();
             this.lblStar5 = new System.Windows.Forms.Label();
@@ -54,17 +57,13 @@
             this.lblValidDate = new System.Windows.Forms.Label();
             this.lblCurrKbn1 = new System.Windows.Forms.Label();
             this.lblRateKbn1 = new System.Windows.Forms.Label();
+            this.cndCurrKbn_G3 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.clsddl_9A_G3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
             this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
-            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.cndCurrKbn = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.cndCurrKbn1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.DropDownRate1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
-            this.txtRate = new System.Windows.Forms.TextBox();
-            this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -75,22 +74,33 @@
             // 
             // tblPanelBase
             // 
+            this.tblPanelBase.AccessibleDescription = null;
+            this.tblPanelBase.AccessibleName = null;
             resources.ApplyResources(this.tblPanelBase, "tblPanelBase");
+            this.tblPanelBase.BackgroundImage = null;
             this.tblPanelBase.Controls.Add(this.tblPanelGrp, 0, 0);
+            this.tblPanelBase.Font = null;
             this.tblPanelBase.Name = "tblPanelBase";
             // 
             // tblPanelGrp
             // 
+            this.tblPanelGrp.AccessibleDescription = null;
+            this.tblPanelGrp.AccessibleName = null;
             resources.ApplyResources(this.tblPanelGrp, "tblPanelGrp");
+            this.tblPanelGrp.BackgroundImage = null;
             this.tblPanelGrp.Controls.Add(this.tblPanelG1, 0, 1);
             this.tblPanelGrp.Controls.Add(this.tblPanelG3, 0, 3);
             this.tblPanelGrp.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
+            this.tblPanelGrp.Font = null;
             this.tblPanelGrp.Name = "tblPanelGrp";
             // 
             // tblPanelG1
             // 
+            this.tblPanelG1.AccessibleDescription = null;
+            this.tblPanelG1.AccessibleName = null;
             resources.ApplyResources(this.tblPanelG1, "tblPanelG1");
+            this.tblPanelG1.BackgroundImage = null;
             this.tblPanelG1.Controls.Add(this.lblCurrKbn, 0, 2);
             this.tblPanelG1.Controls.Add(this.lblCompanyNM, 4, 0);
             this.tblPanelG1.Controls.Add(this.btnCompany, 3, 0);
@@ -100,71 +110,145 @@
             this.tblPanelG1.Controls.Add(this.lblRateKbn, 0, 1);
             this.tblPanelG1.Controls.Add(this.tblPanelBtn, 5, 3);
             this.tblPanelG1.Controls.Add(this.clsddl_9A, 2, 1);
-            this.tblPanelG1.Controls.Add(this.cndCurrKbn, 3, 2);
             this.tblPanelG1.Controls.Add(this.tddlCurr, 2, 2);
+            this.tblPanelG1.Font = null;
             this.tblPanelG1.Name = "tblPanelG1";
             // 
             // lblCurrKbn
             // 
+            this.lblCurrKbn.AccessibleDescription = null;
+            this.lblCurrKbn.AccessibleName = null;
             resources.ApplyResources(this.lblCurrKbn, "lblCurrKbn");
+            this.lblCurrKbn.Font = null;
             this.lblCurrKbn.Name = "lblCurrKbn";
             // 
             // lblCompanyNM
             // 
+            this.lblCompanyNM.AccessibleDescription = null;
+            this.lblCompanyNM.AccessibleName = null;
             resources.ApplyResources(this.lblCompanyNM, "lblCompanyNM");
             this.lblCompanyNM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCompanyNM.Font = null;
             this.lblCompanyNM.Name = "lblCompanyNM";
             // 
             // btnCompany
             // 
+            this.btnCompany.AccessibleDescription = null;
+            this.btnCompany.AccessibleName = null;
             resources.ApplyResources(this.btnCompany, "btnCompany");
+            this.btnCompany.BackgroundImage = null;
+            this.btnCompany.Font = null;
             this.btnCompany.Name = "btnCompany";
             this.btnCompany.UseVisualStyleBackColor = true;
             // 
             // txtCompany
             // 
+            this.txtCompany.AccessibleDescription = null;
+            this.txtCompany.AccessibleName = null;
             resources.ApplyResources(this.txtCompany, "txtCompany");
+            this.txtCompany.BackgroundImage = null;
+            this.txtCompany.Font = null;
             this.txtCompany.Name = "txtCompany";
             // 
             // lblStar1
             // 
+            this.lblStar1.AccessibleDescription = null;
+            this.lblStar1.AccessibleName = null;
             resources.ApplyResources(this.lblStar1, "lblStar1");
+            this.lblStar1.Font = null;
             this.lblStar1.ForeColor = System.Drawing.Color.Red;
             this.lblStar1.Name = "lblStar1";
             // 
             // lblCompany
             // 
+            this.lblCompany.AccessibleDescription = null;
+            this.lblCompany.AccessibleName = null;
             resources.ApplyResources(this.lblCompany, "lblCompany");
+            this.lblCompany.Font = null;
             this.lblCompany.Name = "lblCompany";
             // 
             // lblRateKbn
             // 
+            this.lblRateKbn.AccessibleDescription = null;
+            this.lblRateKbn.AccessibleName = null;
             resources.ApplyResources(this.lblRateKbn, "lblRateKbn");
+            this.lblRateKbn.Font = null;
             this.lblRateKbn.Name = "lblRateKbn";
             // 
             // tblPanelBtn
             // 
+            this.tblPanelBtn.AccessibleDescription = null;
+            this.tblPanelBtn.AccessibleName = null;
             resources.ApplyResources(this.tblPanelBtn, "tblPanelBtn");
+            this.tblPanelBtn.BackgroundImage = null;
             this.tblPanelBtn.Controls.Add(this.btnSearch, 2, 0);
-            this.tblPanelBtn.Controls.Add(this.button5, 1, 0);
+            this.tblPanelBtn.Controls.Add(this.btnClear, 1, 0);
+            this.tblPanelBtn.Font = null;
             this.tblPanelBtn.Name = "tblPanelBtn";
             // 
             // btnSearch
             // 
+            this.btnSearch.AccessibleDescription = null;
+            this.btnSearch.AccessibleName = null;
             resources.ApplyResources(this.btnSearch, "btnSearch");
+            this.btnSearch.BackgroundImage = null;
+            this.btnSearch.Font = null;
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // button5
+            // btnClear
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnClear.AccessibleDescription = null;
+            this.btnClear.AccessibleName = null;
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.BackgroundImage = null;
+            this.btnClear.Font = null;
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // clsddl_9A
+            // 
+            this.clsddl_9A.AccessibleDescription = null;
+            this.clsddl_9A.AccessibleName = null;
+            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
+            this.clsddl_9A.Autoaddblankitem = true;
+            this.clsddl_9A.BackgroundImage = null;
+            this.clsddl_9A.ClsCd = "9A";
+            this.clsddl_9A.Defaultselectedindex = 0;
+            this.clsddl_9A.Font = null;
+            this.clsddl_9A.Name = "clsddl_9A";
+            this.clsddl_9A.Selectedindex = -1;
+            this.clsddl_9A.Selectedname = null;
+            this.clsddl_9A.Selectedvalue = null;
+            this.clsddl_9A.ShowNameDesc = false;
+            // 
+            // tddlCurr
+            // 
+            this.tddlCurr.AccessibleDescription = null;
+            this.tddlCurr.AccessibleName = null;
+            resources.ApplyResources(this.tddlCurr, "tddlCurr");
+            this.tddlCurr.Autoaddblankitem = true;
+            this.tddlCurr.BackgroundImage = null;
+            this.tddlCurr.Defaultselectedindex = 0;
+            this.tddlCurr.Font = null;
+            this.tddlCurr.LanguageColumn = null;
+            this.tddlCurr.LanguageFlg = false;
+            this.tddlCurr.Name = "tddlCurr";
+            this.tddlCurr.NameColumn = "I_CURR_DESC";
+            this.tddlCurr.SelectedIndex = -1;
+            this.tddlCurr.Selectedname = null;
+            this.tddlCurr.Selectedvalue = null;
+            this.tddlCurr.TableNm = "T_CURR_MS";
+            this.tddlCurr.ValueColumn = "I_CURR_CD";
             // 
             // tblPanelG3
             // 
+            this.tblPanelG3.AccessibleDescription = null;
+            this.tblPanelG3.AccessibleName = null;
             resources.ApplyResources(this.tblPanelG3, "tblPanelG3");
+            this.tblPanelG3.BackgroundImage = null;
             this.tblPanelG3.Controls.Add(this.txtRate, 6, 3);
             this.tblPanelG3.Controls.Add(this.lblStar2, 1, 0);
             this.tblPanelG3.Controls.Add(this.lblStar3, 1, 1);
@@ -176,72 +260,172 @@
             this.tblPanelG3.Controls.Add(this.lblValidDate, 0, 2);
             this.tblPanelG3.Controls.Add(this.lblCurrKbn1, 0, 1);
             this.tblPanelG3.Controls.Add(this.lblRateKbn1, 0, 0);
-            this.tblPanelG3.Controls.Add(this.cndCurrKbn1, 2, 1);
-            this.tblPanelG3.Controls.Add(this.DropDownRate1, 2, 0);
+            this.tblPanelG3.Controls.Add(this.cndCurrKbn_G3, 2, 1);
+            this.tblPanelG3.Controls.Add(this.clsddl_9A_G3, 2, 0);
             this.tblPanelG3.Controls.Add(this.cndCalcMode, 2, 3);
             this.tblPanelG3.Controls.Add(this.xdtpEffEedDate, 2, 2);
+            this.tblPanelG3.Font = null;
             this.tblPanelG3.Name = "tblPanelG3";
+            // 
+            // txtRate
+            // 
+            this.txtRate.AccessibleDescription = null;
+            this.txtRate.AccessibleName = null;
+            resources.ApplyResources(this.txtRate, "txtRate");
+            this.txtRate.BackgroundImage = null;
+            this.txtRate.Font = null;
+            this.txtRate.Name = "txtRate";
             // 
             // lblStar2
             // 
+            this.lblStar2.AccessibleDescription = null;
+            this.lblStar2.AccessibleName = null;
             resources.ApplyResources(this.lblStar2, "lblStar2");
+            this.lblStar2.Font = null;
             this.lblStar2.ForeColor = System.Drawing.Color.Red;
             this.lblStar2.Name = "lblStar2";
             // 
             // lblStar3
             // 
+            this.lblStar3.AccessibleDescription = null;
+            this.lblStar3.AccessibleName = null;
             resources.ApplyResources(this.lblStar3, "lblStar3");
+            this.lblStar3.Font = null;
             this.lblStar3.ForeColor = System.Drawing.Color.Red;
             this.lblStar3.Name = "lblStar3";
             // 
             // lblStar5
             // 
+            this.lblStar5.AccessibleDescription = null;
+            this.lblStar5.AccessibleName = null;
             resources.ApplyResources(this.lblStar5, "lblStar5");
+            this.lblStar5.Font = null;
             this.lblStar5.ForeColor = System.Drawing.Color.Red;
             this.lblStar5.Name = "lblStar5";
             // 
             // lblStar4
             // 
+            this.lblStar4.AccessibleDescription = null;
+            this.lblStar4.AccessibleName = null;
             resources.ApplyResources(this.lblStar4, "lblStar4");
+            this.lblStar4.Font = null;
             this.lblStar4.ForeColor = System.Drawing.Color.Red;
             this.lblStar4.Name = "lblStar4";
             // 
             // lblStar6
             // 
+            this.lblStar6.AccessibleDescription = null;
+            this.lblStar6.AccessibleName = null;
             resources.ApplyResources(this.lblStar6, "lblStar6");
+            this.lblStar6.Font = null;
             this.lblStar6.ForeColor = System.Drawing.Color.Red;
             this.lblStar6.Name = "lblStar6";
             // 
             // lblRate
             // 
+            this.lblRate.AccessibleDescription = null;
+            this.lblRate.AccessibleName = null;
             resources.ApplyResources(this.lblRate, "lblRate");
+            this.lblRate.Font = null;
             this.lblRate.Name = "lblRate";
             // 
             // lblCalcMode
             // 
+            this.lblCalcMode.AccessibleDescription = null;
+            this.lblCalcMode.AccessibleName = null;
             resources.ApplyResources(this.lblCalcMode, "lblCalcMode");
+            this.lblCalcMode.Font = null;
             this.lblCalcMode.Name = "lblCalcMode";
             // 
             // lblValidDate
             // 
+            this.lblValidDate.AccessibleDescription = null;
+            this.lblValidDate.AccessibleName = null;
             resources.ApplyResources(this.lblValidDate, "lblValidDate");
+            this.lblValidDate.Font = null;
             this.lblValidDate.Name = "lblValidDate";
             // 
             // lblCurrKbn1
             // 
+            this.lblCurrKbn1.AccessibleDescription = null;
+            this.lblCurrKbn1.AccessibleName = null;
             resources.ApplyResources(this.lblCurrKbn1, "lblCurrKbn1");
+            this.lblCurrKbn1.Font = null;
             this.lblCurrKbn1.Name = "lblCurrKbn1";
             // 
             // lblRateKbn1
             // 
+            this.lblRateKbn1.AccessibleDescription = null;
+            this.lblRateKbn1.AccessibleName = null;
             resources.ApplyResources(this.lblRateKbn1, "lblRateKbn1");
+            this.lblRateKbn1.Font = null;
             this.lblRateKbn1.Name = "lblRateKbn1";
+            // 
+            // cndCurrKbn_G3
+            // 
+            this.cndCurrKbn_G3.AccessibleDescription = null;
+            this.cndCurrKbn_G3.AccessibleName = null;
+            resources.ApplyResources(this.cndCurrKbn_G3, "cndCurrKbn_G3");
+            this.cndCurrKbn_G3.Autoaddblankitem = true;
+            this.cndCurrKbn_G3.BackgroundImage = null;
+            this.cndCurrKbn_G3.Conditionname = "ExchangeCurr";
+            this.cndCurrKbn_G3.Defaultselectedindex = 0;
+            this.cndCurrKbn_G3.Font = null;
+            this.cndCurrKbn_G3.Name = "cndCurrKbn_G3";
+            this.cndCurrKbn_G3.Selectedindex = -1;
+            this.cndCurrKbn_G3.Selectedname = null;
+            this.cndCurrKbn_G3.Selectedvalue = null;
+            // 
+            // clsddl_9A_G3
+            // 
+            this.clsddl_9A_G3.AccessibleDescription = null;
+            this.clsddl_9A_G3.AccessibleName = null;
+            resources.ApplyResources(this.clsddl_9A_G3, "clsddl_9A_G3");
+            this.clsddl_9A_G3.Autoaddblankitem = true;
+            this.clsddl_9A_G3.BackgroundImage = null;
+            this.clsddl_9A_G3.ClsCd = "9A";
+            this.clsddl_9A_G3.Defaultselectedindex = 0;
+            this.clsddl_9A_G3.Font = null;
+            this.clsddl_9A_G3.Name = "clsddl_9A_G3";
+            this.clsddl_9A_G3.Selectedindex = -1;
+            this.clsddl_9A_G3.Selectedname = null;
+            this.clsddl_9A_G3.Selectedvalue = null;
+            this.clsddl_9A_G3.ShowNameDesc = false;
+            // 
+            // cndCalcMode
+            // 
+            this.cndCalcMode.AccessibleDescription = null;
+            this.cndCalcMode.AccessibleName = null;
+            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
+            this.cndCalcMode.Autoaddblankitem = true;
+            this.cndCalcMode.BackgroundImage = null;
+            this.cndCalcMode.Conditionname = "CalcMode";
+            this.cndCalcMode.Defaultselectedindex = 0;
+            this.cndCalcMode.Font = null;
+            this.cndCalcMode.Name = "cndCalcMode";
+            this.cndCalcMode.Selectedindex = -1;
+            this.cndCalcMode.Selectedname = null;
+            this.cndCalcMode.Selectedvalue = null;
+            // 
+            // xdtpEffEedDate
+            // 
+            this.xdtpEffEedDate.AccessibleDescription = null;
+            this.xdtpEffEedDate.AccessibleName = null;
+            resources.ApplyResources(this.xdtpEffEedDate, "xdtpEffEedDate");
+            this.xdtpEffEedDate.BackgroundImage = null;
+            this.tblPanelG3.SetColumnSpan(this.xdtpEffEedDate, 2);
+            this.xdtpEffEedDate.Font = null;
+            this.xdtpEffEedDate.Name = "xdtpEffEedDate";
+            this.xdtpEffEedDate.Value = new System.DateTime(2011, 9, 27, 16, 41, 7, 156);
             // 
             // commonToolStrip1
             // 
+            this.commonToolStrip1.AccessibleDescription = null;
+            this.commonToolStrip1.AccessibleName = null;
             this.commonToolStrip1.AddEnabled = true;
             this.commonToolStrip1.AddVisible = true;
             resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.BackgroundImage = null;
             this.commonToolStrip1.CopyEnabled = true;
             this.commonToolStrip1.CopyVisible = true;
             this.commonToolStrip1.CsvEnabled = true;
@@ -251,6 +435,7 @@
             this.commonToolStrip1.Displaytext = false;
             this.commonToolStrip1.ExitEnabled = true;
             this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.Font = null;
             this.commonToolStrip1.GobackEnabled = true;
             this.commonToolStrip1.GobackVisible = true;
             this.commonToolStrip1.HelpEnabled = true;
@@ -271,109 +456,38 @@
             // 
             // tblPanelG2
             // 
+            this.tblPanelG2.AccessibleDescription = null;
+            this.tblPanelG2.AccessibleName = null;
             resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
+            this.tblPanelG2.BackgroundImage = null;
             this.tblPanelG2.Controls.Add(this.pgvRateMs, 0, 0);
+            this.tblPanelG2.Font = null;
             this.tblPanelG2.Name = "tblPanelG2";
             // 
             // pgvRateMs
             // 
+            this.pgvRateMs.AccessibleDescription = null;
+            this.pgvRateMs.AccessibleName = null;
+            resources.ApplyResources(this.pgvRateMs, "pgvRateMs");
+            this.pgvRateMs.BackgroundImage = null;
             this.pgvRateMs.Columninfolist = null;
             this.pgvRateMs.DataMember = "";
             this.pgvRateMs.DataSource = null;
-            resources.ApplyResources(this.pgvRateMs, "pgvRateMs");
+            this.pgvRateMs.Font = null;
             this.pgvRateMs.Name = "pgvRateMs";
             this.pgvRateMs.Pagerhelper = null;
             // 
-            // clsddl_9A
-            // 
-            this.clsddl_9A.Autoaddblankitem = true;
-            this.clsddl_9A.ClsCd = "9A";
-            this.clsddl_9A.Defaultselectedindex = 0;
-            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
-            this.clsddl_9A.Name = "clsddl_9A";
-            this.clsddl_9A.Selectedindex = -1;
-            this.clsddl_9A.Selectedname = null;
-            this.clsddl_9A.Selectedvalue = null;
-            this.clsddl_9A.ShowNameDesc = false;
-            // 
-            // cndCurrKbn
-            // 
-            this.cndCurrKbn.Autoaddblankitem = false;
-            this.cndCurrKbn.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn, "cndCurrKbn");
-            this.cndCurrKbn.Name = "cndCurrKbn";
-            this.cndCurrKbn.Selectedindex = -1;
-            this.cndCurrKbn.Selectedname = null;
-            this.cndCurrKbn.Selectedvalue = null;
-            // 
-            // cndCurrKbn1
-            // 
-            this.cndCurrKbn1.Autoaddblankitem = false;
-            this.cndCurrKbn1.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn1, "cndCurrKbn1");
-            this.cndCurrKbn1.Name = "cndCurrKbn1";
-            this.cndCurrKbn1.Selectedindex = -1;
-            this.cndCurrKbn1.Selectedname = null;
-            this.cndCurrKbn1.Selectedvalue = null;
-            // 
-            // DropDownRate1
-            // 
-            this.DropDownRate1.Autoaddblankitem = false;
-            this.DropDownRate1.ClsCd = "9A";
-            this.DropDownRate1.Defaultselectedindex = 0;
-            resources.ApplyResources(this.DropDownRate1, "DropDownRate1");
-            this.DropDownRate1.Name = "DropDownRate1";
-            this.DropDownRate1.Selectedindex = -1;
-            this.DropDownRate1.Selectedname = null;
-            this.DropDownRate1.Selectedvalue = null;
-            this.DropDownRate1.ShowNameDesc = false;
-            // 
-            // cndCalcMode
-            // 
-            this.cndCalcMode.Autoaddblankitem = false;
-            this.cndCalcMode.Conditionname = "CalcMode";
-            this.cndCalcMode.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
-            this.cndCalcMode.Name = "cndCalcMode";
-            this.cndCalcMode.Selectedindex = -1;
-            this.cndCalcMode.Selectedname = null;
-            this.cndCalcMode.Selectedvalue = null;
-            // 
-            // tddlCurr
-            // 
-            this.tddlCurr.Autoaddblankitem = false;
-            this.tddlCurr.Defaultselectedindex = 0;
-            this.tddlCurr.LanguageColumn = null;
-            this.tddlCurr.LanguageFlg = false;
-            resources.ApplyResources(this.tddlCurr, "tddlCurr");
-            this.tddlCurr.Name = "tddlCurr";
-            this.tddlCurr.NameColumn = "I_CURR_DESC";
-            this.tddlCurr.SelectedIndex = -1;
-            this.tddlCurr.Selectedname = null;
-            this.tddlCurr.Selectedvalue = null;
-            this.tddlCurr.TableNm = "T_CURR_MS";
-            this.tddlCurr.ValueColumn = "I_CURR_CD";
-            // 
-            // txtRate
-            // 
-            resources.ApplyResources(this.txtRate, "txtRate");
-            this.txtRate.Name = "txtRate";
-            // 
-            // xdtpEffEedDate
-            // 
-            this.tblPanelG3.SetColumnSpan(this.xdtpEffEedDate, 2);
-            resources.ApplyResources(this.xdtpEffEedDate, "xdtpEffEedDate");
-            this.xdtpEffEedDate.Name = "xdtpEffEedDate";
-            this.xdtpEffEedDate.Value = new System.DateTime(2011, 9, 27, 16, 41, 7, 156);
-            // 
             // FrmExchangeRate
             // 
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = null;
             this.Controls.Add(this.tblPanelBase);
+            this.Icon = null;
             this.Name = "FrmExchangeRate";
+            this.ToolTipText = null;
             this.Load += new System.EventHandler(this.FrmExchangeRate_Load);
             this.tblPanelBase.ResumeLayout(false);
             this.tblPanelGrp.ResumeLayout(false);
@@ -412,12 +526,11 @@
         private System.Windows.Forms.Label lblStar3;
         private System.Windows.Forms.Label lblStar5;
         private System.Windows.Forms.TableLayoutPanel tblPanelBtn;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSearch;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddl_9A;
-        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn;
-        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn1;
-        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList DropDownRate1;
+        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn_G3;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddl_9A_G3;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCalcMode;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private System.Windows.Forms.TableLayoutPanel tblPanelG2;

@@ -93,6 +93,9 @@
     <EmbeddedResource Include="FrmExchangeRate.resx">
       <DependentUpon>FrmExchangeRate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExchangeRate.zh-CHS.resx">
+      <DependentUpon>FrmExchangeRate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmExchangeRate.zh-CN.resx">
       <DependentUpon>FrmExchangeRate.cs</DependentUpon>
     </EmbeddedResource>
