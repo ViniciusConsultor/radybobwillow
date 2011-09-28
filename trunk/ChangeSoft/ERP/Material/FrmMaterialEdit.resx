@@ -148,7 +148,7 @@
     <value>xplblMode</value>
   </data>
   <data name="&gt;&gt;xplblMode.Type" xml:space="preserve">
-    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;xplblMode.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -628,7 +628,7 @@
     <value>numericTextBox12</value>
   </data>
   <data name="&gt;&gt;numericTextBox12.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox12.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -751,7 +751,7 @@
     <value>numericTextBox11</value>
   </data>
   <data name="&gt;&gt;numericTextBox11.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox11.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -874,7 +874,7 @@
     <value>numericTextBox10</value>
   </data>
   <data name="&gt;&gt;numericTextBox10.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox10.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -997,7 +997,7 @@
     <value>numericTextBox9</value>
   </data>
   <data name="&gt;&gt;numericTextBox9.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox9.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1168,7 +1168,7 @@
     <value>numericTextBox8</value>
   </data>
   <data name="&gt;&gt;numericTextBox8.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox8.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1267,7 +1267,7 @@
     <value>numericTextBox7</value>
   </data>
   <data name="&gt;&gt;numericTextBox7.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox7.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1366,7 +1366,7 @@
     <value>numericTextBox6</value>
   </data>
   <data name="&gt;&gt;numericTextBox6.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox6.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1465,7 +1465,7 @@
     <value>numericTextBox5</value>
   </data>
   <data name="&gt;&gt;numericTextBox5.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox5.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1564,7 +1564,7 @@
     <value>numericTextBox4</value>
   </data>
   <data name="&gt;&gt;numericTextBox4.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox4.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1825,7 +1825,7 @@
     <value>alphanumericTextBox6</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox6.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox6.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1990,7 +1990,7 @@
     <value>alphanumericTextBox5</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox5.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox5.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2155,7 +2155,7 @@
     <value>alphanumericTextBox4</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox4.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox4.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2320,7 +2320,7 @@
     <value>alphanumericTextBox3</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox3.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox3.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2485,7 +2485,7 @@
     <value>alphanumericTextBox2</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox2.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2968,7 +2968,7 @@
     <value>numericTextBox3</value>
   </data>
   <data name="&gt;&gt;numericTextBox3.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox3.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -3067,7 +3067,7 @@
     <value>numericTextBox2</value>
   </data>
   <data name="&gt;&gt;numericTextBox2.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -3754,7 +3754,7 @@
     <value>alphanumericTextBox1</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox1.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -3928,7 +3928,7 @@
     <value>atxtDispItemRev</value>
   </data>
   <data name="&gt;&gt;atxtDispItemRev.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtDispItemRev.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -4063,7 +4063,7 @@
     <value>atxtDispItemCd</value>
   </data>
   <data name="&gt;&gt;atxtDispItemCd.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtDispItemCd.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -4423,7 +4423,7 @@
     <value>numericTextBox1</value>
   </data>
   <data name="&gt;&gt;numericTextBox1.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4288.23688, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;numericTextBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>

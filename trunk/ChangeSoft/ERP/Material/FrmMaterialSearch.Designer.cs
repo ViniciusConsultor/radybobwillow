@@ -555,6 +555,8 @@
             this.commonToolStrip1.AddEnabled = true;
             this.commonToolStrip1.AddVisible = true;
             resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.CleargroupEnabled = true;
+            this.commonToolStrip1.CleargroupVisible = true;
             this.commonToolStrip1.CopyEnabled = true;
             this.commonToolStrip1.CopyVisible = false;
             this.commonToolStrip1.CsvEnabled = true;
@@ -579,9 +581,11 @@
             this.commonToolStrip1.ReportVisible = false;
             this.commonToolStrip1.SaveEnabled = true;
             this.commonToolStrip1.SaveVisible = false;
+            this.commonToolStrip1.TabStop = false;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
             this.commonToolStrip1.DeleteClick += new System.EventHandler(this.commonToolStrip1_DeleteClick);
+            this.commonToolStrip1.CleargroupClick += new System.EventHandler(this.commonToolStrip1_CleargroupClick);
             this.commonToolStrip1.OkClick += new System.EventHandler(this.commonToolStrip1_OkClick);
             this.commonToolStrip1.AddClick += new System.EventHandler(this.commonToolStrip1_AddClick);
             this.commonToolStrip1.ExitClick += new System.EventHandler(this.commonToolStrip1_ExitClick);

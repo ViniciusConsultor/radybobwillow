@@ -63,7 +63,22 @@ namespace Com.GainWinSoft.ERP.Material
         {
             Initialize();
             Check_Init();
+            this.GotFocus += new EventHandler(FrmMaterialSearch_GotFocus);
 
+        }
+
+        void FrmMaterialSearch_GotFocus(object sender, EventArgs e)
+        {
+
+            if (uservo.Factory != null)
+            {
+                this.txtCustomerCd.Focus();
+            }
+            else
+            {
+                this.txtFactoryCd.Focus();
+            }
+            this.GotFocus -= new EventHandler(FrmMaterialSearch_GotFocus); 
         }
 
   
@@ -87,6 +102,10 @@ namespace Com.GainWinSoft.ERP.Material
             SetGroupLayout();
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.ClearG2();
+        }
 
         private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
         {
@@ -404,7 +423,15 @@ namespace Com.GainWinSoft.ERP.Material
             TransferTo();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commonToolStrip1_CleargroupClick(object sender, EventArgs e)
+        {
 
+        }
 
 
 
@@ -509,6 +536,9 @@ namespace Com.GainWinSoft.ERP.Material
 
             uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
+            SetCommonToolstrip();
+            SetGroupLayout();
+
             if (uservo.Factory != null)
             {
                 FactoryVo factoryvo = uservo.Factory;
@@ -528,8 +558,6 @@ namespace Com.GainWinSoft.ERP.Material
                 this.firstGroup = 1;
                 this.currentGroup = 1;
             }
-            SetCommonToolstrip();
-            SetGroupLayout();
         }
 
         private void ClearG2()
@@ -601,10 +629,7 @@ namespace Com.GainWinSoft.ERP.Material
         }
         #endregion
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            this.ClearG2();
-        }
+ 
 
 
 
