@@ -8,9 +8,10 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
     interface IAction_FrmExchangeRate
     {
         Boolean InsExchangeRateStp(FrmExRateCardVo exRatevo);
-       Int32 GetRateMsDetail(PagerGridView gridview, Com.GainWinSoft.ERP.ExchangeRate.FormVo.FrmExRateCardVo cardvo);
 
+        Int32 GetRateMsDetail(PagerGridView gridview, Com.GainWinSoft.ERP.ExchangeRate.FormVo.FrmExRateCardVo cardvo);
 
+        void Init_GridView(PagerGridView gridview);
 
     }
 }

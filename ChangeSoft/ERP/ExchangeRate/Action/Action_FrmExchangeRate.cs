@@ -22,7 +22,9 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_FrmExchangeRate));
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmExchangeRate));
-        private string[] columnlist = new string[] { "IDispItemCd", "IDispItemRev", "IDlCd", "IDrwNo" };
+
+        private string[] columnlist = new string[] { "I_COMPANY_CD", "I_RATE_CLS", "I_CLS_DETAIL_DESC", "I_DL_CURR_CD"
+                                , "I_CURR_DESC", "I_EFF_END_DATE", "I_RATE", "I_CNV_METHOD", "I_CNV_METHOD_DESC" };
 
         //货币代码
         string CurrCD = "CurrCD";
@@ -66,8 +68,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                gridview.LoadData();
 
                log.Debug("Search Init over");
-                
-                          
+
+
 
                foreach (string key in columnlist)
                {
@@ -91,42 +93,42 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
             IList<ColumnInfoVo> clist = new List<ColumnInfoVo>();
             ColumnInfoVo columnvo = new ColumnInfoVo();
 
-            columnvo.Columnname = "ICompanyCd";
+            columnvo.Columnname = "I_COMPANY_CD";
             columnvo.Columnwidth = 0;
             clist.Add(columnvo);
 
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IRateCls";
+            columnvo.Columnname = "I_RATE_CLS";
             columnvo.Columnwidth = 50;
             clist.Add(columnvo);
 
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IRateClsDesc";
+            columnvo.Columnname = "I_CLS_DETAIL_DESC";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IDlCurrCd";
+            columnvo.Columnname = "I_DL_CURR_CD";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "iDlCurrCdDesc";
+            columnvo.Columnname = "I_CURR_DESC";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IEffEndDate";
+            columnvo.Columnname = "I_EFF_END_DATE";
             columnvo.Columnwidth = 50;
             clist.Add(columnvo);
 
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "IRate";
+            columnvo.Columnname = "I_RATE";
             columnvo.Columnwidth = 50;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "ICnvMethod";
+            columnvo.Columnname = "I_CNV_METHOD";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
             columnvo = new ColumnInfoVo();
-            columnvo.Columnname = "ICnvMethodDesc";
+            columnvo.Columnname = "I_CNV_METHOD_DESC";
             columnvo.Columnwidth = 100;
             clist.Add(columnvo);
 
