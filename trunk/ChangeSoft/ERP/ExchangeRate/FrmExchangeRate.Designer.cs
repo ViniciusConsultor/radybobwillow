@@ -43,6 +43,8 @@
             this.tblPanelBtn = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
@@ -55,14 +57,12 @@
             this.lblValidDate = new System.Windows.Forms.Label();
             this.lblCurrKbn1 = new System.Windows.Forms.Label();
             this.lblRateKbn1 = new System.Windows.Forms.Label();
-            this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
-            this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
-            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.cndCurrKbn_G3 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
-            this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.clsddl_9A_G3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
+            this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
             this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
@@ -206,6 +206,41 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // clsddl_9A
+            // 
+            this.clsddl_9A.AccessibleDescription = null;
+            this.clsddl_9A.AccessibleName = null;
+            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
+            this.clsddl_9A.Autoaddblankitem = true;
+            this.clsddl_9A.BackgroundImage = null;
+            this.clsddl_9A.ClsCd = "9A";
+            this.clsddl_9A.Defaultselectedindex = 0;
+            this.clsddl_9A.Font = null;
+            this.clsddl_9A.Name = "clsddl_9A";
+            this.clsddl_9A.Selectedindex = -1;
+            this.clsddl_9A.Selectedname = null;
+            this.clsddl_9A.Selectedvalue = null;
+            this.clsddl_9A.ShowNameDesc = false;
+            // 
+            // tddlCurr
+            // 
+            this.tddlCurr.AccessibleDescription = null;
+            this.tddlCurr.AccessibleName = null;
+            resources.ApplyResources(this.tddlCurr, "tddlCurr");
+            this.tddlCurr.Autoaddblankitem = true;
+            this.tddlCurr.BackgroundImage = null;
+            this.tddlCurr.Defaultselectedindex = 0;
+            this.tddlCurr.Font = null;
+            this.tddlCurr.LanguageColumn = null;
+            this.tddlCurr.LanguageFlg = false;
+            this.tddlCurr.Name = "tddlCurr";
+            this.tddlCurr.NameColumn = "I_CURR_DESC";
+            this.tddlCurr.SelectedIndex = -1;
+            this.tddlCurr.Selectedname = null;
+            this.tddlCurr.Selectedvalue = null;
+            this.tddlCurr.TableNm = "T_CURR_MS";
+            this.tddlCurr.ValueColumn = "I_CURR_CD";
+            // 
             // tblPanelG3
             // 
             this.tblPanelG3.AccessibleDescription = null;
@@ -324,6 +359,52 @@
             this.lblRateKbn1.Font = null;
             this.lblRateKbn1.Name = "lblRateKbn1";
             // 
+            // cndCurrKbn_G3
+            // 
+            this.cndCurrKbn_G3.AccessibleDescription = null;
+            this.cndCurrKbn_G3.AccessibleName = null;
+            resources.ApplyResources(this.cndCurrKbn_G3, "cndCurrKbn_G3");
+            this.cndCurrKbn_G3.Autoaddblankitem = true;
+            this.cndCurrKbn_G3.BackgroundImage = null;
+            this.cndCurrKbn_G3.Conditionname = "ExchangeCurr";
+            this.cndCurrKbn_G3.Defaultselectedindex = 0;
+            this.cndCurrKbn_G3.Font = null;
+            this.cndCurrKbn_G3.Name = "cndCurrKbn_G3";
+            this.cndCurrKbn_G3.Selectedindex = -1;
+            this.cndCurrKbn_G3.Selectedname = null;
+            this.cndCurrKbn_G3.Selectedvalue = null;
+            // 
+            // clsddl_9A_G3
+            // 
+            this.clsddl_9A_G3.AccessibleDescription = null;
+            this.clsddl_9A_G3.AccessibleName = null;
+            resources.ApplyResources(this.clsddl_9A_G3, "clsddl_9A_G3");
+            this.clsddl_9A_G3.Autoaddblankitem = true;
+            this.clsddl_9A_G3.BackgroundImage = null;
+            this.clsddl_9A_G3.ClsCd = "9A";
+            this.clsddl_9A_G3.Defaultselectedindex = 0;
+            this.clsddl_9A_G3.Font = null;
+            this.clsddl_9A_G3.Name = "clsddl_9A_G3";
+            this.clsddl_9A_G3.Selectedindex = -1;
+            this.clsddl_9A_G3.Selectedname = null;
+            this.clsddl_9A_G3.Selectedvalue = null;
+            this.clsddl_9A_G3.ShowNameDesc = false;
+            // 
+            // cndCalcMode
+            // 
+            this.cndCalcMode.AccessibleDescription = null;
+            this.cndCalcMode.AccessibleName = null;
+            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
+            this.cndCalcMode.Autoaddblankitem = true;
+            this.cndCalcMode.BackgroundImage = null;
+            this.cndCalcMode.Conditionname = "CalcMode";
+            this.cndCalcMode.Defaultselectedindex = 0;
+            this.cndCalcMode.Font = null;
+            this.cndCalcMode.Name = "cndCalcMode";
+            this.cndCalcMode.Selectedindex = -1;
+            this.cndCalcMode.Selectedname = null;
+            this.cndCalcMode.Selectedvalue = null;
+            // 
             // xdtpEffEedDate
             // 
             this.xdtpEffEedDate.AccessibleDescription = null;
@@ -334,16 +415,6 @@
             this.xdtpEffEedDate.Font = null;
             this.xdtpEffEedDate.Name = "xdtpEffEedDate";
             this.xdtpEffEedDate.Value = new System.DateTime(2011, 9, 27, 16, 41, 7, 156);
-            // 
-            // tblPanelG2
-            // 
-            this.tblPanelG2.AccessibleDescription = null;
-            this.tblPanelG2.AccessibleName = null;
-            resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
-            this.tblPanelG2.BackgroundImage = null;
-            this.tblPanelG2.Controls.Add(this.pgvRateMs, 0, 0);
-            this.tblPanelG2.Font = null;
-            this.tblPanelG2.Name = "tblPanelG2";
             // 
             // commonToolStrip1
             // 
@@ -381,86 +452,15 @@
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
             // 
-            // cndCurrKbn_G3
+            // tblPanelG2
             // 
-            this.cndCurrKbn_G3.AccessibleDescription = null;
-            this.cndCurrKbn_G3.AccessibleName = null;
-            resources.ApplyResources(this.cndCurrKbn_G3, "cndCurrKbn_G3");
-            this.cndCurrKbn_G3.Autoaddblankitem = true;
-            this.cndCurrKbn_G3.BackgroundImage = null;
-            this.cndCurrKbn_G3.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn_G3.Defaultselectedindex = 0;
-            this.cndCurrKbn_G3.Font = null;
-            this.cndCurrKbn_G3.Name = "cndCurrKbn_G3";
-            this.cndCurrKbn_G3.Selectedindex = -1;
-            this.cndCurrKbn_G3.Selectedname = null;
-            this.cndCurrKbn_G3.Selectedvalue = null;
-            // 
-            // cndCalcMode
-            // 
-            this.cndCalcMode.AccessibleDescription = null;
-            this.cndCalcMode.AccessibleName = null;
-            resources.ApplyResources(this.cndCalcMode, "cndCalcMode");
-            this.cndCalcMode.Autoaddblankitem = true;
-            this.cndCalcMode.BackgroundImage = null;
-            this.cndCalcMode.Conditionname = "CalcMode";
-            this.cndCalcMode.Defaultselectedindex = 0;
-            this.cndCalcMode.Font = null;
-            this.cndCalcMode.Name = "cndCalcMode";
-            this.cndCalcMode.Selectedindex = -1;
-            this.cndCalcMode.Selectedname = null;
-            this.cndCalcMode.Selectedvalue = null;
-            // 
-            // clsddl_9A
-            // 
-            this.clsddl_9A.AccessibleDescription = null;
-            this.clsddl_9A.AccessibleName = null;
-            resources.ApplyResources(this.clsddl_9A, "clsddl_9A");
-            this.clsddl_9A.Autoaddblankitem = true;
-            this.clsddl_9A.BackgroundImage = null;
-            this.clsddl_9A.ClsCd = "9A";
-            this.clsddl_9A.Defaultselectedindex = 0;
-            this.clsddl_9A.Font = null;
-            this.clsddl_9A.Name = "clsddl_9A";
-            this.clsddl_9A.Selectedindex = -1;
-            this.clsddl_9A.Selectedname = null;
-            this.clsddl_9A.Selectedvalue = null;
-            this.clsddl_9A.ShowNameDesc = false;
-            // 
-            // tddlCurr
-            // 
-            this.tddlCurr.AccessibleDescription = null;
-            this.tddlCurr.AccessibleName = null;
-            resources.ApplyResources(this.tddlCurr, "tddlCurr");
-            this.tddlCurr.Autoaddblankitem = true;
-            this.tddlCurr.BackgroundImage = null;
-            this.tddlCurr.Defaultselectedindex = 0;
-            this.tddlCurr.Font = null;
-            this.tddlCurr.LanguageColumn = null;
-            this.tddlCurr.LanguageFlg = false;
-            this.tddlCurr.Name = "tddlCurr";
-            this.tddlCurr.NameColumn = "I_CURR_DESC";
-            this.tddlCurr.SelectedIndex = -1;
-            this.tddlCurr.Selectedname = null;
-            this.tddlCurr.Selectedvalue = null;
-            this.tddlCurr.TableNm = "T_CURR_MS";
-            this.tddlCurr.ValueColumn = "I_CURR_CD";
-            // 
-            // clsddl_9A_G3
-            // 
-            this.clsddl_9A_G3.AccessibleDescription = null;
-            this.clsddl_9A_G3.AccessibleName = null;
-            resources.ApplyResources(this.clsddl_9A_G3, "clsddl_9A_G3");
-            this.clsddl_9A_G3.Autoaddblankitem = true;
-            this.clsddl_9A_G3.BackgroundImage = null;
-            this.clsddl_9A_G3.ClsCd = "9A";
-            this.clsddl_9A_G3.Defaultselectedindex = 0;
-            this.clsddl_9A_G3.Font = null;
-            this.clsddl_9A_G3.Name = "clsddl_9A_G3";
-            this.clsddl_9A_G3.Selectedindex = -1;
-            this.clsddl_9A_G3.Selectedname = null;
-            this.clsddl_9A_G3.Selectedvalue = null;
-            this.clsddl_9A_G3.ShowNameDesc = false;
+            this.tblPanelG2.AccessibleDescription = null;
+            this.tblPanelG2.AccessibleName = null;
+            resources.ApplyResources(this.tblPanelG2, "tblPanelG2");
+            this.tblPanelG2.BackgroundImage = null;
+            this.tblPanelG2.Controls.Add(this.pgvRateMs, 0, 0);
+            this.tblPanelG2.Font = null;
+            this.tblPanelG2.Name = "tblPanelG2";
             // 
             // pgvRateMs
             // 
