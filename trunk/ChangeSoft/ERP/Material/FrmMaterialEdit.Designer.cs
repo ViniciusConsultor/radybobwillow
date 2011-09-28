@@ -64,10 +64,8 @@
             this.numericTextBox9 = new AMS.TextBox.NumericTextBox();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
             this.numericTextBox8 = new AMS.TextBox.NumericTextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -77,7 +75,6 @@
             this.numericTextBox6 = new AMS.TextBox.NumericTextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
             this.numericTextBox5 = new AMS.TextBox.NumericTextBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -296,94 +293,91 @@
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList14, 26, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label84, 25, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label83, 24, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label82, 17, 14);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList13, 18, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label81, 16, 14);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList12, 8, 14);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox12, 2, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label79, 1, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label78, 0, 14);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList11, 24, 13);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox11, 18, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label76, 17, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label75, 16, 13);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList10, 8, 13);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox10, 2, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label73, 1, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label72, 0, 13);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList9, 24, 12);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox9, 18, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label69, 17, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label70, 16, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label68, 9, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label67, 1, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label66, 0, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label65, 24, 11);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox8, 18, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label64, 17, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label63, 16, 11);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox7, 10, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label62, 9, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label61, 8, 11);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox6, 2, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label60, 1, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label59, 0, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label58, 25, 10);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox5, 18, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label57, 17, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label56, 16, 10);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox4, 2, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label55, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label54, 0, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label53, 17, 9);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 18, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label52, 16, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label51, 7, 9);
-            this.tableLayoutPanel2.Controls.Add(this.button7, 6, 9);
-            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox6, 2, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label50, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label49, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label48, 23, 8);
-            this.tableLayoutPanel2.Controls.Add(this.button6, 22, 8);
-            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox5, 18, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label47, 17, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label46, 16, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label45, 7, 8);
-            this.tableLayoutPanel2.Controls.Add(this.button5, 6, 8);
-            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox4, 2, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label44, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label43, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label42, 23, 7);
-            this.tableLayoutPanel2.Controls.Add(this.button4, 22, 7);
-            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox3, 18, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label41, 17, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label40, 16, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label39, 7, 7);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 6, 7);
-            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox2, 2, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label38, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label37, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 18, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label36, 17, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label35, 16, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label34, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label33, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 18, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label32, 17, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label31, 16, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label30, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label29, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox3, 18, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label27, 17, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label26, 16, 4);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox2, 8, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label23, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label22, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList14, 18, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label84, 17, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label83, 16, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label82, 17, 15);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList13, 18, 15);
+            this.tableLayoutPanel2.Controls.Add(this.label81, 16, 15);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList12, 8, 15);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox12, 2, 15);
+            this.tableLayoutPanel2.Controls.Add(this.label79, 1, 15);
+            this.tableLayoutPanel2.Controls.Add(this.label78, 0, 15);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList11, 24, 14);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox11, 18, 14);
+            this.tableLayoutPanel2.Controls.Add(this.label76, 17, 14);
+            this.tableLayoutPanel2.Controls.Add(this.label75, 16, 14);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList10, 8, 14);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox10, 2, 14);
+            this.tableLayoutPanel2.Controls.Add(this.label73, 1, 14);
+            this.tableLayoutPanel2.Controls.Add(this.label72, 0, 14);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList9, 24, 13);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox9, 18, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label69, 17, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label70, 16, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label67, 1, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label66, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox8, 18, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label64, 17, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label63, 16, 12);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox7, 10, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label62, 9, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label61, 8, 12);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox6, 2, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label60, 1, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label59, 0, 12);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox5, 18, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label57, 17, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label56, 16, 11);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox4, 2, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label55, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label54, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label53, 17, 10);
+            this.tableLayoutPanel2.Controls.Add(this.textBox5, 18, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label52, 16, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label51, 7, 10);
+            this.tableLayoutPanel2.Controls.Add(this.button7, 6, 10);
+            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox6, 2, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label50, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label49, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label48, 23, 9);
+            this.tableLayoutPanel2.Controls.Add(this.button6, 22, 9);
+            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox5, 18, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label47, 17, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label46, 16, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label45, 7, 9);
+            this.tableLayoutPanel2.Controls.Add(this.button5, 6, 9);
+            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox4, 2, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label44, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label43, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label42, 23, 8);
+            this.tableLayoutPanel2.Controls.Add(this.button4, 22, 8);
+            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox3, 18, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label41, 17, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label40, 16, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label39, 7, 8);
+            this.tableLayoutPanel2.Controls.Add(this.button3, 6, 8);
+            this.tableLayoutPanel2.Controls.Add(this.alphanumericTextBox2, 2, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label38, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label37, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.textBox4, 18, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label36, 17, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label35, 16, 7);
+            this.tableLayoutPanel2.Controls.Add(this.textBox3, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label34, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label33, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.textBox2, 18, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label32, 17, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label31, 16, 6);
+            this.tableLayoutPanel2.Controls.Add(this.textBox1, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label30, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label29, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox3, 18, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label27, 17, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label26, 16, 5);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox2, 8, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label23, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label22, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label20, 17, 3);
             this.tableLayoutPanel2.Controls.Add(this.label19, 16, 3);
             this.tableLayoutPanel2.Controls.Add(this.label17, 8, 3);
@@ -391,7 +385,7 @@
             this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList5, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label16, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label15, 25, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label15, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.label14, 17, 2);
             this.tableLayoutPanel2.Controls.Add(this.label12, 9, 2);
             this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList2, 10, 2);
@@ -411,21 +405,21 @@
             this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList1, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.label9, 16, 2);
             this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList3, 18, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 24, 2);
-            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList4, 26, 2);
-            this.tableLayoutPanel2.Controls.Add(this.numericTextBox1, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label24, 7, 4);
-            this.tableLayoutPanel2.Controls.Add(this.xDateTimePicker1, 2, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList4, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox1, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label24, 7, 5);
+            this.tableLayoutPanel2.Controls.Add(this.xDateTimePicker1, 2, 13);
             this.tableLayoutPanel2.Controls.Add(this.tableDropDownList1, 10, 3);
             this.tableLayoutPanel2.Controls.Add(this.tableDropDownList2, 18, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tableDropDownList3, 9, 10);
+            this.tableLayoutPanel2.Controls.Add(this.tableDropDownList3, 9, 11);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // clsDetailCodeRefDropDownList14
             // 
             this.clsDetailCodeRefDropDownList14.Autoaddblankitem = false;
             this.clsDetailCodeRefDropDownList14.ClsCd = "DB";
-            this.tableLayoutPanel2.SetColumnSpan(this.clsDetailCodeRefDropDownList14, 5);
+            this.tableLayoutPanel2.SetColumnSpan(this.clsDetailCodeRefDropDownList14, 6);
             this.clsDetailCodeRefDropDownList14.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsDetailCodeRefDropDownList14, "clsDetailCodeRefDropDownList14");
             this.clsDetailCodeRefDropDownList14.Name = "clsDetailCodeRefDropDownList14";
@@ -617,12 +611,6 @@
             resources.ApplyResources(this.label70, "label70");
             this.label70.Name = "label70";
             // 
-            // label68
-            // 
-            resources.ApplyResources(this.label68, "label68");
-            this.tableLayoutPanel2.SetColumnSpan(this.label68, 7);
-            this.label68.Name = "label68";
-            // 
             // label67
             // 
             resources.ApplyResources(this.label67, "label67");
@@ -633,12 +621,6 @@
             // 
             resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
-            // 
-            // label65
-            // 
-            resources.ApplyResources(this.label65, "label65");
-            this.tableLayoutPanel2.SetColumnSpan(this.label65, 7);
-            this.label65.Name = "label65";
             // 
             // numericTextBox8
             // 
@@ -714,12 +696,6 @@
             // 
             resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
-            // 
-            // label58
-            // 
-            resources.ApplyResources(this.label58, "label58");
-            this.tableLayoutPanel2.SetColumnSpan(this.label58, 6);
-            this.label58.Name = "label58";
             // 
             // numericTextBox5
             // 
@@ -1402,7 +1378,7 @@
             // 
             this.clsDetailCodeRefDropDownList4.Autoaddblankitem = false;
             this.clsDetailCodeRefDropDownList4.ClsCd = "35";
-            this.tableLayoutPanel2.SetColumnSpan(this.clsDetailCodeRefDropDownList4, 5);
+            this.tableLayoutPanel2.SetColumnSpan(this.clsDetailCodeRefDropDownList4, 6);
             this.clsDetailCodeRefDropDownList4.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsDetailCodeRefDropDownList4, "clsDetailCodeRefDropDownList4");
             this.clsDetailCodeRefDropDownList4.Name = "clsDetailCodeRefDropDownList4";
@@ -1627,8 +1603,6 @@
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label65;
         private AMS.TextBox.NumericTextBox numericTextBox8;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
@@ -1637,10 +1611,6 @@
         private System.Windows.Forms.Label label61;
         private AMS.TextBox.NumericTextBox numericTextBox6;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label66;
-        private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xDateTimePicker1;
-        private System.Windows.Forms.Label label68;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList9;
         private AMS.TextBox.NumericTextBox numericTextBox9;
         private System.Windows.Forms.Label label69;
@@ -1666,5 +1636,8 @@
         private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tableDropDownList1;
         private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tableDropDownList2;
         private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tableDropDownList3;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label66;
+        private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xDateTimePicker1;
     }
 }
