@@ -160,7 +160,7 @@
     <value>lblMode</value>
   </data>
   <data name="&gt;&gt;lblMode.Type" xml:space="preserve">
-    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4287.39904, Culture=neutral, PublicKeyToken=null</value>
+    <value>xpLabel.xpLabel, Com.GainWinSoft.Common.Control.xpLabel, Version=1.0.4288.17102, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblMode.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -220,7 +220,7 @@
     <value>txtFactory</value>
   </data>
   <data name="&gt;&gt;txtFactory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtFactory.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -442,7 +442,7 @@
     <value>txtCompany</value>
   </data>
   <data name="&gt;&gt;txtCompany.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtCompany.Parent" xml:space="preserve">
     <value>tpG1</value>
@@ -1204,13 +1204,13 @@
     <value>46, 21</value>
   </data>
   <data name="txtStockPeriod.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>44</value>
   </data>
   <data name="&gt;&gt;txtStockPeriod.Name" xml:space="preserve">
     <value>txtStockPeriod</value>
   </data>
   <data name="&gt;&gt;txtStockPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.IntegerTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtStockPeriod.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -1312,13 +1312,13 @@
     <value>46, 21</value>
   </data>
   <data name="txtAutoPeriod.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+    <value>41</value>
   </data>
   <data name="&gt;&gt;txtAutoPeriod.Name" xml:space="preserve">
     <value>txtAutoPeriod</value>
   </data>
   <data name="&gt;&gt;txtAutoPeriod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.IntegerTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtAutoPeriod.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -1420,13 +1420,13 @@
     <value>46, 21</value>
   </data>
   <data name="txtArrange.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>47</value>
   </data>
   <data name="&gt;&gt;txtArrange.Name" xml:space="preserve">
     <value>txtArrange</value>
   </data>
   <data name="&gt;&gt;txtArrange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.IntegerTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtArrange.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -1603,7 +1603,7 @@
     <value>txtDepart</value>
   </data>
   <data name="&gt;&gt;txtDepart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtDepart.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -1675,7 +1675,7 @@
     <value>txtBase</value>
   </data>
   <data name="&gt;&gt;txtBase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtBase.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -1960,7 +1960,7 @@
     <value>txtFax</value>
   </data>
   <data name="&gt;&gt;txtFax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtFax.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -2029,7 +2029,7 @@
     <value>txtTel</value>
   </data>
   <data name="&gt;&gt;txtTel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtTel.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -2470,7 +2470,7 @@
     <value>txtZipCD</value>
   </data>
   <data name="&gt;&gt;txtZipCD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4288.17109, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtZipCD.Parent" xml:space="preserve">
     <value>tpG2</value>
@@ -2987,6 +2987,9 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>

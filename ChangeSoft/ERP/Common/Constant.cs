@@ -11,6 +11,10 @@ namespace Com.GainWinSoft.Common
         public const string MODE_DEL = "DEL";
         public const string MODE_REF = "REF";
 
+        public const string I_PRCS_CLS_C = "01";
+        public const string I_PRCS_CLS_U = "02";
+        public const string I_PRCS_CLS_D = "03";
+
         // 摘要:
         //     廃却区分 4E
         public const string ABAND = "4E";

@@ -8,6 +8,7 @@ using Com.GainWinSoft.ERP.Entity.Dao;
 using System.Collections;
 using Com.GainWinSoft.ERP.Entity;
 using System.Threading;
+using Com.GainWinSoft.Common.Vo;
 
 namespace Com.GainWinSoft.ERP.Factory.Action
 {
@@ -27,14 +28,15 @@ namespace Com.GainWinSoft.ERP.Factory.Action
         public Boolean SaveDataToStp(String strMode, TFactoryMs facVo)
         {
             Boolean rtnValue = true;
+            LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
             TFcConditionStp facStp = new TFcConditionStp();
 
             PropertiesCopier.CopyProperties(facVo, facStp);
             facStp.Id.IJournalNo = 10001;
             facStp.Id.ICompanyCd = facVo.ICompanyCd;
-            facStp.IPrcsCls = "";
-            facStp.IUserId = "";
+            facStp.IPrcsCls = CommonUtil.GET_I_PRCS_CLS(strMode);
+            facStp.IUserId = uservo.Userid;
             facStp.IPrcsDate = DateTime.Now;
             facStp.IPrcsTime = DateTime.Now.ToShortTimeString();
             facStp.IUpdCls = "";

@@ -35,13 +35,13 @@
             this.tpG1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblMode = new xpLabel.xpLabel();
             this.btnFactory = new System.Windows.Forms.Button();
-            this.txtFactory = new System.Windows.Forms.TextBox();
+            this.txtFactory = new AMS.TextBox.AlphanumericTextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
             this.lblFactory = new System.Windows.Forms.Label();
             this.lblCompanyNM = new System.Windows.Forms.Label();
             this.lblCompany = new System.Windows.Forms.Label();
             this.lblStar1 = new System.Windows.Forms.Label();
-            this.txtCompany = new System.Windows.Forms.TextBox();
+            this.txtCompany = new AMS.TextBox.AlphanumericTextBox();
             this.btnCompany = new System.Windows.Forms.Button();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tpG2 = new System.Windows.Forms.TableLayoutPanel();
@@ -63,20 +63,20 @@
             this.cbbSafe = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.lblStar14 = new System.Windows.Forms.Label();
             this.lblSafe = new System.Windows.Forms.Label();
-            this.txtStockPeriod = new System.Windows.Forms.TextBox();
+            this.txtStockPeriod = new AMS.TextBox.IntegerTextBox();
             this.lblStar12 = new System.Windows.Forms.Label();
             this.lblStockPeriod = new System.Windows.Forms.Label();
-            this.txtAutoPeriod = new System.Windows.Forms.TextBox();
+            this.txtAutoPeriod = new AMS.TextBox.IntegerTextBox();
             this.lblStar11 = new System.Windows.Forms.Label();
             this.lblAutoPeriod = new System.Windows.Forms.Label();
-            this.txtArrange = new System.Windows.Forms.TextBox();
+            this.txtArrange = new AMS.TextBox.IntegerTextBox();
             this.lblStar13 = new System.Windows.Forms.Label();
             this.lblArrange = new System.Windows.Forms.Label();
             this.lblDepartNM = new System.Windows.Forms.Label();
             this.btnDepart = new System.Windows.Forms.Button();
-            this.txtDepart = new System.Windows.Forms.TextBox();
+            this.txtDepart = new AMS.TextBox.AlphanumericTextBox();
             this.lblDepart = new System.Windows.Forms.Label();
-            this.txtBase = new System.Windows.Forms.TextBox();
+            this.txtBase = new AMS.TextBox.AlphanumericTextBox();
             this.lblBase = new System.Windows.Forms.Label();
             this.cbbTimezone = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.lblStar10 = new System.Windows.Forms.Label();
@@ -84,9 +84,9 @@
             this.cbbLanguage = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.lblStar9 = new System.Windows.Forms.Label();
             this.lblLanguage = new System.Windows.Forms.Label();
-            this.txtFax = new System.Windows.Forms.TextBox();
+            this.txtFax = new AMS.TextBox.AlphanumericTextBox();
             this.lblFax = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtTel = new AMS.TextBox.AlphanumericTextBox();
             this.lblStar8 = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.txtAddress3 = new System.Windows.Forms.TextBox();
@@ -98,7 +98,7 @@
             this.lblAddress1 = new System.Windows.Forms.Label();
             this.lblStar6 = new System.Windows.Forms.Label();
             this.lblCountry = new System.Windows.Forms.Label();
-            this.txtZipCD = new System.Windows.Forms.TextBox();
+            this.txtZipCD = new AMS.TextBox.AlphanumericTextBox();
             this.lblStar5 = new System.Windows.Forms.Label();
             this.lblZipCD = new System.Windows.Forms.Label();
             this.txtPinyin = new System.Windows.Forms.TextBox();
@@ -167,6 +167,18 @@
             // txtFactory
             // 
             resources.ApplyResources(this.txtFactory, "txtFactory");
+            this.txtFactory.Flags = 0;
+            this.txtFactory.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtFactory.Name = "txtFactory";
             // 
             // lblStar2
@@ -200,6 +212,18 @@
             // txtCompany
             // 
             resources.ApplyResources(this.txtCompany, "txtCompany");
+            this.txtCompany.Flags = 0;
+            this.txtCompany.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtCompany.Name = "txtCompany";
             // 
             // btnCompany
@@ -219,7 +243,7 @@
             this.commonToolStrip1.CsvVisible = false;
             this.commonToolStrip1.DeleteEnabled = true;
             this.commonToolStrip1.DeleteVisible = false;
-            this.commonToolStrip1.Displaytext = false;
+            this.commonToolStrip1.Displaytext = true;
             this.commonToolStrip1.ExitEnabled = true;
             this.commonToolStrip1.ExitVisible = false;
             this.commonToolStrip1.GobackEnabled = true;
@@ -455,8 +479,16 @@
             // 
             // txtStockPeriod
             // 
+            this.txtStockPeriod.AllowNegative = true;
+            this.txtStockPeriod.DigitsInGroup = 0;
+            this.txtStockPeriod.Flags = 0;
             resources.ApplyResources(this.txtStockPeriod, "txtStockPeriod");
+            this.txtStockPeriod.MaxDecimalPlaces = 0;
+            this.txtStockPeriod.MaxWholeDigits = 9;
             this.txtStockPeriod.Name = "txtStockPeriod";
+            this.txtStockPeriod.Prefix = "";
+            this.txtStockPeriod.RangeMax = 2147483647;
+            this.txtStockPeriod.RangeMin = -2147483648;
             // 
             // lblStar12
             // 
@@ -471,8 +503,16 @@
             // 
             // txtAutoPeriod
             // 
+            this.txtAutoPeriod.AllowNegative = true;
+            this.txtAutoPeriod.DigitsInGroup = 0;
+            this.txtAutoPeriod.Flags = 0;
             resources.ApplyResources(this.txtAutoPeriod, "txtAutoPeriod");
+            this.txtAutoPeriod.MaxDecimalPlaces = 0;
+            this.txtAutoPeriod.MaxWholeDigits = 9;
             this.txtAutoPeriod.Name = "txtAutoPeriod";
+            this.txtAutoPeriod.Prefix = "";
+            this.txtAutoPeriod.RangeMax = 2147483647;
+            this.txtAutoPeriod.RangeMin = -2147483648;
             // 
             // lblStar11
             // 
@@ -487,8 +527,16 @@
             // 
             // txtArrange
             // 
+            this.txtArrange.AllowNegative = true;
+            this.txtArrange.DigitsInGroup = 0;
+            this.txtArrange.Flags = 0;
             resources.ApplyResources(this.txtArrange, "txtArrange");
+            this.txtArrange.MaxDecimalPlaces = 0;
+            this.txtArrange.MaxWholeDigits = 9;
             this.txtArrange.Name = "txtArrange";
+            this.txtArrange.Prefix = "";
+            this.txtArrange.RangeMax = 2147483647;
+            this.txtArrange.RangeMin = -2147483648;
             // 
             // lblStar13
             // 
@@ -518,6 +566,18 @@
             // txtDepart
             // 
             resources.ApplyResources(this.txtDepart, "txtDepart");
+            this.txtDepart.Flags = 0;
+            this.txtDepart.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtDepart.Name = "txtDepart";
             // 
             // lblDepart
@@ -528,6 +588,18 @@
             // txtBase
             // 
             resources.ApplyResources(this.txtBase, "txtBase");
+            this.txtBase.Flags = 0;
+            this.txtBase.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtBase.Name = "txtBase";
             // 
             // lblBase
@@ -592,6 +664,18 @@
             // 
             this.tpG2.SetColumnSpan(this.txtFax, 3);
             resources.ApplyResources(this.txtFax, "txtFax");
+            this.txtFax.Flags = 0;
+            this.txtFax.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtFax.Name = "txtFax";
             // 
             // lblFax
@@ -602,6 +686,18 @@
             // txtTel
             // 
             resources.ApplyResources(this.txtTel, "txtTel");
+            this.txtTel.Flags = 0;
+            this.txtTel.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtTel.Name = "txtTel";
             // 
             // lblStar8
@@ -668,6 +764,18 @@
             // txtZipCD
             // 
             resources.ApplyResources(this.txtZipCD, "txtZipCD");
+            this.txtZipCD.Flags = 0;
+            this.txtZipCD.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
             this.txtZipCD.Name = "txtZipCD";
             // 
             // lblStar5
@@ -767,12 +875,12 @@
         private System.Windows.Forms.TableLayoutPanel tpG1;
         private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.Label lblStar1;
-        private System.Windows.Forms.TextBox txtCompany;
+        private AMS.TextBox.AlphanumericTextBox txtCompany;
         private System.Windows.Forms.Button btnCompany;
         private System.Windows.Forms.Label lblCompanyNM;
         private System.Windows.Forms.Label lblFactory;
         private System.Windows.Forms.Label lblStar2;
-        private System.Windows.Forms.TextBox txtFactory;
+        private AMS.TextBox.AlphanumericTextBox txtFactory;
         private System.Windows.Forms.Button btnFactory;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
         private xpLabel.xpLabel lblMode;
@@ -789,7 +897,7 @@
         private System.Windows.Forms.Label lblZipCD;
         private System.Windows.Forms.Label lblStar6;
         private System.Windows.Forms.Label lblCountry;
-        private System.Windows.Forms.TextBox txtZipCD;
+        private AMS.TextBox.AlphanumericTextBox txtZipCD;
         private TableDropDownList.TableDropDownList cbbCountry;
         private System.Windows.Forms.Label lblStar7;
         private System.Windows.Forms.Label lblAddress1;
@@ -798,10 +906,10 @@
         private System.Windows.Forms.Label lblAddress2;
         private System.Windows.Forms.Label lblAddress3;
         private System.Windows.Forms.TextBox txtAddress3;
-        private System.Windows.Forms.TextBox txtTel;
+        private AMS.TextBox.AlphanumericTextBox txtTel;
         private System.Windows.Forms.Label lblStar8;
         private System.Windows.Forms.Label lblTel;
-        private System.Windows.Forms.TextBox txtFax;
+        private AMS.TextBox.AlphanumericTextBox txtFax;
         private System.Windows.Forms.Label lblFax;
         private System.Windows.Forms.Label lblStar9;
         private System.Windows.Forms.Label lblLanguage;
@@ -810,19 +918,19 @@
         private System.Windows.Forms.Label lblStar10;
         private TableDropDownList.TableDropDownList cbbTimezone;
         private System.Windows.Forms.Label lblBase;
-        private System.Windows.Forms.TextBox txtBase;
+        private AMS.TextBox.AlphanumericTextBox txtBase;
         private System.Windows.Forms.Label lblDepart;
-        private System.Windows.Forms.TextBox txtDepart;
+        private AMS.TextBox.AlphanumericTextBox txtDepart;
         private System.Windows.Forms.Button btnDepart;
         private System.Windows.Forms.Label lblDepartNM;
         private System.Windows.Forms.Label lblArrange;
         private System.Windows.Forms.Label lblStar13;
-        private System.Windows.Forms.TextBox txtArrange;
+        private AMS.TextBox.IntegerTextBox txtArrange;
         private System.Windows.Forms.Label lblAutoPeriod;
-        private System.Windows.Forms.TextBox txtStockPeriod;
+        private AMS.TextBox.IntegerTextBox txtStockPeriod;
         private System.Windows.Forms.Label lblStar12;
         private System.Windows.Forms.Label lblStockPeriod;
-        private System.Windows.Forms.TextBox txtAutoPeriod;
+        private AMS.TextBox.IntegerTextBox txtAutoPeriod;
         private System.Windows.Forms.Label lblStar11;
         private System.Windows.Forms.Label lblSafe;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList cbbSafe;

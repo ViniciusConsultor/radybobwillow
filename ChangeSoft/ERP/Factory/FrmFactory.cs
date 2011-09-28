@@ -13,6 +13,7 @@ using Noogen.Validation;
 using Com.GainWinSoft.ERP.MasterCheck;
 using Com.GainWinSoft.ERP.Factory.Action;
 using Com.GainWinSoft.ERP.Entity;
+using System.Runtime.InteropServices;
 
 namespace Com.GainWinSoft.ERP.Factory
 {
@@ -78,9 +79,34 @@ namespace Com.GainWinSoft.ERP.Factory
             this.lblStar2.Visible = false;
             this.txtCompany.Visible = false;
             this.txtCompany.Enabled = false;
+            this.txtCompany.TabStop = false;
             this.lblCompanyNM.Visible = false;
             this.btnCompany.Visible = false;
+            this.btnCompany.TabStop = false;
             #endregion
+
+            this.Activate();
+            this.GotFocus += new EventHandler(FrmFactory_GotFocus);
+        }
+
+        void FrmFactory_GotFocus(object sender, EventArgs e)
+        {
+            this.SetFocus();
+        }
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Winapi)]
+        internal static extern IntPtr GetFocus();
+        /// <summary>
+        /// 此方法引入系统user32.dll,获得当前获得焦点的控件
+        /// </summary>
+        /// <returns></returns>
+        private Control GetFocusedControl()
+        {
+            Control FocusedControl = null;
+            IntPtr FocusedHandle = GetFocus();
+            if (FocusedHandle != IntPtr.Zero)
+                FocusedControl = Control.FromHandle(FocusedHandle);
+            return FocusedControl;
         }
 
         /// <summary>
@@ -128,6 +154,7 @@ namespace Com.GainWinSoft.ERP.Factory
             {
                 this.tpG2.Enabled = false;
             }
+            this.SetFocus();
         }
 
         /// <summary>
@@ -138,6 +165,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.ClearError();
             this.SetLayoutG2G1();
             this.SetToolBarG2G1();
+            this.SetFocus();
         }
 
         /// <summary>
@@ -156,6 +184,7 @@ namespace Com.GainWinSoft.ERP.Factory
             }
 
             this.SaveData();
+            this.SetFocus();
         }
 
         /// <summary>
@@ -167,6 +196,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.ClearError();
             this.SetToolBar(this.strMode);
             this.SetLayout(this.strMode);
+            this.SetFocus();
         }
 
         /// <summary>
@@ -178,6 +208,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.ClearError(); 
             this.SetToolBar(this.strMode);
             this.SetLayout(this.strMode);
+            this.SetFocus();
         }
 
         /// <summary>
@@ -189,6 +220,7 @@ namespace Com.GainWinSoft.ERP.Factory
             this.ClearError();
             this.SetToolBar(this.strMode);
             this.SetLayout(this.strMode);
+            this.SetFocus();
         }
 
         /// <summary>
@@ -277,6 +309,7 @@ namespace Com.GainWinSoft.ERP.Factory
 
             this.commonToolStrip1.HelpEnabled = false;
             this.commonToolStrip1.HelpVisible = false;
+            this.commonToolStrip1.Displaytext = true;
             #endregion
         }
 
@@ -420,6 +453,7 @@ namespace Com.GainWinSoft.ERP.Factory
         private void SetLayoutAdd()
         {
             this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "C");
+            this.tpG1.Enabled = true;
             this.tpG2.Enabled = true;
             //this.tpG2.Visible = true;
         }
@@ -430,6 +464,7 @@ namespace Com.GainWinSoft.ERP.Factory
         private void SetLayoutDel()
         {
             this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "D");
+            this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
         }
@@ -440,6 +475,7 @@ namespace Com.GainWinSoft.ERP.Factory
         private void SetLayoutUpd()
         {
             this.lblMode.Text = ConditionUtils.GetConditionName("ActionMode", "U");
+            this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
         }
@@ -463,6 +499,21 @@ namespace Com.GainWinSoft.ERP.Factory
             this.tpG1.Enabled = true;
             this.tpG2.Enabled = false;
             //this.tpG2.Visible = false;
+        }
+
+        /// <summary>
+        /// 设置画面上的初期焦点
+        /// </summary>
+        private void SetFocus()
+        {
+            if (this.tpG1.Enabled)
+            {
+                this.txtFactory.Focus();
+            }
+            else
+            {
+                this.txtAbbreviation.Focus();
+            }
         }
         #endregion
 
