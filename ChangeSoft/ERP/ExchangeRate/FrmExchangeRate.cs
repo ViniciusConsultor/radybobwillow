@@ -313,7 +313,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         private void commonToolStrip1_UpdateClick(object sender, EventArgs e)
         {
-            this.strMode = Constant.MODE_UPD;
+            this.strMode = Common.Constant.MODE_UPD;
 
             pgvRateMs_DoubleClick(sender, e);
 
@@ -331,7 +331,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
         private void commonToolStrip1_AddClick(object sender, EventArgs e)
         {
-            this.strMode = Constant.MODE_ADD; 
+            this.strMode = Common.Constant.MODE_UPD; 
             
             currentGroup = 3;
             this.SetCommonToolstrip();
@@ -490,7 +490,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         private void pgvRateMs_DoubleClick(object sender, EventArgs e)
         {
 
-            this.strMode = Constant.MODE_UPD;
+            this.strMode = Common.Constant.MODE_UPD;
 
             currentGroup++;
             this.SetCommonToolstrip();
