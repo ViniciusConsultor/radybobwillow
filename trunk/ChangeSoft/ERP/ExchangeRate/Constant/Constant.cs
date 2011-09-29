@@ -12,7 +12,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         //汇率区分
         public const string RATE_CLS = "RateCls";
 
-
+        //PGID
+        public const string PG_ID = "ExRateMs";
 
  
     }

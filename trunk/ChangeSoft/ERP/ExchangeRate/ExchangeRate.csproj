@@ -60,6 +60,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -78,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Action\Action_FrmExchangeRate.cs" />
     <Compile Include="Action\IAction_FrmExchangeRate.cs" />
+    <Compile Include="Constant\Constant.cs" />
     <Compile Include="FormVo\FrmExRateCardVo.cs" />
     <Compile Include="FormVo\FrmExRateDetailVo.cs" />
     <Compile Include="FrmExchangeRate.cs">
@@ -132,6 +134,10 @@
     <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
       <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
       <Name>TextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
+      <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
+      <Name>Noogen.Validation</Name>
     </ProjectReference>
     <ProjectReference Include="..\XDateTimePicker\XDateTimePicker.csproj">
       <Project>{D99733E2-A187-47ED-99C3-5C4A36FD18BB}</Project>
