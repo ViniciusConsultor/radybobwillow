@@ -26,10 +26,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
         private string[] columnlist = new string[] { "I_COMPANY_CD", "I_RATE_CLS", "I_CLS_DETAIL_DESC", "I_DL_CURR_CD"
                                 , "I_CURR_DESC", "I_EFF_END_DATE", "I_RATE", "I_CNV_METHOD", "I_CNV_METHOD_DESC" };
 
-        //货币代码
-        string CurrCD = "CurrCD";
-        //汇率区分
-        string RateCls = "RateCls";
+
 
         #   region 查询汇率
         public Int32 GetRateMsDetail(PagerGridView gridview, 
@@ -42,8 +39,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                SearchCondition condition = new SearchCondition();
 
 
-               condition.SetAddtionalCondition(CurrCD, cardvo.IDlCurrCd);
-               condition.SetAddtionalCondition(RateCls, cardvo.IRateCls);
+               condition.SetAddtionalCondition(Constant.CURR_CD, cardvo.IDlCurrCd);
+               condition.SetAddtionalCondition(Constant.RATE_CLS, cardvo.IRateCls);
 
 
 
