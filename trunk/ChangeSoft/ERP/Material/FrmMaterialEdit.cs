@@ -29,6 +29,18 @@ namespace Com.GainWinSoft.ERP.Material
             Hashtable ht = (Hashtable)SessionUtils.GetSession(this.Name);
             ht.Add("ddd", "ddd");
 
+            FormUtils.ClearStarControl(this.tlpTabpage1);
+
+        }
+
+        private void numericTextBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xdtpBinEndDate_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

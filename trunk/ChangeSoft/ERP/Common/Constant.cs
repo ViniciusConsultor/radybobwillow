@@ -734,5 +734,1580 @@ namespace Com.GainWinSoft.Common
         // 摘要:
         //     稼動区分 30
         public const string WORK = "30";
+
+
+        #region 採番種別
+        /// <summary>
+        /// 採番種別を表します。
+        /// </summary>
+        [Serializable]
+        public enum NumberingTypes
+        {
+            #region 1～100
+            /// <summary>
+            ///製造番号
+            ///</summary>
+            SEIBAN = 1,
+
+            #region 削除
+            ///// <summary>
+            /////受注番号
+            /////</summary>
+            //JUCHU = 2,
+            #endregion
+
+            /// <summary>
+            ///出荷番号
+            ///</summary>
+            SYUKKA = 3,
+
+            /// <summary>
+            ///手配番号
+            ///</summary>
+            TEHAI = 4,
+
+            /// <summary>
+            ///受入番号
+            ///</summary>
+            UKEIRE = 5,
+
+            /// <summary>
+            ///支給実績番号
+            ///</summary>
+            SIKYU = 6,
+
+            /// <summary>
+            ///内示受注番号
+            ///</summary>
+            NAIJI = 7,
+
+            /// <summary>
+            ///製番手配番号
+            ///</summary>
+            SEIPO = 8,
+
+            #region 削除10
+            ///// <summary>
+            /////出荷伝票番号
+            /////</summary>
+            //ETC001 = 10,
+            #endregion
+
+            /// <summary>
+            ///不良実績番号
+            ///</summary>
+            ETC002 = 11,
+
+            #region 削除14,15
+            ///// <summary>
+            /////支給伝票番号
+            /////</summary>
+            //ETC005 = 14,
+
+            ///// <summary>
+            /////納品書番号
+            /////</summary>
+            //ETC006 = 15,
+            #endregion
+
+            /// <summary>
+            ///所要量番号
+            ///</summary>
+            REQTR = 30,
+
+            /// <summary>
+            ///在庫調整実績番号
+            ///</summary>
+            ADJSTK = 55,
+
+            #region 削除60,61,62
+            ///// <summary>
+            /////取消注文書伝票番号
+            /////</summary>
+            //CANSLP = 60,
+
+            ///// <summary>
+            /////返品伝票番号
+            /////</summary>
+            //RTNSLP = 61,
+
+            ///// <summary>
+            /////注文書伝票番号
+            /////</summary>
+            //CHUMON = 62,
+            #endregion
+
+            /// <summary>
+            ///作業指図書伝票番号
+            ///</summary>
+            SASIZU = 63,
+
+            /// <summary>
+            ///金型入出庫実績番号
+            ///</summary>
+            MOLDIO = 80,
+
+            /// <summary>
+            ///金型使用実績番号
+            ///</summary>
+            MOLDSHOT = 81,
+
+            /// <summary>
+            ///仕入検収番号
+            ///</summary>
+            VOU = 82,
+
+            /// <summary>
+            ///売上検収番号
+            ///</summary>
+            SVOU = 83,
+
+            /// <summary>
+            /// 製番振替番号
+            /// </summary>
+            STRN = 84,
+
+            /// <summary>
+            /// 見込製番
+            /// </summary>
+            FSBAN = 85,
+
+            /// <summary>
+            /// 見込所要量番号
+            /// </summary>
+            FREQTR = 86,
+
+            /// <summary>
+            /// 積送受入番号
+            /// </summary>
+            DELACP = 87,
+
+            /// <summary>
+            /// 号機番号
+            /// </summary>
+            SRL = 88,
+
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add str
+            /// <summary>
+            /// 保守内容番号
+            /// </summary>
+            MNTCON = 91,
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add end
+
+            #endregion
+
+            #region 101～200
+            #region 削除101
+            ///// <summary>
+            /////日付情報更新ジャーナル
+            /////</summary>
+            //JNL101 = 101,
+            #endregion
+
+            #region 削除102,103
+            ///// <summary>
+            /////区分明細更新ジャーナル
+            /////</summary>
+            //JNL102 = 102,
+
+            ///// <summary>
+            /////名称情報更新ジャーナル
+            /////</summary>
+            //JNL103 = 103,
+            #endregion
+
+            /// <summary>
+            ///採番条件更新ジャーナル
+            ///</summary>
+            JNL104 = 104,
+
+            /// <summary>
+            ///自社稼働日更新ジャーナル
+            ///</summary>
+            JNL105 = 105,
+
+            /// <summary>
+            ///カレンダー工場日更新ジャーナル
+            ///</summary>
+            JNL106 = 106,
+
+            #region 削除107,108,109
+            ///// <summary>
+            /////自社条件更新ジャーナル
+            /////</summary>
+            //JNL107 = 107,
+
+            ///// <summary>
+            /////取引先更新ｼﾞｬｰﾅﾙ
+            /////</summary>
+            //JNL108 = 108,
+
+            ///// <summary>
+            /////税率情報更新ジャーナル
+            /////</summary>
+            //JNL109 = 109,
+            #endregion
+
+            /// <summary>
+            ///品目更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL110 = 110,
+
+            /// <summary>
+            ///指示工程更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL111 = 111,
+
+            /// <summary>
+            ///作業手順更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL112 = 112,
+
+            /// <summary>
+            ///構成更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL113 = 113,
+
+            #region 削除114
+            ///// <summary>
+            /////他社品番情報更新ジャーナル
+            /////</summary>
+            //JNL114 = 114,
+            #endregion
+
+            /// <summary>
+            ///単価更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL115 = 115,
+
+            /// <summary>
+            ///数量別単価更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL116 = 116,
+
+            #region 削除117,118,119
+            ///// <summary>
+            /////担当者更新ジャーナル
+            /////</summary>
+            //JNL117 = 117,
+
+            ///// <summary>
+            /////単位情報更新ジャーナル
+            /////</summary>
+            //JNL118 = 118,
+
+            ///// <summary>
+            /////セキュリティ情報設定ジャーナル
+            /////</summary>
+            //JNL119 = 119,
+            #endregion
+
+            /// <summary>
+            ///金型マスタ更新ジャーナル
+            ///</summary>
+            JNL120 = 120,
+
+            /// <summary>
+            ///金型関連マスタ更新ジャーナル
+            ///</summary>
+            JNL121 = 121,
+
+            #region 削除122,123,124
+            ///// <summary>
+            /////プリンタ情報更新ジャーナル
+            /////</summary>
+            //JNL122 = 122,
+
+            ///// <summary>
+            /////
+            /////</summary>
+            //JNL123 = 123,
+
+            ///// <summary>
+            /////
+            /////</summary>
+            //JNL124 = 124,
+            #endregion
+
+            /// <summary>
+            ///内示受注更新ジャーナル
+            ///</summary>
+            JNL125 = 125,
+
+            /// <summary>
+            ///受注更新ジャーナル
+            ///</summary>
+            JNL126 = 126,
+
+            /// <summary>
+            ///出荷更新ジャーナル
+            ///</summary>
+            JNL127 = 127,
+
+            /// <summary>
+            ///出荷返品更新ジャーナル
+            ///</summary>
+            JNL128 = 128,
+
+            /// <summary>
+            ///生産計画更新ジャーナル
+            ///</summary>
+            JNL129 = 129,
+
+            /// <summary>
+            ///手配更新ジャーナル
+            ///</summary>
+            JNL130 = 130,
+
+            /// <summary>
+            ///手配変更更新ジャーナル
+            ///</summary>
+            JNL131 = 131,
+
+            /// <summary>
+            ///在庫移動更新ジャーナル
+            ///</summary>
+            JNL132 = 132,
+
+            /// <summary>
+            ///支給出庫更新ジャーナル
+            ///</summary>
+            JNL133 = 133,
+
+            /// <summary>
+            ///受入更新ジャーナル
+            ///</summary>
+            JNL134 = 134,
+
+            /// <summary>
+            ///作業実績更新ジャーナル
+            ///</summary>
+            JNL135 = 135,
+
+            /// <summary>
+            ///不良実績更新ジャーナル
+            ///</summary>
+            JNL136 = 136,
+
+            /// <summary>
+            ///計画外受入更新ジャーナル
+            ///</summary>
+            JNL137 = 137,
+
+            /// <summary>
+            ///在庫調整更新ジャーナル
+            ///</summary>
+            JNL138 = 138,
+
+            /// <summary>
+            ///棚卸条件更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL139 = 139,
+
+            /// <summary>
+            ///棚卸更新ｼﾞｬｰﾅﾙ
+            ///</summary>
+            JNL140 = 140,
+
+            /// <summary>
+            ///金型入出庫更新ジャーナル
+            ///</summary>
+            JNL141 = 141,
+
+            /// <summary>
+            ///金型実績更新ジャーナル
+            ///</summary>
+            JNL142 = 142,
+
+            /// <summary>
+            ///製番管理更新ジャーナル
+            ///</summary>
+            JNL143 = 143,
+
+            #region 削除144,145,146,147
+            // 20080401 FNS)takizawa add start 
+            ///// <summary>
+            /////受注ヘッダジャーナル
+            /////</summary>
+            //JNL144 = 144,
+            ///// <summary>
+            /////受注明細ジャーナル
+            /////</summary>
+            //JNL145 = 145,
+            ///// <summary>
+            /////見積ジャーナル
+            /////</summary>
+            //JNL146 = 146,
+            ///// <summary>
+            /////個別受注製番更新ジャーナル
+            /////</summary>
+            //JNL147 = 147,
+            // 20080401 FNS)takizawa add end
+            #endregion
+
+            /// <summary>
+            ///仕入検収情報更新ジャーナル
+            ///</summary>
+            JNL145 = 145,
+
+            /// <summary>
+            ///受注明細情報更新ジャーナル
+            ///</summary>
+            JNL146 = 146,
+
+            /// <summary>
+            ///個別受注製番情報更新ジャーナル
+            ///</summary>
+            JNL147 = 147,
+
+            /// <summary>
+            ///見積情報更新ジャーナル
+            ///</summary>
+            JNL148 = 148,
+
+            /// <summary>
+            ///見積品目情報更新ジャーナル
+            ///</summary>
+            JNL149 = 149,
+
+            /// <summary>
+            ///見積品目構成情報更新ジャーナル
+            ///</summary>
+            JNL150 = 150,
+
+            /// <summary>
+            ///見積品目費目情報更新ジャーナル
+            ///</summary>
+            JNL151 = 151,
+
+            /// <summary>
+            ///製番別手配構成情報更新ジャーナル
+            ///</summary>
+            JNL152 = 152,
+
+            /// <summary>
+            ///製番別手配工程情報更新ジャーナル
+            ///</summary>
+            JNL153 = 153,
+
+            /// <summary>
+            ///実行予算情報更新ジャーナル
+            ///</summary>
+            JNL154 = 154,
+
+            /// <summary>
+            ///実行予算原価更新ジャーナル
+            ///</summary>
+            JNL155 = 155,
+
+            /// <summary>
+            ///売上検収情報更新ジャーナル
+            ///</summary>
+            JNL156 = 156,
+
+            /// <summary>
+            /// 見積明細原価更新ジャーナル
+            /// </summary>
+            JNL157 = 157,
+
+            /// <summary>
+            /// 都度指示工程更新ジャーナル
+            /// </summary>
+            JNL158 = 158,
+
+            /// <summary>
+            /// 都度作業指示更新ジャーナル
+            /// </summary>
+            JNL159 = 159,
+
+            /// <summary>
+            /// 言語別品目名称更新ジャーナル
+            /// </summary>
+            JNL160 = 160,
+
+            /// <summary>
+            /// 倉庫工程更新ジャーナル
+            /// </summary>
+            JNL162 = 162,
+
+            /// <summary>
+            /// 機械更新ジャーナル
+            /// </summary>
+            JNL163 = 163,
+
+            /// <summary>
+            /// 見込生産計画更新ジャーナル
+            /// </summary>
+            JNL164 = 164,
+
+            /// <summary>
+            /// 受入検査更新ジャーナル
+            /// </summary>
+            JNL165 = 165,
+
+            /// <summary>
+            /// 号機更新ジャーナル
+            /// </summary>
+            JNL166 = 166,
+
+            /// <summary>
+            /// 保守作業更新ジャーナル
+            /// </summary>
+            JNL167 = 167,
+
+            /// <summary>
+            /// 保守部品更新ジャーナル
+            /// </summary>
+            JNL168 = 168,
+
+            /// <summary>
+            /// ソフトウェア情報更新ジャーナル
+            /// </summary>
+            JNL169 = 169,
+
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add str
+            /// <summary>
+            /// 保守内容情報更新ジャーナル
+            /// </summary>
+            JNL170 = 170,
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add end
+
+            #endregion
+
+            #region 201～300
+            /// <summary>
+            ///受入実績情報履歴番号
+            ///</summary>
+            ADT201 = 201,
+
+            /// <summary>
+            ///カレンダ情報履歴番号
+            ///</summary>
+            ADT202 = 202,
+
+            #region 削除 203,204,205
+            ///// <summary>
+            /////区分情報履歴番号
+            /////</summary>
+            //ADT203 = 203,
+
+            ///// <summary>
+            /////区分明細情報履歴番号
+            /////</summary>
+            //ADT204 = 204,
+
+            ///// <summary>
+            /////自社条件履歴番号
+            /////</summary>
+            //ADT205 = 205,
+            #endregion
+
+            #region 削除206
+            ///// <summary>
+            /////日付条件履歴番号
+            /////</summary>
+            //ADT206 = 206,
+            #endregion
+
+            /// <summary>
+            ///受払情報履歴番号
+            ///</summary>
+            ADT207 = 207,
+
+            #region 削除208
+            ///// <summary>
+            /////名称情報履歴番号
+            /////</summary>
+            //ADT208 = 208,
+            #endregion
+
+            /// <summary>
+            ///工場在庫情報履歴番号
+            ///</summary>
+            ADT210 = 210,
+
+            /// <summary>
+            ///内示受注明細情報履歴番号
+            ///</summary>
+            ADT211 = 211,
+
+            /// <summary>
+            ///内示受注ヘッダ情報履歴番号
+            ///</summary>
+            ADT212 = 212,
+
+            /// <summary>
+            ///製番管理情報履歴番号
+            ///</summary>
+            ADT213 = 213,
+
+            /// <summary>
+            ///金型マスタ履歴番号
+            ///</summary>
+            ADT214 = 214,
+
+            /// <summary>
+            ///金型関連マスタ履歴番号
+            ///</summary>
+            ADT215 = 215,
+
+            /// <summary>
+            ///金型使用実績情報履歴番号
+            ///</summary>
+            ADT216 = 216,
+
+            /// <summary>
+            ///金型入出庫実績情報履歴番号
+            ///</summary>
+            ADT217 = 217,
+
+            /// <summary>
+            ///採番条件履歴番号
+            ///</summary>
+            ADT218 = 218,
+
+            /// <summary>
+            ///指示工程情報履歴番号
+            ///</summary>
+            ADT219 = 219,
+
+            #region 削除 220
+            ///// <summary>
+            /////担当者情報履歴番号
+            /////</summary>
+            //ADT220 = 220,
+            #endregion
+
+            /// <summary>
+            ///生産計画情報履歴番号
+            ///</summary>
+            ADT221 = 221,
+
+            /// <summary>
+            ///品目情報履歴番号
+            ///</summary>
+            ADT222 = 222,
+
+            /// <summary>
+            ///手配残情報履歴番号
+            ///</summary>
+            ADT223 = 223,
+
+            /// <summary>
+            ///作業手順情報履歴番号
+            ///</summary>
+            ADT224 = 224,
+
+            /// <summary>
+            ///操作管理履歴情報番号
+            ///</summary>
+            ADT225 = 225,
+
+            /// <summary>
+            ///構成情報履歴番号
+            ///</summary>
+            ADT226 = 226,
+
+            /// <summary>
+            ///数量別単価情報履歴番号
+            ///</summary>
+            ADT227 = 227,
+
+            /// <summary>
+            ///所要量情報履歴番号
+            ///</summary>
+            ADT228 = 228,
+
+            /// <summary>
+            ///不良実績情報履歴番号
+            ///</summary>
+            ADT229 = 229,
+
+            #region 削除 230
+            ///// <summary>
+            /////セキュリティ情報履歴番号
+            /////</summary>
+            //ADT230 = 230,
+            #endregion
+
+            /// <summary>
+            ///出荷実績情報履歴番号
+            ///</summary>
+            ADT231 = 231,
+
+            /// <summary>
+            ///受注引当明細情報履歴番号
+            ///</summary>
+            ADT232 = 232,
+
+            /// <summary>
+            ///受注残情報履歴番号
+            ///</summary>
+            ADT233 = 233,
+
+            /// <summary>
+            ///支給出庫実績情報履歴番号
+            ///</summary>
+            ADT234 = 234,
+
+            /// <summary>
+            ///在庫調整実績情報履歴番号
+            ///</summary>
+            ADT235 = 235,
+
+            /// <summary>
+            ///棚卸情報履歴番号
+            ///</summary>
+            ADT236 = 236,
+
+            /// <summary>
+            ///棚卸条件情報履歴番号
+            ///</summary>
+            ADT237 = 237,
+
+            #region 削除 238～242
+            ///// <summary>
+            /////税率情報履歴番号
+            /////</summary>
+            //ADT238 = 238,
+
+            ///// <summary>
+            /////プリンタ情報履歴番号
+            /////</summary>
+            //ADT239 = 239,
+
+            ///// <summary>
+            /////取引先情報履歴番号
+            /////</summary>
+            //ADT240 = 240,
+
+            ///// <summary>
+            /////他社品番情報履歴番号
+            /////</summary>
+            //ADT241 = 241,
+
+            ///// <summary>
+            /////単位情報履歴番号
+            /////</summary>
+            //ADT242 = 242,
+            #endregion
+
+            /// <summary>
+            ///単価情報履歴番号
+            ///</summary>
+            ADT243 = 243,
+
+            /// <summary>
+            ///仕入検収情報履歴
+            ///</summary>
+            ADT247 = 247,
+
+            /// <summary>
+            ///受注明細情報履歴番号
+            ///</summary>
+            ADT248 = 248,
+
+            /// <summary>
+            ///見積情報履歴番号
+            ///</summary>
+            ADT249 = 249,
+
+            /// <summary>
+            ///見積品目情報履歴番号
+            ///</summary>
+            ADT250 = 250,
+
+            /// <summary>
+            ///見積品目構成情報履歴番号
+            ///</summary>
+            ADT251 = 251,
+
+            /// <summary>
+            ///見積品目費目方法履歴番号
+            ///</summary>
+            ADT252 = 252,
+
+            /// <summary>
+            ///個別受注製番情報履歴番号
+            ///</summary>
+            ADT253 = 253,
+
+            /// <summary>
+            ///製番別手配構成情報履歴番号
+            ///</summary>
+            ADT254 = 254,
+
+            /// <summary>
+            ///製番別手配構成情報番号
+            ///</summary>
+            ADT255 = 255,
+
+            /// <summary>
+            ///実行予算情報履歴番号
+            ///</summary>
+            ADT256 = 256,
+
+            /// <summary>
+            ///実行予算原価履歴番号
+            ///</summary>
+            ADT257 = 257,
+
+            /// <summary>
+            ///売上検収情報履歴
+            ///</summary>
+            ADT258 = 258,
+
+            /// <summary>
+            ///見積明細原価情報履歴番号
+            ///</summary>
+            ADT259 = 259,
+
+            /// <summary>
+            ///出荷返品情報履歴番号
+            ///</summary>
+            ADT260 = 260,
+
+            /// <summary>
+            ///製番振替情報履歴番号
+            ///</summary>
+            ADT261 = 261,
+
+            /// <summary>
+            ///都度指示工程情報履歴番号
+            ///</summary>
+            ADT262 = 262,
+
+            /// <summary>
+            ///都度作業手順情報履歴番号
+            ///</summary>
+            ADT263 = 263,
+
+            /// <summary>
+            ///都度品目追加RTCM情報履歴番号
+            ///</summary>
+            ADT264 = 264,
+
+            /// <summary>
+            ///言語別品目名称履歴
+            ///</summary>
+            ADT266 = 266,
+
+            /// <summary>
+            ///倉庫工程履歴
+            ///</summary>
+            ADT268 = 268,
+
+            /// <summary>
+            ///機械履歴
+            ///</summary>
+            ADT269 = 269,
+
+            /// <summary>
+            ///見込生産計画履歴
+            ///</summary>
+            ADT270 = 270,
+
+            /// <summary>
+            ///見込所要量履歴
+            ///</summary>
+            ADT271 = 271,
+
+            /// <summary>
+            ///連携エラー履歴
+            ///</summary>
+            ADT272 = 272,
+
+            /// <summary>
+            ///積送受入履歴
+            ///</summary>
+            ADT273 = 273,
+
+            /// <summary>
+            ///バッチ排他履歴
+            ///</summary>
+            ADT274 = 274,
+
+            /// <summary>
+            ///号機履歴
+            ///</summary>
+            ADT275 = 275,
+
+            /// <summary>
+            ///保守作業履歴
+            ///</summary>
+            ADT276 = 276,
+
+            /// <summary>
+            ///保守部品履歴
+            ///</summary>
+            ADT277 = 277,
+
+            /// <summary>
+            ///ソフトウェア情報履歴
+            ///</summary>
+            ADT278 = 278,
+
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add str
+            /// <summary>
+            /// 保守内容履歴
+            /// </summary>
+            ADT279 = 279,
+            //-------[3.0.0907.1701] 2009.07.17 FNS)takizawa add end
+
+            #endregion
+
+            #region 501～600
+            /// <summary>
+            /// 拡張用採番条件01
+            /// </summary>
+            ADD501 = 501,
+
+            /// <summary>
+            /// 拡張用採番条件02
+            /// </summary>
+            ADD502 = 502,
+
+            /// <summary>
+            /// 拡張用採番条件03
+            /// </summary>
+            ADD503 = 503,
+
+            /// <summary>
+            /// 拡張用採番条件04
+            /// </summary>
+            ADD504 = 504,
+
+            /// <summary>
+            /// 拡張用採番条件05
+            /// </summary>
+            ADD505 = 505,
+
+            /// <summary>
+            /// 拡張用採番条件06
+            /// </summary>
+            ADD506 = 506,
+
+            /// <summary>
+            /// 拡張用採番条件07
+            /// </summary>
+            ADD507 = 507,
+
+            /// <summary>
+            /// 拡張用採番条件08
+            /// </summary>
+            ADD508 = 508,
+
+            /// <summary>
+            /// 拡張用採番条件09
+            /// </summary>
+            ADD509 = 509,
+
+            /// <summary>
+            /// 拡張用採番条件10
+            /// </summary>
+            ADD510 = 510,
+
+            /// <summary>
+            /// 拡張用採番条件11
+            /// </summary>
+            ADD511 = 511,
+
+            /// <summary>
+            /// 拡張用採番条件12
+            /// </summary>
+            ADD512 = 512,
+
+            /// <summary>
+            /// 拡張用採番条件13
+            /// </summary>
+            ADD513 = 513,
+
+            /// <summary>
+            /// 拡張用採番条件14
+            /// </summary>
+            ADD514 = 514,
+
+            /// <summary>
+            /// 拡張用採番条件15
+            /// </summary>
+            ADD515 = 515,
+
+            /// <summary>
+            /// 拡張用採番条件16
+            /// </summary>
+            ADD516 = 516,
+
+            /// <summary>
+            /// 拡張用採番条件17
+            /// </summary>
+            ADD517 = 517,
+
+            /// <summary>
+            /// 拡張用採番条件18
+            /// </summary>
+            ADD518 = 518,
+
+            /// <summary>
+            /// 拡張用採番条件19
+            /// </summary>
+            ADD519 = 519,
+
+            /// <summary>
+            /// 拡張用採番条件20
+            /// </summary>
+            ADD520 = 520,
+            #endregion
+
+            #region 601～700
+            /// <summary>
+            /// 見積番号
+            /// </summary>
+            ESTNO = 601,
+
+            /// <summary>
+            /// 受注番号
+            /// </summary>
+            JUCHU = 602,
+
+            /// <summary>
+            /// 出荷伝票番号
+            /// </summary>
+            ETC001 = 603,
+
+            /// <summary>
+            /// 支給伝票番号
+            /// </summary>
+            ETC005 = 604,
+
+            /// <summary>
+            /// 納品書番号
+            /// </summary>
+            ETC006 = 605,
+
+            /// <summary>
+            /// 取消注文書伝票番号
+            /// </summary>
+            CANSLP = 606,
+
+            /// <summary>
+            /// 返品伝票番号
+            /// </summary>
+            RTNSLP = 607,
+
+            /// <summary>
+            /// 注文書伝票番号
+            /// </summary>
+            CHUMON = 608,
+            #endregion
+
+            #region 701～800
+            /// <summary>
+            /// 取引先更新ジャーナル
+            /// </summary>
+            JNL701 = 701,
+
+            /// <summary>
+            /// 税率情報更新ジャーナル
+            /// </summary>
+            JNL702 = 702,
+
+            /// <summary>
+            /// 他社品番情報更新ジャーナル
+            /// </summary>
+            JNL703 = 703,
+
+            /// <summary>
+            /// 担当者更新ジャーナル
+            /// </summary>
+            JNL704 = 704,
+
+            /// <summary>
+            /// レート更新ジャーナル
+            /// </summary>
+            JNL705 = 705,
+
+            /// <summary>
+            /// 部門更新ジャーナル
+            /// </summary>
+            JNL708 = 708,
+
+            /// <summary>
+            /// 作業日報更新ジャーナル
+            /// </summary>
+            JNL709 = 709,
+
+            /// <summary>
+            /// プロジェクト更新ジャーナル
+            /// </summary>
+            JNL710 = 710,
+
+            /// <summary>
+            /// タスク更新ジャーナル
+            /// </summary>
+            JNL711 = 711,
+
+            /// <summary>
+            /// タスク詳細更新ジャーナル
+            /// </summary>
+            JNL712 = 712,
+
+            /// <summary>
+            /// タスク詳細費目更新ジャーナル
+            /// </summary>
+            JNL713 = 713,
+
+            /// <summary>
+            /// 勘定科目更新ジャーナル
+            /// </summary>
+            JNL714 = 714,
+
+            /// <summary>
+            /// 賃率更新ジャーナル
+            /// </summary>
+            JNL715 = 715,
+
+            /// <summary>
+            ///工場条件更新ジャーナル
+            ///</summary>
+            //JNL144 = 144,
+            JNL716 = 716,
+
+            /// <summary>
+            /// 言語別工場名称更新ジャーナル
+            /// </summary>
+            JNL717 = 717,
+
+            /// <summary>
+            /// 取引先更新ジャーナル追加RTCM
+            /// </summary>
+            JNL718 = 718,
+
+            /// <summary>
+            /// 請求先更新ジャーナル
+            /// </summary>
+            JNL719 = 719,
+
+            /// <summary>
+            /// 支払先更新ジャーナル
+            /// </summary>
+            JNL720 = 720,
+
+            /// <summary>
+            ///日付情報更新ジャーナル
+            ///</summary>
+            JNL721 = 721,
+
+            /// <summary>
+            /// 取引先情報履歴番号
+            /// </summary>
+            //ADT959 = 959,
+            ADT751 = 751,
+
+            /// <summary>
+            /// 税率情報履歴番号
+            /// </summary>
+            //ADT957 = 957,
+            ADT752 = 752,
+
+            /// <summary>
+            /// 他社品番情報履歴番号
+            /// </summary>
+            //ADT960 = 960,
+            ADT753 = 753,
+
+            /// <summary>
+            /// 単位情報履歴番号
+            /// </summary>
+            //ADT961 = 961,
+            ADT754 = 754,
+
+            /// <summary>
+            /// レート情報履歴番号
+            /// </summary>
+            //ADT964 = 964,
+            ADT755 = 755,
+
+            /// <summary>
+            /// 部門履歴
+            /// </summary>
+            ADT758 = 758,
+
+            /// <summary>
+            /// 作業日報履歴
+            /// </summary>
+            ADT759 = 759,
+
+            /// <summary>
+            /// プロジェクト履歴
+            /// </summary>
+            ADT760 = 760,
+
+            /// <summary>
+            /// タスク詳細履歴
+            /// </summary>
+            ADT762 = 762,
+
+            /// <summary>
+            /// タスク詳細費目履歴
+            /// </summary>
+            ADT763 = 763,
+
+            /// <summary>
+            /// 勘定科目履歴
+            /// </summary>
+            ADT764 = 764,
+
+            /// <summary>
+            /// 賃率履歴
+            /// </summary>
+            ADT765 = 765,
+
+            /// <summary>
+            /// 会社採番条件履歴
+            /// </summary>
+            ADT766 = 766,
+
+
+            /// <summary>
+            ///工場条件情報履歴番号
+            ///</summary>
+            //ADT209 = 209,
+            ADT767 = 767,
+
+            /// <summary>
+            /// 言語別工場名称履歴
+            /// </summary>
+            ADT768 = 768,
+
+            /// <summary>
+            /// 倉庫条件履歴番号
+            /// </summary>
+            ADT769 = 769,
+
+            /// <summary>
+            /// 取引先情報追加RTCM履歴番号
+            /// </summary>
+            ADT770 = 770,
+
+            /// <summary>
+            /// 請求先情報履歴番号
+            /// </summary>
+            ADT771 = 771,
+
+            /// <summary>
+            /// 支払先情報履歴番号
+            /// </summary>
+            ADT772 = 772,
+
+            /// <summary>
+            ///日付条件履歴番号
+            ///</summary>
+            ADT206 = 206,
+            #endregion
+
+            #region 801～900
+            /// <summary>
+            /// 拡張用全社採番条件01
+            /// </summary>
+            ADD851 = 851,
+
+            /// <summary>
+            /// 拡張用全社採番条件02
+            /// </summary>
+            ADD852 = 852,
+
+            /// <summary>
+            /// 拡張用全社採番条件03
+            /// </summary>
+            ADD853 = 853,
+
+            /// <summary>
+            /// 拡張用全社採番条件04
+            /// </summary>
+            ADD854 = 854,
+
+            /// <summary>
+            /// 拡張用全社採番条件05
+            /// </summary>
+            ADD855 = 855,
+
+            /// <summary>
+            /// 拡張用全社採番条件06
+            /// </summary>
+            ADD856 = 856,
+
+            /// <summary>
+            /// 拡張用全社採番条件07
+            /// </summary>
+            ADD857 = 857,
+
+            /// <summary>
+            /// 拡張用全社採番条件08
+            /// </summary>
+            ADD858 = 858,
+
+            /// <summary>
+            /// 拡張用全社採番条件09
+            /// </summary>
+            ADD859 = 859,
+
+            /// <summary>
+            /// 拡張用全社採番条件10
+            /// </summary>
+            ADD860 = 860,
+
+            /// <summary>
+            /// 拡張用全社採番条件11
+            /// </summary>
+            ADD861 = 861,
+
+            /// <summary>
+            /// 拡張用全社採番条件12
+            /// </summary>
+            ADD862 = 862,
+
+            /// <summary>
+            /// 拡張用全社採番条件13
+            /// </summary>
+            ADD863 = 863,
+
+            /// <summary>
+            /// 拡張用全社採番条件14
+            /// </summary>
+            ADD864 = 864,
+
+            /// <summary>
+            /// 拡張用全社採番条件15
+            /// </summary>
+            ADD865 = 865,
+
+            /// <summary>
+            /// 拡張用全社採番条件16
+            /// </summary>
+            ADD866 = 866,
+
+            /// <summary>
+            /// 拡張用全社採番条件17
+            /// </summary>
+            ADD867 = 867,
+
+            /// <summary>
+            /// 拡張用全社採番条件18
+            /// </summary>
+            ADD868 = 868,
+
+            /// <summary>
+            /// 拡張用全社採番条件19
+            /// </summary>
+            ADD869 = 869,
+
+            /// <summary>
+            /// 拡張用全社採番条件20
+            /// </summary>
+            ADD870 = 870,
+            #endregion
+
+            #region 901～999
+            /// <summary>
+            /// 区分明細更新ジャーナル
+            /// </summary>
+            JNL901 = 901,
+
+            /// <summary>
+            /// 名称情報更新ジャーナル
+            /// </summary>
+            JNL902 = 902,
+
+            #region 削除 903,904
+            //// 20080718 FNS)takizawa add start 
+            ///// <summary>
+            ///// 都度品目　処理品番
+            ///// </summary>
+            //JNL903 = 903,
+
+            ///// <summary>
+            ///// 都度品目　ジャーナル番号
+            ///// </summary>
+            //JNL904 = 904
+            //// 20080718 FNS)takizawa add end
+            #endregion
+
+            /// <summary>
+            /// 会社条件更新ジャーナル
+            /// </summary>
+            JNL903 = 903,
+
+            /// <summary>
+            /// 単位情報更新ジャーナル
+            /// </summary>
+            JNL908 = 908,
+
+            /// <summary>
+            /// セキュリティ情報設定ジャーナル
+            /// </summary>
+            JNL909 = 909,
+
+            /// <summary>
+            /// 通貨更新ジャーナル
+            /// </summary>
+            JNL910 = 910,
+
+
+            /// <summary>
+            /// プリンタ情報更新ジャーナル
+            /// </summary>
+            JNL912 = 912,
+
+            /// <summary>
+            /// データリンク情報更新ジャーナル
+            /// </summary>
+            JNL913 = 913,
+
+            //-------[2.0.0904.2401] 2009.04.24 Fsol)imatomi add str
+            /// <summary>
+            /// 会社条件情報設定 ジャーナル
+            /// </summary>
+            JNL914 = 914,
+
+            /// <summary>
+            /// 言語別会社名称設定 ジャーナル
+            /// </summary>
+            JNL915 = 915,
+            //-------[2.0.0904.2401] 2009.04.24 Fsol)imatomi add end
+
+            /// <summary>
+            /// ユーザ項目定義情報更新ジャーナル
+            /// </summary>
+            JNL916 = 916,
+
+            /// <summary>
+            /// 画面タブ関連情報更新ジャーナル
+            /// </summary>
+            JNL917 = 917,
+
+            /// <summary>
+            /// タブユーザ項目関連情報更新ジャーナル
+            /// </summary>
+            JNL918 = 918,
+
+            /// <summary>
+            /// ユーザ項目値情報更新ジャーナル
+            /// </summary>
+            JNL919 = 919,
+
+            /// <summary>
+            /// 区分情報履歴番号
+            /// </summary>
+            ADT951 = 951,
+
+            /// <summary>
+            /// 区分明細情報履歴番号
+            /// </summary>
+            ADT952 = 952,
+
+            /// <summary>
+            /// 自社条件履歴番号
+            /// </summary>
+            ADT953 = 953,
+
+            /// <summary>
+            /// 名称情報履歴番号
+            /// </summary>
+            ADT954 = 954,
+
+            /// <summary>
+            /// 担当者情報履歴番号
+            /// </summary>
+            ADT955 = 955,
+
+            /// <summary>
+            /// セキュリティ情報履歴番号
+            /// </summary>
+            ADT956 = 956,
+
+            /// <summary>
+            /// プリンタ情報履歴番号
+            /// </summary>
+            ADT958 = 958,
+
+            /// <summary>
+            /// タスク履歴
+            /// </summary>
+            ADT961 = 961,
+
+            /// <summary>
+            /// 他社品番情報履歴番号
+            /// </summary>
+            ADT962 = 962,
+
+            /// <summary>
+            /// 通貨情報履歴番号
+            /// </summary>
+            ADT963 = 963,
+
+            /// <summary>
+            /// 全社採番条件履歴
+            /// </summary>
+            ADT965 = 965,
+
+            /// <summary>
+            /// データリンク情報履歴更新
+            /// </summary>
+            ADT966 = 966,
+
+            /// <summary>
+            /// 会社条件履歴番号
+            /// </summary>
+            ADT967 = 967,
+
+            /// <summary>
+            /// 言語別会社名称履歴
+            /// </summary>
+            ADT968 = 968,
+
+            /// <summary>
+            /// ユーザ項目定義情報履歴
+            /// </summary>
+            ADT969 = 969,
+
+            /// <summary>
+            /// 画面タブ関連情報履歴
+            /// </summary>
+            ADT970 = 970,
+
+            /// <summary>
+            /// タブユーザ項目関連情報履歴
+            /// </summary>
+            ADT971 = 971,
+
+            /// <summary>
+            /// ユーザ項目値情報履歴
+            /// </summary>
+            ADT972 = 972,
+
+            //-------[2.0.0908.3101] 2009.08.31 Fsol)imatomi add str
+            /// <summary>
+            /// バッチ排他履歴
+            /// </summary>
+            ADT973 = 973,
+            //-------[2.0.0908.3101] 2009.08.31 Fsol)imatomi add end
+
+            #endregion
+
+            #region 1000～
+            ////2008.5.12 fns)h-suzuki add
+            /// <summary>
+            ///見積構成ＩＤ
+            ///</summary>
+            PE0111 = 1000,
+            //2008.5.12 fns)h-suzuki add
+            /// <summary>
+            ///製番手配構成ＩＤ
+            ///</summary>
+            PE0306 = 2000,
+            #endregion
+
+        }
+        #endregion
     }
 }

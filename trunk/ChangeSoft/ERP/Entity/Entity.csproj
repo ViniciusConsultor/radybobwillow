@@ -136,6 +136,11 @@
     <Compile Include="Dao\ITTermMsDao.cs" />
     <Compile Include="Dao\ITTradeMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
+    <Compile Include="Dao\StoredInfo\IStoredParameterInfo.cs" />
+    <Compile Include="Dao\StoredInfo\STORED_GET_ITEMID.cs" />
+    <Compile Include="Dao\StoredInfo\STORED_GET_OBJECTID.cs" />
+    <Compile Include="Dao\StoredInfo\STORED_GET_SYSDATE.cs" />
+    <Compile Include="Dao\StoredInfo\STORED_SAIBAN_RTN_CHAR.cs" />
     <Compile Include="Dao\StoredProcedureExecDaoOracleImp.cs" />
     <Compile Include="Dao\TCompanyConditionMsDaoOracleImp.cs" />
     <Compile Include="Dao\TestDaoOracleImp.cs" />

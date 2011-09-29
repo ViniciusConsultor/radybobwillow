@@ -10,6 +10,7 @@ using System.Data.Common;
 using System.Data;
 using Oracle.DataAccess.Client;
 using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.Entity.Dao.StoredInfo;
 
 
 namespace Com.GainWinSoft.ERP.Entity.Dao
@@ -17,11 +18,10 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
     public class StoredProcedureExecDaoOracleImp : ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.IStoredProcedureExecDao
     {
-
-        public decimal StoredProcedureExecReturnNumber(string procedureName,StoredProcedureCondition parameters)
+        private IDbCommand command;
+        public void StoredProcedureExec(IStoredParameterInfo storedinfo)
         {
             ISession ss = holder.CreateSession(typeof(StoredProcedureExecDaoOracleImp));
-            decimal returnvalue = 0;
 
             ITransaction tran = ss.BeginTransaction();
             try
@@ -29,27 +29,45 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 
                 IDbConnection c = ss.Connection;
 
-                IDbCommand command = ss.Connection.CreateCommand();
+                command = ss.Connection.CreateCommand();
                 ((OracleCommand)command).BindByName = true;//用名称参数必须为true，要不oracle以参数数组的下标来设置参数了
 
                 tran.Enlist(command);//注意此处要把command添加到事务中
 
                 command.CommandType = CommandType.StoredProcedure;
 
-                string sql = procedureName;
+                string sql = storedinfo.StoredName;
                 //把参数传递给command
-                parameters.SetStoredProcedureParametersWithRetrunNumber(command);
+                //parameters.SetStoredProcedureParametersWithRetrunNumber(command);
+
+
+                foreach (StoredProcedureParameterInfo info in storedinfo.ParameterList)
+                {
+                   
+
+                    IDbDataParameter para = command.CreateParameter();
+                    para.ParameterName = info.ParameterName;
+                    para.DbType = info.DbType;
+                    para.Direction = info.Direction;
+                    if (info.Direction == ParameterDirection.Output || info.Direction == ParameterDirection.InputOutput)
+                    {
+                        para.Size = info.Size;
+                    }
+                    if (info.Direction == ParameterDirection.Input || info.Direction == ParameterDirection.InputOutput)
+                    {
+                        para.Value = info.ParameterValue;
+                    }
+
+                    command.Parameters.Add(para);
+
+                }
+
+
 
 
                 command.CommandText = sql;
 
                 command.ExecuteNonQuery();
-
-
-                returnvalue = (decimal)((OracleParameter)command.Parameters["RETURN_VALUE"]).Value;
-
-                parameters.SetStoreProcedureOutputParametersValue(command);
-
 
                 tran.Commit();
 
@@ -69,8 +87,19 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 tran.Dispose();
                 holder.ReleaseSession(ss);
             }
-            return returnvalue;
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmi"></param>
+        /// <returns></returns>
+        public object GetResult(StoredProcedureParameterInfo cmi)
+        {
+            return ((OracleParameter)command.Parameters[cmi.ParameterName]).Value;
+        }
+
 
 
 

@@ -54,7 +54,12 @@ namespace Com.GainWinSoft.Common
         }
 
 
-
+        
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         public IDbCommand SetStoredProcedureParametersWithRetrunNumber(IDbCommand command)
         {
 
@@ -137,7 +142,7 @@ namespace Com.GainWinSoft.Common
         /// <param name="parameterName"></param>
         /// <param name="dbType"></param>
         /// <param name="direction"></param>
-        public StoredProcedureParameterInfo(string parameterName, DbType dbType,Int32 size, ParameterDirection direction)
+        public StoredProcedureParameterInfo(string parameterName, DbType dbType, Int32 size, ParameterDirection direction)
         {
             this.parameterName = parameterName;
 
@@ -172,7 +177,7 @@ namespace Com.GainWinSoft.Common
         /// <param name="fieldValue">参数的值</param>
         /// <param name="excludeIfEmpty">参数方向 Input Output ReturnValue</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public StoredProcedureParameterInfo(string parameterName, object parameterValue,Int32 size, ParameterDirection direction)
+        public StoredProcedureParameterInfo(string parameterName, object parameterValue, Int32 size, ParameterDirection direction)
         {
             this.parameterName = parameterName;
             this.parameterValue = parameterValue;
@@ -182,6 +187,7 @@ namespace Com.GainWinSoft.Common
             }
             this.size = size;
             this.direction = direction;
+
         }
 
         /// <summary>
@@ -199,6 +205,7 @@ namespace Com.GainWinSoft.Common
             this.dbType = dbType;
             this.direction = direction;
             this.size = size;
+
         }
 
         private string parameterName;
@@ -206,6 +213,8 @@ namespace Com.GainWinSoft.Common
         private DbType dbType;
         private ParameterDirection direction;
         private Int32 size;
+        private bool isArray;
+        private Int32 arrayLength;
 
 
 
@@ -238,6 +247,20 @@ namespace Com.GainWinSoft.Common
         {
             get { return size; }
             set { size = value; }
+        }
+
+
+
+        public bool IsArray
+        {
+            get { return isArray; }
+            set { isArray = value; }
+        }
+
+        public int ArrayLength
+        {
+            get { return arrayLength; }
+            set { arrayLength = value; }
         }
 
         #region 辅助函数
