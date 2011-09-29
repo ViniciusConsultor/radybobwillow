@@ -32,7 +32,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// <summary>
         /// 利用者情报
         /// </summary>
-        private LoginUserInfoVo uservo;
+        private LoginUserInfoVo uservo =  (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
         /// <summary>
         /// 当前组
@@ -146,7 +146,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             //this.tblPanelGrp.Enabled = false;
             this.txtCompany.Enabled = false;
             this.btnCompany.Enabled = false;
-            this.uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
+            
                                                 
             #region GroupTrans
             if (currentGroup == 1)
@@ -202,8 +202,6 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         {
             Boolean bolResult = false;
             this.Cursor = Cursors.WaitCursor;
-
-            //IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
 
             FrmExRateCardVo  cardvo = new FrmExRateCardVo();
             
@@ -276,32 +274,54 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
 
         #region       保存按钮的点击事件
+        private FrmExRateCardVo setFrom2Vo()
+        {
+            char chaZero = '0';
+            FrmExRateCardVo frmExRateCardVo = new FrmExRateCardVo();
+
+            frmExRateCardVo.ICompanyCd = this.txtCompany.Text;//公司代码
+            frmExRateCardVo.IDlCurrCd = this.tddlCurr_G3.Selectedvalue; //结算货币
+            frmExRateCardVo.ICnvMethod = this.cndCalcMode.Selectedvalue;
+            frmExRateCardVo.IEffEndDate = Convert.ToDecimal(this.xdtpEffEedDate.Value.Year.ToString()
+                                + this.xdtpEffEedDate.Value.Month.ToString().PadLeft(2, chaZero)  
+                                + this.xdtpEffEedDate.Value.Day.ToString());//有效日
+            frmExRateCardVo.IRate =Convert.ToDecimal(txtRate.Text);
+            frmExRateCardVo.IRateCls = this.clsddl_9A_G3.Selectedvalue;
+            
+
+            return frmExRateCardVo;
+
+        }
+
+
 
         /// <summary>
         /// 保存按钮的点击事件
         /// </summary>
         private void commonToolStrip1_SaveClick(object sender, EventArgs e)
         {
+
+
+            FrmExRateCardVo frmExRateCardVo = setFrom2Vo();
+            frmExRateCardVo.IMode = strMode;
+                     
+
+            action.InsExchangeRateStp(frmExRateCardVo);
+
+
+            currentGroup = 2;
+            this.SetCommonToolstrip();
+            this.SetGroupLayout();
+            Data_Inquiry();
+            this.ClearG3();
+            
+            
             /*
             //this.ClearError();
             //this.ClearError();
             //this.SetToolBar(this.strMode);
             //this.SetLayout(this.strMode);
-            FrmExRateCardVo frmExRateCardVo = new FrmExRateCardVo();
-
-            frmExRateCardVo.ICompanyCd = "00";//公司代码
-            frmExRateCardVo.IDlCurrCd = "01"; //结算货币
-            frmExRateCardVo.ICnvMethod = "M";//转换方式
-            frmExRateCardVo.IEffEndDate = Convert.ToDecimal("20111231");//有效日
-            frmExRateCardVo.IRate = (decimal)1.1;
-            frmExRateCardVo.IRateCls = "01";
-            frmExRateCardVo.IEntryDate = DateTime.Now;
-            frmExRateCardVo.IUpdDate = DateTime.Now;
-            frmExRateCardVo.IUpdTimestamp = DateTime.Now.ToShortDateString();
-
-
-            Action_FrmExchangeRate action = new Action_FrmExchangeRate();
-            action.InsExchangeRateStp(frmExRateCardVo);  */
+              */
 
         }
           #endregion
@@ -328,20 +348,17 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         }
         #endregion
 
-
+        #region    追加按钮按下
         private void commonToolStrip1_AddClick(object sender, EventArgs e)
         {
-            this.strMode = Common.Constant.MODE_UPD; 
+            this.strMode = Common.Constant.MODE_ADD; 
             
             currentGroup = 3;
             this.SetCommonToolstrip();
             this.SetGroupLayout();
 
         }
-
-
-
-
+        #endregion
 
         #region GroupTrans
         /// <summary>
@@ -362,19 +379,22 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
                 ClearG3();
 
-                if (pgvRateMs.RowCount == 0)
-                {
-                    currentGroup = 1;
-                    this.SetCommonToolstrip();
-                    this.SetGroupLayout();
-                    return;
-                }
+                //if (pgvRateMs.RowCount == 0)
+                //{
+                //    currentGroup = 1;
+                //    this.SetCommonToolstrip();
+                //    this.SetGroupLayout();
+                //    return;
+                //}
             }
             currentGroup--;
             this.SetCommonToolstrip();
             this.SetGroupLayout();
 
         }
+
+
+       
         /// <summary>
         /// OK按钮按下的时候根据当前不同的组做不同的事
         /// </summary>
@@ -431,7 +451,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         }
         #endregion
 
-
+        #region 清除Grp的检索条件
         private void ClearG2()
         {
             action.Init_GridView(this.pgvRateMs);
@@ -449,12 +469,12 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         {            
             xdtpEffEedDate.SetDefaultValue("");
             clsddl_9A_G3.Selectedvalue = "";
-            cndCurrKbn_G3.Selectedvalue = "";
+            tddlCurr_G3.Selectedvalue = "";
             cndCalcMode.Selectedvalue = "";
             this.txtRate.Text = "";
         }
 
-        #region 清除G1的检索条件
+       
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -469,15 +489,15 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         {
 
             DataGridViewRow row = this.pgvRateMs.SelecteRows[0];
-
+           
             //汇率区分
             this.clsddl_9A_G3.Selectedvalue = row.Cells["I_RATE_CLS"].Value.ToString();
-            
-           
-            this.cndCurrKbn_G3.Selectedvalue = row.Cells["I_DL_CURR_CD"].Value.ToString();
 
-                 
-            this.xdtpEffEedDate.Value = CommonUtil.ToDateTime(row.Cells["I_EFF_END_DATE"].Value);
+
+            this.tddlCurr_G3.Selectedvalue = row.Cells["I_DL_CURR_CD"].Value.ToString();
+
+                                        
+            this.xdtpEffEedDate.Value = Convert.ToDateTime(row.Cells["I_EFF_END_DATE"].Value);
             
             this.cndCalcMode.Selectedvalue = row.Cells["I_CNV_METHOD"].Value.ToString();
             this.txtRate.Text = row.Cells["I_RATE"].Value.ToString();
@@ -500,7 +520,6 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         }
 
         #endregion
-
 
     }
 }

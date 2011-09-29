@@ -46,6 +46,7 @@
             this.clsddl_9A = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tddlCurr_G3 = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.txtRate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
             this.lblStar3 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.lblValidDate = new System.Windows.Forms.Label();
             this.lblCurrKbn1 = new System.Windows.Forms.Label();
             this.lblRateKbn1 = new System.Windows.Forms.Label();
-            this.cndCurrKbn_G3 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.clsddl_9A_G3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
@@ -176,9 +176,9 @@
             // 
             this.tddlCurr.Autoaddblankitem = true;
             this.tddlCurr.Defaultselectedindex = 0;
+            resources.ApplyResources(this.tddlCurr, "tddlCurr");
             this.tddlCurr.LanguageColumn = null;
             this.tddlCurr.LanguageFlg = false;
-            resources.ApplyResources(this.tddlCurr, "tddlCurr");
             this.tddlCurr.Name = "tddlCurr";
             this.tddlCurr.NameColumn = "I_CURR_DESC";
             this.tddlCurr.SelectedIndex = -1;
@@ -190,6 +190,7 @@
             // tblPanelG3
             // 
             resources.ApplyResources(this.tblPanelG3, "tblPanelG3");
+            this.tblPanelG3.Controls.Add(this.tddlCurr_G3, 2, 1);
             this.tblPanelG3.Controls.Add(this.txtRate, 6, 3);
             this.tblPanelG3.Controls.Add(this.lblStar2, 1, 0);
             this.tblPanelG3.Controls.Add(this.lblStar3, 1, 1);
@@ -201,11 +202,25 @@
             this.tblPanelG3.Controls.Add(this.lblValidDate, 0, 2);
             this.tblPanelG3.Controls.Add(this.lblCurrKbn1, 0, 1);
             this.tblPanelG3.Controls.Add(this.lblRateKbn1, 0, 0);
-            this.tblPanelG3.Controls.Add(this.cndCurrKbn_G3, 2, 1);
             this.tblPanelG3.Controls.Add(this.clsddl_9A_G3, 2, 0);
             this.tblPanelG3.Controls.Add(this.cndCalcMode, 2, 3);
             this.tblPanelG3.Controls.Add(this.xdtpEffEedDate, 2, 2);
             this.tblPanelG3.Name = "tblPanelG3";
+            // 
+            // tddlCurr_G3
+            // 
+            this.tddlCurr_G3.Autoaddblankitem = true;
+            this.tddlCurr_G3.Defaultselectedindex = 0;
+            resources.ApplyResources(this.tddlCurr_G3, "tddlCurr_G3");
+            this.tddlCurr_G3.LanguageColumn = null;
+            this.tddlCurr_G3.LanguageFlg = false;
+            this.tddlCurr_G3.Name = "tddlCurr_G3";
+            this.tddlCurr_G3.NameColumn = "I_CURR_DESC";
+            this.tddlCurr_G3.SelectedIndex = -1;
+            this.tddlCurr_G3.Selectedname = null;
+            this.tddlCurr_G3.Selectedvalue = null;
+            this.tddlCurr_G3.TableNm = "T_CURR_MS";
+            this.tddlCurr_G3.ValueColumn = "I_CURR_CD";
             // 
             // txtRate
             // 
@@ -266,17 +281,6 @@
             // 
             resources.ApplyResources(this.lblRateKbn1, "lblRateKbn1");
             this.lblRateKbn1.Name = "lblRateKbn1";
-            // 
-            // cndCurrKbn_G3
-            // 
-            this.cndCurrKbn_G3.Autoaddblankitem = true;
-            this.cndCurrKbn_G3.Conditionname = "ExchangeCurr";
-            this.cndCurrKbn_G3.Defaultselectedindex = 0;
-            resources.ApplyResources(this.cndCurrKbn_G3, "cndCurrKbn_G3");
-            this.cndCurrKbn_G3.Name = "cndCurrKbn_G3";
-            this.cndCurrKbn_G3.Selectedindex = -1;
-            this.cndCurrKbn_G3.Selectedname = null;
-            this.cndCurrKbn_G3.Selectedvalue = null;
             // 
             // clsddl_9A_G3
             // 
@@ -407,7 +411,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSearch;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddl_9A;
-        private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCurrKbn_G3;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddl_9A_G3;
         private Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList cndCalcMode;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
@@ -417,5 +420,6 @@
         private System.Windows.Forms.TextBox txtRate;
         private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xdtpEffEedDate;
         private Noogen.Validation.ValidationProvider validationProvider1;
+        private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tddlCurr_G3;
     }
 }

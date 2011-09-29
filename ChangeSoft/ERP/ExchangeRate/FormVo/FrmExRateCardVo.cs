@@ -9,6 +9,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.FormVo
     public class FrmExRateCardVo
     {
 
+        private string iMode;      //公司代碼
+
         private string iCompanyCd;      //公司代碼
         private string iRateCls;        //匯率區分
         private string iDlCurrCd;       // 結算貨幣
@@ -25,6 +27,11 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.FormVo
 
         #region Public Properties
 
+        public string IMode
+        {
+            get { return iMode; }
+            set { iMode = value; }
+        }
 
 
         public string ICompanyCd

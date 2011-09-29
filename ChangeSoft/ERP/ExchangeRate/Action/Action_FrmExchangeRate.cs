@@ -22,6 +22,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_FrmExchangeRate));
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmExchangeRate));
+        LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
         private string[] columnlist = new string[] { "I_COMPANY_CD", "I_RATE_CLS", "I_CLS_DETAIL_DESC", "I_DL_CURR_CD"
                                 , "I_CURR_DESC", "I_EFF_END_DATE", "I_RATE", "I_CNV_METHOD", "I_CNV_METHOD_DESC" };
@@ -165,27 +166,65 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
         #region 登陆rateSTP
         public Boolean InsExchangeRateStp(FrmExRateCardVo exRatevo)
         {
-            //Com.GainWinSoft.ERP.Entity.Dao.TestDao td = new Com.GainWinSoft.ERP.Entity.Dao.TestDao();
+
+           
             //通过Windsor的组件容器，获取Dao的实例
             ITRateStpDao td = ComponentLocator.Instance().Resolve<ITRateStpDao>();
-            ////调用Dao的方法
-            //IList<MFunctioncatalog> re = td.GetFunctionCatalogList(""); 
+
+            IStoredProcedureExecDao sp = ComponentLocator.Instance().Resolve<IStoredProcedureExecDao>();
+
+            //调用Dao的方法
+        
             TRateStp tRateModel = new TRateStp();
+
             PropertiesCopier.CopyProperties(exRatevo, tRateModel);
-            tRateModel.Id.ICompanyCd = "00";
-            tRateModel.Id.IJournalNo = (decimal)1000001;
-            tRateModel.IPgId = "FxRate";
-            tRateModel.IPrcsCls = "00";
+
+            if (exRatevo.IMode.Equals(Common.Constant.MODE_ADD))
+            {
+                tRateModel.IEntryDate = DateTime.Now;
+                tRateModel.IUpdDate = DateTime.Now;
+                tRateModel.IPrcsCls = Common.Constant.I_PRCS_CLS_C;
+            }
+            else if (exRatevo.IMode.Equals(Common.Constant.MODE_UPD))
+            {              
+                tRateModel.IUpdDate = DateTime.Now;
+                tRateModel.IPrcsCls = Common.Constant.I_PRCS_CLS_U;
+            }else if(exRatevo.IMode.Equals(Common.Constant.MODE_DEL)){
+
+                
+                tRateModel.IUpdDate = DateTime.Now;
+                tRateModel.IPrcsCls = Common.Constant.I_PRCS_CLS_D;
+            }
+
+            //-----test----
+            Random radm = new Random(unchecked((int)DateTime.Now.Ticks));
+            
+            tRateModel.Id.IJournalNo = (decimal)radm.Next();
+            //-----test----
+            tRateModel.IUserId = uservo.Userid;
+            tRateModel.Id.ICompanyCd = "00";// exRatevo.ICompanyCd;
+            tRateModel.IPgId = Constant.PG_ID;
             tRateModel.IPrcsDate = DateTime.Now;
             tRateModel.IPrcsTime = DateTime.Now.ToShortTimeString();
-            tRateModel.IRefTimestamp = "100001";
-
             tRateModel.IUpdCls = "0";
-            tRateModel.IUserId = "flyant";
-                              
-             
+                                                                         
             //Test td = new Test();
             Boolean re = td.InsTRateStp(tRateModel);
+            StoredProcedureCondition spCndition = new StoredProcedureCondition();
+            spCndition.AddCondition("I_JOURNAL_NO", tRateModel.Id.IJournalNo,ParameterDirection.Input);
+            spCndition.AddCondition("I_COMPANY_CD", tRateModel.Id.ICompanyCd, ParameterDirection.Input);
+
+            spCndition.AddCondition("I_ERR_CD", DbType.String, 100, ParameterDirection.Output);
+            spCndition.AddCondition("I_ERR_ITEM", DbType.String, 100, ParameterDirection.Output);
+            decimal returnvalue = sp.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", spCndition);
+             if (returnvalue !=0) {
+                 string ierrcd = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_CD");
+                 string ierritem = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_ITEM");
+
+             }
+
+
+           
 
             log.Debug("result=" + re);
             
