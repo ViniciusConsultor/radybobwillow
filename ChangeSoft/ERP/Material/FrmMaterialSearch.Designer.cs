@@ -39,8 +39,8 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCustomer = new System.Windows.Forms.Label();
             this.btnCustomerHelper = new System.Windows.Forms.Button();
-            this.txtCustomerCd = new System.Windows.Forms.TextBox();
             this.caplblCustomer = new System.Windows.Forms.Label();
+            this.atxtCustomerCd = new AMS.TextBox.AlphanumericTextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,17 +48,17 @@
             this.clsddlItemCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.caplblItemType = new System.Windows.Forms.Label();
-            this.txtItemType = new System.Windows.Forms.TextBox();
             this.btnItemTypeHelper = new System.Windows.Forms.Button();
             this.lblItemType = new System.Windows.Forms.Label();
+            this.atxtItemType = new AMS.TextBox.AlphanumericTextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDispItemCd = new System.Windows.Forms.TextBox();
+            this.atxtDispItemCd = new AMS.TextBox.AlphanumericTextBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtDispItemRev = new System.Windows.Forms.TextBox();
+            this.atxtDispItemRev = new AMS.TextBox.AlphanumericTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
@@ -66,9 +66,9 @@
             this.txtModel = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.caplblMaker = new System.Windows.Forms.Label();
-            this.txtMakerCd = new System.Windows.Forms.TextBox();
             this.btnMakerHelper = new System.Windows.Forms.Button();
             this.lblMakerNm = new System.Windows.Forms.Label();
+            this.atxtMakerCd = new AMS.TextBox.AlphanumericTextBox();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
@@ -91,12 +91,12 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnInquiry = new System.Windows.Forms.Button();
             this.caplblFactory = new System.Windows.Forms.Label();
-            this.txtFactoryCd = new System.Windows.Forms.TextBox();
             this.lblFactoryNm = new System.Windows.Forms.Label();
             this.btnFactoryHelper = new System.Windows.Forms.Button();
             this.tableLayoutPanel0 = new System.Windows.Forms.TableLayoutPanel();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tlpG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.atxtFactoryCd = new AMS.TextBox.AlphanumericTextBox();
             this.tlpG3 = new System.Windows.Forms.TableLayoutPanel();
             this.FrmMaterialSearch_pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tableLayoutPanel14.SuspendLayout();
@@ -176,8 +176,8 @@
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
             this.tableLayoutPanel4.Controls.Add(this.lblCustomer, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnCustomerHelper, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCustomerCd, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.caplblCustomer, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.atxtCustomerCd, 2, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // lblCustomer
@@ -194,15 +194,27 @@
             this.btnCustomerHelper.UseVisualStyleBackColor = true;
             this.btnCustomerHelper.Click += new System.EventHandler(this.btnCustomerHelper_Click);
             // 
-            // txtCustomerCd
-            // 
-            resources.ApplyResources(this.txtCustomerCd, "txtCustomerCd");
-            this.txtCustomerCd.Name = "txtCustomerCd";
-            // 
             // caplblCustomer
             // 
             resources.ApplyResources(this.caplblCustomer, "caplblCustomer");
             this.caplblCustomer.Name = "caplblCustomer";
+            // 
+            // atxtCustomerCd
+            // 
+            resources.ApplyResources(this.atxtCustomerCd, "atxtCustomerCd");
+            this.atxtCustomerCd.Flags = 0;
+            this.atxtCustomerCd.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtCustomerCd.Name = "atxtCustomerCd";
             // 
             // tableLayoutPanel5
             // 
@@ -244,20 +256,15 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.caplblItemType, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.txtItemType, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.btnItemTypeHelper, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.lblItemType, 4, 0);
+            this.tableLayoutPanel7.Controls.Add(this.atxtItemType, 2, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
             // caplblItemType
             // 
             resources.ApplyResources(this.caplblItemType, "caplblItemType");
             this.caplblItemType.Name = "caplblItemType";
-            // 
-            // txtItemType
-            // 
-            resources.ApplyResources(this.txtItemType, "txtItemType");
-            this.txtItemType.Name = "txtItemType";
             // 
             // btnItemTypeHelper
             // 
@@ -272,6 +279,23 @@
             resources.ApplyResources(this.lblItemType, "lblItemType");
             this.lblItemType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblItemType.Name = "lblItemType";
+            // 
+            // atxtItemType
+            // 
+            resources.ApplyResources(this.atxtItemType, "atxtItemType");
+            this.atxtItemType.Flags = 0;
+            this.atxtItemType.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtItemType.Name = "atxtItemType";
             // 
             // tableLayoutPanel8
             // 
@@ -291,7 +315,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel10, "tableLayoutPanel10");
             this.tableLayoutPanel10.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.txtDispItemCd, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.atxtDispItemCd, 2, 0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             // 
             // label6
@@ -299,16 +323,28 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // txtDispItemCd
+            // atxtDispItemCd
             // 
-            resources.ApplyResources(this.txtDispItemCd, "txtDispItemCd");
-            this.txtDispItemCd.Name = "txtDispItemCd";
+            resources.ApplyResources(this.atxtDispItemCd, "atxtDispItemCd");
+            this.atxtDispItemCd.Flags = 0;
+            this.atxtDispItemCd.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtDispItemCd.Name = "atxtDispItemCd";
             // 
             // tableLayoutPanel11
             // 
             resources.ApplyResources(this.tableLayoutPanel11, "tableLayoutPanel11");
             this.tableLayoutPanel11.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.txtDispItemRev, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.atxtDispItemRev, 2, 0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             // 
             // label7
@@ -316,10 +352,22 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // txtDispItemRev
+            // atxtDispItemRev
             // 
-            resources.ApplyResources(this.txtDispItemRev, "txtDispItemRev");
-            this.txtDispItemRev.Name = "txtDispItemRev";
+            resources.ApplyResources(this.atxtDispItemRev, "atxtDispItemRev");
+            this.atxtDispItemRev.Flags = 0;
+            this.atxtDispItemRev.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtDispItemRev.Name = "atxtDispItemRev";
             // 
             // label8
             // 
@@ -355,20 +403,15 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel15, "tableLayoutPanel15");
             this.tableLayoutPanel15.Controls.Add(this.caplblMaker, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.txtMakerCd, 2, 0);
             this.tableLayoutPanel15.Controls.Add(this.btnMakerHelper, 3, 0);
             this.tableLayoutPanel15.Controls.Add(this.lblMakerNm, 4, 0);
+            this.tableLayoutPanel15.Controls.Add(this.atxtMakerCd, 2, 0);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             // 
             // caplblMaker
             // 
             resources.ApplyResources(this.caplblMaker, "caplblMaker");
             this.caplblMaker.Name = "caplblMaker";
-            // 
-            // txtMakerCd
-            // 
-            resources.ApplyResources(this.txtMakerCd, "txtMakerCd");
-            this.txtMakerCd.Name = "txtMakerCd";
             // 
             // btnMakerHelper
             // 
@@ -383,6 +426,23 @@
             resources.ApplyResources(this.lblMakerNm, "lblMakerNm");
             this.lblMakerNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMakerNm.Name = "lblMakerNm";
+            // 
+            // atxtMakerCd
+            // 
+            resources.ApplyResources(this.atxtMakerCd, "atxtMakerCd");
+            this.atxtMakerCd.Flags = 0;
+            this.atxtMakerCd.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtMakerCd.Name = "atxtMakerCd";
             // 
             // tableLayoutPanel16
             // 
@@ -522,11 +582,6 @@
             resources.ApplyResources(this.caplblFactory, "caplblFactory");
             this.caplblFactory.Name = "caplblFactory";
             // 
-            // txtFactoryCd
-            // 
-            resources.ApplyResources(this.txtFactoryCd, "txtFactoryCd");
-            this.txtFactoryCd.Name = "txtFactoryCd";
-            // 
             // lblFactoryNm
             // 
             resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
@@ -596,10 +651,27 @@
             // 
             resources.ApplyResources(this.tlpG1, "tlpG1");
             this.tlpG1.Controls.Add(this.lblFactoryNm, 4, 0);
-            this.tlpG1.Controls.Add(this.txtFactoryCd, 2, 0);
             this.tlpG1.Controls.Add(this.btnFactoryHelper, 3, 0);
             this.tlpG1.Controls.Add(this.caplblFactory, 0, 0);
+            this.tlpG1.Controls.Add(this.atxtFactoryCd, 2, 0);
             this.tlpG1.Name = "tlpG1";
+            // 
+            // atxtFactoryCd
+            // 
+            resources.ApplyResources(this.atxtFactoryCd, "atxtFactoryCd");
+            this.atxtFactoryCd.Flags = 0;
+            this.atxtFactoryCd.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.atxtFactoryCd.Name = "atxtFactoryCd";
             // 
             // tlpG3
             // 
@@ -679,12 +751,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label caplblFactory;
-        private System.Windows.Forms.TextBox txtFactoryCd;
         private System.Windows.Forms.Label lblFactoryNm;
         private System.Windows.Forms.Button btnFactoryHelper;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label caplblCustomer;
-        private System.Windows.Forms.TextBox txtCustomerCd;
         private System.Windows.Forms.Button btnCustomerHelper;
         private System.Windows.Forms.Label lblCustomer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -692,17 +762,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label caplblItemType;
-        private System.Windows.Forms.TextBox txtItemType;
         private System.Windows.Forms.Button btnItemTypeHelper;
         private System.Windows.Forms.Label lblItemType;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDispItemCd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDispItemRev;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
@@ -710,7 +777,6 @@
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Label caplblMaker;
-        private System.Windows.Forms.TextBox txtMakerCd;
         private System.Windows.Forms.Button btnMakerHelper;
         private System.Windows.Forms.Label lblMakerNm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
@@ -740,6 +806,12 @@
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddlMntCls;
         private System.Windows.Forms.TableLayoutPanel tlpG1;
         private System.Windows.Forms.TableLayoutPanel tlpG3;
+        private AMS.TextBox.AlphanumericTextBox atxtFactoryCd;
+        private AMS.TextBox.AlphanumericTextBox atxtCustomerCd;
+        private AMS.TextBox.AlphanumericTextBox atxtItemType;
+        private AMS.TextBox.AlphanumericTextBox atxtDispItemCd;
+        private AMS.TextBox.AlphanumericTextBox atxtDispItemRev;
+        private AMS.TextBox.AlphanumericTextBox atxtMakerCd;
 
 
     }

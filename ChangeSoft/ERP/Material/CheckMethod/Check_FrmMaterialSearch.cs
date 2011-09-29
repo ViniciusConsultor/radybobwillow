@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Material
 
             CheckFactory check = new CheckFactory();
             this.lblFactoryNm.Text = "";
-            TFactoryMs vo = check.Check01Vo(this.txtFactoryCd.Text);
+            TFactoryMs vo = check.Check01Vo(this.atxtFactoryCd.Text);
             if (vo != null && !String.IsNullOrEmpty(vo.IFacCd))
             {
                 e.IsValid = true;
@@ -36,13 +36,13 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private void ruleCustomerExist_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
-                        if(string.IsNullOrEmpty(this.txtCustomerCd.Text)){
+                        if(string.IsNullOrEmpty(this.atxtCustomerCd.Text)){
                             return;
                         }
 
             CheckTrade check = new CheckTrade();
             this.lblCustomer.Text = "";
-            TTradeMs vo = check.Check01Vo(this.uservo.CompanyCondition.ICompanyCd,this.txtCustomerCd.Text);
+            TTradeMs vo = check.Check01Vo(this.uservo.CompanyCondition.ICompanyCd,this.atxtCustomerCd.Text);
             if (vo != null && vo.Id!=null)
             {
                 e.IsValid = true;
@@ -59,13 +59,13 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private void ruleItemTypeExist_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
-            if (string.IsNullOrEmpty(this.txtItemType.Text))
+            if (string.IsNullOrEmpty(this.atxtItemType.Text))
             {
                 return;
             }
             CheckCls check = new CheckCls();
             this.lblItemType.Text = "";
-            CClsDetailNoAR vo = check.Check01Vo(LangUtils.GetCurrentLanguage(), "79", this.txtItemType.Text);
+            CClsDetailNoAR vo = check.Check01Vo(LangUtils.GetCurrentLanguage(), "79", this.atxtItemType.Text);
             if (vo != null && !String.IsNullOrEmpty(vo.IClsDetailCd))
             {
                 e.IsValid = true;
@@ -83,13 +83,13 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private void ruleMakerExist_CustomValidationMethod(object sender, CustomValidationEventArgs e)
         {
-            if (string.IsNullOrEmpty(this.txtMakerCd.Text))
+            if (string.IsNullOrEmpty(this.atxtMakerCd.Text))
             {
                 return;
             }
             CheckCls check = new CheckCls();
             this.lblMakerNm.Text = "";
-            CClsDetailNoAR vo = check.Check01Vo(LangUtils.GetCurrentLanguage(), "72", this.txtMakerCd.Text);
+            CClsDetailNoAR vo = check.Check01Vo(LangUtils.GetCurrentLanguage(), "72", this.atxtMakerCd.Text);
             if (vo != null && !String.IsNullOrEmpty(vo.IClsDetailCd))
             {
                 e.IsValid = true;

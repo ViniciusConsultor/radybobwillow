@@ -70,13 +70,13 @@ namespace Com.GainWinSoft.ERP.Material
         void FrmMaterialSearch_GotFocus(object sender, EventArgs e)
         {
 
-            if (uservo.Factory != null)
+            if (firstGroup == 1)
             {
-                this.txtCustomerCd.Focus();
+                this.atxtFactoryCd.Focus();
             }
             else
             {
-                this.txtFactoryCd.Focus();
+                this.atxtCustomerCd.Focus();
             }
             this.GotFocus -= new EventHandler(FrmMaterialSearch_GotFocus); 
         }
@@ -105,6 +105,14 @@ namespace Com.GainWinSoft.ERP.Material
         private void btnClear_Click(object sender, EventArgs e)
         {
             this.ClearG2();
+            if (firstGroup == 1)
+            {
+                this.atxtFactoryCd.Focus();
+            }
+            else
+            {
+                this.atxtCustomerCd.Focus();
+            }
         }
 
         private void FrmMaterialSearch_pagerGridView1_SelectionChanged(object sender, EventArgs e)
@@ -123,10 +131,10 @@ namespace Com.GainWinSoft.ERP.Material
         private void btnCustomerHelper_Click(object sender, EventArgs e)
         {
             CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial(uservo.CompanyCondition.ICompanyCd);
-            cr.AddValueControl(this.txtCustomerCd);
+            cr.AddValueControl(this.atxtCustomerCd);
             cr.AddNameControl(this.lblCustomer);
             cr.ShowDialog(this);
-            this.txtCustomerCd.Focus();
+            this.atxtCustomerCd.Focus();
         }
         /// <summary>
         /// 物料分类辅助按钮
@@ -136,10 +144,10 @@ namespace Com.GainWinSoft.ERP.Material
         private void btnItemTypeHelper_Click(object sender, EventArgs e)
         {
             CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("79");
-            cr.AddValueControl(this.txtItemType);
+            cr.AddValueControl(this.atxtItemType);
             cr.AddNameControl(this.lblItemType);
             cr.ShowDialog(this);
-            this.txtItemType.Focus();
+            this.atxtItemType.Focus();
 
         }
         /// <summary>
@@ -150,10 +158,10 @@ namespace Com.GainWinSoft.ERP.Material
         private void btnMakerHelper_Click(object sender, EventArgs e)
         {
             CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("72");
-            cr.AddValueControl(this.txtMakerCd);
+            cr.AddValueControl(this.atxtMakerCd);
             cr.AddNameControl(this.lblMakerNm);
             cr.ShowDialog(this);
-            this.txtMakerCd.Focus();
+            this.atxtMakerCd.Focus();
         }
 
         /// <summary>
@@ -165,10 +173,10 @@ namespace Com.GainWinSoft.ERP.Material
         {
 
             CodeRef.CodeRefFactory cr = new CodeRef.CodeRefFactory(uservo.CompanyCondition.ICompanyCd);
-            cr.AddValueControl(this.txtFactoryCd);
+            cr.AddValueControl(this.atxtFactoryCd);
             cr.AddNameControl(this.lblFactoryNm);
             cr.ShowDialog(this);
-            this.txtFactoryCd.Focus();
+            this.atxtFactoryCd.Focus();
 
         }
 
@@ -191,32 +199,32 @@ namespace Com.GainWinSoft.ERP.Material
             ValidationRule ruleFactory = new ValidationRule();
             ruleFactory.IsRequired = true;
             ruleFactory.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.caplblFactory.Text);
-            this.vdpG1.SetValidationRule(this.txtFactoryCd, ruleFactory);
+            this.vdpG1.SetValidationRule(this.atxtFactoryCd, ruleFactory);
 
 
             ValidationRule ruleFactoryExist = new ValidationRule();
             ruleFactoryExist.IsCustomError = true;
             ruleFactoryExist.CustomValidationMethod += new CustomValidationEventHandler(ruleFactoryExist_CustomValidationMethod);
             ruleFactoryExist.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.caplblFactory.Text);
-            this.vdpG1.SetValidationRule(this.txtFactoryCd, ruleFactoryExist);
+            this.vdpG1.SetValidationRule(this.atxtFactoryCd, ruleFactoryExist);
 
             ValidationRule ruleCustomerExist = new ValidationRule();
             ruleCustomerExist.IsCustomError = true;
             ruleCustomerExist.CustomValidationMethod += new CustomValidationEventHandler(ruleCustomerExist_CustomValidationMethod);
             ruleCustomerExist.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.caplblCustomer.Text);
-            this.vdpBusinessG2.SetValidationRule(this.txtCustomerCd, ruleCustomerExist);
+            this.vdpBusinessG2.SetValidationRule(this.atxtCustomerCd, ruleCustomerExist);
 
             ValidationRule ruleItemTypeExist = new ValidationRule();
             ruleItemTypeExist.IsCustomError = true;
             ruleItemTypeExist.CustomValidationMethod += new CustomValidationEventHandler(ruleItemTypeExist_CustomValidationMethod);
             ruleItemTypeExist.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.caplblItemType.Text);
-            this.vdpBusinessG2.SetValidationRule(this.txtItemType, ruleItemTypeExist);
+            this.vdpBusinessG2.SetValidationRule(this.atxtItemType, ruleItemTypeExist);
 
             ValidationRule ruleMakerExist = new ValidationRule();
             ruleMakerExist.IsCustomError = true;
             ruleMakerExist.CustomValidationMethod += new CustomValidationEventHandler(ruleMakerExist_CustomValidationMethod);
             ruleMakerExist.CustomErrorMessage = MessageUtils.GetMessage("W0004", this.caplblMaker.Text);
-            this.vdpBusinessG2.SetValidationRule(this.txtMakerCd, ruleMakerExist);
+            this.vdpBusinessG2.SetValidationRule(this.atxtMakerCd, ruleMakerExist);
 
             ValidationRule ruleInquiry = new ValidationRule();
             ruleInquiry.IsCustomError = true;
@@ -233,14 +241,14 @@ namespace Com.GainWinSoft.ERP.Material
         {
             this.Cursor = Cursors.WaitCursor;
             CardVo cardvo = new CardVo();
-            cardvo.IFacCd = this.txtFactoryCd.Text;
-            cardvo.IDispItemCd = this.txtDispItemCd.Text;
-            cardvo.IDispItemRev = this.txtDispItemRev.Text;
-            cardvo.IDlCd = this.txtCustomerCd.Text;
+            cardvo.IFacCd = this.atxtFactoryCd.Text;
+            cardvo.IDispItemCd = this.atxtDispItemCd.Text;
+            cardvo.IDispItemRev = this.atxtDispItemRev.Text;
+            cardvo.IDlCd = this.atxtCustomerCd.Text;
             cardvo.IDrwNo = this.txtDrwNo.Text;
             cardvo.IItemCls = this.clsddlItemCls.Selectedvalue;
-            cardvo.IItemType = this.txtItemType.Text;
-            cardvo.IMakerCd = this.txtMakerCd.Text;
+            cardvo.IItemType = this.atxtItemType.Text;
+            cardvo.IMakerCd = this.atxtMakerCd.Text;
             cardvo.IMntCls = this.clsddlMntCls.Selectedvalue;
             cardvo.IModel = this.txtModel.Text;
             cardvo.IQryMtrl = this.txtQryMtrl.Text;
@@ -385,7 +393,6 @@ namespace Com.GainWinSoft.ERP.Material
                 }
 
                 //Data_Inquiry();
-                this.FrmMaterialSearch_pagerGridView1.Focus();
             }
 
             currentGroup++;
@@ -430,7 +437,15 @@ namespace Com.GainWinSoft.ERP.Material
         /// <param name="e"></param>
         private void commonToolStrip1_CleargroupClick(object sender, EventArgs e)
         {
-
+            this.ClearG2();
+            if (firstGroup == 1)
+            {
+                this.atxtFactoryCd.Focus();
+            }
+            else
+            {
+                this.atxtCustomerCd.Focus();
+            }
         }
 
 
@@ -448,6 +463,7 @@ namespace Com.GainWinSoft.ERP.Material
                 this.tlpG1.Enabled = true;
                 this.tlpG2.Enabled = false;
                 this.tlpG3.Enabled = false;
+                this.atxtFactoryCd.Focus();
 
             }
 
@@ -456,6 +472,7 @@ namespace Com.GainWinSoft.ERP.Material
                 this.tlpG1.Enabled = false;
                 this.tlpG2.Enabled = true;
                 this.tlpG3.Enabled = false;
+                this.atxtCustomerCd.Focus();
 
             }
             if (currentGroup == 3)
@@ -463,6 +480,7 @@ namespace Com.GainWinSoft.ERP.Material
                 this.tlpG1.Enabled = false;
                 this.tlpG2.Enabled = false;
                 this.tlpG3.Enabled = true;
+                this.FrmMaterialSearch_pagerGridView1.Focus();
 
             }
 
@@ -542,19 +560,17 @@ namespace Com.GainWinSoft.ERP.Material
             if (uservo.Factory != null)
             {
                 FactoryVo factoryvo = uservo.Factory;
-                this.txtFactoryCd.Text = factoryvo.IFacCd;
+                this.atxtFactoryCd.Text = factoryvo.IFacCd;
                 this.lblFactoryNm.Text = factoryvo.IFacDesc;
                 this.tlpG1.Enabled = false;
                 this.tlpG2.Enabled = true;
                 this.tlpG3.Enabled = false;
-                this.txtCustomerCd.Focus();
                 this.firstGroup = 2;
                 this.currentGroup = 2;
             }
             else
             {
                 this.tlpG1.Enabled = true;
-                this.txtFactoryCd.Focus();
                 this.firstGroup = 1;
                 this.currentGroup = 1;
             }
@@ -562,14 +578,14 @@ namespace Com.GainWinSoft.ERP.Material
 
         private void ClearG2()
         {
-            this.txtCustomerCd.Text = "";
+            this.atxtCustomerCd.Text = "";
             this.lblCustomer.Text = "";
             this.clsddlItemCls.Selectedindex = 0;
-            this.txtItemType.Text = "";
+            this.atxtItemType.Text = "";
             this.lblItemType.Text = "";
-            this.txtDispItemCd.Text = "";
-            this.txtDispItemRev.Text = "";
-            this.txtMakerCd.Text = "";
+            this.atxtDispItemCd.Text = "";
+            this.atxtDispItemRev.Text = "";
+            this.atxtMakerCd.Text = "";
             this.lblMakerNm.Text = "";
             this.txtModel.Text = "";
             this.txtQryMtrl.Text = "";
