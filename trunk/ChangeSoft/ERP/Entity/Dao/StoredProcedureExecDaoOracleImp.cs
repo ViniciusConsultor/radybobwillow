@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
     public class StoredProcedureExecDaoOracleImp : ActiveRecordBase, Com.GainWinSoft.ERP.Entity.Dao.IStoredProcedureExecDao
     {
         private IDbCommand command;
-        public void StoredProcedureExec(IStoredParameterInfo storedinfo)
+        public void StoredProcedureExec(IStoredProcedureInfo storedinfo)
         {
             ISession ss = holder.CreateSession(typeof(StoredProcedureExecDaoOracleImp));
 
@@ -100,7 +100,18 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
             return ((OracleParameter)command.Parameters[cmi.ParameterName]).Value;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmi"></param>
+        /// <returns></returns>
+        public object this[StoredProcedureParameterInfo cmi]
+        {
+            get
+            {
+                return ((OracleParameter)command.Parameters[cmi.ParameterName]).Value;
+            }
+        }
 
 
 

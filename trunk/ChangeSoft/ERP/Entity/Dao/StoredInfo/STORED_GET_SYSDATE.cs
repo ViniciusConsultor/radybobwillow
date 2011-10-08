@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// サーバー日付取得(継承クラス)
     /// </summary>
     [Serializable]
-    internal class STORED_GET_SYSDATE : IStoredParameterInfo
+    internal class STORED_GET_SYSDATE : IStoredProcedureInfo
     {
         #region フィールド
         /// <summary>

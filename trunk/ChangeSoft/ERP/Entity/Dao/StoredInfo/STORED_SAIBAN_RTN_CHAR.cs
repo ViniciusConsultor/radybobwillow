@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// 採番マスタ情報(継承クラス)
     /// </summary>
     [Serializable]
-    internal class STORED_SAIBAN_RTN_CHAR : IStoredParameterInfo
+    internal class STORED_SAIBAN_RTN_CHAR : IStoredProcedureInfo
     {
         #region フィールド
         /// <summary>
@@ -157,7 +157,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// <summary>
     /// 採番マスタ情報(継承クラス),会社採番用
     /// </summary>
-    internal class STORED_SAIBAN_RTN_COM : IStoredParameterInfo
+    internal class STORED_SAIBAN_RTN_COM : IStoredProcedureInfo
     {
         #region フィールド
         /// <summary>
