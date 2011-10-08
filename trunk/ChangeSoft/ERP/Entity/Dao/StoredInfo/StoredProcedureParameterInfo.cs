@@ -1,131 +1,11 @@
-using System;
-using System.Collections;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Data;
 
-using Oracle.DataAccess.Client;
-
-namespace Com.GainWinSoft.Common
+namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
 {
-    public class StoredProcedureCondition
-    {
-        private Hashtable conditionTable = new Hashtable();
-        
-        public Hashtable ConditionTable
-        {
-            get { return this.conditionTable; }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="parameterName"></param>
-        /// <param name="direction"></param>
-        /// <returns></returns>
-        public StoredProcedureCondition AddCondition(string parameterName,DbType dbType,Int32 size, ParameterDirection direction)
-        {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new StoredProcedureParameterInfo(parameterName,dbType,size, direction));
-            return this;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="parameterName"></param>
-        /// <param name="parameterValue"></param>
-        /// <param name="direction"></param>
-        /// <returns></returns>
-        public StoredProcedureCondition AddCondition(string parameterName, object parameterValue,ParameterDirection direction)
-        {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new StoredProcedureParameterInfo(parameterName, parameterValue,direction));
-            return this;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="parameterName"></param>
-        /// <param name="parameterValue"></param>
-        /// <param name="dbType"></param>
-        /// <param name="direction"></param>
-        /// <returns></returns>
-        public StoredProcedureCondition AddCondition(string parameterName, object parameterValue,DbType dbType,Int32 size, ParameterDirection direction)
-        {
-            this.conditionTable.Add(System.Guid.NewGuid()/*fielName*/, new StoredProcedureParameterInfo(parameterName, parameterValue,dbType,size, direction));
-            return this;
-        }
-
-
-        
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="command"></param>
-        /// <returns></returns>
-        public IDbCommand SetStoredProcedureParametersWithRetrunNumber(IDbCommand command)
-        {
-
-
-            foreach (DictionaryEntry de in this.conditionTable)
-            {
-                StoredProcedureParameterInfo info = (StoredProcedureParameterInfo)de.Value;
-
-                //忽视参数表内的returnValue
-                if (info.Direction == ParameterDirection.ReturnValue)
-                {
-                    continue;
-                }
-
-                IDbDataParameter para = command.CreateParameter();
-                para.ParameterName = info.ParameterName;
-                para.DbType = info.DbType;
-                para.Direction = info.Direction;
-                if (info.Direction == ParameterDirection.Output || info.Direction == ParameterDirection.InputOutput)
-                {
-                    para.Size = info.Size;
-                }
-                if (info.Direction == ParameterDirection.Input || info.Direction == ParameterDirection.InputOutput)
-                {
-                    para.Value = info.ParameterValue;
-                }
-
-                command.Parameters.Add(para);
-
-            }
-            IDbDataParameter returnparameter = command.CreateParameter();
-            returnparameter.ParameterName = "RETURN_VALUE";
-            returnparameter.DbType = DbType.Decimal;
-            returnparameter.Direction = ParameterDirection.ReturnValue;
-            command.Parameters.Add(returnparameter);
-            return command;
-        }
-
-        public void SetStoreProcedureOutputParametersValue(IDbCommand command)
-        {
-            foreach (DictionaryEntry de in this.conditionTable)
-            {
-                StoredProcedureParameterInfo info = (StoredProcedureParameterInfo)de.Value;
-                if (info.Direction == ParameterDirection.Output || info.Direction == ParameterDirection.InputOutput)
-                {
-                    info.ParameterValue = ((OracleParameter)command.Parameters[info.ParameterName]).Value;
-                }
-            }
-        }
-
-        public object GetStoredProcedureOutputValue(string parameterName)
-        {
-            object value = null;
-            foreach (DictionaryEntry de in this.conditionTable)
-            {
-                StoredProcedureParameterInfo info = (StoredProcedureParameterInfo)de.Value;
-                if (parameterName.Equals(info.ParameterName))
-                {
-                    value = info.ParameterValue;
-                    break;
-                }
-            }
-            return value;
-        }
-
-    }
 
     /// <summary>
     /// 查询信息实体类
@@ -326,5 +206,4 @@ namespace Com.GainWinSoft.Common
 
 
     }
-
 }

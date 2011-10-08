@@ -137,6 +137,7 @@
     <Compile Include="Dao\ITTradeMsDao.cs" />
     <Compile Include="Dao\MFunctioncatalogDaoOracleImp.cs" />
     <Compile Include="Dao\StoredInfo\IStoredParameterInfo.cs" />
+    <Compile Include="Dao\StoredInfo\StoredProcedureParameterInfo.cs" />
     <Compile Include="Dao\StoredInfo\STORED_GET_ITEMID.cs" />
     <Compile Include="Dao\StoredInfo\STORED_GET_OBJECTID.cs" />
     <Compile Include="Dao\StoredInfo\STORED_GET_SYSDATE.cs" />

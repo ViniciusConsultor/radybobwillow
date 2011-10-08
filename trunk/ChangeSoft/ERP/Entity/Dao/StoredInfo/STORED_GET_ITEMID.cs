@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using Com.GainWinSoft.Common;
 
 namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
 {

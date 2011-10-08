@@ -168,12 +168,12 @@
             this.itxtCnvRateNumerator = new AMS.TextBox.IntegerTextBox();
             this.itxtCnvRateDenominator = new AMS.TextBox.IntegerTextBox();
             this.itxtSumLt = new AMS.TextBox.IntegerTextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.itxtUsefulLife = new AMS.TextBox.IntegerTextBox();
             this.itxtPartChgPeriod = new AMS.TextBox.IntegerTextBox();
             this.itxtFixMntPeriod = new AMS.TextBox.IntegerTextBox();
             this.itxtGuarPeriod = new AMS.TextBox.IntegerTextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1.SuspendLayout();
             this.tlpG1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1431,19 +1431,6 @@
             this.itxtSumLt.RangeMax = 2147483647;
             this.itxtSumLt.RangeMin = -2147483648;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.tabPage2.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            // 
             // itxtUsefulLife
             // 
             this.itxtUsefulLife.AllowNegative = true;
@@ -1499,6 +1486,19 @@
             this.itxtGuarPeriod.Prefix = "";
             this.itxtGuarPeriod.RangeMax = 2147483647;
             this.itxtGuarPeriod.RangeMin = -2147483648;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabPage2.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
             // 
             // FrmMaterialEdit
             // 

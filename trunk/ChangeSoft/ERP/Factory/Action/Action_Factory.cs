@@ -42,7 +42,7 @@ namespace Com.GainWinSoft.ERP.Factory.Action
             facStp.IUpdCls = "";
 
             ITFactoryMsDao td = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
-            rtnValue = 
+            rtnValue = true;
 
             return rtnValue;
         }
