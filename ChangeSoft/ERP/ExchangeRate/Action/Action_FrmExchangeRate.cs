@@ -210,18 +210,18 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                                                                          
             //Test td = new Test();
             Boolean re = td.InsTRateStp(tRateModel);
-            StoredProcedureCondition spCndition = new StoredProcedureCondition();
-            spCndition.AddCondition("I_JOURNAL_NO", tRateModel.Id.IJournalNo,ParameterDirection.Input);
-            spCndition.AddCondition("I_COMPANY_CD", tRateModel.Id.ICompanyCd, ParameterDirection.Input);
-
-            spCndition.AddCondition("I_ERR_CD", DbType.String, 100, ParameterDirection.Output);
-            spCndition.AddCondition("I_ERR_ITEM", DbType.String, 100, ParameterDirection.Output);
-            decimal returnvalue = sp.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", spCndition);
-             if (returnvalue !=0) {
-                 string ierrcd = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_CD");
-                 string ierritem = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_ITEM");
-
-             }
+//            StoredProcedureCondition spCndition = new StoredProcedureCondition();
+//            spCndition.AddCondition("I_JOURNAL_NO", tRateModel.Id.IJournalNo,ParameterDirection.Input);
+//            spCndition.AddCondition("I_COMPANY_CD", tRateModel.Id.ICompanyCd, ParameterDirection.Input);
+//
+//            spCndition.AddCondition("I_ERR_CD", DbType.String, 100, ParameterDirection.Output);
+//            spCndition.AddCondition("I_ERR_ITEM", DbType.String, 100, ParameterDirection.Output);
+//            decimal returnvalue = sp.StoredProcedureExecReturnNumber("PE0025P.TOP_RTN", spCndition);
+//             if (returnvalue !=0) {
+//                 string ierrcd = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_CD");
+//                 string ierritem = (string)spCndition.GetStoredProcedureOutputValue("I_ERR_ITEM");
+//
+//             }
 
 
            

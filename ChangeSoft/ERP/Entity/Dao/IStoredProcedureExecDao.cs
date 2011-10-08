@@ -1,8 +1,10 @@
 ﻿using System;
+using Com.GainWinSoft.ERP.Entity.Dao.StoredInfo;
 namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface IStoredProcedureExecDao
     {
-        decimal StoredProcedureExecReturnNumber(string procedureName, Com.GainWinSoft.Common.StoredProcedureCondition parameters);
+        void StoredProcedureExec(IStoredParameterInfo storedinfo);
+
     }
 }
