@@ -6,7 +6,7 @@ using System.Data;
 namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
 {
     [Serializable]
-    internal class STORED_GET_ITEMID : IStoredParameterInfo
+    internal class STORED_GET_ITEMID : IStoredProcedureInfo
     {
         #region フィールド
         /// <summary>

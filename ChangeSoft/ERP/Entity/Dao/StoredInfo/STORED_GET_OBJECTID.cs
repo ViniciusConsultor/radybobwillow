@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// オブジェクトID取得
     /// </summary>
     [Serializable]
-    internal class STORED_GET_OBJECTID : IStoredParameterInfo
+    internal class STORED_GET_OBJECTID : IStoredProcedureInfo
     {
         #region フィールド
         /// <summary>

@@ -7,7 +7,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// 概要：
     /// ストアド情報保持クラス（継承クラス）のインターフェイス
     /// </summary>
-    public interface IStoredParameterInfo
+    public interface IStoredProcedureInfo
     {
         /// <summary>
         /// ストアド名を取得します。
