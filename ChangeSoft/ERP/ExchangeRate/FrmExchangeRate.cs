@@ -14,6 +14,7 @@ using Com.GainWinSoft.ERP.ExchangeRate.Action;
 using Com.GainWinSoft.Common.Vo;
 using log4net;
 using System.Resources;
+using Noogen.Validation;
 namespace Com.GainWinSoft.ERP.ExchangeRate
 
 {
@@ -47,6 +48,17 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// intResult
         /// </summary>
         private Int32 frmIntResult= 0;
+
+
+
+        /// <summary>
+        /// ValidationProvider
+        /// </summary>
+        private ValidationProvider vdpG3;
+        private ValidationProvider vdpBusinessG3;
+
+
+
         #endregion
 
 
@@ -65,10 +77,47 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             InitializeComponent();
         }
 
+        
+
+        #region check方法
+        /// <summary>
+        /// Check ValidationProvider初始化
+        /// </summary>
+        private void Check_Init()
+        {
+            this.vdpG3 = new ValidationProvider(this.components);
+            this.vdpG3.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+
+            this.vdpBusinessG3 = new ValidationProvider(this.components);
+            this.vdpBusinessG3.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+
+
+            ValidationRule ruleRate = new ValidationRule();
+            ruleRate.IsRequired = true;
+            ruleRate.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.txtRate.Text);
+            this.vdpG3.SetValidationRule(this.txtRate, ruleRate);
+        }
+
+
+
+
+
+        #region 清除所有画面上的错误
+        private void ClearError()
+        {
+            this.vdpG3.ValidationMessages(false);
+            this.vdpBusinessG3.ValidationMessages(false);
+            this.baseform.msgwindow.Hide();
+        }
+        #endregion
+
+        #endregion
+
+
         private void FrmExchangeRate_Load(object sender, EventArgs e)
         {
             this.Initialize();
-            //this.Check_Init();
+            this.Check_Init();
 
         }
 
@@ -121,7 +170,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             //{
             //    this.strMode = Constant.MODE_ADD;
             //}
-
+            this.btnCompany.Image = (Image)Com.GainWinSoft.Common.ResourcesUtils.GetResource("AssistantButtonDownArrow");
             this.removeAllClickEvent();
             this.addAllClickEvent();
             
@@ -378,7 +427,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             {
 
                 ClearG3();
-
+                ClearError();
                 //if (pgvRateMs.RowCount == 0)
                 //{
                 //    currentGroup = 1;
