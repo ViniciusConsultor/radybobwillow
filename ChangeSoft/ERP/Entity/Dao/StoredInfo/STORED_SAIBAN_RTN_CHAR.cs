@@ -19,7 +19,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// 採番マスタ情報(継承クラス)
     /// </summary>
     [Serializable]
-    internal class STORED_SAIBAN_RTN_CHAR : IStoredProcedureInfo
+    internal class STORED_SAIBAN_RTN_CHAR : IStoredParameterInfo
     {
         #region フィールド
         /// <summary>
@@ -34,10 +34,10 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// </summary>
         public STORED_SAIBAN_RTN_CHAR()
         {
-            this._function_return = new StoredProcedureParameterInfo("RETURN",DbType.String, 10, ParameterDirection.ReturnValue);
-            this._para_no = new StoredProcedureParameterInfo("PARA_NO",DbType.Decimal, 3, ParameterDirection.Input);
-            this._para_today = new StoredProcedureParameterInfo("PARA_TODAY",DbType.Date, 10, ParameterDirection.Input);
-            this._para_facode = new StoredProcedureParameterInfo("PARA_FACODE",DbType.String, 10, ParameterDirection.Input);
+            this._function_return = new ParameterInfo("RETURN", 10, ParameterDirection.ReturnValue, DbType.String,false,0);
+            this._para_no = new ParameterInfo("PARA_NO", 3, ParameterDirection.Input, DbType.Decimal,false,0);
+            this._para_today = new ParameterInfo("PARA_TODAY", 10, ParameterDirection.Input, DbType.Date,false,0);
+            this._para_facode = new ParameterInfo("PARA_FACODE", 10, ParameterDirection.Input, DbType.String,false,0);
         }
 
         #endregion
@@ -49,12 +49,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// 結果パラメータ
         /// </summary>
-        private StoredProcedureParameterInfo _function_return;
+        private ParameterInfo _function_return;
 
         /// <summary>
         /// 結果パラメータを取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Function_return
+        public ParameterInfo Function_return
         {
             get
             {
@@ -69,12 +69,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_NO
         /// </summary>
-        private StoredProcedureParameterInfo _para_no;
+        private ParameterInfo _para_no;
 
         /// <summary>
         /// パラメータ PARA_NO を取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Para_no
+        public ParameterInfo Para_no
         {
             get
             {
@@ -89,12 +89,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_TODAY
         /// </summary>
-        private StoredProcedureParameterInfo _para_today;
+        private ParameterInfo _para_today;
 
         /// <summary>
         /// パラメータ「PARA_TODAY」
         /// </summary>
-        public StoredProcedureParameterInfo Para_today
+        public ParameterInfo Para_today
         {
             get
             {
@@ -108,11 +108,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_FACODE
         /// </summary>
-        private StoredProcedureParameterInfo _para_facode;
+        private ParameterInfo _para_facode;
         /// <summary>
         /// パラメータ PARA_FACODE　を取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Para_facode
+        public ParameterInfo Para_facode
         {
             get
             {
@@ -136,11 +136,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
             }
         }
 
-        public List<StoredProcedureParameterInfo> ParameterList
+        public List<ParameterInfo> ParameterList
         {
             get
             {
-                List<StoredProcedureParameterInfo> paramlist = new List<StoredProcedureParameterInfo>();
+                List<ParameterInfo> paramlist = new List<ParameterInfo>();
                 paramlist.Add(this._function_return);
                 paramlist.Add(this._para_no);
                 paramlist.Add(this._para_today);
@@ -157,7 +157,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// <summary>
     /// 採番マスタ情報(継承クラス),会社採番用
     /// </summary>
-    internal class STORED_SAIBAN_RTN_COM : IStoredProcedureInfo
+    internal class STORED_SAIBAN_RTN_COM : IStoredParameterInfo
     {
         #region フィールド
         /// <summary>
@@ -172,10 +172,10 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// </summary>
         public STORED_SAIBAN_RTN_COM()
         {
-            this._function_return = new StoredProcedureParameterInfo("RETURN",DbType.String, 10, ParameterDirection.ReturnValue);
-            this._para_no = new StoredProcedureParameterInfo("PARA_NO",DbType.Decimal, 3, ParameterDirection.Input);
-            this._para_today = new StoredProcedureParameterInfo("PARA_TODAY",DbType.Date, 10, ParameterDirection.Input);
-            this._para_com_cd = new StoredProcedureParameterInfo("PARA_COM_CD",DbType.String, 10, ParameterDirection.Input);
+            this._function_return = new ParameterInfo("RETURN", 10, ParameterDirection.ReturnValue, DbType.String,false,0);
+            this._para_no = new ParameterInfo("PARA_NO", 3, ParameterDirection.Input, DbType.Decimal,false,0);
+            this._para_today = new ParameterInfo("PARA_TODAY", 10, ParameterDirection.Input, DbType.Date,false,0);
+            this._para_com_cd = new ParameterInfo("PARA_COM_CD", 10, ParameterDirection.Input, DbType.String,false,0);
         }
 
         #endregion
@@ -187,12 +187,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// 結果パラメータ
         /// </summary>
-        private StoredProcedureParameterInfo _function_return;
+        private ParameterInfo _function_return;
 
         /// <summary>
         /// 結果パラメータを取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Function_return
+        public ParameterInfo Function_return
         {
             get
             {
@@ -207,12 +207,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_NO
         /// </summary>
-        private StoredProcedureParameterInfo _para_no;
+        private ParameterInfo _para_no;
 
         /// <summary>
         /// パラメータ PARA_NO を取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Para_no
+        public ParameterInfo Para_no
         {
             get
             {
@@ -227,12 +227,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_TODAY
         /// </summary>
-        private StoredProcedureParameterInfo _para_today;
+        private ParameterInfo _para_today;
 
         /// <summary>
         /// パラメータ「PARA_TODAY」
         /// </summary>
-        public StoredProcedureParameterInfo Para_today
+        public ParameterInfo Para_today
         {
             get
             {
@@ -246,11 +246,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// パラメータ PARA_COM_CD
         /// </summary>
-        private StoredProcedureParameterInfo _para_com_cd;
+        private ParameterInfo _para_com_cd;
         /// <summary>
         /// パラメータ PARA_COM_CD　を取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Para_com_cd
+        public ParameterInfo Para_com_cd
         {
             get
             {
@@ -274,11 +274,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
             }
         }
 
-        public List<StoredProcedureParameterInfo> ParameterList
+        public List<ParameterInfo> ParameterList
         {
             get
             {
-                List<StoredProcedureParameterInfo> paramlist = new List<StoredProcedureParameterInfo>();
+                List<ParameterInfo> paramlist = new List<ParameterInfo>();
                 paramlist.Add(this._function_return);
                 paramlist.Add(this._para_no);
                 paramlist.Add(this._para_today);

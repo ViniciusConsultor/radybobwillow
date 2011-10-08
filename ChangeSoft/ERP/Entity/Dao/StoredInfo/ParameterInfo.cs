@@ -10,9 +10,9 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
     /// <summary>
     /// 查询信息实体类
     /// </summary>
-    public class StoredProcedureParameterInfo
+    public class ParameterInfo
     {
-        public StoredProcedureParameterInfo() { }
+        public ParameterInfo() { }
 
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <param name="parameterName"></param>
         /// <param name="dbType"></param>
         /// <param name="direction"></param>
-        public StoredProcedureParameterInfo(string parameterName, DbType dbType, Int32 size, ParameterDirection direction)
+        public ParameterInfo(string parameterName, Int32 size, ParameterDirection direction, DbType dbType)
         {
             this.parameterName = parameterName;
 
@@ -38,7 +38,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <param name="fieldValue">参数的值</param>
         /// <param name="excludeIfEmpty">参数方向 Input Output ReturnValue</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public StoredProcedureParameterInfo(string parameterName, object parameterValue, ParameterDirection direction)
+        public ParameterInfo(string parameterName, object parameterValue, ParameterDirection direction)
         {
             this.parameterName = parameterName;
             this.parameterValue = parameterValue;
@@ -57,7 +57,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <param name="fieldValue">参数的值</param>
         /// <param name="excludeIfEmpty">参数方向 Input Output ReturnValue</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public StoredProcedureParameterInfo(string parameterName, object parameterValue, Int32 size, ParameterDirection direction)
+        public ParameterInfo(string parameterName, Int32 size, ParameterDirection direction, object parameterValue)
         {
             this.parameterName = parameterName;
             this.parameterValue = parameterValue;
@@ -78,13 +78,32 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <param name="sqlOperator">参数类型</param>
         /// <param name="excludeIfEmpty">参数方向 Input Output ReturnValue</param>
         /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
-        public StoredProcedureParameterInfo(string parameterName, object parameterValue, DbType dbType, Int32 size, ParameterDirection direction)
+        public ParameterInfo(string parameterName, object parameterValue, DbType dbType, Int32 size, ParameterDirection direction)
         {
             this.parameterName = parameterName;
             this.parameterValue = parameterValue;
             this.dbType = dbType;
             this.direction = direction;
             this.size = size;
+
+        }
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="fieldName">参数名称</param>
+        /// <param name="fieldValue">参数的值</param>
+        /// <param name="sqlOperator">参数类型</param>
+        /// <param name="excludeIfEmpty">参数方向 Input Output ReturnValue</param>
+        /// <param name="groupName">分组的名称，如需构造一个括号内的条件 ( Test = "AA1" OR Test = "AA2"), 定义一个组名集中条件</param>
+        public ParameterInfo(string parameterName, Int32 size, ParameterDirection direction, DbType dbType,bool isArray,Int32 arrayLength)
+        {
+            this.parameterName = parameterName;
+            this.dbType = dbType;
+            this.direction = direction;
+            this.size = size;
+            this.arrayLength = arrayLength;
+            this.isArray = isArray;
 
         }
 
