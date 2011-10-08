@@ -4,8 +4,8 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
 {
     public interface IStoredProcedureExecDao
     {
-        void StoredProcedureExec(IStoredProcedureInfo storedinfo);
-        object GetResult(StoredProcedureParameterInfo cmi);
+        void StoredProcedureExec(IStoredParameterInfo storedinfo);
+        object GetResult(ParameterInfo cmi);
 
     }
 }

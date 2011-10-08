@@ -6,7 +6,7 @@ using System.Data;
 namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
 {
     [Serializable]
-    internal class STORED_GET_ITEMID : IStoredProcedureInfo
+    internal class STORED_GET_ITEMID : IStoredParameterInfo
     {
         #region フィールド
         /// <summary>
@@ -21,7 +21,7 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// </summary>
         public STORED_GET_ITEMID()
         {
-            this._function_return = new StoredProcedureParameterInfo("_function_return", DbType.String , 28, ParameterDirection.ReturnValue);
+            this._function_return = new ParameterInfo("_function_return",28, ParameterDirection.ReturnValue, DbType.String , false,0);
         }
 
         #endregion
@@ -33,12 +33,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
         /// <summary>
         /// 結果パラメータ:構成ID
         /// </summary>
-        private StoredProcedureParameterInfo _function_return;
+        private ParameterInfo _function_return;
 
         /// <summary>
         /// 結果パラメータを取得します。
         /// </summary>
-        public StoredProcedureParameterInfo Function_return
+        public ParameterInfo Function_return
         {
             get
             {
@@ -63,11 +63,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao.StoredInfo
             }
         }
 
-        public List<StoredProcedureParameterInfo> ParameterList
+        public List<ParameterInfo> ParameterList
         {
             get
             {
-                List<StoredProcedureParameterInfo> paramlist = new List<StoredProcedureParameterInfo>();
+                List<ParameterInfo> paramlist = new List<ParameterInfo>();
                 paramlist.Add(this._function_return);
                 return paramlist;
             }

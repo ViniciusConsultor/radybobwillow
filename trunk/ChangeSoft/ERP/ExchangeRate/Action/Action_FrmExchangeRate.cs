@@ -14,6 +14,7 @@ using System.Resources;
 using Com.GainWinSoft.Common.Control.PagerGridView;
 using System.Data;
 using Com.GainWinSoft.Common.Vo;
+using Com.GainWinSoft.ERP.Entity.Dao.StoredInfo;
 
 
 namespace Com.GainWinSoft.ERP.ExchangeRate.Action
@@ -210,6 +211,13 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
                                                                          
             //Test td = new Test();
             Boolean re = td.InsTRateStp(tRateModel);
+
+            STORED_PE0025P stored = new STORED_PE0025P();
+            stored.I_company_cd.ParameterValue = tRateModel.Id.ICompanyCd;
+            stored.I_journal_no.ParameterValue = tRateModel.Id.IJournalNo;
+            sp.StoredProcedureExec(stored);
+            string ierrcd = Convert.ToString(sp.GetResult(stored.I_err_cd));
+
 //            StoredProcedureCondition spCndition = new StoredProcedureCondition();
 //            spCndition.AddCondition("I_JOURNAL_NO", tRateModel.Id.IJournalNo,ParameterDirection.Input);
 //            spCndition.AddCondition("I_COMPANY_CD", tRateModel.Id.ICompanyCd, ParameterDirection.Input);
