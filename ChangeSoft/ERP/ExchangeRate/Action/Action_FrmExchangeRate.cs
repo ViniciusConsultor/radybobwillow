@@ -216,7 +216,9 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
             stored.I_company_cd.ParameterValue = tRateModel.Id.ICompanyCd;
             stored.I_journal_no.ParameterValue = tRateModel.Id.IJournalNo;
             sp.StoredProcedureExec(stored);
-            string ierrcd = Convert.ToString(sp.GetResult(stored.I_err_cd));
+            string strErrcd = Convert.ToString(sp.GetResult(stored.I_err_cd));
+            string strErrItem = Convert.ToString(sp.GetResult(stored.I_err_item));
+
 
 //            StoredProcedureCondition spCndition = new StoredProcedureCondition();
 //            spCndition.AddCondition("I_JOURNAL_NO", tRateModel.Id.IJournalNo,ParameterDirection.Input);
