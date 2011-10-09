@@ -30,16 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaterialEdit));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.xplblMode = new xpLabel.xpLabel();
             this.commonToolStrip = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
-            this.tlpG1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnFactoryHelper = new System.Windows.Forms.Button();
-            this.lblFactoryNm = new System.Windows.Forms.Label();
-            this.caplblFactory = new System.Windows.Forms.Label();
-            this.starlblFactory = new System.Windows.Forms.Label();
-            this.atxtFactoryCd = new AMS.TextBox.AlphanumericTextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlPM = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tlpTabpage1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblItemCd = new System.Windows.Forms.Label();
@@ -136,9 +133,6 @@
             this.caplblLotCtrlCls = new System.Windows.Forms.Label();
             this.starlblItemCls = new System.Windows.Forms.Label();
             this.caplblItemCls = new System.Windows.Forms.Label();
-            this.lblCtrlClsNm = new System.Windows.Forms.Label();
-            this.starlblCtrlCls = new System.Windows.Forms.Label();
-            this.caplblCtrlCls = new System.Windows.Forms.Label();
             this.atxtCustomerCd = new AMS.TextBox.AlphanumericTextBox();
             this.starlblCustomerCd = new System.Windows.Forms.Label();
             this.caplblCustomer = new System.Windows.Forms.Label();
@@ -154,13 +148,11 @@
             this.txtItemDesc = new System.Windows.Forms.TextBox();
             this.btnCustomerHelper = new System.Windows.Forms.Button();
             this.lblCustomerNm = new System.Windows.Forms.Label();
-            this.btnCtrlCls = new System.Windows.Forms.Button();
             this.clsddlItemCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.caplblUseDelCls = new System.Windows.Forms.Label();
             this.clsddlUseDelCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.caplblSoAlcCls = new System.Windows.Forms.Label();
             this.clsddlSoAlcCls = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.label24 = new System.Windows.Forms.Label();
             this.xdtpBinEndDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
             this.tddlStdUnitCd = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tddlCnvUnitCd = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
@@ -172,14 +164,151 @@
             this.itxtPartChgPeriod = new AMS.TextBox.IntegerTextBox();
             this.itxtFixMntPeriod = new AMS.TextBox.IntegerTextBox();
             this.itxtGuarPeriod = new AMS.TextBox.IntegerTextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.label3 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.label5 = new System.Windows.Forms.Label();
+            this.conditionRadioButton1 = new Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton();
+            this.numericTextBox1 = new AMS.TextBox.NumericTextBox();
+            this.numericTextBox2 = new AMS.TextBox.NumericTextBox();
+            this.integerTextBox1 = new AMS.TextBox.IntegerTextBox();
+            this.numericTextBox3 = new AMS.TextBox.NumericTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpProcG2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.numericTextBox8 = new AMS.TextBox.NumericTextBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.numericTextBox6 = new AMS.TextBox.NumericTextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.numericTextBox5 = new AMS.TextBox.NumericTextBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.numericTextBox4 = new AMS.TextBox.NumericTextBox();
+            this.alphanumericTextBox11 = new AMS.TextBox.AlphanumericTextBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.integerTextBox2 = new AMS.TextBox.IntegerTextBox();
+            this.integerTextBox3 = new AMS.TextBox.IntegerTextBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList5 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList6 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.label44 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox10 = new AMS.TextBox.AlphanumericTextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox9 = new AMS.TextBox.AlphanumericTextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox8 = new AMS.TextBox.AlphanumericTextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox7 = new AMS.TextBox.AlphanumericTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox6 = new AMS.TextBox.AlphanumericTextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox5 = new AMS.TextBox.AlphanumericTextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox4 = new AMS.TextBox.AlphanumericTextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox3 = new AMS.TextBox.AlphanumericTextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.alphanumericTextBox2 = new AMS.TextBox.AlphanumericTextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.alphanumericTextBox1 = new AMS.TextBox.AlphanumericTextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList4 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.clsDetailCodeRefDropDownList3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.tlpProcG1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpProcG3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tlpG1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControlPM.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tlpTabpage1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tlpProcG2.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tlpProcG1.SuspendLayout();
+            this.tlpProcG3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -187,8 +316,7 @@
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.xplblMode, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.commonToolStrip, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tlpG1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tabControlPM, 0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // xplblMode
@@ -235,66 +363,18 @@
             this.commonToolStrip.SaveVisible = true;
             this.commonToolStrip.UpdateEnabled = true;
             this.commonToolStrip.UpdateVisible = false;
+            this.commonToolStrip.OkClick += new System.EventHandler(this.commonToolStrip_OkClick);
+            this.commonToolStrip.GobackClick += new System.EventHandler(this.commonToolStrip_GobackClick);
             // 
-            // tlpG1
+            // tabControlPM
             // 
-            resources.ApplyResources(this.tlpG1, "tlpG1");
-            this.tlpG1.Controls.Add(this.btnFactoryHelper, 3, 0);
-            this.tlpG1.Controls.Add(this.lblFactoryNm, 4, 0);
-            this.tlpG1.Controls.Add(this.caplblFactory, 0, 0);
-            this.tlpG1.Controls.Add(this.starlblFactory, 1, 0);
-            this.tlpG1.Controls.Add(this.atxtFactoryCd, 2, 0);
-            this.tlpG1.Name = "tlpG1";
-            // 
-            // btnFactoryHelper
-            // 
-            resources.ApplyResources(this.btnFactoryHelper, "btnFactoryHelper");
-            this.btnFactoryHelper.Name = "btnFactoryHelper";
-            this.btnFactoryHelper.TabStop = false;
-            this.btnFactoryHelper.UseVisualStyleBackColor = true;
-            // 
-            // lblFactoryNm
-            // 
-            resources.ApplyResources(this.lblFactoryNm, "lblFactoryNm");
-            this.lblFactoryNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblFactoryNm.Name = "lblFactoryNm";
-            // 
-            // caplblFactory
-            // 
-            resources.ApplyResources(this.caplblFactory, "caplblFactory");
-            this.caplblFactory.Name = "caplblFactory";
-            // 
-            // starlblFactory
-            // 
-            resources.ApplyResources(this.starlblFactory, "starlblFactory");
-            this.starlblFactory.ForeColor = System.Drawing.Color.Red;
-            this.starlblFactory.Name = "starlblFactory";
-            // 
-            // atxtFactoryCd
-            // 
-            resources.ApplyResources(this.atxtFactoryCd, "atxtFactoryCd");
-            this.atxtFactoryCd.Flags = 0;
-            this.atxtFactoryCd.InvalidChars = new char[] {
-        '%',
-        '\'',
-        '*',
-        '\"',
-        '+',
-        '?',
-        '>',
-        '<',
-        ':',
-        '\\'};
-            this.atxtFactoryCd.Name = "atxtFactoryCd";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            this.tabControlPM.Controls.Add(this.tabPage1);
+            this.tabControlPM.Controls.Add(this.tabPage4);
+            this.tabControlPM.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControlPM, "tabControlPM");
+            this.tabControlPM.Name = "tabControlPM";
+            this.tabControlPM.SelectedIndex = 0;
+            this.tabControlPM.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControlPM_Selecting);
             // 
             // tabPage1
             // 
@@ -303,7 +383,6 @@
             this.tabPage1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tlpTabpage1
             // 
@@ -402,22 +481,17 @@
             this.tlpTabpage1.Controls.Add(this.caplblLotCtrlCls, 8, 2);
             this.tlpTabpage1.Controls.Add(this.starlblItemCls, 1, 2);
             this.tlpTabpage1.Controls.Add(this.caplblItemCls, 0, 2);
-            this.tlpTabpage1.Controls.Add(this.lblCtrlClsNm, 18, 1);
-            this.tlpTabpage1.Controls.Add(this.starlblCtrlCls, 17, 1);
-            this.tlpTabpage1.Controls.Add(this.caplblCtrlCls, 16, 1);
             this.tlpTabpage1.Controls.Add(this.atxtCustomerCd, 2, 1);
             this.tlpTabpage1.Controls.Add(this.starlblCustomerCd, 1, 1);
             this.tlpTabpage1.Controls.Add(this.caplblCustomer, 0, 1);
             this.tlpTabpage1.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tlpTabpage1.Controls.Add(this.btnCustomerHelper, 6, 1);
             this.tlpTabpage1.Controls.Add(this.lblCustomerNm, 7, 1);
-            this.tlpTabpage1.Controls.Add(this.btnCtrlCls, 24, 1);
             this.tlpTabpage1.Controls.Add(this.clsddlItemCls, 2, 2);
             this.tlpTabpage1.Controls.Add(this.caplblUseDelCls, 16, 2);
             this.tlpTabpage1.Controls.Add(this.clsddlUseDelCls, 18, 2);
             this.tlpTabpage1.Controls.Add(this.caplblSoAlcCls, 0, 4);
             this.tlpTabpage1.Controls.Add(this.clsddlSoAlcCls, 2, 4);
-            this.tlpTabpage1.Controls.Add(this.label24, 7, 5);
             this.tlpTabpage1.Controls.Add(this.xdtpBinEndDate, 2, 13);
             this.tlpTabpage1.Controls.Add(this.tddlStdUnitCd, 10, 3);
             this.tlpTabpage1.Controls.Add(this.tddlCnvUnitCd, 18, 3);
@@ -440,7 +514,7 @@
             // 
             // clsddlSrlSeqCls
             // 
-            this.clsddlSrlSeqCls.Autoaddblankitem = false;
+            this.clsddlSrlSeqCls.Autoaddblankitem = true;
             this.clsddlSrlSeqCls.ClsCd = "DB";
             this.tlpTabpage1.SetColumnSpan(this.clsddlSrlSeqCls, 6);
             this.clsddlSrlSeqCls.Defaultselectedindex = 0;
@@ -1056,7 +1130,7 @@
             // 
             // clsddlPsCls
             // 
-            this.clsddlPsCls.Autoaddblankitem = false;
+            this.clsddlPsCls.Autoaddblankitem = true;
             this.clsddlPsCls.ClsCd = "56";
             this.tlpTabpage1.SetColumnSpan(this.clsddlPsCls, 6);
             this.clsddlPsCls.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1099,7 +1173,7 @@
             // 
             // clsddlLotCtrlCls
             // 
-            this.clsddlLotCtrlCls.Autoaddblankitem = false;
+            this.clsddlLotCtrlCls.Autoaddblankitem = true;
             this.clsddlLotCtrlCls.ClsCd = "58";
             this.tlpTabpage1.SetColumnSpan(this.clsddlLotCtrlCls, 6);
             this.clsddlLotCtrlCls.Defaultselectedindex = 0;
@@ -1125,24 +1199,6 @@
             // 
             resources.ApplyResources(this.caplblItemCls, "caplblItemCls");
             this.caplblItemCls.Name = "caplblItemCls";
-            // 
-            // lblCtrlClsNm
-            // 
-            resources.ApplyResources(this.lblCtrlClsNm, "lblCtrlClsNm");
-            this.lblCtrlClsNm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tlpTabpage1.SetColumnSpan(this.lblCtrlClsNm, 6);
-            this.lblCtrlClsNm.Name = "lblCtrlClsNm";
-            // 
-            // starlblCtrlCls
-            // 
-            resources.ApplyResources(this.starlblCtrlCls, "starlblCtrlCls");
-            this.starlblCtrlCls.ForeColor = System.Drawing.Color.Red;
-            this.starlblCtrlCls.Name = "starlblCtrlCls";
-            // 
-            // caplblCtrlCls
-            // 
-            resources.ApplyResources(this.caplblCtrlCls, "caplblCtrlCls");
-            this.caplblCtrlCls.Name = "caplblCtrlCls";
             // 
             // atxtCustomerCd
             // 
@@ -1273,15 +1329,9 @@
             this.tlpTabpage1.SetColumnSpan(this.lblCustomerNm, 9);
             this.lblCustomerNm.Name = "lblCustomerNm";
             // 
-            // btnCtrlCls
-            // 
-            resources.ApplyResources(this.btnCtrlCls, "btnCtrlCls");
-            this.btnCtrlCls.Name = "btnCtrlCls";
-            this.btnCtrlCls.UseVisualStyleBackColor = true;
-            // 
             // clsddlItemCls
             // 
-            this.clsddlItemCls.Autoaddblankitem = false;
+            this.clsddlItemCls.Autoaddblankitem = true;
             this.clsddlItemCls.ClsCd = "31";
             this.tlpTabpage1.SetColumnSpan(this.clsddlItemCls, 6);
             this.clsddlItemCls.Defaultselectedindex = 0;
@@ -1299,7 +1349,7 @@
             // 
             // clsddlUseDelCls
             // 
-            this.clsddlUseDelCls.Autoaddblankitem = false;
+            this.clsddlUseDelCls.Autoaddblankitem = true;
             this.clsddlUseDelCls.ClsCd = "59";
             this.tlpTabpage1.SetColumnSpan(this.clsddlUseDelCls, 6);
             this.clsddlUseDelCls.Defaultselectedindex = 0;
@@ -1317,7 +1367,7 @@
             // 
             // clsddlSoAlcCls
             // 
-            this.clsddlSoAlcCls.Autoaddblankitem = false;
+            this.clsddlSoAlcCls.Autoaddblankitem = true;
             this.clsddlSoAlcCls.ClsCd = "35";
             this.tlpTabpage1.SetColumnSpan(this.clsddlSoAlcCls, 6);
             this.clsddlSoAlcCls.Defaultselectedindex = 0;
@@ -1327,11 +1377,6 @@
             this.clsddlSoAlcCls.Selectedname = null;
             this.clsddlSoAlcCls.Selectedvalue = null;
             this.clsddlSoAlcCls.ShowNameDesc = false;
-            // 
-            // label24
-            // 
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
             // 
             // xdtpBinEndDate
             // 
@@ -1343,7 +1388,7 @@
             // 
             // tddlStdUnitCd
             // 
-            this.tddlStdUnitCd.Autoaddblankitem = true;
+            this.tddlStdUnitCd.Autoaddblankitem = false;
             this.tlpTabpage1.SetColumnSpan(this.tddlStdUnitCd, 6);
             this.tddlStdUnitCd.Defaultselectedindex = 0;
             resources.ApplyResources(this.tddlStdUnitCd, "tddlStdUnitCd");
@@ -1487,18 +1532,1126 @@
             this.itxtGuarPeriod.RangeMax = 2147483647;
             this.itxtGuarPeriod.RangeMin = -2147483648;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabPage4.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.tabPage4, "tabPage4");
+            this.tabPage4.Name = "tabPage4";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.label14, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList1, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.clsDetailCodeRefDropDownList2, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.conditionRadioButton1, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox1, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox2, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.integerTextBox1, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.numericTextBox3, 2, 6);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Name = "label14";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Name = "label13";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Name = "label6";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Name = "label4";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "33";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList1, "clsDetailCodeRefDropDownList1");
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // clsDetailCodeRefDropDownList2
+            // 
+            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList2.ClsCd = "4G";
+            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList2, "clsDetailCodeRefDropDownList2");
+            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
+            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList2.Selectedname = null;
+            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // conditionRadioButton1
+            // 
+            this.conditionRadioButton1.Checkedname = "";
+            this.conditionRadioButton1.Checkedvalue = "";
+            this.tableLayoutPanel2.SetColumnSpan(this.conditionRadioButton1, 2);
+            this.conditionRadioButton1.Conditionname = "LotMethod";
+            this.conditionRadioButton1.Defaultselectedindex = -1;
+            resources.ApplyResources(this.conditionRadioButton1, "conditionRadioButton1");
+            this.conditionRadioButton1.Name = "conditionRadioButton1";
+            // 
+            // numericTextBox1
+            // 
+            this.numericTextBox1.AllowNegative = true;
+            this.numericTextBox1.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox1, "numericTextBox1");
+            this.numericTextBox1.Flags = 0;
+            this.numericTextBox1.MaxDecimalPlaces = 4;
+            this.numericTextBox1.MaxWholeDigits = 9;
+            this.numericTextBox1.Name = "numericTextBox1";
+            this.numericTextBox1.Prefix = "";
+            this.numericTextBox1.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox1.RangeMin = -1.7976931348623157E+308;
+            // 
+            // numericTextBox2
+            // 
+            this.numericTextBox2.AllowNegative = true;
+            this.numericTextBox2.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox2, "numericTextBox2");
+            this.numericTextBox2.Flags = 0;
+            this.numericTextBox2.MaxDecimalPlaces = 4;
+            this.numericTextBox2.MaxWholeDigits = 9;
+            this.numericTextBox2.Name = "numericTextBox2";
+            this.numericTextBox2.Prefix = "";
+            this.numericTextBox2.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox2.RangeMin = -1.7976931348623157E+308;
+            // 
+            // integerTextBox1
+            // 
+            this.integerTextBox1.AllowNegative = true;
+            this.integerTextBox1.DigitsInGroup = 0;
+            resources.ApplyResources(this.integerTextBox1, "integerTextBox1");
+            this.integerTextBox1.Flags = 0;
+            this.integerTextBox1.MaxDecimalPlaces = 0;
+            this.integerTextBox1.MaxWholeDigits = 9;
+            this.integerTextBox1.Name = "integerTextBox1";
+            this.integerTextBox1.Prefix = "";
+            this.integerTextBox1.RangeMax = 2147483647;
+            this.integerTextBox1.RangeMin = -2147483648;
+            // 
+            // numericTextBox3
+            // 
+            this.numericTextBox3.AllowNegative = true;
+            this.numericTextBox3.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox3, "numericTextBox3");
+            this.numericTextBox3.Flags = 0;
+            this.numericTextBox3.MaxDecimalPlaces = 4;
+            this.numericTextBox3.MaxWholeDigits = 9;
+            this.numericTextBox3.Name = "numericTextBox3";
+            this.numericTextBox3.Prefix = "";
+            this.numericTextBox3.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox3.RangeMin = -1.7976931348623157E+308;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabPage2.Controls.Add(this.tableLayoutPanel4);
             this.tabPage2.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             // 
-            // tabPage3
+            // tableLayoutPanel4
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.tlpProcG2, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.tlpProcG1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.tlpProcG3, 0, 9);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // tlpProcG2
+            // 
+            resources.ApplyResources(this.tlpProcG2, "tlpProcG2");
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel10, 5, 7);
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel9, 0, 7);
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel8, 5, 6);
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel7, 0, 6);
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel6, 5, 5);
+            this.tlpProcG2.Controls.Add(this.label44, 9, 4);
+            this.tlpProcG2.Controls.Add(this.button16, 8, 4);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox10, 7, 4);
+            this.tlpProcG2.Controls.Add(this.label43, 6, 4);
+            this.tlpProcG2.Controls.Add(this.label42, 5, 4);
+            this.tlpProcG2.Controls.Add(this.label41, 4, 4);
+            this.tlpProcG2.Controls.Add(this.button15, 3, 4);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox9, 2, 4);
+            this.tlpProcG2.Controls.Add(this.label40, 1, 4);
+            this.tlpProcG2.Controls.Add(this.label39, 0, 4);
+            this.tlpProcG2.Controls.Add(this.label38, 9, 3);
+            this.tlpProcG2.Controls.Add(this.button14, 8, 3);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox8, 7, 3);
+            this.tlpProcG2.Controls.Add(this.label37, 6, 3);
+            this.tlpProcG2.Controls.Add(this.label36, 5, 3);
+            this.tlpProcG2.Controls.Add(this.label35, 4, 3);
+            this.tlpProcG2.Controls.Add(this.button13, 3, 3);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox7, 2, 3);
+            this.tlpProcG2.Controls.Add(this.label34, 1, 3);
+            this.tlpProcG2.Controls.Add(this.label33, 0, 3);
+            this.tlpProcG2.Controls.Add(this.label32, 9, 2);
+            this.tlpProcG2.Controls.Add(this.button12, 8, 2);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox6, 7, 2);
+            this.tlpProcG2.Controls.Add(this.label31, 6, 2);
+            this.tlpProcG2.Controls.Add(this.label30, 5, 2);
+            this.tlpProcG2.Controls.Add(this.label29, 4, 2);
+            this.tlpProcG2.Controls.Add(this.button11, 3, 2);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox5, 2, 2);
+            this.tlpProcG2.Controls.Add(this.label28, 1, 2);
+            this.tlpProcG2.Controls.Add(this.label27, 0, 2);
+            this.tlpProcG2.Controls.Add(this.label26, 9, 1);
+            this.tlpProcG2.Controls.Add(this.button10, 8, 1);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox4, 7, 1);
+            this.tlpProcG2.Controls.Add(this.label25, 6, 1);
+            this.tlpProcG2.Controls.Add(this.label24, 5, 1);
+            this.tlpProcG2.Controls.Add(this.label23, 4, 1);
+            this.tlpProcG2.Controls.Add(this.button9, 3, 1);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox3, 2, 1);
+            this.tlpProcG2.Controls.Add(this.label22, 1, 1);
+            this.tlpProcG2.Controls.Add(this.label21, 0, 1);
+            this.tlpProcG2.Controls.Add(this.label20, 9, 0);
+            this.tlpProcG2.Controls.Add(this.button8, 8, 0);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox2, 7, 0);
+            this.tlpProcG2.Controls.Add(this.label19, 6, 0);
+            this.tlpProcG2.Controls.Add(this.label17, 4, 0);
+            this.tlpProcG2.Controls.Add(this.button7, 3, 0);
+            this.tlpProcG2.Controls.Add(this.label15, 0, 0);
+            this.tlpProcG2.Controls.Add(this.label16, 1, 0);
+            this.tlpProcG2.Controls.Add(this.alphanumericTextBox1, 2, 0);
+            this.tlpProcG2.Controls.Add(this.label18, 5, 0);
+            this.tlpProcG2.Controls.Add(this.tableLayoutPanel5, 0, 5);
+            this.tlpProcG2.Name = "tlpProcG2";
+            // 
+            // tableLayoutPanel10
+            // 
+            resources.ApplyResources(this.tableLayoutPanel10, "tableLayoutPanel10");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel10, 5);
+            this.tableLayoutPanel10.Controls.Add(this.label65, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label68, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.numericTextBox8, 2, 0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            // 
+            // label65
+            // 
+            resources.ApplyResources(this.label65, "label65");
+            this.label65.ForeColor = System.Drawing.Color.Red;
+            this.label65.Name = "label65";
+            // 
+            // label68
+            // 
+            resources.ApplyResources(this.label68, "label68");
+            this.label68.Name = "label68";
+            // 
+            // numericTextBox8
+            // 
+            this.numericTextBox8.AllowNegative = true;
+            this.numericTextBox8.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox8, "numericTextBox8");
+            this.numericTextBox8.Flags = 0;
+            this.numericTextBox8.MaxDecimalPlaces = 4;
+            this.numericTextBox8.MaxWholeDigits = 9;
+            this.numericTextBox8.Name = "numericTextBox8";
+            this.numericTextBox8.Prefix = "";
+            this.numericTextBox8.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox8.RangeMin = -1.7976931348623157E+308;
+            // 
+            // tableLayoutPanel9
+            // 
+            resources.ApplyResources(this.tableLayoutPanel9, "tableLayoutPanel9");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel9, 5);
+            this.tableLayoutPanel9.Controls.Add(this.numericTextBox6, 5, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label61, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label62, 4, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label63, 3, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label64, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.numericTextBox5, 2, 0);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            // 
+            // numericTextBox6
+            // 
+            this.numericTextBox6.AllowNegative = true;
+            this.numericTextBox6.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox6, "numericTextBox6");
+            this.numericTextBox6.Flags = 0;
+            this.numericTextBox6.MaxDecimalPlaces = 4;
+            this.numericTextBox6.MaxWholeDigits = 9;
+            this.numericTextBox6.Name = "numericTextBox6";
+            this.numericTextBox6.Prefix = "";
+            this.numericTextBox6.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox6.RangeMin = -1.7976931348623157E+308;
+            // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.ForeColor = System.Drawing.Color.Red;
+            this.label61.Name = "label61";
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.ForeColor = System.Drawing.Color.Red;
+            this.label62.Name = "label62";
+            // 
+            // label63
+            // 
+            resources.ApplyResources(this.label63, "label63");
+            this.label63.Name = "label63";
+            // 
+            // label64
+            // 
+            resources.ApplyResources(this.label64, "label64");
+            this.label64.Name = "label64";
+            // 
+            // numericTextBox5
+            // 
+            this.numericTextBox5.AllowNegative = true;
+            this.numericTextBox5.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox5, "numericTextBox5");
+            this.numericTextBox5.Flags = 0;
+            this.numericTextBox5.MaxDecimalPlaces = 4;
+            this.numericTextBox5.MaxWholeDigits = 9;
+            this.numericTextBox5.Name = "numericTextBox5";
+            this.numericTextBox5.Prefix = "";
+            this.numericTextBox5.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox5.RangeMin = -1.7976931348623157E+308;
+            // 
+            // tableLayoutPanel8
+            // 
+            resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel8, 5);
+            this.tableLayoutPanel8.Controls.Add(this.label57, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label58, 4, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label59, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label60, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.numericTextBox4, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.alphanumericTextBox11, 5, 0);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            // 
+            // label57
+            // 
+            resources.ApplyResources(this.label57, "label57");
+            this.label57.ForeColor = System.Drawing.Color.Red;
+            this.label57.Name = "label57";
+            // 
+            // label58
+            // 
+            resources.ApplyResources(this.label58, "label58");
+            this.label58.ForeColor = System.Drawing.Color.Red;
+            this.label58.Name = "label58";
+            // 
+            // label59
+            // 
+            resources.ApplyResources(this.label59, "label59");
+            this.label59.Name = "label59";
+            // 
+            // label60
+            // 
+            resources.ApplyResources(this.label60, "label60");
+            this.label60.Name = "label60";
+            // 
+            // numericTextBox4
+            // 
+            this.numericTextBox4.AllowNegative = true;
+            this.numericTextBox4.DigitsInGroup = 0;
+            resources.ApplyResources(this.numericTextBox4, "numericTextBox4");
+            this.numericTextBox4.Flags = 0;
+            this.numericTextBox4.MaxDecimalPlaces = 4;
+            this.numericTextBox4.MaxWholeDigits = 9;
+            this.numericTextBox4.Name = "numericTextBox4";
+            this.numericTextBox4.Prefix = "";
+            this.numericTextBox4.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox4.RangeMin = -1.7976931348623157E+308;
+            // 
+            // alphanumericTextBox11
+            // 
+            resources.ApplyResources(this.alphanumericTextBox11, "alphanumericTextBox11");
+            this.alphanumericTextBox11.Flags = 0;
+            this.alphanumericTextBox11.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox11.Name = "alphanumericTextBox11";
+            // 
+            // tableLayoutPanel7
+            // 
+            resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel7, 5);
+            this.tableLayoutPanel7.Controls.Add(this.label53, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label54, 4, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label55, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label56, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.integerTextBox2, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.integerTextBox3, 5, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.ForeColor = System.Drawing.Color.Red;
+            this.label53.Name = "label53";
+            // 
+            // label54
+            // 
+            resources.ApplyResources(this.label54, "label54");
+            this.label54.ForeColor = System.Drawing.Color.Red;
+            this.label54.Name = "label54";
+            // 
+            // label55
+            // 
+            resources.ApplyResources(this.label55, "label55");
+            this.label55.Name = "label55";
+            // 
+            // label56
+            // 
+            resources.ApplyResources(this.label56, "label56");
+            this.label56.Name = "label56";
+            // 
+            // integerTextBox2
+            // 
+            this.integerTextBox2.AllowNegative = true;
+            this.integerTextBox2.DigitsInGroup = 0;
+            resources.ApplyResources(this.integerTextBox2, "integerTextBox2");
+            this.integerTextBox2.Flags = 0;
+            this.integerTextBox2.MaxDecimalPlaces = 0;
+            this.integerTextBox2.MaxWholeDigits = 9;
+            this.integerTextBox2.Name = "integerTextBox2";
+            this.integerTextBox2.Prefix = "";
+            this.integerTextBox2.RangeMax = 2147483647;
+            this.integerTextBox2.RangeMin = -2147483648;
+            // 
+            // integerTextBox3
+            // 
+            this.integerTextBox3.AllowNegative = true;
+            this.integerTextBox3.DigitsInGroup = 0;
+            resources.ApplyResources(this.integerTextBox3, "integerTextBox3");
+            this.integerTextBox3.Flags = 0;
+            this.integerTextBox3.MaxDecimalPlaces = 0;
+            this.integerTextBox3.MaxWholeDigits = 9;
+            this.integerTextBox3.Name = "integerTextBox3";
+            this.integerTextBox3.Prefix = "";
+            this.integerTextBox3.RangeMax = 2147483647;
+            this.integerTextBox3.RangeMin = -2147483648;
+            // 
+            // tableLayoutPanel6
+            // 
+            resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel6, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label49, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.clsDetailCodeRefDropDownList5, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label50, 4, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label51, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label52, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.clsDetailCodeRefDropDownList6, 2, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.ForeColor = System.Drawing.Color.Red;
+            this.label49.Name = "label49";
+            // 
+            // clsDetailCodeRefDropDownList5
+            // 
+            this.clsDetailCodeRefDropDownList5.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList5.ClsCd = "48";
+            this.clsDetailCodeRefDropDownList5.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList5, "clsDetailCodeRefDropDownList5");
+            this.clsDetailCodeRefDropDownList5.Name = "clsDetailCodeRefDropDownList5";
+            this.clsDetailCodeRefDropDownList5.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList5.Selectedname = null;
+            this.clsDetailCodeRefDropDownList5.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList5.ShowNameDesc = false;
+            // 
+            // label50
+            // 
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.ForeColor = System.Drawing.Color.Red;
+            this.label50.Name = "label50";
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // label52
+            // 
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Name = "label52";
+            // 
+            // clsDetailCodeRefDropDownList6
+            // 
+            this.clsDetailCodeRefDropDownList6.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList6.ClsCd = "32";
+            this.clsDetailCodeRefDropDownList6.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList6, "clsDetailCodeRefDropDownList6");
+            this.clsDetailCodeRefDropDownList6.Name = "clsDetailCodeRefDropDownList6";
+            this.clsDetailCodeRefDropDownList6.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList6.Selectedname = null;
+            this.clsDetailCodeRefDropDownList6.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList6.ShowNameDesc = false;
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label44.Name = "label44";
+            // 
+            // button16
+            // 
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.Name = "button16";
+            this.button16.TabStop = false;
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox10
+            // 
+            resources.ApplyResources(this.alphanumericTextBox10, "alphanumericTextBox10");
+            this.alphanumericTextBox10.Flags = 0;
+            this.alphanumericTextBox10.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox10.Name = "alphanumericTextBox10";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.ForeColor = System.Drawing.Color.Red;
+            this.label43.Name = "label43";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label41.Name = "label41";
+            // 
+            // button15
+            // 
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.Name = "button15";
+            this.button15.TabStop = false;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox9
+            // 
+            resources.ApplyResources(this.alphanumericTextBox9, "alphanumericTextBox9");
+            this.alphanumericTextBox9.Flags = 0;
+            this.alphanumericTextBox9.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox9.Name = "alphanumericTextBox9";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.ForeColor = System.Drawing.Color.Red;
+            this.label40.Name = "label40";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label38.Name = "label38";
+            // 
+            // button14
+            // 
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Name = "button14";
+            this.button14.TabStop = false;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox8
+            // 
+            resources.ApplyResources(this.alphanumericTextBox8, "alphanumericTextBox8");
+            this.alphanumericTextBox8.Flags = 0;
+            this.alphanumericTextBox8.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox8.Name = "alphanumericTextBox8";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.ForeColor = System.Drawing.Color.Red;
+            this.label37.Name = "label37";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label35.Name = "label35";
+            // 
+            // button13
+            // 
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Name = "button13";
+            this.button13.TabStop = false;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox7
+            // 
+            resources.ApplyResources(this.alphanumericTextBox7, "alphanumericTextBox7");
+            this.alphanumericTextBox7.Flags = 0;
+            this.alphanumericTextBox7.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox7.Name = "alphanumericTextBox7";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Name = "label34";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label32.Name = "label32";
+            // 
+            // button12
+            // 
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.Name = "button12";
+            this.button12.TabStop = false;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox6
+            // 
+            resources.ApplyResources(this.alphanumericTextBox6, "alphanumericTextBox6");
+            this.alphanumericTextBox6.Flags = 0;
+            this.alphanumericTextBox6.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox6.Name = "alphanumericTextBox6";
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Name = "label31";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label29.Name = "label29";
+            // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Name = "button11";
+            this.button11.TabStop = false;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox5
+            // 
+            resources.ApplyResources(this.alphanumericTextBox5, "alphanumericTextBox5");
+            this.alphanumericTextBox5.Flags = 0;
+            this.alphanumericTextBox5.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox5.Name = "alphanumericTextBox5";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Name = "label28";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label26.Name = "label26";
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Name = "button10";
+            this.button10.TabStop = false;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox4
+            // 
+            resources.ApplyResources(this.alphanumericTextBox4, "alphanumericTextBox4");
+            this.alphanumericTextBox4.Flags = 0;
+            this.alphanumericTextBox4.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox4.Name = "alphanumericTextBox4";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Name = "label25";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label23.Name = "label23";
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.TabStop = false;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox3
+            // 
+            resources.ApplyResources(this.alphanumericTextBox3, "alphanumericTextBox3");
+            this.alphanumericTextBox3.Flags = 0;
+            this.alphanumericTextBox3.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox3.Name = "alphanumericTextBox3";
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Name = "label22";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label20.Name = "label20";
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.TabStop = false;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // alphanumericTextBox2
+            // 
+            resources.ApplyResources(this.alphanumericTextBox2, "alphanumericTextBox2");
+            this.alphanumericTextBox2.Flags = 0;
+            this.alphanumericTextBox2.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox2.Name = "alphanumericTextBox2";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Name = "label19";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label17.Name = "label17";
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.TabStop = false;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Name = "label16";
+            // 
+            // alphanumericTextBox1
+            // 
+            resources.ApplyResources(this.alphanumericTextBox1, "alphanumericTextBox1");
+            this.alphanumericTextBox1.Flags = 0;
+            this.alphanumericTextBox1.InvalidChars = new char[] {
+        '%',
+        '\'',
+        '*',
+        '\"',
+        '+',
+        '?',
+        '>',
+        '<',
+        ':',
+        '\\'};
+            this.alphanumericTextBox1.Name = "alphanumericTextBox1";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // tableLayoutPanel5
+            // 
+            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
+            this.tlpProcG2.SetColumnSpan(this.tableLayoutPanel5, 5);
+            this.tableLayoutPanel5.Controls.Add(this.label46, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.clsDetailCodeRefDropDownList4, 5, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label48, 4, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label47, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label45, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.clsDetailCodeRefDropDownList3, 2, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.ForeColor = System.Drawing.Color.Red;
+            this.label46.Name = "label46";
+            // 
+            // clsDetailCodeRefDropDownList4
+            // 
+            this.clsDetailCodeRefDropDownList4.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList4.ClsCd = "37";
+            this.clsDetailCodeRefDropDownList4.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList4, "clsDetailCodeRefDropDownList4");
+            this.clsDetailCodeRefDropDownList4.Name = "clsDetailCodeRefDropDownList4";
+            this.clsDetailCodeRefDropDownList4.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList4.Selectedname = null;
+            this.clsDetailCodeRefDropDownList4.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList4.ShowNameDesc = false;
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.ForeColor = System.Drawing.Color.Red;
+            this.label48.Name = "label48";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // clsDetailCodeRefDropDownList3
+            // 
+            this.clsDetailCodeRefDropDownList3.Autoaddblankitem = true;
+            this.clsDetailCodeRefDropDownList3.ClsCd = "36";
+            this.clsDetailCodeRefDropDownList3.Defaultselectedindex = 0;
+            resources.ApplyResources(this.clsDetailCodeRefDropDownList3, "clsDetailCodeRefDropDownList3");
+            this.clsDetailCodeRefDropDownList3.Name = "clsDetailCodeRefDropDownList3";
+            this.clsDetailCodeRefDropDownList3.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList3.Selectedname = null;
+            this.clsDetailCodeRefDropDownList3.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList3.ShowNameDesc = false;
+            // 
+            // tlpProcG1
+            // 
+            resources.ApplyResources(this.tlpProcG1, "tlpProcG1");
+            this.tlpProcG1.Controls.Add(this.button6, 2, 4);
+            this.tlpProcG1.Controls.Add(this.button5, 1, 4);
+            this.tlpProcG1.Controls.Add(this.button4, 1, 3);
+            this.tlpProcG1.Controls.Add(this.button3, 1, 2);
+            this.tlpProcG1.Controls.Add(this.button2, 1, 1);
+            this.tlpProcG1.Controls.Add(this.dataGridView1, 0, 0);
+            this.tlpProcG1.Controls.Add(this.button1, 1, 0);
+            this.tlpProcG1.Name = "tlpProcG1";
+            this.tableLayoutPanel4.SetRowSpan(this.tlpProcG1, 8);
+            // 
+            // tlpProcG3
+            // 
+            resources.ApplyResources(this.tlpProcG3, "tlpProcG3");
+            this.tlpProcG3.Controls.Add(this.button18, 2, 0);
+            this.tlpProcG3.Controls.Add(this.button17, 1, 0);
+            this.tlpProcG3.Name = "tlpProcG3";
+            this.tlpProcG3.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpProcG3_Paint);
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.tlpProcG1.SetRowSpan(this.dataGridView1, 6);
+            this.dataGridView1.RowTemplate.Height = 23;
+            // 
+            // button1
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button1, 2);
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button2, 2);
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button3, 2);
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button4, 2);
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            resources.ApplyResources(this.button17, "button17");
+            this.button17.Name = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = true;
             // 
             // FrmMaterialEdit
             // 
@@ -1508,14 +2661,34 @@
             this.Load += new System.EventHandler(this.FrmMaterialEdit_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tlpG1.ResumeLayout(false);
-            this.tlpG1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlPM.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tlpTabpage1.ResumeLayout(false);
             this.tlpTabpage1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tlpProcG2.ResumeLayout(false);
+            this.tlpProcG2.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tlpProcG1.ResumeLayout(false);
+            this.tlpProcG3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1525,15 +2698,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private xpLabel.xpLabel xplblMode;
         private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip;
-        private System.Windows.Forms.TableLayoutPanel tlpG1;
-        private System.Windows.Forms.Label caplblFactory;
-        private System.Windows.Forms.Label starlblFactory;
-        private System.Windows.Forms.Label lblFactoryNm;
-        private System.Windows.Forms.Button btnFactoryHelper;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlPM;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TableLayoutPanel tlpTabpage1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label caplblDispItemCd;
@@ -1551,10 +2718,6 @@
         private System.Windows.Forms.Button btnCustomerHelper;
         private System.Windows.Forms.Label lblCustomerNm;
         private System.Windows.Forms.Label caplblItemCls;
-        private System.Windows.Forms.Label lblCtrlClsNm;
-        private System.Windows.Forms.Label starlblCtrlCls;
-        private System.Windows.Forms.Label caplblCtrlCls;
-        private System.Windows.Forms.Button btnCtrlCls;
         private System.Windows.Forms.Label starlblItemCls;
         private System.Windows.Forms.Label caplblLotCtrlCls;
         private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsddlItemCls;
@@ -1575,7 +2738,6 @@
         private System.Windows.Forms.Label starlblCnvUnitCd;
         private System.Windows.Forms.Label caplblCnvUnitCd;
         private System.Windows.Forms.Label caplblStdUnitCd;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label starlblSumLt;
         private System.Windows.Forms.Label caplblSumLt;
         private System.Windows.Forms.Label starlblModel;
@@ -1658,7 +2820,6 @@
         private System.Windows.Forms.Label caplblBinEndDate;
         private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xdtpBinEndDate;
         private System.Windows.Forms.Label lblItemCd;
-        private AMS.TextBox.AlphanumericTextBox atxtFactoryCd;
         private AMS.TextBox.IntegerTextBox itxtCnvRateNumerator;
         private AMS.TextBox.IntegerTextBox itxtCnvRateDenominator;
         private AMS.TextBox.IntegerTextBox itxtSumLt;
@@ -1666,5 +2827,130 @@
         private AMS.TextBox.IntegerTextBox itxtPartChgPeriod;
         private AMS.TextBox.IntegerTextBox itxtFixMntPeriod;
         private AMS.TextBox.IntegerTextBox itxtGuarPeriod;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList2;
+        private System.Windows.Forms.Label label5;
+        private Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton conditionRadioButton1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private AMS.TextBox.NumericTextBox numericTextBox1;
+        private AMS.TextBox.NumericTextBox numericTextBox2;
+        private AMS.TextBox.IntegerTextBox integerTextBox1;
+        private AMS.TextBox.NumericTextBox numericTextBox3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tlpProcG2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button7;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button button9;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button8;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button button11;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox5;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button button10;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox4;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button button14;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox8;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button button13;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox7;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button button12;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox6;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button16;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox10;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button button15;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox9;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList4;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label label49;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList5;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private AMS.TextBox.NumericTextBox numericTextBox4;
+        private AMS.TextBox.IntegerTextBox integerTextBox2;
+        private AMS.TextBox.IntegerTextBox integerTextBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox11;
+        private AMS.TextBox.NumericTextBox numericTextBox5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label68;
+        private AMS.TextBox.NumericTextBox numericTextBox8;
+        private AMS.TextBox.NumericTextBox numericTextBox6;
+        private System.Windows.Forms.TableLayoutPanel tlpProcG1;
+        private System.Windows.Forms.TableLayoutPanel tlpProcG3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button17;
     }
 }

@@ -83,6 +83,26 @@
                 <Item value="R">Retrieve Mode</Item>
             </List>
         </Data>
-    </Condition>  
-  
+    </Condition>
+
+    <Condition>
+        <Name>LotMethod</Name>
+        <Data>
+            <Language>zh-CN</Language>
+            <List>
+                <Item value="1">经济订货批量</Item>
+                <Item value="2">固定期间</Item>
+                <Item value="3">固定批量</Item>
+            </List>
+        </Data>
+
+        <Data>
+            <Language>en-US</Language>
+            <List>
+                <Item value="1">EOQ</Item>
+                <Item value="2">FPR</Item>
+                <Item value="3">FOQ</Item>
+            </List>
+        </Data>
+    </Condition>
 </Settings>
