@@ -159,4 +159,7 @@
   <data name="W0005" xml:space="preserve">
     <value>没有查询到符合条件的数据。</value>
   </data>
+  <data name="W0006" xml:space="preserve">
+    <value>请选择一条数据</value>
+  </data>
 </root>
