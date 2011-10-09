@@ -407,6 +407,7 @@ namespace Com.GainWinSoft.ERP.Material
         /// <param name="e"></param>
         private void commonToolStrip1_AddClick(object sender, EventArgs e)
         {
+
             TransferTo();
         }
         /// <summary>
@@ -600,11 +601,12 @@ namespace Com.GainWinSoft.ERP.Material
         /// </summary>
         private void TransferTo()
         {
-
+            this.Cursor = Cursors.WaitCursor;
             FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform.Parentdockpanel, this.baseform);
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
             frmMaterialEdit.DockTitle = frmMaterialEdit.Text;
             frmMaterialEdit.ShowContent(false);
+            this.Cursor = Cursors.Default;
 
         }
 
