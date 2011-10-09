@@ -580,8 +580,8 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
             this.tddlCurr_G3.Selectedvalue = row.Cells["I_DL_CURR_CD"].Value.ToString();
 
-                                        
-            this.xdtpEffEedDate.Value = Convert.ToDateTime(row.Cells["I_EFF_END_DATE"].Value);
+
+            this.xdtpEffEedDate.Value = CommonUtil.DateToDateTime(row.Cells["I_EFF_END_DATE"].Value.ToString());
             
             this.cndCalcMode.Selectedvalue = row.Cells["I_CNV_METHOD"].Value.ToString();
             this.ntxtRate.Text = row.Cells["I_RATE"].Value.ToString();
