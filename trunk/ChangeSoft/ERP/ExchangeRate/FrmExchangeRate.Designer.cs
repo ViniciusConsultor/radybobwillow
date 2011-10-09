@@ -47,7 +47,6 @@
             this.tddlCurr = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
             this.tddlCurr_G3 = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
-            this.txtRate = new System.Windows.Forms.TextBox();
             this.lblStar2 = new System.Windows.Forms.Label();
             this.lblStar3 = new System.Windows.Forms.Label();
             this.lblStar5 = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
             this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
+            this.ntxtRate = new AMS.TextBox.NumericTextBox();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -191,7 +191,6 @@
             // 
             resources.ApplyResources(this.tblPanelG3, "tblPanelG3");
             this.tblPanelG3.Controls.Add(this.tddlCurr_G3, 2, 1);
-            this.tblPanelG3.Controls.Add(this.txtRate, 6, 3);
             this.tblPanelG3.Controls.Add(this.lblStar2, 1, 0);
             this.tblPanelG3.Controls.Add(this.lblStar3, 1, 1);
             this.tblPanelG3.Controls.Add(this.lblStar5, 1, 3);
@@ -205,6 +204,7 @@
             this.tblPanelG3.Controls.Add(this.clsddl_9A_G3, 2, 0);
             this.tblPanelG3.Controls.Add(this.cndCalcMode, 2, 3);
             this.tblPanelG3.Controls.Add(this.xdtpEffEedDate, 2, 2);
+            this.tblPanelG3.Controls.Add(this.ntxtRate, 6, 3);
             this.tblPanelG3.Name = "tblPanelG3";
             // 
             // tddlCurr_G3
@@ -221,11 +221,6 @@
             this.tddlCurr_G3.Selectedvalue = null;
             this.tddlCurr_G3.TableNm = "T_CURR_MS";
             this.tddlCurr_G3.ValueColumn = "I_CURR_CD";
-            // 
-            // txtRate
-            // 
-            resources.ApplyResources(this.txtRate, "txtRate");
-            this.txtRate.Name = "txtRate";
             // 
             // lblStar2
             // 
@@ -317,6 +312,8 @@
             this.commonToolStrip1.AddEnabled = true;
             this.commonToolStrip1.AddVisible = true;
             resources.ApplyResources(this.commonToolStrip1, "commonToolStrip1");
+            this.commonToolStrip1.CleargroupEnabled = true;
+            this.commonToolStrip1.CleargroupVisible = true;
             this.commonToolStrip1.CopyEnabled = true;
             this.commonToolStrip1.CopyVisible = true;
             this.commonToolStrip1.CsvEnabled = true;
@@ -363,6 +360,19 @@
             // 
             this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             resources.ApplyResources(this.validationProvider1, "validationProvider1");
+            // 
+            // ntxtRate
+            // 
+            this.ntxtRate.AllowNegative = true;
+            this.ntxtRate.DigitsInGroup = 0;
+            resources.ApplyResources(this.ntxtRate, "ntxtRate");
+            this.ntxtRate.Flags = 0;
+            this.ntxtRate.MaxDecimalPlaces = 4;
+            this.ntxtRate.MaxWholeDigits = 9;
+            this.ntxtRate.Name = "ntxtRate";
+            this.ntxtRate.Prefix = "";
+            this.ntxtRate.RangeMax = 1.7976931348623157E+308;
+            this.ntxtRate.RangeMin = -1.7976931348623157E+308;
             // 
             // FrmExchangeRate
             // 
@@ -417,9 +427,9 @@
         private System.Windows.Forms.TableLayoutPanel tblPanelG2;
         private Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView pgvRateMs;
         private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tddlCurr;
-        private System.Windows.Forms.TextBox txtRate;
         private Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker xdtpEffEedDate;
         private Noogen.Validation.ValidationProvider validationProvider1;
         private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tddlCurr_G3;
+        private AMS.TextBox.NumericTextBox ntxtRate;
     }
 }

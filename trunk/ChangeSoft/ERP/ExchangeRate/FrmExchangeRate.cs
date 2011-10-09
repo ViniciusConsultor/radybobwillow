@@ -56,7 +56,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         private ValidationProvider vdpG3;
         private ValidationProvider vdpBusinessG3;
-
+        private ValidationProvider vdpG2;
 
 
         #endregion
@@ -91,11 +91,43 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.vdpBusinessG3 = new ValidationProvider(this.components);
             this.vdpBusinessG3.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
 
+            this.vdpG2 = new ValidationProvider(this.components);
+            this.vdpG2.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
 
             ValidationRule ruleRate = new ValidationRule();
             ruleRate.IsRequired = true;
-            ruleRate.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.txtRate.Text);
-            this.vdpG3.SetValidationRule(this.txtRate, ruleRate);
+            ruleRate.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.ntxtRate.Text);
+            this.vdpG3.SetValidationRule(this.ntxtRate, ruleRate);
+
+            ValidationRule rule9A_G3 = new ValidationRule();
+            rule9A_G3.IsRequired = true;
+            rule9A_G3.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.clsddl_9A_G3.Text);
+            this.vdpG3.SetValidationRule(this.clsddl_9A_G3, rule9A_G3);
+
+            ValidationRule ruleCurr = new ValidationRule();
+            ruleCurr.IsRequired = true;
+            ruleCurr.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.tddlCurr_G3.Text);
+            this.vdpG3.SetValidationRule(this.tddlCurr_G3, ruleCurr);
+
+            ValidationRule ruleEffEedDate = new ValidationRule();
+            ruleEffEedDate.IsRequired = true;
+            ruleEffEedDate.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.xdtpEffEedDate.Text);
+            this.vdpG3.SetValidationRule(this.xdtpEffEedDate, ruleEffEedDate);
+
+            ValidationRule ruleCalcMode = new ValidationRule();
+            ruleCalcMode.IsRequired = true;
+            ruleCalcMode.RequiredFieldErroMessage = MessageUtils.GetMessage("W0001", this.cndCalcMode.Text);
+            this.vdpG3.SetValidationRule(this.cndCalcMode, ruleCalcMode);
+
+            ValidationRule rulePgvRate = new ValidationRule();
+            rulePgvRate.IsCustomError = true;
+            rulePgvRate.CustomValidationMethod += new CustomValidationEventHandler(CheckG2);
+            rulePgvRate.CustomErrorMessage = MessageUtils.GetMessage("W0006");
+            this.vdpG2.SetValidationRule(this.pgvRateMs, rulePgvRate);
+
+
+
+            
         }
 
 
@@ -334,7 +366,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             frmExRateCardVo.IEffEndDate = Convert.ToDecimal(this.xdtpEffEedDate.Value.Year.ToString()
                                 + this.xdtpEffEedDate.Value.Month.ToString().PadLeft(2, chaZero)  
                                 + this.xdtpEffEedDate.Value.Day.ToString());//有效日
-            frmExRateCardVo.IRate =Convert.ToDecimal(txtRate.Text);
+            frmExRateCardVo.IRate = Convert.ToDecimal(ntxtRate.Text);
             frmExRateCardVo.IRateCls = this.clsddl_9A_G3.Selectedvalue;
             
 
@@ -349,7 +381,10 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         /// </summary>
         private void commonToolStrip1_SaveClick(object sender, EventArgs e)
         {
-
+            if (!this.CheckG3())
+            {
+                return;
+            }
 
             FrmExRateCardVo frmExRateCardVo = setFrom2Vo();
             frmExRateCardVo.IMode = strMode;
@@ -520,7 +555,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             clsddl_9A_G3.Selectedvalue = "";
             tddlCurr_G3.Selectedvalue = "";
             cndCalcMode.Selectedvalue = "";
-            this.txtRate.Text = "";
+            this.ntxtRate.Text = "";
         }
 
        
@@ -549,7 +584,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
             this.xdtpEffEedDate.Value = Convert.ToDateTime(row.Cells["I_EFF_END_DATE"].Value);
             
             this.cndCalcMode.Selectedvalue = row.Cells["I_CNV_METHOD"].Value.ToString();
-            this.txtRate.Text = row.Cells["I_RATE"].Value.ToString();
+            this.ntxtRate.Text = row.Cells["I_RATE"].Value.ToString();
 
 
 
@@ -558,6 +593,20 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
 
         private void pgvRateMs_DoubleClick(object sender, EventArgs e)
         {
+
+            //if (!this.CheckG2(sender,e))
+            //{
+            //    return;
+            //}
+            if (!this.vdpG2.Validate())
+            {
+                IList<MessageVo> re = this.vdpG2.ValidationMessages(true);
+                this.DialogResult = DialogResult.Abort;
+                this.baseform.msgwindow.Messagelist = re;
+                this.baseform.msgwindow.ShowMessage();
+
+                return;
+            }
 
             this.strMode = Common.Constant.MODE_UPD;
 
