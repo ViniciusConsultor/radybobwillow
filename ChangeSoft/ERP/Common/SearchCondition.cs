@@ -47,7 +47,14 @@ namespace Com.GainWinSoft.Common
                         //query.SetParameter(string.Format("{0}", searchInfo.ParameterName), searchInfo.FieldValue);
                         IDbDataParameter para = command.CreateParameter();
                         para.ParameterName = searchInfo.ParameterName;
-                        para.Value = searchInfo.FieldValue;
+                        if (searchInfo.SqlOperator == SqlOperator.Like)
+                        {
+                            para.Value = "%" + searchInfo.FieldValue + "%";
+                        }
+                        else
+                        {
+                            para.Value = searchInfo.FieldValue;
+                        }
                         command.Parameters.Add(para);
                     }
                 }
@@ -379,7 +386,7 @@ namespace Com.GainWinSoft.Common
                         if (searchInfo.SqlOperator == SqlOperator.Like)
                         {
                             sb.AppendFormat(" AND {0} {1} {2}", searchInfo.FieldName,
-                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                                this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format(":{0}", searchInfo.ParameterName));
                         }
                         else if (searchInfo.SqlOperator == SqlOperator.In)
                         {
@@ -440,7 +447,7 @@ namespace Com.GainWinSoft.Common
                             if (searchInfo.SqlOperator == SqlOperator.Like)
                             {
                                 sb.AppendFormat(" OR {0} {1} {2}", searchInfo.FieldName,
-                                    this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format("%:{0}%", searchInfo.ParameterName));
+                                    this.ConvertSqlOperator(searchInfo.SqlOperator), string.Format(":{0}", searchInfo.ParameterName));
                             }
                             else
                             {

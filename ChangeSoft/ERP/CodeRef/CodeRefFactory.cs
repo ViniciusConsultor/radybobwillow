@@ -15,12 +15,12 @@ namespace Com.GainWinSoft.ERP.CodeRef
     {
         private string[] columnlist = { "IFacCd", "ICountryCd", "IFacArgDesc", "IFacDesc", "IFacDescKana", "IAddress1", "IAddress2", "IAddress3" };
         private string companyCd;
+        private ResourceManager rm = new ResourceManager(typeof(CodeRefFactory));
 
         public CodeRefFactory(string companyCd)
         {
             this.companyCd = companyCd;
             InitializeComponent();
-            this.doSearch();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -32,9 +32,16 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
             DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtFacCd.Text, this.txtFacDesc.Text);
-            this.dataGridView1.DataSource = ds;
-            this.dataGridView1.DataMember = "CCodeRefFactory";
-            SetColumnsAlias();
+            if (ds.Tables["CCodeRefFactory"].Rows.Count > 0)
+            {
+                this.dataGridView1.DataSource = ds;
+                this.dataGridView1.DataMember = "CCodeRefFactory";
+                SetColumnsAlias();
+            }
+            else
+            {
+                Init_GridView();
+            }
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -51,23 +58,17 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
         private void SetColumnsAlias()
         {
-            ResourceManager rm = new ResourceManager(typeof(CodeRefFactory));
-            foreach (DataGridViewColumn col in this.dataGridView1.Columns)
-            {
-                col.HeaderText = rm.GetString(col.Name);
-            }
+
 
             for (int i = 0; i < this.dataGridView1.Columns.Count; i++)
             {
                 this.dataGridView1.Columns[i].Visible = false;
             }
 
-            if (this.dataGridView1.RowCount > 0)
+            for (int i = 0; i < columnlist.Length; i++)
             {
-                for (int i = 0; i < columnlist.Length; i++)
-                {
-                    this.dataGridView1.Columns[columnlist[i]].Visible = true;
-                }
+                this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                this.dataGridView1.Columns[columnlist[i]].HeaderText = rm.GetString(this.dataGridView1.Columns[columnlist[i]].Name);
             }
         }
 
@@ -75,6 +76,36 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             this.txtFacCd.Text = "";
             this.txtFacDesc.Text = "";
+        }
+
+        private void Init_GridView()
+        {
+            DataTable dt = new DataTable();
+
+            foreach (string key in columnlist)
+            {
+                DataColumn col = new DataColumn();
+                col.ColumnName = key;
+                dt.Columns.Add(col);
+            }
+
+            this.dataGridView1.DataSource = dt;
+
+            foreach (string key in columnlist)
+            {
+                this.dataGridView1.Columns[key].HeaderText = rm.GetString(key);
+
+            }
+
+
+        }
+
+        private void CodeRefFactory_Load(object sender, EventArgs e)
+        {
+
+            //Init_GridView();
+            this.doSearch();
+
         }
     }
 }

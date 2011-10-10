@@ -121,6 +121,7 @@
     <Compile Include="Dao\ICClsDetailNoARDao.cs" />
     <Compile Include="Dao\ICCodeRefTradeForMaterialNoARDao.cs" />
     <Compile Include="Dao\ICPagerDao.cs" />
+    <Compile Include="Dao\ICTPersonMsNoARDao.cs" />
     <Compile Include="Dao\ICTPmMsNoARDao.cs" />
     <Compile Include="Dao\IMFunctioncatalogDao.cs" />
     <Compile Include="Dao\IMLoginUserDao.cs" />
@@ -166,6 +167,7 @@
     <Compile Include="Dao\TrateMsPagerNoARDaoOracleImp.cs" />
     <Compile Include="Dao\ITFcConditionStpDao.cs" />
     <Compile Include="Dao\TFcConditionStpDaoOracleImp.cs" />
+    <Compile Include="Dao\CTPersonMsNoARDaoOracleImp.cs" />
     <Compile Include="Model\CCodeRefTradeForMaterialNoAR.cs" />
     <Compile Include="Model\MFunction.cs" />
     <Compile Include="Model\MFunctioncatalog.cs" />
@@ -217,6 +219,7 @@
     <Compile Include="Model\CTPmMsPagerNoAR.cs" />
     <Compile Include="Model\TRateMsPagerNoAR.cs" />
     <Compile Include="Model\TFcConditionStpId.cs" />
+    <Compile Include="Model\CTPersonMsNoAR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Test.cs" />
   </ItemGroup>

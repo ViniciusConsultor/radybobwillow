@@ -74,11 +74,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 sb.Append("     AND I_COMPANY_CD=:companyCd");
                 if (!string.IsNullOrEmpty(secCd))
                 {
-                    sb.Append("     AND I_SECTION_CD LIKE %:secCd%");
+                    sb.Append("     AND I_SECTION_CD LIKE '%").Append(":secCd").Append("%'");
                 }
                 if (!string.IsNullOrEmpty(secNm))
                 {
-                    sb.Append("     AND I_SECTION_DESC LIKE %:secNm%");
+                    sb.Append("     AND I_SECTION_DESC LIKE '%").Append(":secNm").Append("%'");
                 }
                 sb.Append(" ORDER BY I_SECTION_CD");
 

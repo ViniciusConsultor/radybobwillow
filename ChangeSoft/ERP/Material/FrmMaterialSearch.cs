@@ -237,37 +237,6 @@ namespace Com.GainWinSoft.ERP.Material
 
         }
 
-        void ruleInquiry_CustomValidationMethod(object sender, CustomValidationEventArgs e)
-        {
-            this.Cursor = Cursors.WaitCursor;
-            CardVo cardvo = new CardVo();
-            cardvo.IFacCd = this.atxtFactoryCd.Text;
-            cardvo.IDispItemCd = this.atxtDispItemCd.Text;
-            cardvo.IDispItemRev = this.atxtDispItemRev.Text;
-            cardvo.IDlCd = this.atxtCustomerCd.Text;
-            cardvo.IDrwNo = this.txtDrwNo.Text;
-            cardvo.IItemCls = this.clsddlItemCls.Selectedvalue;
-            cardvo.IItemType = this.atxtItemType.Text;
-            cardvo.IMakerCd = this.atxtMakerCd.Text;
-            cardvo.IMntCls = this.clsddlMntCls.Selectedvalue;
-            cardvo.IModel = this.txtModel.Text;
-            cardvo.IQryMtrl = this.txtQryMtrl.Text;
-            cardvo.ISeiban = this.txtSeiban.Text;
-            cardvo.ISpec = this.txtSpec.Text;
-
-
-            IAction_MaterialSearch action = ComponentLocator.Instance().Resolve<IAction_MaterialSearch>();
-            int count = action.GetPmMsDetail(this.FrmMaterialSearch_pagerGridView1, cardvo);
-            if (count == 0)
-            {
-                e.IsValid = false;
-            }
-            else
-            {
-                e.IsValid = true;
-            }
-            this.Cursor = Cursors.Default;
-        }
         /// <summary>
         /// 清除CheckError
         /// </summary>

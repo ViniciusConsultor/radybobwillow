@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableDropDownList1 = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
+            this.tddlSection = new Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.alphanumericTextBox1 = new AMS.TextBox.AlphanumericTextBox();
+            this.atxtPersonCd = new AMS.TextBox.AlphanumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPersonNm = new System.Windows.Forms.TextBox();
             this.btnInquiry = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -53,12 +53,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableDropDownList1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tddlSection, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.alphanumericTextBox1, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.atxtPersonCd, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtPersonNm, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnInquiry, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClear, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 4);
@@ -74,23 +74,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 392);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // tableDropDownList1
+            // tddlSection
             // 
-            this.tableDropDownList1.Autoaddblankitem = true;
-            this.tableDropDownList1.Defaultselectedindex = 0;
-            this.tableDropDownList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableDropDownList1.LanguageColumn = null;
-            this.tableDropDownList1.LanguageFlg = false;
-            this.tableDropDownList1.Location = new System.Drawing.Point(118, 3);
-            this.tableDropDownList1.Name = "tableDropDownList1";
-            this.tableDropDownList1.NameColumn = "I_SECTION_ARG_DESC";
-            this.tableDropDownList1.SelectedIndex = -1;
-            this.tableDropDownList1.Selectedname = null;
-            this.tableDropDownList1.Selectedvalue = null;
-            this.tableDropDownList1.Size = new System.Drawing.Size(199, 20);
-            this.tableDropDownList1.TabIndex = 0;
-            this.tableDropDownList1.TableNm = "T_SECTION_MS";
-            this.tableDropDownList1.ValueColumn = "I_SECTION_CD";
+            this.tddlSection.Autoaddblankitem = true;
+            this.tddlSection.Defaultselectedindex = 0;
+            this.tddlSection.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tddlSection.LanguageColumn = null;
+            this.tddlSection.LanguageFlg = false;
+            this.tddlSection.Location = new System.Drawing.Point(118, 3);
+            this.tddlSection.Name = "tddlSection";
+            this.tddlSection.NameColumn = "I_SECTION_ARG_DESC";
+            this.tddlSection.SelectedIndex = -1;
+            this.tddlSection.Selectedname = null;
+            this.tddlSection.Selectedvalue = null;
+            this.tddlSection.Size = new System.Drawing.Size(199, 20);
+            this.tddlSection.TabIndex = 0;
+            this.tddlSection.TableNm = "T_SECTION_MS";
+            this.tddlSection.ValueColumn = "I_SECTION_CD";
             // 
             // label1
             // 
@@ -114,11 +114,11 @@
             this.label2.Text = "人员代码";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // alphanumericTextBox1
+            // atxtPersonCd
             // 
-            this.alphanumericTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.alphanumericTextBox1.Flags = 0;
-            this.alphanumericTextBox1.InvalidChars = new char[] {
+            this.atxtPersonCd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atxtPersonCd.Flags = 0;
+            this.atxtPersonCd.InvalidChars = new char[] {
         '%',
         '\'',
         '*',
@@ -129,11 +129,10 @@
         '<',
         ':',
         '\\'};
-            this.alphanumericTextBox1.Location = new System.Drawing.Point(118, 29);
-            this.alphanumericTextBox1.Name = "alphanumericTextBox1";
-            this.alphanumericTextBox1.Size = new System.Drawing.Size(199, 21);
-            this.alphanumericTextBox1.TabIndex = 3;
-            this.alphanumericTextBox1.Text = "alphanumericTextBox1";
+            this.atxtPersonCd.Location = new System.Drawing.Point(118, 29);
+            this.atxtPersonCd.Name = "atxtPersonCd";
+            this.atxtPersonCd.Size = new System.Drawing.Size(199, 21);
+            this.atxtPersonCd.TabIndex = 3;
             // 
             // label3
             // 
@@ -146,13 +145,13 @@
             this.label3.Text = "人员名称";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // txtPersonNm
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(118, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 21);
-            this.textBox1.TabIndex = 5;
+            this.txtPersonNm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPersonNm.Location = new System.Drawing.Point(118, 55);
+            this.txtPersonNm.Name = "txtPersonNm";
+            this.txtPersonNm.Size = new System.Drawing.Size(199, 21);
+            this.txtPersonNm.TabIndex = 5;
             // 
             // btnInquiry
             // 
@@ -178,35 +177,35 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 5);
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 86);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(424, 303);
             this.dataGridView1.TabIndex = 8;
@@ -217,6 +216,7 @@
             this.ClientSize = new System.Drawing.Size(430, 392);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CodeRefPerson";
+            this.Load += new System.EventHandler(this.CodeRefPerson_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -227,12 +227,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tableDropDownList1;
+        private Com.GainWinSoft.ERP.TableDropDownList.TableDropDownList tddlSection;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private AMS.TextBox.AlphanumericTextBox alphanumericTextBox1;
+        private AMS.TextBox.AlphanumericTextBox atxtPersonCd;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPersonNm;
         private System.Windows.Forms.Button btnInquiry;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dataGridView1;
