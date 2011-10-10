@@ -16,11 +16,12 @@ namespace Com.GainWinSoft.ERP.CodeRef
         private string[] columnlist = {"ISectionCd", "ISectionNm", "IPersonCd", "IPersonDesc", "IPersonDescKana" };
         private ResourceManager rm = new ResourceManager(typeof(CodeRefPerson));
 
-        private string companyCd;
+        private string companyCd="";
 
 
         public CodeRefPerson(string companyCd)
         {
+            this.companyCd = companyCd;
             InitializeComponent();
 
         }
@@ -34,14 +35,21 @@ namespace Com.GainWinSoft.ERP.CodeRef
         private void doSearch()
         {
             IAction_CodeRefPerson ac = ComponentLocator.Instance().Resolve<IAction_CodeRefPerson>();
-            string sectionCd = this.tddlSection.Selectedvalue;
-            string personCd = this.atxtPersonCd.Text;
-            string personNm = this.txtPersonNm.Text;
+            string sectionCd = this.tddlSection.Selectedvalue.Trim();
+            string personCd = this.atxtPersonCd.Text.Trim() ;
+            string personNm = this.txtPersonNm.Text.Trim();
 
             DataSet ds = ac.GetPersonDataSet(companyCd,sectionCd,personCd,personNm);
-            this.dataGridView1.DataSource = ds;
-            this.dataGridView1.DataMember = "CTPersonMsNoAR";
-            SetColumnsAlias();
+            if (ds.Tables["CTPersonMsNoAR"].Rows.Count > 0)
+            {
+                this.dataGridView1.DataSource = ds;
+                this.dataGridView1.DataMember = "CTPersonMsNoAR";
+                SetColumnsAlias();
+            }
+            else
+            {
+                Init_GridView();
+            }
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -58,10 +66,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
         private void SetColumnsAlias()
         {
-            foreach (DataGridViewColumn col in this.dataGridView1.Columns)
-            {
-                col.HeaderText = rm.GetString(col.Name);
-            }
+
 
             for (int i = 0; i < this.dataGridView1.Columns.Count; i++)
             {
