@@ -76,7 +76,6 @@
       <DependentUpon>DataSetPmMs.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrmReportViewer.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmReportViewer.Designer.cs">
       <DependentUpon>FrmReportViewer.cs</DependentUpon>
