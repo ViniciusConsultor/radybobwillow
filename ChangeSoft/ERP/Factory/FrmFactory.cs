@@ -767,7 +767,9 @@ namespace Com.GainWinSoft.ERP.Factory
         /// </summary>
         private void SaveData()
         {
+            IAction_Factory ac = ComponentLocator.Instance().Resolve<IAction_Factory>();
             TFactoryMs facVo = this.getVoFromForm();
+            Boolean val = ac.SaveDataToStp(strMode, facVo);
         }
 
         /// <summary>
