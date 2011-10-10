@@ -18,6 +18,10 @@ namespace Com.GainWinSoft.ERP.CodeRef.Action
         {
             ITFactoryMsDao d = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
             IList<TFactoryMs> list = d.getAllFactoryByCdNm(companyCd, facCd, facNm);
+            if (list.Count == 0)
+            {
+                list.Add(new TFactoryMs());
+            }
             DataTable dt = DataTableUtils.ToDataTable(list);
             dt.TableName = "CCodeRefFactory";
             DataSet ds = new DataSet();
