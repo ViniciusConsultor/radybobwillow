@@ -280,16 +280,16 @@
             this.label45 = new System.Windows.Forms.Label();
             this.clsDetailCodeRefDropDownList3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tlpProcG1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpProcG3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.tlpProcG3 = new System.Windows.Forms.TableLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControlPM.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -307,8 +307,8 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tlpProcG1.SuspendLayout();
-            this.tlpProcG3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tlpProcG3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -514,7 +514,7 @@
             // 
             // clsddlSrlSeqCls
             // 
-            this.clsddlSrlSeqCls.Autoaddblankitem = true;
+            this.clsddlSrlSeqCls.Autoaddblankitem = false;
             this.clsddlSrlSeqCls.ClsCd = "DB";
             this.tlpTabpage1.SetColumnSpan(this.clsddlSrlSeqCls, 6);
             this.clsddlSrlSeqCls.Defaultselectedindex = 0;
@@ -562,7 +562,7 @@
             // 
             // clsddlGuarPeriodUnitCd
             // 
-            this.clsddlGuarPeriodUnitCd.Autoaddblankitem = false;
+            this.clsddlGuarPeriodUnitCd.Autoaddblankitem = true;
             this.clsddlGuarPeriodUnitCd.ClsCd = "DA";
             this.clsddlGuarPeriodUnitCd.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsddlGuarPeriodUnitCd, "clsddlGuarPeriodUnitCd");
@@ -585,7 +585,7 @@
             // 
             // clsddlFixMntPeriodUnitCd
             // 
-            this.clsddlFixMntPeriodUnitCd.Autoaddblankitem = false;
+            this.clsddlFixMntPeriodUnitCd.Autoaddblankitem = true;
             this.clsddlFixMntPeriodUnitCd.ClsCd = "DA";
             this.clsddlFixMntPeriodUnitCd.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsddlFixMntPeriodUnitCd, "clsddlFixMntPeriodUnitCd");
@@ -608,7 +608,7 @@
             // 
             // clsddlPartChgPeriodUnitCd
             // 
-            this.clsddlPartChgPeriodUnitCd.Autoaddblankitem = false;
+            this.clsddlPartChgPeriodUnitCd.Autoaddblankitem = true;
             this.clsddlPartChgPeriodUnitCd.ClsCd = "DA";
             this.clsddlPartChgPeriodUnitCd.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsddlPartChgPeriodUnitCd, "clsddlPartChgPeriodUnitCd");
@@ -631,7 +631,7 @@
             // 
             // clsddlUsefulLifeUnitCd
             // 
-            this.clsddlUsefulLifeUnitCd.Autoaddblankitem = false;
+            this.clsddlUsefulLifeUnitCd.Autoaddblankitem = true;
             this.clsddlUsefulLifeUnitCd.ClsCd = "DK";
             this.clsddlUsefulLifeUnitCd.Defaultselectedindex = 0;
             resources.ApplyResources(this.clsddlUsefulLifeUnitCd, "clsddlUsefulLifeUnitCd");
@@ -676,7 +676,6 @@
             this.ntxtSize3.Prefix = "";
             this.ntxtSize3.RangeMax = 1.7976931348623157E+308;
             this.ntxtSize3.RangeMin = -1.7976931348623157E+308;
-            this.ntxtSize3.TextChanged += new System.EventHandler(this.numericTextBox8_TextChanged);
             // 
             // starlblSize3
             // 
@@ -1130,7 +1129,7 @@
             // 
             // clsddlPsCls
             // 
-            this.clsddlPsCls.Autoaddblankitem = true;
+            this.clsddlPsCls.Autoaddblankitem = false;
             this.clsddlPsCls.ClsCd = "56";
             this.tlpTabpage1.SetColumnSpan(this.clsddlPsCls, 6);
             this.clsddlPsCls.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1173,7 +1172,7 @@
             // 
             // clsddlLotCtrlCls
             // 
-            this.clsddlLotCtrlCls.Autoaddblankitem = true;
+            this.clsddlLotCtrlCls.Autoaddblankitem = false;
             this.clsddlLotCtrlCls.ClsCd = "58";
             this.tlpTabpage1.SetColumnSpan(this.clsddlLotCtrlCls, 6);
             this.clsddlLotCtrlCls.Defaultselectedindex = 0;
@@ -1321,6 +1320,7 @@
             resources.ApplyResources(this.btnCustomerHelper, "btnCustomerHelper");
             this.btnCustomerHelper.Name = "btnCustomerHelper";
             this.btnCustomerHelper.UseVisualStyleBackColor = true;
+            this.btnCustomerHelper.Click += new System.EventHandler(this.btnCustomerHelper_Click);
             // 
             // lblCustomerNm
             // 
@@ -1331,7 +1331,7 @@
             // 
             // clsddlItemCls
             // 
-            this.clsddlItemCls.Autoaddblankitem = true;
+            this.clsddlItemCls.Autoaddblankitem = false;
             this.clsddlItemCls.ClsCd = "31";
             this.tlpTabpage1.SetColumnSpan(this.clsddlItemCls, 6);
             this.clsddlItemCls.Defaultselectedindex = 0;
@@ -1349,7 +1349,7 @@
             // 
             // clsddlUseDelCls
             // 
-            this.clsddlUseDelCls.Autoaddblankitem = true;
+            this.clsddlUseDelCls.Autoaddblankitem = false;
             this.clsddlUseDelCls.ClsCd = "59";
             this.tlpTabpage1.SetColumnSpan(this.clsddlUseDelCls, 6);
             this.clsddlUseDelCls.Defaultselectedindex = 0;
@@ -1384,7 +1384,6 @@
             resources.ApplyResources(this.xdtpBinEndDate, "xdtpBinEndDate");
             this.xdtpBinEndDate.Name = "xdtpBinEndDate";
             this.xdtpBinEndDate.Value = new System.DateTime(2011, 9, 27, 22, 9, 17, 39);
-            this.xdtpBinEndDate.Load += new System.EventHandler(this.xdtpBinEndDate_Load);
             // 
             // tddlStdUnitCd
             // 
@@ -2561,13 +2560,38 @@
             this.tlpProcG1.Name = "tlpProcG1";
             this.tableLayoutPanel4.SetRowSpan(this.tlpProcG1, 8);
             // 
-            // tlpProcG3
+            // button6
             // 
-            resources.ApplyResources(this.tlpProcG3, "tlpProcG3");
-            this.tlpProcG3.Controls.Add(this.button18, 2, 0);
-            this.tlpProcG3.Controls.Add(this.button17, 1, 0);
-            this.tlpProcG3.Name = "tlpProcG3";
-            this.tlpProcG3.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpProcG3_Paint);
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button4, 2);
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button3, 2);
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.tlpProcG1.SetColumnSpan(this.button2, 2);
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -2608,50 +2632,24 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // tlpProcG3
             // 
-            this.tlpProcG1.SetColumnSpan(this.button2, 2);
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.tlpProcG1.SetColumnSpan(this.button3, 2);
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.tlpProcG1.SetColumnSpan(this.button4, 2);
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            resources.ApplyResources(this.button17, "button17");
-            this.button17.Name = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tlpProcG3, "tlpProcG3");
+            this.tlpProcG3.Controls.Add(this.button18, 2, 0);
+            this.tlpProcG3.Controls.Add(this.button17, 1, 0);
+            this.tlpProcG3.Name = "tlpProcG3";
             // 
             // button18
             // 
             resources.ApplyResources(this.button18, "button18");
             this.button18.Name = "button18";
             this.button18.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            resources.ApplyResources(this.button17, "button17");
+            this.button17.Name = "button17";
+            this.button17.UseVisualStyleBackColor = true;
             // 
             // FrmMaterialEdit
             // 
@@ -2687,8 +2685,8 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tlpProcG1.ResumeLayout(false);
-            this.tlpProcG3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tlpProcG3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

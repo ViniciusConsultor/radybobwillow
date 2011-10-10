@@ -46,10 +46,10 @@
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtDLCd, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSearch, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtDLDesc, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnCancel, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtDLCd, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSearch, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtDLDesc, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnCancel, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
@@ -92,7 +92,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 4);
+            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 5);
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Name = "dataGridView1";
@@ -104,7 +104,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CodeRefTradeForMaterial";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

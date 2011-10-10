@@ -33,37 +33,34 @@ namespace Com.GainWinSoft.ERP.Material
 
         private bool tabChangeEnabled = false;
 
+
         public FrmMaterialEdit(DockPanel _parentdockpanel, BaseForm _owner):base(_parentdockpanel,_owner)
         {
             
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 画面打开
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmMaterialEdit_Load(object sender, EventArgs e)
         {
-            Hashtable ht = (Hashtable)SessionUtils.GetSession(this.Name);
-            ht.Add("ddd", "ddd");
-
+            
+            uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
             SetCommonToolstrip();
             FormUtils.ClearStarControl(this.tlpTabpage1);
 
         }
 
-        private void numericTextBox8_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void xdtpBinEndDate_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tlpProcG3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// 防止Tab通过鼠标点击来切换
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tabControlPM_Selecting(object sender, TabControlCancelEventArgs e)
         {
             if (!tabChangeEnabled)
@@ -102,7 +99,7 @@ namespace Com.GainWinSoft.ERP.Material
         }
 
 
-                /// <summary>
+        /// <summary>
         /// 根据组迁移不同，控制CommonToolStrip的状态
         /// </summary>
         private void SetCommonToolstrip()
@@ -125,6 +122,19 @@ namespace Com.GainWinSoft.ERP.Material
                 this.commonToolStrip.OkEnabled = false;
 
             }
+        }
+        /// <summary>
+        /// 客户辅助按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCustomerHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefTradeForMaterial cr = new CodeRef.CodeRefTradeForMaterial(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.atxtCustomerCd);
+            cr.AddNameControl(this.lblCustomerNm);
+            cr.ShowDialog(this);
+            this.atxtCustomerCd.Focus();
         }
     }
 }
