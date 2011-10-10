@@ -81,11 +81,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 sb.Append("     AND I_COMPANY_CD=:companyCd");
                 if (!string.IsNullOrEmpty(facCd))
                 {
-                    sb.Append("     AND I_FAC_CD LIKE %:facCd%");
+                    sb.Append("     AND I_FAC_CD LIKE ").Append(":facCd");
                 }
                 if (!string.IsNullOrEmpty(facNm))
                 {
-                    sb.Append("     AND I_FAC_DESC LIKE %:facNm%");
+                    sb.Append("     AND I_FAC_DESC LIKE ").Append(":facNm");
                 }
                 sb.Append(" ORDER BY I_FAC_CD");
 
@@ -109,11 +109,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 querycatalogfunction.SetParameter("companyCd", companyCd);
                 if (!string.IsNullOrEmpty(facCd))
                 {
-                    querycatalogfunction.SetParameter("facCd", facCd);
+                    querycatalogfunction.SetParameter("facCd", "%"+facCd+"%");
                 }
                 if (!string.IsNullOrEmpty(facNm))
                 {
-                    querycatalogfunction.SetParameter("facNm", facNm);
+                    querycatalogfunction.SetParameter("facNm", "%" + facNm + "%");
                 }
 
                 result = querycatalogfunction.SetResultTransformer(Transformers.AliasToBean<TFactoryMs>()).List<TFactoryMs>();

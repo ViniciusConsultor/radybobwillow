@@ -102,6 +102,7 @@
     <Compile Include="Action\Action_CodeRefClsDetail.cs" />
     <Compile Include="Action\Action_TestCode.cs" />
     <Compile Include="Action\IAction_CodeRefClsDetail.cs" />
+    <Compile Include="Action\IAction_CodeRefPerson.cs" />
     <Compile Include="Action\IAction_CodeRefTradeForMaterial.cs" />
     <Compile Include="Action\IAction_TestCode.cs" />
     <Compile Include="Action\Action_CodeRefTradeForMaterial.cs" />

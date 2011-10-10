@@ -10,18 +10,18 @@ using Com.GainWinSoft.ERP.Entity;
 
 namespace Com.GainWinSoft.ERP.CodeRef.Action
 {
-    class Action_CodeRefPerson : IBaseAction
+    class Action_CodeRefPerson : IBaseAction, Com.GainWinSoft.ERP.CodeRef.Action.IAction_CodeRefPerson
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_CodeRefPerson));
 
-        public DataSet GetFactoryDataSet(string companyCd, string sectionCd, string personCd,string personNm)
+        public DataSet GetPersonDataSet(string companyCd, string sectionCd, string personCd,string personNm)
         {
-//            ITFactoryMsDao d = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
-//            IList<TFactoryMs> list = d.getAllFactoryByCdNm(companyCd, facCd, facNm);
-//            DataTable dt = DataTableUtils.ToDataTable(list);
-//            dt.TableName = "CCodeRefFactory";
+            ICTPersonMsNoARDao d = ComponentLocator.Instance().Resolve<ICTPersonMsNoARDao>();
+            IList<CTPersonMsNoAR> list = d.GetPersonMsList(companyCd, sectionCd, personCd, personNm);
+            DataTable dt = DataTableUtils.ToDataTable(list);
+            dt.TableName = "CTPersonMsNoAR";
             DataSet ds = new DataSet();
-//            ds.Tables.Add(dt);
+            ds.Tables.Add(dt);
             return ds;
         }
     }
