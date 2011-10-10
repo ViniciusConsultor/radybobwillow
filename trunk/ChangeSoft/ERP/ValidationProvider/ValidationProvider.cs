@@ -37,6 +37,10 @@ using System.Text;
 using System.Reflection;
 using System.ComponentModel.Design;
 using System.Collections.Generic;
+using Com.GainWinSoft.Common;
+using Com.GainWinSoft.ERP.TableDropDownList;
+using ClsDetailCodeRefDropDownList;
+using Com.GainWinSoft.Common.Control.ConditionDropDownList;
 
 namespace Noogen.Validation
 {
@@ -317,7 +321,7 @@ namespace Noogen.Validation
 			if (vr != null && vr.IsRequired) 
 			{
 				ValidationRule vr2 = new ValidationRule();
-				vr.IsValid = !ValidationRule.Compare(ctrl.Text, vr.InitialValue, ValidationCompareOperator.Equal, vr);
+                vr.IsValid = !ValidationRule.Compare(this.GetValueFromCtrl(ctrl), vr.InitialValue, ValidationCompareOperator.Equal, vr);
                 //add by rad 2011/8/22
                 vr.IsRequiredFieldError = !vr.IsValid;
 			}
@@ -326,8 +330,31 @@ namespace Noogen.Validation
 		}
 		#endregion
 
-		#region "Properties"
-		/// <summary>
+        #region Get Value From Control
+        private string GetValueFromCtrl(Control ctrl)
+        {
+            string rtnValue = ctrl.Text;
+            Type type = ctrl.GetType();
+
+            if (type.Equals(typeof(TableDropDownList)))
+            {
+                rtnValue = ((TableDropDownList)ctrl).Selectedvalue;
+            }
+            else if (type.Equals(typeof(ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList)))
+            {
+                rtnValue = ((ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList)ctrl).Selectedvalue;
+            }
+            else if (type.Equals(typeof(ConditionDropDownList)))
+            {
+                rtnValue = ((ConditionDropDownList)ctrl).Selectedvalue;
+            }
+
+            return rtnValue;
+        }
+        #endregion
+
+        #region "Properties"
+        /// <summary>
 		/// Set validation rule.
 		/// </summary>
 		/// <param name="inputComponent"></param>

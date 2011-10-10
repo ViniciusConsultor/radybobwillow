@@ -41,7 +41,8 @@ namespace Com.GainWinSoft.ERP.Factory.Action
             facStp.IPrcsTime = DateTime.Now.ToShortTimeString();
             facStp.IUpdCls = "";
 
-            ITFactoryMsDao td = ComponentLocator.Instance().Resolve<ITFactoryMsDao>();
+            ITFcConditionStpDao td = ComponentLocator.Instance().Resolve<ITFcConditionStpDao>();
+            //rtnValue = td.Insert(facStp);
             rtnValue = true;
 
             return rtnValue;

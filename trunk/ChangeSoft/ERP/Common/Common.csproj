@@ -66,6 +66,7 @@
     <Compile Include="FormUtils.cs" />
     <Compile Include="IBaseContent.cs" />
     <Compile Include="IRepositoryFactory.cs" />
+    <Compile Include="MessageVo.cs" />
     <Compile Include="Vo\CodeFile1.cs" />
     <Compile Include="Vo\CompanyConditionVo.cs" />
     <Compile Include="Vo\FactoryVo.cs" />
@@ -219,12 +220,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2011082206141117_easyicon_cn_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
-      <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
-      <Name>Noogen.Validation</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2011083110080328_easyicon_cn_48.png" />

@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
-using Noogen.Validation;
 
 namespace Com.GainWinSoft.Common
 {
