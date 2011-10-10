@@ -72,11 +72,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
     <Reference Include="System.Runtime.Serialization">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -109,11 +111,18 @@
     <Compile Include="Action\IAction_CodeRefWarehouse.cs" />
     <Compile Include="Action\IAction_CodeRefSection.cs" />
     <Compile Include="Action\Action_CodeRefSection.cs" />
+    <Compile Include="Action\Action_CodeRefPerson.cs" />
     <Compile Include="CodeRefClsDetail.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CodeRefClsDetail.Designer.cs">
       <DependentUpon>CodeRefClsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeRefPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeRefPerson.Designer.cs">
+      <DependentUpon>CodeRefPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="CodeRefTradeForMaterial.cs">
       <SubType>Form</SubType>
@@ -133,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CodeRefClsDetail.zh-CN.resx">
       <DependentUpon>CodeRefClsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefPerson.resx">
+      <DependentUpon>CodeRefPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CodeRefTradeForMaterial.resx">
       <DependentUpon>CodeRefTradeForMaterial.cs</DependentUpon>
@@ -239,6 +251,14 @@
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
       <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TableDropDownList\TableDropDownList.csproj">
+      <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
+      <Name>TableDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
+      <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
+      <Name>TextBox</Name>
     </ProjectReference>
     <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
       <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
