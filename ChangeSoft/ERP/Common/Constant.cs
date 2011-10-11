@@ -15,6 +15,7 @@ namespace Com.GainWinSoft.Common
         public const string I_PRCS_CLS_U = "02";
         public const string I_PRCS_CLS_D = "03";
 
+        #region 
         // 摘要:
         //     廃却区分 4E
         public const string ABAND = "4E";
@@ -734,7 +735,7 @@ namespace Com.GainWinSoft.Common
         // 摘要:
         //     稼動区分 30
         public const string WORK = "30";
-
+        #endregion
 
         #region 採番種別
         /// <summary>
@@ -2308,6 +2309,29 @@ namespace Com.GainWinSoft.Common
             #endregion
 
         }
+        #endregion
+
+        #region 转换用日期类型
+        /// <summary>
+        ///yyyyMMddHHmmss
+        ///</summary>
+        public const string yyyyMMddHHmmss = "1";
+        /// <summary>
+        ///yyyyMMdd
+        ///</summary>
+        public const string yyyyMMdd = "2";
+        /// <summary>
+        ///HHmmss
+        ///</summary>
+        public const string HHmmss = "3";
+        /// <summary>
+        ///yyyy/MM/dd/ HH:mm:ss
+        ///</summary>
+        public const string yyyy_MM_dd_HH_mm_ss = "4";
+        /// <summary>
+        ///yyyy/MM/dd/
+        ///</summary>
+        public const string yyyy_MM_dd = "5";
         #endregion
     }
 }
