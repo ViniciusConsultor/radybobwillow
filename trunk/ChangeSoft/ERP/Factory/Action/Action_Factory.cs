@@ -40,6 +40,7 @@ namespace Com.GainWinSoft.ERP.Factory.Action
             facStp.IPrcsDate = DateTime.Now;
             facStp.IPrcsTime = DateTime.Now.ToShortTimeString();
             facStp.IUpdCls = "0";
+
             facStp.IConditionCd = "000001";
 
             ITFcConditionStpDao td = ComponentLocator.Instance().Resolve<ITFcConditionStpDao>();
