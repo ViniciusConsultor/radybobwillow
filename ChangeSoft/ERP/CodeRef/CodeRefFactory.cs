@@ -20,6 +20,10 @@ namespace Com.GainWinSoft.ERP.CodeRef
         {
             this.companyCd = companyCd;
             InitializeComponent();
+        }
+
+        private void CodeRefFactory_Load(object sender, EventArgs e)
+        {
             this.doSearch();
         }
 
