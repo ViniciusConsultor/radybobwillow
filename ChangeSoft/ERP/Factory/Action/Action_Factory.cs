@@ -42,9 +42,43 @@ namespace Com.GainWinSoft.ERP.Factory.Action
             facStp.IUpdCls = "0";
 
             facStp.IConditionCd = "000001";
+            //facStp.IDlCurrCd = card.C4_DL_CURR_CD;//取引通貨
+            facStp.IDelWhInCd = "";
+            facStp.IDelWhOutCd = "";
+            facStp.IRjtWhCd = "";
+            facStp.INonAllocLocation = "";
+            facStp.IOsWhCd = "";
+            facStp.IInspectonLocation = "";
+            facStp.IPlanCycCls = CommonUtil.NullToSpace(facStp.IPlanCycCls);
+            facStp.IWkTime = CommonUtil.NullToZero(facStp.IWkTime);
+            facStp.IPoCreateCls = CommonUtil.NullToSpace(facStp.IPoCreateCls);
+            facStp.ISalesCls = CommonUtil.NullToSpace(facStp.ISalesCls);
+            facStp.IPoSlcCls = CommonUtil.NullToSpace(facStp.IPoSlcCls);
+            facStp.IMrpCls = CommonUtil.NullToSpace(facStp.IMrpCls);
+            facStp.ILinkFlg = CommonUtil.NullToSpace(facStp.ILinkFlg);
+            facStp.IShipInvCls = CommonUtil.NullToSpace(facStp.IShipInvCls);
+            facStp.IAcpInvCls = CommonUtil.NullToSpace(facStp.IAcpInvCls);
+            facStp.IAmtRecalcCls = CommonUtil.NullToSpace(facStp.IAmtRecalcCls);
+            facStp.IReserve1 = null;
+            facStp.IReserve2 = null;
+            facStp.IReserve3 = null;
+            facStp.ISys1Cls = " ";
+            facStp.ISys2Cls = " ";
+            facStp.ISys3Cls = " ";
+            facStp.IUsr1Cls = " ";
+            facStp.IUsr2Cls = " ";
+            facStp.IUsr3Cls = " ";
+            facStp.IInqItem = null;
+            //facStp.IObjectId = card.C4_OBJECT_ID;//オブジェクトＩＤ???
+            //facStp.IEntryDate = ServerFunction.GetDateTime();//登録日
+            //facStp.IUpdDate = ServerFunction.GetDateTime();//更新日
+            facStp.IEntryDate = DateTime.Now;
+            facStp.IUpdDate = DateTime.Now;
+            //facStp.IPgId = PE002201PgInfo._PROGRAM_ID; ;//プログラムＩＤ
+            //facStp.IUpdTimestamp = wk_upd_timestamp;//更新タイムスタンプ
 
             ITFcConditionStpDao td = ComponentLocator.Instance().Resolve<ITFcConditionStpDao>();
-            //rtnValue = td.Insert(facStp);
+            rtnValue = td.Insert(facStp);
             rtnValue = true;
 
             return rtnValue;
