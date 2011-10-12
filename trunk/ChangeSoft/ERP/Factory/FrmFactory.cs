@@ -665,11 +665,18 @@ namespace Com.GainWinSoft.ERP.Factory
             CheckSection check = new CheckSection();
             e.IsValid = false;
             this.lblDepartNM.Text = "";
-            TSectionMs vo = check.Check01Vo(this.txtCompany.Text, this.txtDepart.Text);
-            if (vo != null && !String.IsNullOrEmpty(vo.Id.ISectionCd))
+            if (!String.IsNullOrEmpty(this.txtDepart.Text))
+            {
+                TSectionMs vo = check.Check01Vo(this.txtCompany.Text, this.txtDepart.Text);
+                if (vo != null && !String.IsNullOrEmpty(vo.Id.ISectionCd))
+                {
+                    e.IsValid = true;
+                    this.lblDepartNM.Text = vo.ISectionDesc;
+                }
+            }
+            else
             {
                 e.IsValid = true;
-                this.lblDepartNM.Text = vo.ISectionDesc;
             }
         }
 
