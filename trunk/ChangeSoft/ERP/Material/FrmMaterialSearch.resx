@@ -373,7 +373,7 @@
     <value>atxtCustomerCd</value>
   </data>
   <data name="&gt;&gt;atxtCustomerCd.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtCustomerCd.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -703,7 +703,7 @@
     <value>atxtItemType</value>
   </data>
   <data name="&gt;&gt;atxtItemType.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtItemType.Parent" xml:space="preserve">
     <value>tableLayoutPanel7</value>
@@ -838,7 +838,7 @@
     <value>atxtDispItemCd</value>
   </data>
   <data name="&gt;&gt;atxtDispItemCd.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtDispItemCd.Parent" xml:space="preserve">
     <value>tableLayoutPanel10</value>
@@ -934,7 +934,7 @@
     <value>atxtDispItemRev</value>
   </data>
   <data name="&gt;&gt;atxtDispItemRev.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtDispItemRev.Parent" xml:space="preserve">
     <value>tableLayoutPanel11</value>
@@ -1294,7 +1294,7 @@
     <value>atxtMakerCd</value>
   </data>
   <data name="&gt;&gt;atxtMakerCd.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtMakerCd.Parent" xml:space="preserve">
     <value>tableLayoutPanel15</value>
@@ -2260,7 +2260,7 @@
     <value>atxtFactoryCd</value>
   </data>
   <data name="&gt;&gt;atxtFactoryCd.Type" xml:space="preserve">
-    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4298.41790, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4300.40996, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;atxtFactoryCd.Parent" xml:space="preserve">
     <value>tlpG1</value>
