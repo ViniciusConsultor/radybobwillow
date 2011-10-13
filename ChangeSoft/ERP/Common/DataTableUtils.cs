@@ -15,6 +15,7 @@ namespace Com.GainWinSoft.Common
 
             if (list.Count > 0)
 
+            
             {
 
                 PropertyInfo[] propertys = list[0].GetType().GetProperties();
