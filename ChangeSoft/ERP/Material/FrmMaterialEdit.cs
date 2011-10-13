@@ -136,5 +136,15 @@ namespace Com.GainWinSoft.ERP.Material
             cr.ShowDialog(this);
             this.atxtCustomerCd.Focus();
         }
+
+        private void btnSalesPersonHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefPerson cr = new CodeRef.CodeRefPerson(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.atxtSalesPersonCd);
+            cr.AddNameControl(this.lblSalesPersonNm);
+            cr.ShowDialog(this);
+            this.atxtSalesPersonCd.Focus();
+
+        }
     }
 }

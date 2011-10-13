@@ -39,11 +39,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 sb.Append(" where t.i_company_cd=:companyCd");
                 if (dlCd != string.Empty)
                 {
-                    sb.Append(" and  t.i_dl_cd like %:dlCd%");
+                    sb.Append(" and  t.i_dl_cd like ").Append(":dlCd");
                 }
                 if (dlDesc != string.Empty)
                 {
-                    sb.Append(" and  t.i_dl_desc like %:dlDesc%");
+                    sb.Append(" and  t.i_dl_desc like ").Append(":dlDesc");
                 }
                 sb.Append(" order by t.i_dl_cd");
 
@@ -61,11 +61,11 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 query.SetParameter("companyCd", companyCd);
                 if (dlCd != string.Empty)
                 {
-                    query.SetParameter("dlCd", dlCd);
+                    query.SetParameter("dlCd", "%"+dlCd+"%");
                 }
                 if (dlDesc != string.Empty)
                 {
-                    query.SetParameter("dlDesc", dlDesc);
+                    query.SetParameter("dlDesc", "%"+dlDesc+"%");
                 }
 
                 result = query.SetResultTransformer(Transformers.AliasToBean<CCodeRefTradeForMaterialNoAR>()).List<CCodeRefTradeForMaterialNoAR>();

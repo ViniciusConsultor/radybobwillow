@@ -13,45 +13,50 @@ namespace Com.GainWinSoft.ERP.CodeRef
 {
     public partial class CodeRefPerson : Com.GainWinSoft.Common.BaseCodeForm
     {
-        private string[] columnlist = {"ISectionCd", "ISectionNm", "IPersonCd", "IPersonDesc", "IPersonDescKana" };
+        /// <summary>
+        /// GridView显示列
+        /// </summary>
+        private string[] columnlist = {"ISectionCd", "ISectionNm", "IPersonCd", "IPersonDesc" };
         private ResourceManager rm = new ResourceManager(typeof(CodeRefPerson));
 
         private string companyCd="";
 
-
+        /// <summary>
+        /// 构造
+        /// </summary>
+        /// <param name="companyCd"></param>
         public CodeRefPerson(string companyCd)
         {
             this.companyCd = companyCd;
             InitializeComponent();
 
         }
+        #region 事件处理
+        /// <summary>
+        /// 查询画面load初始化gridview
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CodeRefPerson_Load(object sender, EventArgs e)
+        {
+            Init_GridView();
+        }
 
-
+        /// <summary>
+        /// 查询按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSearch_Click(object sender, EventArgs e)
         {
             this.doSearch();
         }
 
-        private void doSearch()
-        {
-            IAction_CodeRefPerson ac = ComponentLocator.Instance().Resolve<IAction_CodeRefPerson>();
-            string sectionCd = this.tddlSection.Selectedvalue.Trim();
-            string personCd = this.atxtPersonCd.Text.Trim() ;
-            string personNm = this.txtPersonNm.Text.Trim();
-
-            DataSet ds = ac.GetPersonDataSet(companyCd,sectionCd,personCd,personNm);
-            if (ds.Tables["CTPersonMsNoAR"].Rows.Count > 0)
-            {
-                this.dataGridView1.DataSource = ds;
-                this.dataGridView1.DataMember = "CTPersonMsNoAR";
-                SetColumnsAlias();
-            }
-            else
-            {
-                Init_GridView();
-            }
-        }
-
+        /// <summary>
+        /// GridView双击
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow dgvr = this.dataGridView1.CurrentRow;
@@ -64,6 +69,49 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.Dispose();
         }
 
+        /// <summary>
+        /// 清空按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.tddlSection.SelectedIndex = 0;
+            this.atxtPersonCd.Text = "";
+            this.txtPersonNm.Text = "";
+            Init_GridView();
+        }
+
+        #endregion
+
+        #region 内部方法
+
+        /// <summary>
+        /// 执行查询,根据画面的查询条件
+        /// </summary>
+        private void doSearch()
+        {
+            IAction_CodeRefPerson ac = ComponentLocator.Instance().Resolve<IAction_CodeRefPerson>();
+            string sectionCd = this.tddlSection.Selectedvalue.Trim();
+            string personCd = this.atxtPersonCd.Text.Trim();
+            string personNm = this.txtPersonNm.Text.Trim();
+
+            DataSet ds = ac.GetPersonDataSet(companyCd, sectionCd, personCd, personNm);
+            if (ds.Tables["CTPersonMsNoAR"].Rows.Count > 0)
+            {
+                this.dataGridView1.DataSource = ds;
+                this.dataGridView1.DataMember = "CTPersonMsNoAR";
+                SetColumnsAlias();
+            }
+            else
+            {
+                Init_GridView();
+            }
+        }
+
+        /// <summary>
+        /// 设置GridVeiw的列名
+        /// </summary>
         private void SetColumnsAlias()
         {
 
@@ -76,16 +124,15 @@ namespace Com.GainWinSoft.ERP.CodeRef
             for (int i = 0; i < columnlist.Length; i++)
             {
                 this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                this.dataGridView1.Columns[columnlist[i]].DisplayIndex = i;
+                this.dataGridView1.Columns[columnlist[i]].HeaderText = rm.GetString(columnlist[i]);
             }
+
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.tddlSection.SelectedIndex = 0;
-            this.atxtPersonCd.Text = "";
-            this.txtPersonNm.Text = "";
-        }
-
+        /// <summary>
+        /// GridView初始化
+        /// </summary>
         private void Init_GridView()
         {
             DataTable dt = new DataTable();
@@ -107,10 +154,6 @@ namespace Com.GainWinSoft.ERP.CodeRef
 
 
         }
-
-        private void CodeRefPerson_Load(object sender, EventArgs e)
-        {
-            Init_GridView();
-        }
+        #endregion
     }
 }

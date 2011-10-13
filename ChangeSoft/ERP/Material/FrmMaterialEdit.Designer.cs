@@ -985,6 +985,7 @@
             resources.ApplyResources(this.btnSalesPersonHelper, "btnSalesPersonHelper");
             this.btnSalesPersonHelper.Name = "btnSalesPersonHelper";
             this.btnSalesPersonHelper.UseVisualStyleBackColor = true;
+            this.btnSalesPersonHelper.Click += new System.EventHandler(this.btnSalesPersonHelper_Click);
             // 
             // atxtSalesPersonCd
             // 
