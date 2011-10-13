@@ -55,12 +55,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 }
                 if (!string.IsNullOrEmpty(personCd))
                 {
-                    sql.AppendLine(" AND a.I_PERSON_CD = :personCd ");
+                    sql.AppendLine(" AND a.I_PERSON_CD LIKE ").Append(":personCd ");
                 }
 
                 if (!string.IsNullOrEmpty(personNm))
                 {
-                    sql.AppendLine(" AND a.I_PERSON_DESC LIKE %:personNm%");
+                    sql.AppendLine(" AND a.I_PERSON_DESC LIKE ").Append(":personNm");
                 }
 
 
@@ -76,12 +76,12 @@ namespace Com.GainWinSoft.ERP.Entity.Dao
                 }
                 if (!string.IsNullOrEmpty(personCd))
                 {
-                    query.SetParameter("personCd", personCd);
+                    query.SetParameter("personCd", "%" + personCd + "%");
                 }
 
                 if (!string.IsNullOrEmpty(personNm))
                 {
-                    query.SetParameter("personNm", personNm);
+                    query.SetParameter("personNm", "%" + personNm + "%");
                 }
 
 

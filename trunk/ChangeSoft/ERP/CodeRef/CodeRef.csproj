@@ -147,6 +147,9 @@
     <EmbeddedResource Include="CodeRefPerson.resx">
       <DependentUpon>CodeRefPerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeRefPerson.zh-CN.resx">
+      <DependentUpon>CodeRefPerson.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CodeRefTradeForMaterial.resx">
       <DependentUpon>CodeRefTradeForMaterial.cs</DependentUpon>
     </EmbeddedResource>

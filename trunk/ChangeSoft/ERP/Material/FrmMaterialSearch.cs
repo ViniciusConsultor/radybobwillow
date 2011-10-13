@@ -481,7 +481,7 @@ namespace Com.GainWinSoft.ERP.Material
             }
             if (currentGroup == 2 && firstGroup == 2)
             {
-                this.commonToolStrip1.AddEnabled = true;
+                this.commonToolStrip1.AddEnabled = false;
                 this.commonToolStrip1.GobackEnabled = false;
                 this.commonToolStrip1.UpdateEnabled = false;
                 this.commonToolStrip1.DeleteEnabled = false;

@@ -15,13 +15,18 @@ namespace Com.GainWinSoft.ERP.CodeRef
     {
         private string[] columnlist = { "IFacCd", "ICountryCd", "IFacArgDesc", "IFacDesc", "IFacDescKana", "IAddress1", "IAddress2", "IAddress3" };
         private string companyCd;
-
+        private ResourceManager rm = new ResourceManager(typeof(CodeRefFactory));
+        /// <summary>
+        /// 构造体
+        /// </summary>
+        /// <param name="companyCd"></param>
         public CodeRefFactory(string companyCd)
         {
             this.companyCd = companyCd;
             InitializeComponent();
         }
 
+        #region 事件
         private void CodeRefFactory_Load(object sender, EventArgs e)
         {
             this.doSearch();
@@ -32,14 +37,15 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.doSearch();
         }
 
-        private void doSearch()
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
-            DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtFacCd.Text, this.txtFacDesc.Text);
-            this.dataGridView1.DataSource = ds;
-            this.dataGridView1.DataMember = "CCodeRefFactory";
-            SetColumnsAlias();
+            this.txtFacCd.Text = "";
+            this.txtFacDesc.Text = "";
+            Init_GridView();
         }
+
+
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -52,33 +58,64 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.Close();
             this.Dispose();
         }
+        #endregion
+
+        #region 内部方法
+        private void doSearch()
+        {
+            IAction_CodeRefFactory ac = ComponentLocator.Instance().Resolve<IAction_CodeRefFactory>();
+            DataSet ds = ac.GetFactoryDataSet(companyCd, this.txtFacCd.Text, this.txtFacDesc.Text);
+            if (ds.Tables["CCodeRefFactory"].Rows.Count > 0)
+            {
+                this.dataGridView1.DataSource = ds;
+                this.dataGridView1.DataMember = "CCodeRefFactory";
+                SetColumnsAlias();
+            }
+            else
+            {
+                Init_GridView();
+            }
+
+        }
 
         private void SetColumnsAlias()
         {
-            ResourceManager rm = new ResourceManager(typeof(CodeRefFactory));
-            foreach (DataGridViewColumn col in this.dataGridView1.Columns)
-            {
-                col.HeaderText = rm.GetString(col.Name);
-            }
 
             for (int i = 0; i < this.dataGridView1.Columns.Count; i++)
             {
                 this.dataGridView1.Columns[i].Visible = false;
             }
 
-            if (this.dataGridView1.RowCount > 0)
+            for (int i = 0; i < columnlist.Length; i++)
             {
-                for (int i = 0; i < columnlist.Length; i++)
-                {
-                    this.dataGridView1.Columns[columnlist[i]].Visible = true;
-                }
+                this.dataGridView1.Columns[columnlist[i]].Visible = true;
+                this.dataGridView1.Columns[columnlist[i]].DisplayIndex = i;
+                this.dataGridView1.Columns[columnlist[i]].HeaderText = rm.GetString(columnlist[i]);
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void Init_GridView()
         {
-            this.txtFacCd.Text = "";
-            this.txtFacDesc.Text = "";
+            DataTable dt = new DataTable();
+
+            foreach (string key in columnlist)
+            {
+                DataColumn col = new DataColumn();
+                col.ColumnName = key;
+                dt.Columns.Add(col);
+            }
+
+            this.dataGridView1.DataSource = dt;
+
+            foreach (string key in columnlist)
+            {
+                this.dataGridView1.Columns[key].HeaderText = rm.GetString(key);
+
+            }
+
+
         }
+        #endregion
+
     }
 }
