@@ -142,6 +142,7 @@
     <Compile Include="Dao\StoredInfo\STORED_GET_ITEMID.cs" />
     <Compile Include="Dao\StoredInfo\STORED_GET_OBJECTID.cs" />
     <Compile Include="Dao\StoredInfo\STORED_GET_SYSDATE.cs" />
+    <Compile Include="Dao\StoredInfo\STORED_PE0022P.cs" />
     <Compile Include="Dao\StoredInfo\STORED_PE0025P.cs" />
     <Compile Include="Dao\StoredInfo\STORED_SAIBAN_RTN_CHAR.cs" />
     <Compile Include="Dao\StoredProcedureExecDaoOracleImp.cs" />
