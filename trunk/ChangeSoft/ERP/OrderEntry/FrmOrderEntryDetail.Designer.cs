@@ -139,7 +139,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.numericTextBox4 = new AMS.TextBox.NumericTextBox();
             this.clsDetailCodeRef_01 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
-            this.conditionRadioButton1 = new Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton();
             this.clsDetailCodeRef_AC = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.clsDetailCodeRef_AD = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.clsDetailCodeRefDropDownList3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
@@ -167,25 +166,26 @@
             this.lblPanelBase.Margin = new System.Windows.Forms.Padding(0);
             this.lblPanelBase.Name = "lblPanelBase";
             this.lblPanelBase.RowCount = 2;
-            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 508F));
             this.lblPanelBase.Size = new System.Drawing.Size(792, 573);
             this.lblPanelBase.TabIndex = 0;
             // 
             // xpLabel1
             // 
-            this.xpLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(191)))), ((int)(((byte)(236)))));
-            this.xpLabel1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(191)))), ((int)(((byte)(236)))));
-            this.xpLabel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(102)))), ((int)(((byte)(187)))));
+            this.xpLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.xpLabel1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.xpLabel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(150)))), ((int)(((byte)(21)))));
             this.xpLabel1.BackColorScheme = xpLabel.BackColorSchemeType.Office2003Blue;
             this.xpLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xpLabel1.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.xpLabel1.Location = new System.Drawing.Point(3, 3);
             this.xpLabel1.Name = "xpLabel1";
             this.xpLabel1.ShowShadow = false;
-            this.xpLabel1.Size = new System.Drawing.Size(786, 20);
+            this.xpLabel1.Size = new System.Drawing.Size(786, 24);
             this.xpLabel1.TabIndex = 0;
-            this.xpLabel1.Text = "xpLabel1";
-            this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignLeftMiddle;
+            this.xpLabel1.Text = "登陸模式";
+            this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignMiddleMiddle;
             // 
             // tblPanelGrp
             // 
@@ -194,21 +194,15 @@
             this.tblPanelGrp.Controls.Add(this.tblPanelG1, 0, 1);
             this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
             this.tblPanelGrp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblPanelGrp.Location = new System.Drawing.Point(0, 26);
+            this.tblPanelGrp.Location = new System.Drawing.Point(0, 30);
             this.tblPanelGrp.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelGrp.Name = "tblPanelGrp";
             this.tblPanelGrp.RowCount = 4;
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 495F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblPanelGrp.Size = new System.Drawing.Size(792, 547);
+            this.tblPanelGrp.Size = new System.Drawing.Size(792, 543);
             this.tblPanelGrp.TabIndex = 1;
             // 
             // tblPanelG1
@@ -229,7 +223,7 @@
             this.tblPanelG1.Name = "tblPanelG1";
             this.tblPanelG1.RowCount = 1;
             this.tblPanelG1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tblPanelG1.Size = new System.Drawing.Size(792, 27);
+            this.tblPanelG1.Size = new System.Drawing.Size(792, 25);
             this.tblPanelG1.TabIndex = 0;
             // 
             // textBox1
@@ -288,8 +282,8 @@
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
@@ -395,7 +389,6 @@
             this.tblPanelG2.Controls.Add(this.label12, 0, 0);
             this.tblPanelG2.Controls.Add(this.numericTextBox4, 13, 1);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRef_01, 2, 3);
-            this.tblPanelG2.Controls.Add(this.conditionRadioButton1, 2, 6);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRef_AC, 2, 10);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRef_AD, 6, 10);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList3, 12, 10);
@@ -407,7 +400,7 @@
             this.tblPanelG2.Controls.Add(this.conditionDropDownList2, 12, 15);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList4, 2, 16);
             this.tblPanelG2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblPanelG2.Location = new System.Drawing.Point(0, 30);
+            this.tblPanelG2.Location = new System.Drawing.Point(0, 28);
             this.tblPanelG2.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelG2.Name = "tblPanelG2";
             this.tblPanelG2.RowCount = 20;
@@ -552,10 +545,10 @@
             this.tblPanelG2.SetColumnSpan(this.label60, 3);
             this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label60.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label60.Location = new System.Drawing.Point(578, 419);
+            this.label60.Location = new System.Drawing.Point(581, 419);
             this.label60.Margin = new System.Windows.Forms.Padding(3);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(147, 19);
+            this.label60.Size = new System.Drawing.Size(144, 19);
             this.label60.TabIndex = 143;
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -566,9 +559,8 @@
             this.button6.Location = new System.Drawing.Point(550, 417);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(24, 23);
+            this.button6.Size = new System.Drawing.Size(27, 23);
             this.button6.TabIndex = 142;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // textBox22
@@ -630,7 +622,6 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(27, 23);
             this.button5.TabIndex = 137;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // textBox21
@@ -717,7 +708,7 @@
             this.label52.Location = new System.Drawing.Point(511, 364);
             this.label52.Margin = new System.Windows.Forms.Padding(0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(64, 29);
+            this.label52.Size = new System.Drawing.Size(67, 29);
             this.label52.TabIndex = 128;
             this.label52.Text = "货币";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -848,7 +839,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(27, 22);
             this.button3.TabIndex = 117;
-            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // textBox19
@@ -886,10 +876,10 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(575, 315);
+            this.label5.Location = new System.Drawing.Point(578, 315);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 25);
+            this.label5.Size = new System.Drawing.Size(53, 25);
             this.label5.TabIndex = 113;
             this.label5.Text = "已交货";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -997,10 +987,10 @@
             this.label39.AutoSize = true;
             this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label39.Location = new System.Drawing.Point(575, 266);
+            this.label39.Location = new System.Drawing.Point(578, 266);
             this.label39.Margin = new System.Windows.Forms.Padding(0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(56, 27);
+            this.label39.Size = new System.Drawing.Size(53, 27);
             this.label39.TabIndex = 100;
             this.label39.Text = "交货日";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1054,7 +1044,7 @@
             this.label35.Location = new System.Drawing.Point(511, 240);
             this.label35.Margin = new System.Windows.Forms.Padding(0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(64, 26);
+            this.label35.Size = new System.Drawing.Size(67, 26);
             this.label35.TabIndex = 92;
             this.label35.Text = "机械编号";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1204,7 +1194,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(27, 21);
             this.button2.TabIndex = 77;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label27
@@ -1334,7 +1323,7 @@
             this.clsDetailCodeRefDropDownList2.ClsCd = "5G";
             this.tblPanelG2.SetColumnSpan(this.clsDetailCodeRefDropDownList2, 3);
             this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
-            this.clsDetailCodeRefDropDownList2.Location = new System.Drawing.Point(578, 78);
+            this.clsDetailCodeRefDropDownList2.Location = new System.Drawing.Point(581, 78);
             this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
             this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
             this.clsDetailCodeRefDropDownList2.Selectedname = null;
@@ -1352,7 +1341,7 @@
             this.label21.Location = new System.Drawing.Point(511, 75);
             this.label21.Margin = new System.Windows.Forms.Padding(0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(64, 23);
+            this.label21.Size = new System.Drawing.Size(67, 23);
             this.label21.TabIndex = 62;
             this.label21.Text = "送货单";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1406,9 +1395,8 @@
             this.button1.Location = new System.Drawing.Point(550, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 24);
+            this.button1.Size = new System.Drawing.Size(27, 24);
             this.button1.TabIndex = 57;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label17
@@ -1418,10 +1406,10 @@
             this.tblPanelG2.SetColumnSpan(this.label17, 4);
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(578, 52);
+            this.label17.Location = new System.Drawing.Point(581, 52);
             this.label17.Margin = new System.Windows.Forms.Padding(3);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(211, 20);
+            this.label17.Size = new System.Drawing.Size(208, 20);
             this.label17.TabIndex = 56;
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1470,7 +1458,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(27, 24);
             this.button4.TabIndex = 52;
-            this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox5
@@ -1512,10 +1499,10 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(575, 25);
+            this.label3.Location = new System.Drawing.Point(578, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 24);
+            this.label3.Size = new System.Drawing.Size(53, 24);
             this.label3.TabIndex = 47;
             this.label3.Text = "运输LT";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1693,17 +1680,6 @@
             this.clsDetailCodeRef_01.Size = new System.Drawing.Size(102, 17);
             this.clsDetailCodeRef_01.TabIndex = 59;
             // 
-            // conditionRadioButton1
-            // 
-            this.conditionRadioButton1.Checkedname = "";
-            this.conditionRadioButton1.Checkedvalue = "";
-            this.conditionRadioButton1.Conditionname = null;
-            this.conditionRadioButton1.Defaultselectedindex = 0;
-            this.conditionRadioButton1.Location = new System.Drawing.Point(127, 150);
-            this.conditionRadioButton1.Name = "conditionRadioButton1";
-            this.conditionRadioButton1.Size = new System.Drawing.Size(102, 18);
-            this.conditionRadioButton1.TabIndex = 73;
-            // 
             // clsDetailCodeRef_AC
             // 
             this.clsDetailCodeRef_AC.Autoaddblankitem = false;
@@ -1741,13 +1717,13 @@
             this.tblPanelG2.SetColumnSpan(this.clsDetailCodeRefDropDownList3, 2);
             this.clsDetailCodeRefDropDownList3.Defaultselectedindex = 0;
             this.clsDetailCodeRefDropDownList3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsDetailCodeRefDropDownList3.Location = new System.Drawing.Point(578, 243);
+            this.clsDetailCodeRefDropDownList3.Location = new System.Drawing.Point(581, 243);
             this.clsDetailCodeRefDropDownList3.Name = "clsDetailCodeRefDropDownList3";
             this.clsDetailCodeRefDropDownList3.Selectedindex = -1;
             this.clsDetailCodeRefDropDownList3.Selectedname = null;
             this.clsDetailCodeRefDropDownList3.Selectedvalue = null;
             this.clsDetailCodeRefDropDownList3.ShowNameDesc = false;
-            this.clsDetailCodeRefDropDownList3.Size = new System.Drawing.Size(90, 20);
+            this.clsDetailCodeRefDropDownList3.Size = new System.Drawing.Size(87, 20);
             this.clsDetailCodeRefDropDownList3.TabIndex = 93;
             // 
             // dateTextBox1
@@ -1801,7 +1777,7 @@
             // 
             this.conditionDropDownList1.Autoaddblankitem = false;
             this.tblPanelG2.SetColumnSpan(this.conditionDropDownList1, 2);
-            this.conditionDropDownList1.Conditionname = null;
+            this.conditionDropDownList1.Conditionname = "ExchangeCurr";
             this.conditionDropDownList1.Defaultselectedindex = 0;
             this.conditionDropDownList1.Location = new System.Drawing.Point(307, 318);
             this.conditionDropDownList1.Name = "conditionDropDownList1";
@@ -1816,12 +1792,12 @@
             this.conditionDropDownList2.Autoaddblankitem = false;
             this.conditionDropDownList2.Conditionname = "ExchangeCurr";
             this.conditionDropDownList2.Defaultselectedindex = 0;
-            this.conditionDropDownList2.Location = new System.Drawing.Point(578, 367);
+            this.conditionDropDownList2.Location = new System.Drawing.Point(581, 367);
             this.conditionDropDownList2.Name = "conditionDropDownList2";
             this.conditionDropDownList2.Selectedindex = -1;
             this.conditionDropDownList2.Selectedname = null;
             this.conditionDropDownList2.Selectedvalue = null;
-            this.conditionDropDownList2.Size = new System.Drawing.Size(50, 20);
+            this.conditionDropDownList2.Size = new System.Drawing.Size(47, 20);
             this.conditionDropDownList2.TabIndex = 129;
             // 
             // clsDetailCodeRefDropDownList4
@@ -1847,6 +1823,7 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "FrmOrderEntryDetail";
             this.Text = "订单详细";
+            this.Load += new System.EventHandler(this.FrmFactory_Load);
             this.lblPanelBase.ResumeLayout(false);
             this.tblPanelGrp.ResumeLayout(false);
             this.tblPanelG1.ResumeLayout(false);
@@ -1900,7 +1877,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label24;
-        private Com.GainWinSoft.Common.Control.ConditionRadioButton.ConditionRadioButton conditionRadioButton1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox textBox9;
