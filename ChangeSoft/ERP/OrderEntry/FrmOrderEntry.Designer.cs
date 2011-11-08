@@ -88,12 +88,12 @@
             this.lblOrderNo = new System.Windows.Forms.Label();
             this.lblOderNoStar = new System.Windows.Forms.Label();
             this.dateTextBox1 = new AMS.TextBox.DateTextBox();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.button2 = new System.Windows.Forms.Button();
             this.numericTextBox1 = new AMS.TextBox.NumericTextBox();
             this.numericTextBox2 = new AMS.TextBox.NumericTextBox();
             this.numericTextBox3 = new AMS.TextBox.NumericTextBox();
             this.tblPanelG3 = new System.Windows.Forms.TableLayoutPanel();
-            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.pagerGridView1 = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
@@ -105,7 +105,7 @@
             // tblPanelBase
             // 
             this.tblPanelBase.ColumnCount = 1;
-            this.tblPanelBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblPanelBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblPanelBase.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tblPanelBase.Controls.Add(this.tblPanelGrp, 0, 1);
             this.tblPanelBase.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -113,7 +113,7 @@
             this.tblPanelBase.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelBase.Name = "tblPanelBase";
             this.tblPanelBase.RowCount = 2;
-            this.tblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 532F));
             this.tblPanelBase.Size = new System.Drawing.Size(792, 573);
             this.tblPanelBase.TabIndex = 0;
@@ -123,6 +123,8 @@
             this.commonToolStrip1.AddEnabled = true;
             this.commonToolStrip1.AddVisible = true;
             this.commonToolStrip1.AutoSize = true;
+            this.commonToolStrip1.CleargroupEnabled = true;
+            this.commonToolStrip1.CleargroupVisible = true;
             this.commonToolStrip1.CopyEnabled = true;
             this.commonToolStrip1.CopyVisible = true;
             this.commonToolStrip1.CsvEnabled = true;
@@ -150,7 +152,7 @@
             this.commonToolStrip1.ReportVisible = true;
             this.commonToolStrip1.SaveEnabled = true;
             this.commonToolStrip1.SaveVisible = true;
-            this.commonToolStrip1.Size = new System.Drawing.Size(792, 41);
+            this.commonToolStrip1.Size = new System.Drawing.Size(792, 35);
             this.commonToolStrip1.TabIndex = 0;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
@@ -163,7 +165,7 @@
             this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
             this.tblPanelGrp.Controls.Add(this.tblPanelG3, 0, 3);
             this.tblPanelGrp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblPanelGrp.Location = new System.Drawing.Point(0, 41);
+            this.tblPanelGrp.Location = new System.Drawing.Point(0, 35);
             this.tblPanelGrp.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelGrp.Name = "tblPanelGrp";
             this.tblPanelGrp.RowCount = 4;
@@ -171,7 +173,7 @@
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 331F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 145F));
-            this.tblPanelGrp.Size = new System.Drawing.Size(792, 532);
+            this.tblPanelGrp.Size = new System.Drawing.Size(792, 538);
             this.tblPanelGrp.TabIndex = 1;
             // 
             // lblPanelG1
@@ -221,7 +223,6 @@
             this.btnFacHelper.Name = "btnFacHelper";
             this.btnFacHelper.Size = new System.Drawing.Size(29, 25);
             this.btnFacHelper.TabIndex = 6;
-            this.btnFacHelper.Text = "button1";
             this.btnFacHelper.UseVisualStyleBackColor = true;
             // 
             // txtFacCd
@@ -260,20 +261,21 @@
             // 
             // xpLabel1
             // 
-            this.xpLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(191)))), ((int)(((byte)(236)))));
-            this.xpLabel1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(191)))), ((int)(((byte)(236)))));
-            this.xpLabel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(102)))), ((int)(((byte)(187)))));
+            this.xpLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.xpLabel1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(230)))), ((int)(((byte)(148)))));
+            this.xpLabel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(150)))), ((int)(((byte)(21)))));
             this.xpLabel1.BackColorScheme = xpLabel.BackColorSchemeType.Office2003Blue;
             this.lblPanelG1.SetColumnSpan(this.xpLabel1, 6);
             this.xpLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xpLabel1.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.xpLabel1.Location = new System.Drawing.Point(0, 0);
             this.xpLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.xpLabel1.Name = "xpLabel1";
             this.xpLabel1.ShowShadow = false;
             this.xpLabel1.Size = new System.Drawing.Size(792, 28);
             this.xpLabel1.TabIndex = 0;
-            this.xpLabel1.Text = "xpLabel1";
-            this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignLeftMiddle;
+            this.xpLabel1.Text = "添加模式";
+            this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignMiddleMiddle;
             // 
             // tblPanelG2
             // 
@@ -429,7 +431,6 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(28, 21);
             this.button7.TabIndex = 54;
-            this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -441,7 +442,6 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(28, 24);
             this.button6.TabIndex = 53;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -453,7 +453,6 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(28, 18);
             this.button5.TabIndex = 52;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -465,7 +464,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(28, 24);
             this.button4.TabIndex = 51;
-            this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox9
@@ -744,7 +742,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(28, 24);
             this.button3.TabIndex = 25;
-            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // textBox4
@@ -892,7 +889,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 24);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // txtOrderNo
@@ -933,14 +929,28 @@
             // 
             this.dateTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTextBox1.Flags = 0;
-            this.dateTextBox1.Location = new System.Drawing.Point(125, 26);
-            this.dateTextBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.dateTextBox1.Location = new System.Drawing.Point(128, 29);
             this.dateTextBox1.Name = "dateTextBox1";
             this.dateTextBox1.RangeMax = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTextBox1.RangeMin = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTextBox1.Size = new System.Drawing.Size(110, 19);
+            this.dateTextBox1.Size = new System.Drawing.Size(104, 19);
             this.dateTextBox1.TabIndex = 14;
             this.dateTextBox1.Text = "09/22/2011";
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "A8";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList1.Location = new System.Drawing.Point(339, 26);
+            this.clsDetailCodeRefDropDownList1.Margin = new System.Windows.Forms.Padding(0);
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList1.Size = new System.Drawing.Size(104, 20);
+            this.clsDetailCodeRefDropDownList1.TabIndex = 15;
             // 
             // button2
             // 
@@ -951,7 +961,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(28, 22);
             this.button2.TabIndex = 17;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // numericTextBox1
@@ -1016,23 +1025,8 @@
             this.tblPanelG3.Name = "tblPanelG3";
             this.tblPanelG3.RowCount = 1;
             this.tblPanelG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblPanelG3.Size = new System.Drawing.Size(792, 145);
+            this.tblPanelG3.Size = new System.Drawing.Size(792, 151);
             this.tblPanelG3.TabIndex = 2;
-            // 
-            // clsDetailCodeRefDropDownList1
-            // 
-            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
-            this.clsDetailCodeRefDropDownList1.ClsCd = "A8";
-            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
-            this.clsDetailCodeRefDropDownList1.Location = new System.Drawing.Point(339, 26);
-            this.clsDetailCodeRefDropDownList1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
-            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
-            this.clsDetailCodeRefDropDownList1.Selectedname = null;
-            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
-            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
-            this.clsDetailCodeRefDropDownList1.Size = new System.Drawing.Size(104, 20);
-            this.clsDetailCodeRefDropDownList1.TabIndex = 15;
             // 
             // pagerGridView1
             // 
@@ -1044,7 +1038,7 @@
             this.pagerGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.pagerGridView1.Name = "pagerGridView1";
             this.pagerGridView1.Pagerhelper = null;
-            this.pagerGridView1.Size = new System.Drawing.Size(792, 145);
+            this.pagerGridView1.Size = new System.Drawing.Size(792, 151);
             this.pagerGridView1.TabIndex = 0;
             // 
             // FrmOrderEntry
@@ -1056,6 +1050,7 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "FrmOrderEntry";
             this.Text = "订单输入";
+            this.Load += new System.EventHandler(this.FrmFactory_Load);
             this.tblPanelBase.ResumeLayout(false);
             this.tblPanelBase.PerformLayout();
             this.tblPanelGrp.ResumeLayout(false);
