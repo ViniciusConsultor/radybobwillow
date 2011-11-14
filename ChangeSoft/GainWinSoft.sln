@@ -56,6 +56,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportCenter", "ERP\ReportC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeLib", "ERP\BarcodeLib\BarcodeLib.csproj", "{F8646414-0C9C-49BB-9DA3-3923BF78A398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xOrderEntry", "ERP\XOrderEntry\xOrderEntry.csproj", "{E28E721D-1F0D-426F-9EF3-A2EE18460780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryEntry", "ERP\DeliveryEntry\DeliveryEntry.csproj", "{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -226,6 +230,18 @@ Global
 		{F8646414-0C9C-49BB-9DA3-3923BF78A398}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F8646414-0C9C-49BB-9DA3-3923BF78A398}.Release|x86.ActiveCfg = Release|x86
 		{F8646414-0C9C-49BB-9DA3-3923BF78A398}.Release|x86.Build.0 = Release|x86
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28E721D-1F0D-426F-9EF3-A2EE18460780}.Release|x86.ActiveCfg = Release|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B70D7D3-5188-4355-A5F3-2FA67E3A17D9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
