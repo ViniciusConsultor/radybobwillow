@@ -119,6 +119,10 @@
             this.label51 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.clsDetailCodeRefDropDownList1 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRefDropDownList2 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRefDropDownList3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.clsDetailCodeRefDropDownList4 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.tlpBase.SuspendLayout();
             this.tblG1.SuspendLayout();
             this.tblG2.SuspendLayout();
@@ -261,11 +265,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(103, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(11, 31);
+            this.label1.Size = new System.Drawing.Size(12, 31);
             this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
+            this.label1.Text = "*";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -290,7 +297,7 @@
             this.tblG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.tblG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tblG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tblG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tblG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
             this.tblG2.Controls.Add(this.conditionRadioButton1, 2, 0);
             this.tblG2.Controls.Add(this.label3, 4, 0);
             this.tblG2.Controls.Add(this.alphanumericTextBox1, 5, 0);
@@ -300,7 +307,7 @@
             this.tblG2.Margin = new System.Windows.Forms.Padding(0);
             this.tblG2.Name = "tblG2";
             this.tblG2.RowCount = 1;
-            this.tblG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tblG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tblG2.Size = new System.Drawing.Size(792, 31);
             this.tblG2.TabIndex = 2;
             // 
@@ -379,8 +386,8 @@
             this.tblG3.ColumnCount = 13;
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
@@ -389,19 +396,20 @@
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tblG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tblG3.Controls.Add(this.label4, 0, 0);
             this.tblG3.Controls.Add(this.label5, 4, 0);
             this.tblG3.Controls.Add(this.alphanumericTextBox2, 5, 0);
             this.tblG3.Controls.Add(this.label6, 7, 0);
             this.tblG3.Controls.Add(this.alphanumericTextBox3, 8, 0);
             this.tblG3.Controls.Add(this.button2, 9, 0);
+            this.tblG3.Controls.Add(this.clsDetailCodeRefDropDownList1, 2, 0);
             this.tblG3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblG3.Location = new System.Drawing.Point(0, 130);
             this.tblG3.Margin = new System.Windows.Forms.Padding(0);
             this.tblG3.Name = "tblG3";
             this.tblG3.RowCount = 1;
-            this.tblG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tblG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tblG3.Size = new System.Drawing.Size(792, 31);
             this.tblG3.TabIndex = 4;
             // 
@@ -505,10 +513,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label8, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 7, 0);
@@ -577,6 +585,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label51, 6, 14);
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 7, 13);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 7, 14);
+            this.tableLayoutPanel1.Controls.Add(this.clsDetailCodeRefDropDownList2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.clsDetailCodeRefDropDownList3, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.clsDetailCodeRefDropDownList4, 8, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 161);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -670,13 +681,13 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableLayoutPanel1.SetColumnSpan(this.label11, 3);
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Location = new System.Drawing.Point(260, 26);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(207, 26);
             this.label11.TabIndex = 5;
-            this.label11.Text = "label11";
             // 
             // label12
             // 
@@ -724,14 +735,14 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableLayoutPanel1.SetColumnSpan(this.label14, 3);
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Location = new System.Drawing.Point(260, 52);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(207, 26);
             this.label14.TabIndex = 9;
-            this.label14.Text = "label14";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
             // 
@@ -788,9 +799,9 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(607, 78);
+            this.label17.Location = new System.Drawing.Point(605, 78);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 26);
+            this.label17.Size = new System.Drawing.Size(64, 26);
             this.label17.TabIndex = 14;
             this.label17.Text = "时刻";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -908,12 +919,12 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Location = new System.Drawing.Point(260, 130);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(82, 26);
             this.label22.TabIndex = 24;
-            this.label22.Text = "label22";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // alphanumericTextBox8
@@ -941,7 +952,7 @@
             this.button4.Location = new System.Drawing.Point(570, 130);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(34, 23);
+            this.button4.Size = new System.Drawing.Size(32, 23);
             this.button4.TabIndex = 26;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -949,11 +960,12 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableLayoutPanel1.SetColumnSpan(this.label23, 2);
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(607, 130);
+            this.label23.Location = new System.Drawing.Point(605, 130);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 26);
+            this.label23.Size = new System.Drawing.Size(107, 26);
             this.label23.TabIndex = 27;
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1035,7 +1047,7 @@
             this.label28.Size = new System.Drawing.Size(136, 20);
             this.label28.TabIndex = 33;
             this.label28.Text = "label28";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label29
             // 
@@ -1152,9 +1164,9 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(607, 202);
+            this.label34.Location = new System.Drawing.Point(605, 202);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 26);
+            this.label34.Size = new System.Drawing.Size(64, 26);
             this.label34.TabIndex = 42;
             this.label34.Text = "预支数";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1313,7 +1325,7 @@
             this.numericTextBox5.Prefix = "";
             this.numericTextBox5.RangeMax = 1.7976931348623157E+308;
             this.numericTextBox5.RangeMin = -1.7976931348623157E+308;
-            this.numericTextBox5.Size = new System.Drawing.Size(28, 19);
+            this.numericTextBox5.Size = new System.Drawing.Size(26, 19);
             this.numericTextBox5.TabIndex = 54;
             this.numericTextBox5.Text = "5";
             // 
@@ -1331,56 +1343,68 @@
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label44.Location = new System.Drawing.Point(260, 274);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(41, 12);
+            this.label44.Size = new System.Drawing.Size(82, 23);
             this.label44.TabIndex = 56;
             this.label44.Text = "税区分";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label45
             // 
             this.label45.AutoSize = true;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label45.Location = new System.Drawing.Point(473, 274);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(53, 12);
+            this.label45.Size = new System.Drawing.Size(94, 23);
             this.label45.TabIndex = 57;
             this.label45.Text = "课税区分";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label46.Location = new System.Drawing.Point(3, 297);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(53, 12);
+            this.label46.Size = new System.Drawing.Size(94, 24);
             this.label46.TabIndex = 58;
             this.label46.Text = "单价区分";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
+            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label47.Location = new System.Drawing.Point(260, 297);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(53, 12);
+            this.label47.Size = new System.Drawing.Size(82, 24);
             this.label47.TabIndex = 59;
             this.label47.Text = "完成区分";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label48
             // 
             this.label48.AutoSize = true;
+            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label48.Location = new System.Drawing.Point(3, 321);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(41, 12);
+            this.label48.Size = new System.Drawing.Size(94, 25);
             this.label48.TabIndex = 60;
-            this.label48.Text = "label48";
+            this.label48.Text = "说明1";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label49
             // 
             this.label49.AutoSize = true;
+            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label49.Location = new System.Drawing.Point(3, 346);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(41, 12);
+            this.label49.Size = new System.Drawing.Size(94, 28);
             this.label49.TabIndex = 61;
-            this.label49.Text = "label49";
+            this.label49.Text = "说明3";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1
             // 
@@ -1403,38 +1427,104 @@
             // label50
             // 
             this.label50.AutoSize = true;
+            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label50.Location = new System.Drawing.Point(363, 321);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(41, 12);
+            this.label50.Size = new System.Drawing.Size(104, 25);
             this.label50.TabIndex = 64;
-            this.label50.Text = "label50";
+            this.label50.Text = "说明2";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
+            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label51.Location = new System.Drawing.Point(363, 346);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(41, 12);
+            this.label51.Size = new System.Drawing.Size(104, 28);
             this.label51.TabIndex = 65;
-            this.label51.Text = "label51";
+            this.label51.Text = "说明4";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox3
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 3);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 4);
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox3.Location = new System.Drawing.Point(473, 324);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 19);
+            this.textBox3.Size = new System.Drawing.Size(239, 19);
             this.textBox3.TabIndex = 66;
             // 
             // textBox4
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 3);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 4);
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox4.Location = new System.Drawing.Point(473, 349);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 19);
+            this.textBox4.Size = new System.Drawing.Size(239, 19);
             this.textBox4.TabIndex = 67;
+            // 
+            // clsDetailCodeRefDropDownList1
+            // 
+            this.clsDetailCodeRefDropDownList1.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList1.ClsCd = "02";
+            this.clsDetailCodeRefDropDownList1.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clsDetailCodeRefDropDownList1.Location = new System.Drawing.Point(118, 3);
+            this.clsDetailCodeRefDropDownList1.Name = "clsDetailCodeRefDropDownList1";
+            this.clsDetailCodeRefDropDownList1.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList1.Selectedname = null;
+            this.clsDetailCodeRefDropDownList1.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList1.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList1.Size = new System.Drawing.Size(136, 25);
+            this.clsDetailCodeRefDropDownList1.TabIndex = 6;
+            // 
+            // clsDetailCodeRefDropDownList2
+            // 
+            this.clsDetailCodeRefDropDownList2.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList2.ClsCd = "01";
+            this.tableLayoutPanel1.SetColumnSpan(this.clsDetailCodeRefDropDownList2, 2);
+            this.clsDetailCodeRefDropDownList2.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clsDetailCodeRefDropDownList2.Location = new System.Drawing.Point(118, 3);
+            this.clsDetailCodeRefDropDownList2.Name = "clsDetailCodeRefDropDownList2";
+            this.clsDetailCodeRefDropDownList2.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList2.Selectedname = null;
+            this.clsDetailCodeRefDropDownList2.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList2.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList2.Size = new System.Drawing.Size(136, 20);
+            this.clsDetailCodeRefDropDownList2.TabIndex = 68;
+            // 
+            // clsDetailCodeRefDropDownList3
+            // 
+            this.clsDetailCodeRefDropDownList3.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList3.ClsCd = "9J";
+            this.clsDetailCodeRefDropDownList3.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList3.Location = new System.Drawing.Point(363, 3);
+            this.clsDetailCodeRefDropDownList3.Name = "clsDetailCodeRefDropDownList3";
+            this.clsDetailCodeRefDropDownList3.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList3.Selectedname = null;
+            this.clsDetailCodeRefDropDownList3.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList3.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList3.Size = new System.Drawing.Size(104, 20);
+            this.clsDetailCodeRefDropDownList3.TabIndex = 69;
+            // 
+            // clsDetailCodeRefDropDownList4
+            // 
+            this.clsDetailCodeRefDropDownList4.Autoaddblankitem = false;
+            this.clsDetailCodeRefDropDownList4.ClsCd = null;
+            this.tableLayoutPanel1.SetColumnSpan(this.clsDetailCodeRefDropDownList4, 2);
+            this.clsDetailCodeRefDropDownList4.Defaultselectedindex = 0;
+            this.clsDetailCodeRefDropDownList4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clsDetailCodeRefDropDownList4.Location = new System.Drawing.Point(570, 26);
+            this.clsDetailCodeRefDropDownList4.Margin = new System.Windows.Forms.Padding(0);
+            this.clsDetailCodeRefDropDownList4.Name = "clsDetailCodeRefDropDownList4";
+            this.clsDetailCodeRefDropDownList4.Selectedindex = -1;
+            this.clsDetailCodeRefDropDownList4.Selectedname = null;
+            this.clsDetailCodeRefDropDownList4.Selectedvalue = null;
+            this.clsDetailCodeRefDropDownList4.ShowNameDesc = false;
+            this.clsDetailCodeRefDropDownList4.Size = new System.Drawing.Size(102, 26);
+            this.clsDetailCodeRefDropDownList4.TabIndex = 70;
             // 
             // FrmDeliveryEntry
             // 
@@ -1551,5 +1641,9 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList1;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList2;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList3;
+        private ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList clsDetailCodeRefDropDownList4;
     }
 }
