@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.xpLabel1 = new xpLabel.xpLabel();
             this.tblPanelGrp = new System.Windows.Forms.TableLayoutPanel();
@@ -37,11 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblOrderNo = new System.Windows.Forms.Label();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -50,7 +46,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -62,7 +57,6 @@
             this.label52 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -149,6 +143,8 @@
             this.conditionDropDownList1 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.conditionDropDownList2 = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.clsDetailCodeRefDropDownList4 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
+            this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
+            this.numericTextBox1 = new AMS.TextBox.NumericTextBox();
             this.lblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -159,15 +155,17 @@
             // 
             this.lblPanelBase.ColumnCount = 1;
             this.lblPanelBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.lblPanelBase.Controls.Add(this.xpLabel1, 0, 0);
-            this.lblPanelBase.Controls.Add(this.tblPanelGrp, 0, 1);
+            this.lblPanelBase.Controls.Add(this.xpLabel1, 0, 1);
+            this.lblPanelBase.Controls.Add(this.tblPanelGrp, 0, 2);
+            this.lblPanelBase.Controls.Add(this.commonToolStrip1, 0, 0);
             this.lblPanelBase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPanelBase.Location = new System.Drawing.Point(0, 0);
             this.lblPanelBase.Margin = new System.Windows.Forms.Padding(0);
             this.lblPanelBase.Name = "lblPanelBase";
-            this.lblPanelBase.RowCount = 2;
-            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 508F));
+            this.lblPanelBase.RowCount = 3;
+            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.lblPanelBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 491F));
             this.lblPanelBase.Size = new System.Drawing.Size(792, 573);
             this.lblPanelBase.TabIndex = 0;
             // 
@@ -178,11 +176,11 @@
             this.xpLabel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(150)))), ((int)(((byte)(21)))));
             this.xpLabel1.BackColorScheme = xpLabel.BackColorSchemeType.Office2003Blue;
             this.xpLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xpLabel1.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.xpLabel1.Location = new System.Drawing.Point(3, 3);
+            this.xpLabel1.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.xpLabel1.Location = new System.Drawing.Point(3, 38);
             this.xpLabel1.Name = "xpLabel1";
             this.xpLabel1.ShowShadow = false;
-            this.xpLabel1.Size = new System.Drawing.Size(786, 24);
+            this.xpLabel1.Size = new System.Drawing.Size(786, 26);
             this.xpLabel1.TabIndex = 0;
             this.xpLabel1.Text = "登陸模式";
             this.xpLabel1.TextAlign = xpLabel.TextAlignStyle.TAlignMiddleMiddle;
@@ -194,7 +192,7 @@
             this.tblPanelGrp.Controls.Add(this.tblPanelG1, 0, 1);
             this.tblPanelGrp.Controls.Add(this.tblPanelG2, 0, 2);
             this.tblPanelGrp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblPanelGrp.Location = new System.Drawing.Point(0, 30);
+            this.tblPanelGrp.Location = new System.Drawing.Point(0, 67);
             this.tblPanelGrp.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelGrp.Name = "tblPanelGrp";
             this.tblPanelGrp.RowCount = 4;
@@ -202,7 +200,7 @@
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 495F));
             this.tblPanelGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tblPanelGrp.Size = new System.Drawing.Size(792, 543);
+            this.tblPanelGrp.Size = new System.Drawing.Size(792, 506);
             this.tblPanelGrp.TabIndex = 1;
             // 
             // tblPanelG1
@@ -287,11 +285,6 @@
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tblPanelG2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tblPanelG2.Controls.Add(this.label67, 11, 19);
-            this.tblPanelG2.Controls.Add(this.label66, 9, 19);
-            this.tblPanelG2.Controls.Add(this.label65, 8, 19);
-            this.tblPanelG2.Controls.Add(this.label64, 2, 19);
-            this.tblPanelG2.Controls.Add(this.label63, 0, 19);
             this.tblPanelG2.Controls.Add(this.textBox24, 6, 18);
             this.tblPanelG2.Controls.Add(this.label62, 5, 18);
             this.tblPanelG2.Controls.Add(this.textBox23, 2, 18);
@@ -300,7 +293,6 @@
             this.tblPanelG2.Controls.Add(this.button6, 10, 17);
             this.tblPanelG2.Controls.Add(this.textBox22, 9, 17);
             this.tblPanelG2.Controls.Add(this.label59, 8, 17);
-            this.tblPanelG2.Controls.Add(this.label58, 3, 19);
             this.tblPanelG2.Controls.Add(this.label57, 4, 17);
             this.tblPanelG2.Controls.Add(this.button5, 3, 17);
             this.tblPanelG2.Controls.Add(this.textBox21, 2, 17);
@@ -312,7 +304,6 @@
             this.tblPanelG2.Controls.Add(this.label52, 9, 15);
             this.tblPanelG2.Controls.Add(this.textBox20, 8, 15);
             this.tblPanelG2.Controls.Add(this.label51, 7, 15);
-            this.tblPanelG2.Controls.Add(this.label50, 5, 15);
             this.tblPanelG2.Controls.Add(this.label49, 3, 15);
             this.tblPanelG2.Controls.Add(this.label48, 2, 15);
             this.tblPanelG2.Controls.Add(this.label47, 11, 14);
@@ -399,11 +390,12 @@
             this.tblPanelG2.Controls.Add(this.conditionDropDownList1, 5, 13);
             this.tblPanelG2.Controls.Add(this.conditionDropDownList2, 12, 15);
             this.tblPanelG2.Controls.Add(this.clsDetailCodeRefDropDownList4, 2, 16);
+            this.tblPanelG2.Controls.Add(this.numericTextBox1, 5, 15);
             this.tblPanelG2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblPanelG2.Location = new System.Drawing.Point(0, 28);
             this.tblPanelG2.Margin = new System.Windows.Forms.Padding(0);
             this.tblPanelG2.Name = "tblPanelG2";
-            this.tblPanelG2.RowCount = 20;
+            this.tblPanelG2.RowCount = 21;
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
@@ -421,85 +413,18 @@
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
             this.tblPanelG2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblPanelG2.Size = new System.Drawing.Size(792, 495);
             this.tblPanelG2.TabIndex = 1;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tblPanelG2.SetColumnSpan(this.label67, 4);
-            this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label67.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label67.Location = new System.Drawing.Point(552, 470);
-            this.label67.Margin = new System.Windows.Forms.Padding(3);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(173, 22);
-            this.label67.TabIndex = 152;
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tblPanelG2.SetColumnSpan(this.label66, 2);
-            this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label66.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label66.Location = new System.Drawing.Point(477, 470);
-            this.label66.Margin = new System.Windows.Forms.Padding(3);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(69, 22);
-            this.label66.TabIndex = 151;
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label65.Location = new System.Drawing.Point(418, 467);
-            this.label65.Margin = new System.Windows.Forms.Padding(0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(56, 28);
-            this.label65.TabIndex = 150;
-            this.label65.Text = "目标番号";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label64.Location = new System.Drawing.Point(127, 470);
-            this.label64.Margin = new System.Windows.Forms.Padding(3);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(102, 22);
-            this.label64.TabIndex = 149;
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label63.Location = new System.Drawing.Point(0, 467);
-            this.label63.Margin = new System.Windows.Forms.Padding(0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(110, 28);
-            this.label63.TabIndex = 148;
-            this.label63.Text = "项目番号";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox24
             // 
             this.tblPanelG2.SetColumnSpan(this.textBox24, 3);
             this.textBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox24.Location = new System.Drawing.Point(347, 444);
+            this.textBox24.Location = new System.Drawing.Point(347, 449);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(124, 19);
             this.textBox24.TabIndex = 147;
@@ -509,10 +434,10 @@
             this.label62.AutoSize = true;
             this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label62.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label62.Location = new System.Drawing.Point(304, 441);
+            this.label62.Location = new System.Drawing.Point(304, 446);
             this.label62.Margin = new System.Windows.Forms.Padding(0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(40, 26);
+            this.label62.Size = new System.Drawing.Size(40, 24);
             this.label62.TabIndex = 146;
             this.label62.Text = "备注2";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -520,7 +445,7 @@
             // textBox23
             // 
             this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox23.Location = new System.Drawing.Point(127, 444);
+            this.textBox23.Location = new System.Drawing.Point(127, 449);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(102, 19);
             this.textBox23.TabIndex = 145;
@@ -530,10 +455,10 @@
             this.label61.AutoSize = true;
             this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label61.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label61.Location = new System.Drawing.Point(0, 441);
+            this.label61.Location = new System.Drawing.Point(0, 446);
             this.label61.Margin = new System.Windows.Forms.Padding(0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(110, 26);
+            this.label61.Size = new System.Drawing.Size(110, 24);
             this.label61.TabIndex = 144;
             this.label61.Text = "备注1";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -548,7 +473,7 @@
             this.label60.Location = new System.Drawing.Point(581, 419);
             this.label60.Margin = new System.Windows.Forms.Padding(3);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(144, 19);
+            this.label60.Size = new System.Drawing.Size(144, 24);
             this.label60.TabIndex = 143;
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -559,7 +484,7 @@
             this.button6.Location = new System.Drawing.Point(550, 417);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(27, 23);
+            this.button6.Size = new System.Drawing.Size(27, 28);
             this.button6.TabIndex = 142;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -580,24 +505,10 @@
             this.label59.Location = new System.Drawing.Point(418, 416);
             this.label59.Margin = new System.Windows.Forms.Padding(0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(56, 25);
+            this.label59.Size = new System.Drawing.Size(56, 30);
             this.label59.TabIndex = 140;
             this.label59.Text = "出货担当";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tblPanelG2.SetColumnSpan(this.label58, 4);
-            this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label58.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label58.Location = new System.Drawing.Point(235, 470);
-            this.label58.Margin = new System.Windows.Forms.Padding(3);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(146, 22);
-            this.label58.TabIndex = 139;
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label57
             // 
@@ -609,7 +520,7 @@
             this.label57.Location = new System.Drawing.Point(264, 419);
             this.label57.Margin = new System.Windows.Forms.Padding(3);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(151, 19);
+            this.label57.Size = new System.Drawing.Size(151, 24);
             this.label57.TabIndex = 138;
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -620,7 +531,7 @@
             this.button5.Location = new System.Drawing.Point(233, 417);
             this.button5.Margin = new System.Windows.Forms.Padding(1);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(27, 23);
+            this.button5.Size = new System.Drawing.Size(27, 28);
             this.button5.TabIndex = 137;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -640,7 +551,7 @@
             this.label56.Location = new System.Drawing.Point(0, 416);
             this.label56.Margin = new System.Windows.Forms.Padding(0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(110, 25);
+            this.label56.Size = new System.Drawing.Size(110, 30);
             this.label56.TabIndex = 135;
             this.label56.Text = "出货担当";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -735,19 +646,6 @@
             this.label51.Text = "单价";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label50.Location = new System.Drawing.Point(307, 367);
-            this.label50.Margin = new System.Windows.Forms.Padding(3);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(34, 23);
-            this.label50.TabIndex = 125;
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label49
             // 
             this.label49.AutoSize = true;
@@ -759,7 +657,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(72, 29);
             this.label49.TabIndex = 124;
-            this.label49.Text = "预领可能数";
+            this.label49.Text = "预领数";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label48
@@ -992,7 +890,7 @@
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(53, 27);
             this.label39.TabIndex = 100;
-            this.label39.Text = "交货日";
+            this.label39.Text = "回答日";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label38
@@ -1005,7 +903,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(56, 27);
             this.label38.TabIndex = 98;
-            this.label38.Text = "出货日";
+            this.label38.Text = "检收日";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label37
@@ -1227,7 +1125,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(110, 23);
             this.label26.TabIndex = 74;
-            this.label26.Text = "客户物料号";
+            this.label26.Text = "物料号";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox8
@@ -1814,6 +1712,63 @@
             this.clsDetailCodeRefDropDownList4.Size = new System.Drawing.Size(102, 17);
             this.clsDetailCodeRefDropDownList4.TabIndex = 131;
             // 
+            // commonToolStrip1
+            // 
+            this.commonToolStrip1.AddEnabled = true;
+            this.commonToolStrip1.AddVisible = true;
+            this.commonToolStrip1.AutoSize = true;
+            this.commonToolStrip1.CleargroupEnabled = true;
+            this.commonToolStrip1.CleargroupVisible = true;
+            this.commonToolStrip1.CopyEnabled = true;
+            this.commonToolStrip1.CopyVisible = true;
+            this.commonToolStrip1.CsvEnabled = true;
+            this.commonToolStrip1.CsvVisible = true;
+            this.commonToolStrip1.DeleteEnabled = true;
+            this.commonToolStrip1.DeleteVisible = true;
+            this.commonToolStrip1.Displaytext = true;
+            this.commonToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.commonToolStrip1.ExitEnabled = true;
+            this.commonToolStrip1.ExitVisible = true;
+            this.commonToolStrip1.GobackEnabled = true;
+            this.commonToolStrip1.GobackVisible = true;
+            this.commonToolStrip1.HelpEnabled = true;
+            this.commonToolStrip1.HelpVisible = true;
+            this.commonToolStrip1.Line1Visible = true;
+            this.commonToolStrip1.Line2Visible = true;
+            this.commonToolStrip1.Line3Visible = true;
+            this.commonToolStrip1.Line4Visible = true;
+            this.commonToolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.commonToolStrip1.Name = "commonToolStrip1";
+            this.commonToolStrip1.OkEnabled = true;
+            this.commonToolStrip1.OkVisible = true;
+            this.commonToolStrip1.ReportEnabled = true;
+            this.commonToolStrip1.ReportVisible = true;
+            this.commonToolStrip1.SaveEnabled = true;
+            this.commonToolStrip1.SaveVisible = true;
+            this.commonToolStrip1.Size = new System.Drawing.Size(786, 29);
+            this.commonToolStrip1.TabIndex = 2;
+            this.commonToolStrip1.UpdateEnabled = true;
+            this.commonToolStrip1.UpdateVisible = true;
+            // 
+            // numericTextBox1
+            // 
+            this.numericTextBox1.AllowNegative = true;
+            this.tblPanelG2.SetColumnSpan(this.numericTextBox1, 2);
+            this.numericTextBox1.DigitsInGroup = 0;
+            this.numericTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numericTextBox1.Flags = 0;
+            this.numericTextBox1.Location = new System.Drawing.Point(304, 364);
+            this.numericTextBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.numericTextBox1.MaxDecimalPlaces = 4;
+            this.numericTextBox1.MaxWholeDigits = 9;
+            this.numericTextBox1.Name = "numericTextBox1";
+            this.numericTextBox1.Prefix = "";
+            this.numericTextBox1.RangeMax = 1.7976931348623157E+308;
+            this.numericTextBox1.RangeMin = -1.7976931348623157E+308;
+            this.numericTextBox1.Size = new System.Drawing.Size(80, 19);
+            this.numericTextBox1.TabIndex = 148;
+            this.numericTextBox1.Text = "1";
+            // 
             // FrmOrderEntryDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1825,6 +1780,7 @@
             this.Text = "订单详细";
             this.Load += new System.EventHandler(this.FrmFactory_Load);
             this.lblPanelBase.ResumeLayout(false);
+            this.lblPanelBase.PerformLayout();
             this.tblPanelGrp.ResumeLayout(false);
             this.tblPanelG1.ResumeLayout(false);
             this.tblPanelG1.PerformLayout();
@@ -1927,7 +1883,6 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label51;
@@ -1943,7 +1898,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox21;
@@ -1952,10 +1906,7 @@
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label65;
+        private Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip commonToolStrip1;
+        private AMS.TextBox.NumericTextBox numericTextBox1;
     }
 }
