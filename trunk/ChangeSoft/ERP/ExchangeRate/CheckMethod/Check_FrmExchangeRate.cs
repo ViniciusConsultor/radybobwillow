@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Com.GainWinSoft.ERP.ExchangeRate
 {
 
-    public partial class FrmExchangeRate
+    public partial class FOrderInquiry
     {
 
 

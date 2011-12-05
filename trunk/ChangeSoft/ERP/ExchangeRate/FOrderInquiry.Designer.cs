@@ -1,6 +1,6 @@
 ﻿namespace Com.GainWinSoft.ERP.ExchangeRate
 {
-    partial class FrmExchangeRate
+    partial class FOrderInquiry
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExchangeRate));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrderInquiry));
             this.tblPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.tblPanelGrp = new System.Windows.Forms.TableLayoutPanel();
             this.tblPanelG1 = new System.Windows.Forms.TableLayoutPanel();
@@ -60,11 +60,11 @@
             this.clsddl_9A_G3 = new ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList();
             this.cndCalcMode = new Com.GainWinSoft.Common.Control.ConditionDropDownList.ConditionDropDownList();
             this.xdtpEffEedDate = new Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker();
+            this.ntxtRate = new AMS.TextBox.NumericTextBox();
             this.commonToolStrip1 = new Com.GainWinSoft.Common.Control.CommonToolStrip.CommonToolStrip();
             this.tblPanelG2 = new System.Windows.Forms.TableLayoutPanel();
             this.pgvRateMs = new Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView();
             this.validationProvider1 = new Noogen.Validation.ValidationProvider(this.components);
-            this.ntxtRate = new AMS.TextBox.NumericTextBox();
             this.tblPanelBase.SuspendLayout();
             this.tblPanelGrp.SuspendLayout();
             this.tblPanelG1.SuspendLayout();
@@ -307,6 +307,19 @@
             this.xdtpEffEedDate.Name = "xdtpEffEedDate";
             this.xdtpEffEedDate.Value = new System.DateTime(2011, 9, 27, 16, 41, 7, 156);
             // 
+            // ntxtRate
+            // 
+            this.ntxtRate.AllowNegative = true;
+            this.ntxtRate.DigitsInGroup = 0;
+            resources.ApplyResources(this.ntxtRate, "ntxtRate");
+            this.ntxtRate.Flags = 0;
+            this.ntxtRate.MaxDecimalPlaces = 4;
+            this.ntxtRate.MaxWholeDigits = 9;
+            this.ntxtRate.Name = "ntxtRate";
+            this.ntxtRate.Prefix = "";
+            this.ntxtRate.RangeMax = 1.7976931348623157E+308;
+            this.ntxtRate.RangeMin = -1.7976931348623157E+308;
+            // 
             // commonToolStrip1
             // 
             this.commonToolStrip1.AddEnabled = true;
@@ -320,7 +333,7 @@
             this.commonToolStrip1.CsvVisible = true;
             this.commonToolStrip1.DeleteEnabled = true;
             this.commonToolStrip1.DeleteVisible = true;
-            this.commonToolStrip1.Displaytext = false;
+            this.commonToolStrip1.Displaytext = true;
             this.commonToolStrip1.ExitEnabled = true;
             this.commonToolStrip1.ExitVisible = true;
             this.commonToolStrip1.GobackEnabled = true;
@@ -361,25 +374,12 @@
             this.validationProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
             resources.ApplyResources(this.validationProvider1, "validationProvider1");
             // 
-            // ntxtRate
-            // 
-            this.ntxtRate.AllowNegative = true;
-            this.ntxtRate.DigitsInGroup = 0;
-            resources.ApplyResources(this.ntxtRate, "ntxtRate");
-            this.ntxtRate.Flags = 0;
-            this.ntxtRate.MaxDecimalPlaces = 4;
-            this.ntxtRate.MaxWholeDigits = 9;
-            this.ntxtRate.Name = "ntxtRate";
-            this.ntxtRate.Prefix = "";
-            this.ntxtRate.RangeMax = 1.7976931348623157E+308;
-            this.ntxtRate.RangeMin = -1.7976931348623157E+308;
-            // 
-            // FrmExchangeRate
+            // FOrderInquiry
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tblPanelBase);
-            this.Name = "FrmExchangeRate";
+            this.Name = "FOrderInquiry";
             this.Load += new System.EventHandler(this.FrmExchangeRate_Load);
             this.tblPanelBase.ResumeLayout(false);
             this.tblPanelGrp.ResumeLayout(false);

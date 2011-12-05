@@ -22,7 +22,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate.Action
     public class Action_FrmExchangeRate : Com.GainWinSoft.ERP.ExchangeRate.Action.IAction_FrmExchangeRate, Com.GainWinSoft.Common.IBaseAction
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Action_FrmExchangeRate));
-        private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmExchangeRate));
+        private ResourceManager rm = new System.Resources.ResourceManager(typeof(FOrderInquiry));
         LoginUserInfoVo uservo = (LoginUserInfoVo)SessionUtils.GetSession(SessionUtils.COMMON_LOGIN_USER_INFO);
 
         private string[] columnlist = new string[] { "I_COMPANY_CD", "I_RATE_CLS", "I_CLS_DETAIL_DESC", "I_DL_CURR_CD"
