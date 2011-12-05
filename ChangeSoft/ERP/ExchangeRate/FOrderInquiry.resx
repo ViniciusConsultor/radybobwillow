@@ -1021,7 +1021,7 @@
     <value>ntxtRate</value>
   </data>
   <data name="&gt;&gt;ntxtRate.Type" xml:space="preserve">
-    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4298.32143, Culture=neutral, PublicKeyToken=null</value>
+    <value>AMS.TextBox.NumericTextBox, AMS.TextBox, Version=2.0.4356.40262, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ntxtRate.Parent" xml:space="preserve">
     <value>tblPanelG3</value>
@@ -1292,10 +1292,10 @@
     <value>validationProvider1</value>
   </data>
   <data name="&gt;&gt;validationProvider1.Type" xml:space="preserve">
-    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4298.32136, Culture=neutral, PublicKeyToken=null</value>
+    <value>Noogen.Validation.ValidationProvider, Noogen.Validation, Version=1.0.4356.40585, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmExchangeRate</value>
+    <value>FOrderInquiry</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>Com.GainWinSoft.Common.BaseContent, Com.GainWinSoft.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>

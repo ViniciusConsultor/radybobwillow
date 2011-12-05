@@ -18,10 +18,10 @@ using Noogen.Validation;
 namespace Com.GainWinSoft.ERP.ExchangeRate
 
 {
-    public partial class FrmExchangeRate : BaseContent
+    public partial class FOrderInquiry : BaseContent
     {
-        private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmExchangeRate));
-        private static readonly ILog log = LogManager.GetLogger(typeof(FrmExchangeRate));
+        private ResourceManager rm = new System.Resources.ResourceManager(typeof(FOrderInquiry));
+        private static readonly ILog log = LogManager.GetLogger(typeof(FOrderInquiry));
 
         IAction_FrmExchangeRate action = ComponentLocator.Instance().Resolve<IAction_FrmExchangeRate>();
 
@@ -71,7 +71,7 @@ namespace Com.GainWinSoft.ERP.ExchangeRate
         //private ValidationProvider vdpExistG1;
         //private ValidationProvider vdpExistG2;
 
-        public FrmExchangeRate(DockPanel _parentdockpanel)
+        public FOrderInquiry(DockPanel _parentdockpanel)
             : base(_parentdockpanel)
         {
             InitializeComponent();
