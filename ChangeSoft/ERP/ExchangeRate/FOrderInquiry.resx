@@ -352,10 +352,10 @@
     <value>1</value>
   </data>
   <data name="tblPanelG1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,130,Absolute,8" /&gt;&lt;Rows Styles="Absolute,26,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblCompanyNM" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnCompany" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="txtCompany" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblStar1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompany" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,110,Absolute,29,Absolute,130,Absolute,391" /&gt;&lt;Rows Styles="Absolute,31,Absolute,31" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelG2.ColumnCount" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -502,7 +502,7 @@
     <value>Fill</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 0</value>
+    <value>231, 0</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -535,13 +535,13 @@
     <value>Fill</value>
   </data>
   <data name="alphanumericTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 0</value>
+    <value>293, 0</value>
   </data>
   <data name="alphanumericTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="alphanumericTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 19</value>
+    <value>39, 19</value>
   </data>
   <data name="alphanumericTextBox2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -565,13 +565,13 @@
     <value>Fill</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 0</value>
+    <value>332, 0</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 28</value>
+    <value>83, 28</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -598,7 +598,7 @@
     <value>Fill</value>
   </data>
   <data name="clsDetailCodeRefDropDownList1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 0</value>
+    <value>415, 0</value>
   </data>
   <data name="clsDetailCodeRefDropDownList1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -682,7 +682,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 22</value>
+    <value>233, 22</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -705,11 +705,14 @@
   <data name="label7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 28</value>
+    <value>566, 28</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 28</value>
+    <value>66, 28</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -736,10 +739,10 @@
     <value>Fill</value>
   </data>
   <data name="alphanumericTextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 31</value>
+    <value>638, 31</value>
   </data>
   <data name="alphanumericTextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 19</value>
+    <value>125, 19</value>
   </data>
   <data name="alphanumericTextBox4.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -850,7 +853,7 @@
     <value>267, 56</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 28</value>
+    <value>233, 28</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -912,9 +915,6 @@
   <data name="alphanumericTextBox6.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="alphanumericTextBox6.Text" xml:space="preserve">
-    <value>alphanumericTextBox6</value>
-  </data>
   <data name="&gt;&gt;alphanumericTextBox6.Name" xml:space="preserve">
     <value>alphanumericTextBox6</value>
   </data>
@@ -967,7 +967,7 @@
     <value>267, 84</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 28</value>
+    <value>62, 28</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -993,14 +993,17 @@
   <data name="label12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 84</value>
+    <value>415, 84</value>
   </data>
   <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 28</value>
+    <value>53, 28</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1024,16 +1027,13 @@
     <value>21</value>
   </data>
   <data name="alphanumericTextBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 87</value>
+    <value>471, 87</value>
   </data>
   <data name="alphanumericTextBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 19</value>
+    <value>89, 19</value>
   </data>
   <data name="alphanumericTextBox7.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
-  </data>
-  <data name="alphanumericTextBox7.Text" xml:space="preserve">
-    <value>alphanumericTextBox7</value>
   </data>
   <data name="&gt;&gt;alphanumericTextBox7.Name" xml:space="preserve">
     <value>alphanumericTextBox7</value>
@@ -1050,14 +1050,17 @@
   <data name="button4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>617, 85</value>
+    <value>564, 85</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 26</value>
+    <value>34, 26</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1120,7 +1123,7 @@
     <value>Fill</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 112</value>
+    <value>231, 112</value>
   </data>
   <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1155,14 +1158,17 @@
   <data name="label15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 112</value>
+    <value>415, 112</value>
   </data>
   <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 28</value>
+    <value>53, 28</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1185,6 +1191,996 @@
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
+  <data name="clsDetailCodeRefDropDownList2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 115</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList2.Name" xml:space="preserve">
+    <value>clsDetailCodeRefDropDownList2</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList2.Type" xml:space="preserve">
+    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList2.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList2.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 115</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList3.Name" xml:space="preserve">
+    <value>clsDetailCodeRefDropDownList3</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList3.Type" xml:space="preserve">
+    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList3.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList3.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 140</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>物料代碼</value>
+  </data>
+  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="alphanumericTextBox8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="alphanumericTextBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 143</value>
+  </data>
+  <data name="alphanumericTextBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 19</value>
+  </data>
+  <data name="alphanumericTextBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox8.Name" xml:space="preserve">
+    <value>alphanumericTextBox8</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox8.Type" xml:space="preserve">
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4356.40262, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox8.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox8.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 140</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 28</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>版數</value>
+  </data>
+  <data name="label17.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 140</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 28</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>物料名</value>
+  </data>
+  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 140</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 28</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 168</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>型號</value>
+  </data>
+  <data name="label20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 168</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 28</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label22.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 168</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 28</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>樣式</value>
+  </data>
+  <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 168</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 28</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 196</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>圖紙編號</value>
+  </data>
+  <data name="label24.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 140</value>
+  </data>
+  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 25</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 196</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 28</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 224</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>登陸日</value>
+  </data>
+  <data name="label26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="xDateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 227</value>
+  </data>
+  <data name="xDateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="xDateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker1.Name" xml:space="preserve">
+    <value>xDateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker1.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker1.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker1.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="xDateTimePicker2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="xDateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 227</value>
+  </data>
+  <data name="xDateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="xDateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker2.Name" xml:space="preserve">
+    <value>xDateTimePicker2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker2.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker2.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker2.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 224</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 28</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>訂單日</value>
+  </data>
+  <data name="label27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="alphanumericTextBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 143</value>
+  </data>
+  <data name="alphanumericTextBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="alphanumericTextBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox9.Name" xml:space="preserve">
+    <value>alphanumericTextBox9</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox9.Type" xml:space="preserve">
+    <value>AMS.TextBox.AlphanumericTextBox, AMS.TextBox, Version=2.0.4356.40262, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox9.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;alphanumericTextBox9.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="xDateTimePicker3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="xDateTimePicker3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 227</value>
+  </data>
+  <data name="xDateTimePicker3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="xDateTimePicker3.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker3.Name" xml:space="preserve">
+    <value>xDateTimePicker3</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker3.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker3.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker3.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="xDateTimePicker4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="xDateTimePicker4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 227</value>
+  </data>
+  <data name="xDateTimePicker4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="xDateTimePicker4.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker4.Name" xml:space="preserve">
+    <value>xDateTimePicker4</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker4.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker4.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker4.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 115</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="clsDetailCodeRefDropDownList4.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList4.Name" xml:space="preserve">
+    <value>clsDetailCodeRefDropDownList4</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList4.Type" xml:space="preserve">
+    <value>ClsDetailCodeRefDropDownList.ClsDetailCodeRefDropDownList, ClsDetailCodeRefDropDownList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList4.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;clsDetailCodeRefDropDownList4.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label28.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 252</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 27</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>要求交貨日</value>
+  </data>
+  <data name="label28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="xDateTimePicker5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 255</value>
+  </data>
+  <data name="xDateTimePicker5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="xDateTimePicker5.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker5.Name" xml:space="preserve">
+    <value>xDateTimePicker5</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker5.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker5.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker5.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="xDateTimePicker6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 255</value>
+  </data>
+  <data name="xDateTimePicker6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="xDateTimePicker6.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker6.Name" xml:space="preserve">
+    <value>xDateTimePicker6</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker6.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker6.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker6.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="xDateTimePicker7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 255</value>
+  </data>
+  <data name="xDateTimePicker7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="xDateTimePicker7.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker7.Name" xml:space="preserve">
+    <value>xDateTimePicker7</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker7.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker7.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker7.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="xDateTimePicker8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 255</value>
+  </data>
+  <data name="xDateTimePicker8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="xDateTimePicker8.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker8.Name" xml:space="preserve">
+    <value>xDateTimePicker8</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker8.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker8.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker8.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="xDateTimePicker9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 282</value>
+  </data>
+  <data name="xDateTimePicker9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="xDateTimePicker9.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker9.Name" xml:space="preserve">
+    <value>xDateTimePicker9</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker9.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker9.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker9.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="xDateTimePicker10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 282</value>
+  </data>
+  <data name="xDateTimePicker10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="xDateTimePicker10.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker10.Name" xml:space="preserve">
+    <value>xDateTimePicker10</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker10.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker10.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker10.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="xDateTimePicker11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 282</value>
+  </data>
+  <data name="xDateTimePicker11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="xDateTimePicker11.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker11.Name" xml:space="preserve">
+    <value>xDateTimePicker11</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker11.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker11.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker11.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="xDateTimePicker12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 282</value>
+  </data>
+  <data name="xDateTimePicker12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="xDateTimePicker12.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker12.Name" xml:space="preserve">
+    <value>xDateTimePicker12</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker12.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.XDateTimePicker.XDateTimePicker, Com.GainWinSoft.Common.Control.XDateTimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker12.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;xDateTimePicker12.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 252</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 27</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>出貨日</value>
+  </data>
+  <data name="label29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 279</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>預備日</value>
+  </data>
+  <data name="label30.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 279</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 29</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>檢驗日</value>
+  </data>
+  <data name="label31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 84</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 28</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="button6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 311</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 25</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>查詢</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="button7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 311</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 25</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>tblPanelG2</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>63</value>
+  </data>
   <data name="tblPanelG2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1198,7 +2194,7 @@
     <value>12</value>
   </data>
   <data name="tblPanelG2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 356</value>
+    <value>784, 339</value>
   </data>
   <data name="tblPanelG2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1216,7 +2212,70 @@
     <value>2</value>
   </data>
   <data name="tblPanelG2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label5" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox2" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRefDropDownList1" Row="0" RowSpan="1" Column="9" ColumnSpan="2" /&gt;&lt;Control Name="alphanumericTextBox3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="1" RowSpan="1" Column="4" ColumnSpan="3" /&gt;&lt;Control Name="label7" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox4" Row="1" RowSpan="1" Column="8" ColumnSpan="2" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox5" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="2" RowSpan="1" Column="4" ColumnSpan="3" /&gt;&lt;Control Name="label10" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox6" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="3" RowSpan="1" Column="4" ColumnSpan="3" /&gt;&lt;Control Name="label12" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox7" Row="3" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="button4" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,107,Absolute,33,Absolute,62,Absolute,74,Absolute,63,Absolute,56,Absolute,97,Absolute,37,Absolute,51,Absolute,60" /&gt;&lt;Rows Styles="Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label5" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="3" ColumnSpan="2" /&gt;&lt;Control Name="alphanumericTextBox2" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRefDropDownList1" Row="0" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="alphanumericTextBox3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="1" RowSpan="1" Column="4" ColumnSpan="5" /&gt;&lt;Control Name="label7" Row="1" RowSpan="1" Column="10" ColumnSpan="2" /&gt;&lt;Control Name="alphanumericTextBox4" Row="1" RowSpan="1" Column="12" ColumnSpan="2" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox5" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="2" RowSpan="1" Column="4" ColumnSpan="5" /&gt;&lt;Control Name="label10" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox6" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="3" RowSpan="1" Column="4" ColumnSpan="2" /&gt;&lt;Control Name="label12" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox7" Row="3" RowSpan="1" Column="8" ColumnSpan="2" /&gt;&lt;Control Name="button4" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="4" RowSpan="1" Column="3" ColumnSpan="2" /&gt;&lt;Control Name="label15" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRefDropDownList2" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="clsDetailCodeRefDropDownList3" Row="4" RowSpan="1" Column="5" ColumnSpan="2" /&gt;&lt;Control Name="label16" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox8" Row="5" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="label17" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="5" RowSpan="1" Column="7" ColumnSpan="2" /&gt;&lt;Control Name="label19" Row="5" RowSpan="1" Column="9" ColumnSpan="4" /&gt;&lt;Control Name="label20" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="6" RowSpan="1" Column="2" ColumnSpan="4" /&gt;&lt;Control Name="label22" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="6" RowSpan="1" Column="8" ColumnSpan="4" /&gt;&lt;Control Name="label24" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button5" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="7" RowSpan="1" Column="2" ColumnSpan="4" /&gt;&lt;Control Name="label26" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="xDateTimePicker1" Row="8" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker2" Row="8" RowSpan="1" Column="5" ColumnSpan="2" /&gt;&lt;Control Name="label27" Row="8" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="alphanumericTextBox9" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="xDateTimePicker3" Row="8" RowSpan="1" Column="8" ColumnSpan="3" /&gt;&lt;Control Name="xDateTimePicker4" Row="8" RowSpan="1" Column="12" ColumnSpan="2" /&gt;&lt;Control Name="clsDetailCodeRefDropDownList4" Row="4" RowSpan="1" Column="8" ColumnSpan="2" /&gt;&lt;Control Name="label28" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="xDateTimePicker5" Row="9" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker6" Row="9" RowSpan="1" Column="5" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker7" Row="9" RowSpan="1" Column="8" ColumnSpan="3" /&gt;&lt;Control Name="xDateTimePicker8" Row="9" RowSpan="1" Column="12" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker9" Row="10" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker10" Row="10" RowSpan="1" Column="5" ColumnSpan="2" /&gt;&lt;Control Name="xDateTimePicker11" Row="10" RowSpan="1" Column="8" ColumnSpan="3" /&gt;&lt;Control Name="xDateTimePicker12" Row="10" RowSpan="1" Column="12" ColumnSpan="2" /&gt;&lt;Control Name="label29" Row="9" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="10" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="3" RowSpan="1" Column="11" ColumnSpan="2" /&gt;&lt;Control Name="button6" Row="11" RowSpan="1" Column="12" ColumnSpan="2" /&gt;&lt;Control Name="button7" Row="11" RowSpan="1" Column="9" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,110,Absolute,14,Absolute,107,Absolute,33,Absolute,29,Absolute,39,Absolute,83,Absolute,53,Absolute,35,Absolute,60,Absolute,36,Absolute,36,Absolute,100,Absolute,31,Absolute,11,Absolute,20" /&gt;&lt;Rows Styles="Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,28,Absolute,27,Absolute,29,Absolute,28,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="pagerGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pagerGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pagerGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pagerGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 149</value>
+  </data>
+  <data name="pagerGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pagerGridView1.Name" xml:space="preserve">
+    <value>pagerGridView1</value>
+  </data>
+  <data name="&gt;&gt;pagerGridView1.Type" xml:space="preserve">
+    <value>Com.GainWinSoft.Common.Control.PagerGridView.PagerGridView, Com.GainWinSoft.Common.Control.PagerGridView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pagerGridView1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;pagerGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 405</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 157</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>tblPanelGrp</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pagerGridView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,20" /&gt;&lt;Rows Styles="Absolute,149,Absolute,8" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelGrp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1249,7 +2308,7 @@
     <value>0</value>
   </data>
   <data name="tblPanelGrp.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,31,Absolute,356,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="commonToolStrip1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tblPanelG2" Row="2" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="tableLayoutPanel1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,35,Absolute,31,Absolute,339,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tblPanelBase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
