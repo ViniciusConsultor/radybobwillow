@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69B3A959-B0B6-4A05-8A3C-129634D48AB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Provision4So</RootNamespace>
+    <AssemblyName>Provision4So</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.ActiveRecord.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Castle.ActiveRecord.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Components.Validator, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Castle.Components.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.2.0.2, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.Common, Version=0.1.0.0, Culture=neutral, PublicKeyToken=c3c25e41a6abca42, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Guifreaks.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.NavigationBar, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Guifreaks.NavigationBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.NavigationBar.XmlSerializers, Version=0.1.0.0, Culture=neutral, PublicKeyToken=bf0afd6b35ed9434, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Guifreaks.NavigationBar.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=0.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.91, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WHC.Pager.Entity, Version=1.0.4238.36977, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\WHC.Pager.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="WHC.Pager.WinControlEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\WHC.Pager.WinControlEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmProvision4So.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProvision4So.Designer.cs">
+      <DependentUpon>FrmProvision4So.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmProvision4So.resx">
+      <DependentUpon>FrmProvision4So.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClsDetailCodeRefDropDownList\ClsDetailCodeRefDropDownList.csproj">
+      <Project>{A938F717-9792-4145-B686-EA261DC24EC1}</Project>
+      <Name>ClsDetailCodeRefDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeRef\CodeRef.csproj">
+      <Project>{4BD74F38-FF5A-41B2-B498-EB1D6BB631AB}</Project>
+      <Name>CodeRef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonToolStrip\CommonToolStrip.csproj">
+      <Project>{9FC0EDDF-C362-4841-AA28-37852CDC1383}</Project>
+      <Name>CommonToolStrip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{296A15F5-53D7-4BD2-AD0A-1DEFA9FB1E5C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConditionDropDownList\ConditionDropDownList.csproj">
+      <Project>{11F81874-53ED-42FA-A08F-DD481A19740F}</Project>
+      <Name>ConditionDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConditionRadioButton\ConditionRadioButton.csproj">
+      <Project>{E06654BA-B65B-4C8D-AABE-56DEAE6D3AEB}</Project>
+      <Name>ConditionRadioButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{5B408254-B1E2-46F3-9EE7-1AB0DB365876}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.csproj">
+      <Project>{2C0AB9FA-D44C-4064-A351-27329A400ECE}</Project>
+      <Name>ERP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasterCheck\MasterCheck.csproj">
+      <Project>{C51DC310-2C19-4EEB-BBBE-7D49A3C6579F}</Project>
+      <Name>MasterCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PagerGridView\PagerGridView.csproj">
+      <Project>{2A8AC808-BE4B-4D08-BB70-3204B1291344}</Project>
+      <Name>PagerGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportCenter\ReportCenter.csproj">
+      <Project>{E1EEB1F8-808A-4FA8-B4BA-70F7137AE769}</Project>
+      <Name>ReportCenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TableDropDownList\TableDropDownList.csproj">
+      <Project>{C0ABDD5D-B591-49A9-99A1-0FE92A46AFA9}</Project>
+      <Name>TableDropDownList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidatingTextBox\TextBox.csproj">
+      <Project>{6BF0180E-73ED-4DBC-9AE2-8597A4D18E6D}</Project>
+      <Name>TextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationProvider\Noogen.Validation.csproj">
+      <Project>{A52D6403-0252-4A82-8C53-122B3CC036FC}</Project>
+      <Name>Noogen.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XAccordionPanel\AccordionPanel.csproj">
+      <Project>{9CA367B8-0B98-49D1-84FB-735E612E3BA9}</Project>
+      <Name>AccordionPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDateTimePicker\XDateTimePicker.csproj">
+      <Project>{D99733E2-A187-47ED-99C3-5C4A36FD18BB}</Project>
+      <Name>XDateTimePicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xpLabel\xpLabel.csproj">
+      <Project>{1ECBEA5F-7603-407A-8069-1FEF303F7E83}</Project>
+      <Name>xpLabel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
