@@ -57,7 +57,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tlpBase.SuspendLayout();
             this.tlpGrp.SuspendLayout();
             this.tlpGrp2.SuspendLayout();
@@ -68,7 +71,7 @@
             // tlpBase
             // 
             this.tlpBase.ColumnCount = 1;
-            this.tlpBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 792F));
             this.tlpBase.Controls.Add(this.commonToolStrip1, 0, 0);
             this.tlpBase.Controls.Add(this.tlpGrp, 0, 1);
             this.tlpBase.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -76,7 +79,7 @@
             this.tlpBase.Margin = new System.Windows.Forms.Padding(0);
             this.tlpBase.Name = "tlpBase";
             this.tlpBase.RowCount = 2;
-            this.tlpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tlpBase.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBase.Size = new System.Drawing.Size(792, 573);
             this.tlpBase.TabIndex = 0;
@@ -114,7 +117,7 @@
             this.commonToolStrip1.ReportVisible = true;
             this.commonToolStrip1.SaveEnabled = true;
             this.commonToolStrip1.SaveVisible = true;
-            this.commonToolStrip1.Size = new System.Drawing.Size(786, 49);
+            this.commonToolStrip1.Size = new System.Drawing.Size(786, 44);
             this.commonToolStrip1.TabIndex = 0;
             this.commonToolStrip1.UpdateEnabled = true;
             this.commonToolStrip1.UpdateVisible = true;
@@ -122,18 +125,18 @@
             // tlpGrp
             // 
             this.tlpGrp.ColumnCount = 1;
-            this.tlpGrp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tlpGrp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 786F));
             this.tlpGrp.Controls.Add(this.tlpGrp2, 0, 1);
             this.tlpGrp.Controls.Add(this.tlpG1, 0, 0);
             this.tlpGrp.Controls.Add(this.tlpG3, 0, 2);
             this.tlpGrp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpGrp.Location = new System.Drawing.Point(0, 58);
+            this.tlpGrp.Location = new System.Drawing.Point(3, 53);
             this.tlpGrp.Name = "tlpGrp";
             this.tlpGrp.RowCount = 3;
             this.tlpGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tlpGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 236F));
             this.tlpGrp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tlpGrp.Size = new System.Drawing.Size(789, 513);
+            this.tlpGrp.Size = new System.Drawing.Size(786, 513);
             this.tlpGrp.TabIndex = 1;
             // 
             // tlpGrp2
@@ -147,7 +150,7 @@
             this.tlpGrp2.Name = "tlpGrp2";
             this.tlpGrp2.RowCount = 1;
             this.tlpGrp2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpGrp2.Size = new System.Drawing.Size(789, 236);
+            this.tlpGrp2.Size = new System.Drawing.Size(786, 236);
             this.tlpGrp2.TabIndex = 0;
             // 
             // pgvDetail
@@ -159,32 +162,33 @@
             this.pgvDetail.Location = new System.Drawing.Point(3, 3);
             this.pgvDetail.Name = "pgvDetail";
             this.pgvDetail.Pagerhelper = null;
-            this.pgvDetail.Size = new System.Drawing.Size(783, 230);
+            this.pgvDetail.Size = new System.Drawing.Size(780, 230);
             this.pgvDetail.TabIndex = 0;
             // 
             // tlpG1
             // 
-            this.tlpG1.ColumnCount = 12;
+            this.tlpG1.ColumnCount = 11;
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tlpG1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tlpG1.Controls.Add(this.label1, 0, 0);
             this.tlpG1.Controls.Add(this.textBox1, 2, 0);
             this.tlpG1.Controls.Add(this.label2, 3, 0);
             this.tlpG1.Controls.Add(this.comboBox1, 5, 0);
             this.tlpG1.Controls.Add(this.label3, 6, 0);
             this.tlpG1.Controls.Add(this.textBox2, 7, 0);
-            this.tlpG1.Controls.Add(this.button1, 9, 2);
-            this.tlpG1.Controls.Add(this.button2, 10, 2);
+            this.tlpG1.Controls.Add(this.button1, 8, 2);
+            this.tlpG1.Controls.Add(this.button2, 9, 2);
+            this.tlpG1.Controls.Add(this.label10, 0, 1);
+            this.tlpG1.Controls.Add(this.comboBox3, 2, 1);
             this.tlpG1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpG1.Location = new System.Drawing.Point(0, 0);
             this.tlpG1.Margin = new System.Windows.Forms.Padding(0);
@@ -193,7 +197,7 @@
             this.tlpG1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tlpG1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tlpG1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tlpG1.Size = new System.Drawing.Size(789, 79);
+            this.tlpG1.Size = new System.Drawing.Size(786, 79);
             this.tlpG1.TabIndex = 1;
             // 
             // label1
@@ -201,9 +205,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "名称";
             // 
             // textBox1
             // 
@@ -217,9 +221,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(154, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "分类";
             // 
             // comboBox1
             // 
@@ -234,51 +238,51 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(387, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "英文";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(471, 3);
+            this.textBox2.Location = new System.Drawing.Point(430, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 19);
+            this.textBox2.Size = new System.Drawing.Size(100, 19);
             this.textBox2.TabIndex = 5;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(626, 56);
+            this.button1.Location = new System.Drawing.Point(564, 56);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 20);
+            this.button1.Size = new System.Drawing.Size(96, 20);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "清空";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(725, 56);
+            this.button2.Location = new System.Drawing.Point(666, 56);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 20);
+            this.button2.Size = new System.Drawing.Size(89, 20);
             this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
+            this.button2.Text = "查询";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // tlpG3
             // 
             this.tlpG3.ColumnCount = 11;
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpG3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tlpG3.Controls.Add(this.label4, 0, 0);
             this.tlpG3.Controls.Add(this.textBox3, 2, 0);
             this.tlpG3.Controls.Add(this.label5, 3, 0);
@@ -292,17 +296,19 @@
             this.tlpG3.Controls.Add(this.label9, 3, 2);
             this.tlpG3.Controls.Add(this.textBox7, 5, 2);
             this.tlpG3.Controls.Add(this.button3, 6, 0);
-            this.tlpG3.Controls.Add(this.button4, 7, 0);
+            this.tlpG3.Controls.Add(this.label11, 0, 3);
+            this.tlpG3.Controls.Add(this.comboBox4, 2, 3);
             this.tlpG3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpG3.Location = new System.Drawing.Point(0, 315);
             this.tlpG3.Margin = new System.Windows.Forms.Padding(0);
             this.tlpG3.Name = "tlpG3";
-            this.tlpG3.RowCount = 4;
+            this.tlpG3.RowCount = 5;
             this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tlpG3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpG3.Size = new System.Drawing.Size(789, 198);
+            this.tlpG3.Size = new System.Drawing.Size(786, 198);
             this.tlpG3.TabIndex = 2;
             // 
             // label4
@@ -310,13 +316,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 12);
+            this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 0;
-            this.label4.Text = "label4";
+            this.label4.Text = "名称";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(97, 3);
+            this.textBox3.Location = new System.Drawing.Point(94, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(65, 19);
             this.textBox3.TabIndex = 1;
@@ -324,11 +330,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(168, 0);
+            this.label5.Location = new System.Drawing.Point(190, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 12);
+            this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 2;
-            this.label5.Text = "label5";
+            this.label5.Text = "分类";
             // 
             // comboBox2
             // 
@@ -343,13 +349,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 28);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 12);
+            this.label6.Size = new System.Drawing.Size(26, 12);
             this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.label6.Text = "Seq.";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(97, 31);
+            this.textBox4.Location = new System.Drawing.Point(94, 31);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(65, 19);
             this.textBox4.TabIndex = 5;
@@ -357,11 +363,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(168, 28);
+            this.label7.Location = new System.Drawing.Point(190, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 12);
+            this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.label7.Text = "图片";
             // 
             // textBox5
             // 
@@ -375,13 +381,13 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(3, 64);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 12);
+            this.label8.Size = new System.Drawing.Size(29, 12);
             this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.label8.Text = "英文";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(97, 67);
+            this.textBox6.Location = new System.Drawing.Point(94, 67);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(65, 19);
             this.textBox6.TabIndex = 9;
@@ -389,11 +395,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(168, 64);
+            this.label9.Location = new System.Drawing.Point(190, 64);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 12);
+            this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 10;
-            this.label9.Text = "label9";
+            this.label9.Text = "注释";
             // 
             // textBox7
             // 
@@ -408,17 +414,42 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 22);
             this.button3.TabIndex = 12;
-            this.button3.Text = "button3";
+            this.button3.Text = "追加";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // label10
             // 
-            this.button4.Location = new System.Drawing.Point(471, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 22);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 12);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "言语代码";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 94);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 12);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "言语代码";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(86, 28);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(62, 20);
+            this.comboBox3.TabIndex = 9;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(94, 97);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(90, 20);
+            this.comboBox4.TabIndex = 14;
             // 
             // FrmRootManager
             // 
@@ -471,6 +502,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
