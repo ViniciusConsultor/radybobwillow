@@ -80,7 +80,6 @@
     <Compile Include="Action\Action_FrmExchangeRate.cs" />
     <Compile Include="Action\IAction_FrmExchangeRate.cs" />
     <Compile Include="CheckMethod\Check_FrmExchangeRate.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Constant\Constant.cs" />
     <Compile Include="FormVo\FrmExRateCardVo.cs" />
