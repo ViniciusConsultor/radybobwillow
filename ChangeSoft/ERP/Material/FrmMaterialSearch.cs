@@ -19,6 +19,7 @@ using Com.GainWinSoft.ERP.CodeRef;
 using Com.GainWinSoft.Common.Vo;
 using Com.GainWinSoft.ERP.Material.Action;
 using Com.GainWinSoft.ERP.Material.FormVo;
+using System.Collections;
 
 namespace Com.GainWinSoft.ERP.Material
 {
@@ -472,7 +473,7 @@ namespace Com.GainWinSoft.ERP.Material
 
             if (currentGroup == 2 && firstGroup == 1)
             {
-                this.commonToolStrip1.AddEnabled = true;
+                this.commonToolStrip1.AddEnabled = false;
                 this.commonToolStrip1.UpdateEnabled = false;
                 this.commonToolStrip1.DeleteEnabled = false;
                 this.commonToolStrip1.GobackEnabled = true;
@@ -571,6 +572,8 @@ namespace Com.GainWinSoft.ERP.Material
         private void TransferTo()
         {
             this.Cursor = Cursors.WaitCursor;
+            Hashtable ht = (Hashtable)SessionUtils.GetSession(this.baseform.SessionKey);
+            ht.Add("FRMMATERIAL_SEARCH", this);
             FrmMaterialEdit frmMaterialEdit = new FrmMaterialEdit(this.baseform.Parentdockpanel, this.baseform);
             ResourceManager fr = new ResourceManager(typeof(FrmMaterialEdit));
             frmMaterialEdit.DockTitle = frmMaterialEdit.Text;

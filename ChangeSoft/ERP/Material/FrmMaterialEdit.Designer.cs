@@ -364,6 +364,7 @@
             this.commonToolStrip.UpdateEnabled = true;
             this.commonToolStrip.UpdateVisible = false;
             this.commonToolStrip.OkClick += new System.EventHandler(this.commonToolStrip_OkClick);
+            this.commonToolStrip.ExitClick += new System.EventHandler(this.commonToolStrip_ExitClick);
             this.commonToolStrip.GobackClick += new System.EventHandler(this.commonToolStrip_GobackClick);
             // 
             // tabControlPM
@@ -817,6 +818,7 @@
             resources.ApplyResources(this.btnItemTypeHelper, "btnItemTypeHelper");
             this.btnItemTypeHelper.Name = "btnItemTypeHelper";
             this.btnItemTypeHelper.UseVisualStyleBackColor = true;
+            this.btnItemTypeHelper.Click += new System.EventHandler(this.btnItemTypeHelper_Click);
             // 
             // atxtItemType
             // 
@@ -859,6 +861,7 @@
             resources.ApplyResources(this.btnMakerHelper, "btnMakerHelper");
             this.btnMakerHelper.Name = "btnMakerHelper";
             this.btnMakerHelper.UseVisualStyleBackColor = true;
+            this.btnMakerHelper.Click += new System.EventHandler(this.btnMakerHelper_Click);
             // 
             // atxtMakerCd
             // 
@@ -901,6 +904,7 @@
             resources.ApplyResources(this.btnShipLocationHelper, "btnShipLocationHelper");
             this.btnShipLocationHelper.Name = "btnShipLocationHelper";
             this.btnShipLocationHelper.UseVisualStyleBackColor = true;
+            this.btnShipLocationHelper.Click += new System.EventHandler(this.btnShipLocationHelper_Click);
             // 
             // atxtShipLocation
             // 
@@ -943,6 +947,7 @@
             resources.ApplyResources(this.btnCtrlSectionHelper, "btnCtrlSectionHelper");
             this.btnCtrlSectionHelper.Name = "btnCtrlSectionHelper";
             this.btnCtrlSectionHelper.UseVisualStyleBackColor = true;
+            this.btnCtrlSectionHelper.Click += new System.EventHandler(this.btnCtrlSectionHelper_Click);
             // 
             // atxtCtrlSection
             // 

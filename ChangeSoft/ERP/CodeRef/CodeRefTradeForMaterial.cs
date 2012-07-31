@@ -42,6 +42,7 @@ namespace Com.GainWinSoft.ERP.CodeRef
             this.txtDLCd.Text = "";
             this.txtDLDesc.Text = "";
             Init_GridView();
+            this.txtDLCd.Focus();
         }
 
 

@@ -25,6 +25,7 @@ namespace Com.GainWinSoft.ERP.Material
         private ResourceManager rm = new System.Resources.ResourceManager(typeof(FrmMaterialEdit));
         private static readonly ILog log = LogManager.GetLogger(typeof(FrmMaterialEdit));
         private LoginUserInfoVo uservo;
+        private FrmMaterialSearch PreviewForm = (FrmMaterialSearch)((Hashtable)SessionUtils.GetSession("FrmMaterialSearch"))["FrmMaterialSearch"];
 
         //当前所在组
         private int currentGroup = 1;
@@ -145,6 +146,47 @@ namespace Com.GainWinSoft.ERP.Material
             cr.ShowDialog(this);
             this.atxtSalesPersonCd.Focus();
 
+        }
+
+        private void commonToolStrip_ExitClick(object sender, EventArgs e)
+        {
+            //关闭当前窗口
+            this.CloseContent();
+
+        }
+
+        private void btnMakerHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("72");
+            cr.AddValueControl(this.atxtMakerCd);
+            cr.AddNameControl(this.lblMakerNm);
+            cr.ShowDialog(this);
+            this.atxtMakerCd.Focus();
+
+        }
+
+        private void btnItemTypeHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefClsDetail cr = new CodeRef.CodeRefClsDetail("79");
+            cr.AddValueControl(this.atxtItemType);
+            cr.AddNameControl(this.lblItemTypeNm);
+            cr.ShowDialog(this);
+            this.atxtItemType.Focus();
+
+        }
+
+        private void btnCtrlSectionHelper_Click(object sender, EventArgs e)
+        {
+            CodeRef.CodeRefSection cr = new CodeRef.CodeRefSection(uservo.CompanyCondition.ICompanyCd);
+            cr.AddValueControl(this.atxtCtrlSection);
+            cr.AddNameControl(this.lblCtrlSectionNm);
+            cr.ShowDialog(this);
+            this.atxtCtrlSection.Focus();
+        }
+
+        private void btnShipLocationHelper_Click(object sender, EventArgs e)
+        {
+           // CodeRef.CodeRefWarehouse cr = new CodeRef.CodeRefWarehouse(
         }
     }
 }
